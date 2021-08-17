@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <span>House of Gate</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu"
+    class="example-icon favorite-icon"
+    title="Add/Remove Columns"
+    aria-label="Example icon-button with heart icon">
+    <mat-icon>view_week</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+  <button *ngFor="let column of columns" mat-menu-item
+    (click)="toggleColumn(column); stopPropagation($event);">
+    <mat-icon>{{column.isShown ? 'done' : 'close'}}</mat-icon>
+    <span>{{column.name}}</span>
+  </button>
+</mat-menu>
