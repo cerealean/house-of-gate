@@ -14,6 +14,7 @@ import { MonsterFilters } from './models/monster-filters';
 import { MonsterFilterService } from './services/monster-filter.service';
 import { EncounterGeneratorService } from './services/encounter-generator.service';
 import { EncounterDifficulties } from './enums/encounter-difficulties';
+import { alignments } from './data/alignments';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,17 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = [];
   public readonly monsterTypes = monsterTypes;
+  public readonly alignments = [
+    alignments.lg.text,
+    alignments.ng.text,
+    alignments.cg.text,
+    alignments.ln.text,
+    alignments.n.text,
+    alignments.cn.text,
+    alignments.le.text,
+    alignments.ne.text,
+    alignments.ce.text
+  ];
 
   public dataSource = new MatTableDataSource<Monster>(this.monsters);
 
@@ -32,7 +44,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     name: '',
     minCr: 0,
     maxCr: 30,
-    type: ''
+    type: this.monsterTypes,
+    alignment: this.alignments
   };
   private columnUpdates$!: Subscription;
 

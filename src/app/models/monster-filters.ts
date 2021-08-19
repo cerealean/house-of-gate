@@ -3,6 +3,7 @@ export interface MonsterFilters {
   minCr?: number;
   maxCr?: number;
   type?: string | string[];
+  alignment?: string | string[];
   legendary?: boolean;
   unique?: boolean;
 }

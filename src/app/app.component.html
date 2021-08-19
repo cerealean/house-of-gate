@@ -27,8 +27,14 @@
   <mat-form-field appearance="standard">
     <mat-label>Type</mat-label>
     <mat-select (selectionChange)="filter()" [(ngModel)]="filters.type" multiple>
-      <mat-option [value]="''">All</mat-option>
       <mat-option *ngFor="let type of monsterTypes" [value]="type">{{type}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="standard">
+    <mat-label>Alignment</mat-label>
+    <mat-select (selectionChange)="filter()" [(ngModel)]="filters.alignment" multiple>
+      <mat-option *ngFor="let alignment of alignments" [value]="alignment" style="text-transform: capitalize;">
+        {{alignment}}</mat-option>
     </mat-select>
   </mat-form-field>
   <button mat-button mat-raised-button (click)="generateEncounter()">Encounter!</button>
