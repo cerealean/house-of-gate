@@ -16,7 +16,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 5"
   },
@@ -35,7 +35,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 6"
   },
@@ -54,7 +54,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 164"
   },
@@ -73,7 +73,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 7"
   },
@@ -92,7 +92,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 8"
   },
@@ -111,7 +111,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 11"
   },
@@ -130,7 +130,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 103,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 14"
   },
@@ -149,7 +149,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 13"
   },
@@ -168,7 +168,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 15"
   },
@@ -187,7 +187,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 16"
   },
@@ -206,7 +206,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 17"
   },
@@ -225,7 +225,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 18"
   },
@@ -244,7 +244,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 19"
   },
@@ -263,7 +263,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 20"
   },
@@ -282,7 +282,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 26"
   },
@@ -301,7 +301,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 27"
   },
@@ -320,7 +320,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 28"
   },
@@ -339,7 +339,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 29"
   },
@@ -358,7 +358,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 28"
   },
@@ -377,7 +377,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 187"
   },
@@ -396,7 +396,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 57,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 30"
   },
@@ -415,7 +415,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 31"
   },
@@ -434,7 +434,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 32"
   },
@@ -453,7 +453,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 33"
   },
@@ -472,7 +472,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 35"
   },
@@ -491,7 +491,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 36"
   },
@@ -510,7 +510,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 37"
   },
@@ -529,7 +529,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 199"
   },
@@ -548,7 +548,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 128,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 183"
   },
@@ -567,7 +567,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 38"
   },
@@ -586,7 +586,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 39"
   },
@@ -605,7 +605,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 15,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 40"
   },
@@ -624,7 +624,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 41"
   },
@@ -643,7 +643,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 4,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 42"
   },
@@ -662,7 +662,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 43"
   },
@@ -681,7 +681,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 87,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 45"
   },
@@ -700,7 +700,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 47"
   },
@@ -719,7 +719,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 48"
   },
@@ -738,7 +738,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 49"
   },
@@ -757,7 +757,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 50"
   },
@@ -776,7 +776,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 51"
   },
@@ -795,7 +795,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 52"
   },
@@ -814,7 +814,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 53"
   },
@@ -833,7 +833,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 54"
   },
@@ -852,7 +852,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 55"
   },
@@ -871,7 +871,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 56"
   },
@@ -890,7 +890,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 57"
   },
@@ -909,7 +909,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 57,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 58"
   },
@@ -928,7 +928,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 59"
   },
@@ -947,7 +947,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 59"
   },
@@ -966,7 +966,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 7,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 62"
   },
@@ -985,7 +985,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 63"
   },
@@ -1004,7 +1004,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 64"
   },
@@ -1023,7 +1023,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 65"
   },
@@ -1042,7 +1042,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 66"
   },
@@ -1061,7 +1061,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 67"
   },
@@ -1080,7 +1080,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 68"
   },
@@ -1099,7 +1099,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 69"
   },
@@ -1118,7 +1118,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 21"
   },
@@ -1137,7 +1137,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 71"
   },
@@ -1156,7 +1156,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 72"
   },
@@ -1175,7 +1175,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 287,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 73"
   },
@@ -1194,7 +1194,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 74"
   },
@@ -1213,7 +1213,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 48,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 74"
   },
@@ -1232,7 +1232,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 233"
   },
@@ -1251,7 +1251,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 76"
   },
@@ -1270,7 +1270,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 77"
   },
@@ -1289,7 +1289,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 59,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 78"
   },
@@ -1308,7 +1308,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 79"
   },
@@ -1327,7 +1327,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 232,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 200"
   },
@@ -1346,7 +1346,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 81,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 82"
   },
@@ -1365,7 +1365,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 83"
   },
@@ -1384,7 +1384,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 84"
   },
@@ -1403,7 +1403,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 59,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 23"
   },
@@ -1422,7 +1422,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 85"
   },
@@ -1441,7 +1441,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 88"
   },
@@ -1460,7 +1460,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 89"
   },
@@ -1479,7 +1479,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 90"
   },
@@ -1498,7 +1498,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 93"
   },
@@ -1517,7 +1517,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 94"
   },
@@ -1536,7 +1536,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 201"
   },
@@ -1555,7 +1555,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 98"
   },
@@ -1574,7 +1574,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 99"
   },
@@ -1593,7 +1593,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 44"
   },
@@ -1612,7 +1612,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 100"
   },
@@ -1631,7 +1631,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 86"
   },
@@ -1650,7 +1650,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 126"
   },
@@ -1669,7 +1669,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 103"
   },
@@ -1688,7 +1688,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 104"
   },
@@ -1707,7 +1707,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 12"
   },
@@ -1726,7 +1726,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 105"
   },
@@ -1745,7 +1745,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 103,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 106"
   },
@@ -1764,7 +1764,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 113"
   },
@@ -1783,7 +1783,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 227"
   },
@@ -1802,7 +1802,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 200,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 107"
   },
@@ -1821,7 +1821,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 108"
   },
@@ -1840,7 +1840,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 109"
   },
@@ -1859,7 +1859,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 114"
   },
@@ -1878,7 +1878,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 127"
   },
@@ -1897,7 +1897,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 110"
   },
@@ -1916,7 +1916,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 225,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 111"
   },
@@ -1935,7 +1935,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 112"
   },
@@ -1954,7 +1954,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 118"
   },
@@ -1973,7 +1973,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 15,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 95"
   },
@@ -1992,7 +1992,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 96"
   },
@@ -2011,7 +2011,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 61"
   },
@@ -2030,7 +2030,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 57,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 97"
   },
@@ -2049,7 +2049,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 46"
   },
@@ -2068,7 +2068,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 146"
   },
@@ -2087,7 +2087,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 91"
   },
@@ -2106,7 +2106,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 24"
   },
@@ -2125,7 +2125,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 205"
   },
@@ -2144,7 +2144,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 59,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 24"
   },
@@ -2163,7 +2163,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 119"
   },
@@ -2182,7 +2182,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 25"
   },
@@ -2201,7 +2201,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 121"
   },
@@ -2220,7 +2220,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 57,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 178"
   },
@@ -2239,7 +2239,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 159,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 122"
   },
@@ -2258,7 +2258,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 132,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 123"
   },
@@ -2277,7 +2277,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 124"
   },
@@ -2296,7 +2296,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 125"
   },
@@ -2315,7 +2315,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 130"
   },
@@ -2334,7 +2334,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 131"
   },
@@ -2353,7 +2353,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 132"
   },
@@ -2372,7 +2372,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 133"
   },
@@ -2391,7 +2391,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 22"
   },
@@ -2410,7 +2410,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 31,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 34"
   },
@@ -2429,7 +2429,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 34,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 101"
   },
@@ -2448,7 +2448,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 17,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 134"
   },
@@ -2467,7 +2467,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 34,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 115"
   },
@@ -2486,7 +2486,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 135"
   },
@@ -2505,7 +2505,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 136"
   },
@@ -2524,7 +2524,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 137"
   },
@@ -2543,7 +2543,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 36,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 138"
   },
@@ -2562,7 +2562,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 92"
   },
@@ -2581,7 +2581,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 139"
   },
@@ -2600,7 +2600,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 92,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 140"
   },
@@ -2619,7 +2619,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 175"
   },
@@ -2638,7 +2638,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 117"
   },
@@ -2657,7 +2657,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 141"
   },
@@ -2676,7 +2676,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 142"
   },
@@ -2695,7 +2695,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 142"
   },
@@ -2714,7 +2714,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 143"
   },
@@ -2733,7 +2733,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 60"
   },
@@ -2752,7 +2752,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 34,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 144"
   },
@@ -2771,7 +2771,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 145"
   },
@@ -2790,7 +2790,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 147"
   },
@@ -2809,7 +2809,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 184"
   },
@@ -2828,7 +2828,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 87"
   },
@@ -2847,7 +2847,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 148"
   },
@@ -2866,7 +2866,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 120"
   },
@@ -2885,7 +2885,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 21,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 149"
   },
@@ -2904,7 +2904,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 4,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 150"
   },
@@ -2923,7 +2923,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 10"
   },
@@ -2942,7 +2942,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 152"
   },
@@ -2961,7 +2961,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 153"
   },
@@ -2980,7 +2980,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 154"
   },
@@ -2999,7 +2999,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 155"
   },
@@ -3018,7 +3018,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 156"
   },
@@ -3037,7 +3037,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 157"
   },
@@ -3056,7 +3056,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 158"
   },
@@ -3075,7 +3075,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 159"
   },
@@ -3094,7 +3094,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 2,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 160"
   },
@@ -3113,7 +3113,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 161"
   },
@@ -3132,7 +3132,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 244"
   },
@@ -3151,7 +3151,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 162"
   },
@@ -3170,7 +3170,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 34"
   },
@@ -3189,7 +3189,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 4,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 101"
   },
@@ -3208,7 +3208,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 208"
   },
@@ -3227,7 +3227,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 231"
   },
@@ -3246,7 +3246,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 228"
   },
@@ -3265,7 +3265,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 165"
   },
@@ -3284,7 +3284,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 179"
   },
@@ -3303,7 +3303,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 166"
   },
@@ -3322,7 +3322,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 4,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 167"
   },
@@ -3341,7 +3341,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 168"
   },
@@ -3360,7 +3360,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 4,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 169"
   },
@@ -3379,7 +3379,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 116"
   },
@@ -3398,7 +3398,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 185"
   },
@@ -3417,7 +3417,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 170"
   },
@@ -3436,7 +3436,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 171"
   },
@@ -3455,7 +3455,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 70"
   },
@@ -3474,7 +3474,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 173"
   },
@@ -3493,7 +3493,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 174"
   },
@@ -3512,7 +3512,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 151"
   },
@@ -3531,7 +3531,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 176"
   },
@@ -3550,7 +3550,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 177"
   },
@@ -3569,7 +3569,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 180"
   },
@@ -3588,7 +3588,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 229"
   },
@@ -3607,7 +3607,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 181"
   },
@@ -3626,7 +3626,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 172"
   },
@@ -3645,7 +3645,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 182"
   },
@@ -3664,7 +3664,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 102"
   },
@@ -3683,7 +3683,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 21,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 188"
   },
@@ -3702,7 +3702,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 59,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 189"
   },
@@ -3721,7 +3721,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 149,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 190"
   },
@@ -3740,7 +3740,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 192"
   },
@@ -3759,7 +3759,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 193"
   },
@@ -3778,7 +3778,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 194"
   },
@@ -3797,7 +3797,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 195"
   },
@@ -3816,7 +3816,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 196"
   },
@@ -3835,7 +3835,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 197"
   },
@@ -3854,7 +3854,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 198"
   },
@@ -3873,7 +3873,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 206"
   },
@@ -3892,7 +3892,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 207"
   },
@@ -3911,7 +3911,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 1,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 191"
   },
@@ -3930,7 +3930,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 310,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 202"
   },
@@ -3949,7 +3949,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 49,
     "init": 0,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 209"
   },
@@ -3968,7 +3968,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 210"
   },
@@ -3987,7 +3987,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 213"
   },
@@ -4006,7 +4006,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 214"
   },
@@ -4025,7 +4025,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 215"
   },
@@ -4044,7 +4044,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 163"
   },
@@ -4063,7 +4063,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 216"
   },
@@ -4082,7 +4082,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 234"
   },
@@ -4101,7 +4101,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 204"
   },
@@ -4120,7 +4120,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 217"
   },
@@ -4139,7 +4139,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 128"
   },
@@ -4158,7 +4158,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 34,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 218"
   },
@@ -4177,7 +4177,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 212"
   },
@@ -4196,7 +4196,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 219"
   },
@@ -4215,7 +4215,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 220"
   },
@@ -4234,7 +4234,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 221"
   },
@@ -4253,7 +4253,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 222"
   },
@@ -4272,7 +4272,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 223"
   },
@@ -4291,7 +4291,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 224"
   },
@@ -4310,7 +4310,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": -1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 225"
   },
@@ -4329,7 +4329,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 80"
   },
@@ -4348,7 +4348,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Fifth Edition Foes: 81"
   },
@@ -4367,7 +4367,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 232"
   },
@@ -4386,7 +4386,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 236"
   },
@@ -4405,7 +4405,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 237"
   },
@@ -4424,7 +4424,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 235"
   },
@@ -4443,7 +4443,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 238"
   },
@@ -4462,7 +4462,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 239"
   },
@@ -4481,7 +4481,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 239"
   },
@@ -4500,7 +4500,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 239"
   },
@@ -4519,7 +4519,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 241"
   },
@@ -4538,7 +4538,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 149,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 242"
   },
@@ -4557,7 +4557,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 243"
   },
@@ -4576,7 +4576,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 10"
   },
@@ -4595,7 +4595,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 245"
   },
@@ -4614,7 +4614,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 246"
   },
@@ -4633,7 +4633,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 247"
   },
@@ -4652,7 +4652,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 248"
   },
@@ -4671,7 +4671,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 1,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 249"
   },
@@ -4690,7 +4690,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 230"
   },
@@ -4709,7 +4709,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 129"
   },
@@ -4728,7 +4728,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 186"
   },
@@ -4747,7 +4747,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 9"
   },
@@ -4766,7 +4766,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 25,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 250"
   },
@@ -4785,7 +4785,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 251"
   },
@@ -4804,7 +4804,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 164"
   },
@@ -4823,7 +4823,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Fifth Edition Foes: 252"
   },
@@ -4842,7 +4842,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 78"
   },
@@ -4861,7 +4861,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 30"
   },
@@ -4883,7 +4883,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 99"
   },
@@ -4902,7 +4902,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 66"
   },
@@ -4924,7 +4924,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 5"
   },
@@ -4943,7 +4943,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 33"
   },
@@ -4962,7 +4962,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 148"
   },
@@ -4984,7 +4984,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 21"
   },
@@ -5003,7 +5003,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 9"
   },
@@ -5022,7 +5022,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 121"
   },
@@ -5044,7 +5044,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 116"
   },
@@ -5063,7 +5063,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 122"
   },
@@ -5082,7 +5082,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 115"
   },
@@ -5101,7 +5101,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 115"
   },
@@ -5120,7 +5120,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 115"
   },
@@ -5139,7 +5139,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 27"
   },
@@ -5158,7 +5158,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 25"
   },
@@ -5177,7 +5177,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 87,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 139"
   },
@@ -5196,7 +5196,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 144,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 113"
   },
@@ -5218,7 +5218,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 99"
   },
@@ -5237,7 +5237,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 57"
   },
@@ -5256,7 +5256,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 131"
   },
@@ -5275,7 +5275,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 152"
   },
@@ -5294,7 +5294,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 138"
   },
@@ -5313,7 +5313,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 101,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 70"
   },
@@ -5332,7 +5332,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 142"
   },
@@ -5351,7 +5351,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 94"
   },
@@ -5370,7 +5370,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 71"
   },
@@ -5389,7 +5389,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 26"
   },
@@ -5408,7 +5408,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 126"
   },
@@ -5430,7 +5430,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 74"
   },
@@ -5449,7 +5449,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 166"
   },
@@ -5468,7 +5468,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 79"
   },
@@ -5487,7 +5487,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 131"
   },
@@ -5506,7 +5506,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 44"
   },
@@ -5525,7 +5525,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 125,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 17"
   },
@@ -5544,7 +5544,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 138"
   },
@@ -5563,7 +5563,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 59"
   },
@@ -5582,7 +5582,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 142"
   },
@@ -5601,7 +5601,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 70"
   },
@@ -5620,7 +5620,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 127"
   },
@@ -5639,7 +5639,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 189,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 81"
   },
@@ -5658,7 +5658,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 170,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 114"
   },
@@ -5677,7 +5677,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 165"
   },
@@ -5696,7 +5696,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 62"
   },
@@ -5715,7 +5715,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 71,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 79"
   },
@@ -5737,7 +5737,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 99"
   },
@@ -5756,7 +5756,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 144,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 48"
   },
@@ -5775,7 +5775,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 162,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 147"
   },
@@ -5797,7 +5797,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 49"
   },
@@ -5816,7 +5816,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 87"
   },
@@ -5838,7 +5838,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 99"
   },
@@ -5857,7 +5857,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 64"
   },
@@ -5876,7 +5876,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 127"
   },
@@ -5898,7 +5898,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 34"
   },
@@ -5917,7 +5917,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 88,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 84"
   },
@@ -5936,7 +5936,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 160"
   },
@@ -5955,7 +5955,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 81,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 85"
   },
@@ -5974,7 +5974,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 106"
   },
@@ -5996,7 +5996,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 86"
   },
@@ -6015,7 +6015,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 112"
   },
@@ -6034,7 +6034,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 128"
   },
@@ -6053,7 +6053,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 130,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 62"
   },
@@ -6075,7 +6075,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 170,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 98"
   },
@@ -6094,7 +6094,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 143"
   },
@@ -6113,7 +6113,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 57"
   },
@@ -6132,7 +6132,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 209,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 105"
   },
@@ -6151,7 +6151,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 107"
   },
@@ -6170,7 +6170,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 152"
   },
@@ -6189,7 +6189,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 94"
   },
@@ -6211,7 +6211,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 106,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 27"
   },
@@ -6230,7 +6230,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 137"
   },
@@ -6249,7 +6249,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 131"
   },
@@ -6268,7 +6268,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 165"
   },
@@ -6287,7 +6287,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 101"
   },
@@ -6306,7 +6306,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 111"
   },
@@ -6328,7 +6328,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 88"
   },
@@ -6347,7 +6347,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 65"
   },
@@ -6366,7 +6366,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 9"
   },
@@ -6385,7 +6385,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 33"
   },
@@ -6404,7 +6404,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 159"
   },
@@ -6423,7 +6423,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 93"
   },
@@ -6442,7 +6442,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 130,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 7"
   },
@@ -6461,7 +6461,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 20"
   },
@@ -6480,7 +6480,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 158"
   },
@@ -6502,7 +6502,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 207,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 35"
   },
@@ -6521,7 +6521,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 107"
   },
@@ -6540,7 +6540,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 164"
   },
@@ -6559,7 +6559,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 108"
   },
@@ -6578,7 +6578,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 153"
   },
@@ -6597,7 +6597,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Demon Cults & Secret Societies: 152"
   },
@@ -6616,7 +6616,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 6"
   },
@@ -6635,7 +6635,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 51"
   },
@@ -6657,7 +6657,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Demon Cults & Secret Societies: 89"
   },
@@ -6676,7 +6676,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 230,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 16"
   },
@@ -6695,7 +6695,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 230,
     "init": 4,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 16"
   },
@@ -6714,7 +6714,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 10"
   },
@@ -6733,7 +6733,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 429,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 78"
   },
@@ -6752,7 +6752,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 429,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 78"
   },
@@ -6771,7 +6771,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 315,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 71"
   },
@@ -6790,7 +6790,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 290,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 17"
   },
@@ -6809,7 +6809,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 290,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 17"
   },
@@ -6828,7 +6828,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 33"
   },
@@ -6847,7 +6847,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 72"
   },
@@ -6866,7 +6866,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 72"
   },
@@ -6885,7 +6885,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 11"
   },
@@ -6904,7 +6904,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 11"
   },
@@ -6923,7 +6923,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 407,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 47"
   },
@@ -6942,7 +6942,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 12"
   },
@@ -6961,7 +6961,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 12"
   },
@@ -6980,7 +6980,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 20,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 13"
   },
@@ -6999,7 +6999,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 13"
   },
@@ -7018,7 +7018,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 20,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 13"
   },
@@ -7037,7 +7037,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 99"
   },
@@ -7056,7 +7056,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 145"
   },
@@ -7075,7 +7075,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 49,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 99"
   },
@@ -7094,7 +7094,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 99"
   },
@@ -7113,7 +7113,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 145"
   },
@@ -7132,7 +7132,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 151"
   },
@@ -7151,7 +7151,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 135"
   },
@@ -7170,7 +7170,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 15"
   },
@@ -7189,7 +7189,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 50"
   },
@@ -7208,7 +7208,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 15"
   },
@@ -7227,7 +7227,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 405,
     "init": -1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 80"
   },
@@ -7246,7 +7246,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 405,
     "init": -1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 80"
   },
@@ -7265,7 +7265,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 255,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 73"
   },
@@ -7284,7 +7284,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 50"
   },
@@ -7303,7 +7303,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 192,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 51"
   },
@@ -7322,7 +7322,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 99"
   },
@@ -7341,7 +7341,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 99"
   },
@@ -7360,7 +7360,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 26"
   },
@@ -7379,7 +7379,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 333,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 53"
   },
@@ -7398,7 +7398,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 26"
   },
@@ -7417,7 +7417,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 200,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 52"
   },
@@ -7436,7 +7436,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 145"
   },
@@ -7455,7 +7455,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 18"
   },
@@ -7474,7 +7474,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 52"
   },
@@ -7493,7 +7493,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 500,
     "init": 8,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 83"
   },
@@ -7512,7 +7512,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 500,
     "init": 8,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 83"
   },
@@ -7531,7 +7531,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 65"
   },
@@ -7550,7 +7550,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 151"
   },
@@ -7569,7 +7569,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 6,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 145"
   },
@@ -7588,7 +7588,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 151"
   },
@@ -7607,7 +7607,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 1,
     "init": 8,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 145"
   },
@@ -7626,7 +7626,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 20"
   },
@@ -7645,7 +7645,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 21"
   },
@@ -7664,7 +7664,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 21"
   },
@@ -7683,7 +7683,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 63,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 24"
   },
@@ -7702,7 +7702,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 24"
   },
@@ -7721,7 +7721,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 151"
   },
@@ -7740,7 +7740,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 26"
   },
@@ -7759,7 +7759,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 210,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 28"
   },
@@ -7778,7 +7778,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 88,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 28"
   },
@@ -7797,7 +7797,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 414,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 29"
   },
@@ -7816,7 +7816,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 146"
   },
@@ -7835,7 +7835,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 146"
   },
@@ -7854,7 +7854,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 35"
   },
@@ -7873,7 +7873,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 146"
   },
@@ -7892,7 +7892,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 146"
   },
@@ -7911,7 +7911,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 147"
   },
@@ -7930,7 +7930,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 57,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 147"
   },
@@ -7949,7 +7949,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 30"
   },
@@ -7968,7 +7968,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 30"
   },
@@ -7987,7 +7987,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 31"
   },
@@ -8006,7 +8006,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 3,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 31"
   },
@@ -8025,7 +8025,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 32"
   },
@@ -8044,7 +8044,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 189,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 135"
   },
@@ -8063,7 +8063,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 370,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 101"
   },
@@ -8082,7 +8082,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 330,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 95"
   },
@@ -8101,7 +8101,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 350,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 94"
   },
@@ -8120,7 +8120,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 390,
     "init": -1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 98"
   },
@@ -8139,7 +8139,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 322,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 19"
   },
@@ -8158,7 +8158,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 37"
   },
@@ -8177,7 +8177,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 114"
   },
@@ -8196,7 +8196,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 135"
   },
@@ -8215,7 +8215,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 73"
   },
@@ -8234,7 +8234,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 34"
   },
@@ -8253,7 +8253,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 34"
   },
@@ -8272,7 +8272,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 35"
   },
@@ -8291,7 +8291,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 65"
   },
@@ -8310,7 +8310,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 152"
   },
@@ -8329,7 +8329,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 147"
   },
@@ -8348,7 +8348,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 37"
   },
@@ -8367,7 +8367,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 38"
   },
@@ -8386,7 +8386,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 38"
   },
@@ -8405,7 +8405,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 38"
   },
@@ -8424,7 +8424,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 38"
   },
@@ -8443,7 +8443,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 132,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 130"
   },
@@ -8462,7 +8462,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 137"
   },
@@ -8481,7 +8481,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 137"
   },
@@ -8500,7 +8500,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 39"
   },
@@ -8519,7 +8519,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 147"
   },
@@ -8538,7 +8538,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 81,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 39"
   },
@@ -8557,7 +8557,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 152"
   },
@@ -8576,7 +8576,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 152"
   },
@@ -8595,7 +8595,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 33"
   },
@@ -8614,7 +8614,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 22"
   },
@@ -8633,7 +8633,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 22"
   },
@@ -8652,7 +8652,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 147"
   },
@@ -8671,7 +8671,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 189,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 40"
   },
@@ -8690,7 +8690,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 63,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 41"
   },
@@ -8709,7 +8709,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 41"
   },
@@ -8728,7 +8728,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 230,
     "init": -1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 42"
   },
@@ -8747,7 +8747,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 95"
   },
@@ -8766,7 +8766,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 125,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 94"
   },
@@ -8785,7 +8785,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 300,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 74"
   },
@@ -8804,7 +8804,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 56,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 43"
   },
@@ -8823,7 +8823,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 363,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 102"
   },
@@ -8842,7 +8842,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 46"
   },
@@ -8861,7 +8861,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 199,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 46"
   },
@@ -8880,7 +8880,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 255,
     "init": 7,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 84"
   },
@@ -8899,7 +8899,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 255,
     "init": 7,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 84"
   },
@@ -8918,7 +8918,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 255,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 74"
   },
@@ -8937,7 +8937,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 1,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 148"
   },
@@ -8956,7 +8956,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 138,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 19"
   },
@@ -8975,7 +8975,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 37"
   },
@@ -8994,7 +8994,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 95"
   },
@@ -9013,7 +9013,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 148"
   },
@@ -9032,7 +9032,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 48"
   },
@@ -9051,7 +9051,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 121,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 65"
   },
@@ -9070,7 +9070,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": -4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 14"
   },
@@ -9089,7 +9089,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 14"
   },
@@ -9108,7 +9108,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 58"
   },
@@ -9127,7 +9127,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 60"
   },
@@ -9146,7 +9146,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 60"
   },
@@ -9165,7 +9165,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 58"
   },
@@ -9184,7 +9184,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 59"
   },
@@ -9203,7 +9203,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 59"
   },
@@ -9222,7 +9222,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 62"
   },
@@ -9241,7 +9241,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 170,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 131"
   },
@@ -9260,7 +9260,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 62"
   },
@@ -9279,7 +9279,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 61"
   },
@@ -9298,7 +9298,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 61"
   },
@@ -9317,7 +9317,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 61"
   },
@@ -9336,7 +9336,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 15,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 63"
   },
@@ -9355,7 +9355,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 64"
   },
@@ -9374,7 +9374,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 64"
   },
@@ -9393,7 +9393,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 184,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 66"
   },
@@ -9412,7 +9412,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 250,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 86"
   },
@@ -9431,7 +9431,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 250,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 86"
   },
@@ -9450,7 +9450,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 67"
   },
@@ -9469,7 +9469,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 152"
   },
@@ -9488,7 +9488,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 75"
   },
@@ -9507,7 +9507,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 67"
   },
@@ -9526,7 +9526,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 294,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 68"
   },
@@ -9545,7 +9545,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 69"
   },
@@ -9564,7 +9564,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 94,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 69"
   },
@@ -9583,7 +9583,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 92"
   },
@@ -9602,7 +9602,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 92"
   },
@@ -9621,7 +9621,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 615,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 104"
   },
@@ -9640,7 +9640,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 615,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 104"
   },
@@ -9659,7 +9659,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 132"
   },
@@ -9678,7 +9678,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 147,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 101"
   },
@@ -9697,7 +9697,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 1,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 148"
   },
@@ -9716,7 +9716,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 14"
   },
@@ -9735,7 +9735,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 148"
   },
@@ -9754,7 +9754,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 100"
   },
@@ -9773,7 +9773,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 141"
   },
@@ -9792,7 +9792,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 100"
   },
@@ -9811,7 +9811,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 148"
   },
@@ -9830,7 +9830,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -9849,7 +9849,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -9868,7 +9868,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -9887,7 +9887,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -9906,7 +9906,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 148"
   },
@@ -9925,7 +9925,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 36,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 93"
   },
@@ -9944,7 +9944,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 507,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 108"
   },
@@ -9963,7 +9963,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 507,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 108"
   },
@@ -9982,7 +9982,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 46,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 153"
   },
@@ -10001,7 +10001,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 76"
   },
@@ -10020,7 +10020,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 93"
   },
@@ -10039,7 +10039,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 154"
   },
@@ -10058,7 +10058,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 54"
   },
@@ -10077,7 +10077,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 108,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 29"
   },
@@ -10096,7 +10096,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 149"
   },
@@ -10115,7 +10115,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 70"
   },
@@ -10134,7 +10134,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 200,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 70"
   },
@@ -10153,7 +10153,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 70"
   },
@@ -10172,7 +10172,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 70"
   },
@@ -10191,7 +10191,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 154"
   },
@@ -10210,7 +10210,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 149"
   },
@@ -10229,7 +10229,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 88"
   },
@@ -10248,7 +10248,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 88"
   },
@@ -10267,7 +10267,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 76"
   },
@@ -10286,7 +10286,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 23"
   },
@@ -10305,7 +10305,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 23"
   },
@@ -10324,7 +10324,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 154"
   },
@@ -10343,7 +10343,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 187,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 112"
   },
@@ -10362,7 +10362,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 112"
   },
@@ -10381,7 +10381,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 154"
   },
@@ -10400,7 +10400,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 204,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 155"
   },
@@ -10419,7 +10419,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 155"
   },
@@ -10438,7 +10438,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 50"
   },
@@ -10457,7 +10457,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 113"
   },
@@ -10476,7 +10476,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 155"
   },
@@ -10495,7 +10495,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 195,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 54"
   },
@@ -10514,7 +10514,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 100"
   },
@@ -10533,7 +10533,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 88,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 113"
   },
@@ -10552,7 +10552,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 468,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 110"
   },
@@ -10571,7 +10571,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 468,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 110"
   },
@@ -10590,7 +10590,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 63"
   },
@@ -10609,7 +10609,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 141"
   },
@@ -10628,7 +10628,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 290,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 149"
   },
@@ -10647,7 +10647,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 117"
   },
@@ -10666,7 +10666,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 114"
   },
@@ -10685,7 +10685,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 115"
   },
@@ -10704,7 +10704,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 116"
   },
@@ -10723,7 +10723,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 116"
   },
@@ -10742,7 +10742,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 117"
   },
@@ -10761,7 +10761,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 138"
   },
@@ -10780,7 +10780,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 138"
   },
@@ -10799,7 +10799,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 139"
   },
@@ -10818,7 +10818,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 139"
   },
@@ -10837,7 +10837,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 225,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 140"
   },
@@ -10856,7 +10856,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 1,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 140"
   },
@@ -10875,7 +10875,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 21,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 117"
   },
@@ -10894,7 +10894,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 35,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 117"
   },
@@ -10913,7 +10913,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 20,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 118"
   },
@@ -10932,7 +10932,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": -4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 119"
   },
@@ -10951,7 +10951,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": -4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 119"
   },
@@ -10970,7 +10970,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 6,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 120"
   },
@@ -10989,7 +10989,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 120"
   },
@@ -11008,7 +11008,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 56,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 120"
   },
@@ -11027,7 +11027,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 33"
   },
@@ -11046,7 +11046,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 33"
   },
@@ -11065,7 +11065,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 122"
   },
@@ -11084,7 +11084,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 775,
     "init": -2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 90"
   },
@@ -11103,7 +11103,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 775,
     "init": -2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 90"
   },
@@ -11122,7 +11122,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 123"
   },
@@ -11141,7 +11141,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 124"
   },
@@ -11160,7 +11160,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 124"
   },
@@ -11179,7 +11179,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 124"
   },
@@ -11198,7 +11198,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 27"
   },
@@ -11217,7 +11217,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 126"
   },
@@ -11236,7 +11236,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 126"
   },
@@ -11255,7 +11255,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 127"
   },
@@ -11274,7 +11274,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 147,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 127"
   },
@@ -11293,7 +11293,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 36,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 126"
   },
@@ -11312,7 +11312,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 367,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Orient: 55"
   },
@@ -11331,7 +11331,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 190,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 27"
   },
@@ -11350,7 +11350,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 350,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 77"
   },
@@ -11369,7 +11369,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 96"
   },
@@ -11388,7 +11388,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 230,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monsters of the Orient: 128"
   },
@@ -11407,7 +11407,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 128"
   },
@@ -11426,7 +11426,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 133"
   },
@@ -11445,7 +11445,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 9,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 134"
   },
@@ -11464,7 +11464,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 280,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 96"
   },
@@ -11483,7 +11483,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 134"
   },
@@ -11502,7 +11502,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 155"
   },
@@ -11521,7 +11521,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 56"
   },
@@ -11540,7 +11540,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 57"
   },
@@ -11559,7 +11559,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 56"
   },
@@ -11578,7 +11578,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 57"
   },
@@ -11597,7 +11597,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 57"
   },
@@ -11616,7 +11616,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 150"
   },
@@ -11635,7 +11635,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -11654,7 +11654,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -11673,7 +11673,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -11692,7 +11692,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 44"
   },
@@ -11711,7 +11711,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 156"
   },
@@ -11730,7 +11730,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 156"
   },
@@ -11749,7 +11749,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 156"
   },
@@ -11768,7 +11768,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 156"
   },
@@ -11787,7 +11787,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 157"
   },
@@ -11806,7 +11806,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 149"
   },
@@ -11825,7 +11825,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 142"
   },
@@ -11844,7 +11844,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 142"
   },
@@ -11863,7 +11863,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 345,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 77"
   },
@@ -11882,7 +11882,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 100"
   },
@@ -11901,7 +11901,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 190,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 18"
   },
@@ -11920,7 +11920,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 143"
   },
@@ -11939,7 +11939,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Orient: 144"
   },
@@ -11958,7 +11958,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 158"
   },
@@ -11977,7 +11977,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 181"
   },
@@ -11996,7 +11996,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 73"
   },
@@ -12015,7 +12015,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 158"
   },
@@ -12034,7 +12034,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 142"
   },
@@ -12053,7 +12053,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 181"
   },
@@ -12072,7 +12072,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 1: 150"
   },
@@ -12091,7 +12091,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 163"
   },
@@ -12110,7 +12110,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 73"
   },
@@ -12129,7 +12129,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 35,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 1: 157"
   },
@@ -12148,7 +12148,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 158"
   },
@@ -12167,7 +12167,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 1: 156"
   },
@@ -12186,7 +12186,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 15"
   },
@@ -12205,7 +12205,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 159"
   },
@@ -12224,7 +12224,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 15"
   },
@@ -12243,7 +12243,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 26,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 15"
   },
@@ -12262,7 +12262,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 16"
   },
@@ -12281,7 +12281,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 43,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 1: 156"
   },
@@ -12300,7 +12300,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 33"
   },
@@ -12319,7 +12319,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 33"
   },
@@ -12338,7 +12338,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 34"
   },
@@ -12357,7 +12357,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 35"
   },
@@ -12376,7 +12376,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 35"
   },
@@ -12395,7 +12395,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 159"
   },
@@ -12414,7 +12414,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 1: 163"
   },
@@ -12433,7 +12433,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 74"
   },
@@ -12452,7 +12452,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 74"
   },
@@ -12471,7 +12471,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 16"
   },
@@ -12490,7 +12490,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 48,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 159"
   },
@@ -12509,7 +12509,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 57,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 74"
   },
@@ -12528,7 +12528,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 160"
   },
@@ -12547,7 +12547,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 177"
   },
@@ -12566,7 +12566,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 1: 149"
   },
@@ -12585,7 +12585,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 186"
   },
@@ -12604,7 +12604,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 1: 17"
   },
@@ -12623,7 +12623,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 47,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 87"
   },
@@ -12642,7 +12642,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 2: 46"
   },
@@ -12661,7 +12661,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 237,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Quests of Doom Volume 2: 100"
   },
@@ -12680,7 +12680,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 6"
   },
@@ -12699,7 +12699,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 5"
   },
@@ -12718,7 +12718,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 6"
   },
@@ -12737,7 +12737,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 5"
   },
@@ -12756,7 +12756,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 5"
   },
@@ -12775,7 +12775,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 87"
   },
@@ -12794,7 +12794,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 11"
   },
@@ -12813,7 +12813,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 57"
   },
@@ -12832,7 +12832,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 31,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 57"
   },
@@ -12851,7 +12851,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 36,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 58"
   },
@@ -12870,7 +12870,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 14"
   },
@@ -12889,7 +12889,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 80,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 58"
   },
@@ -12908,7 +12908,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 58"
   },
@@ -12927,7 +12927,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 59"
   },
@@ -12946,7 +12946,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 52"
   },
@@ -12965,7 +12965,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 59"
   },
@@ -12984,7 +12984,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 88"
   },
@@ -13003,7 +13003,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Quests of Doom Volume 2: 87"
   },
@@ -13022,7 +13022,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 220"
   },
@@ -13041,7 +13041,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 225"
   },
@@ -13060,7 +13060,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 224"
   },
@@ -13079,7 +13079,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 225"
   },
@@ -13098,7 +13098,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 6,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 224"
   },
@@ -13117,7 +13117,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 226"
   },
@@ -13136,7 +13136,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 227"
   },
@@ -13155,7 +13155,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 238"
   },
@@ -13174,7 +13174,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 220"
   },
@@ -13193,7 +13193,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 239"
   },
@@ -13212,7 +13212,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 189,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 243"
   },
@@ -13231,7 +13231,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 239"
   },
@@ -13250,7 +13250,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 390,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Primeval Thule Campaign Setting: 248"
   },
@@ -13269,7 +13269,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 236"
   },
@@ -13288,7 +13288,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 230"
   },
@@ -13307,7 +13307,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 221"
   },
@@ -13326,7 +13326,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 244"
   },
@@ -13345,7 +13345,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Primeval Thule Campaign Setting: 252"
   },
@@ -13364,7 +13364,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 348,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Primeval Thule Campaign Setting: 250"
   },
@@ -13383,7 +13383,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Primeval Thule Campaign Setting: 253"
   },
@@ -13402,7 +13402,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 244"
   },
@@ -13421,7 +13421,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 245"
   },
@@ -13440,7 +13440,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 145,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 221"
   },
@@ -13459,7 +13459,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Primeval Thule Campaign Setting: 254"
   },
@@ -13478,7 +13478,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 236"
   },
@@ -13497,7 +13497,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 237"
   },
@@ -13516,7 +13516,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 246"
   },
@@ -13535,7 +13535,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 232"
   },
@@ -13554,7 +13554,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 233"
   },
@@ -13573,7 +13573,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 232"
   },
@@ -13592,7 +13592,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 249"
   },
@@ -13611,7 +13611,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 250,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 231"
   },
@@ -13630,7 +13630,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 234"
   },
@@ -13649,7 +13649,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 234"
   },
@@ -13668,7 +13668,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 235"
   },
@@ -13687,7 +13687,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 235"
   },
@@ -13706,7 +13706,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Primeval Thule Campaign Setting: 255"
   },
@@ -13725,7 +13725,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 222"
   },
@@ -13744,7 +13744,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 241"
   },
@@ -13763,7 +13763,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 240"
   },
@@ -13782,7 +13782,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 240"
   },
@@ -13801,7 +13801,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 280,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 246"
   },
@@ -13820,7 +13820,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 222"
   },
@@ -13839,7 +13839,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 251"
   },
@@ -13858,7 +13858,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 247"
   },
@@ -13877,7 +13877,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 253"
   },
@@ -13896,7 +13896,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 241"
   },
@@ -13915,7 +13915,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 252"
   },
@@ -13934,7 +13934,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 142,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 228"
   },
@@ -13953,7 +13953,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 195,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 229"
   },
@@ -13972,7 +13972,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 51,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 223"
   },
@@ -13991,7 +13991,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 223"
   },
@@ -14010,7 +14010,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Campaign Setting: 242"
   },
@@ -14029,7 +14029,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 18"
   },
@@ -14048,7 +14048,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 23"
   },
@@ -14067,7 +14067,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 19"
   },
@@ -14086,7 +14086,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 16"
   },
@@ -14105,7 +14105,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 17"
   },
@@ -14124,7 +14124,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 19"
   },
@@ -14143,7 +14143,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 18"
   },
@@ -14162,7 +14162,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 17"
   },
@@ -14181,7 +14181,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 20"
   },
@@ -14200,7 +14200,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 49,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 21"
   },
@@ -14219,7 +14219,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 21"
   },
@@ -14238,7 +14238,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 123,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 14"
   },
@@ -14257,7 +14257,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Primeval Thule Gamemaster's Companion: 15"
   },
@@ -14276,7 +14276,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 287,
     "init": 7,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Primeval Thule Gamemaster's Companion: 22"
   },
@@ -14295,7 +14295,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 187,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 11"
   },
@@ -14314,7 +14314,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 12"
   },
@@ -14333,7 +14333,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 243,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 125"
   },
@@ -14352,7 +14352,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 212,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 129"
   },
@@ -14371,7 +14371,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 184,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 133"
   },
@@ -14390,7 +14390,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 327"
   },
@@ -14409,7 +14409,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 225,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 135"
   },
@@ -14428,7 +14428,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 229,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 139"
   },
@@ -14447,7 +14447,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 237,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 143"
   },
@@ -14466,7 +14466,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 138,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 82"
   },
@@ -14485,7 +14485,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 172,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 211"
   },
@@ -14504,7 +14504,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 13"
   },
@@ -14523,7 +14523,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 148"
   },
@@ -14542,7 +14542,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 14"
   },
@@ -14561,7 +14561,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 350,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 84"
   },
@@ -14580,7 +14580,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 49,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 15"
   },
@@ -14599,7 +14599,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 15"
   },
@@ -14618,7 +14618,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 16"
   },
@@ -14637,7 +14637,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 481,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 128"
   },
@@ -14656,7 +14656,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 297,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 132"
   },
@@ -14675,7 +14675,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 481,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 135"
   },
@@ -14694,7 +14694,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 198,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 380"
   },
@@ -14713,7 +14713,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 448,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 138"
   },
@@ -14732,7 +14732,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 425,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 142"
   },
@@ -14751,7 +14751,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 228,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 17"
   },
@@ -14770,7 +14770,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 19"
   },
@@ -14789,7 +14789,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 22"
   },
@@ -14808,7 +14808,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 24"
   },
@@ -14827,7 +14827,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 75"
   },
@@ -14846,7 +14846,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 275,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 95"
   },
@@ -14865,7 +14865,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 25"
   },
@@ -14884,7 +14884,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 358"
   },
@@ -14903,7 +14903,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 26"
   },
@@ -14922,7 +14922,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 27"
   },
@@ -14941,7 +14941,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 149"
   },
@@ -14960,7 +14960,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 102"
   },
@@ -14979,7 +14979,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 28"
   },
@@ -14998,7 +14998,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 29"
   },
@@ -15017,7 +15017,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 31"
   },
@@ -15036,7 +15036,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 418"
   },
@@ -15055,7 +15055,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 40,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 32"
   },
@@ -15074,7 +15074,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 186"
   },
@@ -15093,7 +15093,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 33"
   },
@@ -15112,7 +15112,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 213"
   },
@@ -15131,7 +15131,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 34"
   },
@@ -15150,7 +15150,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 35"
   },
@@ -15169,7 +15169,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 70,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 36"
   },
@@ -15188,7 +15188,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 76"
   },
@@ -15207,7 +15207,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 418"
   },
@@ -15226,7 +15226,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 37"
   },
@@ -15245,7 +15245,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 178,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 242"
   },
@@ -15264,7 +15264,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 63,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 38"
   },
@@ -15283,7 +15283,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 39"
   },
@@ -15302,7 +15302,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 40"
   },
@@ -15321,7 +15321,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 198,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 41"
   },
@@ -15340,7 +15340,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 195,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 214"
   },
@@ -15359,7 +15359,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 6,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 42"
   },
@@ -15378,7 +15378,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 44"
   },
@@ -15397,7 +15397,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 45"
   },
@@ -15416,7 +15416,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 46"
   },
@@ -15435,7 +15435,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 199,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 47"
   },
@@ -15454,7 +15454,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 48"
   },
@@ -15473,7 +15473,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 49"
   },
@@ -15492,7 +15492,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 50"
   },
@@ -15511,7 +15511,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 537,
     "init": 6,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 85"
   },
@@ -15530,7 +15530,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 264,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 51"
   },
@@ -15549,7 +15549,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 52"
   },
@@ -15568,7 +15568,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 127"
   },
@@ -15587,7 +15587,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 53"
   },
@@ -15606,7 +15606,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 88,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 20"
   },
@@ -15625,7 +15625,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 54"
   },
@@ -15644,7 +15644,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 55"
   },
@@ -15663,7 +15663,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 50,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 56"
   },
@@ -15682,7 +15682,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 57"
   },
@@ -15701,7 +15701,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 17,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 58"
   },
@@ -15720,7 +15720,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 419"
   },
@@ -15739,7 +15739,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 59"
   },
@@ -15758,7 +15758,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 15,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 60"
   },
@@ -15777,7 +15777,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 61"
   },
@@ -15796,7 +15796,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 71,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 62"
   },
@@ -15815,7 +15815,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 63"
   },
@@ -15834,7 +15834,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 64"
   },
@@ -15853,7 +15853,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 65"
   },
@@ -15872,7 +15872,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 25,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 66"
   },
@@ -15891,7 +15891,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 67"
   },
@@ -15910,7 +15910,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 36,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 68"
   },
@@ -15929,7 +15929,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 187,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 104"
   },
@@ -15948,7 +15948,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 150"
   },
@@ -15967,7 +15967,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 207,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 69"
   },
@@ -15986,7 +15986,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 423"
   },
@@ -16005,7 +16005,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 311"
   },
@@ -16024,7 +16024,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 151"
   },
@@ -16043,7 +16043,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 105"
   },
@@ -16062,7 +16062,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 216"
   },
@@ -16081,7 +16081,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 49,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 70"
   },
@@ -16100,7 +16100,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 71"
   },
@@ -16119,7 +16119,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 300"
   },
@@ -16138,7 +16138,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 72"
   },
@@ -16157,7 +16157,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 152"
   },
@@ -16176,7 +16176,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 73"
   },
@@ -16195,7 +16195,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 74"
   },
@@ -16214,7 +16214,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 73"
   },
@@ -16233,7 +16233,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 381"
   },
@@ -16252,7 +16252,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 2,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 92"
   },
@@ -16271,7 +16271,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 93"
   },
@@ -16290,7 +16290,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 175,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 222"
   },
@@ -16309,7 +16309,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 420"
   },
@@ -16328,7 +16328,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 118"
   },
@@ -16347,7 +16347,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 119"
   },
@@ -16366,7 +16366,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 120"
   },
@@ -16385,7 +16385,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 121"
   },
@@ -16404,7 +16404,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 122"
   },
@@ -16423,7 +16423,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 123"
   },
@@ -16442,7 +16442,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 124"
   },
@@ -16461,7 +16461,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 230,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 146"
   },
@@ -16480,7 +16480,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 147"
   },
@@ -16499,7 +16499,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 157"
   },
@@ -16518,7 +16518,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 158"
   },
@@ -16537,7 +16537,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 159"
   },
@@ -16556,7 +16556,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 171"
   },
@@ -16575,7 +16575,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 178,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 161"
   },
@@ -16594,7 +16594,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 162"
   },
@@ -16613,7 +16613,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 160"
   },
@@ -16632,7 +16632,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 232"
   },
@@ -16651,7 +16651,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 420"
   },
@@ -16670,7 +16670,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 40,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 163"
   },
@@ -16689,7 +16689,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 164"
   },
@@ -16708,7 +16708,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 165"
   },
@@ -16727,7 +16727,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 166"
   },
@@ -16746,7 +16746,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 167"
   },
@@ -16765,7 +16765,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 153"
   },
@@ -16784,7 +16784,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 168"
   },
@@ -16803,7 +16803,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 290,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 169"
   },
@@ -16822,7 +16822,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 422"
   },
@@ -16841,7 +16841,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 175"
   },
@@ -16860,7 +16860,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 421"
   },
@@ -16879,7 +16879,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 204,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 218"
   },
@@ -16898,7 +16898,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 176"
   },
@@ -16917,7 +16917,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 123,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 172"
   },
@@ -16936,7 +16936,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 177"
   },
@@ -16955,7 +16955,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 178"
   },
@@ -16974,7 +16974,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 178"
   },
@@ -16993,7 +16993,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 233"
   },
@@ -17012,7 +17012,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 179"
   },
@@ -17031,7 +17031,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 182,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 180"
   },
@@ -17050,7 +17050,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 123,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 181"
   },
@@ -17069,7 +17069,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 182"
   },
@@ -17088,7 +17088,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 183"
   },
@@ -17107,7 +17107,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 94,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 200"
   },
@@ -17126,7 +17126,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 21"
   },
@@ -17145,7 +17145,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 373"
   },
@@ -17164,7 +17164,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 99,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 201"
   },
@@ -17183,7 +17183,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 87,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 202"
   },
@@ -17202,7 +17202,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 223"
   },
@@ -17221,7 +17221,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 131"
   },
@@ -17240,7 +17240,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 187,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 203"
   },
@@ -17259,7 +17259,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 204"
   },
@@ -17278,7 +17278,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 173"
   },
@@ -17297,7 +17297,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 205"
   },
@@ -17316,7 +17316,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 206"
   },
@@ -17335,7 +17335,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 207"
   },
@@ -17354,7 +17354,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 208"
   },
@@ -17373,7 +17373,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 209"
   },
@@ -17392,7 +17392,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 71,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 210"
   },
@@ -17411,7 +17411,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 212"
   },
@@ -17430,7 +17430,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 423"
   },
@@ -17449,7 +17449,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 361"
   },
@@ -17468,7 +17468,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 23"
   },
@@ -17487,7 +17487,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 23"
   },
@@ -17506,7 +17506,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 106"
   },
@@ -17525,7 +17525,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 228"
   },
@@ -17544,7 +17544,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 63,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 229"
   },
@@ -17563,7 +17563,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 230"
   },
@@ -17582,7 +17582,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 231"
   },
@@ -17601,7 +17601,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 238"
   },
@@ -17620,7 +17620,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 71"
   },
@@ -17639,7 +17639,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 240"
   },
@@ -17658,7 +17658,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 174"
   },
@@ -17677,7 +17677,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 270,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 241"
   },
@@ -17696,7 +17696,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 359"
   },
@@ -17715,7 +17715,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 247"
   },
@@ -17734,7 +17734,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 248"
   },
@@ -17753,7 +17753,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 249"
   },
@@ -17772,7 +17772,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 234"
   },
@@ -17791,7 +17791,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 250"
   },
@@ -17810,7 +17810,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 251"
   },
@@ -17829,7 +17829,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 241,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 224"
   },
@@ -17848,7 +17848,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 94,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 252"
   },
@@ -17867,7 +17867,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 253"
   },
@@ -17886,7 +17886,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 170,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Tome of Beasts: 98"
   },
@@ -17905,7 +17905,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 254"
   },
@@ -17924,7 +17924,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 255"
   },
@@ -17943,7 +17943,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 220"
   },
@@ -17962,7 +17962,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 256"
   },
@@ -17981,7 +17981,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 107"
   },
@@ -18000,7 +18000,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 143,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 221"
   },
@@ -18019,7 +18019,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 222,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 257"
   },
@@ -18038,7 +18038,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 258"
   },
@@ -18057,7 +18057,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 362"
   },
@@ -18076,7 +18076,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 407,
     "init": -1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 226"
   },
@@ -18095,7 +18095,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 259"
   },
@@ -18114,7 +18114,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 260"
   },
@@ -18133,7 +18133,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 77"
   },
@@ -18152,7 +18152,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 261"
   },
@@ -18171,7 +18171,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 263"
   },
@@ -18190,7 +18190,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 36,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 264"
   },
@@ -18209,7 +18209,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 265"
   },
@@ -18228,7 +18228,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 108"
   },
@@ -18247,7 +18247,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 266"
   },
@@ -18266,7 +18266,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 268"
   },
@@ -18285,7 +18285,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 269"
   },
@@ -18304,7 +18304,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 389"
   },
@@ -18323,7 +18323,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 270"
   },
@@ -18342,7 +18342,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 271"
   },
@@ -18361,7 +18361,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 271"
   },
@@ -18380,7 +18380,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 272"
   },
@@ -18399,7 +18399,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 273"
   },
@@ -18418,7 +18418,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 274"
   },
@@ -18437,7 +18437,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 275"
   },
@@ -18456,7 +18456,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 136,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 276"
   },
@@ -18475,7 +18475,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 7,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 277"
   },
@@ -18494,7 +18494,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 278"
   },
@@ -18513,7 +18513,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 229,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 188"
   },
@@ -18532,7 +18532,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 279"
   },
@@ -18551,7 +18551,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 147,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 280"
   },
@@ -18570,7 +18570,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 94,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 110"
   },
@@ -18589,7 +18589,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 281"
   },
@@ -18608,7 +18608,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 78"
   },
@@ -18627,7 +18627,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 282"
   },
@@ -18646,7 +18646,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 283"
   },
@@ -18665,7 +18665,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 378,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 99"
   },
@@ -18684,7 +18684,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 284"
   },
@@ -18703,7 +18703,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 374"
   },
@@ -18722,7 +18722,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 32,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 289"
   },
@@ -18741,7 +18741,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 207,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 285"
   },
@@ -18760,7 +18760,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 170,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 286"
   },
@@ -18779,7 +18779,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 114"
   },
@@ -18798,7 +18798,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 370,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 88"
   },
@@ -18817,7 +18817,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 287"
   },
@@ -18836,7 +18836,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 288"
   },
@@ -18855,7 +18855,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 290"
   },
@@ -18874,7 +18874,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 291"
   },
@@ -18893,7 +18893,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 292"
   },
@@ -18912,7 +18912,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 243"
   },
@@ -18931,7 +18931,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 91,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 293"
   },
@@ -18950,7 +18950,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 294"
   },
@@ -18969,7 +18969,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 295"
   },
@@ -18988,7 +18988,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 170,
     "init": 5,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 190"
   },
@@ -19007,7 +19007,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 264,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 296"
   },
@@ -19026,7 +19026,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 297"
   },
@@ -19045,7 +19045,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 298"
   },
@@ -19064,7 +19064,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 301"
   },
@@ -19083,7 +19083,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 231,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 302"
   },
@@ -19102,7 +19102,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 115"
   },
@@ -19121,7 +19121,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 303"
   },
@@ -19140,7 +19140,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 123,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 194"
   },
@@ -19159,7 +19159,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 340"
   },
@@ -19178,7 +19178,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 305"
   },
@@ -19197,7 +19197,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": -1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 8"
   },
@@ -19216,7 +19216,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 9"
   },
@@ -19235,7 +19235,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 306"
   },
@@ -19254,7 +19254,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 306"
   },
@@ -19273,7 +19273,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 308"
   },
@@ -19292,7 +19292,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 130,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 309"
   },
@@ -19311,7 +19311,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 217,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 310"
   },
@@ -19330,7 +19330,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 261,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 111"
   },
@@ -19349,7 +19349,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 312"
   },
@@ -19368,7 +19368,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 246"
   },
@@ -19387,7 +19387,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 154"
   },
@@ -19406,7 +19406,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 313"
   },
@@ -19425,7 +19425,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 314"
   },
@@ -19444,7 +19444,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 375"
   },
@@ -19463,7 +19463,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 79"
   },
@@ -19482,7 +19482,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 315"
   },
@@ -19501,7 +19501,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 370,
     "init": -2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 90"
   },
@@ -19520,7 +19520,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 316"
   },
@@ -19539,7 +19539,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 317"
   },
@@ -19558,7 +19558,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 318"
   },
@@ -19577,7 +19577,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 319"
   },
@@ -19596,7 +19596,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 320"
   },
@@ -19615,7 +19615,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 320, Tome of Beasts: 424"
   },
@@ -19634,7 +19634,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 126,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 321"
   },
@@ -19653,7 +19653,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 88,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 324"
   },
@@ -19672,7 +19672,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 21,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 322"
   },
@@ -19691,7 +19691,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 323"
   },
@@ -19710,7 +19710,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 2,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 363"
   },
@@ -19729,7 +19729,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 244"
   },
@@ -19748,7 +19748,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 325"
   },
@@ -19767,7 +19767,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 326"
   },
@@ -19786,7 +19786,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 327"
   },
@@ -19805,7 +19805,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 328"
   },
@@ -19824,7 +19824,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 3,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 196"
   },
@@ -19843,7 +19843,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 63,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 329"
   },
@@ -19862,7 +19862,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 329"
   },
@@ -19881,7 +19881,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 330"
   },
@@ -19900,7 +19900,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 80"
   },
@@ -19919,7 +19919,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 239"
   },
@@ -19938,7 +19938,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 88,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 331"
   },
@@ -19957,7 +19957,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 155"
   },
@@ -19976,7 +19976,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 93,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 113"
   },
@@ -19995,7 +19995,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 235"
   },
@@ -20014,7 +20014,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 245"
   },
@@ -20033,7 +20033,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 332"
   },
@@ -20052,7 +20052,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 364"
   },
@@ -20071,7 +20071,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 333"
   },
@@ -20090,7 +20090,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 142,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 334"
   },
@@ -20109,7 +20109,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 335"
   },
@@ -20128,7 +20128,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 180,
     "init": 5,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 192"
   },
@@ -20147,7 +20147,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 336"
   },
@@ -20166,7 +20166,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 172,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 337"
   },
@@ -20185,7 +20185,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 115,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 338"
   },
@@ -20204,7 +20204,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 339"
   },
@@ -20223,7 +20223,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 425"
   },
@@ -20242,7 +20242,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 136"
   },
@@ -20261,7 +20261,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 341"
   },
@@ -20280,7 +20280,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 342"
   },
@@ -20299,7 +20299,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 343"
   },
@@ -20318,7 +20318,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 344"
   },
@@ -20337,7 +20337,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 135,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 345"
   },
@@ -20356,7 +20356,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 31,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 171"
   },
@@ -20375,7 +20375,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 350"
   },
@@ -20394,7 +20394,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 346"
   },
@@ -20413,7 +20413,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 387,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 347"
   },
@@ -20432,7 +20432,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 348"
   },
@@ -20451,7 +20451,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 162,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 349"
   },
@@ -20470,7 +20470,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 87"
   },
@@ -20489,7 +20489,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 352"
   },
@@ -20508,7 +20508,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 225,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 353"
   },
@@ -20527,7 +20527,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 2,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 376"
   },
@@ -20546,7 +20546,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 376"
   },
@@ -20565,7 +20565,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 231,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 236"
   },
@@ -20584,7 +20584,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 123,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 198"
   },
@@ -20603,7 +20603,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 175,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 355"
   },
@@ -20622,7 +20622,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 104,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 356"
   },
@@ -20641,7 +20641,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 357"
   },
@@ -20660,7 +20660,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 83"
   },
@@ -20679,7 +20679,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 97"
   },
@@ -20698,7 +20698,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 358"
   },
@@ -20717,7 +20717,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 144,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 365"
   },
@@ -20736,7 +20736,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 54,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 366"
   },
@@ -20755,7 +20755,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 231,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 116"
   },
@@ -20774,7 +20774,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 367"
   },
@@ -20793,7 +20793,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 189,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 156"
   },
@@ -20812,7 +20812,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 187,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 368"
   },
@@ -20831,7 +20831,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 171,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 237"
   },
@@ -20850,7 +20850,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 369"
   },
@@ -20869,7 +20869,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 190,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 370"
   },
@@ -20888,7 +20888,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 340"
   },
@@ -20907,7 +20907,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 371"
   },
@@ -20926,7 +20926,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 372"
   },
@@ -20945,7 +20945,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 354"
   },
@@ -20964,7 +20964,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 378"
   },
@@ -20983,7 +20983,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 34,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 403"
   },
@@ -21002,7 +21002,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 149,
     "init": 7,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 379"
   },
@@ -21021,7 +21021,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 227"
   },
@@ -21040,7 +21040,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 232,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 382"
   },
@@ -21059,7 +21059,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 184,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 383"
   },
@@ -21078,7 +21078,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 386"
   },
@@ -21097,7 +21097,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 386"
   },
@@ -21116,7 +21116,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": 7,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 385"
   },
@@ -21135,7 +21135,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 386"
   },
@@ -21154,7 +21154,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 299,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Tome of Beasts: 101"
   },
@@ -21173,7 +21173,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 387"
   },
@@ -21192,7 +21192,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 390"
   },
@@ -21211,7 +21211,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 102,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 391"
   },
@@ -21230,7 +21230,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 84,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 397"
   },
@@ -21249,7 +21249,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 40,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 392"
   },
@@ -21268,7 +21268,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 256,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 393"
   },
@@ -21287,7 +21287,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 394"
   },
@@ -21306,7 +21306,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 395"
   },
@@ -21325,7 +21325,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 112,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 396"
   },
@@ -21344,7 +21344,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 144,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 425"
   },
@@ -21363,7 +21363,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 398"
   },
@@ -21382,7 +21382,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 299"
   },
@@ -21401,7 +21401,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 203,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 399"
   },
@@ -21420,7 +21420,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 77,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 400"
   },
@@ -21439,7 +21439,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 401"
   },
@@ -21458,7 +21458,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 402"
   },
@@ -21477,7 +21477,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 119,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 351"
   },
@@ -21496,7 +21496,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 140"
   },
@@ -21515,7 +21515,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 110,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 404"
   },
@@ -21534,7 +21534,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 58,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 405"
   },
@@ -21553,7 +21553,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 42,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 307"
   },
@@ -21572,7 +21572,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 96,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 406"
   },
@@ -21591,7 +21591,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 388"
   },
@@ -21610,7 +21610,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 6,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 407"
   },
@@ -21629,7 +21629,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 63,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 407"
   },
@@ -21648,7 +21648,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 114,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 408"
   },
@@ -21667,7 +21667,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 145"
   },
@@ -21686,7 +21686,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 409"
   },
@@ -21705,7 +21705,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 426"
   },
@@ -21724,7 +21724,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 377"
   },
@@ -21743,7 +21743,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 410"
   },
@@ -21762,7 +21762,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 411"
   },
@@ -21781,7 +21781,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 133,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 412"
   },
@@ -21800,7 +21800,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 231,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 413"
   },
@@ -21819,7 +21819,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 127"
   },
@@ -21838,7 +21838,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 161,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 130"
   },
@@ -21857,7 +21857,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 92,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 134"
   },
@@ -21876,7 +21876,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 152,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 136"
   },
@@ -21895,7 +21895,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 117"
   },
@@ -21914,7 +21914,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 157,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 140"
   },
@@ -21933,7 +21933,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 144"
   },
@@ -21952,7 +21952,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 354"
   },
@@ -21971,7 +21971,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 507,
     "init": -4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 414"
   },
@@ -21990,7 +21990,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 76,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 415"
   },
@@ -22009,7 +22009,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 189,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Tome of Beasts: 416"
   },
@@ -22028,7 +22028,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Tome of Beasts: 417"
   },
@@ -22047,7 +22047,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 37,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 117"
   },
@@ -22066,7 +22066,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 76"
   },
@@ -22085,7 +22085,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 14"
   },
@@ -22104,7 +22104,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 10"
   },
@@ -22123,7 +22123,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 12"
   },
@@ -22142,7 +22142,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 11"
   },
@@ -22161,7 +22161,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 15"
   },
@@ -22180,7 +22180,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 153,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 17"
   },
@@ -22199,7 +22199,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 38,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 13"
   },
@@ -22218,7 +22218,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 18"
   },
@@ -22237,7 +22237,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 16"
   },
@@ -22256,7 +22256,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 73"
   },
@@ -22275,7 +22275,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 31,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 74"
   },
@@ -22294,7 +22294,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 77"
   },
@@ -22313,7 +22313,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 72"
   },
@@ -22332,7 +22332,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 138,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 154"
   },
@@ -22351,7 +22351,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 5,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 107"
   },
@@ -22370,7 +22370,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 24,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 109"
   },
@@ -22389,7 +22389,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 111"
   },
@@ -22408,7 +22408,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 108"
   },
@@ -22427,7 +22427,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 110"
   },
@@ -22446,7 +22446,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 75"
   },
@@ -22465,7 +22465,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 52"
   },
@@ -22484,7 +22484,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 12,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 56"
   },
@@ -22503,7 +22503,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 53"
   },
@@ -22522,7 +22522,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 54"
   },
@@ -22541,7 +22541,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 3,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 55"
   },
@@ -22560,7 +22560,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 73,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 153"
   },
@@ -22579,7 +22579,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 162,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 156"
   },
@@ -22598,7 +22598,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 36"
   },
@@ -22617,7 +22617,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 34"
   },
@@ -22636,7 +22636,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 37"
   },
@@ -22655,7 +22655,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 21,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 38"
   },
@@ -22674,7 +22674,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 35"
   },
@@ -22693,7 +22693,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 60"
   },
@@ -22712,7 +22712,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 65"
   },
@@ -22731,7 +22731,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 61"
   },
@@ -22750,7 +22750,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 66"
   },
@@ -22769,7 +22769,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 62"
   },
@@ -22788,7 +22788,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 67"
   },
@@ -22807,7 +22807,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 17,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 63"
   },
@@ -22826,7 +22826,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 68"
   },
@@ -22845,7 +22845,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 64"
   },
@@ -22864,7 +22864,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 390,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 158"
   },
@@ -22883,7 +22883,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 89"
   },
@@ -22902,7 +22902,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 87"
   },
@@ -22921,7 +22921,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 91"
   },
@@ -22940,7 +22940,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 85"
   },
@@ -22959,7 +22959,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 117,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 93"
   },
@@ -22978,7 +22978,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 92"
   },
@@ -22997,7 +22997,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 88"
   },
@@ -23016,7 +23016,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 11,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 84"
   },
@@ -23035,7 +23035,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 90"
   },
@@ -23054,7 +23054,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 86"
   },
@@ -23073,7 +23073,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 21,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 102"
   },
@@ -23092,7 +23092,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 10,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 100"
   },
@@ -23111,7 +23111,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 28,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 103"
   },
@@ -23130,7 +23130,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 99"
   },
@@ -23149,7 +23149,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 101"
   },
@@ -23168,7 +23168,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 44"
   },
@@ -23187,7 +23187,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 150,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 157"
   },
@@ -23206,7 +23206,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 168,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 120"
   },
@@ -23225,7 +23225,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 119"
   },
@@ -23244,7 +23244,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 225,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 121"
   },
@@ -23263,7 +23263,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 66,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 118"
   },
@@ -23282,7 +23282,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 230,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 122"
   },
@@ -23301,7 +23301,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 17,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 129"
   },
@@ -23320,7 +23320,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 14,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 128"
   },
@@ -23339,7 +23339,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 130"
   },
@@ -23358,7 +23358,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 27,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 131"
   },
@@ -23377,7 +23377,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 127"
   },
@@ -23396,7 +23396,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 17,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 132"
   },
@@ -23415,7 +23415,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 138"
   },
@@ -23434,7 +23434,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 37,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 141"
   },
@@ -23453,7 +23453,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 67,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 146"
   },
@@ -23472,7 +23472,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 142"
   },
@@ -23491,7 +23491,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 143"
   },
@@ -23510,7 +23510,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 144"
   },
@@ -23529,7 +23529,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 145"
   },
@@ -23548,7 +23548,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 139"
   },
@@ -23567,7 +23567,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 85,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 147"
   },
@@ -23586,7 +23586,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 140"
   },
@@ -23605,7 +23605,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 26"
   },
@@ -23624,7 +23624,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 30"
   },
@@ -23643,7 +23643,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 25"
   },
@@ -23662,7 +23662,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 29"
   },
@@ -23681,7 +23681,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 27"
   },
@@ -23700,7 +23700,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 28"
   },
@@ -23719,7 +23719,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 68,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 45"
   },
@@ -23738,7 +23738,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 42"
   },
@@ -23757,7 +23757,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 49,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 46"
   },
@@ -23776,7 +23776,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 43"
   },
@@ -23795,7 +23795,7 @@ export const thirdPartyData: Monster[] = [
     "hp": 105,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Ultimate Bestiary Revenge of the Horde: 155"
   }

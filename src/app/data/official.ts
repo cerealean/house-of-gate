@@ -16,7 +16,7 @@ export const officialData: Monster[] = [
        "hp":333,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 235"
     },
@@ -35,7 +35,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 230"
     },
@@ -54,7 +54,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 230"
     },
@@ -73,7 +73,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 228"
     },
@@ -92,7 +92,7 @@ export const officialData: Monster[] = [
        "hp":496,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 236"
     },
@@ -111,7 +111,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 224"
     },
@@ -130,7 +130,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 225"
     },
@@ -149,7 +149,7 @@ export const officialData: Monster[] = [
        "hp":31,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Out of the Abyss: 231"
     },
@@ -168,7 +168,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 229"
     },
@@ -187,7 +187,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 227"
     },
@@ -206,7 +206,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 229"
     },
@@ -225,7 +225,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 227"
     },
@@ -244,7 +244,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 228"
     },
@@ -263,7 +263,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 231"
     },
@@ -282,7 +282,7 @@ export const officialData: Monster[] = [
        "hp":350,
        "init":1,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 238"
     },
@@ -301,7 +301,7 @@ export const officialData: Monster[] = [
        "hp":378,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 241"
     },
@@ -320,7 +320,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Out of the Abyss: 232"
     },
@@ -339,7 +339,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 229"
     },
@@ -358,7 +358,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 225"
     },
@@ -377,7 +377,7 @@ export const officialData: Monster[] = [
        "hp":350,
        "init":0,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 243"
     },
@@ -396,7 +396,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 231"
     },
@@ -415,7 +415,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Out of the Abyss: 232"
     },
@@ -437,7 +437,7 @@ export const officialData: Monster[] = [
        "hp":405,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 245"
     },
@@ -456,7 +456,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Out of the Abyss: 233"
     },
@@ -475,7 +475,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 229"
     },
@@ -494,7 +494,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Out of the Abyss: 226"
     },
@@ -513,7 +513,7 @@ export const officialData: Monster[] = [
        "hp":348,
        "init":3,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 247"
     },
@@ -532,7 +532,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 233"
     },
@@ -551,7 +551,7 @@ export const officialData: Monster[] = [
        "hp":304,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Out of the Abyss: 249"
     },
@@ -570,7 +570,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 192"
     },
@@ -589,7 +589,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":3,
        "lair":"lair",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 192"
     },
@@ -608,7 +608,7 @@ export const officialData: Monster[] = [
        "hp":117,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 212"
     },
@@ -627,7 +627,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 201"
     },
@@ -646,7 +646,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 195"
     },
@@ -665,7 +665,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 195"
     },
@@ -684,7 +684,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 196"
     },
@@ -703,7 +703,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 205"
     },
@@ -722,7 +722,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 205"
     },
@@ -741,7 +741,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 205"
     },
@@ -760,7 +760,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 210"
     },
@@ -779,7 +779,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 212"
     },
@@ -798,7 +798,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 202"
     },
@@ -817,7 +817,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 200"
     },
@@ -836,7 +836,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 200"
     },
@@ -855,7 +855,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 207"
     },
@@ -874,7 +874,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 189"
     },
@@ -893,7 +893,7 @@ export const officialData: Monster[] = [
        "hp":117,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 213"
     },
@@ -912,7 +912,7 @@ export const officialData: Monster[] = [
        "hp":105,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 201"
     },
@@ -931,7 +931,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 208"
     },
@@ -950,7 +950,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 208"
     },
@@ -969,7 +969,7 @@ export const officialData: Monster[] = [
        "hp":102,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 210"
     },
@@ -988,7 +988,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 198"
     },
@@ -1007,7 +1007,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 190"
     },
@@ -1026,7 +1026,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 190"
     },
@@ -1045,7 +1045,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 191"
     },
@@ -1064,7 +1064,7 @@ export const officialData: Monster[] = [
        "hp":325,
        "init":7,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 214"
     },
@@ -1083,7 +1083,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 199"
     },
@@ -1102,7 +1102,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 199"
     },
@@ -1121,7 +1121,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 198"
     },
@@ -1140,7 +1140,7 @@ export const officialData: Monster[] = [
        "hp":526,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 216"
     },
@@ -1159,7 +1159,7 @@ export const officialData: Monster[] = [
        "hp":324,
        "init":6,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 218"
     },
@@ -1178,7 +1178,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 207"
     },
@@ -1197,7 +1197,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 212"
     },
@@ -1216,7 +1216,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 201"
     },
@@ -1235,7 +1235,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 196"
     },
@@ -1254,7 +1254,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 208"
     },
@@ -1273,7 +1273,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 191"
     },
@@ -1292,7 +1292,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 197"
     },
@@ -1311,7 +1311,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 192"
     },
@@ -1330,7 +1330,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 203"
     },
@@ -1349,7 +1349,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":3,
        "lair":"lair",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 203"
     },
@@ -1368,7 +1368,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Princes of the Apocalypse: 213"
     },
@@ -1387,7 +1387,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 212"
     },
@@ -1406,7 +1406,7 @@ export const officialData: Monster[] = [
        "hp":55,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 192"
     },
@@ -1425,7 +1425,7 @@ export const officialData: Monster[] = [
        "hp":283,
        "init":7,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Princes of the Apocalypse: 221"
     },
@@ -1444,7 +1444,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Hoard of the Dragon Queen: 88"
     },
@@ -1463,7 +1463,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 88"
     },
@@ -1482,7 +1482,7 @@ export const officialData: Monster[] = [
        "hp":138,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 89"
     },
@@ -1501,7 +1501,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 89"
     },
@@ -1520,7 +1520,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Hoard of the Dragon Queen: 89, Rise of Tiamat: 89"
     },
@@ -1539,7 +1539,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Hoard of the Dragon Queen: 89"
     },
@@ -1558,7 +1558,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 90"
     },
@@ -1577,7 +1577,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 90"
     },
@@ -1596,7 +1596,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 91"
     },
@@ -1615,7 +1615,7 @@ export const officialData: Monster[] = [
        "hp":57,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 91"
     },
@@ -1634,7 +1634,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 91"
     },
@@ -1653,7 +1653,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 92, Rise of Tiamat: 91"
     },
@@ -1672,7 +1672,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 93"
     },
@@ -1691,7 +1691,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Hoard of the Dragon Queen: 93"
     },
@@ -1710,7 +1710,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 12, Princes of the Apocalypse Online Supplement v1.0: 6"
     },
@@ -1729,7 +1729,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":-1,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 13, Princes of the Apocalypse Online Supplement v1.0: 6"
     },
@@ -1748,7 +1748,7 @@ export const officialData: Monster[] = [
        "hp":137,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 306"
     },
@@ -1767,7 +1767,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 53, HotDQ supplement: 4, Monster Manual: 342"
     },
@@ -1786,7 +1786,7 @@ export const officialData: Monster[] = [
        "hp":195,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 88, Princes of the Apocalypse Online Supplement v1.0: 7"
     },
@@ -1805,7 +1805,7 @@ export const officialData: Monster[] = [
        "hp":225,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 84"
     },
@@ -1824,7 +1824,7 @@ export const officialData: Monster[] = [
        "hp":225,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"HotDQ supplement: 4, Monster Manual: 91"
     },
@@ -1843,7 +1843,7 @@ export const officialData: Monster[] = [
        "hp":172,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 105"
     },
@@ -1862,7 +1862,7 @@ export const officialData: Monster[] = [
        "hp":212,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 108, Princes of the Apocalypse Online Supplement v1.0: 7"
     },
@@ -1881,7 +1881,7 @@ export const officialData: Monster[] = [
        "hp":184,
        "init":1,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 111"
     },
@@ -1900,7 +1900,7 @@ export const officialData: Monster[] = [
        "hp":256,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 114"
     },
@@ -1919,7 +1919,7 @@ export const officialData: Monster[] = [
        "hp":207,
        "init":1,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 94"
     },
@@ -1938,7 +1938,7 @@ export const officialData: Monster[] = [
        "hp":256,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Basic Rules v1: 8, Monster Manual: 98"
     },
@@ -1957,7 +1957,7 @@ export const officialData: Monster[] = [
        "hp":243,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 117"
     },
@@ -1976,7 +1976,7 @@ export const officialData: Monster[] = [
        "hp":200,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"HotDQ supplement: 5, Monster Manual: 101"
     },
@@ -1995,7 +1995,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 9, HotDQ supplement: 5, Monster Manual: 124"
     },
@@ -2014,7 +2014,7 @@ export const officialData: Monster[] = [
        "hp":51,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 9, Monster Manual: 79"
     },
@@ -2033,7 +2033,7 @@ export const officialData: Monster[] = [
        "hp":367,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 87"
     },
@@ -2052,7 +2052,7 @@ export const officialData: Monster[] = [
        "hp":481,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 90"
     },
@@ -2071,7 +2071,7 @@ export const officialData: Monster[] = [
        "hp":297,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 104"
     },
@@ -2090,7 +2090,7 @@ export const officialData: Monster[] = [
        "hp":444,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 107"
     },
@@ -2109,7 +2109,7 @@ export const officialData: Monster[] = [
        "hp":350,
        "init":1,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 110"
     },
@@ -2128,7 +2128,7 @@ export const officialData: Monster[] = [
        "hp":546,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 113"
     },
@@ -2147,7 +2147,7 @@ export const officialData: Monster[] = [
        "hp":385,
        "init":1,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 93"
     },
@@ -2166,7 +2166,7 @@ export const officialData: Monster[] = [
        "hp":546,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 97"
     },
@@ -2185,7 +2185,7 @@ export const officialData: Monster[] = [
        "hp":487,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 116"
     },
@@ -2204,7 +2204,7 @@ export const officialData: Monster[] = [
        "hp":333,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 100"
     },
@@ -2223,7 +2223,7 @@ export const officialData: Monster[] = [
        "hp":199,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 281"
     },
@@ -2242,7 +2242,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 9, Monster Manual: 19"
     },
@@ -2264,7 +2264,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 21, Princes of the Apocalypse Online Supplement v1.0: 8"
     },
@@ -2283,7 +2283,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 10, Monster Manual: 79"
     },
@@ -2302,7 +2302,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 10, Monster Manual: 317"
     },
@@ -2321,7 +2321,7 @@ export const officialData: Monster[] = [
        "hp":104,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 313"
     },
@@ -2343,7 +2343,7 @@ export const officialData: Monster[] = [
        "hp":99,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 342"
     },
@@ -2362,7 +2362,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 6, Monster Manual: 343, Princes of the Apocalypse Online Supplement v1.0: 8"
     },
@@ -2381,7 +2381,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 10, Monster Manual: 317"
     },
@@ -2400,7 +2400,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 10, Monster Manual: 317"
     },
@@ -2419,7 +2419,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 11, Monster Manual: 317"
     },
@@ -2438,7 +2438,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 22, Princes of the Apocalypse Online Supplement v1.0: 9"
     },
@@ -2457,7 +2457,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 11, Monster Manual: 318"
     },
@@ -2476,7 +2476,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 11, Monster Manual: 318"
     },
@@ -2495,7 +2495,7 @@ export const officialData: Monster[] = [
        "hp":262,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 55"
     },
@@ -2514,7 +2514,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 53, HotDQ supplement: 6, Monster Manual: 343"
     },
@@ -2533,7 +2533,7 @@ export const officialData: Monster[] = [
        "hp":65,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 344, Princes of the Apocalypse Online Supplement v1.0: 9"
     },
@@ -2552,7 +2552,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 11, Monster Manual: 23"
     },
@@ -2571,7 +2571,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 70"
     },
@@ -2590,7 +2590,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 56, Princes of the Apocalypse Online Supplement v1.0: 9"
     },
@@ -2609,7 +2609,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 12, Monster Manual: 24"
     },
@@ -2628,7 +2628,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 12, Monster Manual: 318, Player's Handbook: 304"
     },
@@ -2647,7 +2647,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 70"
     },
@@ -2666,7 +2666,7 @@ export const officialData: Monster[] = [
        "hp":168,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 25"
     },
@@ -2685,7 +2685,7 @@ export const officialData: Monster[] = [
        "hp":180,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 28"
     },
@@ -2704,7 +2704,7 @@ export const officialData: Monster[] = [
        "hp":180,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 28"
     },
@@ -2723,7 +2723,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 316"
     },
@@ -2742,7 +2742,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 53, HotDQ supplement: 6, Monster Manual: 344"
     },
@@ -2761,7 +2761,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 12, Monster Manual: 318, Player's Handbook: 304"
     },
@@ -2780,7 +2780,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 88"
     },
@@ -2799,7 +2799,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":-3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 241, Princes of the Apocalypse Online Supplement v1.0: 10"
     },
@@ -2818,7 +2818,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 12, Monster Manual: 318"
     },
@@ -2837,7 +2837,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 13, Monster Manual: 319"
     },
@@ -2856,7 +2856,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 91"
     },
@@ -2875,7 +2875,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 276"
     },
@@ -2894,7 +2894,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 13, Monster Manual: 319, Player's Handbook: 304"
     },
@@ -2913,7 +2913,7 @@ export const officialData: Monster[] = [
        "hp":142,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 71"
     },
@@ -2932,7 +2932,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 233"
     },
@@ -2951,7 +2951,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 106"
     },
@@ -2970,7 +2970,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 109"
     },
@@ -2989,7 +2989,7 @@ export const officialData: Monster[] = [
        "hp":34,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 13, Monster Manual: 319, Player's Handbook: 304"
     },
@@ -3008,7 +3008,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 13, Monster Manual: 33"
     },
@@ -3027,7 +3027,7 @@ export const officialData: Monster[] = [
        "hp":65,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 33"
     },
@@ -3046,7 +3046,7 @@ export const officialData: Monster[] = [
        "hp":94,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 34, Princes of the Apocalypse Online Supplement v1.0: 10"
     },
@@ -3065,7 +3065,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 7, Monster Manual: 35"
     },
@@ -3084,7 +3084,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 36"
     },
@@ -3103,7 +3103,7 @@ export const officialData: Monster[] = [
        "hp":15,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 14, Monster Manual: 320"
     },
@@ -3122,7 +3122,7 @@ export const officialData: Monster[] = [
        "hp":51,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 37"
     },
@@ -3141,7 +3141,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 14, Monster Manual: 320, Player's Handbook: 305"
     },
@@ -3160,7 +3160,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 14, Monster Manual: 38"
     },
@@ -3179,7 +3179,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 72"
     },
@@ -3198,7 +3198,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 57"
     },
@@ -3217,7 +3217,7 @@ export const officialData: Monster[] = [
        "hp":114,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 14, Monster Manual: 39"
     },
@@ -3236,7 +3236,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 40, Princes of the Apocalypse Online Supplement v1.0: 11"
     },
@@ -3255,7 +3255,7 @@ export const officialData: Monster[] = [
        "hp":133,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 168"
     },
@@ -3274,7 +3274,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 41, Princes of the Apocalypse Online Supplement v1.0: 11"
     },
@@ -3293,7 +3293,7 @@ export const officialData: Monster[] = [
        "hp":200,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 154, Princes of the Apocalypse Online Supplement v1.0: 12"
     },
@@ -3312,7 +3312,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 15, Monster Manual: 42"
     },
@@ -3331,7 +3331,7 @@ export const officialData: Monster[] = [
        "hp":4,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 54, HotDQ supplement: 7, Monster Manual: 345"
     },
@@ -3350,7 +3350,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 15, Monster Manual: 320, Player's Handbook: 305"
     },
@@ -3369,7 +3369,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 112"
     },
@@ -3388,7 +3388,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 43"
     },
@@ -3407,7 +3407,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 15, Monster Manual: 320"
     },
@@ -3426,7 +3426,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 44, Princes of the Apocalypse Online Supplement v1.0: 12"
     },
@@ -3445,7 +3445,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 15, HotDQ supplement: 7, Monster Manual: 320, Player's Handbook: 305"
     },
@@ -3464,7 +3464,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 345, Princes of the Apocalypse Online Supplement v1.0: 12"
     },
@@ -3483,7 +3483,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 54, HotDQ supplement: 7, Monster Manual: 345"
     },
@@ -3502,7 +3502,7 @@ export const officialData: Monster[] = [
        "hp":138,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 16, Monster Manual: 45"
     },
@@ -3521,7 +3521,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 143, Princes of the Apocalypse Online Supplement v1.0: 13"
     },
@@ -3540,7 +3540,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 46, Princes of the Apocalypse Online Supplement v1.0: 13"
     },
@@ -3559,7 +3559,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 16, Monster Manual: 321"
     },
@@ -3578,7 +3578,7 @@ export const officialData: Monster[] = [
        "hp":180,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 47"
     },
@@ -3597,7 +3597,7 @@ export const officialData: Monster[] = [
        "hp":170,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 278"
     },
@@ -3616,7 +3616,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 29"
     },
@@ -3635,7 +3635,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 29"
     },
@@ -3654,7 +3654,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 164, Princes of the Apocalypse Online Supplement v1.0: 13"
     },
@@ -3673,7 +3673,7 @@ export const officialData: Monster[] = [
        "hp":4,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 16, HotDQ supplement: 7, Monster Manual: 321"
     },
@@ -3692,7 +3692,7 @@ export const officialData: Monster[] = [
        "hp":80,
        "init":5,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 48"
     },
@@ -3711,7 +3711,7 @@ export const officialData: Monster[] = [
        "hp":80,
        "init":5,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Monster Manual: 49"
     },
@@ -3730,7 +3730,7 @@ export const officialData: Monster[] = [
        "hp":80,
        "init":5,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Monster Manual: 49"
     },
@@ -3749,7 +3749,7 @@ export const officialData: Monster[] = [
        "hp":80,
        "init":5,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 48"
     },
@@ -3768,7 +3768,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 16"
     },
@@ -3787,7 +3787,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 16, Monster Manual: 321, Player's Handbook: 305"
     },
@@ -3806,7 +3806,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 81"
     },
@@ -3825,7 +3825,7 @@ export const officialData: Monster[] = [
        "hp":161,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 144, Princes of the Apocalypse Online Supplement v1.0: 14"
     },
@@ -3844,7 +3844,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 17, HotDQ supplement: 8, Monster Manual: 82"
     },
@@ -3863,7 +3863,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 17, Monster Manual: 321"
     },
@@ -3882,7 +3882,7 @@ export const officialData: Monster[] = [
        "hp":341,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 119, Princes of the Apocalypse Online Supplement v1.0: 14"
     },
@@ -3901,7 +3901,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 57"
     },
@@ -3920,7 +3920,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 120"
     },
@@ -3939,7 +3939,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 128"
     },
@@ -3958,7 +3958,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 128"
     },
@@ -3980,7 +3980,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 129, Princes of the Apocalypse Online Supplement v1.0: 15"
     },
@@ -3999,7 +3999,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 129"
     },
@@ -4018,7 +4018,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 346, Princes of the Apocalypse Online Supplement v1.0: 15"
     },
@@ -4040,7 +4040,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 121"
     },
@@ -4059,7 +4059,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 122, Princes of the Apocalypse Online Supplement v1.0: 16"
     },
@@ -4078,7 +4078,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 225"
     },
@@ -4097,7 +4097,7 @@ export const officialData: Monster[] = [
        "hp":17,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 215, Princes of the Apocalypse Online Supplement v1.0: 16"
     },
@@ -4116,7 +4116,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 17, Monster Manual: 322"
     },
@@ -4135,7 +4135,7 @@ export const officialData: Monster[] = [
        "hp":126,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 17, Monster Manual: 124"
     },
@@ -4154,7 +4154,7 @@ export const officialData: Monster[] = [
        "hp":200,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 145, Princes of the Apocalypse Online Supplement v1.0: 16"
     },
@@ -4173,7 +4173,7 @@ export const officialData: Monster[] = [
        "hp":76,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 18, Monster Manual: 322"
     },
@@ -4192,7 +4192,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 18, HotDQ supplement: 8, Monster Manual: 322"
     },
@@ -4211,7 +4211,7 @@ export const officialData: Monster[] = [
        "hp":313,
        "init":5,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 130"
     },
@@ -4230,7 +4230,7 @@ export const officialData: Monster[] = [
        "hp":153,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 73"
     },
@@ -4249,7 +4249,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 9, Monster Manual: 131"
     },
@@ -4268,7 +4268,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 132, Princes of the Apocalypse Online Supplement v1.0: 17"
     },
@@ -4287,7 +4287,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4306,7 +4306,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4325,7 +4325,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4344,7 +4344,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4363,7 +4363,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4382,7 +4382,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4401,7 +4401,7 @@ export const officialData: Monster[] = [
        "hp":14,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 133"
     },
@@ -4420,7 +4420,7 @@ export const officialData: Monster[] = [
        "hp":102,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 18, Monster Manual: 125"
     },
@@ -4439,7 +4439,7 @@ export const officialData: Monster[] = [
        "hp":162,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 19, Monster Manual: 154"
     },
@@ -4458,7 +4458,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 265, Princes of the Apocalypse Online Supplement v1.0: 17"
     },
@@ -4477,7 +4477,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 19, Monster Manual: 134"
     },
@@ -4496,7 +4496,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 20, Monster Manual: 169"
     },
@@ -4515,7 +4515,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 135"
     },
@@ -4534,7 +4534,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 20, Monster Manual: 322"
     },
@@ -4553,7 +4553,7 @@ export const officialData: Monster[] = [
        "hp":17,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 20, Monster Manual: 20"
     },
@@ -4572,7 +4572,7 @@ export const officialData: Monster[] = [
        "hp":149,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 136"
     },
@@ -4591,7 +4591,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 21, Monster Manual: 322, Player's Handbook: 305"
     },
@@ -4610,7 +4610,7 @@ export const officialData: Monster[] = [
        "hp":138,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 21, Monster Manual: 155"
     },
@@ -4629,7 +4629,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 139, Princes of the Apocalypse Online Supplement v1.0: 17"
     },
@@ -4648,7 +4648,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 21, HotDQ supplement: 9, Monster Manual: 140"
     },
@@ -4667,7 +4667,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":-5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 138"
     },
@@ -4686,7 +4686,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":-4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 242"
     },
@@ -4705,7 +4705,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 148, Princes of the Apocalypse Online Supplement v1.0: 18"
     },
@@ -4724,7 +4724,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 22, Monster Manual: 147"
     },
@@ -4743,7 +4743,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 22, Monster Manual: 148"
     },
@@ -4762,7 +4762,7 @@ export const officialData: Monster[] = [
        "hp":157,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 22, Monster Manual: 323"
     },
@@ -4781,7 +4781,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 23, Monster Manual: 323"
     },
@@ -4800,7 +4800,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 23, Monster Manual: 323"
     },
@@ -4819,7 +4819,7 @@ export const officialData: Monster[] = [
        "hp":42,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 23, Monster Manual: 323"
     },
@@ -4838,7 +4838,7 @@ export const officialData: Monster[] = [
        "hp":4,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 23, HotDQ supplement: 9, Monster Manual: 323"
     },
@@ -4857,7 +4857,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 24, Monster Manual: 324"
     },
@@ -4876,7 +4876,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 24, Monster Manual: 324"
     },
@@ -4895,7 +4895,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 24, Monster Manual: 324"
     },
@@ -4914,7 +4914,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 24, Monster Manual: 324, Player's Handbook: 306"
     },
@@ -4933,7 +4933,7 @@ export const officialData: Monster[] = [
        "hp":42,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 25, Monster Manual: 325"
     },
@@ -4952,7 +4952,7 @@ export const officialData: Monster[] = [
        "hp":4,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 25, Monster Manual: 325"
     },
@@ -4971,7 +4971,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 25, HotDQ supplement: 10, Monster Manual: 325"
     },
@@ -4990,7 +4990,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 25, Monster Manual: 326"
     },
@@ -5009,7 +5009,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 26, Monster Manual: 326"
     },
@@ -5028,7 +5028,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 26, HotDQ supplement: 10, Monster Manual: 326"
     },
@@ -5047,7 +5047,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 26, Monster Manual: 326"
     },
@@ -5066,7 +5066,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 26, Monster Manual: 327"
     },
@@ -5085,7 +5085,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 27, Monster Manual: 327"
     },
@@ -5104,7 +5104,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 27, Monster Manual: 327"
     },
@@ -5123,7 +5123,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 27, Monster Manual: 327"
     },
@@ -5142,7 +5142,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 27, Monster Manual: 328"
     },
@@ -5161,7 +5161,7 @@ export const officialData: Monster[] = [
        "hp":126,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 28, Monster Manual: 328"
     },
@@ -5180,7 +5180,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 28, HotDQ supplement: 10, Monster Manual: 328, Player's Handbook: 306"
     },
@@ -5199,7 +5199,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 28, Monster Manual: 329"
     },
@@ -5218,7 +5218,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":13,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 29, Monster Manual: 329"
     },
@@ -5237,7 +5237,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 29, Monster Manual: 329"
     },
@@ -5256,7 +5256,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 29, Monster Manual: 329"
     },
@@ -5275,7 +5275,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 29, Monster Manual: 330"
     },
@@ -5294,7 +5294,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 157"
     },
@@ -5313,7 +5313,7 @@ export const officialData: Monster[] = [
        "hp":91,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 160"
     },
@@ -5332,7 +5332,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 160"
     },
@@ -5351,7 +5351,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 161"
     },
@@ -5370,7 +5370,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 161"
     },
@@ -5389,7 +5389,7 @@ export const officialData: Monster[] = [
        "hp":157,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 58"
     },
@@ -5408,7 +5408,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 346"
     },
@@ -5427,7 +5427,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 30, Monster Manual: 163"
     },
@@ -5446,7 +5446,7 @@ export const officialData: Monster[] = [
        "hp":65,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 163"
     },
@@ -5465,7 +5465,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 163, Princes of the Apocalypse Online Supplement v1.0: 18"
     },
@@ -5484,7 +5484,7 @@ export const officialData: Monster[] = [
        "hp":4,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 30, Monster Manual: 330"
     },
@@ -5503,7 +5503,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 30, Monster Manual: 166"
     },
@@ -5522,7 +5522,7 @@ export const officialData: Monster[] = [
        "hp":21,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 166"
     },
@@ -5541,7 +5541,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 115"
     },
@@ -5560,7 +5560,7 @@ export const officialData: Monster[] = [
        "hp":114,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 171"
     },
@@ -5579,7 +5579,7 @@ export const officialData: Monster[] = [
        "hp":310,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 59"
     },
@@ -5598,7 +5598,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 11, Monster Manual: 243"
     },
@@ -5617,7 +5617,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 277"
     },
@@ -5636,7 +5636,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 95"
     },
@@ -5655,7 +5655,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 177"
     },
@@ -5674,7 +5674,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 177"
     },
@@ -5693,7 +5693,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 277"
     },
@@ -5712,7 +5712,7 @@ export const officialData: Monster[] = [
        "hp":55,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 172, Princes of the Apocalypse Online Supplement v1.0: 18"
     },
@@ -5731,7 +5731,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 30, Monster Manual: 173"
     },
@@ -5750,7 +5750,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 173"
     },
@@ -5769,7 +5769,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 31, HotDQ supplement: 11, Monster Manual: 174"
     },
@@ -5788,7 +5788,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 175"
     },
@@ -5807,7 +5807,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 54, HotDQ supplement: 11, Monster Manual: 347"
     },
@@ -5826,7 +5826,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 234"
     },
@@ -5845,7 +5845,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 282"
     },
@@ -5864,7 +5864,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 238, Princes of the Apocalypse Online Supplement v1.0: 19"
     },
@@ -5883,7 +5883,7 @@ export const officialData: Monster[] = [
        "hp":65,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 180"
     },
@@ -5902,7 +5902,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 31, Monster Manual: 181"
     },
@@ -5921,7 +5921,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 31, Monster Manual: 330, Player's Handbook: 306"
     },
@@ -5940,7 +5940,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 32, Monster Manual: 182"
     },
@@ -5959,7 +5959,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 11, Monster Manual: 183, Princes of the Apocalypse Online Supplement v1.0: 19"
     },
@@ -5978,7 +5978,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 60, Princes of the Apocalypse Online Supplement v1.0: 19"
     },
@@ -5997,7 +5997,7 @@ export const officialData: Monster[] = [
        "hp":105,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 32, Monster Manual: 155"
     },
@@ -6016,7 +6016,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 32, Monster Manual: 184"
     },
@@ -6035,7 +6035,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 32, HotDQ supplement: 12, Monster Manual: 186"
     },
@@ -6054,7 +6054,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 12, Monster Manual: 186, Princes of the Apocalypse Online Supplement v1.0: 20"
     },
@@ -6073,7 +6073,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 187"
     },
@@ -6092,7 +6092,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 188"
     },
@@ -6111,7 +6111,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 189, Princes of the Apocalypse Online Supplement v1.0: 20"
     },
@@ -6130,7 +6130,7 @@ export const officialData: Monster[] = [
        "hp":178,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 74"
     },
@@ -6149,7 +6149,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 33, Monster Manual: 330"
     },
@@ -6168,7 +6168,7 @@ export const officialData: Monster[] = [
        "hp":172,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 33, Monster Manual: 190"
     },
@@ -6187,7 +6187,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 33, Monster Manual: 331"
     },
@@ -6206,7 +6206,7 @@ export const officialData: Monster[] = [
        "hp":180,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 75"
     },
@@ -6225,7 +6225,7 @@ export const officialData: Monster[] = [
        "hp":21,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 215, Princes of the Apocalypse Online Supplement v1.0: 20"
     },
@@ -6244,7 +6244,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 76, Player's Handbook: 306"
     },
@@ -6263,7 +6263,7 @@ export const officialData: Monster[] = [
        "hp":21,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 191"
     },
@@ -6282,7 +6282,7 @@ export const officialData: Monster[] = [
        "hp":104,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 192, Princes of the Apocalypse Online Supplement v1.0: 21"
     },
@@ -6301,7 +6301,7 @@ export const officialData: Monster[] = [
        "hp":210,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 170"
     },
@@ -6320,7 +6320,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 33, Monster Manual: 331"
     },
@@ -6339,7 +6339,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 193, Princes of the Apocalypse Online Supplement v1.0: 21"
     },
@@ -6358,7 +6358,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 194, Princes of the Apocalypse Online Supplement v1.0: 21"
     },
@@ -6377,7 +6377,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 34, Monster Manual: 331"
     },
@@ -6396,7 +6396,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 54, HotDQ supplement: 12, Monster Manual: 347"
     },
@@ -6415,7 +6415,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 34, HotDQ supplement: 13, Monster Manual: 195"
     },
@@ -6434,7 +6434,7 @@ export const officialData: Monster[] = [
        "hp":472,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 197"
     },
@@ -6453,7 +6453,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 199, Princes of the Apocalypse Online Supplement v1.0: 22"
     },
@@ -6472,7 +6472,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 200, Princes of the Apocalypse Online Supplement v1.0: 22"
     },
@@ -6491,7 +6491,7 @@ export const officialData: Monster[] = [
        "hp":65,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 198"
     },
@@ -6510,7 +6510,7 @@ export const officialData: Monster[] = [
        "hp":65,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 200, Princes of the Apocalypse Online Supplement v1.0: 23"
     },
@@ -6529,7 +6529,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 201"
     },
@@ -6548,7 +6548,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":-3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 76"
     },
@@ -6567,7 +6567,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":3,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 202, Princes of the Apocalypse Online Supplement v1.0: 23"
     },
@@ -6586,7 +6586,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":3,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 202"
     },
@@ -6605,7 +6605,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 34, Monster Manual: 331, Player's Handbook: 307"
     },
@@ -6624,7 +6624,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 34, Monster Manual: 332"
     },
@@ -6643,7 +6643,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 205, Princes of the Apocalypse Online Supplement v1.0: 24"
     },
@@ -6662,7 +6662,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 35, HotDQ supplement: 13, Monster Manual: 204"
     },
@@ -6681,7 +6681,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 205, Princes of the Apocalypse Online Supplement v1.0: 24"
     },
@@ -6703,7 +6703,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 55, HotDQ supplement: 13, Monster Manual: 347"
     },
@@ -6722,7 +6722,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 216, Princes of the Apocalypse Online Supplement v1.0: 25"
     },
@@ -6741,7 +6741,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 212, Princes of the Apocalypse Online Supplement v1.0: 25"
     },
@@ -6760,7 +6760,7 @@ export const officialData: Monster[] = [
        "hp":126,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 35, Monster Manual: 332"
     },
@@ -6779,7 +6779,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 60"
     },
@@ -6798,7 +6798,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 35, Monster Manual: 213"
     },
@@ -6817,7 +6817,7 @@ export const officialData: Monster[] = [
        "hp":229,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 146"
     },
@@ -6836,7 +6836,7 @@ export const officialData: Monster[] = [
        "hp":189,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 61"
     },
@@ -6855,7 +6855,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 35, Monster Manual: 332, Player's Handbook: 307"
     },
@@ -6874,7 +6874,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 36, Monster Manual: 214"
     },
@@ -6893,7 +6893,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 35, Monster Manual: 218"
     },
@@ -6912,7 +6912,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 219, Princes of the Apocalypse Online Supplement v1.0: 25"
     },
@@ -6931,7 +6931,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 313, Princes of the Apocalypse Online Supplement v1.0: 26"
     },
@@ -6950,7 +6950,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 220"
     },
@@ -6969,7 +6969,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 222"
     },
@@ -6988,7 +6988,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 222"
     },
@@ -7007,7 +7007,7 @@ export const officialData: Monster[] = [
        "hp":76,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 35, Monster Manual: 223"
     },
@@ -7026,7 +7026,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 273"
     },
@@ -7045,7 +7045,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 224"
     },
@@ -7064,7 +7064,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 216, Princes of the Apocalypse Online Supplement v1.0: 26"
     },
@@ -7083,7 +7083,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 37, Monster Manual: 333, Player's Handbook: 307"
     },
@@ -7102,7 +7102,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 37, Monster Manual: 228"
     },
@@ -7121,7 +7121,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 229"
     },
@@ -7140,7 +7140,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 232"
     },
@@ -7159,7 +7159,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 232"
     },
@@ -7178,7 +7178,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 230"
     },
@@ -7197,7 +7197,7 @@ export const officialData: Monster[] = [
        "hp":184,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 62"
     },
@@ -7216,7 +7216,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 32"
     },
@@ -7235,7 +7235,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 178"
     },
@@ -7254,7 +7254,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 178"
     },
@@ -7273,7 +7273,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 235"
     },
@@ -7292,7 +7292,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 13, Monster Manual: 348, Princes of the Apocalypse Online Supplement v1.0: 26"
     },
@@ -7311,7 +7311,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 37, Monster Manual: 236"
     },
@@ -7330,7 +7330,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 314, Princes of the Apocalypse Online Supplement v1.0: 27"
     },
@@ -7349,7 +7349,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 38, Monster Manual: 243"
     },
@@ -7368,7 +7368,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 38, Monster Manual: 333"
     },
@@ -7387,7 +7387,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 38, HotDQ supplement: 14, Monster Manual: 237"
     },
@@ -7406,7 +7406,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 316"
     },
@@ -7425,7 +7425,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 239, Princes of the Apocalypse Online Supplement v1.0: 27"
     },
@@ -7444,7 +7444,7 @@ export const officialData: Monster[] = [
        "hp":15,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 39, HotDQ supplement: 14, Monster Manual: 246"
     },
@@ -7463,7 +7463,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 247, Princes of the Apocalypse Online Supplement v1.0: 28"
     },
@@ -7482,7 +7482,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 246"
     },
@@ -7501,7 +7501,7 @@ export const officialData: Monster[] = [
        "hp":42,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 247, Princes of the Apocalypse Online Supplement v1.0: 28"
     },
@@ -7520,7 +7520,7 @@ export const officialData: Monster[] = [
        "hp":114,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 14, Monster Manual: 248"
     },
@@ -7539,7 +7539,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 39, Monster Manual: 333, Player's Handbook: 308"
     },
@@ -7558,7 +7558,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 39, Monster Manual: 249"
     },
@@ -7577,7 +7577,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 39, Monster Manual: 333, Player's Handbook: 308"
     },
@@ -7596,7 +7596,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 40, Monster Manual: 250"
     },
@@ -7615,7 +7615,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 226"
     },
@@ -7634,7 +7634,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 15, Monster Manual: 251, Princes of the Apocalypse Online Supplement v1.0: 28"
     },
@@ -7653,7 +7653,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 40, Monster Manual: 334"
     },
@@ -7672,7 +7672,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 252, Princes of the Apocalypse Online Supplement v1.0: 28"
     },
@@ -7691,7 +7691,7 @@ export const officialData: Monster[] = [
        "hp":300,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 77"
     },
@@ -7710,7 +7710,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 253"
     },
@@ -7729,7 +7729,7 @@ export const officialData: Monster[] = [
        "hp":200,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 17"
     },
@@ -7748,7 +7748,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 40, Monster Manual: 80"
     },
@@ -7767,7 +7767,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 40, Monster Manual: 334, Player's Handbook: 308"
     },
@@ -7786,7 +7786,7 @@ export const officialData: Monster[] = [
        "hp":42,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 41, Monster Manual: 334"
     },
@@ -7805,7 +7805,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 279"
     },
@@ -7824,7 +7824,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 41, Monster Manual: 335"
     },
@@ -7843,7 +7843,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 55, HotDQ supplement: 15, Monster Manual: 348"
     },
@@ -7862,7 +7862,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 254, Player's Handbook: 308"
     },
@@ -7881,7 +7881,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 41, Monster Manual: 80"
     },
@@ -7900,7 +7900,7 @@ export const officialData: Monster[] = [
        "hp":247,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 255, Princes of the Apocalypse Online Supplement v1.0: 29"
     },
@@ -7919,7 +7919,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 226"
     },
@@ -7938,7 +7938,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 256"
     },
@@ -7957,7 +7957,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 230"
     },
@@ -7976,7 +7976,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 256"
     },
@@ -7995,7 +7995,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 63, Player's Handbook: 309"
     },
@@ -8014,7 +8014,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 41, Monster Manual: 335"
     },
@@ -8033,7 +8033,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 257"
     },
@@ -8052,7 +8052,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 41, Monster Manual: 335, Player's Handbook: 309"
     },
@@ -8071,7 +8071,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 42, Monster Manual: 335, Player's Handbook: 309"
     },
@@ -8090,7 +8090,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 98"
     },
@@ -8109,7 +8109,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 276"
     },
@@ -8128,7 +8128,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 42, Monster Manual: 336, Player's Handbook: 309"
     },
@@ -8147,7 +8147,7 @@ export const officialData: Monster[] = [
        "hp":195,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 258"
     },
@@ -8166,7 +8166,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 259, Princes of the Apocalypse Online Supplement v1.0: 29"
     },
@@ -8185,7 +8185,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 42, Monster Manual: 336"
     },
@@ -8204,7 +8204,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 42, Monster Manual: 336, Player's Handbook: 310"
     },
@@ -8223,7 +8223,7 @@ export const officialData: Monster[] = [
        "hp":248,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 260"
     },
@@ -8242,7 +8242,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 15, Monster Manual: 261, Princes of the Apocalypse Online Supplement v1.0: 30"
     },
@@ -8261,7 +8261,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 16, Monster Manual: 20"
     },
@@ -8280,7 +8280,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 262, Princes of the Apocalypse Online Supplement v1.0: 30"
     },
@@ -8299,7 +8299,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 43, Monster Manual: 336"
     },
@@ -8318,7 +8318,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 263"
     },
@@ -8337,7 +8337,7 @@ export const officialData: Monster[] = [
        "hp":76,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 264"
     },
@@ -8356,7 +8356,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 264"
     },
@@ -8375,7 +8375,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 266, Princes of the Apocalypse Online Supplement v1.0: 30"
     },
@@ -8394,7 +8394,7 @@ export const officialData: Monster[] = [
        "hp":31,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 43, Monster Manual: 267"
     },
@@ -8413,7 +8413,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 268"
     },
@@ -8432,7 +8432,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 43, Monster Manual: 337"
     },
@@ -8451,7 +8451,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 16, Monster Manual: 349, Princes of the Apocalypse Online Supplement v1.0: 31"
     },
@@ -8470,7 +8470,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 179, Princes of the Apocalypse Online Supplement v1.0: 31"
     },
@@ -8489,7 +8489,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 179"
     },
@@ -8508,7 +8508,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 43, Monster Manual: 337"
     },
@@ -8527,7 +8527,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 269, Princes of the Apocalypse Online Supplement v1.0: 31"
     },
@@ -8546,7 +8546,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 64, Princes of the Apocalypse Online Supplement v1.0: 32"
     },
@@ -8565,7 +8565,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 16, Monster Manual: 270"
     },
@@ -8584,7 +8584,7 @@ export const officialData: Monster[] = [
        "hp":142,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 271, Princes of the Apocalypse Online Supplement v1.0: 32"
     },
@@ -8603,7 +8603,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":-5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 138"
     },
@@ -8622,7 +8622,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 118"
     },
@@ -8641,7 +8641,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 43, Monster Manual: 272, Player's Handbook: 310"
     },
@@ -8660,7 +8660,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 276"
     },
@@ -8679,7 +8679,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 217, Princes of the Apocalypse Online Supplement v1.0: 32"
     },
@@ -8698,7 +8698,7 @@ export const officialData: Monster[] = [
        "hp":241,
        "init":6,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 18"
     },
@@ -8717,7 +8717,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 44, Monster Manual: 30"
     },
@@ -8736,7 +8736,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 17, Monster Manual: 279, Princes of the Apocalypse Online Supplement v1.0: 33"
     },
@@ -8755,7 +8755,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 44, Monster Manual: 337"
     },
@@ -8774,7 +8774,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 78"
     },
@@ -8793,7 +8793,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 234"
     },
@@ -8812,7 +8812,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 283, Player's Handbook: 310, Princes of the Apocalypse Online Supplement v1.0: 33"
     },
@@ -8831,7 +8831,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 17, Monster Manual: 349, Princes of the Apocalypse Online Supplement v1.0: 33"
     },
@@ -8850,7 +8850,7 @@ export const officialData: Monster[] = [
        "hp":21,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 217, Princes of the Apocalypse Online Supplement v1.0: 34"
     },
@@ -8869,7 +8869,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 44, HotDQ supplement: 17, Monster Manual: 284"
     },
@@ -8888,7 +8888,7 @@ export const officialData: Monster[] = [
        "hp":126,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 18, Monster Manual: 156"
     },
@@ -8907,7 +8907,7 @@ export const officialData: Monster[] = [
        "hp":178,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 45, HotDQ supplement: 18, Monster Manual: 170"
     },
@@ -8926,7 +8926,7 @@ export const officialData: Monster[] = [
        "hp":230,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 156"
     },
@@ -8945,7 +8945,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 285"
     },
@@ -8964,7 +8964,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 45, Monster Manual: 337"
     },
@@ -8983,7 +8983,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 45, HotDQ supplement: 18, Monster Manual: 338"
     },
@@ -9002,7 +9002,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 46, Monster Manual: 338"
     },
@@ -9021,7 +9021,7 @@ export const officialData: Monster[] = [
        "hp":28,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 46, Monster Manual: 338"
     },
@@ -9040,7 +9040,7 @@ export const officialData: Monster[] = [
        "hp":24,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 46, HotDQ supplement: 19, Monster Manual: 339"
     },
@@ -9059,7 +9059,7 @@ export const officialData: Monster[] = [
        "hp":24,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 46, Monster Manual: 339"
     },
@@ -9078,7 +9078,7 @@ export const officialData: Monster[] = [
        "hp":676,
        "init":0,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 286"
     },
@@ -9097,7 +9097,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 288"
     },
@@ -9116,7 +9116,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 55, Monster Manual: 350"
     },
@@ -9135,7 +9135,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 47, Monster Manual: 339, Player's Handbook: 311"
     },
@@ -9154,7 +9154,7 @@ export const officialData: Monster[] = [
        "hp":138,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 289"
     },
@@ -9173,7 +9173,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 350, Princes of the Apocalypse Online Supplement v1.0: 34"
     },
@@ -9192,7 +9192,7 @@ export const officialData: Monster[] = [
        "hp":95,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 47, Monster Manual: 80"
     },
@@ -9211,7 +9211,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 225"
     },
@@ -9230,7 +9230,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 19, Monster Manual: 290, Princes of the Apocalypse Online Supplement v1.0: 34"
     },
@@ -9249,7 +9249,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 47, HotDQ supplement: 19, Monster Manual: 291"
     },
@@ -9268,7 +9268,7 @@ export const officialData: Monster[] = [
        "hp":4,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 47, Monster Manual: 32"
     },
@@ -9287,7 +9287,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 48, Monster Manual: 80"
     },
@@ -9306,7 +9306,7 @@ export const officialData: Monster[] = [
        "hp":153,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 314"
     },
@@ -9325,7 +9325,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 292, Princes of the Apocalypse Online Supplement v1.0: 35"
     },
@@ -9344,7 +9344,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 294"
     },
@@ -9363,7 +9363,7 @@ export const officialData: Monster[] = [
        "hp":144,
        "init":4,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"HotDQ supplement: 20, Monster Manual: 297"
     },
@@ -9382,7 +9382,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 21, Monster Manual: 298, Princes of the Apocalypse Online Supplement v1.0: 35"
     },
@@ -9401,7 +9401,7 @@ export const officialData: Monster[] = [
        "hp":144,
        "init":4,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 298"
     },
@@ -9420,7 +9420,7 @@ export const officialData: Monster[] = [
        "hp":144,
        "init":4,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Monster Manual: 298"
     },
@@ -9439,7 +9439,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 21, Monster Manual: 350, Princes of the Apocalypse Online Supplement v1.0: 35"
     },
@@ -9458,7 +9458,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 32"
     },
@@ -9477,7 +9477,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":-5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 21, Monster Manual: 138, Princes of the Apocalypse Online Supplement v1.0: 36"
     },
@@ -9496,7 +9496,7 @@ export const officialData: Monster[] = [
        "hp":104,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 64, Princes of the Apocalypse Online Supplement v1.0: 36"
     },
@@ -9515,7 +9515,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 48, Monster Manual: 339"
     },
@@ -9534,7 +9534,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 48, Monster Manual: 340, Player's Handbook: 311"
     },
@@ -9553,7 +9553,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 273"
     },
@@ -9572,7 +9572,7 @@ export const officialData: Monster[] = [
        "hp":114,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 49, Monster Manual: 125"
     },
@@ -9591,7 +9591,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 299, Princes of the Apocalypse Online Supplement v1.0: 36"
     },
@@ -9610,7 +9610,7 @@ export const officialData: Monster[] = [
        "hp":1,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 49, Monster Manual: 340"
     },
@@ -9633,7 +9633,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 208"
     },
@@ -9656,7 +9656,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 209, Princes of the Apocalypse Online Supplement v1.0: 37"
     },
@@ -9675,7 +9675,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 209"
     },
@@ -9694,7 +9694,7 @@ export const officialData: Monster[] = [
        "hp":120,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 210"
     },
@@ -9717,7 +9717,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 49, Monster Manual: 211"
     },
@@ -9736,7 +9736,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 102"
     },
@@ -9755,7 +9755,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 50, Monster Manual: 300"
     },
@@ -9774,7 +9774,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":9,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 22, Monster Manual: 301, Princes of the Apocalypse Online Supplement v1.0: 37"
     },
@@ -9793,7 +9793,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 23, Monster Manual: 195"
     },
@@ -9812,7 +9812,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 50, Monster Manual: 340"
     },
@@ -9831,7 +9831,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 50, Monster Manual: 341, Player's Handbook: 311"
     },
@@ -9850,7 +9850,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 51, Monster Manual: 341"
     },
@@ -9869,7 +9869,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 302"
     },
@@ -9888,7 +9888,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 51, HotDQ supplement: 23, Monster Manual: 303"
     },
@@ -9907,7 +9907,7 @@ export const officialData: Monster[] = [
        "hp":73,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 304, Princes of the Apocalypse Online Supplement v1.0: 38"
     },
@@ -9926,7 +9926,7 @@ export const officialData: Monster[] = [
        "hp":51,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 51, Monster Manual: 305"
     },
@@ -9945,7 +9945,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 65"
     },
@@ -9964,7 +9964,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 88"
     },
@@ -9983,7 +9983,7 @@ export const officialData: Monster[] = [
        "hp":152,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 91"
     },
@@ -10002,7 +10002,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 105"
     },
@@ -10021,7 +10021,7 @@ export const officialData: Monster[] = [
        "hp":142,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 108"
     },
@@ -10040,7 +10040,7 @@ export const officialData: Monster[] = [
        "hp":119,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 111"
     },
@@ -10059,7 +10059,7 @@ export const officialData: Monster[] = [
        "hp":178,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 115"
     },
@@ -10078,7 +10078,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 52, Monster Manual: 94"
     },
@@ -10097,7 +10097,7 @@ export const officialData: Monster[] = [
        "hp":178,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 98, Princes of the Apocalypse Online Supplement v1.0: 38"
     },
@@ -10116,7 +10116,7 @@ export const officialData: Monster[] = [
        "hp":178,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 85"
     },
@@ -10135,7 +10135,7 @@ export const officialData: Monster[] = [
        "hp":93,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 258"
     },
@@ -10154,7 +10154,7 @@ export const officialData: Monster[] = [
        "hp":168,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 118"
     },
@@ -10173,7 +10173,7 @@ export const officialData: Monster[] = [
        "hp":133,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 101"
     },
@@ -10192,7 +10192,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Monster Manual: 308"
     },
@@ -10211,7 +10211,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 23, Monster Manual: 309"
     },
@@ -10230,7 +10230,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"HotDQ supplement: 24, Monster Manual: 310"
     },
@@ -10249,7 +10249,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Basic Rules v1: 52, Monster Manual: 316, Player's Handbook: 311"
     },
@@ -10268,7 +10268,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 136"
     },
@@ -10287,7 +10287,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 212"
     },
@@ -10306,7 +10306,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 218"
     },
@@ -10325,7 +10325,7 @@ export const officialData: Monster[] = [
        "hp":117,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 202"
     },
@@ -10344,7 +10344,7 @@ export const officialData: Monster[] = [
        "hp":157,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 130"
     },
@@ -10363,7 +10363,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 116"
     },
@@ -10382,7 +10382,7 @@ export const officialData: Monster[] = [
        "hp":202,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 164"
     },
@@ -10401,7 +10401,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 131"
     },
@@ -10420,7 +10420,7 @@ export const officialData: Monster[] = [
        "hp":297,
        "init":-2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 117"
     },
@@ -10439,7 +10439,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 195"
     },
@@ -10458,7 +10458,7 @@ export const officialData: Monster[] = [
        "hp":189,
        "init":3,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 170"
     },
@@ -10477,7 +10477,7 @@ export const officialData: Monster[] = [
        "hp":114,
        "init":-1,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 119"
     },
@@ -10496,7 +10496,7 @@ export const officialData: Monster[] = [
        "hp":275,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 143"
     },
@@ -10515,7 +10515,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 120"
     },
@@ -10534,7 +10534,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 160"
     },
@@ -10553,7 +10553,7 @@ export const officialData: Monster[] = [
        "hp":195,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 161"
     },
@@ -10572,7 +10572,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 121"
     },
@@ -10591,7 +10591,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 125"
     },
@@ -10610,7 +10610,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 131"
     },
@@ -10629,7 +10629,7 @@ export const officialData: Monster[] = [
        "hp":189,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 122"
     },
@@ -10648,7 +10648,7 @@ export const officialData: Monster[] = [
        "hp":120,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 247"
     },
@@ -10667,7 +10667,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 123"
     },
@@ -10686,7 +10686,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 127"
     },
@@ -10705,7 +10705,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 128"
     },
@@ -10724,7 +10724,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 129"
     },
@@ -10743,7 +10743,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 129"
     },
@@ -10762,7 +10762,7 @@ export const officialData: Monster[] = [
        "hp":406,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 144"
     },
@@ -10781,7 +10781,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 158"
     },
@@ -10800,7 +10800,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 159"
     },
@@ -10819,7 +10819,7 @@ export const officialData: Monster[] = [
        "hp":119,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 248"
     },
@@ -10838,7 +10838,7 @@ export const officialData: Monster[] = [
        "hp":172,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 243"
     },
@@ -10857,7 +10857,7 @@ export const officialData: Monster[] = [
        "hp":162,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 182"
     },
@@ -10876,7 +10876,7 @@ export const officialData: Monster[] = [
        "hp":225,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 183"
     },
@@ -10895,7 +10895,7 @@ export const officialData: Monster[] = [
        "hp":162,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 184"
     },
@@ -10914,7 +10914,7 @@ export const officialData: Monster[] = [
        "hp":143,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 184"
     },
@@ -10933,7 +10933,7 @@ export const officialData: Monster[] = [
        "hp":262,
        "init":4,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 186"
     },
@@ -10952,7 +10952,7 @@ export const officialData: Monster[] = [
        "hp":150,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 187"
     },
@@ -10971,7 +10971,7 @@ export const officialData: Monster[] = [
        "hp":119,
        "init":-3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 188"
     },
@@ -10990,7 +10990,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 188"
     },
@@ -11009,7 +11009,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 189"
     },
@@ -11028,7 +11028,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 189"
     },
@@ -11047,7 +11047,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 190"
     },
@@ -11066,7 +11066,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 190"
     },
@@ -11085,7 +11085,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 191"
     },
@@ -11104,7 +11104,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 192"
     },
@@ -11123,7 +11123,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 193"
     },
@@ -11142,7 +11142,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 132"
     },
@@ -11161,7 +11161,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 202"
     },
@@ -11180,7 +11180,7 @@ export const officialData: Monster[] = [
        "hp":63,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 194"
     },
@@ -11199,7 +11199,7 @@ export const officialData: Monster[] = [
        "hp":115,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 219"
     },
@@ -11218,7 +11218,7 @@ export const officialData: Monster[] = [
        "hp":264,
        "init":9,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 200"
     },
@@ -11237,7 +11237,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 238"
     },
@@ -11256,7 +11256,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 203"
     },
@@ -11275,7 +11275,7 @@ export const officialData: Monster[] = [
        "hp":337,
        "init":1,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 146"
     },
@@ -11294,7 +11294,7 @@ export const officialData: Monster[] = [
        "hp":337,
        "init":1,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 146"
     },
@@ -11313,7 +11313,7 @@ export const officialData: Monster[] = [
        "hp":168,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 223"
     },
@@ -11332,7 +11332,7 @@ export const officialData: Monster[] = [
        "hp":300,
        "init":3,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 173"
     },
@@ -11351,7 +11351,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 204"
     },
@@ -11370,7 +11370,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 205"
     },
@@ -11389,7 +11389,7 @@ export const officialData: Monster[] = [
        "hp":180,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 205"
     },
@@ -11408,7 +11408,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":3,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 206"
     },
@@ -11427,7 +11427,7 @@ export const officialData: Monster[] = [
        "hp":144,
        "init":5,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 207"
     },
@@ -11446,7 +11446,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 208"
     },
@@ -11465,7 +11465,7 @@ export const officialData: Monster[] = [
        "hp":104,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 224"
     },
@@ -11484,7 +11484,7 @@ export const officialData: Monster[] = [
        "hp":189,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 209"
     },
@@ -11503,7 +11503,7 @@ export const officialData: Monster[] = [
        "hp":346,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 149"
     },
@@ -11522,7 +11522,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 162"
     },
@@ -11541,7 +11541,7 @@ export const officialData: Monster[] = [
        "hp":216,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 165"
     },
@@ -11560,7 +11560,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 210"
     },
@@ -11579,7 +11579,7 @@ export const officialData: Monster[] = [
        "hp":200,
        "init":2,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 175"
     },
@@ -11598,7 +11598,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 249"
     },
@@ -11617,7 +11617,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 125"
     },
@@ -11636,7 +11636,7 @@ export const officialData: Monster[] = [
        "hp":350,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 151"
     },
@@ -11655,7 +11655,7 @@ export const officialData: Monster[] = [
        "hp":102,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 212"
     },
@@ -11674,7 +11674,7 @@ export const officialData: Monster[] = [
        "hp":328,
        "init":7,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 198"
     },
@@ -11693,7 +11693,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 238"
     },
@@ -11712,7 +11712,7 @@ export const officialData: Monster[] = [
        "hp":432,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 213"
     },
@@ -11731,7 +11731,7 @@ export const officialData: Monster[] = [
        "hp":88,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 133"
     },
@@ -11750,7 +11750,7 @@ export const officialData: Monster[] = [
        "hp":35,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 214"
     },
@@ -11769,7 +11769,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 166"
     },
@@ -11788,7 +11788,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":3,
        "lair":"lair",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 250"
     },
@@ -11807,7 +11807,7 @@ export const officialData: Monster[] = [
        "hp":253,
        "init":4,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 177"
     },
@@ -11826,7 +11826,7 @@ export const officialData: Monster[] = [
        "hp":216,
        "init":6,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 134"
     },
@@ -11845,7 +11845,7 @@ export const officialData: Monster[] = [
        "hp":190,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 135"
     },
@@ -11864,7 +11864,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 215"
     },
@@ -11883,7 +11883,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 167"
     },
@@ -11902,7 +11902,7 @@ export const officialData: Monster[] = [
        "hp":297,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 216"
     },
@@ -11921,7 +11921,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 168"
     },
@@ -11940,7 +11940,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 126"
     },
@@ -11959,7 +11959,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 217"
     },
@@ -11978,7 +11978,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 220"
     },
@@ -11997,7 +11997,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 220"
     },
@@ -12016,7 +12016,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 221"
     },
@@ -12035,7 +12035,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 221"
     },
@@ -12054,7 +12054,7 @@ export const officialData: Monster[] = [
        "hp":126,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 251"
     },
@@ -12073,7 +12073,7 @@ export const officialData: Monster[] = [
        "hp":405,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 153"
     },
@@ -12092,7 +12092,7 @@ export const officialData: Monster[] = [
        "hp":105,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 169"
     },
@@ -12111,7 +12111,7 @@ export const officialData: Monster[] = [
        "hp":175,
        "init":8,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 199"
     },
@@ -12130,7 +12130,7 @@ export const officialData: Monster[] = [
        "hp":255,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 162"
     },
@@ -12149,7 +12149,7 @@ export const officialData: Monster[] = [
        "hp":210,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 222"
     },
@@ -12168,7 +12168,7 @@ export const officialData: Monster[] = [
        "hp":138,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 244"
     },
@@ -12187,7 +12187,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 136"
     },
@@ -12206,7 +12206,7 @@ export const officialData: Monster[] = [
        "hp":95,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 194"
     },
@@ -12225,7 +12225,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 225"
     },
@@ -12244,7 +12244,7 @@ export const officialData: Monster[] = [
        "hp":150,
        "init":-4,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 137"
     },
@@ -12263,7 +12263,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 228"
     },
@@ -12282,7 +12282,7 @@ export const officialData: Monster[] = [
        "hp":105,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 230"
     },
@@ -12301,7 +12301,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 226"
     },
@@ -12320,7 +12320,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 244"
     },
@@ -12339,7 +12339,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 196"
     },
@@ -12358,7 +12358,7 @@ export const officialData: Monster[] = [
        "hp":17,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 234"
     },
@@ -12377,7 +12377,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 234"
     },
@@ -12396,7 +12396,7 @@ export const officialData: Monster[] = [
        "hp":168,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 235"
     },
@@ -12415,7 +12415,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 236"
     },
@@ -12434,7 +12434,7 @@ export const officialData: Monster[] = [
        "hp":153,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 236"
     },
@@ -12453,7 +12453,7 @@ export const officialData: Monster[] = [
        "hp":207,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 239"
     },
@@ -12472,7 +12472,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":-3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 240"
     },
@@ -12491,7 +12491,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 126"
     },
@@ -12510,7 +12510,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 196"
     },
@@ -12529,7 +12529,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 241"
     },
@@ -12548,7 +12548,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 241"
     },
@@ -12567,7 +12567,7 @@ export const officialData: Monster[] = [
        "hp":255,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 231"
     },
@@ -12586,7 +12586,7 @@ export const officialData: Monster[] = [
        "hp":225,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 232"
     },
@@ -12605,7 +12605,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 232"
     },
@@ -12624,7 +12624,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 233"
     },
@@ -12643,7 +12643,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 233"
     },
@@ -12662,7 +12662,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":6,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 179"
     },
@@ -12681,7 +12681,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 242"
     },
@@ -12700,7 +12700,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 242"
     },
@@ -12719,7 +12719,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 246"
     },
@@ -12738,7 +12738,7 @@ export const officialData: Monster[] = [
        "hp":94,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 245"
     },
@@ -12757,7 +12757,7 @@ export const officialData: Monster[] = [
        "hp":157,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 139"
     },
@@ -12776,7 +12776,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 203"
     },
@@ -12795,7 +12795,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 163"
     },
@@ -12814,7 +12814,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 197"
     },
@@ -12833,7 +12833,7 @@ export const officialData: Monster[] = [
        "hp":147,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 252"
     },
@@ -12852,7 +12852,7 @@ export const officialData: Monster[] = [
        "hp":333,
        "init":3,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 155"
     },
@@ -12871,7 +12871,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 211"
     },
@@ -12890,7 +12890,7 @@ export const officialData: Monster[] = [
        "hp":307,
        "init":0,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Mordenkainen's Tome of Foes: 201"
     },
@@ -12909,7 +12909,7 @@ export const officialData: Monster[] = [
        "hp":580,
        "init":7,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 180"
     },
@@ -12928,7 +12928,7 @@ export const officialData: Monster[] = [
        "hp":304,
        "init":2,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Mordenkainen's Tome of Foes: 157"
     },
@@ -12947,7 +12947,7 @@ export const officialData: Monster[] = [
        "hp":34,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 240"
     },
@@ -12966,7 +12966,7 @@ export const officialData: Monster[] = [
        "hp":76,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 240"
     },
@@ -12985,7 +12985,7 @@ export const officialData: Monster[] = [
        "hp":481,
        "init":0,
        "lair":"lair",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Storm King's Thunder: 241"
     },
@@ -13004,7 +13004,7 @@ export const officialData: Monster[] = [
        "hp":341,
        "init":6,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Storm King's Thunder: 241"
     },
@@ -13023,7 +13023,7 @@ export const officialData: Monster[] = [
        "hp":42,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 242"
     },
@@ -13042,7 +13042,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 242"
     },
@@ -13061,7 +13061,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 243"
     },
@@ -13080,7 +13080,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 245"
     },
@@ -13099,7 +13099,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Storm King's Thunder: 244"
     },
@@ -13118,7 +13118,7 @@ export const officialData: Monster[] = [
        "hp":120,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 228"
     },
@@ -13137,7 +13137,7 @@ export const officialData: Monster[] = [
        "hp":263,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 226"
     },
@@ -13156,7 +13156,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 229"
     },
@@ -13175,7 +13175,7 @@ export const officialData: Monster[] = [
        "hp":17,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 226"
     },
@@ -13194,7 +13194,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 231"
     },
@@ -13213,7 +13213,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":-5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 227"
     },
@@ -13232,7 +13232,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 232"
     },
@@ -13251,7 +13251,7 @@ export const officialData: Monster[] = [
        "hp":88,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 233"
     },
@@ -13270,7 +13270,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 234"
     },
@@ -13289,7 +13289,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 235"
     },
@@ -13308,7 +13308,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 236"
     },
@@ -13327,7 +13327,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":6,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 237"
     },
@@ -13346,7 +13346,7 @@ export const officialData: Monster[] = [
        "hp":77,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 238"
     },
@@ -13365,7 +13365,7 @@ export const officialData: Monster[] = [
        "hp":144,
        "init":4,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Curse of Strahd: 240"
     },
@@ -13384,7 +13384,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 241"
     },
@@ -13403,7 +13403,7 @@ export const officialData: Monster[] = [
        "hp":112,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 227"
     },
@@ -13422,7 +13422,7 @@ export const officialData: Monster[] = [
        "hp":149,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 230"
     },
@@ -13441,7 +13441,7 @@ export const officialData: Monster[] = [
        "hp":192,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Curse of Strahd: 241"
     },
@@ -13460,7 +13460,7 @@ export const officialData: Monster[] = [
        "hp":31,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Curse of Strahd: 242"
     },
@@ -13479,7 +13479,7 @@ export const officialData: Monster[] = [
        "hp":39,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 230"
     },
@@ -13498,7 +13498,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 231"
     },
@@ -13517,7 +13517,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 232"
     },
@@ -13536,7 +13536,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 233"
     },
@@ -13555,7 +13555,7 @@ export const officialData: Monster[] = [
        "hp":37,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 233"
     },
@@ -13574,7 +13574,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 234"
     },
@@ -13593,7 +13593,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 235"
     },
@@ -13612,7 +13612,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 235"
     },
@@ -13631,7 +13631,7 @@ export const officialData: Monster[] = [
        "hp":42,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 236"
     },
@@ -13650,7 +13650,7 @@ export const officialData: Monster[] = [
        "hp":115,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 236"
     },
@@ -13669,7 +13669,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 236"
     },
@@ -13688,7 +13688,7 @@ export const officialData: Monster[] = [
        "hp":97,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 237"
     },
@@ -13707,7 +13707,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 238"
     },
@@ -13726,7 +13726,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 238"
     },
@@ -13745,7 +13745,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 239"
     },
@@ -13764,7 +13764,7 @@ export const officialData: Monster[] = [
        "hp":172,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 239"
     },
@@ -13783,7 +13783,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 240"
     },
@@ -13802,7 +13802,7 @@ export const officialData: Monster[] = [
        "hp":138,
        "init":-5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 241"
     },
@@ -13821,7 +13821,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 242"
     },
@@ -13840,7 +13840,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 242"
     },
@@ -13859,7 +13859,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 243"
     },
@@ -13878,7 +13878,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 243"
     },
@@ -13897,7 +13897,7 @@ export const officialData: Monster[] = [
        "hp":105,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 244"
     },
@@ -13916,7 +13916,7 @@ export const officialData: Monster[] = [
        "hp":102,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 245"
     },
@@ -13935,7 +13935,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 245"
     },
@@ -13954,7 +13954,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 246"
     },
@@ -13973,7 +13973,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 246"
     },
@@ -13992,7 +13992,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tales from the Yawning Portal: 247"
     },
@@ -14011,7 +14011,7 @@ export const officialData: Monster[] = [
        "hp":217,
        "init":-5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 248"
     },
@@ -14030,7 +14030,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tales from the Yawning Portal: 248"
     },
@@ -14049,7 +14049,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Rise of Tiamat: 89"
     },
@@ -14068,7 +14068,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Rise of Tiamat: 89"
     },
@@ -14087,7 +14087,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Rise of Tiamat: 90"
     },
@@ -14106,7 +14106,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Rise of Tiamat: 90"
     },
@@ -14125,7 +14125,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Rise of Tiamat: 90"
     },
@@ -14144,7 +14144,7 @@ export const officialData: Monster[] = [
        "hp":117,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Rise of Tiamat: 91"
     },
@@ -14163,7 +14163,7 @@ export const officialData: Monster[] = [
        "hp":150,
        "init":1,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Rise of Tiamat: 92"
     },
@@ -14182,7 +14182,7 @@ export const officialData: Monster[] = [
        "hp":615,
        "init":0,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Rise of Tiamat: 92"
     },
@@ -14201,7 +14201,7 @@ export const officialData: Monster[] = [
        "hp":285,
        "init":3,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 209"
     },
@@ -14220,7 +14220,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 210"
     },
@@ -14239,7 +14239,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 210"
     },
@@ -14258,7 +14258,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 211"
     },
@@ -14277,7 +14277,7 @@ export const officialData: Monster[] = [
        "hp":68,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 240"
     },
@@ -14296,7 +14296,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 212"
     },
@@ -14315,7 +14315,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 213"
     },
@@ -14334,7 +14334,7 @@ export const officialData: Monster[] = [
        "hp":225,
        "init":-3,
        "lair":"",
-       "legendary":"legendary",
+       "legendary":true,
        "unique":"",
        "sources":"Tomb of Annihilation: 214"
     },
@@ -14353,7 +14353,7 @@ export const officialData: Monster[] = [
        "hp":5,
        "init":5,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 216"
     },
@@ -14372,7 +14372,7 @@ export const officialData: Monster[] = [
        "hp":120,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 218"
     },
@@ -14391,7 +14391,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 219"
     },
@@ -14410,7 +14410,7 @@ export const officialData: Monster[] = [
        "hp":3,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 220"
     },
@@ -14429,7 +14429,7 @@ export const officialData: Monster[] = [
        "hp":147,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 221"
     },
@@ -14448,7 +14448,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 222"
     },
@@ -14467,7 +14467,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 240"
     },
@@ -14486,7 +14486,7 @@ export const officialData: Monster[] = [
        "hp":16,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 225"
     },
@@ -14505,7 +14505,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 225"
     },
@@ -14524,7 +14524,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 227"
     },
@@ -14543,7 +14543,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 227"
     },
@@ -14562,7 +14562,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 228"
     },
@@ -14581,7 +14581,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 229"
     },
@@ -14600,7 +14600,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 230"
     },
@@ -14619,7 +14619,7 @@ export const officialData: Monster[] = [
        "hp":157,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 231"
     },
@@ -14638,7 +14638,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 232"
     },
@@ -14657,7 +14657,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 232"
     },
@@ -14676,7 +14676,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 233"
     },
@@ -14695,7 +14695,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 234"
     },
@@ -14714,7 +14714,7 @@ export const officialData: Monster[] = [
        "hp":136,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 241"
     },
@@ -14733,7 +14733,7 @@ export const officialData: Monster[] = [
        "hp":31,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 235"
     },
@@ -14752,7 +14752,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 236"
     },
@@ -14771,7 +14771,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":-4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 237"
     },
@@ -14790,7 +14790,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 237"
     },
@@ -14809,7 +14809,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"unique",
        "sources":"Tomb of Annihilation: 239"
     },
@@ -14828,7 +14828,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Tomb of Annihilation: 241"
     },
@@ -14847,7 +14847,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"The Tortle Package: 21"
     },
@@ -14866,7 +14866,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"The Tortle Package: 22"
     },
@@ -14885,7 +14885,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"The Tortle Package: 22"
     },
@@ -14904,7 +14904,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 209"
     },
@@ -14923,7 +14923,7 @@ export const officialData: Monster[] = [
        "hp":120,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 172"
     },
@@ -14942,7 +14942,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 159"
     },
@@ -14961,7 +14961,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 209"
     },
@@ -14980,7 +14980,7 @@ export const officialData: Monster[] = [
        "hp":132,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 210"
     },
@@ -14999,7 +14999,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 210"
     },
@@ -15018,7 +15018,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 207"
     },
@@ -15037,7 +15037,7 @@ export const officialData: Monster[] = [
        "hp":82,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 136"
     },
@@ -15056,7 +15056,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 122"
     },
@@ -15075,7 +15075,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 211"
     },
@@ -15094,7 +15094,7 @@ export const officialData: Monster[] = [
        "hp":90,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 123, Tales from the Yawning Portal: 230"
     },
@@ -15113,7 +15113,7 @@ export const officialData: Monster[] = [
        "hp":91,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 160"
     },
@@ -15132,7 +15132,7 @@ export const officialData: Monster[] = [
        "hp":153,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 211"
     },
@@ -15151,7 +15151,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 127, Tomb of Annihilation: 215"
     },
@@ -15170,7 +15170,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 128"
     },
@@ -15189,7 +15189,7 @@ export const officialData: Monster[] = [
        "hp":121,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 139, Tomb of Annihilation: 215"
     },
@@ -15208,7 +15208,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 129"
     },
@@ -15227,7 +15227,7 @@ export const officialData: Monster[] = [
        "hp":58,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 130"
     },
@@ -15246,7 +15246,7 @@ export const officialData: Monster[] = [
        "hp":143,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 212, Tales from the Yawning Portal: 231, Tomb of Annihilation: 216"
     },
@@ -15265,7 +15265,7 @@ export const officialData: Monster[] = [
        "hp":18,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 131"
     },
@@ -15284,7 +15284,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 132"
     },
@@ -15303,7 +15303,7 @@ export const officialData: Monster[] = [
        "hp":262,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 146"
     },
@@ -15322,7 +15322,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 212, Tales from the Yawning Portal: 232"
     },
@@ -15341,7 +15341,7 @@ export const officialData: Monster[] = [
        "hp":15,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 207"
     },
@@ -15360,7 +15360,7 @@ export const officialData: Monster[] = [
        "hp":15,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 208"
     },
@@ -15379,7 +15379,7 @@ export const officialData: Monster[] = [
        "hp":2,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 133"
     },
@@ -15398,7 +15398,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 134"
     },
@@ -15417,7 +15417,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 134"
     },
@@ -15436,7 +15436,7 @@ export const officialData: Monster[] = [
        "hp":161,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 124"
     },
@@ -15455,7 +15455,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 135"
     },
@@ -15474,7 +15474,7 @@ export const officialData: Monster[] = [
        "hp":26,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 139, Tomb of Annihilation: 217"
     },
@@ -15493,7 +15493,7 @@ export const officialData: Monster[] = [
        "hp":178,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 138"
     },
@@ -15512,7 +15512,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 139, Tomb of Annihilation: 217"
     },
@@ -15531,7 +15531,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 213"
     },
@@ -15550,7 +15550,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 208"
     },
@@ -15569,7 +15569,7 @@ export const officialData: Monster[] = [
        "hp":123,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 141"
     },
@@ -15588,7 +15588,7 @@ export const officialData: Monster[] = [
        "hp":210,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 173"
     },
@@ -15607,7 +15607,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 213, Tales from the Yawning Portal: 234"
     },
@@ -15626,7 +15626,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 214, Tales from the Yawning Portal: 235"
     },
@@ -15645,7 +15645,7 @@ export const officialData: Monster[] = [
        "hp":187,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 147"
     },
@@ -15664,7 +15664,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 143, Tomb of Annihilation: 219"
     },
@@ -15683,7 +15683,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 142, Tomb of Annihilation: 219"
     },
@@ -15702,7 +15702,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":-3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 144, Tomb of Annihilation: 220"
     },
@@ -15721,7 +15721,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 153"
     },
@@ -15740,7 +15740,7 @@ export const officialData: Monster[] = [
        "hp":184,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 145, Tomb of Annihilation: 221"
     },
@@ -15759,7 +15759,7 @@ export const officialData: Monster[] = [
        "hp":189,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 148"
     },
@@ -15778,7 +15778,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 125"
     },
@@ -15797,7 +15797,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 126"
     },
@@ -15816,7 +15816,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 143, Tomb of Annihilation: 222"
     },
@@ -15835,7 +15835,7 @@ export const officialData: Monster[] = [
        "hp":59,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 152, Tomb of Annihilation: 222"
     },
@@ -15854,7 +15854,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 154"
     },
@@ -15873,7 +15873,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 154"
     },
@@ -15892,7 +15892,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 155"
     },
@@ -15911,7 +15911,7 @@ export const officialData: Monster[] = [
        "hp":11,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 156, Tomb of Annihilation: 223"
     },
@@ -15930,7 +15930,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 157, Tomb of Annihilation: 223"
     },
@@ -15949,7 +15949,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 157, Tomb of Annihilation: 224"
     },
@@ -15968,7 +15968,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Hoard of the Dragon Queen: 91, Rise of Tiamat: 90, Volo's Guide to Monsters: 158"
     },
@@ -15987,7 +15987,7 @@ export const officialData: Monster[] = [
        "hp":19,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 140, Tomb of Annihilation: 224"
     },
@@ -16006,7 +16006,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 161"
     },
@@ -16025,7 +16025,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 162"
     },
@@ -16044,7 +16044,7 @@ export const officialData: Monster[] = [
        "hp":38,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 214, Tales from the Yawning Portal: 237"
     },
@@ -16063,7 +16063,7 @@ export const officialData: Monster[] = [
        "hp":152,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 163"
     },
@@ -16082,7 +16082,7 @@ export const officialData: Monster[] = [
        "hp":44,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 165"
     },
@@ -16101,7 +16101,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 166, Tomb of Annihilation: 226"
     },
@@ -16120,7 +16120,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 167, Tomb of Annihilation: 226"
     },
@@ -16139,7 +16139,7 @@ export const officialData: Monster[] = [
        "hp":102,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 168"
     },
@@ -16158,7 +16158,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 215"
     },
@@ -16177,7 +16177,7 @@ export const officialData: Monster[] = [
        "hp":67,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 169"
     },
@@ -16196,7 +16196,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 216, Tales from the Yawning Portal: 240"
     },
@@ -16215,7 +16215,7 @@ export const officialData: Monster[] = [
        "hp":84,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 216"
     },
@@ -16234,7 +16234,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 137"
     },
@@ -16253,7 +16253,7 @@ export const officialData: Monster[] = [
        "hp":31,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 170"
     },
@@ -16272,7 +16272,7 @@ export const officialData: Monster[] = [
        "hp":135,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 172"
     },
@@ -16291,7 +16291,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 176"
     },
@@ -16310,7 +16310,7 @@ export const officialData: Monster[] = [
        "hp":130,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 177"
     },
@@ -16329,7 +16329,7 @@ export const officialData: Monster[] = [
        "hp":105,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 149"
     },
@@ -16348,7 +16348,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 217, Tales from the Yawning Portal: 241"
     },
@@ -16367,7 +16367,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 180"
     },
@@ -16386,7 +16386,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 179"
     },
@@ -16405,7 +16405,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 180"
     },
@@ -16424,7 +16424,7 @@ export const officialData: Monster[] = [
        "hp":325,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 181"
     },
@@ -16443,7 +16443,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 182"
     },
@@ -16462,7 +16462,7 @@ export const officialData: Monster[] = [
        "hp":60,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 183"
     },
@@ -16481,7 +16481,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 183"
     },
@@ -16500,7 +16500,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 184"
     },
@@ -16519,7 +16519,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 184"
     },
@@ -16538,7 +16538,7 @@ export const officialData: Monster[] = [
        "hp":52,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 185"
     },
@@ -16557,7 +16557,7 @@ export const officialData: Monster[] = [
        "hp":30,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 140, Tomb of Annihilation: 230"
     },
@@ -16576,7 +16576,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":6,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 187"
     },
@@ -16595,7 +16595,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 188"
     },
@@ -16614,7 +16614,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 208"
     },
@@ -16633,7 +16633,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 189"
     },
@@ -16652,7 +16652,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 190"
     },
@@ -16671,7 +16671,7 @@ export const officialData: Monster[] = [
        "hp":48,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 190"
     },
@@ -16690,7 +16690,7 @@ export const officialData: Monster[] = [
        "hp":110,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 137"
     },
@@ -16709,7 +16709,7 @@ export const officialData: Monster[] = [
        "hp":32,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 191"
     },
@@ -16728,7 +16728,7 @@ export const officialData: Monster[] = [
        "hp":76,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 192"
     },
@@ -16747,7 +16747,7 @@ export const officialData: Monster[] = [
        "hp":76,
        "init":-1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 140, Tomb of Annihilation: 231"
     },
@@ -16766,7 +16766,7 @@ export const officialData: Monster[] = [
        "hp":15,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 208"
     },
@@ -16785,7 +16785,7 @@ export const officialData: Monster[] = [
        "hp":161,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 150"
     },
@@ -16804,7 +16804,7 @@ export const officialData: Monster[] = [
        "hp":230,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 151"
     },
@@ -16823,7 +16823,7 @@ export const officialData: Monster[] = [
        "hp":36,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 133"
     },
@@ -16842,7 +16842,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":-2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 208"
     },
@@ -16861,7 +16861,7 @@ export const officialData: Monster[] = [
        "hp":66,
        "init":4,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 217"
     },
@@ -16880,7 +16880,7 @@ export const officialData: Monster[] = [
        "hp":95,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 186"
     },
@@ -16899,7 +16899,7 @@ export const officialData: Monster[] = [
        "hp":27,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 197, Tomb of Annihilation: 233"
     },
@@ -16918,7 +16918,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 193"
     },
@@ -16937,7 +16937,7 @@ export const officialData: Monster[] = [
        "hp":40,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 218, Tales from the Yawning Portal: 247"
     },
@@ -16956,7 +16956,7 @@ export const officialData: Monster[] = [
        "hp":85,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 194"
     },
@@ -16975,7 +16975,7 @@ export const officialData: Monster[] = [
        "hp":127,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 175"
     },
@@ -16994,7 +16994,7 @@ export const officialData: Monster[] = [
        "hp":13,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 195"
     },
@@ -17013,7 +17013,7 @@ export const officialData: Monster[] = [
        "hp":9,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 196, Tomb of Annihilation: 234"
     },
@@ -17032,7 +17032,7 @@ export const officialData: Monster[] = [
        "hp":33,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 197, Tomb of Annihilation: 235"
     },
@@ -17051,7 +17051,7 @@ export const officialData: Monster[] = [
        "hp":10,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 140, Tomb of Annihilation: 235"
     },
@@ -17070,7 +17070,7 @@ export const officialData: Monster[] = [
        "hp":117,
        "init":0,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 218"
     },
@@ -17089,7 +17089,7 @@ export const officialData: Monster[] = [
        "hp":49,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 219"
     },
@@ -17108,7 +17108,7 @@ export const officialData: Monster[] = [
        "hp":78,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 219"
     },
@@ -17127,7 +17127,7 @@ export const officialData: Monster[] = [
        "hp":91,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 220"
     },
@@ -17146,7 +17146,7 @@ export const officialData: Monster[] = [
        "hp":229,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 220"
     },
@@ -17165,7 +17165,7 @@ export const officialData: Monster[] = [
        "hp":75,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 198"
     },
@@ -17184,7 +17184,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 200"
     },
@@ -17203,7 +17203,7 @@ export const officialData: Monster[] = [
        "hp":7,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 200"
     },
@@ -17222,7 +17222,7 @@ export const officialData: Monster[] = [
        "hp":22,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 200"
     },
@@ -17241,7 +17241,7 @@ export const officialData: Monster[] = [
        "hp":51,
        "init":3,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 201"
     },
@@ -17260,7 +17260,7 @@ export const officialData: Monster[] = [
        "hp":189,
        "init":1,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 202"
     },
@@ -17279,7 +17279,7 @@ export const officialData: Monster[] = [
        "hp":45,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 203, Tomb of Annihilation: 238"
     },
@@ -17298,7 +17298,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 204"
     },
@@ -17317,7 +17317,7 @@ export const officialData: Monster[] = [
        "hp":71,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 205, Tomb of Annihilation: 239"
     },
@@ -17336,7 +17336,7 @@ export const officialData: Monster[] = [
        "hp":88,
        "init":2,
        "lair":"",
-       "legendary":"",
+       "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 206"
     }

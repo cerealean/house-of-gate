@@ -95,9 +95,14 @@ export class ColumnManagerService {
         position: 8
       },
       {
+        name: 'legendary',
+        isShown: false,
+        position: 9
+      },
+      {
         name: 'sources',
         isShown: true,
-        position: 9
+        position: 10
       },
     ];
   }

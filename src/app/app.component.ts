@@ -10,6 +10,7 @@ import { ColumnInfo } from './models/column-info';
 import { Subscription } from 'rxjs';
 import { monsterTypes } from './data/monster-types';
 import { MatSort } from '@angular/material/sort';
+import { MonsterFilters } from './models/monster-filters';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public dataSource = new MatTableDataSource<Monster>(this.monsters);
 
-  public filters = {
+  public filters: MonsterFilters = {
     name: '',
     minCr: 0,
     maxCr: 30,

@@ -16,7 +16,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 44"
   },
@@ -35,7 +35,7 @@ export const communityData: Monster[] = [
     "hp": 231,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 45"
   },
@@ -54,7 +54,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 44"
   },
@@ -73,7 +73,7 @@ export const communityData: Monster[] = [
     "hp": 332,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 46"
   },
@@ -92,7 +92,7 @@ export const communityData: Monster[] = [
     "hp": 53,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 6"
   },
@@ -111,7 +111,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 11"
   },
@@ -130,7 +130,7 @@ export const communityData: Monster[] = [
     "hp": 42,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 125"
   },
@@ -149,7 +149,7 @@ export const communityData: Monster[] = [
     "hp": 207,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 71"
   },
@@ -168,7 +168,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 75"
   },
@@ -187,7 +187,7 @@ export const communityData: Monster[] = [
     "hp": 226,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 78"
   },
@@ -206,7 +206,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 200"
   },
@@ -225,7 +225,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 82"
   },
@@ -244,7 +244,7 @@ export const communityData: Monster[] = [
     "hp": 212,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 85"
   },
@@ -263,7 +263,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 7"
   },
@@ -282,7 +282,7 @@ export const communityData: Monster[] = [
     "hp": 396,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 101"
   },
@@ -301,7 +301,7 @@ export const communityData: Monster[] = [
     "hp": 385,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 70"
   },
@@ -320,7 +320,7 @@ export const communityData: Monster[] = [
     "hp": 455,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 74"
   },
@@ -339,7 +339,7 @@ export const communityData: Monster[] = [
     "hp": 546,
     "init": 0,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 77"
   },
@@ -358,7 +358,7 @@ export const communityData: Monster[] = [
     "hp": 420,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 81"
   },
@@ -377,7 +377,7 @@ export const communityData: Monster[] = [
     "hp": 481,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 84"
   },
@@ -396,7 +396,7 @@ export const communityData: Monster[] = [
     "hp": 56,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 8"
   },
@@ -415,7 +415,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 47"
   },
@@ -434,7 +434,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 47"
   },
@@ -453,7 +453,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 255"
   },
@@ -472,7 +472,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 12"
   },
@@ -491,7 +491,7 @@ export const communityData: Monster[] = [
     "hp": 147,
     "init": 8,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 13"
   },
@@ -510,7 +510,7 @@ export const communityData: Monster[] = [
     "hp": 201,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 153"
   },
@@ -529,7 +529,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 222"
   },
@@ -548,7 +548,7 @@ export const communityData: Monster[] = [
     "hp": 147,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 15"
   },
@@ -567,7 +567,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 16"
   },
@@ -586,7 +586,7 @@ export const communityData: Monster[] = [
     "hp": 191,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 17"
   },
@@ -605,7 +605,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 18"
   },
@@ -624,7 +624,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 143"
   },
@@ -643,7 +643,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 19"
   },
@@ -662,7 +662,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 20"
   },
@@ -681,7 +681,7 @@ export const communityData: Monster[] = [
     "hp": 15,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 153"
   },
@@ -700,7 +700,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 129"
   },
@@ -719,7 +719,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 21"
   },
@@ -738,7 +738,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 24"
   },
@@ -757,7 +757,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 48"
   },
@@ -776,7 +776,7 @@ export const communityData: Monster[] = [
     "hp": 168,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 22"
   },
@@ -795,7 +795,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 222"
   },
@@ -814,7 +814,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 23"
   },
@@ -833,7 +833,7 @@ export const communityData: Monster[] = [
     "hp": 362,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 24"
   },
@@ -852,7 +852,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 25"
   },
@@ -871,7 +871,7 @@ export const communityData: Monster[] = [
     "hp": 253,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 25"
   },
@@ -890,7 +890,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 9"
   },
@@ -909,7 +909,7 @@ export const communityData: Monster[] = [
     "hp": 264,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 222"
   },
@@ -928,7 +928,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 27"
   },
@@ -947,7 +947,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 28"
   },
@@ -966,7 +966,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 29"
   },
@@ -985,7 +985,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 30"
   },
@@ -1004,7 +1004,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 232"
   },
@@ -1026,7 +1026,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 91"
   },
@@ -1045,7 +1045,7 @@ export const communityData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 31"
   },
@@ -1064,7 +1064,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 144"
   },
@@ -1083,7 +1083,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 49"
   },
@@ -1102,7 +1102,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 32"
   },
@@ -1121,7 +1121,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 33"
   },
@@ -1140,7 +1140,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 33"
   },
@@ -1159,7 +1159,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 255"
   },
@@ -1178,7 +1178,7 @@ export const communityData: Monster[] = [
     "hp": 2,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 222"
   },
@@ -1197,7 +1197,7 @@ export const communityData: Monster[] = [
     "hp": 3,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 223"
   },
@@ -1216,7 +1216,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 35"
   },
@@ -1235,7 +1235,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 36"
   },
@@ -1254,7 +1254,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 37"
   },
@@ -1273,7 +1273,7 @@ export const communityData: Monster[] = [
     "hp": 145,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 223"
   },
@@ -1292,7 +1292,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 223"
   },
@@ -1311,7 +1311,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 37"
   },
@@ -1330,7 +1330,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 38"
   },
@@ -1349,7 +1349,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 39"
   },
@@ -1368,7 +1368,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 154"
   },
@@ -1387,7 +1387,7 @@ export const communityData: Monster[] = [
     "hp": 276,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 104"
   },
@@ -1406,7 +1406,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 40"
   },
@@ -1425,7 +1425,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 216"
   },
@@ -1444,7 +1444,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 67"
   },
@@ -1463,7 +1463,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 223"
   },
@@ -1482,7 +1482,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 68"
   },
@@ -1501,7 +1501,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 88"
   },
@@ -1520,7 +1520,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 155"
   },
@@ -1539,7 +1539,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 89"
   },
@@ -1558,7 +1558,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 90"
   },
@@ -1577,7 +1577,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 89"
   },
@@ -1596,7 +1596,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 218"
   },
@@ -1615,7 +1615,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 155"
   },
@@ -1634,7 +1634,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 247"
   },
@@ -1653,7 +1653,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 11"
   },
@@ -1672,7 +1672,7 @@ export const communityData: Monster[] = [
     "hp": 161,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 248"
   },
@@ -1691,7 +1691,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 248"
   },
@@ -1710,7 +1710,7 @@ export const communityData: Monster[] = [
     "hp": 218,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 101"
   },
@@ -1729,7 +1729,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 174"
   },
@@ -1748,7 +1748,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 200"
   },
@@ -1767,7 +1767,7 @@ export const communityData: Monster[] = [
     "hp": 147,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 248"
   },
@@ -1786,7 +1786,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 94"
   },
@@ -1805,7 +1805,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 94"
   },
@@ -1824,7 +1824,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 95"
   },
@@ -1843,7 +1843,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 49"
   },
@@ -1862,7 +1862,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 256"
   },
@@ -1881,7 +1881,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 1/2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 97"
   },
@@ -1900,7 +1900,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 50"
   },
@@ -1919,7 +1919,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 255"
   },
@@ -1938,7 +1938,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 99"
   },
@@ -1957,7 +1957,7 @@ export const communityData: Monster[] = [
     "hp": 231,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 99"
   },
@@ -1976,7 +1976,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 98"
   },
@@ -1995,7 +1995,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 98"
   },
@@ -2014,7 +2014,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 97"
   },
@@ -2033,7 +2033,7 @@ export const communityData: Monster[] = [
     "hp": 3,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 224"
   },
@@ -2052,7 +2052,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 100"
   },
@@ -2071,7 +2071,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 102"
   },
@@ -2090,7 +2090,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 179"
   },
@@ -2109,7 +2109,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 224"
   },
@@ -2128,7 +2128,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 224"
   },
@@ -2147,7 +2147,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 224"
   },
@@ -2166,7 +2166,7 @@ export const communityData: Monster[] = [
     "hp": 47,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 224"
   },
@@ -2185,7 +2185,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 225"
   },
@@ -2204,7 +2204,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 225"
   },
@@ -2223,7 +2223,7 @@ export const communityData: Monster[] = [
     "hp": 155,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 225"
   },
@@ -2242,7 +2242,7 @@ export const communityData: Monster[] = [
     "hp": 95,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 107"
   },
@@ -2261,7 +2261,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 50"
   },
@@ -2280,7 +2280,7 @@ export const communityData: Monster[] = [
     "hp": 202,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 156"
   },
@@ -2299,7 +2299,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 226"
   },
@@ -2318,7 +2318,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 108"
   },
@@ -2337,7 +2337,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 226"
   },
@@ -2356,7 +2356,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 101"
   },
@@ -2375,7 +2375,7 @@ export const communityData: Monster[] = [
     "hp": 73,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 226"
   },
@@ -2394,7 +2394,7 @@ export const communityData: Monster[] = [
     "hp": 93,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 96"
   },
@@ -2413,7 +2413,7 @@ export const communityData: Monster[] = [
     "hp": 95,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 125"
   },
@@ -2432,7 +2432,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 10"
   },
@@ -2451,7 +2451,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 109"
   },
@@ -2470,7 +2470,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 110"
   },
@@ -2489,7 +2489,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 35"
   },
@@ -2511,7 +2511,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 111"
   },
@@ -2530,7 +2530,7 @@ export const communityData: Monster[] = [
     "hp": 143,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 255"
   },
@@ -2549,7 +2549,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 256"
   },
@@ -2568,7 +2568,7 @@ export const communityData: Monster[] = [
     "hp": 126,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 92"
   },
@@ -2587,7 +2587,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 14"
   },
@@ -2606,7 +2606,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 112"
   },
@@ -2625,7 +2625,7 @@ export const communityData: Monster[] = [
     "hp": 103,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 113"
   },
@@ -2644,7 +2644,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 209"
   },
@@ -2663,7 +2663,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 124"
   },
@@ -2682,7 +2682,7 @@ export const communityData: Monster[] = [
     "hp": 218,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 51"
   },
@@ -2701,7 +2701,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 226"
   },
@@ -2720,7 +2720,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 114"
   },
@@ -2739,7 +2739,7 @@ export const communityData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 116"
   },
@@ -2758,7 +2758,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 116"
   },
@@ -2777,7 +2777,7 @@ export const communityData: Monster[] = [
     "hp": 46,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 116"
   },
@@ -2796,7 +2796,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 117"
   },
@@ -2815,7 +2815,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 217"
   },
@@ -2834,7 +2834,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 118"
   },
@@ -2853,7 +2853,7 @@ export const communityData: Monster[] = [
     "hp": 15,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 119"
   },
@@ -2872,7 +2872,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 120"
   },
@@ -2891,7 +2891,7 @@ export const communityData: Monster[] = [
     "hp": 533,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 157"
   },
@@ -2910,7 +2910,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 121"
   },
@@ -2929,7 +2929,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 227"
   },
@@ -2948,7 +2948,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 158"
   },
@@ -2967,7 +2967,7 @@ export const communityData: Monster[] = [
     "hp": 171,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 52"
   },
@@ -2986,7 +2986,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 53"
   },
@@ -3005,7 +3005,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 11"
   },
@@ -3024,7 +3024,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 55"
   },
@@ -3043,7 +3043,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 199"
   },
@@ -3062,7 +3062,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 146"
   },
@@ -3081,7 +3081,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 180"
   },
@@ -3100,7 +3100,7 @@ export const communityData: Monster[] = [
     "hp": 337,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 54"
   },
@@ -3119,7 +3119,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 122"
   },
@@ -3138,7 +3138,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 122"
   },
@@ -3157,7 +3157,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 123"
   },
@@ -3179,7 +3179,7 @@ export const communityData: Monster[] = [
     "hp": 202,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 127"
   },
@@ -3201,7 +3201,7 @@ export const communityData: Monster[] = [
     "hp": 202,
     "init": 5,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 127"
   },
@@ -3220,7 +3220,7 @@ export const communityData: Monster[] = [
     "hp": 216,
     "init": 7,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 249"
   },
@@ -3239,7 +3239,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 257"
   },
@@ -3258,7 +3258,7 @@ export const communityData: Monster[] = [
     "hp": 264,
     "init": -2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 250"
   },
@@ -3277,7 +3277,7 @@ export const communityData: Monster[] = [
     "hp": 232,
     "init": 6,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 251"
   },
@@ -3296,7 +3296,7 @@ export const communityData: Monster[] = [
     "hp": 248,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 252"
   },
@@ -3315,7 +3315,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 227"
   },
@@ -3334,7 +3334,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 132"
   },
@@ -3353,7 +3353,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 133"
   },
@@ -3372,7 +3372,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 228"
   },
@@ -3391,7 +3391,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 134"
   },
@@ -3410,7 +3410,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 56"
   },
@@ -3429,7 +3429,7 @@ export const communityData: Monster[] = [
     "hp": 42,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 135"
   },
@@ -3448,7 +3448,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 53"
   },
@@ -3467,7 +3467,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 136"
   },
@@ -3486,7 +3486,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 137"
   },
@@ -3505,7 +3505,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 138"
   },
@@ -3524,7 +3524,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 139"
   },
@@ -3543,7 +3543,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 142"
   },
@@ -3562,7 +3562,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 55"
   },
@@ -3581,7 +3581,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 72"
   },
@@ -3603,7 +3603,7 @@ export const communityData: Monster[] = [
     "hp": 155,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 145"
   },
@@ -3622,7 +3622,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 244"
   },
@@ -3641,7 +3641,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 244"
   },
@@ -3660,7 +3660,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 245"
   },
@@ -3679,7 +3679,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 245"
   },
@@ -3698,7 +3698,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 158"
   },
@@ -3717,7 +3717,7 @@ export const communityData: Monster[] = [
     "hp": 232,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 148"
   },
@@ -3736,7 +3736,7 @@ export const communityData: Monster[] = [
     "hp": 178,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 149"
   },
@@ -3755,7 +3755,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 149"
   },
@@ -3774,7 +3774,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 150"
   },
@@ -3793,7 +3793,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 151"
   },
@@ -3812,7 +3812,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 151"
   },
@@ -3831,7 +3831,7 @@ export const communityData: Monster[] = [
     "hp": 17,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 162"
   },
@@ -3850,7 +3850,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 163"
   },
@@ -3869,7 +3869,7 @@ export const communityData: Monster[] = [
     "hp": 220,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 164"
   },
@@ -3888,7 +3888,7 @@ export const communityData: Monster[] = [
     "hp": 385,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 257"
   },
@@ -3907,7 +3907,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 165"
   },
@@ -3929,7 +3929,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 165"
   },
@@ -3948,7 +3948,7 @@ export const communityData: Monster[] = [
     "hp": 2,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 228"
   },
@@ -3967,7 +3967,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 217"
   },
@@ -3986,7 +3986,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 57"
   },
@@ -4005,7 +4005,7 @@ export const communityData: Monster[] = [
     "hp": 6,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 57"
   },
@@ -4024,7 +4024,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 130"
   },
@@ -4043,7 +4043,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 166"
   },
@@ -4062,7 +4062,7 @@ export const communityData: Monster[] = [
     "hp": 147,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 167"
   },
@@ -4081,7 +4081,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 167"
   },
@@ -4100,7 +4100,7 @@ export const communityData: Monster[] = [
     "hp": 168,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 168"
   },
@@ -4119,7 +4119,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 168"
   },
@@ -4138,7 +4138,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 169"
   },
@@ -4157,7 +4157,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 169"
   },
@@ -4176,7 +4176,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 14"
   },
@@ -4195,7 +4195,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 170"
   },
@@ -4214,7 +4214,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 228"
   },
@@ -4233,7 +4233,7 @@ export const communityData: Monster[] = [
     "hp": 79,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 58"
   },
@@ -4252,7 +4252,7 @@ export const communityData: Monster[] = [
     "hp": 79,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 58"
   },
@@ -4271,7 +4271,7 @@ export const communityData: Monster[] = [
     "hp": 79,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 58"
   },
@@ -4290,7 +4290,7 @@ export const communityData: Monster[] = [
     "hp": 79,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 58"
   },
@@ -4309,7 +4309,7 @@ export const communityData: Monster[] = [
     "hp": 42,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 171"
   },
@@ -4328,7 +4328,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 171"
   },
@@ -4347,7 +4347,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 172"
   },
@@ -4366,7 +4366,7 @@ export const communityData: Monster[] = [
     "hp": 48,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 173"
   },
@@ -4385,7 +4385,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 10"
   },
@@ -4404,7 +4404,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 93"
   },
@@ -4423,7 +4423,7 @@ export const communityData: Monster[] = [
     "hp": 190,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 175"
   },
@@ -4442,7 +4442,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 59"
   },
@@ -4461,7 +4461,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 60"
   },
@@ -4480,7 +4480,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 60"
   },
@@ -4499,7 +4499,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 176"
   },
@@ -4518,7 +4518,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 177"
   },
@@ -4537,7 +4537,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 177"
   },
@@ -4556,7 +4556,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 61"
   },
@@ -4575,7 +4575,7 @@ export const communityData: Monster[] = [
     "hp": 34,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 228"
   },
@@ -4594,7 +4594,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 229"
   },
@@ -4613,7 +4613,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 229"
   },
@@ -4632,7 +4632,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 233"
   },
@@ -4651,7 +4651,7 @@ export const communityData: Monster[] = [
     "hp": 170,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 62"
   },
@@ -4670,7 +4670,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 178"
   },
@@ -4689,7 +4689,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 181"
   },
@@ -4708,7 +4708,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 181"
   },
@@ -4727,7 +4727,7 @@ export const communityData: Monster[] = [
     "hp": 64,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 182"
   },
@@ -4746,7 +4746,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 183"
   },
@@ -4765,7 +4765,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 209"
   },
@@ -4784,7 +4784,7 @@ export const communityData: Monster[] = [
     "hp": 225,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 159"
   },
@@ -4803,7 +4803,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 147"
   },
@@ -4822,7 +4822,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 234"
   },
@@ -4841,7 +4841,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 234"
   },
@@ -4860,7 +4860,7 @@ export const communityData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 233"
   },
@@ -4879,7 +4879,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 235"
   },
@@ -4898,7 +4898,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 234"
   },
@@ -4917,7 +4917,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 234"
   },
@@ -4936,7 +4936,7 @@ export const communityData: Monster[] = [
     "hp": 34,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 235"
   },
@@ -4955,7 +4955,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 235"
   },
@@ -4974,7 +4974,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 235"
   },
@@ -4993,7 +4993,7 @@ export const communityData: Monster[] = [
     "hp": 212,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 237"
   },
@@ -5012,7 +5012,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 237"
   },
@@ -5031,7 +5031,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 236"
   },
@@ -5050,7 +5050,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 236"
   },
@@ -5069,7 +5069,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 236"
   },
@@ -5088,7 +5088,7 @@ export const communityData: Monster[] = [
     "hp": 4,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 236"
   },
@@ -5107,7 +5107,7 @@ export const communityData: Monster[] = [
     "hp": 93,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 238"
   },
@@ -5126,7 +5126,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 237"
   },
@@ -5145,7 +5145,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 237"
   },
@@ -5164,7 +5164,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 184"
   },
@@ -5183,7 +5183,7 @@ export const communityData: Monster[] = [
     "hp": 156,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 185"
   },
@@ -5202,7 +5202,7 @@ export const communityData: Monster[] = [
     "hp": 156,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 185"
   },
@@ -5221,7 +5221,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 187"
   },
@@ -5240,7 +5240,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 188"
   },
@@ -5259,7 +5259,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 229"
   },
@@ -5278,7 +5278,7 @@ export const communityData: Monster[] = [
     "hp": 180,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 63"
   },
@@ -5297,7 +5297,7 @@ export const communityData: Monster[] = [
     "hp": 220,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 64"
   },
@@ -5316,7 +5316,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 188"
   },
@@ -5335,7 +5335,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 189"
   },
@@ -5354,7 +5354,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 190"
   },
@@ -5373,7 +5373,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 138"
   },
@@ -5392,7 +5392,7 @@ export const communityData: Monster[] = [
     "hp": 201,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 229"
   },
@@ -5411,7 +5411,7 @@ export const communityData: Monster[] = [
     "hp": 109,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 61"
   },
@@ -5430,7 +5430,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 191"
   },
@@ -5449,7 +5449,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 229"
   },
@@ -5468,7 +5468,7 @@ export const communityData: Monster[] = [
     "hp": 103,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 192"
   },
@@ -5487,7 +5487,7 @@ export const communityData: Monster[] = [
     "hp": 34,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 193"
   },
@@ -5506,7 +5506,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 194"
   },
@@ -5525,7 +5525,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 195"
   },
@@ -5544,7 +5544,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 76"
   },
@@ -5563,7 +5563,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 131"
   },
@@ -5582,7 +5582,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 196"
   },
@@ -5601,7 +5601,7 @@ export const communityData: Monster[] = [
     "hp": 24,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 230"
   },
@@ -5620,7 +5620,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 230"
   },
@@ -5639,7 +5639,7 @@ export const communityData: Monster[] = [
     "hp": 49,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 230"
   },
@@ -5658,7 +5658,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 196"
   },
@@ -5677,7 +5677,7 @@ export const communityData: Monster[] = [
     "hp": 24,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 230"
   },
@@ -5696,7 +5696,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 180"
   },
@@ -5715,7 +5715,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 197"
   },
@@ -5734,7 +5734,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 198"
   },
@@ -5753,7 +5753,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 79"
   },
@@ -5772,7 +5772,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 65"
   },
@@ -5791,7 +5791,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 238"
   },
@@ -5810,7 +5810,7 @@ export const communityData: Monster[] = [
     "hp": 3,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 231"
   },
@@ -5829,7 +5829,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 34"
   },
@@ -5848,7 +5848,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 211"
   },
@@ -5867,7 +5867,7 @@ export const communityData: Monster[] = [
     "hp": 266,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 202"
   },
@@ -5886,7 +5886,7 @@ export const communityData: Monster[] = [
     "hp": 247,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 202"
   },
@@ -5905,7 +5905,7 @@ export const communityData: Monster[] = [
     "hp": 228,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 201"
   },
@@ -5924,7 +5924,7 @@ export const communityData: Monster[] = [
     "hp": 3,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 231"
   },
@@ -5943,7 +5943,7 @@ export const communityData: Monster[] = [
     "hp": 201,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 203"
   },
@@ -5962,7 +5962,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 26"
   },
@@ -5981,7 +5981,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 204"
   },
@@ -6000,7 +6000,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 147"
   },
@@ -6019,7 +6019,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 205"
   },
@@ -6038,7 +6038,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 206"
   },
@@ -6057,7 +6057,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 83"
   },
@@ -6076,7 +6076,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 218"
   },
@@ -6095,7 +6095,7 @@ export const communityData: Monster[] = [
     "hp": 202,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 65"
   },
@@ -6114,7 +6114,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 207"
   },
@@ -6133,7 +6133,7 @@ export const communityData: Monster[] = [
     "hp": 292,
     "init": -2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 141"
   },
@@ -6152,7 +6152,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 86"
   },
@@ -6171,7 +6171,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 66"
   },
@@ -6190,7 +6190,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 208"
   },
@@ -6209,7 +6209,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 105"
   },
@@ -6231,7 +6231,7 @@ export const communityData: Monster[] = [
     "hp": 126,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 105"
   },
@@ -6250,7 +6250,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 106"
   },
@@ -6269,7 +6269,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 106"
   },
@@ -6288,7 +6288,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 210"
   },
@@ -6307,7 +6307,7 @@ export const communityData: Monster[] = [
     "hp": 337,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Critter Compendium: 128"
   },
@@ -6326,7 +6326,7 @@ export const communityData: Monster[] = [
     "hp": 42,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 212"
   },
@@ -6345,7 +6345,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 213"
   },
@@ -6364,7 +6364,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 214"
   },
@@ -6383,7 +6383,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 219"
   },
@@ -6402,7 +6402,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 231"
   },
@@ -6421,7 +6421,7 @@ export const communityData: Monster[] = [
     "hp": 49,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 246"
   },
@@ -6440,7 +6440,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 246"
   },
@@ -6459,7 +6459,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 246"
   },
@@ -6478,7 +6478,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 72"
   },
@@ -6497,7 +6497,7 @@ export const communityData: Monster[] = [
     "hp": 144,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 76"
   },
@@ -6516,7 +6516,7 @@ export const communityData: Monster[] = [
     "hp": 144,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 79"
   },
@@ -6535,7 +6535,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 83"
   },
@@ -6554,7 +6554,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 86"
   },
@@ -6573,7 +6573,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 247"
   },
@@ -6592,7 +6592,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 215"
   },
@@ -6611,7 +6611,7 @@ export const communityData: Monster[] = [
     "hp": 262,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 161"
   },
@@ -6630,7 +6630,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 239"
   },
@@ -6649,7 +6649,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 239"
   },
@@ -6668,7 +6668,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 239"
   },
@@ -6687,7 +6687,7 @@ export const communityData: Monster[] = [
     "hp": 47,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 240"
   },
@@ -6706,7 +6706,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 240"
   },
@@ -6725,7 +6725,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 239"
   },
@@ -6744,7 +6744,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 241"
   },
@@ -6763,7 +6763,7 @@ export const communityData: Monster[] = [
     "hp": 34,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 240"
   },
@@ -6782,7 +6782,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 240"
   },
@@ -6801,7 +6801,7 @@ export const communityData: Monster[] = [
     "hp": 341,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 243"
   },
@@ -6820,7 +6820,7 @@ export const communityData: Monster[] = [
     "hp": 207,
     "init": -2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Critter Compendium: 242"
   },
@@ -6839,7 +6839,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 242"
   },
@@ -6858,7 +6858,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 242"
   },
@@ -6877,7 +6877,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 241"
   },
@@ -6896,7 +6896,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 241"
   },
@@ -6915,7 +6915,7 @@ export const communityData: Monster[] = [
     "hp": 161,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 243"
   },
@@ -6934,7 +6934,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Critter Compendium: 243"
   },
@@ -6953,7 +6953,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6cp6b9/day_61_ahuizotl/"
   },
@@ -6972,7 +6972,7 @@ export const communityData: Monster[] = [
     "hp": 838,
     "init": -4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7gyh8a/day_200_akupara/"
   },
@@ -6991,7 +6991,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6qqhpl/day_111_am_bush/"
   },
@@ -7010,7 +7010,7 @@ export const communityData: Monster[] = [
     "hp": 289,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/68nvtg/day_46_amalthalda_the_exorcist/"
   },
@@ -7029,7 +7029,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3rdrry/day_79_chronomancers/"
   },
@@ -7048,7 +7048,7 @@ export const communityData: Monster[] = [
     "hp": 209,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6l1u7j/day_91_ancient_temple_guardian/"
   },
@@ -7067,7 +7067,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/60wzn6/day_18_animated_rattle/"
   },
@@ -7086,7 +7086,7 @@ export const communityData: Monster[] = [
     "hp": 156,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7f22mq/day_194_animated_trap/"
   },
@@ -7105,7 +7105,7 @@ export const communityData: Monster[] = [
     "hp": 149,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6wlgfr/day_131_aquamancer/"
   },
@@ -7124,7 +7124,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3lkpfr/day_34_arcanamite/"
   },
@@ -7143,7 +7143,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3swk7b/day_91_armed_skeleton/"
   },
@@ -7162,7 +7162,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3j8n9t/day_16_armor_and_might_slivers/"
   },
@@ -7181,7 +7181,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/739w36/day_155_armoured_battle_griffon/"
   },
@@ -7200,7 +7200,7 @@ export const communityData: Monster[] = [
     "hp": 154,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5wq2hz/day_2_ash_golem/"
   },
@@ -7219,7 +7219,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/67ipzr/day_42_aswang/"
   },
@@ -7238,7 +7238,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ypess/day_256_aurochs_centaur/"
   },
@@ -7257,7 +7257,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7umn88/day_244_avatar_of_the_air_mask/"
   },
@@ -7276,7 +7276,7 @@ export const communityData: Monster[] = [
     "hp": 202,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7mwls1/day_220_avatar_of_the_earth_mask/"
   },
@@ -7295,7 +7295,7 @@ export const communityData: Monster[] = [
     "hp": 161,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7etof1/day_193_avatar_of_the_fire_mask/"
   },
@@ -7314,7 +7314,7 @@ export const communityData: Monster[] = [
     "hp": 175,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6lvveq/day_95_aven_stormcaller/"
   },
@@ -7333,7 +7333,7 @@ export const communityData: Monster[] = [
     "hp": 178,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/766vv8/day_165_avolakia/"
   },
@@ -7352,7 +7352,7 @@ export const communityData: Monster[] = [
     "hp": 49,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3pi58x/day_65_azure_sorcerers/"
   },
@@ -7371,7 +7371,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3pi58x/day_65_azure_sorcerers/"
   },
@@ -7390,7 +7390,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ue3qp/day_243_baelnorn_lich/"
   },
@@ -7409,7 +7409,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ue3qp/day_243_baelnorn_lich/"
   },
@@ -7428,7 +7428,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6g2xfv/day_74_bag_hag/"
   },
@@ -7447,7 +7447,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ksvec/day_28_baneling/"
   },
@@ -7466,7 +7466,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6d46lb/day_63_1d6_barbarians/"
   },
@@ -7485,7 +7485,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6d46lb/day_63_1d6_barbarians/"
   },
@@ -7504,7 +7504,7 @@ export const communityData: Monster[] = [
     "hp": 180,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6d46lb/day_63_1d6_barbarians/"
   },
@@ -7523,7 +7523,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6eh2hd/day_68_1d6_bards/"
   },
@@ -7542,7 +7542,7 @@ export const communityData: Monster[] = [
     "hp": 48,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6eh2hd/day_68_1d6_bards/"
   },
@@ -7561,7 +7561,7 @@ export const communityData: Monster[] = [
     "hp": 48,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6eh2hd/day_68_1d6_bards/"
   },
@@ -7580,7 +7580,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/1d6Adventurers/comments/62uq65/the_april_fools_fool_mule_and_wood_chopping_tool/"
   },
@@ -7599,7 +7599,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3tplf0/day_97_beast_of_ill_omen/"
   },
@@ -7618,7 +7618,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/830c9u/day_269_beenabber/"
   },
@@ -7637,7 +7637,7 @@ export const communityData: Monster[] = [
     "hp": 168,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/66jv6w/day_39_behemoth_cyst/"
   },
@@ -7656,7 +7656,7 @@ export const communityData: Monster[] = [
     "hp": 225,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7uu1vk/day_245_beholderkin_gouger/"
   },
@@ -7675,7 +7675,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/77o6o7/day_170_bile_demon/"
   },
@@ -7694,7 +7694,7 @@ export const communityData: Monster[] = [
     "hp": 3,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7qm82a/day_231_bite_coin/"
   },
@@ -7713,7 +7713,7 @@ export const communityData: Monster[] = [
     "hp": 49,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7qm82a/day_231_bite_coin/"
   },
@@ -7732,7 +7732,7 @@ export const communityData: Monster[] = [
     "hp": 117,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7wgd2r/day_250_black_bill/"
   },
@@ -7751,7 +7751,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6v4r4u/day_126_black_sheep/"
   },
@@ -7770,7 +7770,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/66cmdx/day_38_orc_cystid_of_yurtrus/"
   },
@@ -7789,7 +7789,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6x1bad/day_133_blue_glaucus/"
   },
@@ -7808,7 +7808,7 @@ export const communityData: Monster[] = [
     "hp": 28,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6x1bad/day_133_blue_glaucus/"
   },
@@ -7827,7 +7827,7 @@ export const communityData: Monster[] = [
     "hp": 130,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7goy98/day_199_blue_scream_of_death/"
   },
@@ -7846,7 +7846,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7rcinn/day_234_boar_crocodile/"
   },
@@ -7865,7 +7865,7 @@ export const communityData: Monster[] = [
     "hp": 99,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6n3kth/day_99_bodysnatcher_parasite/"
   },
@@ -7884,7 +7884,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/63g4ab/day_27_bog_creeper/"
   },
@@ -7903,7 +7903,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/63v0a3/day_29_bog_drowned/"
   },
@@ -7922,7 +7922,7 @@ export const communityData: Monster[] = [
     "hp": 170,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/642dpi/day_30_bog_hag/"
   },
@@ -7941,7 +7941,7 @@ export const communityData: Monster[] = [
     "hp": 170,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/642dpi/day_30_bog_hag/"
   },
@@ -7960,7 +7960,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3iz4a1/day_14_bone_golem/"
   },
@@ -7979,7 +7979,7 @@ export const communityData: Monster[] = [
     "hp": 175,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6x8vzv/day_134_bonefist_troll/"
   },
@@ -7998,7 +7998,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7cxzd9/day_187_bonewing_landskimmer/"
   },
@@ -8017,7 +8017,7 @@ export const communityData: Monster[] = [
     "hp": 220,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/1d6Adventurers/comments/79wizc/this_is_halloween_with_a_bonus_boogie_man/"
   },
@@ -8036,7 +8036,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6zhcwf/day_141_booze_ooze/"
   },
@@ -8055,7 +8055,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": -2,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5zeibw/day_12_bramblesnap/"
   },
@@ -8074,7 +8074,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": -2,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5zeibw/day_12_bramblesnap/"
   },
@@ -8093,7 +8093,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3mza7d/day_45_brood_butcher/"
   },
@@ -8112,7 +8112,7 @@ export const communityData: Monster[] = [
     "hp": 126,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3mutdt/day_44_brood_monitor/"
   },
@@ -8131,7 +8131,7 @@ export const communityData: Monster[] = [
     "hp": 112,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/73utyy/day_156_bugbear_thug/"
   },
@@ -8150,7 +8150,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6gu9jy/day_76_bugbear_totemic/"
   },
@@ -8169,7 +8169,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6w0lmi/day_130_bullywug_guerilla/"
   },
@@ -8188,7 +8188,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6ujyla/day_125_bullywug_mud_king/"
   },
@@ -8210,7 +8210,7 @@ export const communityData: Monster[] = [
     "hp": 99,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/704bth/day_144_bullywug_queen/"
   },
@@ -8229,7 +8229,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3s5md9/day_85_bullywug_shaman/"
   },
@@ -8248,7 +8248,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6yp8sj/day_138_bullywug_skirmisher/"
   },
@@ -8267,7 +8267,7 @@ export const communityData: Monster[] = [
     "hp": 144,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6xgs61/day_135_bullywug_veteran/"
   },
@@ -8286,7 +8286,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ml17i/day_42_burning_skeleton/"
   },
@@ -8305,7 +8305,7 @@ export const communityData: Monster[] = [
     "hp": 187,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6dbole/day_64_cacus/"
   },
@@ -8324,7 +8324,7 @@ export const communityData: Monster[] = [
     "hp": 199,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7hsa12/day_202_cadaver_collector/"
   },
@@ -8343,7 +8343,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6zwlzr/day_143_cadaver_flytrap/"
   },
@@ -8362,7 +8362,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/63nl2m/day_28_carnifer/"
   },
@@ -8381,7 +8381,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3q5njk/day_70_caustic_crawler/"
   },
@@ -8400,7 +8400,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3s0lep/day_84_chainer_geist/"
   },
@@ -8419,7 +8419,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3tubf2/day_98_chamaelean/"
   },
@@ -8438,7 +8438,7 @@ export const communityData: Monster[] = [
     "hp": 198,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/64sviq/day_32_chronowl/"
   },
@@ -8457,7 +8457,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -8476,7 +8476,7 @@ export const communityData: Monster[] = [
     "hp": 212,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7c3ge5/day_185_cleavergaunt/"
   },
@@ -8495,7 +8495,7 @@ export const communityData: Monster[] = [
     "hp": 117,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6fvm7c/day_73_1d6_clerics/"
   },
@@ -8514,7 +8514,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6fvm7c/day_73_1d6_clerics/"
   },
@@ -8533,7 +8533,7 @@ export const communityData: Monster[] = [
     "hp": 150,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6fvm7c/day_73_1d6_clerics/"
   },
@@ -8552,7 +8552,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6fvm7c/day_73_1d6_clerics/"
   },
@@ -8571,7 +8571,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3lga4m/day_33_clockwork_dragon/"
   },
@@ -8590,7 +8590,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6y2beh/day_136_clockwork_mouse/"
   },
@@ -8609,7 +8609,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3p8foi/day_63_clockwork_pest/"
   },
@@ -8628,7 +8628,7 @@ export const communityData: Monster[] = [
     "hp": 367,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7957sy/day_175_clockwork_reliquary/"
   },
@@ -8647,7 +8647,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7fxw8b/day_196_cookie_monster/"
   },
@@ -8666,7 +8666,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6tojls/day_121_corgeagle/"
   },
@@ -8685,7 +8685,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3mh4se/day_41_coven_horror/"
   },
@@ -8704,7 +8704,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3tbisl/day_94_crowlock/"
   },
@@ -8723,7 +8723,7 @@ export const communityData: Monster[] = [
     "hp": 40,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6aersx/day_53_crownweaver_spider/"
   },
@@ -8742,7 +8742,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ssksc/day_90_crystal_elemental/"
   },
@@ -8761,7 +8761,7 @@ export const communityData: Monster[] = [
     "hp": 270,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3tlb1z/day_96_crystalline_dragon/"
   },
@@ -8780,7 +8780,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jic37/day_18_crystalline_and_spitting_slivers/"
   },
@@ -8799,7 +8799,7 @@ export const communityData: Monster[] = [
     "hp": 238,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7w7prk/day_249_cuegle/"
   },
@@ -8818,7 +8818,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/78hugm/day_172_cult_apothecary/"
   },
@@ -8837,7 +8837,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/789lll/day_171_cult_initiate/"
   },
@@ -8856,7 +8856,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/78xq57/day_174_cult_orator/"
   },
@@ -8875,7 +8875,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/70x0gt/day_146_dandy_lion/"
   },
@@ -8894,7 +8894,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/78psfe/day_173_dark_mistress/"
   },
@@ -8913,7 +8913,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ngo6q/day_49_death_widow/"
   },
@@ -8932,7 +8932,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3t1u2d/day_92_dire_anglerfish/"
   },
@@ -8951,7 +8951,7 @@ export const communityData: Monster[] = [
     "hp": 315,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/67q7yj/day_43_dire_bombardier_beetle/"
   },
@@ -8970,7 +8970,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6ywne4/day_140_dolgrim/"
   },
@@ -8989,7 +8989,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3mctof/day_40_dream_eater/"
   },
@@ -9008,7 +9008,7 @@ export const communityData: Monster[] = [
     "hp": 286,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/68v1nd/day_47_dreyfus_the_historian/"
   },
@@ -9027,7 +9027,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7g6yxn/day_197_drop_bear/"
   },
@@ -9046,7 +9046,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6h9klv/day_78_1d6_druids/"
   },
@@ -9065,7 +9065,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6h9klv/day_78_1d6_druids/"
   },
@@ -9084,7 +9084,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6h9klv/day_78_1d6_druids/"
   },
@@ -9103,7 +9103,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7nhbcn/day_221_drunkard/"
   },
@@ -9122,7 +9122,7 @@ export const communityData: Monster[] = [
     "hp": 161,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/72ueyp/day_153_dust_wight/"
   },
@@ -9141,7 +9141,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7pi2mb/day_228_elasmotherium/"
   },
@@ -9160,7 +9160,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3mpzye/day_43_eldrazi_scion/"
   },
@@ -9179,7 +9179,7 @@ export const communityData: Monster[] = [
     "hp": 262,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/74a8nx/day_158_ettin_favoured_of_demogorgon/"
   },
@@ -9198,7 +9198,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3qaafe/day_71_evil_doll/"
   },
@@ -9217,7 +9217,7 @@ export const communityData: Monster[] = [
     "hp": 148,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5yo9ur/day_10_excremental/"
   },
@@ -9236,7 +9236,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3iv4zk/day_13_fallen_angel/"
   },
@@ -9255,7 +9255,7 @@ export const communityData: Monster[] = [
     "hp": 4,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5zzwoh/day_15_fear_gorta/"
   },
@@ -9278,7 +9278,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7alwm9/day_180_fenrir/"
   },
@@ -9297,7 +9297,7 @@ export const communityData: Monster[] = [
     "hp": 63,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7mh7th/day_218_ferdelance/"
   },
@@ -9316,7 +9316,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ekm7i/day_192_feral_gibberer/"
   },
@@ -9335,7 +9335,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jr66s/day_20_fern_lizard/"
   },
@@ -9354,7 +9354,7 @@ export const communityData: Monster[] = [
     "hp": 122,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/81him4/day_265_fetch/"
   },
@@ -9373,7 +9373,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3r3co3/day_77_feyote/"
   },
@@ -9392,7 +9392,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3k44u9/day_23_gnoll_deathmage_and_fiendish_hyena/"
   },
@@ -9411,7 +9411,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6inwbn/day_83_1d6_fighters/"
   },
@@ -9430,7 +9430,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6inwbn/day_83_1d6_fighters/"
   },
@@ -9449,7 +9449,7 @@ export const communityData: Monster[] = [
     "hp": 175,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6inwbn/day_83_1d6_fighters/"
   },
@@ -9468,7 +9468,7 @@ export const communityData: Monster[] = [
     "hp": 130,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6inwbn/day_83_1d6_fighters/"
   },
@@ -9487,7 +9487,7 @@ export const communityData: Monster[] = [
     "hp": 255,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6inwbn/day_83_1d6_fighters/"
   },
@@ -9506,7 +9506,7 @@ export const communityData: Monster[] = [
     "hp": 40,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6inwbn/day_83_1d6_fighters/"
   },
@@ -9525,7 +9525,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7pqndg/day_229_firbolg_shroomspeaker/"
   },
@@ -9544,7 +9544,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7t74zg/day_240_fire_fathomer/"
   },
@@ -9563,7 +9563,7 @@ export const communityData: Monster[] = [
     "hp": 162,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6oj001/day_104_fire_giant_jailor/"
   },
@@ -9582,7 +9582,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3icp48/day_9_monks_of_the_five_spires/"
   },
@@ -9601,7 +9601,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/77gmh6/day_169_fog_dog/"
   },
@@ -9620,7 +9620,7 @@ export const communityData: Monster[] = [
     "hp": 115,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7s7w2p/day_236_fossegrim/"
   },
@@ -9639,7 +9639,7 @@ export const communityData: Monster[] = [
     "hp": 234,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/70bzok/day_145_frog_dragon/"
   },
@@ -9658,7 +9658,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3pd73a/day_64_froghoul/"
   },
@@ -9677,7 +9677,7 @@ export const communityData: Monster[] = [
     "hp": 187,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3p02np/day_61_frost_giant_jarl/"
   },
@@ -9696,7 +9696,7 @@ export const communityData: Monster[] = [
     "hp": 250,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3iqsbv/day_12_fusion_elemental/"
   },
@@ -9715,7 +9715,7 @@ export const communityData: Monster[] = [
     "hp": 207,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6e9bus/day_67_lynching_tree/"
   },
@@ -9734,7 +9734,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/8182dg/day_264_gantu/"
   },
@@ -9753,7 +9753,7 @@ export const communityData: Monster[] = [
     "hp": 190,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/67xzjc/day_44_gashadokuro/"
   },
@@ -9772,7 +9772,7 @@ export const communityData: Monster[] = [
     "hp": 16,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3lol76/day_35_gazellean/"
   },
@@ -9791,7 +9791,7 @@ export const communityData: Monster[] = [
     "hp": 337,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7dni9m/day_190_geriviar/"
   },
@@ -9810,7 +9810,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6pxzlj/day_109_shark_week_ghost_shark/"
   },
@@ -9829,7 +9829,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/62g0gb/day_24_giant_bombardier_beetle/"
   },
@@ -9848,7 +9848,7 @@ export const communityData: Monster[] = [
     "hp": 73,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7shg2e/day_237_giant_flea/"
   },
@@ -9867,7 +9867,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -9886,7 +9886,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -9905,7 +9905,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -9924,7 +9924,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -9943,7 +9943,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -9962,7 +9962,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -9981,7 +9981,7 @@ export const communityData: Monster[] = [
     "hp": 363,
     "init": -2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -10000,7 +10000,7 @@ export const communityData: Monster[] = [
     "hp": 170,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -10019,7 +10019,7 @@ export const communityData: Monster[] = [
     "hp": 275,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -10038,7 +10038,7 @@ export const communityData: Monster[] = [
     "hp": 93,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -10057,7 +10057,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5ya7op/day_8_giant_stag_beetle/"
   },
@@ -10076,7 +10076,7 @@ export const communityData: Monster[] = [
     "hp": 54,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7f9wb8/day_195_giant_tardigrade/"
   },
@@ -10095,7 +10095,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7maaku/day_217_giant_threebanded_armadillo/"
   },
@@ -10114,7 +10114,7 @@ export const communityData: Monster[] = [
     "hp": 169,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5x5jo1/day_4_gift_of_aldanach/"
   },
@@ -10133,7 +10133,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3qf9kq/day_72_gillman/"
   },
@@ -10152,7 +10152,7 @@ export const communityData: Monster[] = [
     "hp": 248,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3o41vx/day_54_ginormous_squirrel/"
   },
@@ -10171,7 +10171,7 @@ export const communityData: Monster[] = [
     "hp": 220,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7zqpd6/day_260_girtablilu/"
   },
@@ -10190,7 +10190,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3npsf8/day_51_gladeborn_rangers/"
   },
@@ -10209,7 +10209,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3npsf8/day_51_gladeborn_rangers/"
   },
@@ -10228,7 +10228,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ju62r/day_209_gnoll_berserker/"
   },
@@ -10247,7 +10247,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jzoao/day_22_gnoll_deathknight/"
   },
@@ -10266,7 +10266,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3k44u9/day_23_gnoll_deathmage_and_fiendish_hyena/"
   },
@@ -10285,7 +10285,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7jdgxw/day_207_gnoll_filth_flinger/"
   },
@@ -10304,7 +10304,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sasfq/day_86_goblin_alchemist_and_ritualist/"
   },
@@ -10323,7 +10323,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sasfq/day_86_goblin_alchemist_and_ritualist/"
   },
@@ -10342,7 +10342,7 @@ export const communityData: Monster[] = [
     "hp": 253,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6eosyh/day_69_granderhobb/"
   },
@@ -10361,7 +10361,7 @@ export const communityData: Monster[] = [
     "hp": 200,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3hhz6e/day_1_grave_titan/"
   },
@@ -10380,7 +10380,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/72mh6w/day_152_graveyard_guardian/"
   },
@@ -10399,7 +10399,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7vppsk/day_247_greater_doppelganger/"
   },
@@ -10418,7 +10418,7 @@ export const communityData: Monster[] = [
     "hp": 243,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6vsyz1/day_129_greatmaw_troll/"
   },
@@ -10437,7 +10437,7 @@ export const communityData: Monster[] = [
     "hp": 50,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5y31i2/day_7_greblin/"
   },
@@ -10456,7 +10456,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7a60cg/day_178_gremlin/"
   },
@@ -10475,7 +10475,7 @@ export const communityData: Monster[] = [
     "hp": 201,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7lbxfe/day_214_grinch/"
   },
@@ -10494,7 +10494,7 @@ export const communityData: Monster[] = [
     "hp": 350,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7bvsff/day_184_grootslang/"
   },
@@ -10513,7 +10513,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3m33t3/day_38_grove_guardian/"
   },
@@ -10532,7 +10532,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7mozq4/day_219_hadozee_deckhand/"
   },
@@ -10551,7 +10551,7 @@ export const communityData: Monster[] = [
     "hp": 175,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7xsqr4/day_254_hanged_man/"
   },
@@ -10570,7 +10570,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3rin2p/day_80_hawkfox/"
   },
@@ -10589,7 +10589,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3qq341/day_74_headless_horseman/"
   },
@@ -10608,7 +10608,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6c5hpo/day_60_pigasus/"
   },
@@ -10627,7 +10627,7 @@ export const communityData: Monster[] = [
     "hp": 144,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6vd6jk/day_127_hellbat/"
   },
@@ -10646,7 +10646,7 @@ export const communityData: Monster[] = [
     "hp": 130,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/75ytce/day_164_hellbugs_2/"
   },
@@ -10665,7 +10665,7 @@ export const communityData: Monster[] = [
     "hp": 241,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/75ytce/day_164_hellbugs_2/"
   },
@@ -10684,7 +10684,7 @@ export const communityData: Monster[] = [
     "hp": 88,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/75jab2/day_162_hellbugs/"
   },
@@ -10703,7 +10703,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/75jab2/day_162_hellbugs/"
   },
@@ -10722,7 +10722,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6h1y3p/day_77_hellcat/"
   },
@@ -10741,7 +10741,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6s7dk1/day_116_hellephant/"
   },
@@ -10760,7 +10760,7 @@ export const communityData: Monster[] = [
     "hp": 93,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/72ekrz/day_151_shield_bug_helmet_crab/"
   },
@@ -10779,7 +10779,7 @@ export const communityData: Monster[] = [
     "hp": 43,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/62n770/day_25_hemogoblin/"
   },
@@ -10798,7 +10798,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3i3ctv/day_7_herald_of_rot/"
   },
@@ -10817,7 +10817,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7d6jqy/day_188_herbalist/"
   },
@@ -10836,7 +10836,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6ig9ee/day_82_hex_troll/"
   },
@@ -10855,7 +10855,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/657j0x/day_34_hobgoblin_phalanx/"
   },
@@ -10874,7 +10874,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/61u59a/day_21_hobgoblin_stoneclaw/"
   },
@@ -10893,7 +10893,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6regcp/day_114_hook_mountain_ogre/"
   },
@@ -10912,7 +10912,7 @@ export const communityData: Monster[] = [
     "hp": 199,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7kvrs9/day_212_humbug/"
   },
@@ -10931,7 +10931,7 @@ export const communityData: Monster[] = [
     "hp": 315,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/79q8sg/day_176_marshmallow_golem/"
   },
@@ -10950,7 +10950,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7tv3km/day_241_hyde_the_goblin/"
   },
@@ -10969,7 +10969,7 @@ export const communityData: Monster[] = [
     "hp": 187,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6vl3yz/day_128_ice_elemental/"
   },
@@ -10988,7 +10988,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ovbhb/day_60_ice_golem/"
   },
@@ -11007,7 +11007,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7hjyrw/day_201_illiphant/"
   },
@@ -11026,7 +11026,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3pn9gi/day_66_infestation_swarm/"
   },
@@ -11045,7 +11045,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7nxd12/day_223_ironwood_golem/"
   },
@@ -11064,7 +11064,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6u45vt/day_123_ivylash_zombie/"
   },
@@ -11083,7 +11083,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 3,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/61b7sz/day_20_jack_inabox/"
   },
@@ -11102,7 +11102,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 3,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/61b7sz/day_20_jack_inabox/"
   },
@@ -11121,7 +11121,7 @@ export const communityData: Monster[] = [
     "hp": 161,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7z86yk/day_258_jorogumo/"
   },
@@ -11140,7 +11140,7 @@ export const communityData: Monster[] = [
     "hp": 130,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6l8zo6/day_92_joythief/"
   },
@@ -11159,7 +11159,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ae3b9/day_179_kelxie/"
   },
@@ -11178,7 +11178,7 @@ export const communityData: Monster[] = [
     "hp": 171,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5xvhnz/day_6_khalkotauroi/"
   },
@@ -11197,7 +11197,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6lnwmb/day_94_khenra_dervish/"
   },
@@ -11216,7 +11216,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3k9k4n/day_24_kobold_bully/"
   },
@@ -11235,7 +11235,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sl0ij/updated_day_25_kobold_bully_with_bonus_monster_by/"
   },
@@ -11254,7 +11254,7 @@ export const communityData: Monster[] = [
     "hp": 99,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6zoz9r/day_142_kobold_flamescale/"
   },
@@ -11276,7 +11276,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7r3ezj/day_233_kobold_great_wyrm/"
   },
@@ -11295,7 +11295,7 @@ export const communityData: Monster[] = [
     "hp": 54,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3kkb95/day_26_kobold_hero/"
   },
@@ -11314,7 +11314,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ihkpg/day_205_kobold_holethrower/"
   },
@@ -11333,7 +11333,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7pzh7u/day_230_kobold_pathmaker/"
   },
@@ -11352,7 +11352,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3kfc3r/day_25_kobold_shaman/"
   },
@@ -11371,7 +11371,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sl07f/updated_day_25_kobold_shaman_with_bonus_monster/"
   },
@@ -11390,7 +11390,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3hvcf6/day_5_kraken_hatchling/"
   },
@@ -11409,7 +11409,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/67b4b6/day_41_kuotoa_chosen_of_blibdoolpoolp/"
   },
@@ -11428,7 +11428,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6y9t0d/day_137_kuotoa_mariner/"
   },
@@ -11447,7 +11447,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7zhwdd/day_259_lamia_halfspawn/"
   },
@@ -11466,7 +11466,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6bxw9b/day_59_landu/"
   },
@@ -11485,7 +11485,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nv75l/day_101_lantern_archon/"
   },
@@ -11504,7 +11504,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6a7j4m/day_52_latau/"
   },
@@ -11523,7 +11523,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/828nmy/day_266_lechugre/"
   },
@@ -11542,7 +11542,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5z79p9/day_11_leech_spitter/"
   },
@@ -11561,7 +11561,7 @@ export const communityData: Monster[] = [
     "hp": 11,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3l6z5t/day_31_leonin/"
   },
@@ -11580,7 +11580,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3psbbl/day_67_living_spellbook/"
   },
@@ -11599,7 +11599,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6hh2m9/day_79_lizardfolk_brute/"
   },
@@ -11618,7 +11618,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sfio5/day_87_lizardfolk_monk/"
   },
@@ -11637,7 +11637,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6ivf70/day_84_lizardfolk_voodoo_priest/"
   },
@@ -11656,7 +11656,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jv169/day_21_luck_dragon/"
   },
@@ -11675,7 +11675,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3q1gtw/day_69_magma_bear/"
   },
@@ -11694,7 +11694,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6505ng/day_33_magmahawk/"
   },
@@ -11713,7 +11713,7 @@ export const communityData: Monster[] = [
     "hp": 161,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/61480n/day_19_marionette/"
   },
@@ -11732,7 +11732,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/79q8sg/day_176_marshmallow_golem/"
   },
@@ -11751,7 +11751,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3qkvws/day_73_masked_killer/"
   },
@@ -11770,7 +11770,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7bnvok/day_183_mason/"
   },
@@ -11789,7 +11789,7 @@ export const communityData: Monster[] = [
     "hp": 169,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6mgj5z/day_96_master_duelist/"
   },
@@ -11808,7 +11808,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3icp48/day_9_monks_of_the_five_spires/"
   },
@@ -11827,7 +11827,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7xl2x4/day_253_matchmaker/"
   },
@@ -11846,7 +11846,7 @@ export const communityData: Monster[] = [
     "hp": 332,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6pa9ws/day_106_shark_week_megalodon/"
   },
@@ -11865,7 +11865,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6o2to5/day_102_meganisoptera/"
   },
@@ -11884,7 +11884,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -11903,7 +11903,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -11922,7 +11922,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -11941,7 +11941,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -11960,7 +11960,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6nb2cs/day_100_bonanza/"
   },
@@ -11979,7 +11979,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3j8n9t/day_16_armor_and_might_slivers/"
   },
@@ -11998,7 +11998,7 @@ export const communityData: Monster[] = [
     "hp": 162,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6bqtdr/day_58_mime/"
   },
@@ -12017,7 +12017,7 @@ export const communityData: Monster[] = [
     "hp": 171,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/64lixs/day_31_minotaur_bloodiron_berserker/"
   },
@@ -12036,7 +12036,7 @@ export const communityData: Monster[] = [
     "hp": 212,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/80pjph/day_262_mishipeshu/"
   },
@@ -12055,7 +12055,7 @@ export const communityData: Monster[] = [
     "hp": 63,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6t3607/day_120_mockingbook/"
   },
@@ -12074,7 +12074,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6k2qqn/day_88_1d6_monks/"
   },
@@ -12093,7 +12093,7 @@ export const communityData: Monster[] = [
     "hp": 143,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6k2qqn/day_88_1d6_monks/"
   },
@@ -12112,7 +12112,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3hlub7/day_3_morphlit/"
   },
@@ -12131,7 +12131,7 @@ export const communityData: Monster[] = [
     "hp": 115,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/74prk2/day_160_mossipede/"
   },
@@ -12150,7 +12150,7 @@ export const communityData: Monster[] = [
     "hp": 31,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6yhlyc/day_138_mote_of_lightning/"
   },
@@ -12169,7 +12169,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/638ujz/day_26_mud_pie_muddle/"
   },
@@ -12188,7 +12188,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/638ujz/day_26_mud_pie_muddle/"
   },
@@ -12207,7 +12207,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/778rd2/day_168_myconid_portobello/"
   },
@@ -12226,7 +12226,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/65eeis/day_35_myconid_seer/"
   },
@@ -12245,7 +12245,7 @@ export const communityData: Monster[] = [
     "hp": 17,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7i94rt/day_204_myconid_shrieker/"
   },
@@ -12264,7 +12264,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5wizq8/day_1_myconid_stinkhorn/"
   },
@@ -12283,7 +12283,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ihkod/day_10_myr/"
   },
@@ -12302,7 +12302,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3im98d/day_11_myr_battlesphere/"
   },
@@ -12321,7 +12321,7 @@ export const communityData: Monster[] = [
     "hp": 117,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/75bbnp/day_161_necrodancer/"
   },
@@ -12340,7 +12340,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": -5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/65xirj/day_36_necrotic_pustule/"
   },
@@ -12359,7 +12359,7 @@ export const communityData: Monster[] = [
     "hp": 227,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/69ghan/day_50_nergalee_the_guild_leader/"
   },
@@ -12378,7 +12378,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7vz4d2/day_248_niblin/"
   },
@@ -12397,7 +12397,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6fg7wm/day_71_nightmare_harpy/"
   },
@@ -12416,7 +12416,7 @@ export const communityData: Monster[] = [
     "hp": 263,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7gg9ew/day_198_ningen/"
   },
@@ -12435,7 +12435,7 @@ export const communityData: Monster[] = [
     "hp": 187,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7yyyb9/day_257_nuckelavee/"
   },
@@ -12454,7 +12454,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6i8g0u/day_81_obsidian_golem/"
   },
@@ -12473,7 +12473,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/621exe/day_22_occuloid/"
   },
@@ -12495,7 +12495,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6kbjyg/day_89_oozing_defender/"
   },
@@ -12514,7 +12514,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sk53c/day_88_orc_berserker/"
   },
@@ -12533,7 +12533,7 @@ export const communityData: Monster[] = [
     "hp": 315,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/66qcw5/day_40_orc_cyst_herald_of_yurtrus/"
   },
@@ -12552,7 +12552,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/66cmdx/day_38_orc_cystid_of_yurtrus/"
   },
@@ -12571,7 +12571,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/82hqri/day_267_orc_deathsworn/"
   },
@@ -12590,7 +12590,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3sonx0/day_89_orc_hand_of_gruumsh/"
   },
@@ -12609,7 +12609,7 @@ export const communityData: Monster[] = [
     "hp": 345,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7jltgk/day_208_orc_horderaiser/"
   },
@@ -12628,7 +12628,7 @@ export const communityData: Monster[] = [
     "hp": 50,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7knhv5/day_211_ornemental/"
   },
@@ -12647,7 +12647,7 @@ export const communityData: Monster[] = [
     "hp": 17,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7quvcb/day_232_owlbear_cublet/"
   },
@@ -12666,7 +12666,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3oc713/day_56_owlbear_matron/"
   },
@@ -12685,7 +12685,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/82qw3n/day_268_owlconer/"
   },
@@ -12704,7 +12704,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3kxhr5/day_29_pact_devil/"
   },
@@ -12723,7 +12723,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6lg1qs/day_93_1d6_paladins/"
   },
@@ -12742,7 +12742,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6lg1qs/day_93_1d6_paladins/"
   },
@@ -12761,7 +12761,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6hofu4/day_80_peat_boggle/"
   },
@@ -12780,7 +12780,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7x3e1e/day_251_pegacorn/"
   },
@@ -12799,7 +12799,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7bfq26/day_182_penumbra_of_spirits/"
   },
@@ -12818,7 +12818,7 @@ export const communityData: Monster[] = [
     "hp": 178,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7odenn/day_225_alternative_griffons/"
   },
@@ -12837,7 +12837,7 @@ export const communityData: Monster[] = [
     "hp": 70,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5xcmco/day_5_phantasmal_sword/"
   },
@@ -12856,7 +12856,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3tymld/day_99_phelddagrif/"
   },
@@ -12875,7 +12875,7 @@ export const communityData: Monster[] = [
     "hp": 238,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/699hvw/day_49_pietr_the_bloodless/"
   },
@@ -12894,7 +12894,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3t6n4i/day_93_grim_sea_pirates/"
   },
@@ -12913,7 +12913,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3t6n4i/day_93_grim_sea_pirates/"
   },
@@ -12932,7 +12932,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6ata13/day_55_plague_wyvern/?st=J2M7Z4LC&sh=41fcbc97"
   },
@@ -12951,7 +12951,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6qy1we/day_112_plaguecaster_cultist/"
   },
@@ -12970,7 +12970,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7p1167/day_226_potriffon/"
   },
@@ -12989,7 +12989,7 @@ export const communityData: Monster[] = [
     "hp": 84,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3i7xyy/day_8_priest_of_blight/"
   },
@@ -13008,7 +13008,7 @@ export const communityData: Monster[] = [
     "hp": 228,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6fngqh/day_72_prismhawk/"
   },
@@ -13027,7 +13027,7 @@ export const communityData: Monster[] = [
     "hp": 225,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3quzlc/day_75_pumpkin_king/"
   },
@@ -13046,7 +13046,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3hzslo/day_6_pustuloid/"
   },
@@ -13068,7 +13068,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/684ljy/day_45_pygmies/"
   },
@@ -13087,7 +13087,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/684ljy/day_45_pygmies/"
   },
@@ -13106,7 +13106,7 @@ export const communityData: Monster[] = [
     "hp": 112,
     "init": 7,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7cpl90/day_186_quickling_bounder/"
   },
@@ -13125,7 +13125,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5zsvw3/day_14_quill_devil/"
   },
@@ -13144,7 +13144,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/71t6r4/day_150_scrap_metal_golem/"
   },
@@ -13163,7 +13163,7 @@ export const communityData: Monster[] = [
     "hp": 54,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6mw4ro/day_98_1d6_rangers/"
   },
@@ -13182,7 +13182,7 @@ export const communityData: Monster[] = [
     "hp": 117,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6mw4ro/day_98_1d6_rangers/"
   },
@@ -13201,7 +13201,7 @@ export const communityData: Monster[] = [
     "hp": 182,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6mw4ro/day_98_1d6_rangers/"
   },
@@ -13220,7 +13220,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3hhz8l/day_2_rat_hermit/"
   },
@@ -13239,7 +13239,7 @@ export const communityData: Monster[] = [
     "hp": 88,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6oas7z/day_103_1d6_rogues/"
   },
@@ -13258,7 +13258,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6oas7z/day_103_1d6_rogues/"
   },
@@ -13277,7 +13277,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6oas7z/day_103_1d6_rogues/"
   },
@@ -13296,7 +13296,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7pacs3/day_227_royal_jelly/"
   },
@@ -13315,7 +13315,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/770mb6/day_167_runehound/"
   },
@@ -13334,7 +13334,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3p4fvb/day_62_rusalka/"
   },
@@ -13353,7 +13353,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7b7nai/day_181_sand_witch/"
   },
@@ -13372,7 +13372,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6uc3dd/day_124_sandstorm_elemental/"
   },
@@ -13391,7 +13391,7 @@ export const communityData: Monster[] = [
     "hp": 121,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7m38ba/day_216_santacap/"
   },
@@ -13410,7 +13410,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7odenn/day_225_alternative_griffons/"
   },
@@ -13429,7 +13429,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3r8fmp/day_78_scorpikis/"
   },
@@ -13448,7 +13448,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/71t6r4/day_150_scrap_metal_golem/"
   },
@@ -13467,7 +13467,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3nl5wp/day_50_screecher/"
   },
@@ -13486,7 +13486,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3hqoeo/day_4_selachian/"
   },
@@ -13505,7 +13505,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6khywn/day_90_seukothi/"
   },
@@ -13524,7 +13524,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6q5uxz/day_110_shark_week_sharkbear/"
   },
@@ -13543,7 +13543,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7xcg6l/day_252_shedim/"
   },
@@ -13562,7 +13562,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7dezgl/day_189_shepherd_of_the_veil/"
   },
@@ -13581,7 +13581,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/72ekrz/day_151_shield_bug_helmet_crab/"
   },
@@ -13600,7 +13600,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/71d9bd/day_148_shield_golem/"
   },
@@ -13619,7 +13619,7 @@ export const communityData: Monster[] = [
     "hp": 225,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6cwmi7/day_62_silent_knight/"
   },
@@ -13638,7 +13638,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6ewbq8/day_70_silverback_girallon/"
   },
@@ -13657,7 +13657,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3m7l6o/day_39_silverpaw_paladin_and_dog/"
   },
@@ -13676,7 +13676,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3m7l6o/day_39_silverpaw_paladin_and_dog/"
   },
@@ -13695,7 +13695,7 @@ export const communityData: Monster[] = [
     "hp": 187,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6927w0/day_48_sir_hunter_von_huntington_iii_the_hunter/"
   },
@@ -13714,7 +13714,7 @@ export const communityData: Monster[] = [
     "hp": 310,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3n4hkn/day_46_sire_of_stagnation/"
   },
@@ -13733,7 +13733,7 @@ export const communityData: Monster[] = [
     "hp": 162,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6juhzt/day_87_sizeofafield_mouse/"
   },
@@ -13752,7 +13752,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6mo8ro/day_97_skeletal_pillar/"
   },
@@ -13771,7 +13771,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/664wsr/day_37_skulking_cyst/"
   },
@@ -13790,7 +13790,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/1d6Adventurers/comments/79y0t4/day_177_skuz_halloweenie_treats/"
   },
@@ -13809,7 +13809,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6a0kj5/day_51_sky_manta/"
   },
@@ -13828,7 +13828,7 @@ export const communityData: Monster[] = [
     "hp": 190,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6gaf5u/day_75_sleepless_knight/"
   },
@@ -13847,7 +13847,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3j3u2p/day_15_sliver/"
   },
@@ -13866,7 +13866,7 @@ export const communityData: Monster[] = [
     "hp": 200,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jmqxr/day_19_sliver_queen/"
   },
@@ -13885,7 +13885,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/1d6Adventurers/comments/6q44qx/shark_week_bonus_monster_slothshark/"
   },
@@ -13904,7 +13904,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7o5csh/day_224_smog_elemental/"
   },
@@ -13923,7 +13923,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/80zipb/day_263_snowmen_and_snow_golems/"
   },
@@ -13942,7 +13942,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ogkel/day_57_snow_spider/"
   },
@@ -13961,7 +13961,7 @@ export const communityData: Monster[] = [
     "hp": 35,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/80zipb/day_263_snowmen_and_snow_golems/"
   },
@@ -13983,7 +13983,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6pq8l4/day_108_1d6_sorcerers/"
   },
@@ -14005,7 +14005,7 @@ export const communityData: Monster[] = [
     "hp": 171,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6pq8l4/day_108_1d6_sorcerers/"
   },
@@ -14024,7 +14024,7 @@ export const communityData: Monster[] = [
     "hp": 98,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6pq8l4/day_108_1d6_sorcerers/"
   },
@@ -14043,7 +14043,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7noz8f/day_222_spelleater_slime/"
   },
@@ -14062,7 +14062,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3ltrtn/day_36_spellskite/"
   },
@@ -14081,7 +14081,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3nur5w/day_52_spider_skull/"
   },
@@ -14100,7 +14100,7 @@ export const communityData: Monster[] = [
     "hp": 16,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3koi6v/day_27_spirit/"
   },
@@ -14119,7 +14119,7 @@ export const communityData: Monster[] = [
     "hp": 243,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6rmlhn/day_115_spirit_dragon/"
   },
@@ -14138,7 +14138,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jic37/day_18_crystalline_and_spitting_slivers/"
   },
@@ -14157,7 +14157,7 @@ export const communityData: Monster[] = [
     "hp": 299,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Monster-A-Day: https://www.reddit.com/r/1d6Adventurers/comments/79xx85/halloween_bonus_spring_heeled_jack/"
   },
@@ -14176,7 +14176,7 @@ export const communityData: Monster[] = [
     "hp": 225,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6bbysr/day_56_stag_knight/"
   },
@@ -14195,7 +14195,7 @@ export const communityData: Monster[] = [
     "hp": 112,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/76sms4/day_166_stamen/"
   },
@@ -14214,7 +14214,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ebn00/day_191_stitched_zombeast/"
   },
@@ -14233,7 +14233,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6oq0gz/day_105_stoneeyed_cyclops/"
   },
@@ -14252,7 +14252,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6am1xl/day_54_stone_giant_colossus_hunter/"
   },
@@ -14271,7 +14271,7 @@ export const communityData: Monster[] = [
     "hp": 147,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3u3mkx/day_100_stone_strix/"
   },
@@ -14290,7 +14290,7 @@ export const communityData: Monster[] = [
     "hp": 287,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6disuw/day_65_storm_giant_waterbearer/"
   },
@@ -14309,7 +14309,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7vf2wk/day_246_superb_owl/"
   },
@@ -14328,7 +14328,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6svgc5/day_119_swamp_drake/"
   },
@@ -14347,7 +14347,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3nzdh1/day_53_swarm_of_squirrels/"
   },
@@ -14366,7 +14366,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3rnhq1/day_81_sylvan_stalker/"
   },
@@ -14385,7 +14385,7 @@ export const communityData: Monster[] = [
     "hp": 117,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6khywn/day_90_seukothi/"
   },
@@ -14404,7 +14404,7 @@ export const communityData: Monster[] = [
     "hp": 252,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7y1j8f/day_255_tarspawn_demodand/"
   },
@@ -14423,7 +14423,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6c5hpo/day_60_pigasus/"
   },
@@ -14442,7 +14442,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3rx71v/day_83_technothug/"
   },
@@ -14461,7 +14461,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3nctcd/day_48_tentaghoul/"
   },
@@ -14480,7 +14480,7 @@ export const communityData: Monster[] = [
     "hp": 165,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/74i0hl/day_159_terracotta_dryad/"
   },
@@ -14499,7 +14499,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5wybf7/day_3_terrahawk/"
   },
@@ -14518,7 +14518,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/1d6Adventurers/comments/62uq65/the_april_fools_fool_mule_and_wood_chopping_tool/"
   },
@@ -14537,7 +14537,7 @@ export const communityData: Monster[] = [
     "hp": 47,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5zlq91/day_13_thunderhawk/"
   },
@@ -14556,7 +14556,7 @@ export const communityData: Monster[] = [
     "hp": 150,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3rdrry/day_79_chronomancers/"
   },
@@ -14575,7 +14575,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/60irs6/day_16_tin_soldier/"
   },
@@ -14594,7 +14594,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7l3lpq/day_213_tinsel_constrictor/"
   },
@@ -14613,7 +14613,7 @@ export const communityData: Monster[] = [
     "hp": 204,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/742gyj/day_157_tormentor/"
   },
@@ -14632,7 +14632,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/714vk7/day_147_tortle_elder/"
   },
@@ -14655,7 +14655,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6sfm55/day_117_training_golem/"
   },
@@ -14674,7 +14674,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/71ldr1/day_149_treant_hurler/"
   },
@@ -14693,7 +14693,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3lyhsw/day_37_troll_boar/"
   },
@@ -14712,7 +14712,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3l2bm1/day_30_truesong_bards/"
   },
@@ -14731,7 +14731,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3l2bm1/day_30_truesong_bards/"
   },
@@ -14750,7 +14750,7 @@ export const communityData: Monster[] = [
     "hp": 198,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3lboj2/day_32_tuskaloth/"
   },
@@ -14769,7 +14769,7 @@ export const communityData: Monster[] = [
     "hp": 297,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7i0azz/day_203_twoheaded_brainstealer_dragon/"
   },
@@ -14788,7 +14788,7 @@ export const communityData: Monster[] = [
     "hp": 187,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7szt4n/day_239_ubercorn/"
   },
@@ -14807,7 +14807,7 @@ export const communityData: Monster[] = [
     "hp": 717,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3n8wqq/day_47_ulamog_the_ceaseless_hunger/"
   },
@@ -14826,7 +14826,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/75r5aa/day_163_valkyrie/"
   },
@@ -14845,7 +14845,7 @@ export const communityData: Monster[] = [
     "hp": 162,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7rl8ii/day_235_valravn/"
   },
@@ -14864,7 +14864,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7u3j1s/day_242_vatnagedda/"
   },
@@ -14883,7 +14883,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7j4ovi/day_206_ventrunculus/"
   },
@@ -14902,7 +14902,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3o8i97/day_55_verdalin/"
   },
@@ -14921,7 +14921,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6wsyk7/day_132_vine_bramble/"
   },
@@ -14940,7 +14940,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6tvtmu/day_122_vinebeast/"
   },
@@ -14959,7 +14959,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jdpx6/day_17_winged_and_virulent_slivers/"
   },
@@ -14978,7 +14978,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3tgj7n/day_95_vodyanoy/"
   },
@@ -14997,7 +14997,7 @@ export const communityData: Monster[] = [
     "hp": 115,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7k25u8/day_210_walking_hive/"
   },
@@ -15016,7 +15016,7 @@ export const communityData: Monster[] = [
     "hp": 207,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3px4wr/day_68_war_titan/"
   },
@@ -15035,7 +15035,7 @@ export const communityData: Monster[] = [
     "hp": 195,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6r6g7v/day_113_1d6_warlocks/"
   },
@@ -15054,7 +15054,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6r6g7v/day_113_1d6_warlocks/"
   },
@@ -15073,7 +15073,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6r6g7v/day_113_1d6_warlocks/"
   },
@@ -15092,7 +15092,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/628mos/day_23_wavehawk/"
   },
@@ -15111,7 +15111,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/5yhb8i/day_9_wendigo/"
   },
@@ -15134,7 +15134,7 @@ export const communityData: Monster[] = [
     "hp": 170,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6pi18n/day_107_shark_week_wereshark/"
   },
@@ -15153,7 +15153,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3rsad4/day_82_werewolf_alpha/"
   },
@@ -15172,7 +15172,7 @@ export const communityData: Monster[] = [
     "hp": 112,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3oqgxh/day_59_wight_walker/"
   },
@@ -15191,7 +15191,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7sq0b3/day_238_wildermann/"
   },
@@ -15210,7 +15210,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3qzcso/day_76_winged_ape/"
   },
@@ -15229,7 +15229,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3jdpx6/day_17_winged_and_virulent_slivers/"
   },
@@ -15248,7 +15248,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/3olui8/day_58_winter_sprite/"
   },
@@ -15267,7 +15267,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6snl5x/day_118_1d6_wizards/"
   },
@@ -15289,7 +15289,7 @@ export const communityData: Monster[] = [
     "hp": 148,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6snl5x/day_118_1d6_wizards/"
   },
@@ -15311,7 +15311,7 @@ export const communityData: Monster[] = [
     "hp": 97,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6snl5x/day_118_1d6_wizards/"
   },
@@ -15330,7 +15330,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/60pw0m/day_17_wooden_horse/"
   },
@@ -15349,7 +15349,7 @@ export const communityData: Monster[] = [
     "hp": 49,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7ljux0/day_215_workshop_elves/"
   },
@@ -15368,7 +15368,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/7327np/day_154_wrackspawn/"
   },
@@ -15387,7 +15387,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6jn4gd/day_86_wrecker/"
   },
@@ -15406,7 +15406,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6bjikl/day_57_xanmu/"
   },
@@ -15425,7 +15425,7 @@ export const communityData: Monster[] = [
     "hp": 250,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6e1y55/day_66_yeti_abomination/"
   },
@@ -15444,7 +15444,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/6j38d7/day_85_yuanti_ignan/"
   },
@@ -15463,7 +15463,7 @@ export const communityData: Monster[] = [
     "hp": 209,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster-A-Day: https://www.reddit.com/r/monsteraday/comments/80fhgr/day_261_yuanti_zuma/"
   },
@@ -15482,7 +15482,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 3"
   },
@@ -15501,7 +15501,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 4"
   },
@@ -15520,7 +15520,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 3"
   },
@@ -15539,7 +15539,7 @@ export const communityData: Monster[] = [
     "hp": 199,
     "init": 1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monster Module: 5"
   },
@@ -15558,7 +15558,7 @@ export const communityData: Monster[] = [
     "hp": 42,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 7"
   },
@@ -15580,7 +15580,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 9"
   },
@@ -15599,7 +15599,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 9"
   },
@@ -15618,7 +15618,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 13"
   },
@@ -15637,7 +15637,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 13"
   },
@@ -15656,7 +15656,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 14"
   },
@@ -15675,7 +15675,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 18"
   },
@@ -15694,7 +15694,7 @@ export const communityData: Monster[] = [
     "hp": 95,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 19"
   },
@@ -15713,7 +15713,7 @@ export const communityData: Monster[] = [
     "hp": 112,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 20"
   },
@@ -15732,7 +15732,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 20"
   },
@@ -15751,7 +15751,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 22"
   },
@@ -15770,7 +15770,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 22"
   },
@@ -15792,7 +15792,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 21"
   },
@@ -15811,7 +15811,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 17"
   },
@@ -15830,7 +15830,7 @@ export const communityData: Monster[] = [
     "hp": 2,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 10"
   },
@@ -15849,7 +15849,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 10"
   },
@@ -15868,7 +15868,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 16"
   },
@@ -15890,7 +15890,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 12"
   },
@@ -15909,7 +15909,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 15"
   },
@@ -15928,7 +15928,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 11"
   },
@@ -15947,7 +15947,7 @@ export const communityData: Monster[] = [
     "hp": 31,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 11"
   },
@@ -15966,7 +15966,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 11"
   },
@@ -15985,7 +15985,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 8"
   },
@@ -16004,7 +16004,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 19"
   },
@@ -16023,7 +16023,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monster Module: 6"
   },
@@ -16042,7 +16042,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 7"
   },
@@ -16061,7 +16061,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 8"
   },
@@ -16080,7 +16080,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 44"
   },
@@ -16099,7 +16099,7 @@ export const communityData: Monster[] = [
     "hp": 230,
     "init": 4,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 44"
   },
@@ -16118,7 +16118,7 @@ export const communityData: Monster[] = [
     "hp": 229,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 48"
   },
@@ -16137,7 +16137,7 @@ export const communityData: Monster[] = [
     "hp": 115,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 17"
   },
@@ -16156,7 +16156,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 9"
   },
@@ -16175,7 +16175,7 @@ export const communityData: Monster[] = [
     "hp": 95,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 101"
   },
@@ -16194,7 +16194,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 10"
   },
@@ -16213,7 +16213,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 11"
   },
@@ -16232,7 +16232,7 @@ export const communityData: Monster[] = [
     "hp": 46,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 13"
   },
@@ -16251,7 +16251,7 @@ export const communityData: Monster[] = [
     "hp": 77,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 13"
   },
@@ -16270,7 +16270,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 19"
   },
@@ -16289,7 +16289,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 20"
   },
@@ -16308,7 +16308,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 21"
   },
@@ -16327,7 +16327,7 @@ export const communityData: Monster[] = [
     "hp": 189,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 134"
   },
@@ -16346,7 +16346,7 @@ export const communityData: Monster[] = [
     "hp": 125,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 22"
   },
@@ -16365,7 +16365,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 24"
   },
@@ -16384,7 +16384,7 @@ export const communityData: Monster[] = [
     "hp": 364,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 26"
   },
@@ -16403,7 +16403,7 @@ export const communityData: Monster[] = [
     "hp": 115,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 17"
   },
@@ -16422,7 +16422,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 27"
   },
@@ -16441,7 +16441,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": 3,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 30"
   },
@@ -16460,7 +16460,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 31"
   },
@@ -16479,7 +16479,7 @@ export const communityData: Monster[] = [
     "hp": 12,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 32"
   },
@@ -16498,7 +16498,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 33"
   },
@@ -16517,7 +16517,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 35"
   },
@@ -16536,7 +16536,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 36"
   },
@@ -16555,7 +16555,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 38"
   },
@@ -16574,7 +16574,7 @@ export const communityData: Monster[] = [
     "hp": 72,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 39"
   },
@@ -16593,7 +16593,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 14,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 40"
   },
@@ -16612,7 +16612,7 @@ export const communityData: Monster[] = [
     "hp": 150,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 45"
   },
@@ -16631,7 +16631,7 @@ export const communityData: Monster[] = [
     "hp": 81,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 51"
   },
@@ -16650,7 +16650,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 53"
   },
@@ -16669,7 +16669,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 54"
   },
@@ -16688,7 +16688,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 54"
   },
@@ -16707,7 +16707,7 @@ export const communityData: Monster[] = [
     "hp": 117,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 55"
   },
@@ -16726,7 +16726,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 118"
   },
@@ -16745,7 +16745,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 58"
   },
@@ -16764,7 +16764,7 @@ export const communityData: Monster[] = [
     "hp": 17,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 59"
   },
@@ -16783,7 +16783,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 136"
   },
@@ -16802,7 +16802,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 60"
   },
@@ -16821,7 +16821,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 61"
   },
@@ -16840,7 +16840,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 137"
   },
@@ -16859,7 +16859,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 103"
   },
@@ -16878,7 +16878,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 65"
   },
@@ -16897,7 +16897,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 63"
   },
@@ -16916,7 +16916,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 64"
   },
@@ -16935,7 +16935,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 64"
   },
@@ -16954,7 +16954,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 65"
   },
@@ -16973,7 +16973,7 @@ export const communityData: Monster[] = [
     "hp": 86,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 66"
   },
@@ -16992,7 +16992,7 @@ export const communityData: Monster[] = [
     "hp": 241,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 18"
   },
@@ -17011,7 +17011,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 68"
   },
@@ -17030,7 +17030,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 69"
   },
@@ -17049,7 +17049,7 @@ export const communityData: Monster[] = [
     "hp": 184,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 71"
   },
@@ -17068,7 +17068,7 @@ export const communityData: Monster[] = [
     "hp": 229,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 71"
   },
@@ -17087,7 +17087,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 104"
   },
@@ -17106,7 +17106,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 72"
   },
@@ -17125,7 +17125,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 104"
   },
@@ -17144,7 +17144,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 138"
   },
@@ -17163,7 +17163,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 73"
   },
@@ -17182,7 +17182,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 74"
   },
@@ -17201,7 +17201,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 56"
   },
@@ -17220,7 +17220,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 45"
   },
@@ -17239,7 +17239,7 @@ export const communityData: Monster[] = [
     "hp": 127,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 76"
   },
@@ -17258,7 +17258,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 77"
   },
@@ -17277,7 +17277,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 78"
   },
@@ -17296,7 +17296,7 @@ export const communityData: Monster[] = [
     "hp": 44,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 79"
   },
@@ -17315,7 +17315,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 80"
   },
@@ -17334,7 +17334,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 81"
   },
@@ -17353,7 +17353,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 82"
   },
@@ -17372,7 +17372,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 81"
   },
@@ -17391,7 +17391,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 83"
   },
@@ -17410,7 +17410,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 84"
   },
@@ -17429,7 +17429,7 @@ export const communityData: Monster[] = [
     "hp": 2,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 85"
   },
@@ -17448,7 +17448,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 86"
   },
@@ -17467,7 +17467,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 87"
   },
@@ -17486,7 +17486,7 @@ export const communityData: Monster[] = [
     "hp": 496,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 88"
   },
@@ -17505,7 +17505,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 91"
   },
@@ -17524,7 +17524,7 @@ export const communityData: Monster[] = [
     "hp": 2,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 91"
   },
@@ -17543,7 +17543,7 @@ export const communityData: Monster[] = [
     "hp": 331,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 94"
   },
@@ -17562,7 +17562,7 @@ export const communityData: Monster[] = [
     "hp": 9,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 95"
   },
@@ -17581,7 +17581,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 96"
   },
@@ -17600,7 +17600,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 97"
   },
@@ -17619,7 +17619,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 98"
   },
@@ -17638,7 +17638,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 99"
   },
@@ -17657,7 +17657,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 47"
   },
@@ -17676,7 +17676,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 106"
   },
@@ -17695,7 +17695,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 108"
   },
@@ -17714,7 +17714,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 109"
   },
@@ -17733,7 +17733,7 @@ export const communityData: Monster[] = [
     "hp": 82,
     "init": 2,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 111"
   },
@@ -17752,7 +17752,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 114"
   },
@@ -17771,7 +17771,7 @@ export const communityData: Monster[] = [
     "hp": 40,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 115"
   },
@@ -17790,7 +17790,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 116"
   },
@@ -17809,7 +17809,7 @@ export const communityData: Monster[] = [
     "hp": 238,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 119"
   },
@@ -17828,7 +17828,7 @@ export const communityData: Monster[] = [
     "hp": 21,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 119"
   },
@@ -17847,7 +17847,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 120"
   },
@@ -17866,7 +17866,7 @@ export const communityData: Monster[] = [
     "hp": 113,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 122"
   },
@@ -17885,7 +17885,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 123"
   },
@@ -17904,7 +17904,7 @@ export const communityData: Monster[] = [
     "hp": 90,
     "init": 2,
     "lair": "lair",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 125"
   },
@@ -17923,7 +17923,7 @@ export const communityData: Monster[] = [
     "hp": 178,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 127"
   },
@@ -17942,7 +17942,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 128"
   },
@@ -17961,7 +17961,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 129"
   },
@@ -17980,7 +17980,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 130"
   },
@@ -17999,7 +17999,7 @@ export const communityData: Monster[] = [
     "hp": 102,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 131"
   },
@@ -18018,7 +18018,7 @@ export const communityData: Monster[] = [
     "hp": 283,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Monsters of the Guild: 133"
   },
@@ -18037,7 +18037,7 @@ export const communityData: Monster[] = [
     "hp": 15,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 133"
   },
@@ -18056,7 +18056,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 139"
   },
@@ -18075,7 +18075,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 140"
   },
@@ -18094,7 +18094,7 @@ export const communityData: Monster[] = [
     "hp": 57,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 143"
   },
@@ -18113,7 +18113,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 142"
   },
@@ -18132,7 +18132,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 144"
   },
@@ -18151,7 +18151,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 145"
   },
@@ -18170,7 +18170,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 147"
   },
@@ -18189,7 +18189,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 148"
   },
@@ -18208,7 +18208,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 105"
   },
@@ -18227,7 +18227,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 140"
   },
@@ -18246,7 +18246,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 113"
   },
@@ -18265,7 +18265,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 149"
   },
@@ -18284,7 +18284,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 14,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 150"
   },
@@ -18303,7 +18303,7 @@ export const communityData: Monster[] = [
     "hp": 71,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 151"
   },
@@ -18322,7 +18322,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 152"
   },
@@ -18341,7 +18341,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Monsters of the Guild: 50"
   },
@@ -18360,7 +18360,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 162"
   },
@@ -18379,7 +18379,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 164"
   },
@@ -18398,7 +18398,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 167"
   },
@@ -18417,7 +18417,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 166"
   },
@@ -18436,7 +18436,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 165"
   },
@@ -18455,7 +18455,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 248"
   },
@@ -18474,7 +18474,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 184"
   },
@@ -18493,7 +18493,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 184"
   },
@@ -18512,7 +18512,7 @@ export const communityData: Monster[] = [
     "hp": 81,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 261"
   },
@@ -18531,7 +18531,7 @@ export const communityData: Monster[] = [
     "hp": 153,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 177"
   },
@@ -18550,7 +18550,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 197"
   },
@@ -18569,7 +18569,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 246"
   },
@@ -18588,7 +18588,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 179"
   },
@@ -18607,7 +18607,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 254"
   },
@@ -18626,7 +18626,7 @@ export const communityData: Monster[] = [
     "hp": 73,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 265"
   },
@@ -18645,7 +18645,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 250"
   },
@@ -18664,7 +18664,7 @@ export const communityData: Monster[] = [
     "hp": 157,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 187"
   },
@@ -18683,7 +18683,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 191"
   },
@@ -18702,7 +18702,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 192"
   },
@@ -18721,7 +18721,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 192"
   },
@@ -18740,7 +18740,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 193"
   },
@@ -18759,7 +18759,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 176"
   },
@@ -18778,7 +18778,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 253"
   },
@@ -18797,7 +18797,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 255"
   },
@@ -18816,7 +18816,7 @@ export const communityData: Monster[] = [
     "hp": 77,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 258"
   },
@@ -18835,7 +18835,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 194"
   },
@@ -18854,7 +18854,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 211"
   },
@@ -18873,7 +18873,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 175"
   },
@@ -18892,7 +18892,7 @@ export const communityData: Monster[] = [
     "hp": 81,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 264"
   },
@@ -18911,7 +18911,7 @@ export const communityData: Monster[] = [
     "hp": 313,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 188"
   },
@@ -18930,7 +18930,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 256"
   },
@@ -18949,7 +18949,7 @@ export const communityData: Monster[] = [
     "hp": 74,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 262"
   },
@@ -18968,7 +18968,7 @@ export const communityData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 210"
   },
@@ -18987,7 +18987,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 255"
   },
@@ -19006,7 +19006,7 @@ export const communityData: Monster[] = [
     "hp": 86,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 263"
   },
@@ -19025,7 +19025,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 251"
   },
@@ -19044,7 +19044,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 247"
   },
@@ -19063,7 +19063,7 @@ export const communityData: Monster[] = [
     "hp": 62,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 266"
   },
@@ -19082,7 +19082,7 @@ export const communityData: Monster[] = [
     "hp": 210,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 202"
   },
@@ -19101,7 +19101,7 @@ export const communityData: Monster[] = [
     "hp": 200,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 200"
   },
@@ -19120,7 +19120,7 @@ export const communityData: Monster[] = [
     "hp": 81,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 259"
   },
@@ -19139,7 +19139,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 205"
   },
@@ -19158,7 +19158,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 206"
   },
@@ -19177,7 +19177,7 @@ export const communityData: Monster[] = [
     "hp": 123,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 185"
   },
@@ -19196,7 +19196,7 @@ export const communityData: Monster[] = [
     "hp": 95,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 185"
   },
@@ -19215,7 +19215,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 207"
   },
@@ -19234,7 +19234,7 @@ export const communityData: Monster[] = [
     "hp": 178,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 180"
   },
@@ -19253,7 +19253,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 208"
   },
@@ -19272,7 +19272,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 245"
   },
@@ -19291,7 +19291,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 248"
   },
@@ -19310,7 +19310,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 265"
   },
@@ -19329,7 +19329,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 216"
   },
@@ -19348,7 +19348,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 249"
   },
@@ -19367,7 +19367,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 251"
   },
@@ -19386,7 +19386,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 218"
   },
@@ -19405,7 +19405,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 217"
   },
@@ -19424,7 +19424,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 217"
   },
@@ -19443,7 +19443,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 264"
   },
@@ -19462,7 +19462,7 @@ export const communityData: Monster[] = [
     "hp": 138,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 199"
   },
@@ -19481,7 +19481,7 @@ export const communityData: Monster[] = [
     "hp": 37,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 198"
   },
@@ -19500,7 +19500,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 213"
   },
@@ -19519,7 +19519,7 @@ export const communityData: Monster[] = [
     "hp": 98,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 220"
   },
@@ -19538,7 +19538,7 @@ export const communityData: Monster[] = [
     "hp": 108,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 221"
   },
@@ -19557,7 +19557,7 @@ export const communityData: Monster[] = [
     "hp": 4,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 223"
   },
@@ -19576,7 +19576,7 @@ export const communityData: Monster[] = [
     "hp": 12,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 224"
   },
@@ -19595,7 +19595,7 @@ export const communityData: Monster[] = [
     "hp": 6,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 223"
   },
@@ -19614,7 +19614,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 226"
   },
@@ -19633,7 +19633,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 226"
   },
@@ -19652,7 +19652,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 206"
   },
@@ -19671,7 +19671,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 228"
   },
@@ -19690,7 +19690,7 @@ export const communityData: Monster[] = [
     "hp": 77,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 170"
   },
@@ -19709,7 +19709,7 @@ export const communityData: Monster[] = [
     "hp": 16,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 230"
   },
@@ -19728,7 +19728,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 231"
   },
@@ -19747,7 +19747,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 232"
   },
@@ -19766,7 +19766,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 233"
   },
@@ -19785,7 +19785,7 @@ export const communityData: Monster[] = [
     "hp": 80,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 234"
   },
@@ -19804,7 +19804,7 @@ export const communityData: Monster[] = [
     "hp": 92,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 257"
   },
@@ -19823,7 +19823,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 252"
   },
@@ -19842,7 +19842,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 240"
   },
@@ -19861,7 +19861,7 @@ export const communityData: Monster[] = [
     "hp": 130,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 240"
   },
@@ -19880,7 +19880,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 238"
   },
@@ -19899,7 +19899,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 238"
   },
@@ -19918,7 +19918,7 @@ export const communityData: Monster[] = [
     "hp": 24,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 246"
   },
@@ -19937,7 +19937,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 171"
   },
@@ -19956,7 +19956,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 219"
   },
@@ -19975,7 +19975,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 219"
   },
@@ -19994,7 +19994,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 250"
   },
@@ -20013,7 +20013,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 245"
   },
@@ -20032,7 +20032,7 @@ export const communityData: Monster[] = [
     "hp": 1,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 196"
   },
@@ -20051,7 +20051,7 @@ export const communityData: Monster[] = [
     "hp": 36,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 241"
   },
@@ -20070,7 +20070,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 249"
   },
@@ -20089,7 +20089,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 253"
   },
@@ -20108,7 +20108,7 @@ export const communityData: Monster[] = [
     "hp": 170,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 214"
   },
@@ -20127,7 +20127,7 @@ export const communityData: Monster[] = [
     "hp": 209,
     "init": 2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 236"
   },
@@ -20146,7 +20146,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": -1,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 243"
   },
@@ -20165,7 +20165,7 @@ export const communityData: Monster[] = [
     "hp": 34,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 256"
   },
@@ -20184,7 +20184,7 @@ export const communityData: Monster[] = [
     "hp": 32,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 169"
   },
@@ -20203,7 +20203,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 170"
   },
@@ -20222,7 +20222,7 @@ export const communityData: Monster[] = [
     "hp": 250,
     "init": 5,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 181"
   },
@@ -20241,7 +20241,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 220"
   },
@@ -20260,7 +20260,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 197"
   },
@@ -20279,7 +20279,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 254"
   },
@@ -20298,7 +20298,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 247"
   },
@@ -20317,7 +20317,7 @@ export const communityData: Monster[] = [
     "hp": 104,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 172"
   },
@@ -20336,7 +20336,7 @@ export const communityData: Monster[] = [
     "hp": 74,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 260"
   },
@@ -20355,7 +20355,7 @@ export const communityData: Monster[] = [
     "hp": 58,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 252"
   },
@@ -20374,7 +20374,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Dungeon Master Toolkit 2: 212"
   },
@@ -20393,7 +20393,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 1"
   },
@@ -20412,7 +20412,7 @@ export const communityData: Monster[] = [
     "hp": 120,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 9"
   },
@@ -20431,7 +20431,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 12"
   },
@@ -20450,7 +20450,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 13"
   },
@@ -20469,7 +20469,7 @@ export const communityData: Monster[] = [
     "hp": 135,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 14"
   },
@@ -20488,7 +20488,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 15"
   },
@@ -20507,7 +20507,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 16"
   },
@@ -20526,7 +20526,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 16"
   },
@@ -20545,7 +20545,7 @@ export const communityData: Monster[] = [
     "hp": 38,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 17"
   },
@@ -20564,7 +20564,7 @@ export const communityData: Monster[] = [
     "hp": 55,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 17"
   },
@@ -20583,7 +20583,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 18"
   },
@@ -20602,7 +20602,7 @@ export const communityData: Monster[] = [
     "hp": 30,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 20"
   },
@@ -20621,7 +20621,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 21"
   },
@@ -20640,7 +20640,7 @@ export const communityData: Monster[] = [
     "hp": 52,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 3"
   },
@@ -20659,7 +20659,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 49"
   },
@@ -20678,7 +20678,7 @@ export const communityData: Monster[] = [
     "hp": 68,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 22"
   },
@@ -20697,7 +20697,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 23"
   },
@@ -20716,7 +20716,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 23"
   },
@@ -20735,7 +20735,7 @@ export const communityData: Monster[] = [
     "hp": 136,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 3"
   },
@@ -20754,7 +20754,7 @@ export const communityData: Monster[] = [
     "hp": 186,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 24"
   },
@@ -20773,7 +20773,7 @@ export const communityData: Monster[] = [
     "hp": 133,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 26"
   },
@@ -20792,7 +20792,7 @@ export const communityData: Monster[] = [
     "hp": 5,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 28"
   },
@@ -20811,7 +20811,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 29"
   },
@@ -20830,7 +20830,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 95"
   },
@@ -20849,7 +20849,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 80"
   },
@@ -20868,7 +20868,7 @@ export const communityData: Monster[] = [
     "hp": 67,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 81"
   },
@@ -20887,7 +20887,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 81"
   },
@@ -20906,7 +20906,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 82"
   },
@@ -20925,7 +20925,7 @@ export const communityData: Monster[] = [
     "hp": 128,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 33"
   },
@@ -20944,7 +20944,7 @@ export const communityData: Monster[] = [
     "hp": 18,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 56"
   },
@@ -20963,7 +20963,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 34"
   },
@@ -20982,7 +20982,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 42"
   },
@@ -21001,7 +21001,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 43"
   },
@@ -21020,7 +21020,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 97"
   },
@@ -21039,7 +21039,7 @@ export const communityData: Monster[] = [
     "hp": 13,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 44"
   },
@@ -21058,7 +21058,7 @@ export const communityData: Monster[] = [
     "hp": 172,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 45"
   },
@@ -21077,7 +21077,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 5"
   },
@@ -21096,7 +21096,7 @@ export const communityData: Monster[] = [
     "hp": 112,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 46"
   },
@@ -21115,7 +21115,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 47"
   },
@@ -21134,7 +21134,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 48"
   },
@@ -21153,7 +21153,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 5"
   },
@@ -21172,7 +21172,7 @@ export const communityData: Monster[] = [
     "hp": 31,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 49"
   },
@@ -21191,7 +21191,7 @@ export const communityData: Monster[] = [
     "hp": 119,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 30"
   },
@@ -21210,7 +21210,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 6"
   },
@@ -21229,7 +21229,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 6"
   },
@@ -21248,7 +21248,7 @@ export const communityData: Monster[] = [
     "hp": 98,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 51"
   },
@@ -21267,7 +21267,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 50"
   },
@@ -21286,7 +21286,7 @@ export const communityData: Monster[] = [
     "hp": 78,
     "init": 6,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 52"
   },
@@ -21305,7 +21305,7 @@ export const communityData: Monster[] = [
     "hp": 75,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 53"
   },
@@ -21324,7 +21324,7 @@ export const communityData: Monster[] = [
     "hp": 152,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 54"
   },
@@ -21343,7 +21343,7 @@ export const communityData: Monster[] = [
     "hp": 49,
     "init": 4,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 47"
   },
@@ -21362,7 +21362,7 @@ export const communityData: Monster[] = [
     "hp": 66,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 95"
   },
@@ -21381,7 +21381,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 39"
   },
@@ -21400,7 +21400,7 @@ export const communityData: Monster[] = [
     "hp": 34,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 65"
   },
@@ -21419,7 +21419,7 @@ export const communityData: Monster[] = [
     "hp": 28,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 65"
   },
@@ -21438,7 +21438,7 @@ export const communityData: Monster[] = [
     "hp": 27,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 7"
   },
@@ -21457,7 +21457,7 @@ export const communityData: Monster[] = [
     "hp": 17,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 56"
   },
@@ -21476,7 +21476,7 @@ export const communityData: Monster[] = [
     "hp": 10,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 57"
   },
@@ -21495,7 +21495,7 @@ export const communityData: Monster[] = [
     "hp": 60,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 58"
   },
@@ -21514,7 +21514,7 @@ export const communityData: Monster[] = [
     "hp": 333,
     "init": -2,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 59"
   },
@@ -21533,7 +21533,7 @@ export const communityData: Monster[] = [
     "hp": 130,
     "init": 0,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 18"
   },
@@ -21552,7 +21552,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 66"
   },
@@ -21571,7 +21571,7 @@ export const communityData: Monster[] = [
     "hp": 175,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 62"
   },
@@ -21590,7 +21590,7 @@ export const communityData: Monster[] = [
     "hp": 116,
     "init": -2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 64"
   },
@@ -21609,7 +21609,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 68"
   },
@@ -21628,7 +21628,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 69"
   },
@@ -21647,7 +21647,7 @@ export const communityData: Monster[] = [
     "hp": 65,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 70"
   },
@@ -21666,7 +21666,7 @@ export const communityData: Monster[] = [
     "hp": 114,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 71"
   },
@@ -21685,7 +21685,7 @@ export const communityData: Monster[] = [
     "hp": 105,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 73"
   },
@@ -21704,7 +21704,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 75"
   },
@@ -21723,7 +21723,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 76"
   },
@@ -21742,7 +21742,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 77"
   },
@@ -21761,7 +21761,7 @@ export const communityData: Monster[] = [
     "hp": 207,
     "init": 1,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 37"
   },
@@ -21780,7 +21780,7 @@ export const communityData: Monster[] = [
     "hp": 142,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 78"
   },
@@ -21799,7 +21799,7 @@ export const communityData: Monster[] = [
     "hp": 59,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 79"
   },
@@ -21818,7 +21818,7 @@ export const communityData: Monster[] = [
     "hp": 76,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 79"
   },
@@ -21837,7 +21837,7 @@ export const communityData: Monster[] = [
     "hp": 17,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 83"
   },
@@ -21856,7 +21856,7 @@ export const communityData: Monster[] = [
     "hp": 14,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 84"
   },
@@ -21875,7 +21875,7 @@ export const communityData: Monster[] = [
     "hp": 110,
     "init": 5,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 85"
   },
@@ -21894,7 +21894,7 @@ export const communityData: Monster[] = [
     "hp": 42,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 7"
   },
@@ -21913,7 +21913,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 39"
   },
@@ -21932,7 +21932,7 @@ export const communityData: Monster[] = [
     "hp": 25,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 40"
   },
@@ -21951,7 +21951,7 @@ export const communityData: Monster[] = [
     "hp": 19,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 40"
   },
@@ -21970,7 +21970,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 41"
   },
@@ -21989,7 +21989,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 41"
   },
@@ -22008,7 +22008,7 @@ export const communityData: Monster[] = [
     "hp": 240,
     "init": 3,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 31"
   },
@@ -22027,7 +22027,7 @@ export const communityData: Monster[] = [
     "hp": 39,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 7"
   },
@@ -22046,7 +22046,7 @@ export const communityData: Monster[] = [
     "hp": 31,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 86"
   },
@@ -22065,7 +22065,7 @@ export const communityData: Monster[] = [
     "hp": 7,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 87"
   },
@@ -22084,7 +22084,7 @@ export const communityData: Monster[] = [
     "hp": 88,
     "init": 3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 88"
   },
@@ -22103,7 +22103,7 @@ export const communityData: Monster[] = [
     "hp": 134,
     "init": 4,
     "lair": "lair",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 89"
   },
@@ -22122,7 +22122,7 @@ export const communityData: Monster[] = [
     "hp": 169,
     "init": 4,
     "lair": "",
-    "legendary": "legendary",
+    "legendary":true,
     "unique": "unique",
     "sources": "Nerzugal's Extended Bestiary: 92"
   },
@@ -22141,7 +22141,7 @@ export const communityData: Monster[] = [
     "hp": 25,
     "init": -3,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 21"
   },
@@ -22160,7 +22160,7 @@ export const communityData: Monster[] = [
     "hp": 45,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 38"
   },
@@ -22179,7 +22179,7 @@ export const communityData: Monster[] = [
     "hp": 91,
     "init": 2,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 93"
   },
@@ -22198,7 +22198,7 @@ export const communityData: Monster[] = [
     "hp": 85,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 94"
   },
@@ -22217,7 +22217,7 @@ export const communityData: Monster[] = [
     "hp": 26,
     "init": 1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 53"
   },
@@ -22236,7 +22236,7 @@ export const communityData: Monster[] = [
     "hp": 22,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 96"
   },
@@ -22255,7 +22255,7 @@ export const communityData: Monster[] = [
     "hp": 33,
     "init": -1,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 97"
   },
@@ -22274,7 +22274,7 @@ export const communityData: Monster[] = [
     "hp": 51,
     "init": 0,
     "lair": "",
-    "legendary": "",
+    "legendary":false,
     "unique": "",
     "sources": "Nerzugal's Extended Bestiary: 97"
   }

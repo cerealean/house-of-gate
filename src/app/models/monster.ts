@@ -13,7 +13,7 @@ export interface Monster {
   hp: number;
   init: number;
   lair?: string;
-  legendary?: string;
+  legendary?: boolean;
   unique?: string;
   sources: string;
   notes?: string;

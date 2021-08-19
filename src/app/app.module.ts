@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +45,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatButtonModule,
     MatCheckboxModule,
     MatSelectModule,
-    MatSortModule
+    MatSortModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
