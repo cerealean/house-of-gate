@@ -11,6 +11,9 @@ import { Subscription } from 'rxjs';
 import { monsterTypes } from './data/monster-types';
 import { MatSort } from '@angular/material/sort';
 import { MonsterFilters } from './models/monster-filters';
+import { MonsterFilterService } from './services/monster-filter.service';
+import { EncounterGeneratorService } from './services/encounter-generator.service';
+import { EncounterDifficulties } from './enums/encounter-difficulties';
 
 @Component({
   selector: 'app-root',
@@ -38,7 +41,9 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   constructor(
     private monsterData: MonsterDataService,
-    private columnManager: ColumnManagerService ) {}
+    private columnManager: ColumnManagerService,
+    private monsterFilter: MonsterFilterService,
+    private encounterGenerator: EncounterGeneratorService ) {}
 
   ngOnInit() {
     this.monsters = this.monsterData.getAllMonsters()
@@ -70,26 +75,24 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     this.columnUpdates$?.unsubscribe();
   }
 
+  generateEncounter() {
+    const encounter = this.encounterGenerator.generateEncounter({
+      difficulty: EncounterDifficulties.Deadly,
+      level: 5,
+      maxNumberOfEnemies: 10,
+      numberOfPlayers: 4
+    }, this.filters);
+
+    console.log(encounter);
+  }
+
   drop(event: CdkDragDrop<string[]> | Event) {
     const ev = (event as CdkDragDrop<string[]>);
     moveItemInArray(this.displayedColumns, ev.previousIndex, ev.currentIndex);
   }
 
   filter() {
-    let monsterFilters = this.monsters.slice();
-
-    if(this.filters.name) {
-      monsterFilters = monsterFilters.filter(x => x.name.toLowerCase().includes(this.filters.name.toLowerCase()));
-    }
-    if(this.filters.minCr && this.filters.minCr !== 0) {
-      monsterFilters = monsterFilters.filter(x => x.cr >= this.filters.minCr);
-    }
-    if(this.filters.maxCr && this.filters.maxCr !== 30) {
-      monsterFilters = monsterFilters.filter(x => x.cr <= this.filters.maxCr);
-    }
-    if(this.filters.type) {
-      monsterFilters = monsterFilters.filter(m => m.type === this.filters.type);
-    }
+    const monsterFilters = this.monsterFilter.filterMonsters(this.monsters, this.filters);
 
     this.dataSource.data = monsterFilters;
   }

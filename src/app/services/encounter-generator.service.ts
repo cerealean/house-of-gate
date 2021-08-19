@@ -19,7 +19,7 @@ export class EncounterGeneratorService {
     private monsterFilter: MonsterFilterService
     ) { }
 
-  public generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters) {
+  public generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters): { monster: Monster; qty: number; }[] {
     const expTarget = this.getTotalExpTarget(encounterRequest);
     const encounterTemplate = this.getEncounterTemplate(encounterRequest.maxNumberOfEnemies);
     const multiplier = this.getMultiplier(encounterRequest.numberOfPlayers, encounterRequest.maxNumberOfEnemies);
@@ -49,6 +49,7 @@ export class EncounterGeneratorService {
       availableExp -= currentGroup * exp!;
     }
 
+    return monsterGroups;
   }
 
   private getTotalExpTarget(encounterRequest: EncounterRequest) {
@@ -188,17 +189,17 @@ export class EncounterGeneratorService {
   }
 
   private shuffle<T>(array: Array<T>) {
-    let m = array.length, t, i;
-
+    let m = array.length, t, i, newArray;
+    newArray = array.slice();
     while (m) {
       i = Math.floor(Math.random() * m--);
 
-      t = array[m];
-      array[m] = array[i];
-      array[i] = t;
+      t = newArray[m];
+      newArray[m] = newArray[i];
+      newArray[i] = t;
     }
 
-    return array.slice();
+    return newArray;
   }
 
   private getMonstersByCr(cr: number): Monster[] {
