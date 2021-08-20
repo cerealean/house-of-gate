@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTabsModule } from '@angular/material/tabs';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -50,6 +51,7 @@ import { MonsterTablesComponent } from './monster-tables/monster-tables.componen
     MatCheckboxModule,
     MatSelectModule,
     MatSortModule,
+    MatTabsModule,
     DragDropModule
   ],
   providers: [],

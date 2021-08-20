@@ -1,4 +1,8 @@
 <app-toolbar style="width: 100%;"></app-toolbar>
 <app-filter-bar (filterChanges)="filter($event)"></app-filter-bar>
-<!-- <button mat-button (click)="generateEncounter()">Click Me!</button> -->
-<app-monster-tables [monsters]="monsters"></app-monster-tables>
+<mat-tab-group>
+  <mat-tab label="Search for Monsters">
+    <app-monster-tables [monsters]="monsters"></app-monster-tables>
+  </mat-tab>
+  <mat-tab label="Encounter Generator">Encounter Generator</mat-tab>
+</mat-tab-group>
