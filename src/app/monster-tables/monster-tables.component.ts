@@ -1,5 +1,5 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { AfterViewInit, Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -13,7 +13,7 @@ import { ColumnManagerService } from '../services/column-manager.service';
   templateUrl: './monster-tables.component.html',
   styleUrls: ['./monster-tables.component.scss']
 })
-export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit, OnChanges {
+export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() public monsters: Monster[] = [];
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = [];
@@ -37,10 +37,6 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
       .filter(c => c.isShown)
       .map(c => c.name);
     });
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
   }
 
   ngAfterViewInit() {

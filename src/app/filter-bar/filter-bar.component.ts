@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
-import { alignments } from '../data/alignments';
 import { monsterTypes } from '../data/monster-types';
 import { MonsterFilters } from '../models/monster-filters';
 import { StorageService } from '../services/storage.service';
