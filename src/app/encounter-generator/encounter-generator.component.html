@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-form-field appearance="standard">
+    <mat-label>Number of Players</mat-label>
+    <input matInput required [min]="1" [step]="1" [max]="99" type="number"
+      [(ngModel)]="encounterRequest.numberOfPlayers">
+  </mat-form-field>
+
+  <mat-form-field appearance="standard">
+    <mat-label>Player Level</mat-label>
+    <input matInput required [min]="1" [step]="1" [max]="30" type="number" [(ngModel)]="encounterRequest.level">
+  </mat-form-field>
+
+  <mat-form-field appearance="standard">
+    <mat-label>Maximum # of Enemies</mat-label>
+    <input matInput required [min]="1" [step]="1" [max]="12" type="number"
+      [(ngModel)]="encounterRequest.maxNumberOfEnemies">
+  </mat-form-field>
+
+  <mat-form-field appearance="standard">
+    <mat-label>Difficulty</mat-label>
+    <mat-select [(ngModel)]="encounterRequest.difficulty" [required]="true" class="capitalize">
+      <mat-option [value]="EncounterDifficulties.Easy" class="capitalize">
+        {{ EncounterDifficulties.Easy }}
+      </mat-option>
+      <mat-option [value]="EncounterDifficulties.Medium" class="capitalize">
+        {{ EncounterDifficulties.Medium }}
+      </mat-option>
+      <mat-option [value]="EncounterDifficulties.Hard" class="capitalize">
+        {{ EncounterDifficulties.Hard }}
+      </mat-option>
+      <mat-option [value]="EncounterDifficulties.Deadly" class="capitalize">
+        {{ EncounterDifficulties.Deadly }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-button (click)="generateRandomEncounter()">Generate Random Encounter</button>
+
+  <br />
+  <br />
+
+  <app-monster-tables [monsters]="monsters"></app-monster-tables>
+</mat-card>

@@ -1,8 +1,8 @@
-import { EncounterDifficulties } from "../enums/encounter-difficulties";
+import { Monster } from "./monster";
 
-export interface EncounterRequest {
-  numberOfPlayers: number,
-  maxNumberOfEnemies: number,
-  level: number,
-  difficulty: EncounterDifficulties
+export interface MonsterEncounter {
+  monster: Monster;
+  quantity: number;
 }
+
+export type Encounter = MonsterEncounter[];

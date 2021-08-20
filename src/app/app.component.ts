@@ -14,7 +14,7 @@ import { EncounterDifficulties } from './enums/encounter-difficulties';
 })
 export class AppComponent implements OnInit {
   public monsters: Monster[] = [];
-  private filters!: MonsterFilters;
+  public filters!: MonsterFilters;
 
   constructor(
     private monsterData: MonsterDataService,

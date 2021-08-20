@@ -4,5 +4,7 @@
   <mat-tab label="Search for Monsters">
     <app-monster-tables [monsters]="monsters"></app-monster-tables>
   </mat-tab>
-  <mat-tab label="Encounter Generator">Encounter Generator</mat-tab>
+  <mat-tab label="Encounter Generator">
+    <app-encounter-generator [filters]="filters"></app-encounter-generator>
+  </mat-tab>
 </mat-tab-group>

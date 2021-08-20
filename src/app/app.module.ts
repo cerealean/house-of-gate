@@ -24,13 +24,15 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSortModule } from '@angular/material/sort';
 import { FilterBarComponent } from './filter-bar/filter-bar.component';
 import { MonsterTablesComponent } from './monster-tables/monster-tables.component';
+import { EncounterGeneratorComponent } from './encounter-generator/encounter-generator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     FilterBarComponent,
-    MonsterTablesComponent
+    MonsterTablesComponent,
+    EncounterGeneratorComponent
   ],
   imports: [
     BrowserModule,

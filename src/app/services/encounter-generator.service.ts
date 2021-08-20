@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { crInfo } from '../data/cr-info';
 import { metaInfo } from '../data/meta-info';
 import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
-import { EncounterRequest } from '../models/encounter';
+import { Encounter } from '../models/encounter';
+import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterDataService } from '../monster-data.service';
@@ -19,13 +20,13 @@ export class EncounterGeneratorService {
     private monsterFilter: MonsterFilterService
     ) { }
 
-  public generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters): { monster: Monster; qty: number; }[] {
+  public generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters): Encounter {
     const expTarget = this.getTotalExpTarget(encounterRequest);
     const encounterTemplate = this.getEncounterTemplate(encounterRequest.maxNumberOfEnemies);
     const multiplier = this.getMultiplier(encounterRequest.numberOfPlayers, encounterRequest.maxNumberOfEnemies);
     let availableExp = expTarget / multiplier;
     let monster: Monster,
-    monsterGroups = [],
+    encounter: Encounter = [],
     currentGroup: number,
     targetExp: number;
 
@@ -39,23 +40,28 @@ export class EncounterGeneratorService {
 
       monster = this.getBestMonster(targetExp, filters);
 
-      monsterGroups.push({
+      encounter.push({
         monster: monster,
-        qty: currentGroup,
+        quantity: currentGroup,
       });
 
       // Finally, subtract the actual exp value
       const exp = Object.values(crInfo).find(ci => ci.numeric === monster.cr)?.exp;
       availableExp -= currentGroup * exp!;
     }
-
-    return monsterGroups;
+    console.log(expTarget,
+      multiplier,
+      availableExp,
+      encounter,
+      currentGroup!,
+      targetExp!);
+    return encounter;
   }
 
-  private getTotalExpTarget(encounterRequest: EncounterRequest) {
+  private getTotalExpTarget(encounterRequest: EncounterRequest): number {
     const difficultyExpInfo = playerLevelsToDifficulty.get(encounterRequest.level);
     if(difficultyExpInfo) {
-      const totalExp = difficultyExpInfo[encounterRequest.difficulty];
+      const totalExp = difficultyExpInfo[encounterRequest.difficulty] * encounterRequest.numberOfPlayers;
 
       return totalExp * this.fudgeAmount;
     }
@@ -82,7 +88,7 @@ export class EncounterGeneratorService {
           return sum <= maxMonsters;
         });
     }
-    const groups: number[] = JSON.parse(JSON.stringify(templates[Math.floor(Math.random() * templates.length)]));
+    const groups: number[] = templates[Math.floor(Math.random() * templates.length)].slice();
     const total = groups.reduce((g1, g2) => g1 + g2);
 
     return {
@@ -137,10 +143,9 @@ export class EncounterGeneratorService {
       crIndex: number,
       currentIndex: number,
       step = -1,
-      monsterList,
-      i;
+      monsterList;
 
-    for ( i = 1; i < metaInfo.crList.length; i++ ) {
+    for (let i = 1; i < metaInfo.crList.length; i++ ) {
       if ( metaInfo.crList[i].exp < targetExp ) {
         bestBelow = i;
       } else {
