@@ -59,7 +59,7 @@ export const alignments = {
   ng: { flags: ng, text: "neutral good" },
   cg: { flags: cg, text: "chaotic good" },
   ln: { flags: ln, text: "lawful neutral" },
-  n:  { flags: n,  text: "true neutral" },
+  n:  { flags: n,  text: "neutral" },
   cn: { flags: cn, text: "chaotic neutral" },
   le: { flags: le, text: "lawful evil" },
   ne: { flags: ne, text: "neutral evil" },

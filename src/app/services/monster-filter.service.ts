@@ -28,13 +28,6 @@ export class MonsterFilterService {
         filteredMonsters = filteredMonsters.filter(m => (filterOptions.type as string[]).includes(m.type));
       }
     }
-    if(filterOptions.alignment) {
-      if(typeof filterOptions.alignment === 'string'){
-        filteredMonsters = filteredMonsters.filter(m => m.alignment === filterOptions.alignment);
-      } else if (Array.isArray(filterOptions.alignment)) {
-        filteredMonsters = filteredMonsters.filter(m => (filterOptions.alignment as string[]).includes(m.alignment));
-      }
-    }
     if(filterOptions.legendary !== undefined && filterOptions.legendary !== null && typeof filterOptions.legendary === 'boolean') {
       filteredMonsters = filteredMonsters.filter(m => m.legendary === filterOptions.legendary);
     }

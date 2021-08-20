@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ColumnInfo } from '../models/column-info';
+import { MonsterFilters } from '../models/monster-filters';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,14 @@ export class StorageService {
 
   public setColumnData(columns: ColumnInfo[]) {
     this.stringifyAndStore(StorageKeys.ColumnInfo, columns);
+  }
+
+  public getFilterData(): MonsterFilters | null {
+    return this.getFromLocalStorageAndParse<MonsterFilters | null>(StorageKeys.FilterInfo);
+  }
+
+  public setFilterData(filterData: MonsterFilters): void {
+    this.stringifyAndStore(StorageKeys.FilterInfo, filterData);
   }
 
   private getFromLocalStorageAndParse<T>(key: string): T | null {
@@ -40,5 +49,6 @@ export class StorageService {
 }
 
 enum StorageKeys {
-  ColumnInfo = 'HoG-ColumnInfo'
+  ColumnInfo = 'HoG-ColumnInfo',
+  FilterInfo = 'HoG-FilterInfo'
 }

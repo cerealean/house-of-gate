@@ -21,11 +21,15 @@ import { FormsModule } from '@angular/forms';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSortModule } from '@angular/material/sort';
+import { FilterBarComponent } from './filter-bar/filter-bar.component';
+import { MonsterTablesComponent } from './monster-tables/monster-tables.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FilterBarComponent,
+    MonsterTablesComponent
   ],
   imports: [
     BrowserModule,
