@@ -2,5 +2,6 @@ export enum EncounterDifficulties {
   Easy = 'easy',
   Medium = 'medium',
   Hard = 'hard',
-  Deadly = 'deadly'
+  Deadly = 'deadly',
+  NineHells = 'ninehells'
 };

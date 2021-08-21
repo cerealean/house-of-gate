@@ -2,7 +2,7 @@
 <app-filter-bar (filterChanges)="filter($event)"></app-filter-bar>
 <mat-tab-group>
   <mat-tab label="Search for Monsters">
-    <app-monster-tables [monsters]="monsters"></app-monster-tables>
+    <app-monster-tables [monsters]="displayedMonsters"></app-monster-tables>
   </mat-tab>
   <mat-tab label="Encounter Generator">
     <app-encounter-generator [filters]="filters"></app-encounter-generator>

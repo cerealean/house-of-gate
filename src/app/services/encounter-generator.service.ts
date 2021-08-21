@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { crInfo } from '../data/cr-info';
 import { metaInfo } from '../data/meta-info';
 import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
+import { EncounterDifficulties } from '../enums/encounter-difficulties';
 import { Encounter } from '../models/encounter';
 import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
@@ -13,7 +14,6 @@ import { MonsterFilterService } from './monster-filter.service';
   providedIn: 'root'
 })
 export class EncounterGeneratorService {
-  private readonly fudgeAmount = 1.1;
 
   constructor(
     private monsterData: MonsterDataService,
@@ -49,12 +49,6 @@ export class EncounterGeneratorService {
       const exp = Object.values(crInfo).find(ci => ci.numeric === monster.cr)?.exp;
       availableExp -= currentGroup * exp!;
     }
-    console.log(expTarget,
-      multiplier,
-      availableExp,
-      encounter,
-      currentGroup!,
-      targetExp!);
     return encounter;
   }
 
@@ -63,10 +57,24 @@ export class EncounterGeneratorService {
     if(difficultyExpInfo) {
       const totalExp = difficultyExpInfo[encounterRequest.difficulty] * encounterRequest.numberOfPlayers;
 
-      return totalExp * this.fudgeAmount;
+      return totalExp * this.getFudgeAmount(encounterRequest.difficulty);
     }
 
     throw new Error('Could not get total exp target');
+  }
+
+  private getFudgeAmount(difficulty: EncounterDifficulties) {
+    switch(difficulty) {
+      case EncounterDifficulties.Easy:
+        return 1.0;
+      case EncounterDifficulties.Medium:
+      case EncounterDifficulties.Hard:
+        return 1.1
+      case EncounterDifficulties.Deadly:
+        return 1.2
+      case EncounterDifficulties.NineHells:
+        return 1.3
+    }
   }
 
   private getEncounterTemplate(maxMonsters: number): { total: number; groups: number[]; } {
@@ -79,7 +87,10 @@ export class EncounterGeneratorService {
       [ 1, 1, 2 ],
       [ 1, 2, 3 ],
       [ 2, 2 ],
+      [ 3, 3 ],
       [ 2, 4 ],
+      [ 2, 2, 2, 2 ],
+      [ 2, 2, 4 ],
       [ 8 ],
     ];
     if (maxMonsters) {

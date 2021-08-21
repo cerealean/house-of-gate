@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
 import { EncounterDifficulties } from '../enums/encounter-difficulties';
 import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
@@ -23,6 +24,19 @@ export class EncounterGeneratorComponent {
     difficulty: EncounterDifficulties.Medium
   };
   monsters: Monster[] = [];
+
+  public get expStats() {
+    const difficulty = playerLevelsToDifficulty.get(this.encounterRequest.level)!;
+    const numberOfPlayers = this.encounterRequest.numberOfPlayers;
+    return {
+      easy: difficulty.easy * numberOfPlayers,
+      medium: difficulty.medium * numberOfPlayers,
+      hard: difficulty.hard * numberOfPlayers,
+      deadly: difficulty.deadly * numberOfPlayers,
+      ninehells: difficulty.ninehells * numberOfPlayers,
+      budget: difficulty.budget * numberOfPlayers
+    };
+  }
 
   constructor(
     private encounterGenerator: EncounterGeneratorService

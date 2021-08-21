@@ -13,7 +13,8 @@ import { EncounterDifficulties } from './enums/encounter-difficulties';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public monsters: Monster[] = [];
+  private allMonsters: Monster[] = [];
+  public displayedMonsters: Monster[] = [];
   public filters!: MonsterFilters;
 
   constructor(
@@ -22,7 +23,7 @@ export class AppComponent implements OnInit {
     private encounterGenerator: EncounterGeneratorService ) {}
 
   ngOnInit() {
-    this.monsters = this.monsterData.getAllMonsters()
+    this.allMonsters = this.monsterData.getAllMonsters()
       .sort((first, second) => {
         if(first.name > second.name) {
           return 1
@@ -32,7 +33,7 @@ export class AppComponent implements OnInit {
           return 0;
         }
       });
-    console.log(this.monsters);
+    this.displayedMonsters = this.allMonsters.slice();
   }
 
   generateEncounter() {
@@ -42,12 +43,10 @@ export class AppComponent implements OnInit {
       maxNumberOfEnemies: 10,
       numberOfPlayers: 4
     }, this.filters);
-
-    console.log(encounter);
   }
 
   filter(filters: MonsterFilters) {
     this.filters = filters;
-    this.monsters = this.monsterFilter.filterMonsters(this.monsters, this.filters);
+    this.displayedMonsters = this.monsterFilter.filterMonsters(this.allMonsters, this.filters);
   }
 }

@@ -18,7 +18,7 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = [];
 
-  public dataSource = new MatTableDataSource<Monster>(this.monsters);
+  public dataSource = new MatTableDataSource<Monster>();
 
   private columnUpdates$!: Subscription;
 

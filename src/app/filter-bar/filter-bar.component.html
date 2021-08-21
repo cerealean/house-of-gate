@@ -1,7 +1,7 @@
 <mat-card class="filters">
   <mat-form-field appearance="standard">
     <mat-label>Filter By Name</mat-label>
-    <input matInput (change)="filter()" [(ngModel)]="filters.name">
+    <input matInput (input)="filter()" [(ngModel)]="filters.name">
   </mat-form-field>
   <mat-form-field appearance="standard">
     <mat-label>Min CR</mat-label>
@@ -29,5 +29,4 @@
       <mat-option *ngFor="let type of monsterTypes" [value]="type">{{type}}</mat-option>
     </mat-select>
   </mat-form-field>
-  <button mat-button mat-raised-button (click)="filter()">Filter</button>
 </mat-card>

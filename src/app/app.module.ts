@@ -13,6 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { FilterBarComponent } from './filter-bar/filter-bar.component';
 import { MonsterTablesComponent } from './monster-tables/monster-tables.component';
 import { EncounterGeneratorComponent } from './encounter-generator/encounter-generator.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,10 @@ import { EncounterGeneratorComponent } from './encounter-generator/encounter-gen
     MatSelectModule,
     MatSortModule,
     MatTabsModule,
-    DragDropModule
+    DragDropModule,
+    MatIconModule,
+    MatTooltipModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

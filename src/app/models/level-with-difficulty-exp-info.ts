@@ -5,4 +5,5 @@ export interface LevelWithDifficultyInfo {
   medium: number;
   hard: number;
   deadly: number;
+  ninehells: number;
 };
