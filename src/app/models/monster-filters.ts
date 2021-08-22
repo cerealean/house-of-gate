@@ -2,7 +2,8 @@ export interface MonsterFilters {
   name?: string;
   minCr?: number;
   maxCr?: number;
-  type?: string | string[];
+  type?: string[];
+  environment?: string[];
   legendary?: boolean;
   unique?: boolean;
 }

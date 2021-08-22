@@ -1,6 +1,6 @@
-import { Monster } from "../models/monster";
+import { MonsterInfo } from "../models/monster";
 
-export const communityData: Monster[] = [
+export const communityData: MonsterInfo[] = [
   {
     "guid": "",
     "fid": "cc.abyssal-eviscerator",

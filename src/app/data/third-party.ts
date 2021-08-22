@@ -1,6 +1,6 @@
-import { Monster } from "../models/monster";
+import { MonsterInfo } from "../models/monster";
 
-export const thirdPartyData: Monster[] = [
+export const thirdPartyData: MonsterInfo[] = [
   {
     "guid": "8858bfe7-3e4f-4614-9f37-4411493b22cf",
     "fid": "5ef.aaztar-ghola",

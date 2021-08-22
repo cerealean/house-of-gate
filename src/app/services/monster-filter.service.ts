@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Injectable } from '@angular/core';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
@@ -11,6 +12,7 @@ export class MonsterFilterService {
 
   public filterMonsters(monsters: Monster[], filterOptions: MonsterFilters): Monster[] {
     let filteredMonsters = monsters.slice();
+    console.log('filtering');
 
     if(filterOptions.name) {
       filteredMonsters = filteredMonsters.filter(x => x.name.toLowerCase().includes(filterOptions.name!.toLowerCase()));
@@ -21,12 +23,11 @@ export class MonsterFilterService {
     if(filterOptions.maxCr && typeof filterOptions.maxCr === 'number' && filterOptions.maxCr !== 30) {
       filteredMonsters = filteredMonsters.filter(x => x.cr <= filterOptions.maxCr!);
     }
-    if(filterOptions.type) {
-      if(typeof filterOptions.type === 'string'){
-        filteredMonsters = filteredMonsters.filter(m => m.type === filterOptions.type);
-      } else if (Array.isArray(filterOptions.type)) {
-        filteredMonsters = filteredMonsters.filter(m => (filterOptions.type as string[]).includes(m.type));
-      }
+    if(filterOptions.type?.length) {
+      filteredMonsters = filteredMonsters.filter(m => m.hasTypeIntersection(filterOptions.type!));
+    }
+    if(filterOptions.environment?.length) {
+      filteredMonsters = filteredMonsters.filter(m => m.hasEnvironmentIntersection(filterOptions.environment!));
     }
     if(filterOptions.legendary !== undefined && filterOptions.legendary !== null && typeof filterOptions.legendary === 'boolean') {
       filteredMonsters = filteredMonsters.filter(m => m.legendary === filterOptions.legendary);
@@ -42,5 +43,13 @@ export class MonsterFilterService {
     const result = this.filterMonsters([monster], filterOptions);
 
     return result && result.length === 1;
+  }
+
+  private convertStringToArray(value: string | string[]) {
+    if(Array.isArray(value)) {
+      return value;
+    }
+
+    return value.split(',').map(v => v.trim());
   }
 }

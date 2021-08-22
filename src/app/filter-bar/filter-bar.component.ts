@@ -1,4 +1,6 @@
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { crInfo } from '../data/cr-info';
+import { metaInfo } from '../data/meta-info';
 import { monsterTypes } from '../data/monster-types';
 import { MonsterFilters } from '../models/monster-filters';
 import { StorageService } from '../services/storage.service';
@@ -9,13 +11,15 @@ import { StorageService } from '../services/storage.service';
   styleUrls: ['./filter-bar.component.scss']
 })
 export class FilterBarComponent implements OnInit, OnDestroy {
-  public readonly monsterTypes = monsterTypes;
+  public readonly monsterTypes = metaInfo.types;
+  public readonly environments = metaInfo.environments;
 
   public filters: MonsterFilters = {
     name: '',
     minCr: 0,
     maxCr: 30,
-    type: this.monsterTypes
+    type: this.monsterTypes,
+    environment: this.environments.concat('')
   };
 
   @Output() filterChanges = new EventEmitter<MonsterFilters>();
@@ -37,10 +41,11 @@ export class FilterBarComponent implements OnInit, OnDestroy {
   }
 
   filter() {
+    console.log('rawr');
     setTimeout(() => {
       this.filterChanges.emit(this.filters);
       this.storage.setFilterData(this.filters);
-    }, 120);
+    }, 60);
   }
 
   fill(start: number, end: number): number[] {

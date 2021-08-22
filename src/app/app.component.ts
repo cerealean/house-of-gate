@@ -4,8 +4,6 @@ import { Monster } from './models/monster';
 import { MonsterDataService } from './monster-data.service';
 import { MonsterFilters } from './models/monster-filters';
 import { MonsterFilterService } from './services/monster-filter.service';
-import { EncounterGeneratorService } from './services/encounter-generator.service';
-import { EncounterDifficulties } from './enums/encounter-difficulties';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +17,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private monsterData: MonsterDataService,
-    private monsterFilter: MonsterFilterService,
-    private encounterGenerator: EncounterGeneratorService ) {}
+    private monsterFilter: MonsterFilterService
+     ) {}
 
   ngOnInit() {
     this.allMonsters = this.monsterData.getAllMonsters()
@@ -34,15 +32,6 @@ export class AppComponent implements OnInit {
         }
       });
     this.displayedMonsters = this.allMonsters.slice();
-  }
-
-  generateEncounter() {
-    const encounter = this.encounterGenerator.generateEncounter({
-      difficulty: EncounterDifficulties.Deadly,
-      level: 5,
-      maxNumberOfEnemies: 10,
-      numberOfPlayers: 4
-    }, this.filters);
   }
 
   filter(filters: MonsterFilters) {

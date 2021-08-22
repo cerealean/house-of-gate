@@ -5,7 +5,7 @@
   </mat-form-field>
   <mat-form-field appearance="standard">
     <mat-label>Min CR</mat-label>
-    <mat-select (change)="filter()" [(ngModel)]="filters.minCr">
+    <mat-select (selectionChange)="filter()" [(ngModel)]="filters.minCr">
       <mat-option [value]="0">0</mat-option>
       <mat-option [value]="1/8">1/8</mat-option>
       <mat-option [value]="1/4">1/4</mat-option>
@@ -15,7 +15,7 @@
   </mat-form-field>
   <mat-form-field appearance="standard">
     <mat-label>Max CR</mat-label>
-    <mat-select (change)="filter()" [(ngModel)]="filters.maxCr">
+    <mat-select (selectionChange)="filter()" [(ngModel)]="filters.maxCr">
       <mat-option [value]="0">0</mat-option>
       <mat-option [value]="1/8">1/8</mat-option>
       <mat-option [value]="1/4">1/4</mat-option>
@@ -25,8 +25,15 @@
   </mat-form-field>
   <mat-form-field appearance="standard">
     <mat-label>Type</mat-label>
-    <mat-select (change)="filter()" [(ngModel)]="filters.type" multiple>
+    <mat-select (selectionChange)="filter()" [(ngModel)]="filters.type" multiple>
       <mat-option *ngFor="let type of monsterTypes" [value]="type">{{type}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="standard">
+    <mat-label>Environment</mat-label>
+    <mat-select (selectionChange)="filter()" [(ngModel)]="filters.environment" multiple>
+      <mat-option *ngFor="let environment of environments" [value]="environment">{{environment}}</mat-option>
+      <mat-option value="None">No Environment</mat-option>
     </mat-select>
   </mat-form-field>
 </mat-card>

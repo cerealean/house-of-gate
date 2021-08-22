@@ -1,6 +1,6 @@
-import { Monster } from "../models/monster";
+import { MonsterInfo } from "../models/monster";
 
-export const officialData: Monster[] = [
+export const officialData: MonsterInfo[] = [
     {
        "guid":"d4ceb2aa-9505-443c-b76f-290f6a926df3",
        "fid":"abyss.baphomet",
