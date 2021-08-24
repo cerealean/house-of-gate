@@ -1,0 +1,47 @@
+ul, li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.ac-column li, .ac-column ul {
+  list-style: none;
+}
+
+.mat-cell {
+  text-overflow: ellipsis;
+}
+
+.mat-column-ac {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mat-column-size {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mat-column-type {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mat-column-cr {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mat-column-hp {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mat-column-environment {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mat-column-sources {
+  padding-left: 10px;
+  padding-right: 10px;
+}

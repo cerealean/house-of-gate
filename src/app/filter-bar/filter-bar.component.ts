@@ -1,7 +1,7 @@
+import { SelectionChange } from '@angular/cdk/collections';
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
-import { crInfo } from '../data/cr-info';
+import { MatSelectChange } from '@angular/material/select';
 import { metaInfo } from '../data/meta-info';
-import { monsterTypes } from '../data/monster-types';
 import { MonsterFilters } from '../models/monster-filters';
 import { StorageService } from '../services/storage.service';
 
@@ -40,8 +40,7 @@ export class FilterBarComponent implements OnInit, OnDestroy {
     this.filterChanges?.complete();
   }
 
-  filter() {
-    console.log('rawr');
+  filter(event?: MatSelectChange) {
     setTimeout(() => {
       this.filterChanges.emit(this.filters);
       this.storage.setFilterData(this.filters);

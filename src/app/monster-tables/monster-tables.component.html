@@ -5,16 +5,28 @@
     <th style="text-transform: capitalize;" mat-header-cell cdkDrag *matHeaderCellDef mat-sort-header> {{column.name}}
     </th>
     <td mat-cell *matCellDef="let element">
-      <ng-container
-        *ngIf="column.name === 'ac' && isArray(element[column.name]) then acColumnDisplay else normalColumnDisplay">
+      <ng-container *ngIf="isArray(element[column.name]) then arrayColumnDisplay else normalColumnDisplay">
       </ng-container>
       <ng-template #normalColumnDisplay>
         {{element[column.name]}}
       </ng-template>
-      <ng-template #acColumnDisplay>
-        <span *ngFor="let acData of element[column.name]">
-          {{ acData.ac }} {{ acData.notes }}<br />
-        </span>
+      <ng-template #arrayColumnDisplay>
+        <ng-template *ngIf="column.name === 'ac' then acColumnDisplay else normalArrayDisplay">
+        </ng-template>
+        <ng-template #normalArrayDisplay>
+          <ul>
+            <li *ngFor="let tuple of element[column.name]">
+              {{ tuple }}
+            </li>
+          </ul>
+        </ng-template>
+        <ng-template #acColumnDisplay>
+          <ul class="ac-column">
+            <li *ngFor="let acData of element[column.name]">
+              {{ acData.ac }}&nbsp;{{ acData.notes }}
+            </li>
+          </ul>
+        </ng-template>
       </ng-template>
     </td>
   </ng-container>
