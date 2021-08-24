@@ -41,7 +41,6 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
 
   ngOnChanges(simpleChanges: SimpleChanges): void {
     this.dataSource.data = simpleChanges.monsters.currentValue;
-    console.log(simpleChanges);
   }
 
   ngAfterViewInit() {

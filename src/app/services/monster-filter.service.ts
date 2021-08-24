@@ -12,7 +12,6 @@ export class MonsterFilterService {
 
   public filterMonsters(monsters: Monster[], filterOptions: MonsterFilters): Monster[] {
     let filteredMonsters = monsters.slice();
-    console.log('filtering');
 
     if(filterOptions.name) {
       filteredMonsters = filteredMonsters.filter(x => x.name.toLowerCase().includes(filterOptions.name!.toLowerCase()));
