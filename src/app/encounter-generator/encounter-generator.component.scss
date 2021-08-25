@@ -1,4 +1,6 @@
-.mat-form-field + .mat-form-field {
+.mat-form-field + .mat-form-field,
+.mat-form-field + .mat-mini-fab,
+.mat-mini-fab + .mat-mini-fab {
   margin-left: 8px;
 }
 

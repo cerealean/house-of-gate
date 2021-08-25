@@ -1,4 +1,3 @@
-import { SelectionChange } from '@angular/cdk/collections';
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
 import { metaInfo } from '../data/meta-info';

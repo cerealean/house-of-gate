@@ -1,24 +1,39 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { crInfo } from '../data/cr-info';
 import { metaInfo } from '../data/meta-info';
 import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
 import { EncounterDifficulties } from '../enums/encounter-difficulties';
-import { Encounter } from '../models/encounter';
+import { Encounter, EncounterMonsterInfo } from '../models/encounter';
 import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterDataService } from '../monster-data.service';
 import { MonsterFilterService } from './monster-filter.service';
+import { StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EncounterGeneratorService {
 
+  private _previousEncounters: Encounter[] = [];
+  private _previousEncounters$ = new BehaviorSubject(this._previousEncounters);
+  private readonly maxPreviousEncountersLength = 20;
+
+  public readonly previousEncounters$ = this._previousEncounters$.asObservable();
+
   constructor(
     private monsterData: MonsterDataService,
-    private monsterFilter: MonsterFilterService
-    ) { }
+    private monsterFilter: MonsterFilterService,
+    private storage: StorageService
+    ) {
+      const previouslyGeneratedEncounters = storage.getPreviouslyGeneratedEncounters();
+      if(previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
+        this._previousEncounters = previouslyGeneratedEncounters;
+        this._previousEncounters$.next(this._previousEncounters);
+      }
+     }
 
   public generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters): Encounter {
     const expTarget = this.getTotalExpTarget(encounterRequest);
@@ -26,9 +41,10 @@ export class EncounterGeneratorService {
     const multiplier = this.getMultiplier(encounterRequest.numberOfPlayers, encounterRequest.maxNumberOfEnemies);
     let availableExp = expTarget / multiplier;
     let monster: Monster,
-    encounter: Encounter = [],
+    encounters: EncounterMonsterInfo[] = [],
     currentGroup: number,
     targetExp: number;
+    const crInfoValues = Object.values(crInfo);
 
     while ( encounterTemplate.groups[0] ) {
       // Exp should be shared as equally as possible between groups
@@ -40,16 +56,26 @@ export class EncounterGeneratorService {
 
       monster = this.getBestMonster(targetExp, filters);
 
-      encounter.push({
+      encounters.push({
         monster: monster,
         quantity: currentGroup,
       });
 
       // Finally, subtract the actual exp value
-      const exp = Object.values(crInfo).find(ci => ci.numeric === monster.cr)?.exp;
+      const exp = crInfoValues.find(ci => ci.numeric === monster.cr)?.exp;
       availableExp -= currentGroup * exp!;
     }
-    return encounter;
+
+    const newEncounter = new Encounter(encounters, {...encounterRequest});
+    this.updateEncounters(newEncounter);
+    return newEncounter;
+  }
+
+  private updateEncounters(newEncounter: Encounter) {
+    const newLength = this._previousEncounters.unshift(newEncounter);
+    this._previousEncounters = this._previousEncounters.slice(0, Math.min(newLength, this.maxPreviousEncountersLength));
+    this._previousEncounters$.next(this._previousEncounters);
+    this.storage.setPreviouslyGeneratedEncounters(this._previousEncounters);
   }
 
   private getTotalExpTarget(encounterRequest: EncounterRequest): number {

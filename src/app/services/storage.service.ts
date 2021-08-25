@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ColumnInfo } from '../models/column-info';
+import { Encounter } from '../models/encounter';
 import { MonsterFilters } from '../models/monster-filters';
 
 @Injectable({
@@ -23,6 +24,14 @@ export class StorageService {
 
   public setFilterData(filterData: MonsterFilters): void {
     this.stringifyAndStore(StorageKeys.FilterInfo, filterData);
+  }
+
+  public getPreviouslyGeneratedEncounters(): Encounter[] | null {
+    return this.getFromLocalStorageAndParse<Encounter[] | null>(StorageKeys.PreviouslyGeneratedEncounters);
+  }
+
+  public setPreviouslyGeneratedEncounters(encounters: Encounter[]): void {
+    this.stringifyAndStore(StorageKeys.PreviouslyGeneratedEncounters, encounters);
   }
 
   private getFromLocalStorageAndParse<T>(key: string): T | null {
@@ -50,5 +59,7 @@ export class StorageService {
 
 enum StorageKeys {
   ColumnInfo = 'HoG-ColumnInfo',
-  FilterInfo = 'HoG-FilterInfo'
+  FilterInfo = 'HoG-FilterInfo',
+  PreviouslyGeneratedEncounters = 'HoG-PreviouslyGeneratedEncounters',
+  EncounterFilters = 'HoG-EncounterFilters'
 }
