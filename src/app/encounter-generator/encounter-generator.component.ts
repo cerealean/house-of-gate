@@ -55,13 +55,16 @@ export class EncounterGeneratorComponent implements OnDestroy {
 
   openPreviousEncounters(): void {
     const ref = this.matBottomSheet.open(PreviousEncountersComponent);
-    this.subscriptions.add(
-      ref.instance.previousEncounterSelected.subscribe(encounter => {
-        this.encounterRequest = {...encounter.request};
-        this.monsters = this.convertEncountersToMonsters(encounter.encounters.slice());
-        ref.dismiss();
-      })
-    );
+    const selected$ = ref.instance.previousEncounterSelected.subscribe(encounter => {
+      this.encounterRequest = {...encounter.request};
+      this.monsters = this.convertEncountersToMonsters(encounter.encounters.slice());
+      ref.dismiss();
+    });
+    const afterDismissed$ = ref.afterDismissed().subscribe(() => {
+      selected$?.unsubscribe();
+    });
+    this.subscriptions.add(selected$);
+    this.subscriptions.add(afterDismissed$);
   }
 
   generateRandomEncounter() {
