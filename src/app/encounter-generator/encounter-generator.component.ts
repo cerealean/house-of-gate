@@ -1,7 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnDestroy } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { Subscription } from 'rxjs';
 import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
 import { EncounterDifficulties } from '../enums/encounter-difficulties';
+import { EncounterMonsterInfo } from '../models/encounter';
 import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
@@ -13,7 +15,7 @@ import { EncounterGeneratorService } from '../services/encounter-generator.servi
   templateUrl: './encounter-generator.component.html',
   styleUrls: ['./encounter-generator.component.scss']
 })
-export class EncounterGeneratorComponent {
+export class EncounterGeneratorComponent implements OnDestroy {
 
   public readonly EncounterDifficulties = EncounterDifficulties;
 
@@ -26,6 +28,8 @@ export class EncounterGeneratorComponent {
     difficulty: EncounterDifficulties.Medium
   };
   monsters: Monster[] = [];
+
+  private subscriptions = new Subscription();
 
   public get expStats() {
     const difficulty = playerLevelsToDifficulty.get(this.encounterRequest.level)!;
@@ -45,13 +49,29 @@ export class EncounterGeneratorComponent {
     private matBottomSheet: MatBottomSheet
   ) { }
 
+  ngOnDestroy(): void {
+    this.subscriptions?.unsubscribe();
+  }
+
   openPreviousEncounters(): void {
-    this.matBottomSheet.open(PreviousEncountersComponent);
+    const ref = this.matBottomSheet.open(PreviousEncountersComponent);
+    this.subscriptions.add(
+      ref.instance.previousEncounterSelected.subscribe(encounter => {
+        this.encounterRequest = {...encounter.request};
+        this.monsters = this.convertEncountersToMonsters(encounter.encounters.slice());
+        ref.dismiss();
+      })
+    );
   }
 
   generateRandomEncounter() {
     const encounter = this.encounterGenerator.generateEncounter(this.encounterRequest, this.filters);
-    const monsters = encounter.encounters.map(e => {
+    const monsters = this.convertEncountersToMonsters(encounter.encounters);
+    this.monsters = monsters;
+  }
+
+  private convertEncountersToMonsters(encounters: EncounterMonsterInfo[]) {
+    return encounters.map(e => {
       const monsters: Monster[] = [];
       for(let index = 0; index < e.quantity; index++) {
         monsters.push(e.monster);
@@ -59,7 +79,6 @@ export class EncounterGeneratorComponent {
 
       return monsters;
     }).reduce((acc, val) => acc.concat(val), []);
-    this.monsters = monsters;
   }
 
 }

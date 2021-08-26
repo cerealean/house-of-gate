@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Encounter } from '../models/encounter';
 import { EncounterGeneratorService } from '../services/encounter-generator.service';
@@ -12,6 +12,8 @@ export class PreviousEncountersComponent implements OnInit, OnDestroy {
 
   private _encounters: Encounter[] = [];
   private previousEncounters$!: Subscription;
+
+  @Output() previousEncounterSelected = new EventEmitter<Encounter>();
 
   public get encounters(): Encounter[] {
     return this._encounters;
@@ -30,10 +32,12 @@ export class PreviousEncountersComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.previousEncounters$?.unsubscribe();
+    this.previousEncounterSelected?.complete();
   }
 
   loadPreviousEncounter($event: MouseEvent, encounter: Encounter) {
     $event.preventDefault();
+    this.previousEncounterSelected.emit(encounter);
   }
 
 }
