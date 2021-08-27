@@ -2,23 +2,24 @@
   <mat-form-field appearance="standard">
     <mat-label>Number of Players</mat-label>
     <input matInput required [min]="1" [step]="1" [max]="99" type="number"
+      (input)="updateFilters()"
       [(ngModel)]="encounterRequest.numberOfPlayers">
   </mat-form-field>
 
   <mat-form-field appearance="standard">
     <mat-label>Player Level</mat-label>
-    <input matInput required [min]="1" [step]="1" [max]="20" type="number" [(ngModel)]="encounterRequest.level">
+    <input matInput required [min]="1" [step]="1" [max]="20" type="number" (input)="updateFilters()" [(ngModel)]="encounterRequest.level">
   </mat-form-field>
 
   <mat-form-field appearance="standard">
     <mat-label>Maximum # of Enemies</mat-label>
-    <input matInput required [min]="1" [step]="1" [max]="30" type="number"
+    <input matInput required [min]="1" [step]="1" [max]="30" type="number" (input)="updateFilters()"
       [(ngModel)]="encounterRequest.maxNumberOfEnemies">
   </mat-form-field>
 
   <mat-form-field appearance="standard">
     <mat-label>Difficulty</mat-label>
-    <mat-select [(ngModel)]="encounterRequest.difficulty" [required]="true" class="capitalize">
+    <mat-select [(ngModel)]="encounterRequest.difficulty" [required]="true" class="capitalize" (selectionChange)="updateFilters()">
       <mat-option [value]="EncounterDifficulties.Easy" class="capitalize">
         {{ EncounterDifficulties.Easy }}
       </mat-option>

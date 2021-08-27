@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
 import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
@@ -9,13 +9,14 @@ import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
 import { EncounterGeneratorService } from '../services/encounter-generator.service';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-encounter-generator',
   templateUrl: './encounter-generator.component.html',
   styleUrls: ['./encounter-generator.component.scss']
 })
-export class EncounterGeneratorComponent implements OnDestroy {
+export class EncounterGeneratorComponent implements OnDestroy, OnInit {
 
   public readonly EncounterDifficulties = EncounterDifficulties;
 
@@ -46,8 +47,16 @@ export class EncounterGeneratorComponent implements OnDestroy {
 
   constructor(
     private encounterGenerator: EncounterGeneratorService,
-    private matBottomSheet: MatBottomSheet
+    private matBottomSheet: MatBottomSheet,
+    private storage: StorageService
   ) { }
+
+  ngOnInit(): void {
+    const currentEncounterRequest = this.storage.getEncounterFilters();
+    if(currentEncounterRequest) {
+      this.encounterRequest = currentEncounterRequest;
+    }
+  }
 
   ngOnDestroy(): void {
     this.subscriptions?.unsubscribe();
@@ -71,6 +80,10 @@ export class EncounterGeneratorComponent implements OnDestroy {
     const encounter = this.encounterGenerator.generateEncounter(this.encounterRequest, this.filters);
     const monsters = this.convertEncountersToMonsters(encounter.encounters);
     this.monsters = monsters;
+  }
+
+  updateFilters(): void {
+    this.storage.setEncounterFilters(this.encounterRequest);
   }
 
   private convertEncountersToMonsters(encounters: EncounterMonsterInfo[]) {
