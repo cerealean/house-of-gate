@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { crInfo } from '../data/cr-info';
 import { encounterTemplates } from '../data/encounter-templates';
-import { metaInfo } from '../data/meta-info';
 import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
 import { EncounterDifficulties } from '../enums/encounter-difficulties';
 import { Encounter, EncounterMonsterInfo } from '../models/encounter';
@@ -10,6 +8,7 @@ import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterDataService } from '../monster-data.service';
+import { MetaDataService } from './meta-data.service';
 import { MonsterFilterService } from './monster-filter.service';
 import { StorageService } from './storage.service';
 
@@ -19,41 +18,29 @@ import { StorageService } from './storage.service';
 export class EncounterGeneratorService {
 
   private _previousEncounters: Encounter[] = [];
-  private _previousEncounters$ = new BehaviorSubject(this._previousEncounters);
+  private readonly _previousEncounters$ = new BehaviorSubject(this._previousEncounters);
   private readonly maxPreviousEncountersLength = 20;
   private readonly templates = encounterTemplates;
-  private previous5ChosenTemplates: number[][] = [];
+  private readonly previous5ChosenTemplates: number[][] = [];
 
   public readonly previousEncounters$ = this._previousEncounters$.asObservable();
 
   constructor(
     private monsterData: MonsterDataService,
     private monsterFilter: MonsterFilterService,
-    private storage: StorageService
+    private storage: StorageService,
+    private metaData: MetaDataService
   ) {
     const previouslyGeneratedEncounters = storage.getPreviouslyGeneratedEncounters();
     if (previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
       this._previousEncounters = previouslyGeneratedEncounters;
       this._previousEncounters$.next(this._previousEncounters);
     }
-
-    console.log(this.templates);
   }
 
   public async generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters): Promise<Encounter> {
     const expTarget = this.getTotalExpTarget(encounterRequest);
-    const multiplier = 1;//this.getDifficultyDivisor(encounterRequest.numberOfPlayers, encounterRequest.maxNumberOfEnemies);
-    const crInfoValues = Object.values(crInfo);
-
-    const possibleTemplates = this.templates
-      .filter((t) => {
-        if (this.previous5ChosenTemplates.some(t2 => this.areArraysEqual(t, t2))) {
-          return false;
-        }
-        const sum = t.reduce((a, b) => a + b, 0);
-        return sum <= encounterRequest.maxNumberOfEnemies;
-      });
-    console.log('possible templates', possibleTemplates.slice());
+    const possibleTemplates = this.getTemplatesToUse(encounterRequest);
     const possibleEncounters$ = possibleTemplates.map(template => {
       return new Promise<Encounter>((resolve, _reject) => {
         let monster: Monster,
@@ -62,7 +49,7 @@ export class EncounterGeneratorService {
           targetExp: number;
         const groups: number[] = template.slice();
         while (groups[0]) {
-          let availableExp = expTarget / multiplier;
+          let availableExp = expTarget;
           // Exp should be shared as equally as possible between groups
           targetExp = availableExp / groups.length * this.getFudgeAmount(encounterRequest.difficulty);
           currentGroup = groups.shift()!;
@@ -78,7 +65,7 @@ export class EncounterGeneratorService {
           });
 
           // Finally, subtract the actual exp value
-          const exp = crInfoValues.find(ci => ci.numeric === monster.cr)?.exp;
+          const exp = this.metaData.getCrInfoByCr(monster.cr)?.exp;
           availableExp -= currentGroup * exp!;
         }
 
@@ -100,22 +87,30 @@ export class EncounterGeneratorService {
       }
     });
 
+    this.addPreviouslyChosenTemplate(newEncounter);
+    this.updateEncounters(newEncounter);
+    return newEncounter;
+  }
+
+  private addPreviouslyChosenTemplate(newEncounter: Encounter) {
     this.previous5ChosenTemplates.unshift(newEncounter.template.slice());
     if (this.previous5ChosenTemplates.length > 5) {
       this.previous5ChosenTemplates.pop();
     }
+  }
 
-    possibleEncounters.forEach(encounter => {
-      console.log('Possible Encounter', encounter, encounter.getTotalApproximateExp());
-    });
-    console.log('Chosen Encounter', newEncounter, newEncounter.getTotalApproximateExp());
-    console.log('Exp target', expTarget);
-
-    const blahs = possibleEncounters.filter(x => x.encounters.reduce((a, b) => a + b.quantity, 0) > 32).slice();
-    console.log('blahs', blahs);
-
-    this.updateEncounters(newEncounter);
-    return newEncounter;
+  private getTemplatesToUse(encounterRequest: EncounterRequest) {
+    const templatesReducedForMaxEnemies = this.templates
+      .filter((t) => {
+        const sum = t.reduce((a, b) => a + b, 0);
+        return sum <= encounterRequest.maxNumberOfEnemies;
+      });
+    const nonDuplicateTemplates = templatesReducedForMaxEnemies
+      .filter(t => !this.previous5ChosenTemplates.some(t2 => this.areArraysEqual(t, t2)));
+    const possibleTemplates = nonDuplicateTemplates.length > 0
+      ? nonDuplicateTemplates
+      : templatesReducedForMaxEnemies;
+    return possibleTemplates;
   }
 
   private updateEncounters(newEncounter: Encounter) {
@@ -222,13 +217,14 @@ export class EncounterGeneratorService {
   }
 
   private getBestMonster(targetExp: number, filters: MonsterFilters) {
+    const crList = this.metaData.getCrList();
     let bestBelow = 0,
-      bestAbove = metaInfo.crList.length - 1,
+      bestAbove = crList.length - 1,
       crIndex: number,
       step = -1;
 
-    for (let i = 1; i < metaInfo.crList.length; i++) {
-      if (metaInfo.crList[i].exp < targetExp) {
+    for (let i = 1; i < crList.length; i++) {
+      if (crList[i].exp < targetExp) {
         bestBelow = i;
       } else {
         bestAbove = i;
@@ -236,14 +232,14 @@ export class EncounterGeneratorService {
       }
     }
 
-    if ((targetExp - metaInfo.crList[bestBelow].exp) < (metaInfo.crList[bestAbove].exp - targetExp)) {
+    if ((targetExp - crList[bestBelow].exp) < (crList[bestAbove].exp - targetExp)) {
       crIndex = bestBelow;
     } else {
       crIndex = bestAbove;
     }
 
     let currentIndex = crIndex;
-    let monsterList = this.getShuffledMonsterList(metaInfo.crList[crIndex].numeric);
+    let monsterList = this.getShuffledMonsterList(crList[crIndex].numeric);
 
     while (true) {
       if (this.monsterFilter.doesMonsterMatchFilter(monsterList[0], filters)) {
@@ -263,7 +259,7 @@ export class EncounterGeneratorService {
         }
 
         currentIndex += step;
-        monsterList = this.getShuffledMonsterList(metaInfo.crList[currentIndex].numeric);
+        monsterList = this.getShuffledMonsterList(crList[currentIndex].numeric);
       }
     }
   }

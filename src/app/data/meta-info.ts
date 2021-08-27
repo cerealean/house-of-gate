@@ -1,20 +1,27 @@
-import { crInfo } from './cr-info';
+import { crInfoData } from './cr-info';
 import { alignments } from './alignments';
 
 export const metaInfo = {
   alignments,
-  crInfo,
+  crInfo: crInfoData,
   crList: [
-    crInfo["0"],	crInfo["1/8"],	crInfo["1/4"],	crInfo["1/2"],
-    crInfo["1"],	crInfo["2"],	crInfo["3"],	crInfo["4"],
-    crInfo["5"],	crInfo["6"],	crInfo["7"],	crInfo["8"],
-    crInfo["9"],	crInfo["10"],	crInfo["11"],	crInfo["12"],
-    crInfo["13"],	crInfo["14"],	crInfo["15"],	crInfo["16"],
-    crInfo["17"],	crInfo["18"],	crInfo["19"],	crInfo["20"],
-    crInfo["21"],	crInfo["22"],	crInfo["23"],	crInfo["24"],
-    crInfo["25"],	crInfo["26"],	crInfo["27"],	crInfo["28"],
-    crInfo["29"],	crInfo["30"],
+    crInfoData["0"],	crInfoData["1/8"],	crInfoData["1/4"],	crInfoData["1/2"],
+    crInfoData["1"],	crInfoData["2"],	crInfoData["3"],	crInfoData["4"],
+    crInfoData["5"],	crInfoData["6"],	crInfoData["7"],	crInfoData["8"],
+    crInfoData["9"],	crInfoData["10"],	crInfoData["11"],	crInfoData["12"],
+    crInfoData["13"],	crInfoData["14"],	crInfoData["15"],	crInfoData["16"],
+    crInfoData["17"],	crInfoData["18"],	crInfoData["19"],	crInfoData["20"],
+    crInfoData["21"],	crInfoData["22"],	crInfoData["23"],	crInfoData["24"],
+    crInfoData["25"],	crInfoData["26"],	crInfoData["27"],	crInfoData["28"],
+    crInfoData["29"],	crInfoData["30"],
   ],
+  crListMapByCr: new Map<number, any>([
+    [0, crInfoData["0"]],
+    [1/8, crInfoData["1/8"]],
+    [1/4, crInfoData["1/4"]],
+    [1/2, crInfoData["1/2"]],
+    [1, crInfoData["1"]],
+  ]),
   legendaryList: [
     "Ordinary",
     "Legendary",

@@ -1,4 +1,9 @@
-export const crInfo = {
+export interface CrInfo {
+  string: string;
+  numeric: number;
+  exp: number;
+}
+export const crInfoData: { [k: string]: CrInfo } = {
   "0":	{ string: "0",		numeric: 0,		exp: 10		},
   "1/8":	{ string: "1/8",	numeric: 0.125,	exp: 25		},
   "1/4":	{ string: "1/4",	numeric: 0.25,	exp: 50		},
