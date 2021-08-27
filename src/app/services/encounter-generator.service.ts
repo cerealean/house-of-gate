@@ -51,7 +51,7 @@ export class EncounterGeneratorService {
         while (groups[0]) {
           let availableExp = expTarget;
           // Exp should be shared as equally as possible between groups
-          targetExp = availableExp / groups.length * this.getFudgeAmount(encounterRequest.difficulty);
+          targetExp = availableExp / groups.length;
           currentGroup = groups.shift()!;
 
           // We need to find a monster who, in the correct number, is close to the target exp
@@ -134,14 +134,17 @@ export class EncounterGeneratorService {
   private getFudgeAmount(difficulty: EncounterDifficulties) {
     switch (difficulty) {
       case EncounterDifficulties.Easy:
-        return 1.0;
+        return 0.75;
       case EncounterDifficulties.Medium:
+        return 0.85
       case EncounterDifficulties.Hard:
-        return 1.1
+        return 0.93
       case EncounterDifficulties.Deadly:
-        return 1.2
+        return 0.96
       case EncounterDifficulties.NineHells:
-        return 1.3
+        return 1.02
+      default:
+        throw new Error('Difficulty not set');
     }
   }
 
