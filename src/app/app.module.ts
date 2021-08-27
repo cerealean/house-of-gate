@@ -30,6 +30,7 @@ import { MonsterTablesComponent } from './monster-tables/monster-tables.componen
 import { EncounterGeneratorComponent } from './encounter-generator/encounter-generator.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { PreviousEncountersComponent } from './previous-encounters/previous-encounters.component';
+import { NumberOnlyDirective } from './directives/number-only.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PreviousEncountersComponent } from './previous-encounters/previous-enco
     FilterBarComponent,
     MonsterTablesComponent,
     EncounterGeneratorComponent,
-    PreviousEncountersComponent
+    PreviousEncountersComponent,
+    NumberOnlyDirective
   ],
   imports: [
     BrowserModule,

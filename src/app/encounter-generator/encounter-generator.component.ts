@@ -1,7 +1,6 @@
-import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
-import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
 import { EncounterDifficulties } from '../enums/encounter-difficulties';
 import { EncounterMonsterInfo } from '../models/encounter';
 import { EncounterRequest } from '../models/encounter-request';
@@ -31,19 +30,6 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   monsters: Monster[] = [];
 
   private subscriptions = new Subscription();
-
-  public get expStats() {
-    const difficulty = playerLevelsToDifficulty.get(this.encounterRequest.level)!;
-    const numberOfPlayers = this.encounterRequest.numberOfPlayers;
-    return {
-      easy: difficulty.easy * numberOfPlayers,
-      medium: difficulty.medium * numberOfPlayers,
-      hard: difficulty.hard * numberOfPlayers,
-      deadly: difficulty.deadly * numberOfPlayers,
-      ninehells: difficulty.ninehells * numberOfPlayers,
-      budget: difficulty.budget * numberOfPlayers
-    };
-  }
 
   constructor(
     private encounterGenerator: EncounterGeneratorService,

@@ -6,3 +6,26 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: #303030;
 }
+
+@media (min-width: 480px) {
+  .mat-form-field + .mat-form-field,
+  .mat-form-field + .mat-mini-fab,
+  .mat-mini-fab + .mat-mini-fab {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 479px) {
+  .mat-form-field {
+    width: 100%;
+  }
+
+  .mat-form-field + .mat-mini-fab,
+  .mat-mini-fab + .mat-mini-fab {
+    margin-left: 8px;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

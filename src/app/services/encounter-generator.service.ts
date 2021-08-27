@@ -27,13 +27,13 @@ export class EncounterGeneratorService {
     private monsterData: MonsterDataService,
     private monsterFilter: MonsterFilterService,
     private storage: StorageService
-    ) {
-      const previouslyGeneratedEncounters = storage.getPreviouslyGeneratedEncounters();
-      if(previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
-        this._previousEncounters = previouslyGeneratedEncounters;
-        this._previousEncounters$.next(this._previousEncounters);
-      }
-     }
+  ) {
+    const previouslyGeneratedEncounters = storage.getPreviouslyGeneratedEncounters();
+    if (previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
+      this._previousEncounters = previouslyGeneratedEncounters;
+      this._previousEncounters$.next(this._previousEncounters);
+    }
+  }
 
   public generateEncounter(encounterRequest: EncounterRequest, filters: MonsterFilters): Encounter {
     const expTarget = this.getTotalExpTarget(encounterRequest);
@@ -41,12 +41,12 @@ export class EncounterGeneratorService {
     const multiplier = this.getMultiplier(encounterRequest.numberOfPlayers, encounterRequest.maxNumberOfEnemies);
     let availableExp = expTarget / multiplier;
     let monster: Monster,
-    encounters: EncounterMonsterInfo[] = [],
-    currentGroup: number,
-    targetExp: number;
+      encounters: EncounterMonsterInfo[] = [],
+      currentGroup: number,
+      targetExp: number;
     const crInfoValues = Object.values(crInfo);
 
-    while ( encounterTemplate.groups[0] ) {
+    while (encounterTemplate.groups[0]) {
       // Exp should be shared as equally as possible between groups
       targetExp = availableExp / encounterTemplate.groups.length;
       currentGroup = encounterTemplate.groups.shift()!;
@@ -66,7 +66,7 @@ export class EncounterGeneratorService {
       availableExp -= currentGroup * exp!;
     }
 
-    const newEncounter = new Encounter(encounters, {...encounterRequest});
+    const newEncounter = new Encounter(encounters, { ...encounterRequest });
     this.updateEncounters(newEncounter);
     return newEncounter;
   }
@@ -80,7 +80,7 @@ export class EncounterGeneratorService {
 
   private getTotalExpTarget(encounterRequest: EncounterRequest): number {
     const difficultyExpInfo = playerLevelsToDifficulty.get(encounterRequest.level);
-    if(difficultyExpInfo) {
+    if (difficultyExpInfo) {
       const totalExp = difficultyExpInfo[encounterRequest.difficulty] * encounterRequest.numberOfPlayers;
 
       return totalExp * this.getFudgeAmount(encounterRequest.difficulty);
@@ -90,7 +90,7 @@ export class EncounterGeneratorService {
   }
 
   private getFudgeAmount(difficulty: EncounterDifficulties) {
-    switch(difficulty) {
+    switch (difficulty) {
       case EncounterDifficulties.Easy:
         return 1.0;
       case EncounterDifficulties.Medium:
@@ -105,25 +105,25 @@ export class EncounterGeneratorService {
 
   private getEncounterTemplate(maxMonsters: number): { total: number; groups: number[]; } {
     let templates = [
-      [ 1 ],
-      [ 1, 1 ],
-      [ 1, 2 ],
-      [ 1, 5 ],
-      [ 1, 1, 1 ],
-      [ 1, 1, 2 ],
-      [ 1, 2, 3 ],
-      [ 2, 2 ],
-      [ 3, 3 ],
-      [ 2, 4 ],
-      [ 2, 2, 2, 2 ],
-      [ 2, 2, 4 ],
-      [ 8 ],
+      [1],
+      [1, 1],
+      [1, 2],
+      [1, 5],
+      [1, 1, 1],
+      [1, 1, 2],
+      [1, 2, 3],
+      [2, 2],
+      [3, 3],
+      [2, 4],
+      [2, 2, 2, 2],
+      [2, 2, 4],
+      [8],
     ];
     if (maxMonsters) {
       templates = templates.filter((t) => {
-          const sum = t.reduce((a, b) => a + b);
-          return sum <= maxMonsters;
-        });
+        const sum = t.reduce((a, b) => a + b);
+        return sum <= maxMonsters;
+      });
     }
     const groups: number[] = templates[Math.floor(Math.random() * templates.length)].slice();
     const total = groups.reduce((g1, g2) => g1 + g2);
@@ -147,26 +147,26 @@ export class EncounterGeneratorService {
         5,
       ];
 
-    if ( monsterCount === 0 ) {
+    if (monsterCount === 0) {
       return 0;
-    } else if ( monsterCount === 1 ) {
+    } else if (monsterCount === 1) {
       multiplierCategory = 1;
-    } else if ( monsterCount === 2 ) {
+    } else if (monsterCount === 2) {
       multiplierCategory = 2;
-    } else if ( monsterCount < 7 ) {
+    } else if (monsterCount < 7) {
       multiplierCategory = 3;
-    } else if ( monsterCount < 11 ) {
+    } else if (monsterCount < 11) {
       multiplierCategory = 4;
-    } else if ( monsterCount < 15 ) {
+    } else if (monsterCount < 15) {
       multiplierCategory = 5;
     } else {
       multiplierCategory = 6;
     }
 
-    if ( playerCount < 3 ) {
+    if (playerCount < 3) {
       // Increase multiplier for parties of one and two
       multiplierCategory++;
-    } else if ( playerCount > 5 ) {
+    } else if (playerCount > 5 && multiplierCategory > 1) {
       // Decrease multiplier for parties of six through eight
       multiplierCategory--;
     }
@@ -175,57 +175,63 @@ export class EncounterGeneratorService {
   }
 
   private getBestMonster(targetExp: number, filters: MonsterFilters) {
-    let bestBelow = 0,
-      bestAbove: number,
-      crIndex: number,
-      currentIndex: number,
-      step = -1,
-      monsterList;
+    try {
+      let bestBelow = 0,
+        bestAbove = metaInfo.crList.length - 1,
+        crIndex: number,
+        currentIndex: number,
+        step = -1,
+        monsterList;
 
-    for (let i = 1; i < metaInfo.crList.length; i++ ) {
-      if ( metaInfo.crList[i].exp < targetExp ) {
-        bestBelow = i;
-      } else {
-        bestAbove = i;
-        break;
-      }
-    }
-
-    if ( (targetExp - metaInfo.crList[bestBelow].exp) < (metaInfo.crList[bestAbove!].exp - targetExp) ) {
-      crIndex = bestBelow;
-    } else {
-      crIndex = bestAbove!;
-    }
-
-    currentIndex = crIndex;
-
-    monsterList = this.getShuffledMonsterList(metaInfo.crList[crIndex].numeric);
-
-    while ( true ) {
-      if (this.monsterFilter.doesMonsterMatchFilter(monsterList[0], filters)) {
-        return monsterList[0];
-      } else {
-        monsterList.shift();
+      for (let i = 1; i < metaInfo.crList.length; i++) {
+        if (metaInfo.crList[i].exp < targetExp) {
+          bestBelow = i;
+        } else {
+          bestAbove = i;
+          break;
+        }
       }
 
-      // If we run through all the monsters from this level, check a different level
-      if ( monsterList.length === 0 ) {
-        // there were no monsters found lower than target exp, so we have to start checking higher
-        if ( currentIndex === 0 ) {
-          // Reset currentIndex
-          currentIndex = crIndex;
-          // Start looking up instead of down
-          step = 1;
+      if ((targetExp - metaInfo.crList[bestBelow].exp) < (metaInfo.crList[bestAbove].exp - targetExp)) {
+        crIndex = bestBelow;
+      } else {
+        crIndex = bestAbove!;
+      }
+
+      currentIndex = crIndex;
+
+      monsterList = this.getShuffledMonsterList(metaInfo.crList[crIndex].numeric);
+
+      while (true) {
+        if (this.monsterFilter.doesMonsterMatchFilter(monsterList[0], filters)) {
+          return monsterList[0];
+        } else {
+          monsterList.shift();
         }
 
-        currentIndex += step;
-        monsterList = this.getShuffledMonsterList(metaInfo.crList[currentIndex].numeric);
+        // If we run through all the monsters from this level, check a different level
+        if (monsterList.length === 0) {
+          // there were no monsters found lower than target exp, so we have to start checking higher
+          if (currentIndex === 0) {
+            // Reset currentIndex
+            currentIndex = crIndex;
+            // Start looking up instead of down
+            step = 1;
+          }
+
+          currentIndex += step;
+          monsterList = this.getShuffledMonsterList(metaInfo.crList[currentIndex].numeric);
+        }
       }
+    } catch (e) {
+      console.error(e, targetExp, filters);
+
+      throw e;
     }
   }
 
   private getShuffledMonsterList(cr: number) {
-    const list = this.getMonstersByCr(cr).slice(0);
+    const list = this.getMonstersByCr(cr).slice();
 
     return this.shuffle(list);
   }
