@@ -67,7 +67,6 @@ import { PreviousEncountersComponent } from './previous-encounters/previous-enco
     MatBottomSheetModule,
     MatListModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
