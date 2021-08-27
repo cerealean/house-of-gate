@@ -37,12 +37,12 @@
     </mat-select>
   </mat-form-field>
 
-  <button color="primary" aria-label="Generate random encounter" style="margin-left: 10px;" mat-mini-fab
+  <button color="primary" matTooltip="Generate Random Encounter!" title="Generate Random Encounter!" aria-label="Generate random encounter" style="margin-left: 10px;" mat-mini-fab
     (click)="generateRandomEncounter()">
     <mat-icon>gavel</mat-icon>
   </button>
 
-  <button color="accent" mat-mini-fab title="Load Previous Encounters" aria-label="Look at previous encounters"
+  <button color="accent" mat-mini-fab matTooltip="Load Previous Encounters!" title="Load Previous Encounters" aria-label="Look at previous encounters"
     (click)="openPreviousEncounters()">
     <mat-icon>history</mat-icon>
   </button>
