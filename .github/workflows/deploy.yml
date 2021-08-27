@@ -30,7 +30,7 @@ jobs:
           PASSWORD: ${{ secrets.deploy_password }}
           PORT: ${{ secrets.deploy_port }}
         with:
-          source: "GITHUB_WORKSPACE/dist/tome-of-universal-harmony/"
+          source: "$GITHUB_WORKSPACE/dist/tome-of-universal-harmony/"
           target: ${{ secrets.deploy_target }}
           #strip_components: 2 # this is important
           rm: true #clean target folder before copying
