@@ -1,4 +1,3 @@
-import { stringify } from '@angular/compiler/src/util';
 import { Injectable } from '@angular/core';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
@@ -28,10 +27,10 @@ export class MonsterFilterService {
     if(filterOptions.environment?.length) {
       filteredMonsters = filteredMonsters.filter(m => m.hasEnvironmentIntersection(filterOptions.environment!));
     }
-    if(filterOptions.legendary !== undefined && filterOptions.legendary !== null && typeof filterOptions.legendary === 'boolean') {
+    if(filterOptions.legendary === true || filterOptions.legendary === false) {
       filteredMonsters = filteredMonsters.filter(m => m.legendary === filterOptions.legendary);
     }
-    if(filterOptions.unique !== undefined && filterOptions.unique !== null && typeof filterOptions.unique === 'boolean') {
+    if(filterOptions.unique === true || filterOptions.unique === false) {
       filteredMonsters = filteredMonsters.filter(m => m.unique === filterOptions.unique);
     }
 
@@ -42,13 +41,5 @@ export class MonsterFilterService {
     const result = this.filterMonsters([monster], filterOptions);
 
     return result && result.length === 1;
-  }
-
-  private convertStringToArray(value: string | string[]) {
-    if(Array.isArray(value)) {
-      return value;
-    }
-
-    return value.split(',').map(v => v.trim());
   }
 }

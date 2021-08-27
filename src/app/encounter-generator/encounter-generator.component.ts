@@ -62,8 +62,8 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     this.subscriptions.add(afterDismissed$);
   }
 
-  generateRandomEncounter() {
-    const encounter = this.encounterGenerator.generateEncounter(this.encounterRequest, this.filters);
+  async generateRandomEncounter(): Promise<void> {
+    const encounter = await this.encounterGenerator.generateEncounter(this.encounterRequest, this.filters);
     const monsters = this.convertEncountersToMonsters(encounter.encounters);
     this.monsters = monsters;
   }
