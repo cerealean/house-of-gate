@@ -32,7 +32,7 @@ jobs:
         with:
           source: "${{ GITHUB_WORKSPACE }}/dist/tome-of-universal-harmony/"
           target: ${{ secrets.deploy_target }}
-          strip_components: 2 # this is important
+          #strip_components: 2 # this is important
           rm: true #clean target folder before copying
           timeout: 60s
           command_timeout: 1m
