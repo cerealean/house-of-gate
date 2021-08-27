@@ -16,7 +16,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
+import { MatSliderModule } from '@angular/material/slider';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -67,7 +69,9 @@ import { NumberOnlyDirective } from './directives/number-only.directive';
     MatTooltipModule,
     MatDividerModule,
     MatBottomSheetModule,
-    MatListModule
+    MatListModule,
+    MatSliderModule,
+    FlexLayoutModule
   ],
   bootstrap: [AppComponent]
 })

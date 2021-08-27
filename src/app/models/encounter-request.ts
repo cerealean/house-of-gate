@@ -4,5 +4,5 @@ export interface EncounterRequest {
   numberOfPlayers: number,
   maxNumberOfEnemies: number,
   level: number,
-  difficulty: EncounterDifficulties
+  difficultyAmount: number
 }

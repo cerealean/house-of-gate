@@ -123,100 +123,27 @@ export class EncounterGeneratorService {
   private getTotalExpTarget(encounterRequest: EncounterRequest): number {
     const difficultyExpInfo = playerLevelsToDifficulty.get(encounterRequest.level);
     if (difficultyExpInfo) {
-      const totalExp = difficultyExpInfo[encounterRequest.difficulty] * encounterRequest.numberOfPlayers;
+      const category = this.getDifficultyCategory(encounterRequest.difficultyAmount);
+      const totalExp = difficultyExpInfo[category] * encounterRequest.numberOfPlayers;
 
-      return totalExp * this.getFudgeAmount(encounterRequest.difficulty);
+      return totalExp * encounterRequest.difficultyAmount;
     }
 
     throw new Error('Could not get total exp target');
   }
 
-  private getFudgeAmount(difficulty: EncounterDifficulties) {
-    switch (difficulty) {
-      case EncounterDifficulties.Easy:
-        return 0.75;
-      case EncounterDifficulties.Medium:
-        return 0.85
-      case EncounterDifficulties.Hard:
-        return 0.93
-      case EncounterDifficulties.Deadly:
-        return 0.96
-      case EncounterDifficulties.NineHells:
-        return 1.02
-      default:
-        throw new Error('Difficulty not set');
-    }
-  }
-
-  private getEncounterTemplate(maxMonsters: number): { total: number; groups: number[]; } {
-    let templates = [
-      [1],
-      [1, 1],
-      [1, 2],
-      [1, 5],
-      [1, 1, 1],
-      [1, 1, 2],
-      [1, 2, 3],
-      [2, 2],
-      [3, 3],
-      [2, 4],
-      [2, 2, 2, 2],
-      [2, 2, 4],
-      [8],
-    ];
-    if (maxMonsters) {
-      templates = templates.filter((t) => {
-        const sum = t.reduce((a, b) => a + b);
-        return sum <= maxMonsters;
-      });
-    }
-    const groups: number[] = templates[Math.floor(Math.random() * templates.length)].slice();
-    const total = groups.reduce((g1, g2) => g1 + g2);
-
-    return {
-      total,
-      groups
-    };
-  }
-
-  private getDifficultyDivisor(playerCount: number, monsterCount: number): number {
-    var multiplierCategory,
-      multipliers = [
-        0.5,
-        1,
-        1.5,
-        2,
-        2.25,
-        2.75,
-        3.33,
-        4,
-      ];
-
-    if (monsterCount === 0) {
-      return 0;
-    } else if (monsterCount === 1) {
-      multiplierCategory = 1;
-    } else if (monsterCount === 3) {
-      multiplierCategory = 2;
-    } else if (monsterCount < 10) {
-      multiplierCategory = 3;
-    } else if (monsterCount < 14) {
-      multiplierCategory = 4;
-    } else if (monsterCount < 18) {
-      multiplierCategory = 5;
+  private getDifficultyCategory(amount: number): EncounterDifficulties {
+    if(amount >= 0.5 && amount < 0.75) {
+      return EncounterDifficulties.Easy;
+    } else if (amount >= 0.75 && amount < 0.88) {
+      return EncounterDifficulties.Medium;
+    } else if (amount >= 0.88 && amount < 1) {
+      return EncounterDifficulties.Hard;
+    } else if (amount >= 1 && amount < 1.15) {
+      return EncounterDifficulties.Deadly;
     } else {
-      multiplierCategory = 6;
+      throw new Error(`Difficulty ${amount} is out of range`);
     }
-
-    if (playerCount < 3) {
-      // Increase multiplier for parties of one and two
-      multiplierCategory++;
-    } else if (playerCount > 5 && multiplierCategory > 1) {
-      // Decrease multiplier for parties of six through eight
-      multiplierCategory--;
-    }
-
-    return multipliers[multiplierCategory];
   }
 
   private getBestMonster(targetExp: number, filters: MonsterFilters) {

@@ -1,58 +1,74 @@
 <mat-card>
-  <mat-form-field appearance="standard">
-    <mat-label>Number of Players</mat-label>
-    <input matInput required [min]="1" [step]="1" [max]="99" appNumberOnly type="number" #numOfPlayers (input)="updateFilters()"
-      [(ngModel)]="encounterRequest.numberOfPlayers">
-  </mat-form-field>
+  <div fxLayout="column">
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutGap.lt-md="3px">
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Number of Players</mat-label>
+        <input matInput required [min]="1" [step]="1" [max]="99" appNumberOnly type="number" #numOfPlayers
+          (input)="updateFilters()" [(ngModel)]="encounterRequest.numberOfPlayers">
+      </mat-form-field>
 
-  <mat-form-field appearance="standard">
-    <mat-label>Player Level</mat-label>
-    <input matInput required [min]="1" [step]="1" [max]="20" type="number" #playerLevel appNumberOnly (input)="updateFilters()"
-      [(ngModel)]="encounterRequest.level">
-  </mat-form-field>
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Player Level</mat-label>
+        <input matInput required [min]="1" [step]="1" [max]="20" type="number" #playerLevel appNumberOnly
+          (input)="updateFilters()" [(ngModel)]="encounterRequest.level">
+      </mat-form-field>
 
-  <mat-form-field appearance="standard">
-    <mat-label>Maximum # of Enemies</mat-label>
-    <input matInput required [min]="1" [step]="1" [max]="50" type="number" #numOfEnemies appNumberOnly (input)="updateFilters()"
-      [(ngModel)]="encounterRequest.maxNumberOfEnemies">
-  </mat-form-field>
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Maximum # of Enemies</mat-label>
+        <input matInput required [min]="1" [step]="1" [max]="50" type="number" #numOfEnemies appNumberOnly
+          (input)="updateFilters()" [(ngModel)]="encounterRequest.maxNumberOfEnemies">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+      <div fxFlex="20%" style="align-self: center; text-align: center;">
+        <span>
+          Difficulty:&nbsp;
+          <span *ngIf="encounterRequest.difficultyAmount >= 0.5 && encounterRequest.difficultyAmount < 0.6">
+            Child's Play
+          </span>
+          <span *ngIf="encounterRequest.difficultyAmount >= 0.6 && encounterRequest.difficultyAmount < 0.75">
+            Easy
+          </span>
+          <span *ngIf="encounterRequest.difficultyAmount >= 0.75 && encounterRequest.difficultyAmount < 0.85">
+            Challenging
+          </span>
+          <span *ngIf="encounterRequest.difficultyAmount >= 0.85 && encounterRequest.difficultyAmount < 0.93">
+            Hard
+          </span>
+          <span *ngIf="encounterRequest.difficultyAmount >= 0.93 && encounterRequest.difficultyAmount < 0.98">
+            Deadly
+          </span>
+          <span *ngIf="encounterRequest.difficultyAmount >= 0.98 && encounterRequest.difficultyAmount < 1.05">
+            Nine Hells
+          </span>
+          <span *ngIf="encounterRequest.difficultyAmount >= 1.05 && encounterRequest.difficultyAmount < 1.15">
+            TPK
+          </span>
+          ({{ encounterRequest.difficultyAmount }})
+        </span>
+      </div>
+      <div fxFlex="65%">
+        <mat-slider style="width: 100%;" thumbLabel [(ngModel)]="encounterRequest.difficultyAmount"
+          (valueChange)="updateFilters()" tickInterval="0.01" step="0.01" min="0.5" max="1.1"
+          aria-label="Difficulty Slider"></mat-slider>
+      </div>
+      <div fxFlex="15%" style="text-align: center;">
+        <button color="primary" matTooltip="Generate Random Encounter!" title="Generate Random Encounter!"
+          [disabled]="!numOfEnemies.checkValidity() || !numOfPlayers.checkValidity() || !playerLevel.checkValidity()"
+          aria-label="Generate random encounter" style="margin-left: 10px;" mat-raised-button
+          (click)="generateRandomEncounter()">
+          Generate
+        </button>
 
-  <mat-form-field appearance="standard">
-    <mat-label>Difficulty</mat-label>
-    <mat-select [(ngModel)]="encounterRequest.difficulty" [required]="true" class="capitalize"
-      #difficulty
-      (selectionChange)="updateFilters()">
-      <mat-option [value]="EncounterDifficulties.Easy" class="capitalize">
-        {{ EncounterDifficulties.Easy }}
-      </mat-option>
-      <mat-option [value]="EncounterDifficulties.Medium" class="capitalize">
-        {{ EncounterDifficulties.Medium }}
-      </mat-option>
-      <mat-option [value]="EncounterDifficulties.Hard" class="capitalize">
-        {{ EncounterDifficulties.Hard }}
-      </mat-option>
-      <mat-option [value]="EncounterDifficulties.Deadly" class="capitalize">
-        {{ EncounterDifficulties.Deadly }}
-      </mat-option>
-      <mat-option [value]="EncounterDifficulties.NineHells" class="capitalize">
-        {{ EncounterDifficulties.NineHells }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+        <button color="accent" style="margin-left: 8px" mat-mini-fab matTooltip="Load Previous Encounters!"
+          title="Load Previous Encounters" aria-label="Look at previous encounters" (click)="openPreviousEncounters()">
+          <mat-icon>history</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
 
-  <button color="primary" matTooltip="Generate Random Encounter!" title="Generate Random Encounter!"
-    [disabled]="difficulty.errorState || !numOfEnemies.checkValidity() || !numOfPlayers.checkValidity() || !playerLevel.checkValidity()"
-    aria-label="Generate random encounter" style="margin-left: 10px;" mat-mini-fab (click)="generateRandomEncounter()">
-    <mat-icon>gavel</mat-icon>
-  </button>
-
-  <button color="accent" mat-mini-fab matTooltip="Load Previous Encounters!" title="Load Previous Encounters"
-    aria-label="Look at previous encounters" (click)="openPreviousEncounters()">
-    <mat-icon>history</mat-icon>
-  </button>
-
-  <br />
-  <br />
+  <br /> <br />
 
   <mat-divider></mat-divider>
 

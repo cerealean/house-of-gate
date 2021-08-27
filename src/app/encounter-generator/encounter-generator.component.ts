@@ -25,7 +25,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     level: 5,
     maxNumberOfEnemies: 6,
     numberOfPlayers: 4,
-    difficulty: EncounterDifficulties.Medium
+    difficultyAmount: 0.75
   };
   monsters: Monster[] = [];
 
@@ -39,7 +39,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
 
   ngOnInit(): void {
     const currentEncounterRequest = this.storage.getEncounterFilters();
-    if(currentEncounterRequest) {
+    if (currentEncounterRequest) {
       this.encounterRequest = currentEncounterRequest;
     }
   }
@@ -51,7 +51,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   openPreviousEncounters(): void {
     const ref = this.matBottomSheet.open(PreviousEncountersComponent);
     const selected$ = ref.instance.previousEncounterSelected.subscribe(encounter => {
-      this.encounterRequest = {...encounter.request};
+      this.encounterRequest = { ...encounter.request };
       this.monsters = this.convertEncountersToMonsters(encounter.encounters.slice());
       ref.dismiss();
     });
@@ -72,10 +72,36 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     this.storage.setEncounterFilters(this.encounterRequest);
   }
 
+  formatSlider(value: number): string {
+    if (value >= 0.5 && value < 0.6) {
+      return 'Child\'s Play';
+    } else if (value >= 0.6 && value < 0.75) {
+      return 'Easy';
+    } else if (value >= 0.75 && value < 0.85) {
+      return 'Challenging';
+    } else if (value >= 0.85 && value < 0.93) {
+      return 'Hard';
+    } else if (value >= 0.93 && value < 0.98) {
+      return 'Deadly';
+    } else if (value >= 0.98 && value < 1.05) {
+      return 'Nine Hells';
+    } else if (value >= 1.05 && value < 1.15) {
+      return 'TPK';
+    } else if (value >= 1.15 && value < 1.3) {
+      return 'Sadist';
+    } else if (value >= 1.3 && value < 1.45) {
+      return 'Seriously?';
+    } else if (value >= 1.45 && value <= 1.5) {
+      return 'Criminal';
+    } else {
+      throw new Error(`Value ${value} outside of allowed bounds`);
+    }
+  }
+
   private convertEncountersToMonsters(encounters: EncounterMonsterInfo[]) {
     return encounters.map(e => {
       const monsters: Monster[] = [];
-      for(let index = 0; index < e.quantity; index++) {
+      for (let index = 0; index < e.quantity; index++) {
         monsters.push(e.monster);
       }
 
