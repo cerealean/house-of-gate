@@ -1,5 +1,5 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { AfterViewInit, Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -20,6 +20,8 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
 
   public dataSource = new MatTableDataSource<Monster>();
 
+  @Output() isLoading = new EventEmitter<boolean>();
+
   private columnUpdates$!: Subscription;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -30,6 +32,7 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
   ) { }
 
   ngOnInit(): void {
+    this.isLoading.emit(true);
     this.dataSource.data = this.monsters;
     this.columnUpdates$ = this.columnManager.columnUpdates$.subscribe(update => {
       this.columns = update.allColumns;
@@ -60,5 +63,10 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
   drop(event: CdkDragDrop<string[]> | Event) {
     const ev = (event as CdkDragDrop<string[]>);
     moveItemInArray(this.displayedColumns, ev.previousIndex, ev.currentIndex);
+  }
+
+  finishLoading(): void {
+    console.log('finishLoading');
+    this.isLoading.emit(false);
   }
 }

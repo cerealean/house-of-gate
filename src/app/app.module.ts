@@ -17,6 +17,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -33,6 +35,7 @@ import { EncounterGeneratorComponent } from './components/encounter-generator/en
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { PreviousEncountersComponent } from './components/previous-encounters/previous-encounters.component';
 import { NumberOnlyDirective } from './directives/number-only.directive';
+import { InitializationNoticeComponent } from './components/initialization-notice/initialization-notice.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import { NumberOnlyDirective } from './directives/number-only.directive';
     MonsterTablesComponent,
     EncounterGeneratorComponent,
     PreviousEncountersComponent,
-    NumberOnlyDirective
+    NumberOnlyDirective,
+    InitializationNoticeComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +75,9 @@ import { NumberOnlyDirective } from './directives/number-only.directive';
     MatBottomSheetModule,
     MatListModule,
     MatSliderModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDialogModule,
+    MatProgressSpinnerModule
   ],
   bootstrap: [AppComponent]
 })

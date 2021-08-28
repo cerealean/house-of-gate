@@ -43,6 +43,14 @@ export class StorageService {
     this.stringifyAndStore(StorageKeys.EncounterFilters, encounterRequest);
   }
 
+  public getTermsAcknowledgementDate(): string | null {
+    return this.getFromLocalStorageAndParse<string | null>(StorageKeys.HasAcknowledgedTermsDate);
+  }
+
+  public setTermsAcknowledgementDate(date: Date): void {
+    this.stringifyAndStore(StorageKeys.HasAcknowledgedTermsDate, date.toUTCString());
+  }
+
   private getFromLocalStorageAndParse<T>(key: string): T | null {
     try {
       const storedJsonString = localStorage.getItem(key);
@@ -70,5 +78,6 @@ enum StorageKeys {
   ColumnInfo = 'HoG-ColumnInfo',
   FilterInfo = 'HoG-FilterInfo',
   PreviouslyGeneratedEncounters = 'HoG-PreviouslyGeneratedEncounters',
-  EncounterFilters = 'HoG-EncounterFilters'
+  EncounterFilters = 'HoG-EncounterFilters',
+  HasAcknowledgedTermsDate = 'HoG-TermsAcknowledgement'
 }
