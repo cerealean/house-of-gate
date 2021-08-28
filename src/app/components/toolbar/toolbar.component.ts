@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ColumnInfo } from '../models/column-info';
-import { ColumnManagerService } from '../services/column-manager.service';
+import { ColumnInfo } from '../../models/column-info';
+import { ColumnManagerService } from '../../services/column-manager.service';
 
 @Component({
   selector: 'app-toolbar',

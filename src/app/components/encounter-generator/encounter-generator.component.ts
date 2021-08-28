@@ -1,14 +1,14 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
-import { EncounterDifficulties } from '../enums/encounter-difficulties';
-import { EncounterMonsterInfo } from '../models/encounter';
-import { EncounterRequest } from '../models/encounter-request';
-import { Monster } from '../models/monster';
-import { MonsterFilters } from '../models/monster-filters';
+import { EncounterDifficulties } from '../../enums/encounter-difficulties';
+import { EncounterMonsterInfo } from '../../models/encounter';
+import { EncounterRequest } from '../../models/encounter-request';
+import { Monster } from '../../models/monster';
+import { MonsterFilters } from '../../models/monster-filters';
 import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
-import { EncounterGeneratorService } from '../services/encounter-generator.service';
-import { StorageService } from '../services/storage.service';
+import { EncounterGeneratorService } from '../../services/encounter-generator.service';
+import { StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-encounter-generator',

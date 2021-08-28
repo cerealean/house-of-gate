@@ -24,14 +24,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSortModule } from '@angular/material/sort';
-import { FilterBarComponent } from './filter-bar/filter-bar.component';
-import { MonsterTablesComponent } from './monster-tables/monster-tables.component';
-import { EncounterGeneratorComponent } from './encounter-generator/encounter-generator.component';
+import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
+import { MonsterTablesComponent } from './components/monster-tables/monster-tables.component';
+import { EncounterGeneratorComponent } from './components/encounter-generator/encounter-generator.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { PreviousEncountersComponent } from './previous-encounters/previous-encounters.component';
+import { PreviousEncountersComponent } from './components/previous-encounters/previous-encounters.component';
 import { NumberOnlyDirective } from './directives/number-only.directive';
 
 @NgModule({

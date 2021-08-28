@@ -1,8 +1,8 @@
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
-import { metaInfo } from '../data/meta-info';
-import { MonsterFilters } from '../models/monster-filters';
-import { StorageService } from '../services/storage.service';
+import { metaInfo } from '../../data/meta-info';
+import { MonsterFilters } from '../../models/monster-filters';
+import { StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-filter-bar',

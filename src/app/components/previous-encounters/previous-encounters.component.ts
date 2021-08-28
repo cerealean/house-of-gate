@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Encounter } from '../models/encounter';
-import { EncounterGeneratorService } from '../services/encounter-generator.service';
+import { Encounter } from '../../models/encounter';
+import { EncounterGeneratorService } from '../../services/encounter-generator.service';
 
 @Component({
   selector: 'app-previous-encounters',

@@ -4,9 +4,9 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Subscription } from 'rxjs';
-import { ColumnInfo } from '../models/column-info';
-import { Monster } from '../models/monster';
-import { ColumnManagerService } from '../services/column-manager.service';
+import { ColumnInfo } from '../../models/column-info';
+import { Monster } from '../../models/monster';
+import { ColumnManagerService } from '../../services/column-manager.service';
 
 @Component({
   selector: 'app-monster-tables',
