@@ -28,6 +28,6 @@
   <mat-checkbox #acknowledge>I have read and acknowledge all of the above</mat-checkbox>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-raised-button (click)="acknowledgeTerms()" [disabled]="!acknowledge.checked" [mat-dialog-close]="true"
-    cdkFocusInitial>Acknowledge and Agree</button>
+  <button mat-raised-button (click)="acknowledgeTerms()" [disabled]="!acknowledge.checked"
+    [mat-dialog-close]="true">Acknowledge and Agree</button>
 </mat-dialog-actions>
