@@ -42,7 +42,7 @@ export class EncounterGeneratorService {
     const expTarget = this.getTotalExpTarget(encounterRequest);
     const possibleTemplates = this.getTemplatesToUse(encounterRequest);
     const possibleEncounters$ = possibleTemplates.map(template => {
-      return new Promise<Encounter>((resolve, _reject) => {
+      return new Promise<Encounter>(async (resolve, _reject) => {
         let monster: Monster,
           encounters: EncounterMonsterInfo[] = [],
           currentGroup: number,
@@ -57,7 +57,7 @@ export class EncounterGeneratorService {
           // We need to find a monster who, in the correct number, is close to the target exp
           targetExp /= currentGroup;
 
-          monster = this.getBestMonster(targetExp, filters);
+          monster = await this.getBestMonster(targetExp, filters);
 
           encounters.push({
             monster: monster,
@@ -146,7 +146,7 @@ export class EncounterGeneratorService {
     }
   }
 
-  private getBestMonster(targetExp: number, filters: MonsterFilters) {
+  private async getBestMonster(targetExp: number, filters: MonsterFilters) {
     const crList = this.metaData.getCrList();
     let bestBelow = 0,
       bestAbove = crList.length - 1,
@@ -169,7 +169,7 @@ export class EncounterGeneratorService {
     }
 
     let currentIndex = crIndex;
-    let monsterList = this.getShuffledMonsterList(crList[crIndex].numeric);
+    let monsterList = await this.getShuffledMonsterList(crList[crIndex].numeric);
 
     while (true) {
       if (this.monsterFilter.doesMonsterMatchFilter(monsterList[0], filters)) {
@@ -189,13 +189,14 @@ export class EncounterGeneratorService {
         }
 
         currentIndex += step;
-        monsterList = this.getShuffledMonsterList(crList[currentIndex].numeric);
+        monsterList = await this.getShuffledMonsterList(crList[currentIndex].numeric);
       }
     }
   }
 
-  private getShuffledMonsterList(cr: number) {
-    const list = this.getMonstersByCr(cr).slice();
+  private async getShuffledMonsterList(cr: number) {
+    const monsters = await this.getMonstersByCr(cr);
+    const list = monsters.slice();
 
     return this.shuffle(list);
   }
@@ -214,8 +215,9 @@ export class EncounterGeneratorService {
     return newArray;
   }
 
-  private getMonstersByCr(cr: number): Monster[] {
-    return this.monsterData.getAllMonsters().filter(m => m.cr === cr);
+  private async getMonstersByCr(cr: number): Promise<Monster[]> {
+    const monsters$ = await this.monsterData.getAllMonsters();
+    return monsters$.filter(m => m.cr === cr);
   }
 
   private areArraysEqual(a: any[], b: any[]): boolean {

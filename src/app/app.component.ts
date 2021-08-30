@@ -1,4 +1,4 @@
-import { OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, OnDestroy, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { Monster } from './models/monster';
 import { MonsterDataService } from './monster-data.service';
@@ -28,23 +28,24 @@ export class AppComponent implements OnInit, OnDestroy {
     private monsterFilter: MonsterFilterService,
     private termsService: TermsAcknowledgementService,
     private matDialog: MatDialog
-     ) {}
+  ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.hasAcknowledgedTerms = this.termsService.hasAcknowledgedTerms();
-    if(!this.hasAcknowledgedTerms) {
+    if (!this.hasAcknowledgedTerms) {
       const ref = this.matDialog.open(InitializationNoticeComponent);
       const sub$ = ref.afterClosed().subscribe(hasAcknowledged => {
         this.hasAcknowledgedTerms = hasAcknowledged;
-        if(hasAcknowledged) {
+        if (hasAcknowledged) {
           sub$?.unsubscribe();
         }
       });
       this.subscriptions.add(sub$);
     }
-    this.allMonsters = this.monsterData.getAllMonsters()
+    const allMonsters$ = await this.monsterData.getAllMonsters();
+    this.allMonsters = allMonsters$
       .sort((first, second) => {
-        if(first.name > second.name) {
+        if (first.name > second.name) {
           return 1
         } else if (second.name > first.name) {
           return -1;
@@ -65,6 +66,8 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   tableLoading(isLoading: boolean): void {
-    this.isLoading = isLoading;
+    setTimeout(() => {
+      this.isLoading = isLoading;
+    });
   }
 }

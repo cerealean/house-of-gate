@@ -18,7 +18,7 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = [];
 
-  public dataSource = new MatTableDataSource<Monster>();
+  public dataSource!: MatTableDataSource<Monster>;
 
   @Output() isLoading = new EventEmitter<boolean>();
 
@@ -33,23 +33,26 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
 
   ngOnInit(): void {
     this.isLoading.emit(true);
-    this.dataSource.data = this.monsters;
+    this.dataSource = new MatTableDataSource<Monster>([]);
     this.columnUpdates$ = this.columnManager.columnUpdates$.subscribe(update => {
       this.columns = update.allColumns;
       this.displayedColumns = update.shownColumns
-      .filter(c => c.isShown)
-      .map(c => c.name);
+        .filter(c => c.isShown)
+        .map(c => c.name);
     });
   }
 
   ngOnChanges(simpleChanges: SimpleChanges): void {
-    this.dataSource.data = simpleChanges.monsters.currentValue;
+    if (simpleChanges.monsters && this.dataSource) {
+      this.dataSource.data = simpleChanges.monsters.currentValue;
+    }
   }
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
     this.paginator.pageSize = 10;
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.data = this.monsters;
   }
 
   ngOnDestroy(): void {
@@ -66,7 +69,7 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
   }
 
   finishLoading(): void {
-    console.log('finishLoading');
-    this.isLoading.emit(false);
+    const hasData = !!(this.dataSource && this.dataSource.data && this.dataSource.data.length > 0);
+    this.isLoading.emit(hasData);
   }
 }

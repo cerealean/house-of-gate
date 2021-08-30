@@ -8,28 +8,55 @@ import { Monster, MonsterInfo } from './models/monster';
   providedIn: 'root'
 })
 export class MonsterDataService {
+  private officialMonsterData: Promise<Monster[]> | undefined;
+  private communityMonsterData: Promise<Monster[]> | undefined;
+  private thirdPartyMonsterData: Promise<Monster[]> | undefined;
 
   constructor() { }
 
-  public getOfficialMonsters(): Monster[] {
-    return this.convertMonsterInfoToMonsterClass(officialData);
+  public async getOfficialMonsters(): Promise<Monster[]> {
+    if(!this.officialMonsterData) {
+      this.officialMonsterData = this.convertMonsterInfoToMonsterClass(officialData);
+    }
+
+    return this.officialMonsterData;
   }
 
-  public getCommunityMonsters(): Monster[] {
-    return this.convertMonsterInfoToMonsterClass(communityData);
+  public async getCommunityMonsters(): Promise<Monster[]> {
+    if(!this.communityMonsterData) {
+      this.communityMonsterData = this.convertMonsterInfoToMonsterClass(communityData);
+    }
+
+    return this.communityMonsterData;
   }
 
-  public getThirdPartyMonsters(): Monster[] {
-    return this.convertMonsterInfoToMonsterClass(thirdPartyData);
+  public async getThirdPartyMonsters(): Promise<Monster[]> {
+    if(!this.thirdPartyMonsterData) {
+      this.thirdPartyMonsterData = this.convertMonsterInfoToMonsterClass(thirdPartyData);
+    }
+
+    return this.thirdPartyMonsterData;
   }
 
-  public getAllMonsters(): Monster[] {
-    return this.getOfficialMonsters()
-            .concat(this.getCommunityMonsters())
-            .concat(this.getThirdPartyMonsters());
+  public async getAllMonsters(): Promise<Monster[]> {
+    const official$ = this.getOfficialMonsters();
+    const community$ = this.getCommunityMonsters();
+    const thirdParty$ = this.getThirdPartyMonsters();
+    const [official, community, thirdParty] = await Promise.all([
+      official$,
+      community$,
+      thirdParty$
+    ]);
+    return official
+      .concat(community)
+      .concat(thirdParty);
   }
 
-  private convertMonsterInfoToMonsterClass(info: MonsterInfo[]): Monster[] {
-    return info.map(i => new Monster(i));
+  private convertMonsterInfoToMonsterClass(info: MonsterInfo[]): Promise<Monster[]> {
+    return new Promise(resolve => {
+      const monsters = info.map(i => new Monster(i));
+
+      resolve(monsters);
+    });
   }
 }
