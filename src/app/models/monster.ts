@@ -39,7 +39,7 @@ export class Monster {
   public init: number;
   public lair?: string;
   public legendary?: boolean;
-  public unique?: string;
+  public unique?: boolean;
   public sources: string[];
 
   constructor(info: MonsterInfo) {
@@ -57,8 +57,8 @@ export class Monster {
     this.hp = info.hp;
     this.init = info.init;
     this.lair = info.lair;
-    this.legendary = info.legendary;
-    this.unique = info.unique;
+    this.legendary = info.legendary || false;
+    this.unique = !!info.unique;
     this.sources = this.parseStringToArray(info.sources);
   }
 

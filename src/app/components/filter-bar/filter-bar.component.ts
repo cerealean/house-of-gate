@@ -18,7 +18,9 @@ export class FilterBarComponent implements OnInit, OnDestroy {
     minCr: 0,
     maxCr: 30,
     type: this.monsterTypes,
-    environment: this.environments.concat('')
+    environment: this.environments.concat(''),
+    legendary: false,
+    unique: false
   };
 
   @Output() filterChanges = new EventEmitter<MonsterFilters>();

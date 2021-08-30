@@ -103,9 +103,14 @@ export class ColumnManagerService {
         position: 9
       },
       {
+        name: 'unique',
+        isShown: false,
+        position: 10
+      },
+      {
         name: 'sources',
         isShown: true,
-        position: 10
+        position: 11
       },
     ];
   }
