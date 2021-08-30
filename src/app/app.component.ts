@@ -21,6 +21,8 @@ export class AppComponent implements OnInit, OnDestroy {
   public hasAcknowledgedTerms = false;
   public isLoading = true;
 
+  public readonly currentYear = new Date().getFullYear();
+
   private subscriptions = new Subscription();
 
   constructor(

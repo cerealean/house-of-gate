@@ -70,6 +70,6 @@ export class MonsterTablesComponent implements OnInit, OnDestroy, AfterViewInit,
 
   finishLoading(): void {
     const hasData = !!(this.dataSource && this.dataSource.data && this.dataSource.data.length > 0);
-    this.isLoading.emit(hasData);
+    this.isLoading.emit(!hasData);
   }
 }
