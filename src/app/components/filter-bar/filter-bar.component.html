@@ -1,6 +1,6 @@
 <mat-card>
   <div fxLayout="column">
-    <div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
       <mat-form-field appearance="standard" fxFlex="40%">
         <mat-label>Filter By Name</mat-label>
         <input matInput (input)="filter()" [(ngModel)]="filters.name">
@@ -19,7 +19,7 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
       <mat-form-field appearance="standard" fxFlex="19%">
         <mat-label>Min CR</mat-label>
         <mat-select (selectionChange)="filter()" [(ngModel)]="filters.minCr">
@@ -40,12 +40,14 @@
           <mat-option *ngFor="let val of fill(1, 30)" [value]="val">{{val}}</mat-option>
         </mat-select>
       </mat-form-field>
-      <mat-checkbox [(ngModel)]="filters.legendary" (change)="filter()" fxFlex>
-        Legendary?
-      </mat-checkbox>
-      <mat-checkbox [(ngModel)]="filters.unique" (change)="filter()" fxFlex>
-        Unique?
-      </mat-checkbox>
+      <div fxLayout="row wrap" fxFlex>
+        <mat-checkbox [(ngModel)]="filters.legendary" (change)="filter()" fxFlex>
+          Legendary?
+        </mat-checkbox>
+        <mat-checkbox [(ngModel)]="filters.unique" (change)="filter()" fxFlex>
+          Unique?
+        </mat-checkbox>
+      </div>
     </div>
   </div>
 </mat-card>
