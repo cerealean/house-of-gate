@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
 import { metaInfo } from '../../data/meta-info';
 import { MonsterFilters } from '../../models/monster-filters';
@@ -9,7 +9,7 @@ import { StorageService } from '../../services/storage.service';
   templateUrl: './filter-bar.component.html',
   styleUrls: ['./filter-bar.component.scss']
 })
-export class FilterBarComponent implements OnInit, OnDestroy {
+export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly monsterTypes = metaInfo.types;
   public readonly environments = metaInfo.environments;
 
@@ -34,11 +34,16 @@ export class FilterBarComponent implements OnInit, OnDestroy {
     if(savedFilters) {
       this.filters = savedFilters;
     }
-    this.filterChanges.emit(this.filters);
   }
 
   ngOnDestroy(): void {
     this.filterChanges?.complete();
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.filterChanges.emit(this.filters);
+    });
   }
 
   filter(event?: MatSelectChange) {

@@ -64,7 +64,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   filter(filters: MonsterFilters) {
     this.filters = filters;
-    this.displayedMonsters = this.monsterFilter.filterMonsters(this.allMonsters, this.filters);
+    const filteredMonsters = this.monsterFilter.filterMonsters(this.allMonsters, this.filters);
+    this.displayedMonsters = filteredMonsters;
   }
 
   tableLoading(isLoading: boolean): void {
