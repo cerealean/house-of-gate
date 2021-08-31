@@ -3,19 +3,19 @@
     <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutGap.lt-md="3px">
       <mat-form-field appearance="standard" fxFlex>
         <mat-label>Number of Players</mat-label>
-        <input matInput required [min]="1" [step]="1" [max]="99" appNumberOnly type="number" #numOfPlayers
+        <input matInput required inputmode="numeric" [min]="1" [step]="1" [max]="99" appNumberOnly type="number" #numOfPlayers
           (input)="updateFilters()" [(ngModel)]="encounterRequest.numberOfPlayers">
       </mat-form-field>
 
       <mat-form-field appearance="standard" fxFlex>
         <mat-label>Player Level</mat-label>
-        <input matInput required [min]="1" [step]="1" [max]="20" type="number" #playerLevel appNumberOnly
+        <input matInput required inputmode="numeric" [min]="1" [step]="1" [max]="20" type="number" #playerLevel appNumberOnly
           (input)="updateFilters()" [(ngModel)]="encounterRequest.level">
       </mat-form-field>
 
       <mat-form-field appearance="standard" fxFlex>
         <mat-label>Maximum # of Enemies</mat-label>
-        <input matInput required [min]="1" [step]="1" [max]="50" type="number" #numOfEnemies appNumberOnly
+        <input matInput required inputmode="numeric" [min]="1" [step]="1" [max]="50" type="number" #numOfEnemies appNumberOnly
           (input)="updateFilters()" [(ngModel)]="encounterRequest.maxNumberOfEnemies">
       </mat-form-field>
     </div>
