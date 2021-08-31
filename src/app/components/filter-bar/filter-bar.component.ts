@@ -19,8 +19,8 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
     maxCr: 30,
     type: this.monsterTypes,
     environment: this.environments.concat(''),
-    legendary: false,
-    unique: false
+    legendary: undefined,
+    unique: undefined
   };
 
   @Output() filterChanges = new EventEmitter<MonsterFilters>();
@@ -55,5 +55,19 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
 
   fill(start: number, end: number): number[] {
     return Array(end - start + 1).fill(0).map((_, index) => start + index);
+  }
+
+  changeCheckboxState($event: MouseEvent, filterKey: string) {
+    $event.preventDefault();
+    $event.stopPropagation();
+    const currentValue = (this.filters as any)[filterKey];
+    if(currentValue === true) {
+      (this.filters as any)[filterKey] = false;
+    } else if(currentValue === false) {
+      (this.filters as any)[filterKey] = undefined;
+    } else {
+      (this.filters as any)[filterKey] = true;
+    }
+    this.filter();
   }
 }
