@@ -3,7 +3,7 @@
     <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
       <mat-form-field appearance="standard" fxFlex="40%">
         <mat-label>Filter By Name</mat-label>
-        <input matInput (input)="filter()" [(ngModel)]="filters.name">
+        <input matInput type="text" (input)="filter()" autocomplete="off" autocapitalize="off" [(ngModel)]="filters.name">
       </mat-form-field>
       <mat-form-field appearance="standard" fxFlex="25%">
         <mat-label>Type</mat-label>
