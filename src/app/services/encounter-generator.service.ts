@@ -75,21 +75,27 @@ export class EncounterGeneratorService {
 
     const possibleEncounters = await Promise.all(possibleEncounters$);
 
-    const newEncounter = possibleEncounters.reduce((a, b) => {
-      let aDiff = Math.abs(a.getTotalApproximateExp() - expTarget);
-      let bDiff = Math.abs(b.getTotalApproximateExp() - expTarget);
-
-      if (aDiff == bDiff) {
-        // Choose largest vs smallest (> vs <)
-        return a > b ? a : b;
-      } else {
-        return bDiff < aDiff ? b : a;
-      }
-    });
+    const newEncounter = this.findEncounterClosestToTargetExp(possibleEncounters, expTarget);
 
     this.addPreviouslyChosenTemplate(newEncounter);
     this.updateEncounters(newEncounter);
     return newEncounter;
+  }
+
+  private findEncounterClosestToTargetExp(possibleEncounters: Encounter[], expTarget: number) {
+    return possibleEncounters.reduce((currentClosestEncounter, nextEncounterToTest) => {
+      const currentExp = currentClosestEncounter.getTotalApproximateExp();
+      const beingTestedExp = nextEncounterToTest.getTotalApproximateExp();
+      let aDiff = Math.abs(currentExp - expTarget);
+      let bDiff = Math.abs(beingTestedExp - expTarget);
+
+      if (aDiff == bDiff) {
+        // Choose largest vs smallest (> vs <)
+        return currentExp > beingTestedExp ? currentClosestEncounter : nextEncounterToTest;
+      } else {
+        return bDiff < aDiff ? nextEncounterToTest : currentClosestEncounter;
+      }
+    });
   }
 
   private addPreviouslyChosenTemplate(newEncounter: Encounter) {
