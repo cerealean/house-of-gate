@@ -1,7 +1,14 @@
 <h1 mat-dialog-title>Before You Continue</h1>
 <mat-dialog-content class="mat-typography">
   <p>
-    Just some of the disclaimers and stuff, if you don't mind taking a read!
+    Just some of the disclaimers, info, and other stuff, if you don't mind taking a read!<br />
+    <small><em>This information last updated {{termsLastUpdated | date:'longDate'}}</em></small>
+  </p>
+  <h2>Beta</h2>
+  <p>
+    <strong>House of Gate</strong> is currently in beta. We are putting it out into the world for you to use, however
+    please note that there may be occasional issues/errors/bugs here and there. If you find one of these problems,
+    please email <a href="mailto:admin@houseofgate.com" target="_blank">admin@houseofgate.com</a>.
   </p>
   <h2>Unofficial Fan Content</h2>
   <p>
@@ -25,6 +32,9 @@
     If you have any issues or questions, please email <a href="mailto:admin@houseofgate.com"
       target="_blank">admin@houseofgate.com</a>.
   </p>
+  <!-- <p>
+
+  </p> -->
   <mat-checkbox #acknowledge>I have read and acknowledge all of the above</mat-checkbox>
 </mat-dialog-content>
 <mat-dialog-actions align="end">

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  termsLastUpdatedDate: '2021-08-28'
+  termsLastUpdatedDate: 'Mon, 1 Sept 2021 09:40:00 CDT'
 };
