@@ -44,8 +44,8 @@ export class AppComponent implements OnInit, OnDestroy {
       });
       this.subscriptions.add(sub$);
     }
-    const allMonsters$ = await this.monsterData.getAllMonsters();
-    this.allMonsters = allMonsters$
+    const allMonsters = await this.monsterData.getAllMonsters();
+    this.allMonsters = allMonsters
       .sort((first, second) => {
         if (first.name > second.name) {
           return 1

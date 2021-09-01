@@ -45,7 +45,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   }
 
   ngOnDestroy(): void {
-    this.subscriptions?.unsubscribe();
+    this.subscriptions.unsubscribe();
   }
 
   openPreviousEncounters(): void {
