@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
+import { sources } from 'src/app/data/sources';
 import { metaInfo } from '../../data/meta-info';
 import { MonsterFilters } from '../../models/monster-filters';
 import { StorageService } from '../../services/storage.service';
@@ -12,6 +13,7 @@ import { StorageService } from '../../services/storage.service';
 export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly monsterTypes = metaInfo.types;
   public readonly environments = metaInfo.environments;
+  public readonly sources = sources;
 
   public filters: MonsterFilters = {
     name: '',
@@ -20,7 +22,8 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
     type: this.monsterTypes,
     environment: this.environments.concat('None'),
     legendary: undefined,
-    unique: undefined
+    unique: undefined,
+    sources: this.sources
   };
 
   @Output() filterChanges = new EventEmitter<MonsterFilters>();
@@ -33,6 +36,10 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
     const savedFilters = this.storage.getFilterData();
     if(savedFilters) {
       this.filters = savedFilters;
+    }
+
+    if(this.filters.sources === undefined) {
+      this.filters.sources = this.sources;
     }
   }
 

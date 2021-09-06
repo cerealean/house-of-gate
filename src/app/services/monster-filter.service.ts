@@ -33,6 +33,9 @@ export class MonsterFilterService {
     if(filterOptions.unique === true || filterOptions.unique === false) {
       filteredMonsters = filteredMonsters.filter(m => m.unique === filterOptions.unique);
     }
+    if(filterOptions.sources?.length) {
+      filteredMonsters = filteredMonsters.filter(m => m.hasSourceIntersection(filterOptions.sources!));
+    }
 
     return filteredMonsters;
   }

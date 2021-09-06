@@ -70,6 +70,10 @@ export class Monster {
     return types.some(givenType => this.type.includes(givenType));
   }
 
+  public hasSourceIntersection(sources: string[]) {
+    return sources.some(givenSource => this.sources.some(s => s.includes(givenSource)));
+  }
+
   private parseStringToArray(value: string): string[] {
     if(!value?.trim()) {
       return ['None'];

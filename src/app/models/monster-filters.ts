@@ -6,4 +6,5 @@ export interface MonsterFilters {
   environment?: string[];
   legendary?: boolean;
   unique?: boolean;
+  sources?: string[];
 }

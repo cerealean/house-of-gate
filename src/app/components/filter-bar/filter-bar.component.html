@@ -5,19 +5,27 @@
         <mat-label>Filter By Name</mat-label>
         <input matInput type="text" (input)="filter()" spellcheck="false" autocomplete="off" autocapitalize="off" [(ngModel)]="filters.name">
       </mat-form-field>
-      <mat-form-field appearance="standard" fxFlex="25%">
-        <mat-label>Type</mat-label>
-        <mat-select (selectionChange)="filter()" class="capitalize" [(ngModel)]="filters.type" multiple>
-          <mat-option *ngFor="let type of monsterTypes" [value]="type" class="capitalize">{{type}}</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="standard" fxFlex="25%">
-        <mat-label>Environment</mat-label>
-        <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.environment" multiple>
-          <mat-option *ngFor="let environment of environments" [value]="environment" class="capitalize">{{environment}}</mat-option>
-          <mat-option value="None">No Environment</mat-option>
-        </mat-select>
-      </mat-form-field>
+      <div fxLayout="row wrap" fxLayout.lt-md="column">
+        <mat-form-field appearance="standard" fxFlex>
+          <mat-label>Type</mat-label>
+          <mat-select (selectionChange)="filter()" class="capitalize" [(ngModel)]="filters.type" multiple>
+            <mat-option *ngFor="let type of monsterTypes" [value]="type" class="capitalize">{{type}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="standard" fxFlex>
+          <mat-label>Environment</mat-label>
+          <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.environment" multiple>
+            <mat-option *ngFor="let environment of environments" [value]="environment" class="capitalize">{{environment}}</mat-option>
+            <mat-option value="None">No Environment</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="standard" fxFlex>
+          <mat-label>Sources</mat-label>
+          <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.sources" multiple>
+            <mat-option *ngFor="let source of sources" [value]="source" class="capitalize">{{source}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
     </div>
     <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
       <mat-form-field appearance="standard" fxFlex="19%">
