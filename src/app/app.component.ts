@@ -1,4 +1,4 @@
-import { AfterViewInit, OnDestroy, OnInit } from '@angular/core';
+import { OnDestroy, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { Monster } from './models/monster';
 import { MonsterDataService } from './monster-data.service';
@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
   private allMonsters: Monster[] = [];
@@ -26,17 +26,17 @@ export class AppComponent implements OnInit, OnDestroy {
   private subscriptions = new Subscription();
 
   constructor(
-    private monsterData: MonsterDataService,
+    private monsterDataService: MonsterDataService,
     private monsterFilter: MonsterFilterService,
     private termsService: TermsAcknowledgementService,
     private matDialog: MatDialog
-  ) { }
+  ) {}
 
   async ngOnInit() {
     this.hasAcknowledgedTerms = this.termsService.hasAcknowledgedTerms();
     if (!this.hasAcknowledgedTerms) {
       const ref = this.matDialog.open(InitializationNoticeComponent);
-      const sub$ = ref.afterClosed().subscribe(hasAcknowledged => {
+      const sub$ = ref.afterClosed().subscribe((hasAcknowledged) => {
         this.hasAcknowledgedTerms = hasAcknowledged;
         if (hasAcknowledged) {
           sub$?.unsubscribe();
@@ -44,18 +44,37 @@ export class AppComponent implements OnInit, OnDestroy {
       });
       this.subscriptions.add(sub$);
     }
-    const allMonsters = await this.monsterData.getAllMonsters();
-    this.allMonsters = allMonsters
-      .sort((first, second) => {
+    if (typeof Worker !== 'undefined') {
+      const worker = new Worker(
+        new URL('./monster-loader.worker', import.meta.url)
+      );
+      worker.onmessage = ({ data }) => {
+        const allMonsters = data as Monster[];
+        this.allMonsters = allMonsters.sort((first, second) => {
+          if (first.name > second.name) {
+            return 1;
+          } else if (second.name > first.name) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+        this.displayedMonsters = this.allMonsters.slice();
+      };
+      worker.postMessage('');
+    } else {
+      const allMonsters = await this.monsterDataService.getAllMonsters();
+      this.allMonsters = allMonsters.sort((first, second) => {
         if (first.name > second.name) {
-          return 1
+          return 1;
         } else if (second.name > first.name) {
           return -1;
         } else {
           return 0;
         }
       });
-    this.displayedMonsters = this.allMonsters.slice();
+      this.displayedMonsters = this.allMonsters.slice();
+    }
   }
 
   ngOnDestroy(): void {
@@ -64,7 +83,10 @@ export class AppComponent implements OnInit, OnDestroy {
 
   filter(filters: MonsterFilters) {
     this.filters = filters;
-    const filteredMonsters = this.monsterFilter.filterMonsters(this.allMonsters, this.filters);
+    const filteredMonsters = this.monsterFilter.filterMonsters(
+      this.allMonsters,
+      this.filters
+    );
     this.displayedMonsters = filteredMonsters;
   }
 
