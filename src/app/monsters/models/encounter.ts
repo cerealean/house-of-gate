@@ -1,4 +1,4 @@
-import { metaInfo } from "../data/meta-info";
+import { metaInfo } from "../../data/meta-info";
 import { EncounterRequest } from "./encounter-request";
 import { Monster } from "./monster";
 

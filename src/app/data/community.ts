@@ -1,4 +1,4 @@
-import { MonsterInfo } from "../models/monster";
+import { MonsterInfo } from "../monsters/models/monster";
 
 export const communityData: MonsterInfo[] = [
   {

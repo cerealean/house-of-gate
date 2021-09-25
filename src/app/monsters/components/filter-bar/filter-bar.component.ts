@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
 import { sources } from 'src/app/data/sources';
-import { metaInfo } from '../../data/meta-info';
+import { metaInfo } from '../../../data/meta-info';
 import { MonsterFilters } from '../../models/monster-filters';
 import { StorageService } from '../../services/storage.service';
 

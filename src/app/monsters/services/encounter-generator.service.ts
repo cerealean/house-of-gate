@@ -1,19 +1,20 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { encounterTemplates } from '../data/encounter-templates';
-import { playerLevelsToDifficulty } from '../data/player-levels-to-encounter-difficulty';
+import { encounterTemplates } from '../../data/encounter-templates';
+import { playerLevelsToDifficulty } from '../../data/player-levels-to-encounter-difficulty';
 import { EncounterDifficulties } from '../enums/encounter-difficulties';
 import { Encounter, EncounterMonsterInfo } from '../models/encounter';
 import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
-import { MonsterDataService } from '../monster-data.service';
 import { MetaDataService } from './meta-data.service';
 import { MonsterFilterService } from './monster-filter.service';
 import { StorageService } from './storage.service';
+import { MonstersModule } from '../monsters.module';
+import { MonsterDataService } from './monster-data.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: MonstersModule
 })
 export class EncounterGeneratorService {
 
