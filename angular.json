@@ -39,8 +39,7 @@
                 "output": "data/",
                 "glob": "*.json"
               },
-              "src/manifest.webmanifest",
-              "ngsw-config.json"
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
