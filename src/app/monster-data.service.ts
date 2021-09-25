@@ -1,7 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { communityData } from './data/community';
-import { officialData } from './data/official';
-import { thirdPartyData } from './data/third-party';
 import { Monster, MonsterInfo } from './models/monster';
 
 @Injectable({
@@ -12,11 +10,11 @@ export class MonsterDataService {
   private communityMonsterData: Promise<Monster[]> | undefined;
   private thirdPartyMonsterData: Promise<Monster[]> | undefined;
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
   public async getOfficialMonsters(): Promise<Monster[]> {
     if(!this.officialMonsterData) {
-      this.officialMonsterData = this.convertMonsterInfoToMonsterClass(officialData);
+      this.officialMonsterData = this.getMonstersFromFile('/data/official.json');
     }
 
     return this.officialMonsterData;
@@ -24,7 +22,7 @@ export class MonsterDataService {
 
   public async getCommunityMonsters(): Promise<Monster[]> {
     if(!this.communityMonsterData) {
-      this.communityMonsterData = this.convertMonsterInfoToMonsterClass(communityData);
+      this.communityMonsterData = this.getMonstersFromFile('/data/community.json');
     }
 
     return this.communityMonsterData;
@@ -32,7 +30,7 @@ export class MonsterDataService {
 
   public async getThirdPartyMonsters(): Promise<Monster[]> {
     if(!this.thirdPartyMonsterData) {
-      this.thirdPartyMonsterData = this.convertMonsterInfoToMonsterClass(thirdPartyData);
+      this.thirdPartyMonsterData = this.getMonstersFromFile('/data/third-party.json');
     }
 
     return this.thirdPartyMonsterData;
@@ -52,11 +50,8 @@ export class MonsterDataService {
       .concat(thirdParty);
   }
 
-  private convertMonsterInfoToMonsterClass(info: MonsterInfo[]): Promise<Monster[]> {
-    return new Promise(resolve => {
-      const monsters = info.map(i => new Monster(i));
-
-      resolve(monsters);
-    });
+  private async getMonstersFromFile(url: string) {
+    const response = await this.httpClient.get<MonsterInfo[]>(url).toPromise();
+    return response.map(i => new Monster(i));
   }
 }

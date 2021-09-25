@@ -36,6 +36,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { PreviousEncountersComponent } from './components/previous-encounters/previous-encounters.component';
 import { NumberOnlyDirective } from './directives/number-only.directive';
 import { InitializationNoticeComponent } from './components/initialization-notice/initialization-notice.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { InitializationNoticeComponent } from './components/initialization-notic
     MatSliderModule,
     FlexLayoutModule,
     MatDialogModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
