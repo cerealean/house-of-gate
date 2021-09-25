@@ -37,6 +37,8 @@ import { PreviousEncountersComponent } from './components/previous-encounters/pr
 import { NumberOnlyDirective } from './directives/number-only.directive';
 import { InitializationNoticeComponent } from './components/initialization-notice/initialization-notice.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -79,7 +81,13 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     MatDialogModule,
     MatProgressSpinnerModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   bootstrap: [AppComponent]
 })
