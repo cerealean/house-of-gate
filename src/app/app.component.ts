@@ -36,15 +36,17 @@ export class AppComponent implements OnInit, OnDestroy {
     this.hasAcknowledgedTerms = this.termsService.hasAcknowledgedTerms();
     if (!this.hasAcknowledgedTerms) {
       const ref = this.matDialog.open(InitializationNoticeComponent);
-      const sub$ = ref.afterClosed().subscribe((hasAcknowledged) => {
+      const sub$ = ref.afterClosed().subscribe(async (hasAcknowledged) => {
         this.hasAcknowledgedTerms = hasAcknowledged;
+        await this.loadMonsterData();
         if (hasAcknowledged) {
           sub$?.unsubscribe();
         }
       });
       this.subscriptions.add(sub$);
+    } else {
+      await this.loadMonsterData();
     }
-    await this.loadMonsterData();
   }
 
   ngOnDestroy(): void {
