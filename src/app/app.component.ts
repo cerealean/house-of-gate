@@ -44,25 +44,27 @@ export class AppComponent implements OnInit, OnDestroy {
       });
       this.subscriptions.add(sub$);
     }
-    if (typeof Worker !== 'undefined') {
-      const worker = new Worker(
-        new URL('./monster-loader.worker', import.meta.url)
-      );
-      worker.onmessage = ({ data }) => {
-        const allMonsters = data as Monster[];
-        this.allMonsters = allMonsters.sort((first, second) => {
-          if (first.name > second.name) {
-            return 1;
-          } else if (second.name > first.name) {
-            return -1;
-          } else {
-            return 0;
-          }
-        });
-        this.displayedMonsters = this.allMonsters.slice();
-      };
-      worker.postMessage('');
-    } else {
+    // if (typeof Worker !== 'undefined') {
+    //   console.log('is using worker');
+    //   const worker = new Worker(
+    //     new URL('./monster-loader.worker', import.meta.url)
+    //   );
+    //   worker.onmessage = ({ data }) => {
+    //     const allMonsters = data.slice() as Monster[];
+    //     this.allMonsters = allMonsters.sort((first, second) => {
+    //       if (first.name > second.name) {
+    //         return 1;
+    //       } else if (second.name > first.name) {
+    //         return -1;
+    //       } else {
+    //         return 0;
+    //       }
+    //     });
+    //     this.displayedMonsters = this.allMonsters.slice();
+    //     console.log('done loading all monsters', this.allMonsters.slice());
+    //   };
+    //   worker.postMessage('');
+    // } else {
       const allMonsters = await this.monsterDataService.getAllMonsters();
       this.allMonsters = allMonsters.sort((first, second) => {
         if (first.name > second.name) {
@@ -74,7 +76,7 @@ export class AppComponent implements OnInit, OnDestroy {
         }
       });
       this.displayedMonsters = this.allMonsters.slice();
-    }
+    // }
   }
 
   ngOnDestroy(): void {
