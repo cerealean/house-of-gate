@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Monster, MonsterInfo } from '../models/monster';
-import { MonstersModule } from '../monsters.module';
 
 @Injectable({
-  providedIn: MonstersModule
+  providedIn: 'any'
 })
 export class MonsterDataService {
   private officialMonsterData: Promise<Monster[]> | undefined;

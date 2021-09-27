@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { CrInfo, crInfoData } from '../../data/cr-info';
-import { MonstersModule } from '../monsters.module';
 
 @Injectable({
-  providedIn: MonstersModule
+  providedIn: 'any'
 })
 export class MetaDataService {
   private readonly crInfoList = Object.values(crInfoData);

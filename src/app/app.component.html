@@ -1,6 +1,7 @@
-<div fxFlex="column">
+<div fxFlex="column" style="max-width: 100vw;">
   <ng-container *ngIf="hasAcknowledgedTerms">
     <app-toolbar style="width: 100%;"></app-toolbar>
+    <router-outlet></router-outlet>
   </ng-container>
   <footer class="mat-body-2">
     &copy; {{ currentYear }} Michael Crawford

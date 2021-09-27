@@ -5,6 +5,11 @@ const routes: Routes = [
   {
     path: 'monsters',
     loadChildren: () => import('./monsters/monsters.module').then(m => m.MonstersModule)
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'monsters'
   }
 ];
 

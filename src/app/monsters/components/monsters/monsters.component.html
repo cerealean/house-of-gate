@@ -1,17 +1,14 @@
-<ng-container *ngIf="!isLoading">
-    <app-filter-bar (filterChanges)="filter($event)"></app-filter-bar>
-    <mat-tab-group>
-      <mat-tab label="Search for Monsters">
-        <app-monster-tables
-          [monsters]="displayedMonsters"
-          (isLoading)="tableLoading($event)"
-        ></app-monster-tables>
-      </mat-tab>
-      <mat-tab label="Encounter Generator">
-        <app-encounter-generator [filters]="filters"></app-encounter-generator>
-      </mat-tab>
-    </mat-tab-group>
-</ng-container>
+<div [class.hidden]="isLoading">
+  <app-filter-bar (filterChanges)="filter($event)"></app-filter-bar>
+  <mat-tab-group>
+    <mat-tab label="Search for Monsters">
+      <app-monster-tables [monsters]="displayedMonsters" (isLoading)="tableLoading($event)"></app-monster-tables>
+    </mat-tab>
+    <mat-tab label="Encounter Generator">
+      <app-encounter-generator [filters]="filters"></app-encounter-generator>
+    </mat-tab>
+  </mat-tab-group>
+</div>
 <ng-container *ngIf="isLoading">
   <mat-card fxLayout="column" class="app-loading mat-typography">
     <div>

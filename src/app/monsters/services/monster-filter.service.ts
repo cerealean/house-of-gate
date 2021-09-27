@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
-import { MonstersModule } from '../monsters.module';
 
 @Injectable({
-  providedIn: MonstersModule
+  providedIn: 'any'
 })
 export class MonsterFilterService {
 

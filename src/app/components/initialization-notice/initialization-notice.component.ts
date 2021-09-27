@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TermsAcknowledgementService } from 'src/app/monsters/services/terms-acknowledgement.service';
 import { environment } from 'src/environments/environment';
 

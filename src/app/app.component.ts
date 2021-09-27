@@ -13,15 +13,13 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit, OnDestroy {
   public hasAcknowledgedTerms = false;
-
   public readonly currentYear = new Date().getFullYear();
-
   private subscriptions = new Subscription();
 
   constructor(
-    private termsService: TermsAcknowledgementService,
-    private matDialog: MatDialog,
-    private router: Router
+    private readonly termsService: TermsAcknowledgementService,
+    private readonly matDialog: MatDialog,
+    private readonly router: Router
   ) {}
 
   async ngOnInit() {
@@ -30,14 +28,14 @@ export class AppComponent implements OnInit, OnDestroy {
       const ref = this.matDialog.open(InitializationNoticeComponent);
       const sub$ = ref.afterClosed().subscribe(async (hasAcknowledged) => {
         this.hasAcknowledgedTerms = hasAcknowledged;
-        this.router.navigateByUrl('/monsters');
+        await this.router.navigate(['monsters']);
         if (hasAcknowledged) {
           sub$?.unsubscribe();
         }
       });
       this.subscriptions.add(sub$);
     } else {
-      this.router.navigateByUrl('/monsters');
+      await this.router.navigate(['monsters']);
     }
   }
 

@@ -17,7 +17,7 @@ export class MonstersComponent implements OnInit {
 
   constructor(
     private readonly monsterDataService: MonsterDataService,
-    private monsterFilter: MonsterFilterService,
+    private readonly monsterFilter: MonsterFilterService,
   ) { }
 
   async ngOnInit(): Promise<void> {

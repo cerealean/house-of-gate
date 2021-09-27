@@ -11,7 +11,6 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { InitializationNoticeComponent } from './components/initialization-notice/initialization-notice.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { MonstersModule } from './monsters/monsters.module';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,8 +23,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     InitializationNoticeComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
     FlexLayoutModule,
@@ -40,7 +37,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    MonstersModule
+    AppRoutingModule
   ],
   bootstrap: [AppComponent]
 })

@@ -10,11 +10,10 @@ import { MonsterFilters } from '../models/monster-filters';
 import { MetaDataService } from './meta-data.service';
 import { MonsterFilterService } from './monster-filter.service';
 import { StorageService } from './storage.service';
-import { MonstersModule } from '../monsters.module';
 import { MonsterDataService } from './monster-data.service';
 
 @Injectable({
-  providedIn: MonstersModule
+  providedIn: 'any'
 })
 export class EncounterGeneratorService {
 
