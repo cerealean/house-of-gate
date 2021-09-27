@@ -32,12 +32,8 @@
     If you have any issues or questions, please email <a href="mailto:admin@houseofgate.com"
       target="_blank">admin@houseofgate.com</a>.
   </p>
-  <!-- <p>
-
-  </p> -->
-  <mat-checkbox #acknowledge>I have read and acknowledge all of the above</mat-checkbox>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-raised-button (click)="acknowledgeTerms()" [disabled]="!acknowledge.checked"
+  <button mat-raised-button (click)="acknowledgeTerms()"
     [mat-dialog-close]="true">Acknowledge and Agree</button>
 </mat-dialog-actions>
