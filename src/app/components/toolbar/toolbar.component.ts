@@ -14,7 +14,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 
   private updatesSub$!: Subscription;
 
-  constructor(private columnManager: ColumnManagerService) { }
+  constructor(private readonly columnManager: ColumnManagerService) { }
 
   ngOnInit(): void {
     this.updatesSub$ = this.columnManager.columnUpdates$.subscribe(update => {

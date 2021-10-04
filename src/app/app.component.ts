@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit, OnDestroy {
   public hasAcknowledgedTerms = false;
   public readonly currentYear = new Date().getFullYear();
-  private subscriptions = new Subscription();
+  private readonly subscriptions = new Subscription();
 
   constructor(
     private readonly termsService: TermsAcknowledgementService,
