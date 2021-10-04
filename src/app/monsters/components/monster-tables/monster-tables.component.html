@@ -1,8 +1,8 @@
-<table mat-table cdkDropList matSort cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)"
+<table mat-table matSort
   [dataSource]="dataSource" style="width: 100%" (contentChanged)="finishLoading()">
 
   <ng-container *ngFor="let column of columns" [matColumnDef]="column.name">
-    <th style="text-transform: capitalize;" mat-header-cell cdkDrag *matHeaderCellDef mat-sort-header> {{column.name}}
+    <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header> {{column.name}}
     </th>
     <td mat-cell *matCellDef="let element">
       <ng-container *ngIf="isArray(element[column.name]) then arrayColumnDisplay else normalColumnDisplay">

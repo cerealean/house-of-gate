@@ -5,7 +5,6 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
 import { MonsterTablesComponent } from './components/monster-tables/monster-tables.component';
 import { PreviousEncountersComponent } from './components/previous-encounters/previous-encounters.component';
 import { NumberOnlyDirective } from './directives/number-only.directive';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -63,7 +62,6 @@ import { MonstersRoutingModule } from './monsters-routing.module';
     MatSelectModule,
     MatSortModule,
     MatTabsModule,
-    DragDropModule,
     MatProgressSpinnerModule,
     MatIconModule,
     FlexLayoutModule,
