@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { InitializationNoticeComponent } from './components/initialization-notice/initialization-notice.component';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { ServiceWorkerService } from './services/service-worker.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(
     private readonly termsService: TermsAcknowledgementService,
     private readonly matDialog: MatDialog,
-    private readonly router: Router
+    private readonly router: Router,
+    private readonly _serviceWorker: ServiceWorkerService
   ) {}
 
   async ngOnInit() {
