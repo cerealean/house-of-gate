@@ -1,9 +1,10 @@
 <div fxFlex="column" style="max-width: 100vw;">
-  <ng-container *ngIf="hasAcknowledgedTerms">
-    <app-toolbar style="width: 100%;"></app-toolbar>
-    <router-outlet></router-outlet>
-  </ng-container>
+  <app-toolbar style="width: 100%;"></app-toolbar>
+  <router-outlet></router-outlet>
   <footer class="mat-body-2">
     &copy; {{ currentYear }} Michael Crawford
+    <p>
+      <a routerLink="/privacy">Privacy Policy</a> | <a routerLink="/terms">Terms and Conditions</a>
+    </p>
   </footer>
 </div>

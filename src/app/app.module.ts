@@ -7,7 +7,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { InitializationNoticeComponent } from './components/initialization-notice/initialization-notice.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { MatMenuModule } from '@angular/material/menu';
@@ -15,12 +14,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { MatCardModule } from '@angular/material/card';
+import { TermsComponent } from './components/terms/terms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    InitializationNoticeComponent
+    PrivacyPolicyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -31,6 +34,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatToolbarModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatCardModule,
     MatSnackBarModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
