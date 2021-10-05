@@ -37,5 +37,6 @@ export class ServiceWorkerService {
     const everyThreeHoursOnceAppIsStable$ = concat(appIsStable$, everyThreeHours$);
     const checkForUpdates$ = everyThreeHoursOnceAppIsStable$.subscribe(() => updates.checkForUpdate());
     this.subscriptions.add(checkForUpdates$);
+    appIsStable$.subscribe(() => updates.checkForUpdate());
   }
 }
