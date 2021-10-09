@@ -3,6 +3,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { SwUpdate } from '@angular/service-worker';
 import { interval, concat, Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
+import { StorageService } from '../monsters/services/storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,13 @@ export class ServiceWorkerService {
 
   private readonly subscriptions = new Subscription();
 
-  constructor(updates: SwUpdate, appRef: ApplicationRef, _snackBar: MatSnackBar) {
-    this.setupUpdateActions(updates, _snackBar);
+  constructor(
+    private readonly storage: StorageService,
+    updates: SwUpdate,
+    appRef: ApplicationRef,
+    snackBar: MatSnackBar
+  ) {
+    this.setupUpdateActions(updates, snackBar);
     this.setupUpdateChecks(appRef, updates);
     (window as any).sunshine = {
       checkForUpdate: () => updates.checkForUpdate()
@@ -23,12 +29,22 @@ export class ServiceWorkerService {
     const available$ = updates.available.subscribe(() => {
       const snackbar = _snackBar.open('An update is available! Reload the app?', 'Update!');
       const action$ = snackbar.onAction().subscribe(() => {
-        updates.activateUpdate().then(() => document.location.reload());
+        updates.activateUpdate().then(() => {
+          this.storage.clearEncounterFilters();
+          this.storage.clearFilterData();
+          document.location.reload();
+        });
       });
       this.subscriptions.add(action$);
     });
 
+    const activated$ = updates.activated.subscribe(() => {
+      const updatedMessage = `The app has finished updating. Search filters have been reset to ensure data compatibility.`;
+      _snackBar.open(updatedMessage, 'Ok');
+    });
+
     this.subscriptions.add(available$);
+    this.subscriptions.add(activated$);
   }
 
   private setupUpdateChecks(appRef: ApplicationRef, updates: SwUpdate) {

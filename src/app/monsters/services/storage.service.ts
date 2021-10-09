@@ -9,7 +9,9 @@ import { MonsterFilters } from '../models/monster-filters';
 })
 export class StorageService {
 
-  constructor() { }
+  public clearAllData(): void {
+    localStorage.clear();
+  }
 
   public getColumnData(): ColumnInfo[] | null {
     return this.getFromLocalStorageAndParse<ColumnInfo[] | null>(StorageKeys.ColumnInfo);
@@ -27,6 +29,10 @@ export class StorageService {
     this.stringifyAndStore(StorageKeys.FilterInfo, filterData);
   }
 
+  public clearFilterData(): void {
+    this.clearStorage(StorageKeys.FilterInfo);
+  }
+
   public getPreviouslyGeneratedEncounters(): Encounter[] | null {
     return this.getFromLocalStorageAndParse<Encounter[] | null>(StorageKeys.PreviouslyGeneratedEncounters);
   }
@@ -41,6 +47,10 @@ export class StorageService {
 
   public setEncounterFilters(encounterRequest: EncounterRequest): void {
     this.stringifyAndStore(StorageKeys.EncounterFilters, encounterRequest);
+  }
+
+  public clearEncounterFilters(): void {
+    this.clearStorage(StorageKeys.EncounterFilters);
   }
 
   public getTermsAcknowledgementDate(): string | null {
@@ -61,6 +71,10 @@ export class StorageService {
     } catch (error) {
       return null;
     }
+  }
+
+  private clearStorage(key: string) {
+    localStorage.removeItem(key);
   }
 
   private stringifyAndStore(key: string, value: Object): void {
