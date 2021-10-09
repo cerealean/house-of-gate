@@ -4,34 +4,26 @@ type DetailedArmorClass = {
 }[];
 
 export interface MonsterInfo {
-  guid?: string;
-  fid?: string;
   name: string;
   cr: number;
   size: string;
   type: string;
-  tags?: string;
-  section?: string;
   alignment: string;
-  environment: string;
+  environment?: string;
   ac: number | DetailedArmorClass;
   hp: number;
   init: number;
   lair?: string;
   legendary?: boolean;
-  unique?: string;
+  unique?: boolean;
   sources: string;
 }
 
 export class Monster {
-  public guid: string;
-  public fid: string;
   public name: string;
   public cr: number;
   public size: string;
   public type: string;
-  public tags: string[];
-  public section: string;
   public alignment: string;
   public environment: string[];
   public ac: DetailedArmorClass;
@@ -43,14 +35,10 @@ export class Monster {
   public sources: string[];
 
   constructor(info: MonsterInfo) {
-    this.guid = info.guid;
-    this.fid = info.fid;
     this.name = info.name;
     this.cr = info.cr;
     this.size = info.size;
     this.type = info.type;
-    this.tags = this.parseStringToArray(info.tags);
-    this.section = info.section;
     this.alignment = info.alignment;
     this.environment = this.parseStringToArray(info.environment);
     this.ac = this.parseArmorClass(info.ac);
@@ -74,7 +62,7 @@ export class Monster {
     return sources.some(givenSource => this.sources.some(s => s.includes(givenSource)));
   }
 
-  private parseStringToArray(value: string): string[] {
+  private parseStringToArray(value: string | undefined): string[] {
     if(!value?.trim()) {
       return ['None'];
     }
