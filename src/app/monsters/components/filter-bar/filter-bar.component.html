@@ -57,6 +57,7 @@
           (click)="changeCheckboxState($event, 'unique')" fxFlex>
           Unique?
         </mat-checkbox>
+        <button mat-button color="warn" (click)="setInitialFilters(); filter();" fxFlex>Reset Filters</button>
       </div>
     </div>
   </div>

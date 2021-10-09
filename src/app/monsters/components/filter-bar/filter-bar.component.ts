@@ -15,22 +15,15 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly environments = metaInfo.environments;
   public readonly sources = sources;
 
-  public filters: MonsterFilters = {
-    name: '',
-    minCr: 0,
-    maxCr: 30,
-    type: this.monsterTypes,
-    environment: this.environments.concat('None'),
-    legendary: undefined,
-    unique: undefined,
-    sources: this.sources
-  };
+  public filters!: MonsterFilters;
 
   @Output() filterChanges = new EventEmitter<MonsterFilters>();
 
   constructor(
     private storage: StorageService
-  ) { }
+  ) {
+    this.setInitialFilters();
+  }
 
   ngOnInit(): void {
     const savedFilters = this.storage.getFilterData();
@@ -76,5 +69,18 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
       (this.filters as any)[filterKey] = true;
     }
     this.filter();
+  }
+
+  setInitialFilters(): void {
+    this.filters = {
+      name: '',
+      minCr: 0,
+      maxCr: 30,
+      type: this.monsterTypes.slice(),
+      environment: this.environments.concat('None'),
+      legendary: undefined,
+      unique: undefined,
+      sources: this.sources.slice()
+    };
   }
 }
