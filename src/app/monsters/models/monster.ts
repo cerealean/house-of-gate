@@ -4,14 +4,14 @@ type DetailedArmorClass = {
 }[];
 
 export interface MonsterInfo {
-  guid: string;
-  fid: string;
+  guid?: string;
+  fid?: string;
   name: string;
   cr: number;
   size: string;
   type: string;
-  tags: string;
-  section: string;
+  tags?: string;
+  section?: string;
   alignment: string;
   environment: string;
   ac: number | DetailedArmorClass;

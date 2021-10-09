@@ -1,4 +1,5 @@
 import { MonsterInfo } from "../monsters/models/monster";
+import { Alignments } from "./alignments";
 
 export const officialData: MonsterInfo[] = [
     {
@@ -17339,5 +17340,302 @@ export const officialData: MonsterInfo[] = [
        "legendary":false,
        "unique":"",
        "sources":"Volo's Guide to Monsters: 206"
-    }
+    },
+    {
+      "name":"Iggwilv The Witch Queen",
+      "cr":20,
+      "size":"Medium",
+      "type":"Fey",
+      "alignment":Alignments.ChaoticNeutral,
+      "environment":"",
+      "ac": [
+        {"ac":19,"notes":"Robe of the Archmagi"}
+      ],
+      "hp":255,
+      "init":4,
+      "legendary":true,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 205"
+    },
+    {
+      "name":"Bavlorna Blightstraw",
+      "cr":7,
+      "size":"Medium",
+      "type":"Fey",
+      "alignment":Alignments.NeutralEvil,
+      "environment":"",
+      "ac": 15,
+      "hp":110,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 216"
+    },
+    {
+      "name":"Endelyn Moongrave",
+      "cr":6,
+      "size":"Medium",
+      "type":"Fey",
+      "alignment":Alignments.NeutralEvil,
+      "environment":"",
+      "ac": 17,
+      "hp":114,
+      "init":1,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 217"
+    },
+    {
+      "name":"Skabatha Nightshade",
+      "cr":8,
+      "size":"Medium",
+      "type":"Fey",
+      "alignment":Alignments.NeutralEvil,
+      "environment":"",
+      "ac": 16,
+      "hp":150,
+      "init":-1,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 218"
+    },
+    {
+      "name":"Kelek",
+      "cr":5,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.ChaoticEvil,
+      "environment":"",
+      "ac": [
+        {"ac":12,"notes":"Bracers of Defense"}
+      ],
+      "hp":45,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 219"
+    },
+    {
+      "name":"Skylla",
+      "cr":2,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.ChaoticEvil,
+      "environment":"",
+      "ac": [
+        {"ac":10},
+        {"ac":13,"notes":"Mage Armor"}
+      ],
+      "hp":39,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 220"
+    },
+    {
+      "name":"Warduke",
+      "cr":5,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.ChaoticEvil,
+      "environment":"",
+      "ac": [
+        {"ac":17,"notes":"half plate, shield"}
+      ],
+      "hp":78,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 221"
+    },
+    {
+      "name":"Zarak",
+      "cr":2,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.ChaoticEvil,
+      "environment":"",
+      "ac": [
+        {"ac":14,"notes":"leather armor"}
+      ],
+      "hp":37,
+      "init":3,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 222"
+    },
+    {
+      "name":"Zargash",
+      "cr":3,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.ChaoticEvil,
+      "environment":"",
+      "ac": [
+        {"ac":13,"notes":"chain shirt"}
+      ],
+      "hp":45,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 223"
+    },
+    {
+      "name":"Elkhorn",
+      "cr":2,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.LawfulGood,
+      "environment":"",
+      "ac": [
+        {"ac":18,"notes":"chain mail, shield"}
+      ],
+      "hp":52,
+      "init":1,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 224"
+    },
+    {
+      "name":"Mercion",
+      "cr":3,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.LawfulGood,
+      "environment":"",
+      "ac": [
+        {"ac":19,"notes":"plate armor"}
+      ],
+      "hp":31,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 225"
+    },
+    {
+      "name":"Molliver",
+      "cr":3,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.ChaoticGood,
+      "environment":"",
+      "ac": [
+        {"ac":15,"notes":"+1 leather armor"}
+      ],
+      "hp":60,
+      "init":3,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 226"
+    },
+    {
+      "name":"Ringlerun",
+      "cr":5,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.LawfulGood,
+      "environment":"",
+      "ac": [
+        {"ac":12,"notes":"staff of power"}
+      ],
+      "hp":42,
+      "init":0,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 227"
+    },
+    {
+      "name":"Strongheart",
+      "cr":4,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.LawfulGood,
+      "environment":"",
+      "ac": [
+        {"ac":20,"notes":"plate armor, shield"}
+      ],
+      "hp":55,
+      "init":1,
+      "legendary":false,
+      "unique":"unique",
+      "sources":"The Wild Beyond The Witchlight: 228"
+    },
+    {
+      "name":"Boggle",
+      "cr":.125,
+      "size":"Small",
+      "type":"Fey",
+      "alignment":Alignments.ChaoticNeutral,
+      "environment":"",
+      "ac": 14,
+      "hp":18,
+      "init":4,
+      "legendary":false,
+      "sources":"The Wild Beyond The Witchlight: 229"
+    },
+    {
+      "name":"Brigganock",
+      "cr":.125,
+      "size":"Tiny",
+      "type":"Fey",
+      "alignment":Alignments.NeutralGood,
+      "environment":"underground",
+      "ac": 12,
+      "hp":9,
+      "init":2,
+      "legendary":false,
+      "sources":"The Wild Beyond The Witchlight: 230"
+    },
+    {
+      "name":"Bullywug Knight",
+      "cr":3,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":Alignments.LawfulGood,
+      "environment":"",
+      "ac": 18,
+      "hp":66,
+      "init":1,
+      "legendary":false,
+      "sources":"The Wild Beyond The Witchlight: 231"
+    },
+    {
+      "name":"Bullywug Royal",
+      "cr":3,
+      "size":"Medium",
+      "type":"Humanoid",
+      "alignment":'any',
+      "environment":"",
+      "ac": 15,
+      "hp":65,
+      "init":1,
+      "legendary":false,
+      "sources":"The Wild Beyond The Witchlight: 231"
+    },
+    {
+      "name":"Campestri",
+      "cr":0,
+      "size":"Tiny",
+      "type":"Plant",
+      "alignment":"unaligned",
+      "environment":"",
+      "ac": 12,
+      "hp":2,
+      "init":-2,
+      "legendary":false,
+      "sources":"The Wild Beyond The Witchlight: 232"
+    },
+    {
+      "name":"Swarm of Campestris",
+      "cr":1,
+      "size":"Tiny",
+      "type":"Plant",
+      "alignment":"unaligned",
+      "environment":"",
+      "ac": 12,
+      "hp":27,
+      "init":-2,
+      "legendary":false,
+      "sources":"The Wild Beyond The Witchlight: 232"
+    },
  ];
