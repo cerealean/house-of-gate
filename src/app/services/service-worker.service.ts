@@ -3,6 +3,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { SwUpdate } from '@angular/service-worker';
 import { interval, concat, Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 import { StorageService } from '../monsters/services/storage.service';
 
 @Injectable({
@@ -18,11 +19,13 @@ export class ServiceWorkerService {
     appRef: ApplicationRef,
     snackBar: MatSnackBar
   ) {
-    this.setupUpdateActions(updates, snackBar);
-    this.setupUpdateChecks(appRef, updates);
-    (window as any).sunshine = {
-      checkForUpdate: () => updates.checkForUpdate()
-    };
+    if (environment.production) {
+      this.setupUpdateActions(updates, snackBar);
+      this.setupUpdateChecks(appRef, updates);
+      (window as any).sunshine = {
+        checkForUpdate: () => updates.checkForUpdate()
+      };
+    }
   }
 
   private setupUpdateActions(updates: SwUpdate, _snackBar: MatSnackBar) {
@@ -32,6 +35,7 @@ export class ServiceWorkerService {
         updates.activateUpdate().then(() => {
           this.storage.clearEncounterFilters();
           this.storage.clearFilterData();
+          this.storage.clearPreviouslyGeneratedEncounters();
           document.location.reload();
         });
       });

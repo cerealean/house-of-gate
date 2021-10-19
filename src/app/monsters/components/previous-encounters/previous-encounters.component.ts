@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Encounter } from '../../models/encounter';
-import { EncounterGeneratorService } from '../../services/encounter-generator.service';
+import { Encounter, GeneratedEncounter } from '../../models/encounter';
+import { EncounterGenerator2Service } from '../../services/encounter-generator-2.service';
 
 @Component({
   selector: 'app-previous-encounters',
@@ -10,20 +10,21 @@ import { EncounterGeneratorService } from '../../services/encounter-generator.se
 })
 export class PreviousEncountersComponent implements OnInit, OnDestroy {
 
-  private _encounters: Encounter[] = [];
+  private _encounters: GeneratedEncounter[] = [];
   private previousEncounters$!: Subscription;
 
-  @Output() previousEncounterSelected = new EventEmitter<Encounter>();
+  @Output() previousEncounterSelected = new EventEmitter<GeneratedEncounter>();
 
-  public get encounters(): Encounter[] {
+  public get encounters(): GeneratedEncounter[] {
     return this._encounters;
   }
 
   constructor(
-    private encounterGenerator: EncounterGeneratorService
+    private encounterGenerator: EncounterGenerator2Service
   ) { }
 
   ngOnInit(): void {
+    const rawr = 'yes';
     this.previousEncounters$ = this.encounterGenerator.previousEncounters$
       .subscribe(encounters => {
         this._encounters = encounters;
@@ -35,7 +36,7 @@ export class PreviousEncountersComponent implements OnInit, OnDestroy {
     this.previousEncounterSelected?.complete();
   }
 
-  loadPreviousEncounter($event: MouseEvent, encounter: Encounter) {
+  loadPreviousEncounter($event: MouseEvent, encounter: GeneratedEncounter) {
     $event.preventDefault();
     this.previousEncounterSelected.emit(encounter);
   }

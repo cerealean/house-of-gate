@@ -7,8 +7,8 @@ import { EncounterRequest } from '../../models/encounter-request';
 import { Monster } from '../../models/monster';
 import { MonsterFilters } from '../../models/monster-filters';
 import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
-import { EncounterGeneratorService } from '../../services/encounter-generator.service';
 import { StorageService } from '../../services/storage.service';
+import { EncounterGenerator2Service } from '../../services/encounter-generator-2.service';
 
 @Component({
   selector: 'app-encounter-generator',
@@ -32,7 +32,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   private subscriptions = new Subscription();
 
   constructor(
-    private encounterGenerator: EncounterGeneratorService,
+    private readonly encounterGenerator2: EncounterGenerator2Service,
     private matBottomSheet: MatBottomSheet,
     private storage: StorageService
   ) { }
@@ -52,7 +52,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     const ref = this.matBottomSheet.open(PreviousEncountersComponent);
     const selected$ = ref.instance.previousEncounterSelected.subscribe(encounter => {
       this.encounterRequest = { ...encounter.request };
-      this.monsters = this.convertEncountersToMonsters(encounter.encounters.slice());
+      this.monsters = encounter.monsters.slice();
       ref.dismiss();
     });
     const afterDismissed$ = ref.afterDismissed().subscribe(() => {
@@ -63,9 +63,8 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   }
 
   async generateRandomEncounter(): Promise<void> {
-    const encounter = await this.encounterGenerator.generateEncounter(this.encounterRequest, this.filters);
-    const monsters = this.convertEncountersToMonsters(encounter.encounters);
-    this.monsters = monsters;
+    const encounter = await this.encounterGenerator2.generateEncounter(this.encounterRequest, this.filters);
+    this.monsters = encounter.monsters.slice();
   }
 
   updateFilters(): void {
@@ -76,23 +75,27 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     if (value >= 0.5 && value < 0.6) {
       return 'Child\'s Play';
     } else if (value >= 0.6 && value < 0.75) {
-      return 'Easy';
+      return 'Super Easy';
     } else if (value >= 0.75 && value < 0.85) {
-      return 'Challenging';
+      return 'Very Easy';
     } else if (value >= 0.85 && value < 0.93) {
-      return 'Hard';
+      return 'Easy';
     } else if (value >= 0.93 && value < 0.98) {
-      return 'Deadly';
+      return 'Light';
     } else if (value >= 0.98 && value < 1.05) {
-      return 'Nine Hells';
+      return 'Normal';
     } else if (value >= 1.05 && value < 1.15) {
-      return 'TPK';
+      return 'Slightly Difficult';
     } else if (value >= 1.15 && value < 1.3) {
-      return 'Sadist';
+      return 'Difficult';
     } else if (value >= 1.3 && value < 1.45) {
-      return 'Seriously?';
+      return 'Hard';
     } else if (value >= 1.45 && value <= 1.5) {
-      return 'Criminal';
+      return 'Very Hard';
+    } else if (value > 1.5 && value <= 1.75) {
+      return 'Criminal'
+    } else if (value > 1.75 && value <= 2) {
+      return 'TPK'
     } else {
       throw new Error(`Value ${value} outside of allowed bounds`);
     }

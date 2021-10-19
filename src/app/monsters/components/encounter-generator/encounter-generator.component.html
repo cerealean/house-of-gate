@@ -23,33 +23,15 @@
       <div fxFlex="20%" style="align-self: center; text-align: center;">
         <span>
           Difficulty:&nbsp;
-          <span *ngIf="encounterRequest.difficultyAmount >= 0.5 && encounterRequest.difficultyAmount < 0.6">
-            Child's Play
-          </span>
-          <span *ngIf="encounterRequest.difficultyAmount >= 0.6 && encounterRequest.difficultyAmount < 0.75">
-            Easy
-          </span>
-          <span *ngIf="encounterRequest.difficultyAmount >= 0.75 && encounterRequest.difficultyAmount < 0.85">
-            Challenging
-          </span>
-          <span *ngIf="encounterRequest.difficultyAmount >= 0.85 && encounterRequest.difficultyAmount < 0.93">
-            Hard
-          </span>
-          <span *ngIf="encounterRequest.difficultyAmount >= 0.93 && encounterRequest.difficultyAmount < 0.98">
-            Deadly
-          </span>
-          <span *ngIf="encounterRequest.difficultyAmount >= 0.98 && encounterRequest.difficultyAmount < 1.05">
-            Nine Hells
-          </span>
-          <span *ngIf="encounterRequest.difficultyAmount >= 1.05 && encounterRequest.difficultyAmount < 1.15">
-            TPK
+          <span>
+            {{formatSlider(encounterRequest.difficultyAmount)}}
           </span>
           ({{ encounterRequest.difficultyAmount }})
         </span>
       </div>
       <div fxFlex="65%">
         <mat-slider style="width: 100%;" thumbLabel [(ngModel)]="encounterRequest.difficultyAmount"
-          (valueChange)="updateFilters()" tickInterval="0.01" step="0.01" min="0.5" max="1.1"
+          (valueChange)="updateFilters()"  tickInterval="0.01" step="0.01" min="0.5" max="2"
           aria-label="Difficulty Slider"></mat-slider>
       </div>
       <div fxFlex="15%" style="text-align: center;">

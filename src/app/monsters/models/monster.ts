@@ -59,6 +59,9 @@ export class Monster {
   }
 
   public hasSourceIntersection(sources: string[]) {
+    if(this.sources.includes('Wild Beyond')) {
+      console.log(sources, this.sources);
+    }
     return sources.some(givenSource => this.sources.some(s => s.includes(givenSource)));
   }
 

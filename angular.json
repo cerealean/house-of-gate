@@ -34,11 +34,6 @@
               "src/site.webmanifest",
               "src/manifest.webmanifest",
               "src/assets",
-              {
-                "input": "src/app/data/",
-                "output": "data/",
-                "glob": "*.json"
-              },
               "src/manifest.webmanifest"
             ],
             "styles": [

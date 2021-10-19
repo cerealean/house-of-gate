@@ -12,8 +12,8 @@
       <span mat-line>Level: {{ encounter.request.level }}</span>
       <span mat-line># of Players: {{ encounter.request.numberOfPlayers }}</span>
       <ul mat-line>
-        <li *ngFor="let monster of encounter.encounters">
-          {{ monster.monster.name }} x{{ monster.quantity }}
+        <li *ngFor="let monster of encounter.monsters">
+          {{ monster.name }}
         </li>
       </ul>
     </a>

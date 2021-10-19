@@ -1,57 +1,39 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Monster, MonsterInfo } from '../models/monster';
+import { MonsterFilters } from '../models/monster-filters';
+import { MonsterFilterService } from './monster-filter.service';
 
 @Injectable({
   providedIn: 'any'
 })
 export class MonsterDataService {
-  private officialMonsterData: Promise<Monster[]> | undefined;
-  private communityMonsterData: Promise<Monster[]> | undefined;
-  private thirdPartyMonsterData: Promise<Monster[]> | undefined;
+  private allMonsters: Monster[] = [];
 
-  constructor(private httpClient: HttpClient) { }
-
-  public async getOfficialMonsters(): Promise<Monster[]> {
-    if(!this.officialMonsterData) {
-      this.officialMonsterData = this.getMonstersFromFile('/data/official.json');
-    }
-
-    return this.officialMonsterData;
+  constructor(
+    private monsterFilter: MonsterFilterService
+  ) {
+    const worker = new Worker(
+      new URL('../monster-loader.worker', import.meta.url),
+      { type: 'module' }
+    );
+    worker.onmessage = ({ data }) => {
+      const allMonsters = data.map((i: MonsterInfo) => new Monster(i)) as Monster[];
+      this.allMonsters = allMonsters.sort((first, second) => {
+        if (first.name > second.name) {
+          return 1;
+        } else if (second.name > first.name) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+    };
+    worker.postMessage('');
   }
-
-  public async getCommunityMonsters(): Promise<Monster[]> {
-    if(!this.communityMonsterData) {
-      this.communityMonsterData = this.getMonstersFromFile('/data/community.json');
-    }
-
-    return this.communityMonsterData;
-  }
-
-  public async getThirdPartyMonsters(): Promise<Monster[]> {
-    if(!this.thirdPartyMonsterData) {
-      this.thirdPartyMonsterData = this.getMonstersFromFile('/data/third-party.json');
-    }
-
-    return this.thirdPartyMonsterData;
-  }
-
-  public async getAllMonsters(): Promise<Monster[]> {
-    const official$ = this.getOfficialMonsters();
-    const community$ = this.getCommunityMonsters();
-    const thirdParty$ = this.getThirdPartyMonsters();
-    const [official, community, thirdParty] = await Promise.all([
-      official$,
-      community$,
-      thirdParty$
-    ]);
-    return official
-      .concat(community)
-      .concat(thirdParty);
-  }
-
-  private async getMonstersFromFile(url: string) {
-    const response = await this.httpClient.get<MonsterInfo[]>(url).toPromise();
-    return response.map(i => new Monster(i));
+  public async getAllMonsters(filters?: MonsterFilters): Promise<Monster[]> {
+    const allMonstersCopy = this.allMonsters.slice();
+    return filters
+      ? this.monsterFilter.filterMonsters(allMonstersCopy, filters)
+      : allMonstersCopy;
   }
 }

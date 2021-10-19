@@ -1,5 +1,5 @@
 <table mat-table matSort
-  [dataSource]="dataSource" style="width: 100%" (contentChanged)="finishLoading()">
+  [dataSource]="dataSource" style="width: 100%; max-width: 100%;" (contentChanged)="finishLoading()">
 
   <ng-container *ngFor="let column of columns" [matColumnDef]="column.name">
     <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header> {{column.name}}

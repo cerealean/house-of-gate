@@ -5,7 +5,6 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
 import { MonsterTablesComponent } from './components/monster-tables/monster-tables.component';
 import { PreviousEncountersComponent } from './components/previous-encounters/previous-encounters.component';
 import { NumberOnlyDirective } from './directives/number-only.directive';
-import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
@@ -42,7 +41,6 @@ import { MonstersRoutingModule } from './monsters-routing.module';
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
     MatTooltipModule,
     MatDividerModule,
     MatBottomSheetModule,
