@@ -1,3 +1,4 @@
+<app-filter-bar [filters]="filters" (filterChanges)="updateMonsterFilters($event)"></app-filter-bar>
 <mat-card>
   <div fxLayout="column">
     <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutGap.lt-md="3px">
@@ -52,7 +53,11 @@
 
   <br /> <br />
 
-  <mat-divider></mat-divider>
 
-  <app-monster-tables [monsters]="monsters"></app-monster-tables>
 </mat-card>
+<ng-container *ngIf="monsters && monsters.length" >
+  <br />
+  <mat-divider></mat-divider>
+  <br />
+  <app-monster-tables [monsters]="monsters"></app-monster-tables>
+</ng-container>

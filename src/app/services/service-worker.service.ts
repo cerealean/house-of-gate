@@ -4,7 +4,7 @@ import { SwUpdate } from '@angular/service-worker';
 import { interval, concat, Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { StorageService } from '../monsters/services/storage.service';
+import { StorageKeys, StorageService } from '../monsters/services/storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -33,9 +33,10 @@ export class ServiceWorkerService {
       const snackbar = _snackBar.open('An update is available! Reload the app?', 'Update!');
       const action$ = snackbar.onAction().subscribe(() => {
         updates.activateUpdate().then(() => {
-          this.storage.clearEncounterFilters();
-          this.storage.clearFilterData();
-          this.storage.clearPreviouslyGeneratedEncounters();
+          this.storage.clearData(StorageKeys.EncounterFilters);
+          this.storage.clearData(StorageKeys.MonsterFilters);
+          this.storage.clearData(StorageKeys.EncounterGeneratorMonsterFilters);
+          this.storage.clearData(StorageKeys.PreviouslyGeneratedEncounters);
           document.location.reload();
         });
       });

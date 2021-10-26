@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ColumnInfo } from 'src/app/monsters/models/column-info';
 import { ColumnManagerService } from '../../monsters/services/column-manager.service';
@@ -9,9 +9,9 @@ import { ColumnManagerService } from '../../monsters/services/column-manager.ser
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit, OnDestroy {
+  @Output() toggleMenuClicked = new EventEmitter<void>();
 
   public columns = this.columnManager.columns;
-
   private updatesSub$!: Subscription;
 
   constructor(private readonly columnManager: ColumnManagerService) { }

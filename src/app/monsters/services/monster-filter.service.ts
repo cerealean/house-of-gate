@@ -3,7 +3,7 @@ import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 
 @Injectable({
-  providedIn: 'any'
+  providedIn: 'root'
 })
 export class MonsterFilterService {
 

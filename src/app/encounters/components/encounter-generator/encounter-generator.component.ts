@@ -1,14 +1,13 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
-import { EncounterDifficulties } from '../../enums/encounter-difficulties';
-import { EncounterMonsterInfo } from '../../models/encounter';
-import { EncounterRequest } from '../../models/encounter-request';
-import { Monster } from '../../models/monster';
-import { MonsterFilters } from '../../models/monster-filters';
+import { EncounterDifficulties } from 'src/app/monsters/enums/encounter-difficulties';
+import { EncounterRequest } from 'src/app/monsters/models/encounter-request';
+import { Monster } from 'src/app/monsters/models/monster';
+import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
+import { EncounterGenerator2Service } from 'src/app/monsters/services/encounter-generator-2.service';
+import { StorageKeys, StorageService } from 'src/app/monsters/services/storage.service';
 import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
-import { StorageService } from '../../services/storage.service';
-import { EncounterGenerator2Service } from '../../services/encounter-generator-2.service';
 
 @Component({
   selector: 'app-encounter-generator',
@@ -38,7 +37,12 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   ) { }
 
   ngOnInit(): void {
-    const currentEncounterRequest = this.storage.getEncounterFilters();
+    const currentMonsterFilters = this.storage.getData<MonsterFilters>(StorageKeys.EncounterGeneratorMonsterFilters);
+    const currentEncounterRequest = this.storage.getData<EncounterRequest>(StorageKeys.EncounterFilters);
+    if(currentMonsterFilters) {
+      this.filters = currentMonsterFilters;
+      this.updateFilters();
+    }
     if (currentEncounterRequest) {
       this.encounterRequest = currentEncounterRequest;
     }
@@ -65,6 +69,11 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   async generateRandomEncounter(): Promise<void> {
     const encounter = await this.encounterGenerator2.generateEncounter(this.encounterRequest, this.filters);
     this.monsters = encounter.monsters.slice();
+  }
+
+  updateMonsterFilters(filters: MonsterFilters): void {
+    this.filters = filters;
+    this.storage.setData(StorageKeys.EncounterGeneratorMonsterFilters, filters);
   }
 
   updateFilters(): void {
@@ -99,17 +108,6 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     } else {
       throw new Error(`Value ${value} outside of allowed bounds`);
     }
-  }
-
-  private convertEncountersToMonsters(encounters: EncounterMonsterInfo[]) {
-    return encounters.map(e => {
-      const monsters: Monster[] = [];
-      for (let index = 0; index < e.quantity; index++) {
-        monsters.push(e.monster);
-      }
-
-      return monsters;
-    }).reduce((acc, val) => acc.concat(val), []);
   }
 
 }

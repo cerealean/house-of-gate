@@ -4,7 +4,7 @@ import { MonsterFilters } from '../models/monster-filters';
 import { MonsterFilterService } from './monster-filter.service';
 
 @Injectable({
-  providedIn: 'any'
+  providedIn: 'root'
 })
 export class MonsterDataService {
   private allMonsters: Monster[] = [];

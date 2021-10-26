@@ -1,9 +1,8 @@
-import { AfterViewInit, Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
 import { sources } from 'src/app/data/sources';
+import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 import { metaInfo } from '../../../data/meta-info';
-import { MonsterFilters } from '../../models/monster-filters';
-import { StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-filter-bar',
@@ -15,24 +14,13 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly environments = metaInfo.environments;
   public readonly sources = sources;
 
-  public filters!: MonsterFilters;
-
-  @Output() filterChanges = new EventEmitter<MonsterFilters>();
-
-  constructor(
-    private storage: StorageService
-  ) {
-    this.setInitialFilters();
-  }
+  @Input() public filters!: MonsterFilters;
+  @Output() public readonly filterChanges = new EventEmitter<MonsterFilters>();
 
   ngOnInit(): void {
-    const savedFilters = this.storage.getFilterData();
-    if(savedFilters) {
-      this.filters = savedFilters;
-    }
-
-    if(this.filters.sources === undefined) {
-      this.filters.sources = this.sources;
+    if(!this.filters) {
+      this.setInitialFilters();
+      this.filter();
     }
   }
 
@@ -49,7 +37,6 @@ export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   filter(event?: MatSelectChange) {
     setTimeout(() => {
       this.filterChanges.emit(this.filters);
-      this.storage.setFilterData(this.filters);
     }, 60);
   }
 

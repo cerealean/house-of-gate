@@ -11,12 +11,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { MatCardModule } from '@angular/material/card';
 import { TermsComponent } from './components/terms/terms.component';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { TermsComponent } from './components/terms/terms.component';
     MatCheckboxModule,
     MatCardModule,
     MatSnackBarModule,
+    MatSidenavModule,
+    MatListModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

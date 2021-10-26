@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Monster, MonsterInfo } from '../../models/monster';
 import { MonsterFilters } from '../../models/monster-filters';
 import { MonsterDataService } from '../../services/monster-data.service';
 import { MonsterFilterService } from '../../services/monster-filter.service';
+import { StorageKeys, StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-monsters',
   templateUrl: './monsters.component.html',
   styleUrls: ['./monsters.component.scss']
 })
-export class MonstersComponent implements OnInit {
+export class MonstersComponent implements OnInit, AfterViewInit {
   private allMonsters: Monster[] = [];
   public displayedMonsters: Monster[] = [];
   public filters!: MonsterFilters;
@@ -18,10 +19,20 @@ export class MonstersComponent implements OnInit {
   constructor(
     private readonly monsterDataService: MonsterDataService,
     private readonly monsterFilter: MonsterFilterService,
+    private readonly storage: StorageService
   ) { }
 
   async ngOnInit(): Promise<void> {
     await this.loadMonsterData();
+  }
+
+  ngAfterViewInit(): void {
+    const currentMonsterFilters = this.storage.getData<MonsterFilters>(StorageKeys.MonsterFilters);
+    if(currentMonsterFilters) {
+      setTimeout(() => {
+        this.filter(currentMonsterFilters);
+      }, 500);
+    }
   }
 
   filter(filters: MonsterFilters) {
@@ -31,6 +42,7 @@ export class MonstersComponent implements OnInit {
       this.filters
     );
     this.displayedMonsters = filteredMonsters;
+    this.storage.setData(StorageKeys.MonsterFilters, filters);
   }
 
   tableLoading(isLoading: boolean): void {

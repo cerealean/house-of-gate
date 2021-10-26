@@ -9,6 +9,10 @@ const routes: Routes = [
     loadChildren: () => import('./monsters/monsters.module').then(m => m.MonstersModule)
   },
   {
+    path: 'encounters',
+    loadChildren: () => import('./encounters/encounters.module').then(e => e.EncountersModule)
+  },
+  {
     path: 'privacy',
     component: PrivacyPolicyComponent
   },

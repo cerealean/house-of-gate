@@ -6,7 +6,7 @@ import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterDataService } from './monster-data.service';
-import { StorageService } from './storage.service';
+import { StorageKeys, StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'any'
@@ -23,7 +23,7 @@ export class EncounterGenerator2Service {
     private readonly monsterData: MonsterDataService,
     private storage: StorageService
   ) {
-    const previouslyGeneratedEncounters = storage.getPreviouslyGeneratedEncounters();
+    const previouslyGeneratedEncounters = storage.getData<GeneratedEncounter[]>(StorageKeys.PreviouslyGeneratedEncounters);
     if (previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
       this._previousEncounters = previouslyGeneratedEncounters;
       this._previousEncounters$.next(this._previousEncounters);
@@ -102,6 +102,6 @@ export class EncounterGenerator2Service {
     const newLength = this._previousEncounters.unshift(newEncounter);
     this._previousEncounters = this._previousEncounters.slice(0, Math.min(newLength, this.maxPreviousEncountersLength));
     this._previousEncounters$.next(this._previousEncounters);
-    this.storage.setPreviouslyGeneratedEncounters(this._previousEncounters);
+    this.storage.setData(StorageKeys.PreviouslyGeneratedEncounters, this._previousEncounters);
   }
 }
