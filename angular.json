@@ -7,7 +7,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kobald-fight-club-angular": {
+    "house-of-gate": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kobald-fight-club-angular",
+            "outputPath": "dist/house-of-gate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "kobald-fight-club-angular:build:production"
+              "browserTarget": "house-of-gate:build:production"
             },
             "development": {
-              "browserTarget": "kobald-fight-club-angular:build:development"
+              "browserTarget": "house-of-gate:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kobald-fight-club-angular:build"
+            "browserTarget": "house-of-gate:build"
           }
         },
         "test": {
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "kobald-fight-club-angular"
+  "defaultProject": "house-of-gate"
 }
