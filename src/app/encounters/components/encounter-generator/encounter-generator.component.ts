@@ -6,7 +6,7 @@ import { EncounterRequest } from 'src/app/monsters/models/encounter-request';
 import { Monster } from 'src/app/monsters/models/monster';
 import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 import { EncounterGenerator2Service } from 'src/app/monsters/services/encounter-generator-2.service';
-import { StorageKeys, StorageService } from 'src/app/monsters/services/storage.service';
+import { StorageService, StorageKeys } from 'src/app/services/storage.service';
 import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
 
 @Component({
@@ -77,7 +77,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   }
 
   updateFilters(): void {
-    this.storage.setEncounterFilters(this.encounterRequest);
+    this.storage.setData(StorageKeys.EncounterFilters, this.encounterRequest);
   }
 
   formatSlider(value: number): string {

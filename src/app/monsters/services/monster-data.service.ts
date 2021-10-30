@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Monster, MonsterInfo } from '../models/monster';
+import { DatabaseService } from 'src/app/services/database.service';
+import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterFilterService } from './monster-filter.service';
 
@@ -7,31 +8,25 @@ import { MonsterFilterService } from './monster-filter.service';
   providedIn: 'root'
 })
 export class MonsterDataService {
-  private allMonsters: Monster[] = [];
+  private allMonsters: Promise<Monster[]>;
 
   constructor(
-    private monsterFilter: MonsterFilterService
+    private monsterFilter: MonsterFilterService,
+    private db: DatabaseService
   ) {
-    const worker = new Worker(
-      new URL('../monster-loader.worker', import.meta.url),
-      { type: 'module' }
-    );
-    worker.onmessage = ({ data }) => {
-      const allMonsters = data.map((i: MonsterInfo) => new Monster(i)) as Monster[];
-      this.allMonsters = allMonsters.sort((first, second) => {
-        if (first.name > second.name) {
-          return 1;
-        } else if (second.name > first.name) {
-          return -1;
-        } else {
-          return 0;
-        }
-      });
-    };
-    worker.postMessage('');
+    this.allMonsters = new Promise(resolve => {
+      this.db.getDatabaseContext().table('monsters')
+        .toArray()
+        .then(monsterData => {
+          const monsters = monsterData.map(m => Object.assign(new Monster(), m));
+
+          resolve(monsters);
+        })
+    });
   }
+
   public async getAllMonsters(filters?: MonsterFilters): Promise<Monster[]> {
-    const allMonstersCopy = this.allMonsters.slice();
+    const allMonstersCopy = (await this.allMonsters).slice();
     return filters
       ? this.monsterFilter.filterMonsters(allMonstersCopy, filters)
       : allMonstersCopy;

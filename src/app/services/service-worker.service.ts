@@ -4,7 +4,7 @@ import { SwUpdate } from '@angular/service-worker';
 import { interval, concat, Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { StorageKeys, StorageService } from '../monsters/services/storage.service';
+import { StorageKeys, StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'root'

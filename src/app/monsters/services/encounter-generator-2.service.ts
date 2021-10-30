@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { crToExpMap } from 'src/app/data/cr-to-exp';
+import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 import { GeneratedEncounter } from '../models/encounter';
 import { EncounterRequest } from '../models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterDataService } from './monster-data.service';
-import { StorageKeys, StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'any'

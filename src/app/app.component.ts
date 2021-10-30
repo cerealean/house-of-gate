@@ -11,6 +11,6 @@ export class AppComponent {
 
   constructor(
     private readonly _serviceWorker: ServiceWorkerService
-  ) {}
+  ) { }
 
 }

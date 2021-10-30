@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ReplaySubject } from 'rxjs';
+import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 import { ColumnInfo } from '../models/column-info';
-import { StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +27,7 @@ export class ColumnManagerService {
   }
 
   constructor(private storage: StorageService) {
-    const storedColumns = this.storage.getColumnData();
+    const storedColumns = this.storage.getData<ColumnInfo[]>(StorageKeys.ColumnInfo);
     this._columns = storedColumns ?? this.generateInitialColumns();
     this.publishUpdate(null);
   }
@@ -44,7 +44,7 @@ export class ColumnManagerService {
     column.isShown = columnInfo.isShown;
     column.position = columnInfo.position;
     this.publishUpdate(column);
-    this.storage.setColumnData(this.columns.slice());
+    this.storage.setData(StorageKeys.ColumnInfo, this.columns.slice());
   }
 
   private publishUpdate(columnInfo: ColumnInfo | null): void {

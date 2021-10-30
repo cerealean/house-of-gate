@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Monster, MonsterInfo } from '../../models/monster';
+import { StorageService, StorageKeys } from 'src/app/services/storage.service';
+import { Monster } from '../../models/monster';
 import { MonsterFilters } from '../../models/monster-filters';
 import { MonsterDataService } from '../../services/monster-data.service';
 import { MonsterFilterService } from '../../services/monster-filter.service';
-import { StorageKeys, StorageService } from '../../services/storage.service';
 
 @Component({
   selector: 'app-monsters',
@@ -52,27 +52,6 @@ export class MonstersComponent implements OnInit, AfterViewInit {
   }
 
   private async loadMonsterData() {
-    if (typeof Worker !== 'undefined') {
-      this.loadDataViaWorker();
-    } else {
-      await this.loadDataViaHttp();
-    }
-  }
-
-  private loadDataViaWorker() {
-    const worker = new Worker(
-      new URL('../../monster-loader.worker', import.meta.url),
-      { type: 'module' }
-    );
-    worker.onmessage = ({ data }) => {
-      const allMonsters = data.map((i: MonsterInfo) => new Monster(i)) as Monster[];
-      this.allMonsters = this.sortMonsters(allMonsters);
-      this.displayedMonsters = this.allMonsters.slice();
-    };
-    worker.postMessage('');
-  }
-
-  private async loadDataViaHttp() {
     const allMonsters = await this.monsterDataService.getAllMonsters();
     this.allMonsters = this.sortMonsters(allMonsters);
     this.displayedMonsters = this.allMonsters.slice();
