@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NumberOnlyDirective } from './directives/number-only.directive';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -33,6 +35,8 @@ import { NumberOnlyDirective } from './directives/number-only.directive';
     MatInputModule,
     MatButtonModule,
     FormsModule,
+    MatIconModule,
+    MatMenuModule,
     FlexLayoutModule
   ],
   exports: [

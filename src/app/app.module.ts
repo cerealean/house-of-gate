@@ -32,7 +32,6 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     FlexLayoutModule,
     MatDialogModule,
-    MatMenuModule,
     MatToolbarModule,
     MatButtonModule,
     MatCheckboxModule,

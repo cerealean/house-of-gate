@@ -21,6 +21,7 @@
   <meta name="language" content="English">
   <meta name="revisit-after" content="30 days">
   <meta name="author" content="Michael Crawford">
+
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="icon" type="image/x-icon" sizes="32x32" href="assets/favicon-32x32.png">
@@ -30,6 +31,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap" rel="stylesheet">
   <meta name="theme-color" content="#1976d2">
+
+  <script type="text/javascript" >
+    (function() {
+      if(!window.Worker || !window.indexedDB) {
+        alert('Your browser does not support necessary features and the application will likely not function. Please upgrade your browser.');
+      }
+    })()
+  </script>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T06K5PG5QN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -41,7 +51,7 @@
 
 <body class="mat-typography">
   <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <noscript aria-label="Please enable JavaScript if it is not enabled!">Please enable JavaScript to continue using this application.</noscript>
 </body>
 
 </html>
