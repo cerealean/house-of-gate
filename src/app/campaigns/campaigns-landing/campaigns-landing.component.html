@@ -1,1 +1,21 @@
-<p>campaigns-landing works!</p>
+<mat-card style="min-height: 100vh;">
+  <button mat-raised-button color="accent" (click)="openNewCampaignDialog()" aria-label="Add New Campaign">
+    Add New Campaign
+  </button>
+  <ng-container *ngIf="campaigns.length > 0; else noCampaigns">
+    <mat-list>
+      <mat-list-item *ngFor="let message of campaigns">
+        <!-- <img matListAvatar src="..." alt="...">
+        <h3 matLine> {{message.from}} </h3>
+        <p matLine>
+          <span> {{message.subject}} </span>
+          <span class="demo-2"> -- {{message.content}} </span>
+        </p> -->
+      </mat-list-item>
+    </mat-list>
+  </ng-container>
+</mat-card>
+
+<ng-template #noCampaigns>
+  No campaigns :(
+</ng-template>

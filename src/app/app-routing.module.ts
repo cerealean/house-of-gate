@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./encounters/encounters.module').then(e => e.EncountersModule)
   },
   {
+    path: 'campaigns',
+    loadChildren: () => import('./campaigns/campaigns.module').then(e => e.CampaignsModule)
+  },
+  {
     path: 'privacy',
     component: PrivacyPolicyComponent
   },

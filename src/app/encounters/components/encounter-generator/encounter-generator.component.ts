@@ -2,7 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
 import { EncounterDifficulties } from 'src/app/monsters/enums/encounter-difficulties';
-import { EncounterRequest } from 'src/app/monsters/models/encounter-request';
+import { EncounterRequest } from 'src/app/encounters/models/encounter-request';
 import { Monster } from 'src/app/monsters/models/monster';
 import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 import { EncounterGenerator2Service } from 'src/app/monsters/services/encounter-generator-2.service';

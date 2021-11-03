@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Create New Campaign</h1>
+<div mat-dialog-content>
+  <!-- <p></p> -->
+  <mat-form-field>
+    <mat-label>Campaign Name</mat-label>
+    <input matInput aria-label="Name for your new campaign" required type="text" minlength="1" maxlength="100"
+      [(ngModel)]="campaign.name">
+  </mat-form-field>
+
+  <label for="campaign-image">Campaign Image (Optional)</label><br />
+  <input id="campaign-image" aria-label="Optionally upload an image representing your campaign"
+    title="Have an image to represent your campaign?" type="file" accept="image/*"
+    (change)="onFileChange($event)">
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent" [mat-dialog-close]="campaign" cdkFocusInitial>Create</button>
+</div>

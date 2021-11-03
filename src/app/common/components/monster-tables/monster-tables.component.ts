@@ -2,7 +2,7 @@ import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Outpu
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { ColumnInfo } from 'src/app/monsters/models/column-info';
+import { ColumnInfo } from 'src/app/common/components/monster-tables/column-info';
 import { Monster } from 'src/app/monsters/models/monster';
 import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 
