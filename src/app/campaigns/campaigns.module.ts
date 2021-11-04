@@ -11,6 +11,7 @@ import { NewCampaignComponent } from './new-campaign/new-campaign.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { DataModule } from '../data/data.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    DataModule
   ]
 })
 export class CampaignsModule { }

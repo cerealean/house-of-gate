@@ -1,6 +1,5 @@
 <h1 mat-dialog-title>Create New Campaign</h1>
 <div mat-dialog-content>
-  <!-- <p></p> -->
   <mat-form-field>
     <mat-label>Campaign Name</mat-label>
     <input matInput aria-label="Name for your new campaign" required type="text" minlength="1" maxlength="100"
@@ -13,5 +12,6 @@
     (change)="onFileChange($event)">
 </div>
 <div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
   <button mat-raised-button color="accent" [mat-dialog-close]="campaign" cdkFocusInitial>Create</button>
 </div>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DatabaseService } from 'src/app/services/database.service';
+import { DatabaseService } from 'src/app/data/services/database.service';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
 import { MonsterFilterService } from './monster-filter.service';

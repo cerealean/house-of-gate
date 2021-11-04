@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 import { Campaign } from '../models/campaign';
 
 @Component({
@@ -9,7 +10,9 @@ import { Campaign } from '../models/campaign';
 export class NewCampaignComponent {
   public readonly campaign = new Campaign();
 
-  constructor() { }
+  constructor(
+    public dialogRef: MatDialogRef<NewCampaignComponent>
+  ) { }
 
   public onFileChange($event: Event): void {
     const element = $event.target as HTMLInputElement;

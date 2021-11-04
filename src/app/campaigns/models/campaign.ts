@@ -1,7 +1,9 @@
 import { GeneratedEncounter } from "src/app/encounters/models/encounter";
 
 export class Campaign {
-  name: string = '';
+  name = '';
+  date = new Date();
   image: Blob | undefined;
+  encounterIds: number[] = [];
   encounters: GeneratedEncounter[] = [];
 }
