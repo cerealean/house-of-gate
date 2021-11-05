@@ -1,0 +1,73 @@
+import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { MatSelectChange } from '@angular/material/select';
+import { sources } from 'src/app/data/sources';
+import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
+import { metaInfo } from '../../../data/meta-info';
+
+@Component({
+  selector: 'app-filter-bar',
+  templateUrl: './filter-bar.component.html',
+  styleUrls: ['./filter-bar.component.scss']
+})
+export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
+  public readonly monsterTypes = metaInfo.types;
+  public readonly environments = metaInfo.environments;
+  public readonly sources = sources;
+
+  @Input() public filters!: MonsterFilters;
+  @Output() public readonly filterChanges = new EventEmitter<MonsterFilters>();
+
+  ngOnInit(): void {
+    if(!this.filters) {
+      this.setInitialFilters();
+      this.filter();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.filterChanges?.complete();
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.filterChanges.emit(this.filters);
+    });
+  }
+
+  filter(event?: MatSelectChange) {
+    setTimeout(() => {
+      this.filterChanges.emit(this.filters);
+    }, 60);
+  }
+
+  fill(start: number, end: number): number[] {
+    return Array(end - start + 1).fill(0).map((_, index) => start + index);
+  }
+
+  changeCheckboxState($event: MouseEvent, filterKey: string) {
+    $event.preventDefault();
+    $event.stopPropagation();
+    const currentValue = (this.filters as any)[filterKey];
+    if(currentValue === true) {
+      (this.filters as any)[filterKey] = false;
+    } else if(currentValue === false) {
+      (this.filters as any)[filterKey] = undefined;
+    } else {
+      (this.filters as any)[filterKey] = true;
+    }
+    this.filter();
+  }
+
+  setInitialFilters(): void {
+    this.filters = {
+      name: '',
+      minCr: 0,
+      maxCr: 30,
+      type: this.monsterTypes.slice(),
+      environment: this.environments.concat('None'),
+      legendary: undefined,
+      unique: undefined,
+      sources: this.sources.slice()
+    };
+  }
+}

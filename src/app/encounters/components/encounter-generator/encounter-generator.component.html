@@ -1,0 +1,63 @@
+<app-filter-bar [filters]="filters" (filterChanges)="updateMonsterFilters($event)"></app-filter-bar>
+<mat-card>
+  <div fxLayout="column">
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutGap.lt-md="3px">
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Number of Players</mat-label>
+        <input matInput required inputmode="numeric" autocomplete="off" autocapitalize="off" [min]="1" [step]="1" [max]="99" appNumberOnly type="number" #numOfPlayers
+          (input)="updateFilters()" [(ngModel)]="encounterRequest.numberOfPlayers">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Player Level</mat-label>
+        <input matInput required inputmode="numeric" autocomplete="off" autocapitalize="off" [min]="1" [step]="1" [max]="20" type="number" #playerLevel appNumberOnly
+          (input)="updateFilters()" [(ngModel)]="encounterRequest.level">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Maximum # of Enemies</mat-label>
+        <input matInput required inputmode="numeric" autocomplete="off" autocapitalize="off" [min]="1" [step]="1" [max]="50" type="number" #numOfEnemies appNumberOnly
+          (input)="updateFilters()" [(ngModel)]="encounterRequest.maxNumberOfEnemies">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+      <div fxFlex="20%" style="align-self: center; text-align: center;">
+        <span>
+          Difficulty:&nbsp;
+          <span>
+            {{formatSlider(encounterRequest.difficultyAmount)}}
+          </span>
+          ({{ encounterRequest.difficultyAmount }})
+        </span>
+      </div>
+      <div fxFlex="65%">
+        <mat-slider style="width: 100%;" thumbLabel [(ngModel)]="encounterRequest.difficultyAmount"
+          (valueChange)="updateFilters()"  tickInterval="0.01" step="0.01" min="0.5" max="2"
+          aria-label="Difficulty Slider"></mat-slider>
+      </div>
+      <div fxFlex="15%" style="text-align: center;">
+        <button color="primary" matTooltip="Generate Random Encounter!" title="Generate Random Encounter!"
+          [disabled]="!numOfEnemies.checkValidity() || !numOfPlayers.checkValidity() || !playerLevel.checkValidity()"
+          aria-label="Generate random encounter" style="margin-left: 10px;" mat-raised-button
+          (click)="generateRandomEncounter()">
+          Generate
+        </button>
+
+        <button color="accent" style="margin-left: 8px" mat-mini-fab matTooltip="Load Previous Encounters!"
+          title="Load Previous Encounters" aria-label="Look at previous encounters" (click)="openPreviousEncounters()">
+          <mat-icon>history</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <br /> <br />
+
+
+</mat-card>
+<ng-container *ngIf="monsters && monsters.length" >
+  <br />
+  <mat-divider></mat-divider>
+  <br />
+  <app-monster-tables [monsters]="monsters"></app-monster-tables>
+</ng-container>

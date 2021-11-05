@@ -1,4 +1,4 @@
-import { LevelWithDifficultyInfo } from "../models/level-with-difficulty-exp-info";
+import { LevelWithDifficultyInfo } from "../monsters/models/level-with-difficulty-exp-info";
 
 export const playerLevelsToDifficulty: Map<number, LevelWithDifficultyInfo> = new Map([
   [1, { level: 1,    budget: 300,	easy: 25,	medium: 50,		hard: 75,	deadly: 100, ninehells: 125 }],

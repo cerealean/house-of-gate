@@ -7,7 +7,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kobald-fight-club-angular": {
+    "house-of-gate": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,27 +24,26 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kobald-fight-club-angular",
+            "outputPath": "dist/house-of-gate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/favicon-16x16.png",
-              "src/favicon-32x32.png",
-              "src/android-chrome-192x192.png",
-              "src/android-chrome-512x512.png",
-              "src/apple-touch-icon.png",
               "src/site.webmanifest",
-              "src/assets"
+              "src/manifest.webmanifest",
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "webWorkerTsConfig": "tsconfig.worker.json",
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -85,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "kobald-fight-club-angular:build:production"
+              "browserTarget": "house-of-gate:build:production"
             },
             "development": {
-              "browserTarget": "kobald-fight-club-angular:build:development"
+              "browserTarget": "house-of-gate:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -96,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kobald-fight-club-angular:build"
+            "browserTarget": "house-of-gate:build"
           }
         },
         "test": {
@@ -109,13 +108,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "webWorkerTsConfig": "tsconfig.worker.json"
           }
         },
         "lint": {
@@ -130,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "kobald-fight-club-angular"
+  "defaultProject": "house-of-gate"
 }

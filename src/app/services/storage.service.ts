@@ -1,60 +1,31 @@
 import { Injectable } from '@angular/core';
-import { ColumnInfo } from '../models/column-info';
-import { Encounter } from '../models/encounter';
-import { EncounterRequest } from '../models/encounter-request';
-import { MonsterFilters } from '../models/monster-filters';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StorageService {
 
-  constructor() { }
-
-  public getColumnData(): ColumnInfo[] | null {
-    return this.getFromLocalStorageAndParse<ColumnInfo[] | null>(StorageKeys.ColumnInfo);
+  public clearAllData(): void {
+    localStorage.clear();
   }
 
-  public setColumnData(columns: ColumnInfo[]) {
-    this.stringifyAndStore(StorageKeys.ColumnInfo, columns);
+  public getData<T>(key: StorageKeys): T | null {
+    return this.getFromLocalStorageAndParse<T>(key);
   }
 
-  public getFilterData(): MonsterFilters | null {
-    return this.getFromLocalStorageAndParse<MonsterFilters | null>(StorageKeys.FilterInfo);
+  public setData(key: StorageKeys, data: any): void {
+    this.stringifyAndStore(key, data);
   }
 
-  public setFilterData(filterData: MonsterFilters): void {
-    this.stringifyAndStore(StorageKeys.FilterInfo, filterData);
+  public clearData(key: StorageKeys): void {
+    this.clearStorage(key);
   }
 
-  public getPreviouslyGeneratedEncounters(): Encounter[] | null {
-    return this.getFromLocalStorageAndParse<Encounter[] | null>(StorageKeys.PreviouslyGeneratedEncounters);
-  }
-
-  public setPreviouslyGeneratedEncounters(encounters: Encounter[]): void {
-    this.stringifyAndStore(StorageKeys.PreviouslyGeneratedEncounters, encounters);
-  }
-
-  public getEncounterFilters(): EncounterRequest | null {
-    return this.getFromLocalStorageAndParse<EncounterRequest | null>(StorageKeys.EncounterFilters);
-  }
-
-  public setEncounterFilters(encounterRequest: EncounterRequest): void {
-    this.stringifyAndStore(StorageKeys.EncounterFilters, encounterRequest);
-  }
-
-  public getTermsAcknowledgementDate(): string | null {
-    return this.getFromLocalStorageAndParse<string | null>(StorageKeys.HasAcknowledgedTermsDate);
-  }
-
-  public setTermsAcknowledgementDate(date: Date): void {
-    this.stringifyAndStore(StorageKeys.HasAcknowledgedTermsDate, date.toUTCString());
-  }
 
   private getFromLocalStorageAndParse<T>(key: string): T | null {
     try {
       const storedJsonString = localStorage.getItem(key);
-      if(storedJsonString) {
+      if (storedJsonString) {
         return JSON.parse(storedJsonString);
       }
       return null;
@@ -63,21 +34,26 @@ export class StorageService {
     }
   }
 
+  private clearStorage(key: string) {
+    localStorage.removeItem(key);
+  }
+
   private stringifyAndStore(key: string, value: Object): void {
-    if(!value) {
+    if (!value) {
       throw new Error('Object to store must be a valid object and cannot be null or empty');
     }
     const stringifiedObject = JSON.stringify(value);
-    if(stringifiedObject) {
+    if (stringifiedObject) {
       localStorage.setItem(key, stringifiedObject);
     }
   }
 }
 
-enum StorageKeys {
+export enum StorageKeys {
   ColumnInfo = 'HoG-ColumnInfo',
-  FilterInfo = 'HoG-FilterInfo',
   PreviouslyGeneratedEncounters = 'HoG-PreviouslyGeneratedEncounters',
   EncounterFilters = 'HoG-EncounterFilters',
-  HasAcknowledgedTermsDate = 'HoG-TermsAcknowledgement'
+  HasAcknowledgedTermsDate = 'HoG-TermsAcknowledgement',
+  MonsterFilters = 'HoG-MonsterFilters',
+  EncounterGeneratorMonsterFilters = 'HoG-EGMonsterFilters'
 }
