@@ -1,4 +1,4 @@
-import { IMonster } from "../monsters/models/monster"
+import { IMonster } from "../../monsters/models/monster"
 
 export const community: IMonster[] = [
   {

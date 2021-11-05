@@ -1,4 +1,4 @@
-import { crToExpMap } from "src/app/data/cr-to-exp";
+import { crToExpMap } from "src/app/data/static/cr-to-exp";
 import { EncounterRequest } from "./encounter-request";
 import { Monster } from "../../monsters/models/monster";
 

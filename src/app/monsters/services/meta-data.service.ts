@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CrInfo, crInfoData } from '../../data/cr-info';
+import { CrInfo, crInfoData } from '../../data/static/cr-info';
 
 @Injectable({
   providedIn: 'any'

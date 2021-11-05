@@ -1,8 +1,9 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
-import { sources } from 'src/app/data/sources';
+import { environments } from 'src/app/data/static/environments';
+import { monsterTypes } from 'src/app/data/static/monster-types';
+import { sources } from 'src/app/data/static/sources';
 import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
-import { metaInfo } from '../../../data/meta-info';
 
 @Component({
   selector: 'app-filter-bar',
@@ -10,8 +11,8 @@ import { metaInfo } from '../../../data/meta-info';
   styleUrls: ['./filter-bar.component.scss']
 })
 export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
-  public readonly monsterTypes = metaInfo.types;
-  public readonly environments = metaInfo.environments;
+  public readonly monsterTypes = monsterTypes;
+  public readonly environments = environments;
   public readonly sources = sources;
 
   @Input() public filters!: MonsterFilters;

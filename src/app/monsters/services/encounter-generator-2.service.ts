@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { crToExpMap } from 'src/app/data/cr-to-exp';
+import { crToExpMap } from 'src/app/data/static/cr-to-exp';
 import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 import { Encounter } from '../../encounters/models/encounter';
 import { EncounterRequest } from '../../encounters/models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
-import { MonsterDataService } from './monster-data.service';
+import { MonsterDataService } from '../../data/services/monsters/monster-data.service';
+import { MonsterFilterService } from './monster-filter.service';
 
 @Injectable({
   providedIn: 'any'
@@ -21,6 +22,7 @@ export class EncounterGenerator2Service {
 
   constructor(
     private readonly monsterData: MonsterDataService,
+    private readonly filter: MonsterFilterService,
     private storage: StorageService
   ) {
     const previouslyGeneratedEncounters = storage.getData<Encounter[]>(StorageKeys.PreviouslyGeneratedEncounters);
@@ -34,13 +36,14 @@ export class EncounterGenerator2Service {
     const crToExp = crToExpMap.get(request.level)!;
     const numberOfPlayersModifier = request.numberOfPlayers * .25;
     const targetExp = crToExp * numberOfPlayersModifier * request.difficultyAmount;
-    const allMonsters = await this.monsterData.getAllMonsters(filter);
-    if (allMonsters.length === 0) {
+    const allMonsters = await this.monsterData.getAllMonsters();
+    const filteredMonsters = this.filter.filterMonsters(allMonsters, filter);
+    if (filteredMonsters.length === 0) {
       throw new Error('There are no available monsters that match user filters');
     }
     const encounters = [];
     for (let index = 0; index < this.numberOfEncountersToGenerate; index++) {
-      encounters.push(this.createEncounter(allMonsters, targetExp, request));
+      encounters.push(this.createEncounter(filteredMonsters, targetExp, request));
     }
     const newEncounter = this.findEncounterClosestToTargetExp(encounters, targetExp);
     this.updateEncounters(newEncounter);

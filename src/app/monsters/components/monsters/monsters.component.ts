@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { StorageService, StorageKeys } from 'src/app/services/storage.service';
 import { Monster } from '../../models/monster';
 import { MonsterFilters } from '../../models/monster-filters';
-import { MonsterDataService } from '../../services/monster-data.service';
+import { MonsterDataService } from '../../../data/services/monsters/monster-data.service';
 import { MonsterFilterService } from '../../services/monster-filter.service';
 
 @Component({
