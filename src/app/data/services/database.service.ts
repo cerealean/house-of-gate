@@ -2,12 +2,11 @@ import { Injectable } from '@angular/core';
 
 import Dexie from 'dexie';
 import { Campaign } from '../../campaigns/models/campaign';
-import { GeneratedEncounter } from '../../encounters/models/encounter';
+import { Encounter } from '../../encounters/models/encounter';
 import { Monster, MonsterInfo } from '../../monsters/models/monster';
-import { DataModule } from '../data.module';
 
 @Injectable({
-  providedIn: DataModule
+  providedIn: 'root'
 })
 export class DatabaseService {
   private readonly db: IHouseOfGateDao;
@@ -24,26 +23,28 @@ export class DatabaseService {
 export interface IHouseOfGateDao {
   readonly monsters: Dexie.Table<Monster, number>;
   readonly campaigns: Dexie.Table<Campaign, number>;
-  readonly encounters: Dexie.Table<GeneratedEncounter, number>;
+  readonly encounters: Dexie.Table<Encounter, number>;
 }
 
 class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
-  public readonly monsters: Dexie.Table<Monster, number>;
-  public readonly campaigns: Dexie.Table<Campaign, number>;
-  public readonly encounters: Dexie.Table<GeneratedEncounter, number>;
+  public readonly monsters!: Dexie.Table<Monster, number>;
+  public readonly campaigns!: Dexie.Table<Campaign, number>;
+  public readonly encounters!: Dexie.Table<Encounter, number>;
 
   constructor() {
     super('house-of-gate');
 
     this.setupStructures();
-
-    this.monsters = this.table('monsters');
-    this.encounters = this.table('encounters');
-    this.campaigns = this.table('campaigns');
-
+    this.setupTableMappings();
     this.prepopulateIfNecessary();
 
     this.open();
+  }
+
+  private setupTableMappings() {
+    this.table('monsters').mapToClass(Monster);
+    this.table('encounters').mapToClass(Encounter);
+    this.table('campaigns').mapToClass(Campaign);
   }
 
   private prepopulateIfNecessary() {
@@ -54,7 +55,7 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
       } else {
         return new Promise(resolve => {
           const worker = new Worker(
-            new URL('../data/db-initializer.worker', import.meta.url),
+            new URL('../db-initializer.worker', import.meta.url),
             { type: 'module' }
           );
           worker.onmessage = async ({ data }) => {

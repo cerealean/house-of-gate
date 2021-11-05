@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Campaign } from 'src/app/campaigns/models/campaign';
-import { GeneratedEncounter } from 'src/app/encounters/models/encounter';
+import { Encounter } from 'src/app/encounters/models/encounter';
 import { DatabaseService, IHouseOfGateDao } from '../database.service';
 
 @Injectable({
@@ -23,7 +23,7 @@ export class CampaignDataService {
       const encounters = await Promise.all(
         c.encounterIds.map(async id => await this.db.encounters.get(id))
       );
-      const encountersWithoutUndefined = encounters.filter(x => !!x) as GeneratedEncounter[];
+      const encountersWithoutUndefined = encounters.filter(x => !!x) as Encounter[];
       c.encounters = encountersWithoutUndefined;
 
       return c;

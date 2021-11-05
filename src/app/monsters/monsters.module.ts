@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MonstersRoutingModule } from './monsters-routing.module';
 import { GateCommonModule } from '../common/common.module';
 import { MatDividerModule } from '@angular/material/divider';
+import { DataModule } from '../data/data.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatDividerModule,
     MatProgressSpinnerModule,
     FlexLayoutModule,
-    MonstersRoutingModule
+    MonstersRoutingModule,
+    DataModule
   ]
 })
 export class MonstersModule { }

@@ -1,24 +1,26 @@
 <mat-sidenav-container fxFlex="column" style="max-width: 100vw;">
   <mat-sidenav #sidenav mode="over">
     <mat-nav-list aria-label="Left side navigation">
+      <div mat-subheader>My Stuff</div>
       <mat-list-item aria-label="Campaigns page">
         <button mat-icon-button>
-           <mat-icon>festival</mat-icon>
+          <mat-icon>festival</mat-icon>
         </button>
         <a matLine routerLink="/campaigns">My Campaigns</a>
-     </mat-list-item>
-      <mat-list-item aria-label="Monsters page">
-        <button mat-icon-button>
-           <mat-icon>pets</mat-icon>
-        </button>
-        <a matLine routerLink="/monsters">Monster Search</a>
-     </mat-list-item>
+      </mat-list-item>
       <mat-list-item aria-label="Encounters page">
         <button mat-icon-button>
-           <mat-icon>sports_kabaddi</mat-icon>
+          <mat-icon>sports_kabaddi</mat-icon>
         </button>
         <a matLine routerLink="/encounters">Encounters</a>
-     </mat-list-item>
+      </mat-list-item>
+      <div mat-subheader>Tools</div>
+      <mat-list-item aria-label="Monsters page">
+        <button mat-icon-button>
+          <mat-icon>pets</mat-icon>
+        </button>
+        <a matLine routerLink="/monsters">Monster Search</a>
+      </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
 

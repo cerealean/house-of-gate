@@ -1,9 +1,8 @@
 import { crToExpMap } from "src/app/data/cr-to-exp";
-import { metaInfo } from "../../data/meta-info";
 import { EncounterRequest } from "./encounter-request";
 import { Monster } from "../../monsters/models/monster";
 
-export class GeneratedEncounter {
+export class Encounter {
   public readonly dateGenerated = new Date();
 
   constructor(

@@ -14,15 +14,9 @@ export class MonsterDataService {
     private monsterFilter: MonsterFilterService,
     private db: DatabaseService
   ) {
-    this.allMonsters = new Promise(resolve => {
-      this.db.getDatabaseContext().table('monsters')
-        .toArray()
-        .then(monsterData => {
-          const monsters = monsterData.map(m => Object.assign(new Monster(), m));
-
-          resolve(monsters);
-        })
-    });
+    this.allMonsters = this.db.getDatabaseContext()
+      .monsters
+      .toArray();
   }
 
   public async getAllMonsters(filters?: MonsterFilters): Promise<Monster[]> {
