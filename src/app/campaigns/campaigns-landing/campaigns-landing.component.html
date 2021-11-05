@@ -4,13 +4,13 @@
   </button>
   <ng-container *ngIf="campaigns.length > 0; else noCampaigns">
     <mat-list>
-      <mat-list-item *ngFor="let message of campaigns">
-        <!-- <img matListAvatar src="..." alt="...">
-        <h3 matLine> {{message.from}} </h3>
+      <mat-list-item *ngFor="let campaign of campaigns">
+        <img matListAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)" alt="Campaign Image" />
+        <h3 matLine> {{campaign.name}}</h3>
         <p matLine>
-          <span> {{message.subject}} </span>
-          <span class="demo-2"> -- {{message.content}} </span>
-        </p> -->
+          <span>Created: {{campaign.date|date:'short'}} </span>&nbsp;|&nbsp;
+          <span>Encounters: {{campaign.encounters.length}}</span>
+        </p>
       </mat-list-item>
     </mat-list>
   </ng-container>

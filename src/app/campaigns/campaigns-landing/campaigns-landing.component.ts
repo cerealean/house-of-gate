@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { DomSanitizer } from '@angular/platform-browser';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
 import { Campaign } from '../models/campaign';
 import { NewCampaignComponent } from '../new-campaign/new-campaign.component';
@@ -9,15 +10,20 @@ import { NewCampaignComponent } from '../new-campaign/new-campaign.component';
   templateUrl: './campaigns-landing.component.html',
   styleUrls: ['./campaigns-landing.component.scss']
 })
-export class CampaignsLandingComponent implements OnInit {
+export class CampaignsLandingComponent implements OnInit, AfterViewInit {
   public campaigns: Campaign[] = [];
 
   constructor(
     private readonly dialog: MatDialog,
-    private readonly campaignData: CampaignDataService
+    private readonly campaignData: CampaignDataService,
+    private readonly sanitizer: DomSanitizer
   ) { }
 
   async ngOnInit(): Promise<void> {
+    const rawr = 'stuff';
+  }
+
+  async ngAfterViewInit() {
     this.campaigns = await this.campaignData.getAllCampaigns();
   }
 
@@ -30,6 +36,10 @@ export class CampaignsLandingComponent implements OnInit {
         this.campaigns.push(newCampaign);
       }
     });
+  }
+
+  sanitize(url: string) {
+    return this.sanitizer.bypassSecurityTrustUrl(url);
   }
 
 }
