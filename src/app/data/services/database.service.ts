@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import Dexie from 'dexie';
 import { Campaign } from '../../campaigns/models/campaign';
 import { Encounter } from '../../encounters/models/encounter';
-import { Monster, MonsterInfo } from '../../monsters/models/monster';
+import { Monster } from '../../monsters/models/monster';
 
 @Injectable({
   providedIn: 'root'
@@ -62,9 +62,8 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
             resolve(data);
           };
           worker.postMessage('');
-        }).then(monsterInfo => {
-          const monsters = (monsterInfo as MonsterInfo[]).map(mi => new Monster(mi));
-          const bulkAdd = this.monsters.bulkAdd(monsters);
+        }).then(monsters => {
+          const bulkAdd = this.monsters.bulkAdd(monsters as Monster[]);
           return bulkAdd;
         });
       }
@@ -80,6 +79,14 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
 
     this.version(2).stores({
       campaigns: "++id,&name,date,encounterIds"
+    });
+
+    this.version(5).stores({
+      monsters: null,
+    });
+
+    this.version(6).stores({
+      monsters: "id,name,cr,size,type,alignment,*environment,legendary,unique,*sources",
     });
   }
 }

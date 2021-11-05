@@ -1,10 +1,11 @@
 /// <reference lib="webworker" />
-import { communityData } from './community';
-import { officialData } from './official';
-import { thirdPartyData } from './third-party';
+
+import { community } from "./community-rewritten";
+import { official } from "./official-rewritten";
+import { thirdParty } from "./third-party-rewritten";
 
 addEventListener('message', ({ data }) => {
-  const monsterInfos = officialData.concat(thirdPartyData).concat(communityData);
+  const monsterInfos = official.concat(thirdParty).concat(community);
 
   postMessage(monsterInfos);
 });
