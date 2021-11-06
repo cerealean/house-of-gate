@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
@@ -10,7 +10,7 @@ import { NewCampaignComponent } from '../new-campaign/new-campaign.component';
   templateUrl: './campaigns-landing.component.html',
   styleUrls: ['./campaigns-landing.component.scss']
 })
-export class CampaignsLandingComponent implements OnInit {
+export class CampaignsLandingComponent implements OnInit, OnDestroy {
   public campaigns: Campaign[] = [];
 
   constructor(
@@ -21,6 +21,10 @@ export class CampaignsLandingComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.campaigns = await this.campaignData.getAllCampaigns();
+  }
+
+  ngOnDestroy(): void {
+    this.campaigns.forEach(c => c.unsetImageSource());
   }
 
   openNewCampaignDialog(): void {

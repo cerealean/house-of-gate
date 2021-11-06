@@ -6,20 +6,20 @@
         <button mat-icon-button>
           <mat-icon>festival</mat-icon>
         </button>
-        <a matLine routerLink="/campaigns">My Campaigns</a>
+        <a matLine routerLink="/campaigns" (click)="sidenav.close()">My Campaigns</a>
       </mat-list-item>
+      <div mat-subheader>Tools</div>
       <mat-list-item aria-label="Encounters page">
         <button mat-icon-button>
           <mat-icon>sports_kabaddi</mat-icon>
         </button>
-        <a matLine routerLink="/encounters">Encounters</a>
+        <a matLine routerLink="/encounters" (click)="sidenav.close()">Encounters</a>
       </mat-list-item>
-      <div mat-subheader>Tools</div>
       <mat-list-item aria-label="Monsters page">
         <button mat-icon-button>
           <mat-icon>pets</mat-icon>
         </button>
-        <a matLine routerLink="/monsters">Monster Search</a>
+        <a matLine routerLink="/monsters" (click)="sidenav.close()">Monster Search</a>
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
