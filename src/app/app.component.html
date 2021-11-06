@@ -2,11 +2,17 @@
   <mat-sidenav #sidenav mode="over">
     <mat-nav-list aria-label="Left side navigation">
       <div mat-subheader>My Stuff</div>
-      <mat-list-item aria-label="Campaigns page">
+      <mat-list-item aria-label="My Campaigns page">
         <button mat-icon-button>
           <mat-icon>festival</mat-icon>
         </button>
         <a matLine routerLink="/campaigns" (click)="sidenav.close()">My Campaigns</a>
+      </mat-list-item>
+      <mat-list-item aria-label="My Encounters page">
+        <button mat-icon-button>
+          <mat-icon>sports_mma</mat-icon>
+        </button>
+        <a matLine routerLink="/encounters/my-encounters" (click)="sidenav.close()">My Encounters</a>
       </mat-list-item>
       <div mat-subheader>Tools</div>
       <mat-list-item aria-label="Encounters page">

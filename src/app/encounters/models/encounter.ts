@@ -21,4 +21,5 @@ export class Encounter {
   public date = new Date();
   public campaignId?: number;
   public monsterIds: string[] = [];
+  public monsters: Monster[] = [];
 }

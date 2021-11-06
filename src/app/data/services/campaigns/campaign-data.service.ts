@@ -24,6 +24,15 @@ export class CampaignDataService {
         .filter(e => e.campaignId !== undefined && e.campaignId === c.id)
         .toArray();
 
+      await Promise.all(
+        c.encounters.map(async e => {
+          e.monsters = await this.db.monsters
+            .where("id")
+            .anyOf(e.monsterIds)
+            .toArray();
+        })
+      );
+
       return c;
     }));
 

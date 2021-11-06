@@ -16,7 +16,8 @@ export class SaveEncounterDialogComponent implements OnInit {
   public encounterName?: string;
 
   get isValid(): boolean {
-    return !!this.selectedCampaign;
+    return !!this.selectedCampaign
+      && !!this.encounterName?.length;
   }
 
   constructor(

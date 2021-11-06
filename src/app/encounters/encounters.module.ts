@@ -15,11 +15,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { SaveEncounterDialogComponent } from './components/save-encounter-dialog/save-encounter-dialog.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MyEncountersComponent } from './components/my-encounters/my-encounters.component';
 
 @NgModule({
   declarations: [
     EncounterGeneratorComponent,
-    SaveEncounterDialogComponent
+    SaveEncounterDialogComponent,
+    MyEncountersComponent
   ],
   imports: [
     CommonModule,
