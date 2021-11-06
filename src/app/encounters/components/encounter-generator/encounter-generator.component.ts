@@ -1,13 +1,10 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
 import { EncounterDifficulties } from 'src/app/monsters/enums/encounter-difficulties';
 import { EncounterRequest } from 'src/app/encounters/models/encounter-request';
-import { Monster } from 'src/app/monsters/models/monster';
 import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 import { EncounterGenerator2Service } from 'src/app/monsters/services/encounter-generator-2.service';
 import { StorageService, StorageKeys } from 'src/app/services/storage.service';
-import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
 import { GeneratedEncounter } from '../../models/encounter';
 import { MatDialog } from '@angular/material/dialog';
 import { SaveEncounterDialogComponent } from '../save-encounter-dialog/save-encounter-dialog.component';
@@ -36,7 +33,6 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
 
   constructor(
     private readonly encounterGenerator2: EncounterGenerator2Service,
-    private matBottomSheet: MatBottomSheet,
     private storage: StorageService,
     public dialog: MatDialog
   ) { }
