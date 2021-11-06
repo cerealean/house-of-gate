@@ -26,16 +26,20 @@ export class MyEncountersComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     this.campaigns = await this.campaignData.getAllCampaigns();
 
-    if(this.givenCampaignId) {
+    if (this.givenCampaignId) {
       this.selectedCampaign = this.campaigns.find(c => c.id === this.givenCampaignId);
+      if (this.selectedCampaign) {
+        this.onCampaignChange(this.selectedCampaign);
+      }
     }
-    else if(this.campaigns.length === 1) {
+    else if (this.campaigns.length === 1) {
       this.selectedCampaign = this.campaigns[0];
+      this.onCampaignChange(this.selectedCampaign);
     }
   }
 
   onCampaignChange(campaign: Campaign) {
-    if(campaign.encounters.length === 1) {
+    if (campaign.encounters.length === 1) {
       this.selectedEncounter = campaign.encounters[0];
     } else {
       this.selectedEncounter = undefined;
