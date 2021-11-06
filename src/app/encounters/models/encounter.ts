@@ -2,7 +2,7 @@ import { crToExpMap } from "src/app/data/static/cr-to-exp";
 import { EncounterRequest } from "./encounter-request";
 import { Monster } from "../../monsters/models/monster";
 
-export class Encounter {
+export class GeneratedEncounter {
   public readonly dateGenerated = new Date();
 
   constructor(
@@ -13,4 +13,12 @@ export class Encounter {
   public getTotalApproximateExp(): number {
     return this.monsters.map(m => crToExpMap.get(m.cr)!).reduce((a, b) => a + b, 0);
   }
+}
+
+export class Encounter {
+  public id?: number;
+  public name? = '';
+  public date = new Date();
+  public campaignId?: number;
+  public monsterIds: string[] = [];
 }

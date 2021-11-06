@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { DataModule } from '../data/data.module';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DataModule } from '../data/data.module';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    DataModule
+    DataModule,
+    MatDividerModule
   ]
 })
 export class CampaignsModule { }

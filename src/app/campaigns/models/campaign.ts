@@ -1,10 +1,10 @@
 import { Encounter } from "src/app/encounters/models/encounter";
 
 export class Campaign {
+  id?: number;
   name = '';
   date = new Date();
   image: Blob | undefined;
-  encounterIds: number[] = [];
   encounters: Encounter[] = [];
 
   private imageUrl: string | undefined;

@@ -1,4 +1,4 @@
-<mat-card style="min-height: 100vh;">
+<mat-card style="min-height: 80vh;">
   <button mat-raised-button color="accent" (click)="openNewCampaignDialog()" aria-label="Add New Campaign">
     Add New Campaign
   </button>
@@ -6,9 +6,12 @@
     <mat-list>
       <mat-list-item *ngFor="let campaign of campaigns">
         <img matListAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)" alt="Campaign Image" />
+        <mat-icon *ngIf="!campaign.getImageSource()" mat-list-icon>hide_image</mat-icon>
         <h3 matLine> {{campaign.name}}</h3>
         <p matLine>
-          <span>Created: {{campaign.date|date:'short'}} </span>&nbsp;|&nbsp;
+          <span>Created: {{campaign.date|date:'shortDate'}}</span>
+        </p>
+        <p matLine>
           <span>Encounters: {{campaign.encounters.length}}</span>
         </p>
       </mat-list-item>

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
@@ -10,7 +10,7 @@ import { NewCampaignComponent } from '../new-campaign/new-campaign.component';
   templateUrl: './campaigns-landing.component.html',
   styleUrls: ['./campaigns-landing.component.scss']
 })
-export class CampaignsLandingComponent implements OnInit, AfterViewInit {
+export class CampaignsLandingComponent implements OnInit {
   public campaigns: Campaign[] = [];
 
   constructor(
@@ -20,15 +20,13 @@ export class CampaignsLandingComponent implements OnInit, AfterViewInit {
   ) { }
 
   async ngOnInit(): Promise<void> {
-    const rawr = 'stuff';
-  }
-
-  async ngAfterViewInit() {
     this.campaigns = await this.campaignData.getAllCampaigns();
   }
 
   openNewCampaignDialog(): void {
-    const dialog = this.dialog.open(NewCampaignComponent);
+    const dialog = this.dialog.open(NewCampaignComponent, {
+      autoFocus: true
+    });
 
     dialog.afterClosed().subscribe(async (newCampaign: Campaign | undefined) => {
       if (newCampaign) {

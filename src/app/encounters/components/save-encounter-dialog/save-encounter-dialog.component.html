@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Save Encounter</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Save To Which Campaign?</mat-label>
+    <mat-select [required]="true" placeholder="Select Campaign" [(value)]="selectedCampaign">
+      <mat-option *ngFor="let campaign of campaigns" [value]="campaign">
+        {{ campaign.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Encounter Name (optional)</mat-label>
+    <input matInput type="text" maxlength="100" [(ngModel)]="encounterName" />
+  </mat-form-field>
+  <mat-divider></mat-divider>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-raised-button [disabled]="!isValid" color="accent" (click)="saveToCampaign()">Save</button>
+</div>

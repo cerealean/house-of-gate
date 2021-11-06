@@ -14,11 +14,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { SaveEncounterDialogComponent } from './components/save-encounter-dialog/save-encounter-dialog.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
     PreviousEncountersComponent,
-    EncounterGeneratorComponent
+    EncounterGeneratorComponent,
+    SaveEncounterDialogComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +38,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatIconModule,
     MatCardModule,
     FlexLayoutModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatSelectModule,
+    MatDialogModule
   ]
 })
 export class EncountersModule { }

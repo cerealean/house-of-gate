@@ -10,6 +10,12 @@ import { Campaign } from '../models/campaign';
 export class NewCampaignComponent {
   public readonly campaign = new Campaign();
 
+  get isValid(): boolean {
+    return !!this.campaign.name
+      && this.campaign.name.length > 0
+      && this.campaign.name.length <= 100;
+  }
+
   constructor(
     public dialogRef: MatDialogRef<NewCampaignComponent>
   ) { }

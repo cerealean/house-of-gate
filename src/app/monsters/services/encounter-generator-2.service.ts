@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { crToExpMap } from 'src/app/data/static/cr-to-exp';
 import { StorageKeys, StorageService } from 'src/app/services/storage.service';
-import { Encounter } from '../../encounters/models/encounter';
+import { GeneratedEncounter } from '../../encounters/models/encounter';
 import { EncounterRequest } from '../../encounters/models/encounter-request';
 import { Monster } from '../models/monster';
 import { MonsterFilters } from '../models/monster-filters';
@@ -14,7 +14,7 @@ import { MonsterFilterService } from './monster-filter.service';
 })
 export class EncounterGenerator2Service {
   private readonly numberOfEncountersToGenerate = 10;
-  private _previousEncounters: Encounter[] = [];
+  private _previousEncounters: GeneratedEncounter[] = [];
   private readonly _previousEncounters$ = new BehaviorSubject(this._previousEncounters);
   private readonly maxPreviousEncountersLength = 20;
 
@@ -25,14 +25,14 @@ export class EncounterGenerator2Service {
     private readonly filter: MonsterFilterService,
     private storage: StorageService
   ) {
-    const previouslyGeneratedEncounters = storage.getData<Encounter[]>(StorageKeys.PreviouslyGeneratedEncounters);
+    const previouslyGeneratedEncounters = storage.getData<GeneratedEncounter[]>(StorageKeys.PreviouslyGeneratedEncounters);
     if (previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
       this._previousEncounters = previouslyGeneratedEncounters;
       this._previousEncounters$.next(this._previousEncounters);
     }
   }
 
-  public async generateEncounter(request: EncounterRequest, filter: MonsterFilters): Promise<Encounter> {
+  public async generateEncounter(request: EncounterRequest, filter: MonsterFilters): Promise<GeneratedEncounter> {
     const crToExp = crToExpMap.get(request.level)!;
     const numberOfPlayersModifier = request.numberOfPlayers * .25;
     const targetExp = crToExp * numberOfPlayersModifier * request.difficultyAmount;
@@ -68,7 +68,7 @@ export class EncounterGenerator2Service {
     while (monstersForEncounter.length < request.maxNumberOfEnemies
       && shuffledMonsters.length > 0);
 
-    return new Encounter(monstersForEncounter, request);
+    return new GeneratedEncounter(monstersForEncounter, request);
   }
 
   private shuffle<T>(array: T[]): T[] {
@@ -85,7 +85,7 @@ export class EncounterGenerator2Service {
     return newArray;
   }
 
-  private findEncounterClosestToTargetExp(possibleEncounters: Encounter[], expTarget: number) {
+  private findEncounterClosestToTargetExp(possibleEncounters: GeneratedEncounter[], expTarget: number) {
     return possibleEncounters.reduce((currentClosestEncounter, nextEncounterToTest) => {
       const currentExp = currentClosestEncounter.getTotalApproximateExp();
       const beingTestedExp = nextEncounterToTest.getTotalApproximateExp();
@@ -101,7 +101,7 @@ export class EncounterGenerator2Service {
     });
   }
 
-  private updateEncounters(newEncounter: Encounter) {
+  private updateEncounters(newEncounter: GeneratedEncounter) {
     const newLength = this._previousEncounters.unshift(newEncounter);
     this._previousEncounters = this._previousEncounters.slice(0, Math.min(newLength, this.maxPreviousEncountersLength));
     this._previousEncounters$.next(this._previousEncounters);

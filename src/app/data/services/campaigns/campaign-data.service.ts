@@ -20,11 +20,9 @@ export class CampaignDataService {
   public async getAllCampaigns(): Promise<Campaign[]> {
     const campaigns = await this.db.campaigns.toArray();
     const campaignsHydrated = await Promise.all(campaigns.map(async c => {
-      const encounters = await Promise.all(
-        c.encounterIds.map(async id => await this.db.encounters.get(id))
-      );
-      const encountersWithoutUndefined = encounters.filter(x => !!x) as Encounter[];
-      c.encounters = encountersWithoutUndefined;
+      c.encounters = await this.db.encounters
+        .filter(e => e.campaignId !== undefined && e.campaignId === c.id)
+        .toArray();
 
       return c;
     }));

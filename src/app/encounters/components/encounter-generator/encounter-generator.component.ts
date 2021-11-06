@@ -8,6 +8,9 @@ import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 import { EncounterGenerator2Service } from 'src/app/monsters/services/encounter-generator-2.service';
 import { StorageService, StorageKeys } from 'src/app/services/storage.service';
 import { PreviousEncountersComponent } from '../previous-encounters/previous-encounters.component';
+import { GeneratedEncounter } from '../../models/encounter';
+import { MatDialog } from '@angular/material/dialog';
+import { SaveEncounterDialogComponent } from '../save-encounter-dialog/save-encounter-dialog.component';
 
 @Component({
   selector: 'app-encounter-generator',
@@ -26,14 +29,16 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     numberOfPlayers: 4,
     difficultyAmount: 0.75
   };
-  monsters: Monster[] = [];
+  // monsters: Monster[] = [];
+  generatedEncounter?: GeneratedEncounter;
 
   private subscriptions = new Subscription();
 
   constructor(
     private readonly encounterGenerator2: EncounterGenerator2Service,
     private matBottomSheet: MatBottomSheet,
-    private storage: StorageService
+    private storage: StorageService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -52,23 +57,12 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
     this.subscriptions.unsubscribe();
   }
 
-  openPreviousEncounters(): void {
-    const ref = this.matBottomSheet.open(PreviousEncountersComponent);
-    const selected$ = ref.instance.previousEncounterSelected.subscribe(encounter => {
-      this.encounterRequest = { ...encounter.request };
-      this.monsters = encounter.monsters.slice();
-      ref.dismiss();
-    });
-    const afterDismissed$ = ref.afterDismissed().subscribe(() => {
-      selected$?.unsubscribe();
-    });
-    this.subscriptions.add(selected$);
-    this.subscriptions.add(afterDismissed$);
+  async generateRandomEncounter(): Promise<void> {
+    this.generatedEncounter = await this.encounterGenerator2.generateEncounter(this.encounterRequest, this.filters);
   }
 
-  async generateRandomEncounter(): Promise<void> {
-    const encounter = await this.encounterGenerator2.generateEncounter(this.encounterRequest, this.filters);
-    this.monsters = encounter.monsters.slice();
+  saveEncounter() {
+    this.dialog.open(SaveEncounterDialogComponent, { data: this.generatedEncounter });
   }
 
   updateMonsterFilters(filters: MonsterFilters): void {

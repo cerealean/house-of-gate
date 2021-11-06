@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import Dexie from 'dexie';
 import { Campaign } from '../../campaigns/models/campaign';
-import { Encounter } from '../../encounters/models/encounter';
+import { Encounter, GeneratedEncounter } from '../../encounters/models/encounter';
 import { Monster } from '../../monsters/models/monster';
 
 @Injectable({
@@ -43,7 +43,7 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
 
   private setupTableMappings() {
     this.table('monsters').mapToClass(Monster);
-    this.table('encounters').mapToClass(Encounter);
+    this.table('encounters').mapToClass(GeneratedEncounter);
     this.table('campaigns').mapToClass(Campaign);
   }
 
@@ -87,6 +87,14 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
 
     this.version(6).stores({
       monsters: "id,name,cr,size,type,alignment,*environment,legendary,unique,*sources",
+    });
+
+    this.version(7).stores({
+      campaigns: "++id,&name,date"
+    });
+
+    this.version(8).stores({
+      encounters: "++id,name,date,campaignId,*monsterIds"
     });
   }
 }
