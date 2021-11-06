@@ -1,32 +1,40 @@
-<mat-card>
-  <div fxLayout="column">
-    <div fxLayout="row">
-      <mat-form-field fxFlex>
-        <mat-label>Campaign</mat-label>
-        <mat-select [(value)]="selectedCampaign">
-          <mat-option *ngFor="let campaign of campaigns" [value]="campaign">
-            {{ campaign.name }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
+<div style="min-height: 80vh;">
+  <mat-card>
+    <div fxLayout="column">
+      <div fxLayout="row">
+        <mat-form-field fxFlex>
+          <mat-label>Campaign</mat-label>
+          <mat-select [(value)]="selectedCampaign" (valueChange)="onCampaignChange(selectedCampaign!)">
+            <mat-option *ngFor="let campaign of campaigns" [value]="campaign">
+              {{ campaign.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" *ngIf="!!selectedCampaign?.encounters">
+        <mat-form-field fxFlex>
+          <mat-label>Encounter</mat-label>
+          <mat-select [(value)]="selectedEncounter">
+            <mat-option *ngFor="let encounter of selectedCampaign?.encounters" [value]="encounter">
+              {{ encounter.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" *ngIf="!!selectedEncounter">
+        <p>
+          <mat-icon>info</mat-icon> Generated on {{ selectedEncounter?.date | date:'short' }}
+        </p>
+      </div>
+      <div fxLayout="row" *ngIf="!!selectedCampaign && selectedCampaign.encounters.length === 0">
+        <p>
+          <mat-icon>warning</mat-icon> There are no saved encounters for "{{selectedCampaign.name}}". Go <a routerLink="/encounters">here</a> to
+          generate some! (And be sure to click save if you want to keep it!)
+        </p>
+      </div>
     </div>
-    <div fxLayout="row" *ngIf="!!selectedCampaign?.encounters">
-      <mat-form-field fxFlex >
-        <mat-label>Encounter</mat-label>
-        <mat-select [(value)]="selectedEncounter">
-          <mat-option *ngFor="let encounter of selectedCampaign?.encounters" [value]="encounter">
-            {{ encounter.name }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-    <div fxLayout="row" *ngIf="!!selectedEncounter">
-      <span>
-        Generated on {{ selectedEncounter?.date | date:'short' }}
-      </span>
-    </div>
-  </div>
-</mat-card>
-<ng-container *ngIf="selectedEncounter">
-  <app-monster-tables [monsters]="selectedEncounter.monsters"></app-monster-tables>
-</ng-container>
+  </mat-card>
+  <ng-container *ngIf="selectedEncounter">
+    <app-monster-tables [monsters]="selectedEncounter.monsters"></app-monster-tables>
+  </ng-container>
+</div>

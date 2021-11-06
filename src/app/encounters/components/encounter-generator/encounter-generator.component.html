@@ -60,7 +60,7 @@
       New
     </button>
     &nbsp;
-    <button mat-raised-button color="accent" (click)="saveEncounter()">
+    <button mat-raised-button color="accent" [disabled]="!(generatedEncounter.monsters.length > 0)" (click)="saveEncounter()">
       <mat-icon>save</mat-icon>
       Save
     </button>

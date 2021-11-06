@@ -4,7 +4,7 @@
   </button>
   <ng-container *ngIf="campaigns.length > 0; else noCampaigns">
     <mat-list>
-      <mat-list-item *ngFor="let campaign of campaigns" class="campaign-list-item">
+      <mat-list-item *ngFor="let campaign of campaigns" class="campaign-list-item" routerLink="/encounters/my-encounters" [state]="{ campaignId: campaign.id }">
         <img matListAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)" alt="Campaign Image" />
         <mat-icon matListAvatar *ngIf="!campaign.getImageSource()" mat-list-icon>hide_image</mat-icon>
         <h3 matLine>{{campaign.name}}</h3>
