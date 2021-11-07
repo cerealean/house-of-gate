@@ -6,14 +6,18 @@
       [(ngModel)]="campaign.name">
   </mat-form-field>
   <div>
-    <label for="campaign-image">Campaign Image (Optional)</label><br /><br />
+    <label *ngIf="!isEditingCurrentCampaign" for="campaign-image">Campaign Image (Optional)</label>
+    <label *ngIf="isEditingCurrentCampaign" for="campaign-image">Update Image (Optional)</label>
+    <br /><br />
     <input id="campaign-image" aria-label="Optionally upload an image representing your campaign"
       title="Have an image to represent your campaign?" type="file" accept="image/*" (change)="onFileChange($event)">
   </div>
-  <br/>
+  <br />
   <mat-divider></mat-divider>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="dialogRef.close()">Cancel</button>
-  <button mat-raised-button [disabled]="!isValid" color="accent" [mat-dialog-close]="campaign" cdkFocusInitial>Create</button>
+  <button mat-raised-button [disabled]="!isValid" color="accent" [mat-dialog-close]="campaign">
+    {{!isEditingCurrentCampaign ? 'Create' : 'Edit'}}
+  </button>
 </div>

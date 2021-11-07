@@ -1,5 +1,6 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatMenuTrigger } from '@angular/material/menu';
 import { DomSanitizer } from '@angular/platform-browser';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
 import { Campaign } from '../models/campaign';
@@ -12,6 +13,9 @@ import { NewCampaignComponent } from '../new-campaign/new-campaign.component';
 })
 export class CampaignsLandingComponent implements OnInit, OnDestroy {
   public campaigns: Campaign[] = [];
+  public selectedCampaign?: Campaign;
+
+  @ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger;
 
   constructor(
     private readonly dialog: MatDialog,
@@ -27,17 +31,26 @@ export class CampaignsLandingComponent implements OnInit, OnDestroy {
     this.campaigns.forEach(c => c.unsetImageSource());
   }
 
-  openNewCampaignDialog(): void {
+  openNewCampaignDialog(campaign?: Campaign): void {
     const dialog = this.dialog.open(NewCampaignComponent, {
-      autoFocus: true
+      autoFocus: false,
+      data: campaign
     });
 
     dialog.afterClosed().subscribe(async (newCampaign: Campaign | undefined) => {
       if (newCampaign) {
-        await this.campaignData.addCampaign(newCampaign);
-        this.campaigns.push(newCampaign);
+        if(campaign) {
+          await this.campaignData.editCampaign(newCampaign);
+        } else {
+          await this.campaignData.addCampaign(newCampaign);
+          this.campaigns.push(newCampaign);
+        }
       }
     });
+  }
+
+  openCampaignEditMenu(campaign: Campaign): void {
+    this.trigger.openMenu();
   }
 
   sanitize(url: string) {

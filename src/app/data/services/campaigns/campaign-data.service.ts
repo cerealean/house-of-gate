@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Campaign } from 'src/app/campaigns/models/campaign';
-import { Encounter } from 'src/app/encounters/models/encounter';
 import { DatabaseService, IHouseOfGateDao } from '../database.service';
 
 @Injectable({
@@ -15,6 +14,14 @@ export class CampaignDataService {
 
   public async addCampaign(campaign: Campaign): Promise<void> {
     await this.db.campaigns.add(campaign);
+  }
+
+  public async editCampaign(campaign: Campaign): Promise<void> {
+    await this.db.campaigns.put(campaign);
+  }
+
+  public async getCampaignByName(name: string): Promise<Campaign | undefined> {
+    return this.db.campaigns.where('name').equalsIgnoreCase(name).first();
   }
 
   public async getAllCampaigns(): Promise<Campaign[]> {

@@ -96,5 +96,9 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     this.version(8).stores({
       encounters: "++id,name,date,campaignId,*monsterIds"
     });
+
+    this.version(9).stores({
+      campaigns: "++id,name,date"
+    });
   }
 }
