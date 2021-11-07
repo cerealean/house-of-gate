@@ -1,17 +1,25 @@
 <h1 mat-dialog-title>Save Encounter</h1>
 <div mat-dialog-content>
-  <mat-form-field appearance="fill">
-    <mat-label>Save To Which Campaign?</mat-label>
-    <mat-select [required]="true" placeholder="Select Campaign" [(value)]="selectedCampaign">
-      <mat-option *ngFor="let campaign of campaigns" [value]="campaign">
-        {{ campaign.name }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field><br />
-  <mat-form-field appearance="fill">
-    <mat-label>Encounter Name</mat-label>
-    <input required matInput type="text" maxlength="100" [(ngModel)]="encounterName" />
-  </mat-form-field>
+  <ng-container *ngIf="!!campaigns.length">
+    <mat-form-field appearance="fill">
+      <mat-label>Save To Which Campaign?</mat-label>
+      <mat-select [required]="true" placeholder="Select Campaign" [(value)]="selectedCampaign">
+        <mat-option *ngFor="let campaign of campaigns" [value]="campaign">
+          {{ campaign.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field><br />
+    <mat-form-field appearance="fill">
+      <mat-label>Encounter Name</mat-label>
+      <input required matInput type="text" maxlength="100" [(ngModel)]="encounterName" />
+    </mat-form-field>
+  </ng-container>
+  <ng-container *ngIf="!campaigns.length">
+    <p>
+      You haven't created any campaigns yet! Go <a (click)="dialogRef.close()" routerLink="/campaigns">here</a> and
+      generate a campaign to start saving encounters.
+    </p>
+  </ng-container>
   <mat-divider></mat-divider>
 </div>
 <div mat-dialog-actions>

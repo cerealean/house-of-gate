@@ -21,6 +21,12 @@
           </mat-select>
         </mat-form-field>
       </div>
+      <div fxLayout="row" *ngIf="!campaigns.length">
+        <p>
+          <mat-icon>warning</mat-icon> You haven't created any campaigns yet! Go <a routerLink="/campaigns">here</a> and
+          generate a campaign to get started.
+        </p>
+      </div>
       <div fxLayout="row" *ngIf="!!selectedEncounter">
         <p>
           <mat-icon>info</mat-icon> Generated on {{ selectedEncounter?.date | date:'short' }}
