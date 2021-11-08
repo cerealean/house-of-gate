@@ -14,11 +14,13 @@ import { FormsModule } from '@angular/forms';
 import { DataModule } from '../data/data.module';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
+import { DeleteCampaignDialogComponent } from './delete-campaign-dialog/delete-campaign-dialog.component';
 
 @NgModule({
   declarations: [
     CampaignsLandingComponent,
-    NewCampaignComponent
+    NewCampaignComponent,
+    DeleteCampaignDialogComponent
   ],
   imports: [
     CommonModule,

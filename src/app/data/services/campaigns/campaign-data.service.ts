@@ -20,6 +20,10 @@ export class CampaignDataService {
     await this.db.campaigns.put(campaign);
   }
 
+  public async deleteCampaign(campaignId: number): Promise<void> {
+    await this.db.campaigns.delete(campaignId);
+  }
+
   public async getCampaignByName(name: string): Promise<Campaign | undefined> {
     return this.db.campaigns.where('name').equalsIgnoreCase(name).first();
   }

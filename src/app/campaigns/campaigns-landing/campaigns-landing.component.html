@@ -32,4 +32,5 @@
 <mat-menu #menu="matMenu">
   <button mat-menu-item (click)="openNewCampaignDialog(selectedCampaign)">Edit</button>
   <button mat-menu-item routerLink="/encounters/my-encounters" [state]="{ campaignId: selectedCampaign?.id }">View Encounters</button>
+  <button mat-menu-item color="warn" (click)="openDeleteCampaignDialog(selectedCampaign!)">Delete</button>
 </mat-menu>
