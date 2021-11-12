@@ -19,13 +19,17 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-poli
 import { MatCardModule } from '@angular/material/card';
 import { TermsComponent } from './components/terms/terms.component';
 import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     PrivacyPolicyComponent,
-    TermsComponent
+    TermsComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserAnimationsModule,

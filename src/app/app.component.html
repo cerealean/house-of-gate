@@ -1,4 +1,4 @@
-<mat-sidenav-container fxFlex="column" style="max-width: 100vw;">
+<mat-sidenav-container fxFlex="column" style="max-width: 100vw; height: 100vh;">
   <mat-sidenav #sidenav mode="over">
     <mat-nav-list aria-label="Left side navigation">
       <div mat-subheader>My Stuff</div>
@@ -33,11 +33,6 @@
   <mat-sidenav-content>
     <app-toolbar (toggleMenuClicked)="sidenav.toggle()" style="width: 100%;"></app-toolbar>
     <router-outlet></router-outlet>
-    <footer class="mat-body-2">
-      &copy; {{ currentYear }} Michael Crawford
-      <p>
-        <a routerLink="/privacy">Privacy Policy</a> | <a routerLink="/terms">Terms and Conditions</a>
-      </p>
-    </footer>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
