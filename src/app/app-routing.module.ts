@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChangelogComponent } from './components/changelog/changelog.component';
 import { HomeComponent } from './components/home/home.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './components/terms/terms.component';
@@ -30,13 +31,17 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'changelog',
+    component: ChangelogComponent
+  },
+  {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'monsters'
+    redirectTo: 'home'
   },
   {
     path: '**',
-    redirectTo: 'monsters'
+    redirectTo: 'home'
   }
 ];
 

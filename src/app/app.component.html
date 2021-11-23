@@ -27,6 +27,13 @@
         </button>
         <a matLine routerLink="/monsters" (click)="sidenav.close()">Monster Search</a>
       </mat-list-item>
+      <div mat-subheader>Other</div>
+      <mat-list-item aria-label="Monsters page">
+        <button mat-icon-button>
+          <mat-icon>history_edu</mat-icon>
+        </button>
+        <a matLine routerLink="/changelog" (click)="sidenav.close()">Changelog</a>
+      </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
 

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Component } from '@angular/core';
 import { ServiceWorkerService } from './services/service-worker.service';
 
 @Component({
@@ -7,17 +6,8 @@ import { ServiceWorkerService } from './services/service-worker.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   constructor(
-    private readonly _serviceWorker: ServiceWorkerService,
-    private readonly _snackBar: MatSnackBar
+    private readonly _serviceWorker: ServiceWorkerService
   ) { }
-
-  ngOnInit(): void {
-    setTimeout(() => {
-      this._snackBar
-        .open('Notice: This app is in beta and under development; features may change at any time. Thank you for using the app! Please direct any feedback to admin@houseofgate.com.', 'Dismiss');
-    }, 1000);
-  }
-
 }

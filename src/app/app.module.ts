@@ -21,6 +21,7 @@ import { TermsComponent } from './components/terms/terms.component';
 import { MatListModule } from '@angular/material/list';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { ChangelogComponent } from './components/changelog/changelog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HomeComponent } from './components/home/home.component';
     PrivacyPolicyComponent,
     TermsComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ChangelogComponent
   ],
   imports: [
     BrowserAnimationsModule,
