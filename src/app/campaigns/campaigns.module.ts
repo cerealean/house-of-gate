@@ -13,11 +13,14 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { DataModule } from '../data/data.module';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+import { DeleteCampaignDialogComponent } from './delete-campaign-dialog/delete-campaign-dialog.component';
 
 @NgModule({
   declarations: [
     CampaignsLandingComponent,
-    NewCampaignComponent
+    NewCampaignComponent,
+    DeleteCampaignDialogComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +34,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatFormFieldModule,
     MatInputModule,
     DataModule,
-    MatDividerModule
+    MatDividerModule,
+    MatMenuModule
   ]
 })
 export class CampaignsModule { }

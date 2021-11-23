@@ -29,6 +29,9 @@ export class SaveEncounterDialogComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.campaigns = await this.campaignData.getAllCampaigns();
+    if(this.campaigns.length === 1) {
+      this.selectedCampaign = this.campaigns[0];
+    }
   }
 
   async saveToCampaign(): Promise<void> {

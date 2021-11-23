@@ -37,6 +37,9 @@ export class Monster implements IMonster {
   public sources!: string[];
 
   public hasEnvironmentIntersection(environments: string[]) {
+    if(this.environment.length === 0) {
+      return true;
+    }
     return environments.some(givenEnv => this.environment.includes(givenEnv));
   }
 

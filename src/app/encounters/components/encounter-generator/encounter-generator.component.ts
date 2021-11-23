@@ -58,7 +58,7 @@ export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   }
 
   saveEncounter() {
-    this.dialog.open(SaveEncounterDialogComponent, { data: this.generatedEncounter });
+    this.dialog.open(SaveEncounterDialogComponent, { data: this.generatedEncounter, autoFocus: false });
   }
 
   updateMonsterFilters(filters: MonsterFilters): void {

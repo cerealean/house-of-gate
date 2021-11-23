@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Campaign } from 'src/app/campaigns/models/campaign';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
+import { EncounterDataService } from 'src/app/data/services/encounters/encounter-data.service';
 import { Encounter } from '../../models/encounter';
+import { DeleteEncounterDialogComponent } from './delete-encounter-dialog/delete-encounter-dialog.component';
 
 @Component({
   selector: 'app-my-encounters',
@@ -14,10 +17,20 @@ export class MyEncountersComponent implements OnInit {
   public selectedCampaign?: Campaign;
   public selectedEncounter?: Encounter;
 
+  get hasCampaigns(): boolean {
+    return !!this.campaigns && this.campaigns.length > 0;
+  }
+
+  get hasEncounters(): boolean {
+    return !!this.selectedCampaign && this.selectedCampaign.encounters.length > 0;
+  }
+
   private givenCampaignId?: number;
 
   constructor(
     private readonly campaignData: CampaignDataService,
+    private readonly encounterData: EncounterDataService,
+    private readonly dialog: MatDialog,
     router: Router
   ) {
     this.givenCampaignId = router.getCurrentNavigation()?.extras?.state?.campaignId;
@@ -44,6 +57,21 @@ export class MyEncountersComponent implements OnInit {
     } else {
       this.selectedEncounter = undefined;
     }
+  }
+
+  deleteEncounter(encounter: Encounter) {
+    const dialog = this.dialog.open(DeleteEncounterDialogComponent, {
+      data: encounter
+    });
+    dialog.afterClosed().subscribe(async (shouldDelete: boolean) => {
+      if(shouldDelete !== true) {
+        return;
+      }
+      await this.encounterData.deleteEncounter(encounter.id!);
+      this.selectedCampaign!.encounters = this.selectedCampaign!.encounters
+        .filter(e => e != encounter);
+      this.selectedEncounter = undefined;
+    });
   }
 
 }

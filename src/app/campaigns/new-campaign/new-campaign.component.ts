@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../models/campaign';
 
 @Component({
@@ -8,7 +8,8 @@ import { Campaign } from '../models/campaign';
   styleUrls: ['./new-campaign.component.scss']
 })
 export class NewCampaignComponent {
-  public readonly campaign = new Campaign();
+  public readonly isEditingCurrentCampaign: boolean;
+  public readonly campaign: Campaign;
 
   get isValid(): boolean {
     return !!this.campaign.name
@@ -17,13 +18,19 @@ export class NewCampaignComponent {
   }
 
   constructor(
-    public dialogRef: MatDialogRef<NewCampaignComponent>
-  ) { }
+    public dialogRef: MatDialogRef<NewCampaignComponent>,
+    @Inject(MAT_DIALOG_DATA) public readonly providedCampaign: Campaign
+  ) {
+    this.isEditingCurrentCampaign = !!providedCampaign;
+    this.campaign = this.isEditingCurrentCampaign
+      ? providedCampaign
+      : new Campaign();
+  }
 
   public onFileChange($event: Event): void {
     const element = $event.target as HTMLInputElement;
     const file = element.files?.item(0);
-    if(file) {
+    if (file) {
       this.campaign.image = file;
     }
   }

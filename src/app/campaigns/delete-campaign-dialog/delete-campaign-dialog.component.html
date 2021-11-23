@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Delete Campaign?</h1>
+<div mat-dialog-content>
+  <p>
+    Are you sure you want to delete {{providedCampaign.name}}?
+  </p>
+  <ng-container *ngIf="providedCampaign.encounters.length > 0">
+    <p>
+      This will also delete the following encounters:
+    </p>
+    <ul>
+      <li *ngFor="let encounter of providedCampaign.encounters">
+        {{ encounter.name }}
+      </li>
+    </ul>
+  </ng-container>
+  <br />
+  <mat-divider></mat-divider>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close(false)">Cancel</button>
+  <button mat-raised-button color="warn" [mat-dialog-close]="true">
+    Delete
+  </button>
+</div>

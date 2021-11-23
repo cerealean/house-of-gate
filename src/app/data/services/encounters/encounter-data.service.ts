@@ -12,6 +12,16 @@ export class EncounterDataService {
   ) { }
 
   public async saveEncounter(encounter: Encounter): Promise<void> {
-    this.db.getDatabaseContext().encounters.add(encounter);
+    await this.db.getDatabaseContext().encounters.add(encounter);
   }
+
+  public async deleteEncounter(encounterId: number): Promise<void> {
+    await this.db.getDatabaseContext().encounters.delete(encounterId);
+  }
+
+  public async deleteEncounters(encounterIds: number[]): Promise<void> {
+    await this.db.getDatabaseContext().encounters.bulkDelete(encounterIds);
+  }
+
+
 }

@@ -11,7 +11,7 @@
           </mat-select>
         </mat-form-field>
       </div>
-      <div fxLayout="row" *ngIf="!!selectedCampaign?.encounters">
+      <div fxLayout="row" *ngIf="!!selectedCampaign?.encounters?.length">
         <mat-form-field fxFlex>
           <mat-label>Encounter</mat-label>
           <mat-select [(value)]="selectedEncounter">
@@ -21,20 +21,42 @@
           </mat-select>
         </mat-form-field>
       </div>
-      <div fxLayout="row" *ngIf="!!selectedEncounter">
-        <p>
-          <mat-icon>info</mat-icon> Generated on {{ selectedEncounter?.date | date:'short' }}
-        </p>
-      </div>
-      <div fxLayout="row" *ngIf="!!selectedCampaign && selectedCampaign.encounters.length === 0">
-        <p>
-          <mat-icon>warning</mat-icon> There are no saved encounters for "{{selectedCampaign.name}}". Go <a routerLink="/encounters">here</a> to
-          generate some! (And be sure to click save if you want to keep it!)
-        </p>
-      </div>
+      <ng-container *ngIf="hasCampaigns; else hasNoCampaignsMessage;">
+        <ng-container *ngIf="!!selectedCampaign">
+          <ng-container *ngIf="!!selectedEncounter; else hasNoEncountersMessage;">
+            <div fxLayout="row">
+              <p>
+                <mat-icon>info</mat-icon> Generated on {{ selectedEncounter?.date | date:'short' }}
+              </p>
+            </div>
+            <div fxLayout="row">
+              <button (click)="deleteEncounter(selectedEncounter)" mat-raised-button color="warn">Delete</button>
+            </div>
+          </ng-container>
+        </ng-container>
+      </ng-container>
     </div>
   </mat-card>
   <ng-container *ngIf="selectedEncounter">
     <app-monster-tables [monsters]="selectedEncounter.monsters"></app-monster-tables>
   </ng-container>
 </div>
+
+<ng-template #hasNoCampaignsMessage>
+  <div fxLayout="row" *ngIf="!hasCampaigns">
+    <p>
+      <mat-icon>warning</mat-icon> You haven't created any campaigns yet! Go <a routerLink="/campaigns">here</a> and
+      generate a campaign to get started.
+    </p>
+  </div>
+</ng-template>
+
+<ng-template #hasNoEncountersMessage>
+  <div fxLayout="row" *ngIf="!hasEncounters">
+    <p>
+      <mat-icon>warning</mat-icon> There are no saved encounters for "{{selectedCampaign?.name}}". Go <a
+        routerLink="/encounters">here</a> to
+      generate some! (And be sure to click save if you want to keep it!)
+    </p>
+  </div>
+</ng-template>
