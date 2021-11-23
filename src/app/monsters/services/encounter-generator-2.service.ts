@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { crToExpMap } from 'src/app/data/static/cr-to-exp';
-import { StorageKeys, StorageService } from 'src/app/services/storage.service';
+import { StorageKeys } from 'src/app/services/storage.service';
 import { GeneratedEncounter } from '../../encounters/models/encounter';
 import { EncounterRequest } from '../../encounters/models/encounter-request';
 import { Monster } from '../models/monster';
@@ -14,28 +14,15 @@ import { MonsterFilterService } from './monster-filter.service';
 })
 export class EncounterGenerator2Service {
   private readonly numberOfEncountersToGenerate = 10;
-  private _previousEncounters: GeneratedEncounter[] = [];
-  private readonly _previousEncounters$ = new BehaviorSubject(this._previousEncounters);
-  private readonly maxPreviousEncountersLength = 20;
-
-  public readonly previousEncounters$ = this._previousEncounters$.asObservable();
 
   constructor(
     private readonly monsterData: MonsterDataService,
-    private readonly filter: MonsterFilterService,
-    private storage: StorageService
+    private readonly filter: MonsterFilterService
   ) {
-    const previouslyGeneratedEncounters = storage.getData<GeneratedEncounter[]>(StorageKeys.PreviouslyGeneratedEncounters);
-    if (previouslyGeneratedEncounters && previouslyGeneratedEncounters.length) {
-      this._previousEncounters = previouslyGeneratedEncounters;
-      this._previousEncounters$.next(this._previousEncounters);
-    }
   }
 
   public async generateEncounter(request: EncounterRequest, filter: MonsterFilters): Promise<GeneratedEncounter> {
-    const crToExp = crToExpMap.get(request.level)!;
-    const numberOfPlayersModifier = request.numberOfPlayers * .25;
-    const targetExp = crToExp * numberOfPlayersModifier * request.difficultyAmount;
+    const targetExp = this.calculateTargetExp(request);
     const allMonsters = await this.monsterData.getAllMonsters();
     const filteredMonsters = this.filter.filterMonsters(allMonsters, filter);
     if (filteredMonsters.length === 0) {
@@ -46,9 +33,15 @@ export class EncounterGenerator2Service {
       encounters.push(this.createEncounter(filteredMonsters, targetExp, request));
     }
     const newEncounter = this.findEncounterClosestToTargetExp(encounters, targetExp);
-    this.updateEncounters(newEncounter);
 
     return newEncounter;
+  }
+
+  private calculateTargetExp(request: EncounterRequest) {
+    const crToExp = crToExpMap.get(request.level)!;
+    const numberOfPlayersModifier = request.numberOfPlayers * .25;
+    const targetExp = crToExp * numberOfPlayersModifier * request.difficultyAmount;
+    return targetExp;
   }
 
   private createEncounter(allMonsters: Monster[], targetExp: number, request: EncounterRequest) {
@@ -99,12 +92,5 @@ export class EncounterGenerator2Service {
         return bDiff < aDiff ? nextEncounterToTest : currentClosestEncounter;
       }
     });
-  }
-
-  private updateEncounters(newEncounter: GeneratedEncounter) {
-    const newLength = this._previousEncounters.unshift(newEncounter);
-    this._previousEncounters = this._previousEncounters.slice(0, Math.min(newLength, this.maxPreviousEncountersLength));
-    this._previousEncounters$.next(this._previousEncounters);
-    this.storage.setData(StorageKeys.PreviouslyGeneratedEncounters, this._previousEncounters);
   }
 }

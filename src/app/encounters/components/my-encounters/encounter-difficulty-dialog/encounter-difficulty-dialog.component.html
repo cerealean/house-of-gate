@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Encounter</h1>
+<div mat-dialog-content>
+
+  <div fxLayout="column">
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutGap.lt-md="3px">
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Number of Players</mat-label>
+        <input matInput required inputmode="numeric" autocomplete="off" autocapitalize="off" [min]="1" [step]="1"
+          [max]="99" appNumberOnly type="number" #numOfPlayers (input)="updateFilters()" [(ngModel)]="numberOfPlayers">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard" fxFlex>
+        <mat-label>Player Level</mat-label>
+        <input matInput required inputmode="numeric" autocomplete="off" autocapitalize="off" [min]="1" [step]="1"
+          [max]="20" type="number" #playerLevel appNumberOnly (input)="updateFilters()" [(ngModel)]="playerLevel">
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row wrap">
+
+    </div>
+  </div>
+
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close(false)">Cancel</button>
+  <button mat-raised-button color="warn" (click)="dialogRef.close(true)">Delete</button>
+</div>
