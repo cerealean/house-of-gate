@@ -1,6 +1,6 @@
 type DetailedArmorClass = {
   ac: number;
-  notes?: string;
+  notes?: string | null;
 }[];
 
 export interface IMonster {
