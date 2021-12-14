@@ -67,7 +67,7 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
           const worker: Worker = resolved.worker;
           const bulkAdd = this.monsters.bulkAdd(monsters);
           worker.terminate();
-          
+
           return bulkAdd;
         });
       }
@@ -105,15 +105,9 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
       campaigns: "++id,name,date"
     });
 
-    this.version(10).upgrade(async trans => {
+    this.version(10).upgrade(trans => {
       const monstersTable = trans.table('monsters');
-      const monstersOfTheOrient: Monster[] = await monstersTable.filter((monster: Monster) => {
-        return !monster.sources.some(source => source.toLowerCase().includes('orient'))
-      }).toArray();
-      if(monstersOfTheOrient?.length > 0) {
-        const ids = monstersOfTheOrient.map(m => m.id);
-        await monstersTable.bulkDelete(ids);
-      }
+      monstersTable.clear();
     });
   }
 }
