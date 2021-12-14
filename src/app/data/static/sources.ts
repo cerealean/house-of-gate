@@ -10,7 +10,6 @@ export const sources = [
   'Monster Module',
   'Monster-A-Day',
   'Monsters of the Guild',
-  'Monsters of the Orient',
   "Mordenkainen's Tome of Foes",
   "Nerzugal's Dungeon Master Toolkit 2",
   "Nerzugal's Extended Bestiary",
