@@ -10,7 +10,8 @@ const schools = [
 ] as const;
 type SchoolsOfMagic = typeof schools[number];
 
-export interface Spell {
+export interface ISpell {
+  id:         string;
   name:       string;
   level:      number;
   ritual:     boolean;
@@ -22,4 +23,19 @@ export interface Spell {
   classes:    string[];
   sources:    string[];
   text:       string;
+}
+
+export class Spell implements ISpell {
+  id!: string;
+  name!: string;
+  level!: number;
+  ritual!: boolean;
+  school?: SchoolsOfMagic;
+  time!: string;
+  range!: string;
+  components!: string;
+  duration!: string;
+  classes!: string[];
+  sources!: string[];
+  text!: string;
 }

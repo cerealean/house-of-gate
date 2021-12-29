@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import Dexie from 'dexie';
+import { ISpell, Spell } from 'src/app/spells/models/spell';
 import { Campaign } from '../../campaigns/models/campaign';
 import { Encounter, GeneratedEncounter } from '../../encounters/models/encounter';
 import { Monster } from '../../monsters/models/monster';
@@ -21,15 +22,17 @@ export class DatabaseService {
 }
 
 export interface IHouseOfGateDao {
-  readonly monsters: Dexie.Table<Monster, number>;
+  readonly monsters: Dexie.Table<Monster, string>;
   readonly campaigns: Dexie.Table<Campaign, number>;
   readonly encounters: Dexie.Table<Encounter, number>;
+  readonly spells: Dexie.Table<Spell, string>;
 }
 
 class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
-  public readonly monsters!: Dexie.Table<Monster, number>;
+  public readonly monsters!: Dexie.Table<Monster, string>;
   public readonly campaigns!: Dexie.Table<Campaign, number>;
   public readonly encounters!: Dexie.Table<Encounter, number>;
+  public readonly spells!: Dexie.Table<Spell, string>;
 
   constructor() {
     super('house-of-gate');
@@ -45,15 +48,18 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     this.table('monsters').mapToClass(Monster);
     this.table('encounters').mapToClass(GeneratedEncounter);
     this.table('campaigns').mapToClass(Campaign);
+    this.table('spells').mapToClass(Spell);
   }
 
   private prepopulateIfNecessary() {
     this.on('ready', async () => {
       const numberOfMonsters = await this.monsters.count();
       if (numberOfMonsters > 0) {
+        console.log('no prepop');
         return;
       } else {
-        const monsterWorker = new Promise(resolve => {
+        console.log('prepop');
+        const monstersWorker$ = new Promise(resolve => {
           const monstersWorker = new Worker(
             new URL('../db-monsters-loader.worker', import.meta.url),
             { type: 'module' }
@@ -63,18 +69,36 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
           };
           monstersWorker.postMessage('');
         });
+        const spellsWorker$ = new Promise(resolve => {
+          const spellsWorker = new Worker(
+            new URL('../db-spells-loader.worker', import.meta.url),
+            { type: 'module' }
+          );
+          spellsWorker.onmessage = async ({ data }) => {
+            resolve({ data, worker: spellsWorker });
+          };
+          spellsWorker.postMessage('');
+        });
 
         const allWorkers = Promise.all([
-          monsterWorker
+          monstersWorker$ as Promise<{ data: Monster[], worker: Worker }>,
+          spellsWorker$ as Promise<{ data: ISpell[], worker: Worker }>
         ]);
 
-        return allWorkers.then((resolved: any) => {
-          const monsters: Monster[] = resolved.data;
-          const worker: Worker = resolved.worker;
-          const bulkAdd = this.monsters.bulkAdd(monsters);
-          worker.terminate();
+        return allWorkers.then((resolved) => {
+          const monsters: Monster[] = resolved[0].data;
+          const monsterWorker: Worker = resolved[0].worker;
 
-          return bulkAdd;
+          const spells: ISpell[] = resolved[1].data;
+          const spellWorker: Worker = resolved[1].worker;
+
+          const bulkAddMonsters$ = this.monsters.bulkAdd(monsters);
+          const bulkAddSpells$ = this.spells.bulkAdd(spells);
+
+          monsterWorker.terminate();
+          spellWorker.terminate();
+
+          return Promise.all([bulkAddMonsters$, bulkAddSpells$]);
         });
       }
     });
@@ -114,6 +138,10 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     this.version(10).upgrade(trans => {
       const monstersTable = trans.table('monsters');
       monstersTable.clear();
+    });
+
+    this.version(11).stores({
+      spells: "id,name,level"
     });
   }
 }

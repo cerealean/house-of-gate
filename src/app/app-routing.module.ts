@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: () => import('./campaigns/campaigns.module').then(e => e.CampaignsModule)
   },
   {
+    path: 'spells',
+    loadChildren: () => import('./spells/spells.module').then(e => e.SpellsModule)
+  },
+  {
     path: 'privacy',
     component: PrivacyPolicyComponent
   },

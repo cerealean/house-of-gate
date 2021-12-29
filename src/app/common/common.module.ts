@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NumberOnlyDirective } from './directives/number-only.directive';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { SpellTablesComponent } from './components/spell-tables/spell-tables.component';
 
 
 
@@ -22,6 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
   declarations: [
     FilterBarComponent,
     MonsterTablesComponent,
+    SpellTablesComponent,
     NumberOnlyDirective
   ],
   imports: [
@@ -42,6 +44,7 @@ import { MatIconModule } from '@angular/material/icon';
   exports: [
     FilterBarComponent,
     MonsterTablesComponent,
+    SpellTablesComponent,
     NumberOnlyDirective
   ]
 })

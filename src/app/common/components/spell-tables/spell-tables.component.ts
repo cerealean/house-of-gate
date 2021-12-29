@@ -3,19 +3,19 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ColumnInfo } from 'src/app/common/models/column-info';
-import { Monster } from 'src/app/monsters/models/monster';
-import { StorageKeys, StorageService } from 'src/app/services/storage.service';
+// import { StorageKeys, StorageService } from 'src/app/services/storage.service';
+import { Spell } from 'src/app/spells/models/spell';
 
 @Component({
-  selector: 'app-monster-tables',
-  templateUrl: './monster-tables.component.html',
-  styleUrls: ['./monster-tables.component.scss']
+  selector: 'app-spell-tables',
+  templateUrl: './spell-tables.component.html',
+  styleUrls: ['./spell-tables.component.scss']
 })
-export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges {
-  @Input() public monsters: Monster[] = [];
+export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
+  @Input() public spells: Spell[] = [];
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = this.generateInitialColumns();
-  public dataSource!: MatTableDataSource<Monster>;
+  public dataSource!: MatTableDataSource<Spell>;
 
   @Output() isLoading = new EventEmitter<boolean>();
 
@@ -23,22 +23,22 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(
-    private storage: StorageService
+    // private storage: StorageService
   ) { }
 
   ngOnInit(): void {
-    const storedColumns = this.storage.getData<ColumnInfo[]>(StorageKeys.ColumnInfo);
-    if(storedColumns) {
-      this.columns = storedColumns;
-    }
+    // const storedColumns = this.storage.getData<ColumnInfo[]>(StorageKeys.ColumnInfo);
+    // if(storedColumns) {
+    //   this.columns = storedColumns;
+    // }
     this.refreshDisplayedColumns();
     this.isLoading.emit(true);
-    this.dataSource = new MatTableDataSource<Monster>([]);
+    this.dataSource = new MatTableDataSource<Spell>([]);
   }
 
   ngOnChanges(simpleChanges: SimpleChanges): void {
-    if (simpleChanges.monsters && this.dataSource) {
-      this.dataSource.data = simpleChanges.monsters.currentValue;
+    if (simpleChanges.spells && this.dataSource) {
+      this.dataSource.data = simpleChanges.spells.currentValue;
     }
   }
 
@@ -46,11 +46,15 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
     this.paginator.pageSize = 10;
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
-    this.dataSource.data = this.monsters;
+    this.dataSource.data = this.spells;
   }
 
   isArray(data: any): boolean {
     return Array.isArray(data);
+  }
+
+  isBoolean(data: any): boolean {
+    return data === true || data === false;
   }
 
   finishLoading(): void {
@@ -61,7 +65,7 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
   toggleColumn(column: ColumnInfo): void {
     column.isShown = !column.isShown;
     this.refreshDisplayedColumns();
-    this.storage.setData(StorageKeys.ColumnInfo, this.columns.slice());
+    // this.storage.setData(StorageKeys.ColumnInfo, this.columns.slice());
   }
 
   stopPropagation($event: Event) {
@@ -82,54 +86,49 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
         position: 1
       },
       {
-        name: 'cr',
+        name: 'level',
         isShown: true,
         position: 2
       },
       {
-        name: 'hp',
+        name: 'time',
         isShown: false,
         position: 3
       },
       {
-        name: 'ac',
-        isShown: false,
+        name: 'duration',
+        isShown: true,
         position: 4
       },
       {
-        name: 'size',
-        isShown: false,
+        name: 'range',
+        isShown: true,
         position: 5
       },
       {
-        name: 'type',
-        isShown: true,
+        name: 'components',
+        isShown: false,
         position: 6
       },
       {
-        name: 'environment',
-        isShown: false,
+        name: 'school',
+        isShown: true,
         position: 7
       },
       {
-        name: 'alignment',
+        name: 'classes',
         isShown: false,
         position: 8
       },
       {
-        name: 'legendary',
+        name: 'ritual',
         isShown: false,
         position: 9
       },
       {
-        name: 'unique',
+        name: 'sources',
         isShown: false,
         position: 10
-      },
-      {
-        name: 'sources',
-        isShown: true,
-        position: 11
       },
     ];
   }

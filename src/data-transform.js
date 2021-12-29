@@ -1,5 +1,6 @@
 // import fs from 'fs';
 const fs = require('fs');
+const uuid = require('uuid');
 
 const complete = fs.readFileSync('src/app/data/static/complete.json');
 const parsed = JSON.parse(complete);
@@ -34,6 +35,7 @@ const newMap = spells.map(s => {
     console.log(name + ' does not have a source');
   }
   return {
+    id: uuid.v4(),
     name: name,
     level: +s.level,
     ritual: s.ritual === 'YES',

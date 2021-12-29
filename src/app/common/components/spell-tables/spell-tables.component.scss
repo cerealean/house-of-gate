@@ -1,0 +1,63 @@
+ul, li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.sources-column li, .sources-column ul {
+  list-style: none;
+}
+
+.mat-cell {
+  text-overflow: ellipsis;
+}
+
+.mat-column-classes {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 55px;
+}
+
+.mat-column-duration {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 45px;
+}
+
+.mat-column-components {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 55px;
+}
+
+.mat-column-range {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mat-column-ritual {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mat-column-range {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.mat-column-time {
+  padding-left: 8px;
+  padding-right: 8px;
+  max-width: 38px;
+}
+
+.mat-column-school {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 48px;
+}
+
+.mat-column-sources {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 70px;
+}
