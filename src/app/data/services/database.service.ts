@@ -53,16 +53,22 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
       if (numberOfMonsters > 0) {
         return;
       } else {
-        return new Promise(resolve => {
-          const worker = new Worker(
-            new URL('../db-initializer.worker', import.meta.url),
+        const monsterWorker = new Promise(resolve => {
+          const monstersWorker = new Worker(
+            new URL('../db-monsters-loader.worker', import.meta.url),
             { type: 'module' }
           );
-          worker.onmessage = async ({ data }) => {
-            resolve({ data, worker });
+          monstersWorker.onmessage = async ({ data }) => {
+            resolve({ data, worker: monstersWorker });
           };
-          worker.postMessage('');
-        }).then((resolved: any) => {
+          monstersWorker.postMessage('');
+        });
+
+        const allWorkers = Promise.all([
+          monsterWorker
+        ]);
+
+        return allWorkers.then((resolved: any) => {
           const monsters: Monster[] = resolved.data;
           const worker: Worker = resolved.worker;
           const bulkAdd = this.monsters.bulkAdd(monsters);
