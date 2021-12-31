@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
+import { MonsterFilterBarComponent } from './components/monster-filter-bar/monster-filter-bar.component';
 import { MonsterTablesComponent } from './components/monster-tables/monster-tables.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -21,7 +21,7 @@ import { SpellTablesComponent } from './components/spell-tables/spell-tables.com
 
 @NgModule({
   declarations: [
-    FilterBarComponent,
+    MonsterFilterBarComponent,
     MonsterTablesComponent,
     SpellTablesComponent,
     NumberOnlyDirective
@@ -42,7 +42,7 @@ import { SpellTablesComponent } from './components/spell-tables/spell-tables.com
     FlexLayoutModule
   ],
   exports: [
-    FilterBarComponent,
+    MonsterFilterBarComponent,
     MonsterTablesComponent,
     SpellTablesComponent,
     NumberOnlyDirective

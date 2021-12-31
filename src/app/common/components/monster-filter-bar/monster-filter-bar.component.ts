@@ -7,10 +7,10 @@ import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 
 @Component({
   selector: 'app-filter-bar',
-  templateUrl: './filter-bar.component.html',
-  styleUrls: ['./filter-bar.component.scss']
+  templateUrl: './monster-filter-bar.component.html',
+  styleUrls: ['./monster-filter-bar.component.scss']
 })
-export class FilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
+export class MonsterFilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly monsterTypes = monsterTypes;
   public readonly environments = environments;
   public readonly sources = sources;
