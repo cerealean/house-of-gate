@@ -3,11 +3,14 @@ import { Injectable } from '@angular/core';
 import Dexie from 'dexie';
 import { ISpell, Spell } from 'src/app/spells/models/spell';
 import { Campaign } from '../../campaigns/models/campaign';
-import { Encounter, GeneratedEncounter } from '../../encounters/models/encounter';
+import {
+  Encounter,
+  GeneratedEncounter,
+} from '../../encounters/models/encounter';
 import { Monster } from '../../monsters/models/monster';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DatabaseService {
   private readonly db: IHouseOfGateDao;
@@ -40,8 +43,6 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     this.setupStructures();
     this.setupTableMappings();
     this.prepopulateIfNecessary();
-
-    this.open();
   }
 
   private setupTableMappings() {
@@ -55,64 +56,62 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     this.on('ready', async () => {
       const numberOfMonsters = await this.monsters.count();
       if (numberOfMonsters > 0) {
-        console.log('no prepop');
         return;
-      } else {
-        console.log('prepop');
-        const monstersWorker$ = new Promise(resolve => {
-          const monstersWorker = new Worker(
-            new URL('../db-monsters-loader.worker', import.meta.url),
-            { type: 'module' }
-          );
-          monstersWorker.onmessage = async ({ data }) => {
-            resolve({ data, worker: monstersWorker });
-          };
-          monstersWorker.postMessage('');
-        });
-        const spellsWorker$ = new Promise(resolve => {
-          const spellsWorker = new Worker(
-            new URL('../db-spells-loader.worker', import.meta.url),
-            { type: 'module' }
-          );
-          spellsWorker.onmessage = async ({ data }) => {
-            resolve({ data, worker: spellsWorker });
-          };
-          spellsWorker.postMessage('');
-        });
-
-        const allWorkers = Promise.all([
-          monstersWorker$ as Promise<{ data: Monster[], worker: Worker }>,
-          spellsWorker$ as Promise<{ data: ISpell[], worker: Worker }>
-        ]);
-
-        return allWorkers.then((resolved) => {
-          const monsters: Monster[] = resolved[0].data;
-          const monsterWorker: Worker = resolved[0].worker;
-
-          const spells: ISpell[] = resolved[1].data;
-          const spellWorker: Worker = resolved[1].worker;
-
-          const bulkAddMonsters$ = this.monsters.bulkAdd(monsters);
-          const bulkAddSpells$ = this.spells.bulkAdd(spells);
-
-          monsterWorker.terminate();
-          spellWorker.terminate();
-
-          return Promise.all([bulkAddMonsters$, bulkAddSpells$]);
-        });
       }
+
+      const monstersWorker$ = new Promise((resolve) => {
+        const monstersWorker = new Worker(
+          new URL('../db-monsters-loader.worker', import.meta.url),
+          { type: 'module' }
+        );
+        monstersWorker.onmessage = async ({ data }) => {
+          resolve({ data, worker: monstersWorker });
+        };
+        monstersWorker.postMessage('');
+      });
+      const spellsWorker$ = new Promise((resolve) => {
+        const spellsWorker = new Worker(
+          new URL('../db-spells-loader.worker', import.meta.url),
+          { type: 'module' }
+        );
+        spellsWorker.onmessage = async ({ data }) => {
+          resolve({ data, worker: spellsWorker });
+        };
+        spellsWorker.postMessage('');
+      });
+
+      return Promise.all([
+        monstersWorker$ as Promise<{ data: Monster[]; worker: Worker }>,
+        spellsWorker$ as Promise<{ data: ISpell[]; worker: Worker }>,
+      ]).then(async (resolved) => {
+        const monsters: Monster[] = resolved[0].data;
+        const monsterWorker: Worker = resolved[0].worker;
+
+        const spells: ISpell[] = resolved[1].data;
+        const spellWorker: Worker = resolved[1].worker;
+
+        await this.monsters.clear();
+        await this.spells.clear();
+
+        await this.monsters.bulkAdd(monsters);
+        await this.spells.bulkAdd(spells);
+
+        monsterWorker.terminate();
+        spellWorker.terminate();
+      });
     });
   }
 
   private setupStructures() {
     this.version(1).stores({
-      monsters: "++id,name,cr,size,type,alignment,*environment,legendary,unique,*sources",
-      campaigns: "++id,&name,date",
-      encounters: "++id,&name,date,campaignId,*monsterIds"
+      monsters:
+        '++id,name,cr,size,type,alignment,*environment,legendary,unique,*sources',
+      campaigns: '++id,&name,date',
+      encounters: '++id,&name,date,campaignId,*monsterIds',
     });
 
     this.version(2).stores({
-      campaigns: "++id,&name,date,encounterIds"
+      campaigns: '++id,&name,date,encounterIds',
     });
 
     this.version(5).stores({
@@ -120,28 +119,29 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     });
 
     this.version(6).stores({
-      monsters: "id,name,cr,size,type,alignment,*environment,legendary,unique,*sources",
+      monsters:
+        'id,name,cr,size,type,alignment,*environment,legendary,unique,*sources',
     });
 
     this.version(7).stores({
-      campaigns: "++id,&name,date"
+      campaigns: '++id,&name,date',
     });
 
     this.version(8).stores({
-      encounters: "++id,name,date,campaignId,*monsterIds"
+      encounters: '++id,name,date,campaignId,*monsterIds',
     });
 
     this.version(9).stores({
-      campaigns: "++id,name,date"
+      campaigns: '++id,name,date',
     });
 
-    this.version(10).upgrade(trans => {
+    this.version(10).upgrade((trans) => {
       const monstersTable = trans.table('monsters');
       monstersTable.clear();
     });
 
     this.version(11).stores({
-      spells: "id,name,level"
+      spells: 'id,name,level',
     });
   }
 }

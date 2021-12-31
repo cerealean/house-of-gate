@@ -1,9 +1,11 @@
+import { IStoredMetadata } from "src/app/data/models/i-stored-metadata";
+
 type DetailedArmorClass = {
   ac: number;
   notes?: string | null;
 }[];
 
-export interface IMonster {
+export interface IMonster extends IStoredMetadata {
   id: string;
   name: string;
   cr: number;

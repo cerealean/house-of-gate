@@ -14,4 +14,8 @@ export class MonsterDataService {
   public async getAllMonsters(): Promise<Monster[]> {
     return this.db.getDatabaseContext().monsters.toArray();
   }
+
+  public async clearMonsters(): Promise<void> {
+    return this.db.getDatabaseContext().monsters.clear();
+  }
 }

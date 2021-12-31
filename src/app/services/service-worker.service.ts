@@ -4,6 +4,8 @@ import { SwUpdate } from '@angular/service-worker';
 import { interval, concat, Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
+import { MonsterDataService } from '../data/services/monsters/monster-data.service';
+import { SpellDataService } from '../data/services/spells/spell-data.service';
 import { StorageKeys, StorageService } from './storage.service';
 
 @Injectable({
@@ -15,49 +17,57 @@ export class ServiceWorkerService {
 
   constructor(
     private readonly storage: StorageService,
-    updates: SwUpdate,
-    appRef: ApplicationRef,
-    snackBar: MatSnackBar
+    private readonly monsterData: MonsterDataService,
+    private readonly spellData: SpellDataService,
+    private readonly updates: SwUpdate,
+    private readonly appRef: ApplicationRef,
+    private readonly snackBar: MatSnackBar
   ) {
     if (environment.production) {
-      this.setupUpdateActions(updates, snackBar);
-      this.setupUpdateChecks(appRef, updates);
+      this.setupUpdateActions();
+      this.setupUpdateChecks();
       (window as any).sunshine = {
         checkForUpdate: () => updates.checkForUpdate()
       };
     }
   }
 
-  private setupUpdateActions(updates: SwUpdate, _snackBar: MatSnackBar) {
-    const available$ = updates.available.subscribe(() => {
-      const snackbar = _snackBar.open('An update is available! Reload the app?', 'Update!');
+  private setupUpdateActions() {
+    const available$ = this.updates.available.subscribe(() => {
+      const snackbar = this.snackBar.open('An update is available! Reload the app?', 'Update!');
       const action$ = snackbar.onAction().subscribe(() => {
-        updates.activateUpdate().then(() => {
+        this.updates.activateUpdate().then(() => {
+          snackbar.instance.data.action = 'Updating...';
           this.storage.clearData(StorageKeys.EncounterFilters);
           this.storage.clearData(StorageKeys.MonsterFilters);
           this.storage.clearData(StorageKeys.EncounterGeneratorMonsterFilters);
           this.storage.clearData(StorageKeys.PreviouslyGeneratedEncounters);
-          document.location.reload();
+          Promise.all([
+            this.monsterData.clearMonsters(),
+            this.spellData.clearSpells()
+          ]).finally(() => {
+            document.location.reload();
+          });
         });
       });
       this.subscriptions.add(action$);
     });
 
-    const activated$ = updates.activated.subscribe(() => {
+    const activated$ = this.updates.activated.subscribe(() => {
       const updatedMessage = `The app has finished updating. Search filters have been reset to ensure data compatibility.`;
-      _snackBar.open(updatedMessage, 'Ok');
+      this.snackBar.open(updatedMessage, 'Ok');
     });
 
     this.subscriptions.add(available$);
     this.subscriptions.add(activated$);
   }
 
-  private setupUpdateChecks(appRef: ApplicationRef, updates: SwUpdate) {
-    const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
+  private setupUpdateChecks() {
+    const appIsStable$ = this.appRef.isStable.pipe(first(isStable => isStable === true));
     const everyThreeHours$ = interval(1.08e+7);
     const everyThreeHoursOnceAppIsStable$ = concat(appIsStable$, everyThreeHours$);
-    const checkForUpdates$ = everyThreeHoursOnceAppIsStable$.subscribe(() => updates.checkForUpdate());
+    const checkForUpdates$ = everyThreeHoursOnceAppIsStable$.subscribe(() => this.updates.checkForUpdate());
     this.subscriptions.add(checkForUpdates$);
-    appIsStable$.subscribe(() => updates.checkForUpdate());
+    appIsStable$.subscribe(() => this.updates.checkForUpdate());
   }
 }

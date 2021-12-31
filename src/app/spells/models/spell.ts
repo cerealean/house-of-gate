@@ -1,3 +1,5 @@
+import { IStoredMetadata } from "src/app/data/models/i-stored-metadata";
+
 const schools = [
   'abjuration',
   'transmutation',
@@ -10,7 +12,7 @@ const schools = [
 ] as const;
 type SchoolsOfMagic = typeof schools[number];
 
-export interface ISpell {
+export interface ISpell extends IStoredMetadata {
   id:         string;
   name:       string;
   level:      number;
