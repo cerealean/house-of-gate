@@ -30,4 +30,6 @@ export const sources = [
   'Tome of Beasts',
   'Ultimate Bestiary Revenge of the Horde',
   "Volo's Guide to Monsters"
-];
+] as const;
+
+export type Sources = typeof sources[number];

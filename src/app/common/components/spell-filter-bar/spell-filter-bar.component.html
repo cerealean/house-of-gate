@@ -1,0 +1,64 @@
+<mat-card>
+  <div fxLayout="column">
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+      <mat-form-field appearance="standard" fxFlex="40%">
+        <mat-label>Filter By Name</mat-label>
+        <input matInput type="text" (input)="filter()" spellcheck="false" autocomplete="off" autocapitalize="off" [(ngModel)]="filters.name">
+      </mat-form-field>
+      <div fxFlex fxLayout="row wrap" fxLayout.lt-md="column">
+        <mat-form-field appearance="standard" fxFlex>
+          <mat-label>Type</mat-label>
+          <mat-select (selectionChange)="filter()" class="capitalize" [(ngModel)]="filters.type" multiple>
+            <mat-option *ngFor="let type of monsterTypes" [value]="type" class="capitalize">{{type}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="standard" fxFlex>
+          <mat-label>Environment</mat-label>
+          <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.environment" multiple>
+            <mat-option *ngFor="let environment of environments" [value]="environment" class="capitalize">{{environment}}</mat-option>
+            <mat-option value="None">No Environment</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="standard" fxFlex>
+          <mat-label>Sources</mat-label>
+          <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.sources" multiple>
+            <mat-option *ngFor="let source of sources" [value]="source" class="capitalize">{{source}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+      <mat-form-field appearance="standard" fxFlex="19%">
+        <mat-label>Min CR</mat-label>
+        <mat-select (selectionChange)="filter()" [(ngModel)]="filters.minCr">
+          <mat-option [value]="0">0</mat-option>
+          <mat-option [value]="1/8">1/8</mat-option>
+          <mat-option [value]="1/4">1/4</mat-option>
+          <mat-option [value]="1/2">1/2</mat-option>
+          <mat-option *ngFor="let val of fill(1, 30)" [value]="val">{{val}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="standard" fxFlex="19%">
+        <mat-label>Max CR</mat-label>
+        <mat-select (selectionChange)="filter()" [(ngModel)]="filters.maxCr">
+          <mat-option [value]="0">0</mat-option>
+          <mat-option [value]="1/8">1/8</mat-option>
+          <mat-option [value]="1/4">1/4</mat-option>
+          <mat-option [value]="1/2">1/2</mat-option>
+          <mat-option *ngFor="let val of fill(1, 30)" [value]="val">{{val}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div fxLayout="row wrap" fxFlex>
+        <mat-checkbox [(ngModel)]="filters.legendary" [indeterminate]="filters.legendary === undefined"
+          (click)="changeCheckboxState($event, 'legendary')" fxFlex>
+          Legendary?
+        </mat-checkbox>
+        <mat-checkbox [(ngModel)]="filters.unique" [indeterminate]="filters.unique === undefined"
+          (click)="changeCheckboxState($event, 'unique')" fxFlex>
+          Unique?
+        </mat-checkbox>
+        <button mat-button color="warn" (click)="setInitialFilters(); filter();" fxFlex>Reset Filters</button>
+      </div>
+    </div>
+  </div>
+</mat-card>

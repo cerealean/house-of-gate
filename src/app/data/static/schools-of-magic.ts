@@ -7,4 +7,6 @@ export const schoolsOfMagic = [
   'illusion',
   'evocation',
   'necromancy'
-];
+] as const;
+
+export type SchoolsOfMagic = typeof schoolsOfMagic[number];

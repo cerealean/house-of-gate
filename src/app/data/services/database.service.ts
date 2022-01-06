@@ -55,7 +55,9 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
   private prepopulateIfNecessary() {
     this.on('ready', async () => {
       const numberOfMonsters = await this.monsters.count();
-      if (numberOfMonsters > 0) {
+      const numberOfSpells = await this.spells.count();
+
+      if (numberOfMonsters > 0 && numberOfSpells > 0) {
         return;
       }
 
