@@ -9,6 +9,7 @@ import { MonstersRoutingModule } from './monsters-routing.module';
 import { GateCommonModule } from '../common/common.module';
 import { MatDividerModule } from '@angular/material/divider';
 import { DataModule } from '../data/data.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DataModule } from '../data/data.module';
     GateCommonModule,
     MatCardModule,
     MatTabsModule,
+    MatIconModule,
     MatDividerModule,
     MatProgressSpinnerModule,
     FlexLayoutModule,
