@@ -1,23 +1,24 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { SpellDataService } from 'src/app/data/services/spells/spell-data.service';
 // import { StorageService, StorageKeys } from 'src/app/services/storage.service';
-// import { MonsterDataService } from '../../../data/services/monsters/monster-data.service';
 import { Spell } from '../../models/spell';
+import { SpellFilters } from '../../models/spell-filters';
+import { SpellFilterService } from '../../services/spell-filter/spell-filter.service';
 
 @Component({
-  selector: 'app-monsters',
+  selector: 'app-spells',
   templateUrl: './spells.component.html',
   styleUrls: ['./spells.component.scss']
 })
 export class SpellsComponent implements OnInit, AfterViewInit {
   private allSpells: Spell[] = [];
   public displayedSpells: Spell[] = [];
-  // public filters!: MonsterFilters;
+  public filters!: SpellFilters;
   public isLoading = true;
 
   constructor(
     private readonly spellDataService: SpellDataService,
-    // private readonly monsterFilter: MonsterFilterService,
+    private readonly spellFilter: SpellFilterService,
     // private readonly storage: StorageService
   ) { }
 
@@ -35,15 +36,15 @@ export class SpellsComponent implements OnInit, AfterViewInit {
     // }
   }
 
-  // filter(filters: MonsterFilters) {
-  //   this.filters = filters;
-  //   const filteredMonsters = this.monsterFilter.filterMonsters(
-  //     this.allMonsters,
-  //     this.filters
-  //   );
-  //   this.displayedMonsters = filteredMonsters;
-  //   this.storage.setData(StorageKeys.MonsterFilters, filters);
-  // }
+  filter(filters: SpellFilters) {
+    this.filters = filters;
+    const filteredSpells = this.spellFilter.filterMonsters(
+      this.allSpells,
+      this.filters
+    );
+    this.displayedSpells = filteredSpells;
+    // this.storage.setData(StorageKeys.MonsterFilters, filters);
+  }
 
   tableLoading(isLoading: boolean): void {
     setTimeout(() => {

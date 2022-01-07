@@ -39,10 +39,4 @@ export class MonsterFilterService {
 
     return filteredMonsters;
   }
-
-  public doesMonsterMatchFilter(monster: Monster, filterOptions: MonsterFilters) {
-    const result = this.filterMonsters([monster], filterOptions);
-
-    return result && result.length === 1;
-  }
 }

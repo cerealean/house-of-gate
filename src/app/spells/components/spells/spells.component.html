@@ -1,7 +1,7 @@
 <div [class.hidden]="isLoading">
-  <!-- <app-filter-bar (filterChanges)="filter($event)" [filters]="filters"></app-filter-bar> -->
-  <!-- <br /> -->
-  <!-- <mat-divider></mat-divider> -->
+  <app-spell-filter-bar (filterChanges)="filter($event)" [filters]="filters"></app-spell-filter-bar>
+  <br />
+  <mat-divider></mat-divider>
   <br />
   <app-spell-tables [spells]="displayedSpells" (isLoading)="tableLoading($event)"></app-spell-tables>
 </div>

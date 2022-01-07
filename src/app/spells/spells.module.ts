@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SpellsRoutingModule } from './spells-routing.module';
 import { SpellsComponent } from './components/spells/spells.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -17,7 +18,8 @@ import { SpellsComponent } from './components/spells/spells.component';
     SpellsRoutingModule,
     GateCommonModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDividerModule
   ]
 })
 export class SpellsModule { }

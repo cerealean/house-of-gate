@@ -6,12 +6,14 @@ import { sources } from 'src/app/data/static/sources';
 import { SpellFilters } from 'src/app/spells/models/spell-filters';
 
 @Component({
-  selector: 'app-filter-bar',
+  selector: 'app-spell-filter-bar',
   templateUrl: './spell-filter-bar.component.html',
   styleUrls: ['./spell-filter-bar.component.scss']
 })
 export class SpellFilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly sources = sources;
+  public readonly classes = classes;
+  public readonly schools = schoolsOfMagic;
 
   @Input() public filters!: SpellFilters;
   @Output() public readonly filterChanges = new EventEmitter<SpellFilters>();

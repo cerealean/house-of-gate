@@ -1,5 +1,5 @@
 <ng-container *ngIf="!generatedEncounter">
-  <app-filter-bar [filters]="filters" (filterChanges)="updateMonsterFilters($event)"></app-filter-bar>
+  <app-monster-filter-bar [filters]="filters" (filterChanges)="updateMonsterFilters($event)"></app-monster-filter-bar>
   <mat-card>
     <div fxLayout="column">
       <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutGap.lt-md="3px">

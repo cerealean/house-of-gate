@@ -84,12 +84,12 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
 
       return Promise.all([
         monstersWorker$ as Promise<{ data: Monster[]; worker: Worker }>,
-        spellsWorker$ as Promise<{ data: ISpell[]; worker: Worker }>,
+        spellsWorker$ as Promise<{ data: Spell[]; worker: Worker }>,
       ]).then(async (resolved) => {
         const monsters: Monster[] = resolved[0].data;
         const monsterWorker: Worker = resolved[0].worker;
 
-        const spells: ISpell[] = resolved[1].data;
+        const spells: Spell[] = resolved[1].data;
         const spellWorker: Worker = resolved[1].worker;
 
         await this.monsters.clear();

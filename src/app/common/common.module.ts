@@ -16,6 +16,7 @@ import { NumberOnlyDirective } from './directives/number-only.directive';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { SpellTablesComponent } from './components/spell-tables/spell-tables.component';
+import { SpellFilterBarComponent } from './components/spell-filter-bar/spell-filter-bar.component';
 
 
 
@@ -24,6 +25,7 @@ import { SpellTablesComponent } from './components/spell-tables/spell-tables.com
     MonsterFilterBarComponent,
     MonsterTablesComponent,
     SpellTablesComponent,
+    SpellFilterBarComponent,
     NumberOnlyDirective
   ],
   imports: [
@@ -45,7 +47,8 @@ import { SpellTablesComponent } from './components/spell-tables/spell-tables.com
     MonsterFilterBarComponent,
     MonsterTablesComponent,
     SpellTablesComponent,
-    NumberOnlyDirective
+    NumberOnlyDirective,
+    SpellFilterBarComponent
   ]
 })
 export class GateCommonModule { }

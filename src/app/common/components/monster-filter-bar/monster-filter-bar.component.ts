@@ -6,7 +6,7 @@ import { sources } from 'src/app/data/static/sources';
 import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 
 @Component({
-  selector: 'app-filter-bar',
+  selector: 'app-monster-filter-bar',
   templateUrl: './monster-filter-bar.component.html',
   styleUrls: ['./monster-filter-bar.component.scss']
 })
