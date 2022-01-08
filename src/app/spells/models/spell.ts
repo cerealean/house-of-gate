@@ -32,11 +32,11 @@ export class Spell implements ISpell {
   text!: string;
 
   public hasSourceIntersection(sources: string[]) {
-    return sources.some(givenSource => this.sources.some(s => s.includes(givenSource)));
+    return sources.some(givenSource => this.sources.some(s => s?.toLowerCase().includes(givenSource?.toLowerCase())));
   }
 
   public hasClassIntersection(classes: Classes[]) {
-    return classes.some(givenClass => this.classes.some(s => s.includes(givenClass)));
+    return classes.some(givenClass => this.classes.some(s => s?.toLowerCase().includes(givenClass?.toLowerCase())));
   }
 
 }

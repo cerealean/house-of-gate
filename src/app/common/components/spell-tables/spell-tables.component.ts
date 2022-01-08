@@ -1,3 +1,4 @@
+import { trigger, state, style, transition, animate } from '@angular/animations';
 import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -9,13 +10,21 @@ import { Spell } from 'src/app/spells/models/spell';
 @Component({
   selector: 'app-spell-tables',
   templateUrl: './spell-tables.component.html',
-  styleUrls: ['./spell-tables.component.scss']
+  styleUrls: ['./spell-tables.component.scss'],
+  animations: [
+    trigger('detailExpand', [
+      state('collapsed', style({height: '0px', minHeight: '0'})),
+      state('expanded', style({height: '*'})),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
 })
 export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() public spells: Spell[] = [];
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = this.generateInitialColumns();
   public dataSource!: MatTableDataSource<Spell>;
+  public expandedElement?: Spell;
 
   @Output() isLoading = new EventEmitter<boolean>();
 

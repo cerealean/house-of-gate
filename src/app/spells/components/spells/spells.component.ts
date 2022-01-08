@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { SpellDataService } from 'src/app/data/services/spells/spell-data.service';
-// import { StorageService, StorageKeys } from 'src/app/services/storage.service';
+import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 import { Spell } from '../../models/spell';
 import { SpellFilters } from '../../models/spell-filters';
 import { SpellFilterService } from '../../services/spell-filter/spell-filter.service';
@@ -19,7 +19,7 @@ export class SpellsComponent implements OnInit, AfterViewInit {
   constructor(
     private readonly spellDataService: SpellDataService,
     private readonly spellFilter: SpellFilterService,
-    // private readonly storage: StorageService
+    private readonly storage: StorageService
   ) { }
 
   async ngOnInit(): Promise<void> {
@@ -28,12 +28,12 @@ export class SpellsComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     const rawr = 0;
-    // const currentMonsterFilters = this.storage.getData<MonsterFilters>(StorageKeys.MonsterFilters);
-    // if(currentMonsterFilters) {
-    //   setTimeout(() => {
-    //     this.filter(currentMonsterFilters);
-    //   }, 500);
-    // }
+    const currentMonsterFilters = this.storage.getData<SpellFilters>(StorageKeys.SpellFilters);
+    if(currentMonsterFilters) {
+      setTimeout(() => {
+        this.filter(currentMonsterFilters);
+      }, 500);
+    }
   }
 
   filter(filters: SpellFilters) {
@@ -43,7 +43,7 @@ export class SpellsComponent implements OnInit, AfterViewInit {
       this.filters
     );
     this.displayedSpells = filteredSpells;
-    // this.storage.setData(StorageKeys.MonsterFilters, filters);
+    this.storage.setData(StorageKeys.SpellFilters, filters);
   }
 
   tableLoading(isLoading: boolean): void {

@@ -48,20 +48,7 @@ const newMap = spells.map(s => {
     sources: sources,
     text: text
   };
-}).filter(m => !m.name.endsWith('*'));
+}).filter(m => !m.name.endsWith('*') && !m.name.toLowerCase().includes('invocation'));
 
 fs.writeFileSync('./spells.json', JSON.stringify(newMap, null, 2));
 
-// class Spell {
-//   name:        string[];
-//   level?:      string;
-//   school?:     School;
-//   ritual?:     AutoIndent;
-//   time?:       string;
-//   range?:      string;
-//   components?: string;
-//   duration?:   string;
-//   classes:     string;
-//   text?:       Array<null | string>;
-//   roll?:       Array<null | string>;
-// }

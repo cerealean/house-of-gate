@@ -1,6 +1,6 @@
 export const classes = [
   'barbarian',
-  'barb',
+  'bard',
   'cleric',
   'druid',
   'fighter',

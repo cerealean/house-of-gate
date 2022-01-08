@@ -55,5 +55,6 @@ export enum StorageKeys {
   EncounterFilters = 'HoG-EncounterFilters',
   HasAcknowledgedTermsDate = 'HoG-TermsAcknowledgement',
   MonsterFilters = 'HoG-MonsterFilters',
+  SpellFilters = 'HoG-SpellFilters',
   EncounterGeneratorMonsterFilters = 'HoG-EGMonsterFilters'
 }
