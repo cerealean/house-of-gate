@@ -23,6 +23,10 @@ const routes: Routes = [
     loadChildren: () => import('./spells/spells.module').then(e => e.SpellsModule)
   },
   {
+    path: 'feedback',
+    loadChildren: () => import('./feedback/feedback.module').then(m => m.FeedbackModule)
+  },
+  {
     path: 'privacy',
     component: PrivacyPolicyComponent
   },
