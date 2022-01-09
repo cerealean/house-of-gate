@@ -67,7 +67,7 @@ export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   finishLoading(): void {
-    const hasData = !!(this.dataSource && this.dataSource.data && this.dataSource.data.length > 0);
+    const hasData = !!(this.dataSource && this.dataSource.data);
     this.isLoading.emit(!hasData);
   }
 

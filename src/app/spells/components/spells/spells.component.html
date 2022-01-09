@@ -3,7 +3,13 @@
   <br />
   <mat-divider></mat-divider>
   <br />
-  <app-spell-tables [spells]="displayedSpells" (isLoading)="tableLoading($event)"></app-spell-tables>
+  <app-spell-tables *ngIf="displayedSpells?.length" [spells]="displayedSpells" (isLoading)="tableLoading($event)"></app-spell-tables>
+  <mat-card fxLayout="column" class="centered" *ngIf="!displayedSpells?.length">
+    <div>
+      <h3>No Results :(</h3>
+      <mat-icon>sentiment_very_dissatisfied</mat-icon>
+    </div>
+  </mat-card>
 </div>
 <ng-container *ngIf="isLoading">
   <mat-card fxLayout="column" class="app-loading mat-typography">

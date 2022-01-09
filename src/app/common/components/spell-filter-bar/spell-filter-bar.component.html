@@ -34,7 +34,7 @@
         </mat-select>
       </mat-form-field>
       <mat-form-field appearance="standard" fxFlex="19%">
-        <mat-label>Max CR</mat-label>
+        <mat-label>Max Level</mat-label>
         <mat-select (selectionChange)="filter()" [(ngModel)]="filters.maxLevel">
           <mat-option *ngFor="let val of fill(0, 9)" [value]="val">{{val}}</mat-option>
         </mat-select>
