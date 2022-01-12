@@ -17,6 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { SpellTablesComponent } from './components/spell-tables/spell-tables.component';
 import { SpellFilterBarComponent } from './components/spell-filter-bar/spell-filter-bar.component';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -41,7 +42,8 @@ import { SpellFilterBarComponent } from './components/spell-filter-bar/spell-fil
     FormsModule,
     MatIconModule,
     MatMenuModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSortModule
   ],
   exports: [
     MonsterFilterBarComponent,
