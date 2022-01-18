@@ -1,0 +1,27 @@
+<mat-card>
+  <p>
+    Are you trying to hit a target that is at a different elevation than you? Put the info in this calculator and see
+    how far away the target is!
+  </p>
+  <div fxLayout="column">
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+      <mat-form-field appearance="fill" color="primary" fxFlex>
+        <mat-label>How far above/below you is your target?</mat-label>
+        <input matInput type="number" [formControl]="elevationDifferenceCtrl" step="5" min="0" />
+        <span matSuffix>ft</span>
+        <mat-error *ngIf="elevationDifferenceCtrl.invalid">Must be a number greater than 1</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" color="primary" fxFlex>
+        <mat-label>How far away (horizontally) is your target?</mat-label>
+        <input matInput type="number" [formControl]="horizontalDifferenceCtrl" step="5" min="0" />
+        <span matSuffix>ft</span>
+        <mat-error *ngIf="horizontalDifferenceCtrl.invalid">Must be a number greater than 1</mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row">
+      <p fxFlex>
+        The distance is approximately <strong>{{ distance | number:'1.0-0' }}ft</strong>!
+      </p>
+    </div>
+  </div>
+</mat-card>
