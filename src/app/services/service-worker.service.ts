@@ -36,10 +36,11 @@ export class ServiceWorkerService {
     const available$ = this.updates.available.subscribe(() => {
       const snackbar = this.snackBar.open('An update is available! Reload the app?', 'Update!');
       const action$ = snackbar.onAction().subscribe(() => {
+        snackbar.instance.data.action = 'Updating...';
         this.updates.activateUpdate().then(() => {
-          snackbar.instance.data.action = 'Updating...';
           this.storage.clearData(StorageKeys.EncounterFilters);
           this.storage.clearData(StorageKeys.MonsterFilters);
+          this.storage.clearData(StorageKeys.SpellFilters);
           this.storage.clearData(StorageKeys.EncounterGeneratorMonsterFilters);
           this.storage.clearData(StorageKeys.PreviouslyGeneratedEncounters);
           Promise.all([

@@ -15,6 +15,7 @@ export interface ISpell extends IStoredMetadata {
   classes: string[];
   sources: string[];
   text: string;
+  concentration: boolean;
 }
 
 export class Spell implements ISpell {
@@ -30,6 +31,7 @@ export class Spell implements ISpell {
   classes!: Classes[];
   sources!: string[];
   text!: string;
+  concentration!: boolean;
 
   public hasSourceIntersection(sources: string[]) {
     return sources.some(givenSource => this.sources.some(s => s?.toLowerCase().includes(givenSource?.toLowerCase())));

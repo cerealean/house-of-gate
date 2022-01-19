@@ -4,7 +4,6 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ColumnInfo } from 'src/app/common/models/column-info';
-// import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 import { Spell } from 'src/app/spells/models/spell';
 
 @Component({
@@ -31,15 +30,7 @@ export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(
-    // private storage: StorageService
-  ) { }
-
   ngOnInit(): void {
-    // const storedColumns = this.storage.getData<ColumnInfo[]>(StorageKeys.ColumnInfo);
-    // if(storedColumns) {
-    //   this.columns = storedColumns;
-    // }
     this.refreshDisplayedColumns();
     this.isLoading.emit(true);
     this.dataSource = new MatTableDataSource<Spell>([]);
@@ -74,7 +65,6 @@ export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   toggleColumn(column: ColumnInfo): void {
     column.isShown = !column.isShown;
     this.refreshDisplayedColumns();
-    // this.storage.setData(StorageKeys.ColumnInfo, this.columns.slice());
   }
 
   stopPropagation($event: Event) {
@@ -135,9 +125,14 @@ export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
         position: 9
       },
       {
-        name: 'sources',
+        name: 'concentration',
         isShown: false,
         position: 10
+      },
+      {
+        name: 'sources',
+        isShown: false,
+        position: 11
       },
     ];
   }

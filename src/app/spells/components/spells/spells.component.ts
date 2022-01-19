@@ -27,7 +27,6 @@ export class SpellsComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    const rawr = 0;
     const currentMonsterFilters = this.storage.getData<SpellFilters>(StorageKeys.SpellFilters);
     if(currentMonsterFilters) {
       setTimeout(() => {

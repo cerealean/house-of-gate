@@ -65,6 +65,7 @@ export class SpellFilterBarComponent implements OnInit, OnDestroy, AfterViewInit
       minLevel: 0,
       maxLevel: 9,
       ritual: undefined,
+      concentration: undefined,
       source: this.sources.slice(),
       class: classes.slice(),
       school: schoolsOfMagic.slice()
