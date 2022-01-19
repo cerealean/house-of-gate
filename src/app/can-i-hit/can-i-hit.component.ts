@@ -8,8 +8,8 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class CanIHitComponent implements OnInit {
 
-  public readonly elevationDifferenceCtrl = new FormControl(5, [Validators.min(0), Validators.required]);
-  public readonly horizontalDifferenceCtrl = new FormControl(10, [Validators.min(0), Validators.required]);
+  public readonly elevationDifferenceCtrl = new FormControl(5, [Validators.min(0), Validators.required, Validators.pattern(/^[0-9]*$/)]);
+  public readonly horizontalDifferenceCtrl = new FormControl(10, [Validators.min(0), Validators.required, Validators.pattern(/^[0-9]*$/)]);
 
   public distance = Math.hypot(this.elevationDifferenceCtrl.value, this.horizontalDifferenceCtrl.value);
 
