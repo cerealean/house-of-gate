@@ -47,6 +47,7 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: 'home'
   },
+  { path: 'can-i-hit', loadChildren: () => import('./can-i-hit/can-i-hit.module').then(m => m.CanIHitModule) },
   {
     path: '**',
     redirectTo: 'home'
