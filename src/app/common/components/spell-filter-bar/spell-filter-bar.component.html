@@ -44,6 +44,10 @@
           (click)="changeCheckboxState($event, 'ritual')" fxFlex>
           Ritual?
         </mat-checkbox>
+        <mat-checkbox [(ngModel)]="filters.concentration" [indeterminate]="filters.concentration === undefined"
+          (click)="changeCheckboxState($event, 'concentration')" fxFlex>
+          Concentration?
+        </mat-checkbox>
         <button mat-button color="warn" (click)="setInitialFilters(); filter();" fxFlex>Reset Filters</button>
       </div>
     </div>
