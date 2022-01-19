@@ -9,4 +9,5 @@ export interface SpellFilters {
   class?: Classes[];
   ritual?: boolean;
   source?: string[];
+  concentration?: boolean;
 }

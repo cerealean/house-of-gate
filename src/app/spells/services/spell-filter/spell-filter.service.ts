@@ -30,6 +30,9 @@ export class SpellFilterService {
     if (filterOptions.ritual === true || filterOptions.ritual === false) {
       filteredSpells = filteredSpells.filter(m => m.ritual === filterOptions.ritual);
     }
+    if (filterOptions.concentration === true || filterOptions.concentration === false) {
+      filteredSpells = filteredSpells.filter(m => m.concentration === filterOptions.concentration);
+    }
     if (filterOptions.source?.length) {
       filteredSpells = filteredSpells.filter(m => m.hasSourceIntersection(filterOptions.source!));
     }

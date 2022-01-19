@@ -15,7 +15,7 @@ export interface ISpell extends IStoredMetadata {
   classes: string[];
   sources: string[];
   text: string;
-  concentration?: boolean;
+  concentration: boolean;
 }
 
 export class Spell implements ISpell {
