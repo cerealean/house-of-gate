@@ -20,8 +20,7 @@
               {{element[column.name]}}
             </ng-container>
             <ng-template #boolDisplay>
-              <mat-icon aria-hidden="false" [style.color]="element[column.name] ? 'green' : 'red'"
-                [attr.aria-label]="element[column.name] ? 'True' : 'False'">
+              <mat-icon aria-hidden="false" [attr.aria-label]="element[column.name] ? 'True/Yes' : 'False/No'">
                 {{element[column.name] ? 'done' : 'not_interested'}}
               </mat-icon>
             </ng-template>
