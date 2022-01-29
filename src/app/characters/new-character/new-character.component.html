@@ -7,6 +7,7 @@
         <mat-label>Name</mat-label>
         <input matInput aria-label="Name for your new character" required type="text" minlength="1" maxlength="100"
           [(ngModel)]="character.name" />
+        <mat-error>Please enter a character name</mat-error>
       </mat-form-field>
     </div>
     <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
