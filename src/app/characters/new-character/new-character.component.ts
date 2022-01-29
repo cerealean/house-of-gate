@@ -1,5 +1,7 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Campaign } from 'src/app/campaigns/models/campaign';
+import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
 import { Character } from '../models/character';
 
 @Component({
@@ -7,9 +9,11 @@ import { Character } from '../models/character';
   templateUrl: './new-character.component.html',
   styleUrls: ['./new-character.component.scss']
 })
-export class NewCharacterComponent {
+export class NewCharacterComponent implements OnInit {
   public readonly isEditingCurrentCharacter: boolean;
   public readonly character: Character;
+
+  public campaigns: Campaign[] = [];
 
   get isValid(): boolean {
     return !!this.character.name
@@ -26,12 +30,17 @@ export class NewCharacterComponent {
 
   constructor(
     public dialogRef: MatDialogRef<NewCharacterComponent>,
-    @Inject(MAT_DIALOG_DATA) public readonly providedCharacter: Character
+    @Inject(MAT_DIALOG_DATA) public readonly providedCharacter: Character,
+    private readonly campaignData: CampaignDataService
   ) {
     this.isEditingCurrentCharacter = !!providedCharacter;
     this.character = this.isEditingCurrentCharacter
       ? providedCharacter
       : new Character();
+  }
+
+  async ngOnInit(): Promise<void> {
+    this.campaigns = await this.campaignData.getAllCampaigns();
   }
 
   public onFileChange($event: Event): void {

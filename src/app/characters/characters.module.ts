@@ -15,6 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatInputModule,
     MatDialogModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSelectModule
   ]
 })
 export class CharactersModule { }

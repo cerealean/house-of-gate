@@ -81,6 +81,15 @@
     <input id="character-image" aria-label="Optionally upload an image representing your character"
       title="Have an image to represent your character?" type="file" accept="image/*" (change)="onFileChange($event)">
   </div>
+  <h3>Campaign(s)</h3>
+  <ng-container *ngIf="!!campaigns?.length; else noCampaigns">
+    <mat-form-field appearance="fill">
+      <mat-label>Campaign(s) {{ character.name || 'character' }} is in</mat-label>
+      <mat-select [(ngModel)]="character.campaignIds" multiple>
+        <mat-option *ngFor="let campaign of campaigns" [value]="campaign.id">{{ campaign.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </ng-container>
   <br />
   <mat-divider></mat-divider>
 </div>
@@ -90,3 +99,6 @@
     {{!isEditingCurrentCharacter ? 'Create' : 'Edit'}}
   </button>
 </div>
+<ng-template #noCampaigns>
+  <em>You haven't created any campaigns.</em>
+</ng-template>
