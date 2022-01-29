@@ -4,7 +4,8 @@
   </button>
   <ng-container *ngIf="campaigns.length > 0; else noCampaigns">
     <mat-list>
-      <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCampaign = campaign" *ngFor="let campaign of campaigns" class="campaign-list-item">
+      <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCampaign = campaign" *ngFor="let campaign of campaigns"
+        class="campaign-list-item">
         <img matListAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)"
           alt="Campaign Image" />
         <mat-icon matListAvatar *ngIf="!campaign.getImageSource()" mat-list-icon>hide_image</mat-icon>
@@ -14,6 +15,8 @@
         </p>
         <p matLine>
           <span>Encounters: {{campaign.encounters.length}}</span>
+          ,&nbsp;
+          <span>Characters: {{campaign.characters.length}}</span>
         </p>
       </mat-list-item>
     </mat-list>
@@ -31,6 +34,7 @@
 
 <mat-menu #menu="matMenu">
   <button mat-menu-item (click)="openNewCampaignDialog(selectedCampaign)">Edit</button>
-  <button mat-menu-item routerLink="/encounters/my-encounters" [state]="{ campaignId: selectedCampaign?.id }">View Encounters</button>
+  <button mat-menu-item routerLink="/encounters/my-encounters" [state]="{ campaignId: selectedCampaign?.id }">View
+    Encounters</button>
   <button mat-menu-item color="warn" (click)="openDeleteCampaignDialog(selectedCampaign!)">Delete</button>
 </mat-menu>

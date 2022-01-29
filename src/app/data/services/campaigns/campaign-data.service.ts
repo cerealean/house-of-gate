@@ -34,6 +34,9 @@ export class CampaignDataService {
       c.encounters = await this.db.encounters
         .filter(e => e.campaignId !== undefined && e.campaignId === c.id)
         .toArray();
+      c.characters = await this.db.characters
+        .filter(character => character.campaignIds.includes(c.id!))
+        .toArray();
 
       await Promise.all(
         c.encounters.map(async e => {

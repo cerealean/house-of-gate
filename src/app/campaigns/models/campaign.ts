@@ -1,3 +1,4 @@
+import { Character } from "src/app/characters/models/character";
 import { Encounter } from "src/app/encounters/models/encounter";
 
 export class Campaign {
@@ -6,6 +7,7 @@ export class Campaign {
   date = new Date();
   image: Blob | undefined;
   encounters: Encounter[] = [];
+  characters: Character[] = [];
 
   private imageUrl: string | undefined;
 
