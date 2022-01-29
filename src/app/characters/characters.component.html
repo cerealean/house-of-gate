@@ -1,1 +1,36 @@
-<p>characters works!</p>
+<mat-card style="min-height: 80vh;">
+  <button mat-raised-button color="accent" (click)="openNewCharacterDialog()" aria-label="Create New Character">
+    Create New Character
+  </button>
+  <ng-container *ngIf="characters.length > 0; else noCharacters">
+    <mat-list>
+      <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCharacter = character" *ngFor="let character of characters" class="character-list-item">
+        <img matListAvatar *ngIf="character.getImageSource()" [src]="sanitize(character.getImageSource()!)"
+          alt="Character Image" />
+        <mat-icon matListAvatar *ngIf="!character.getImageSource()" mat-list-icon>hide_image</mat-icon>
+        <h3 matLine>{{character.name}}</h3>
+        <p matLine>
+          <span>Created: {{character.created | date:'shortDate'}}</span>
+        </p>
+        <p matLine>
+          <span>Campaign(s): {{character.campaigns.length}}</span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </ng-container>
+</mat-card>
+
+<ng-template #noCharacters>
+  <br /><br />
+  <mat-divider></mat-divider>
+  <br />
+  <p>
+    You don't have any characters. Create one to get started!
+  </p>
+</ng-template>
+
+<mat-menu #menu="matMenu">
+  <!-- <button mat-menu-item (click)="openNewCampaignDialog(selectedCampaign)">Edit</button> -->
+  <button mat-menu-item routerLink="/campaigns" [state]="{ campaignId: selectedCharacter?.id }">View Campaigns</button>
+  <!-- <button mat-menu-item color="warn" (click)="openDeleteCampaignDialog(selectedCampaign!)">Delete</button> -->
+</mat-menu>

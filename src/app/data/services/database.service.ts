@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 
 import Dexie from 'dexie';
-import { ISpell, Spell } from 'src/app/spells/models/spell';
+import { Character } from 'src/app/characters/models/character';
+import { Spell } from 'src/app/spells/models/spell';
 import { Campaign } from '../../campaigns/models/campaign';
 import {
   Encounter,
@@ -29,6 +30,7 @@ export interface IHouseOfGateDao {
   readonly campaigns: Dexie.Table<Campaign, number>;
   readonly encounters: Dexie.Table<Encounter, number>;
   readonly spells: Dexie.Table<Spell, string>;
+  readonly characters: Dexie.Table<Character, string>;
 }
 
 class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
@@ -36,6 +38,7 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
   public readonly campaigns!: Dexie.Table<Campaign, number>;
   public readonly encounters!: Dexie.Table<Encounter, number>;
   public readonly spells!: Dexie.Table<Spell, string>;
+  public readonly characters!: Dexie.Table<Character, string>;
 
   constructor() {
     super('house-of-gate');
@@ -50,6 +53,7 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
     this.table('encounters').mapToClass(GeneratedEncounter);
     this.table('campaigns').mapToClass(Campaign);
     this.table('spells').mapToClass(Spell);
+    this.table('characters').mapToClass(Character);
   }
 
   private prepopulateIfNecessary() {
@@ -144,6 +148,10 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
 
     this.version(11).stores({
       spells: 'id,name,level',
+    });
+
+    this.version(12).stores({
+      characters: 'id++,name,created',
     });
   }
 }

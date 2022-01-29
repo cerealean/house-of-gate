@@ -1,0 +1,69 @@
+<h1 mat-dialog-title>Create New Character</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput aria-label="Name for your new character" required type="text" minlength="1" maxlength="100"
+      [(ngModel)]="character.name" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Race</mat-label>
+    <input matInput aria-label="Race for your new character" required type="text" minlength="1" maxlength="100"
+      [(ngModel)]="character.race" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Class(es)</mat-label>
+    <input matInput aria-label="Class(es) for your new character" required type="text" minlength="1" maxlength="100"
+      [(ngModel)]="character.class" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Level</mat-label>
+    <input matInput aria-label="Character level" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.level" />
+  </mat-form-field>
+  <h3>Ability Scores</h3>
+  <mat-form-field appearance="fill">
+    <mat-label>Strength</mat-label>
+    <input matInput aria-label="Character strength ability score" placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.abilityScores.strength" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Dexterity</mat-label>
+    <input matInput aria-label="Character dexterity ability score" placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.abilityScores.dexterity" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Constitution</mat-label>
+    <input matInput aria-label="Character constitution ability score" placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.abilityScores.constitution" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Intelligence</mat-label>
+    <input matInput aria-label="Character intelligence ability score" placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.abilityScores.intelligence" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Wisdom</mat-label>
+    <input matInput aria-label="Character wisdom ability score" placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.abilityScores.wisdom" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Charisma</mat-label>
+    <input matInput aria-label="Character charisma ability score" placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric"
+      [(ngModel)]="character.abilityScores.charisma" />
+  </mat-form-field>
+  <div>
+    <label *ngIf="!isEditingCurrentCharacter" for="character-image">Character Image (Optional)</label>
+    <label *ngIf="isEditingCurrentCharacter" for="character-image">Update Image (Optional)</label>
+    <br /><br />
+    <input id="character-image" aria-label="Optionally upload an image representing your character"
+      title="Have an image to represent your character?" type="file" accept="image/*" (change)="onFileChange($event)">
+  </div>
+  <br />
+  <mat-divider></mat-divider>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-raised-button [disabled]="!isValid" color="accent" [mat-dialog-close]="character">
+    {{!isEditingCurrentCharacter ? 'Create' : 'Edit'}}
+  </button>
+</div>
