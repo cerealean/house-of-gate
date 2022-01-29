@@ -14,16 +14,23 @@ export class NewCharacterComponent {
   get isValid(): boolean {
     return !!this.character.name
       && this.character.name.length > 0
-      && this.character.name.length <= 100;
+      && this.character.name.length <= 100
+      && this.isValueBetween1And30(this.character.level)
+      && this.isValueBetween1And30(this.character.abilityScores.strength)
+      && this.isValueBetween1And30(this.character.abilityScores.dexterity)
+      && this.isValueBetween1And30(this.character.abilityScores.constitution)
+      && this.isValueBetween1And30(this.character.abilityScores.intelligence)
+      && this.isValueBetween1And30(this.character.abilityScores.wisdom)
+      && this.isValueBetween1And30(this.character.abilityScores.charisma);
   }
 
   constructor(
     public dialogRef: MatDialogRef<NewCharacterComponent>,
-    @Inject(MAT_DIALOG_DATA) public readonly providedCampaign: Character
+    @Inject(MAT_DIALOG_DATA) public readonly providedCharacter: Character
   ) {
-    this.isEditingCurrentCharacter = !!providedCampaign;
+    this.isEditingCurrentCharacter = !!providedCharacter;
     this.character = this.isEditingCurrentCharacter
-      ? providedCampaign
+      ? providedCharacter
       : new Character();
   }
 
@@ -33,5 +40,11 @@ export class NewCharacterComponent {
     if (file) {
       this.character.image = file;
     }
+  }
+
+  private isValueBetween1And30(value: number | undefined): boolean {
+    return !!value
+      && value >= 1
+      && value <= 30;
   }
 }

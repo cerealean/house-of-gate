@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
+import { CharacterDataService } from '../data/services/characters/character-data.service';
 import { Character } from './models/character';
 import { NewCharacterComponent } from './new-character/new-character.component';
 
@@ -14,18 +15,24 @@ export class CharactersComponent implements OnInit {
   public selectedCharacter?: Character;
 
   constructor(
-    private sanitizer: DomSanitizer,
-    private dialog: MatDialog
+    private readonly sanitizer: DomSanitizer,
+    private readonly dialog: MatDialog,
+    private readonly characterData: CharacterDataService
   ) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    const existingCharacters = await this.characterData.getAllCharacters();
+
+    if (existingCharacters.length > 0) {
+      this.characters = existingCharacters.slice();
+    }
   }
 
   public sanitize(url: string) {
     return this.sanitizer.bypassSecurityTrustUrl(url);
   }
 
-  openNewCharacterDialog(character?: Character): void {
+  public openNewCharacterDialog(character?: Character): void {
     const dialog = this.dialog.open(NewCharacterComponent, {
       autoFocus: false,
       data: character
@@ -33,11 +40,12 @@ export class CharactersComponent implements OnInit {
 
     dialog.afterClosed().subscribe(async (newCharacter: Character | undefined) => {
       if (newCharacter) {
-        if(character) {
-        //   await this.campaignData.editCampaign(newCharacter);
-        // } else {
-        //   await this.campaignData.addCampaign(newCharacter);
-        //   this.campaigns.push(newCharacter);
+        const isEditing = !!character;
+        if (isEditing) {
+          await this.characterData.editCharacter(newCharacter);
+        } else {
+          await this.characterData.addCharacter(newCharacter);
+          this.characters.push(newCharacter);
         }
       }
     });

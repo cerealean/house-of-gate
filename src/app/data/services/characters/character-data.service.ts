@@ -16,6 +16,10 @@ export class CharacterDataService {
     await this.db.characters.add(character);
   }
 
+  public async editCharacter(character: Character): Promise<void> {
+    await this.db.characters.put(character);
+  }
+
   public async getAllCharacters(): Promise<Character[]> {
     const characters = await this.db.characters.toArray();
     const charactersHydrated = await Promise.all(characters.map(async c => {

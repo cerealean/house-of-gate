@@ -26,8 +26,15 @@ export class Character implements ICharacter {
   image?: Blob | undefined;
   campaignIds: number[] = [];
   campaigns: Campaign[] = [];
-  level!: number;
-  abilityScores: CharacterAbilities = {} as CharacterAbilities;
+  level = 1;
+  abilityScores: CharacterAbilities = {
+    strength: 8,
+    dexterity: 8,
+    constitution: 8,
+    intelligence: 8,
+    wisdom: 8,
+    charisma: 8
+  };
 
   private imageUrl: string | undefined;
 
