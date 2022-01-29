@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Campaign } from '../campaigns/models/campaign';
+import { CampaignDataService } from '../data/services/campaigns/campaign-data.service';
 import { CharacterDataService } from '../data/services/characters/character-data.service';
 import { Character } from './models/character';
 import { NewCharacterComponent } from './new-character/new-character.component';
@@ -12,19 +14,27 @@ import { NewCharacterComponent } from './new-character/new-character.component';
 })
 export class CharactersComponent implements OnInit {
   public characters: Character[] = [];
+  public filteredCharacters: Character[] = [];
   public selectedCharacter?: Character;
+
+  public campaigns: Campaign[] = [];
+  public selectedCampaigns: Campaign[] = [];
 
   constructor(
     private readonly sanitizer: DomSanitizer,
     private readonly dialog: MatDialog,
-    private readonly characterData: CharacterDataService
+    private readonly characterData: CharacterDataService,
+    private readonly campaignData: CampaignDataService
   ) { }
 
   async ngOnInit(): Promise<void> {
-    const existingCharacters = await this.characterData.getAllCharacters();
+    this.campaigns = await this.campaignData.getAllCampaigns();
+    this.selectedCampaigns = this.campaigns.slice();
 
+    const existingCharacters = await this.characterData.getAllCharacters();
     if (existingCharacters.length > 0) {
       this.characters = existingCharacters.slice();
+      this.updateFilter();
     }
   }
 
@@ -49,6 +59,11 @@ export class CharactersComponent implements OnInit {
         }
       }
     });
+  }
+
+  public updateFilter(): void {
+    const selectedCampaignIds = this.selectedCampaigns.map(sc => sc.id);
+    this.filteredCharacters = this.characters.filter(character => character.campaignIds.some(ci => selectedCampaignIds.includes(ci)));
   }
 
 }
