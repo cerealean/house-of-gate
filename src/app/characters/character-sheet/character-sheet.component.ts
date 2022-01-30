@@ -11,6 +11,7 @@ import { Character } from '../models/character';
 })
 export class CharacterSheetComponent implements OnInit, OnDestroy {
   public character?: Character;
+  public loading = true;
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -23,6 +24,7 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
     if (characterId) {
       this.character = await this.characterData.getCharacterById(+characterId);
     }
+    this.loading = false;
   }
 
   ngOnDestroy(): void {
