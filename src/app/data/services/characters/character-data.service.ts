@@ -22,14 +22,27 @@ export class CharacterDataService {
 
   public async getAllCharacters(): Promise<Character[]> {
     const characters = await this.db.characters.toArray();
-    const charactersHydrated = await Promise.all(characters.map(async c => {
-      c.campaigns = await this.db.campaigns
-        .filter(campaign => !!campaign.id && c.campaignIds.includes(campaign.id))
-        .toArray();
-
-      return c;
-    }));
+    const charactersHydrated = await Promise.all(characters.map(async c => await this.hydrateCharacter(c)));
 
     return charactersHydrated;
+  }
+
+  public async getCharacterById(id: number): Promise<Character | undefined> {
+    const character = await this.db.characters.get(id);
+    console.log(character);
+
+    if(!character) {
+      return undefined;
+    }
+
+    return await this.hydrateCharacter(character);
+  }
+
+  private async hydrateCharacter(character: Character): Promise<Character> {
+    character.campaigns = await this.db.campaigns
+        .filter(campaign => !!campaign.id && character.campaignIds.includes(campaign.id))
+        .toArray();
+
+    return character;
   }
 }

@@ -8,6 +8,11 @@ export interface ICharacter {
   created: Date;
   image?: Blob;
   level: number;
+  maxHealth: number;
+  currentHealth: number;
+  armorClass: number;
+  initiative: number;
+  speed: number;
 
   campaignIds: number[];
   campaigns: Campaign[];
@@ -27,6 +32,10 @@ export class Character implements ICharacter {
   campaignIds: number[] = [];
   campaigns: Campaign[] = [];
   level = 1;
+  maxHealth = 10;
+  currentHealth = 10;
+  armorClass = 10;
+  speed = 30;
   abilityScores: CharacterAbilities = {
     strength: 8,
     dexterity: 8,
@@ -47,6 +56,10 @@ export class Character implements ICharacter {
       wisdom: this.getModifierFromScore(this.abilityScores.wisdom),
       charisma: this.getModifierFromScore(this.abilityScores.charisma),
     };
+  }
+
+  get initiative(): number {
+    return this.abilityModifiers.dexterity;
   }
 
   get proficiencyBonus(): number {

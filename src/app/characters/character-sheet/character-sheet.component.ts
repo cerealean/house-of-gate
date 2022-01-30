@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
+import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
+import { Character } from '../models/character';
 
 @Component({
   selector: 'app-character-sheet',
@@ -6,10 +10,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./character-sheet.component.scss']
 })
 export class CharacterSheetComponent implements OnInit {
+  public character?: Character;
 
-  constructor() { }
+  constructor(
+    private readonly route: ActivatedRoute,
+    private readonly characterData: CharacterDataService,
+    private readonly sanitizer: DomSanitizer
+  ) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    const characterId = this.route.snapshot.paramMap.get('character-id');
+    if (characterId) {
+      this.character = await this.characterData.getCharacterById(+characterId);
+    }
+  }
+
+  public safeImage(image: string) {
+    return this.sanitizer.bypassSecurityTrustUrl(image);
+  }
+
+  public getHealthPercentage(): number {
+    return Math.ceil((this.character!.currentHealth / this.character!.maxHealth) * 100);
   }
 
 }

@@ -11,21 +11,47 @@
       </mat-form-field>
     </div>
     <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
-      <mat-form-field appearance="fill" fxFlex="40%" fxFlex.lt-md="100%">
+      <mat-form-field appearance="fill" fxFlex>
         <mat-label>Race</mat-label>
         <input matInput aria-label="Race for your new character" type="text" maxlength="100"
           [(ngModel)]="character.race" />
       </mat-form-field>
-      <mat-form-field appearance="fill" fxFlex="40%" fxFlex.lt-md="100%">
+      <mat-form-field appearance="fill" fxFlex>
         <mat-label>Class(es)</mat-label>
         <input matInput aria-label="Class(es) for your new character" type="text" maxlength="200"
           [(ngModel)]="character.class" />
       </mat-form-field>
+    </div>
+    <div fxLayout="row wrap">
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Level</mat-label>
         <input matInput aria-label="Character level" required autocapitalize="false" autocomplete="off" type="number"
           min="1" max="30" inputmode="numeric" [(ngModel)]="character.level" pattern="[0-9]{1,5}" />
         <mat-error>Please enter a value between 1 and 30</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Max Health</mat-label>
+        <input matInput aria-label="Character maximum health" required autocapitalize="false" autocomplete="off" type="number"
+          min="1" inputmode="numeric" [(ngModel)]="character.maxHealth" pattern="[0-9]{1,5}" />
+        <mat-error>Please enter an integer greater than 1</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Current Health</mat-label>
+        <input matInput aria-label="Character current health" required autocapitalize="false" autocomplete="off" type="number"
+          min="1" inputmode="numeric" [(ngModel)]="character.currentHealth" pattern="[0-9]{1,5}" />
+        <mat-error>Please enter an integer greater than 1</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Armor Class</mat-label>
+        <input matInput aria-label="Character Armor Class" required autocapitalize="false" autocomplete="off" type="number"
+          min="1" max="30" inputmode="numeric" [(ngModel)]="character.armorClass" pattern="[0-9]{1,5}" />
+        <mat-error>Please enter a value between 1 and 30</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" fxFlex>
+        <mat-label>Speed</mat-label>
+        <input matInput aria-label="Character Speed" required autocapitalize="false" autocomplete="off" type="number"
+          min="0" inputmode="numeric" [(ngModel)]="character.speed" pattern="[0-9]{1,5}" />
+        <mat-error>Please enter an integer greater than 1</mat-error>
       </mat-form-field>
     </div>
     <h3>Ability Scores</h3>

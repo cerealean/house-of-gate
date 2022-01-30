@@ -30,7 +30,7 @@ export interface IHouseOfGateDao {
   readonly campaigns: Dexie.Table<Campaign, number>;
   readonly encounters: Dexie.Table<Encounter, number>;
   readonly spells: Dexie.Table<Spell, string>;
-  readonly characters: Dexie.Table<Character, string>;
+  readonly characters: Dexie.Table<Character, number>;
 }
 
 class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
@@ -38,7 +38,7 @@ class HouseOfGateDao extends Dexie implements IHouseOfGateDao {
   public readonly campaigns!: Dexie.Table<Campaign, number>;
   public readonly encounters!: Dexie.Table<Encounter, number>;
   public readonly spells!: Dexie.Table<Spell, string>;
-  public readonly characters!: Dexie.Table<Character, string>;
+  public readonly characters!: Dexie.Table<Character, number>;
 
   constructor() {
     super('house-of-gate');

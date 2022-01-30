@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSelectModule } from '@angular/material/select';
 import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { CharacterSheetComponent } from './character-sheet/character-sheet.compo
     MatDialogModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatSelectModule
+    MatSelectModule,
+    MatProgressBarModule
   ]
 })
 export class CharactersModule { }
