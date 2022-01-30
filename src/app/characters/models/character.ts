@@ -81,6 +81,7 @@ export class Character implements ICharacter {
   public unsetImageSource(): void {
     if (this.imageUrl) {
       URL.revokeObjectURL(this.imageUrl);
+      this.imageUrl = undefined;
     }
   }
 
