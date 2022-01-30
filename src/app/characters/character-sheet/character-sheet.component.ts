@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
@@ -9,7 +9,7 @@ import { Character } from '../models/character';
   templateUrl: './character-sheet.component.html',
   styleUrls: ['./character-sheet.component.scss']
 })
-export class CharacterSheetComponent implements OnInit {
+export class CharacterSheetComponent implements OnInit, OnDestroy {
   public character?: Character;
 
   constructor(
@@ -23,6 +23,10 @@ export class CharacterSheetComponent implements OnInit {
     if (characterId) {
       this.character = await this.characterData.getCharacterById(+characterId);
     }
+  }
+
+  ngOnDestroy(): void {
+      this.character?.unsetImageSource();
   }
 
   public safeImage(image: string) {

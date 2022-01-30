@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Campaign } from '../campaigns/models/campaign';
@@ -12,7 +12,7 @@ import { NewCharacterComponent } from './new-character/new-character.component';
   templateUrl: './characters.component.html',
   styleUrls: ['./characters.component.scss']
 })
-export class CharactersComponent implements OnInit {
+export class CharactersComponent implements OnInit, OnDestroy {
   public characters: Character[] = [];
   public filteredCharacters: Character[] = [];
   public selectedCharacter?: Character;
@@ -36,6 +36,10 @@ export class CharactersComponent implements OnInit {
       this.characters = existingCharacters.slice();
       this.updateFilter();
     }
+  }
+
+  ngOnDestroy(): void {
+      this.characters.forEach(c => c?.unsetImageSource());
   }
 
   public sanitize(url: string) {
