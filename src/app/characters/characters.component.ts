@@ -34,7 +34,8 @@ export class CharactersComponent implements OnInit, OnDestroy {
     const existingCharacters = await this.characterData.getAllCharacters();
     if (existingCharacters.length > 0) {
       this.characters = existingCharacters.slice();
-      this.updateFilter();
+      this.filteredCharacters = this.characters.slice(); // TODO: Fix filtering
+      // this.updateFilter();
     }
   }
 
@@ -67,7 +68,7 @@ export class CharactersComponent implements OnInit, OnDestroy {
 
   public updateFilter(): void {
     const selectedCampaignIds = this.selectedCampaigns.map(sc => sc.id);
-    this.filteredCharacters = this.characters.filter(character => character.campaignIds.some(ci => selectedCampaignIds.includes(ci)));
+    this.filteredCharacters = this.characters.slice(); // this.characters.filter(character => character.campaignIds.some(ci => selectedCampaignIds.includes(ci)));
   }
 
 }

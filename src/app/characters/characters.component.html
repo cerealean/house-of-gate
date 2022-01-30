@@ -7,12 +7,12 @@
   <mat-divider></mat-divider>
   <br />
   <ng-container *ngIf="characters.length > 0; else noCharacters">
-    <mat-form-field>
+    <!-- <mat-form-field>
       <mat-label>Filter By Campaign</mat-label>
       <mat-select [(ngModel)]="selectedCampaigns" (selectionChange)="updateFilter()" multiple>
         <mat-option *ngFor="let campaign of campaigns" [value]="campaign">{{ campaign.name }}</mat-option>
       </mat-select>
-    </mat-form-field>
+    </mat-form-field> -->
     <ng-container *ngIf="filteredCharacters.length > 0; else noFilteredCharacters;">
       <mat-list>
         <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCharacter = character"
