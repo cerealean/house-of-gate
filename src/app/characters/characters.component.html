@@ -49,7 +49,7 @@
 </ng-template>
 
 <mat-menu #menu="matMenu">
-  <!-- <button mat-menu-item (click)="openNewCampaignDialog(selectedCampaign)">Edit</button> -->
+  <button mat-menu-item (click)="openNewCharacterDialog(selectedCharacter)">Edit</button>
   <button mat-menu-item routerLink="/campaigns" [state]="{ campaignId: selectedCharacter?.id }">View Campaigns</button>
   <!-- <button mat-menu-item color="warn" (click)="openDeleteCampaignDialog(selectedCampaign!)">Delete</button> -->
 </mat-menu>
