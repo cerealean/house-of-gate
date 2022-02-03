@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Heal / Damage</h1>
+<div mat-dialog-content>
+  <div fxLayout="column">
+    <div fxLayout="row">
+      <mat-form-field fxFlex>
+        <input matInput type="number" disabled [value]="valueAsNumber" style="text-align: right;" />
+      </mat-form-field>
+    </div>
+    <div fxLayout="row">
+      <br />
+      <mat-divider fxFlex></mat-divider>
+      <br />
+    </div>
+    <div fxLayout="row" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+      <button mat-stroked-button (click)="numberClicked(1)" fxFlex>1</button>
+      <button mat-stroked-button (click)="numberClicked(2)" fxFlex>2</button>
+      <button mat-stroked-button (click)="numberClicked(3)" fxFlex>3</button>
+    </div>
+    <div fxLayout="row" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+      <button mat-stroked-button (click)="numberClicked(4)" fxFlex>4</button>
+      <button mat-stroked-button (click)="numberClicked(5)" fxFlex>5</button>
+      <button mat-stroked-button (click)="numberClicked(6)" fxFlex>6</button>
+    </div>
+    <div fxLayout="row" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+      <button mat-stroked-button (click)="numberClicked(7)" fxFlex>7</button>
+      <button mat-stroked-button (click)="numberClicked(8)" fxFlex>8</button>
+      <button mat-stroked-button (click)="numberClicked(9)" fxFlex>9</button>
+    </div>
+    <div fxLayout="row">
+      <button mat-stroked-button color="warn" (click)="clear()" fxFlex>Clear</button>
+    </div>
+    <div fxLayout="row">
+      <br />
+      <mat-divider fxFlex></mat-divider>
+      <br />
+    </div>
+    <div fxLayout="row" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+      <button mat-flat-button color="accent" (click)="heal()" fxFlex>Heal</button>
+      <button mat-flat-button color="primary" (click)="temp()" fxFlex>Temp</button>
+      <button mat-flat-button color="warn" (click)="damage()" fxFlex>Dmg</button>
+    </div>
+  </div>
+</div>
+<!-- <div mat-dialog-actions>
+</div> -->

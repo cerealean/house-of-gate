@@ -35,7 +35,7 @@
         </div>
 
         <!-- Health -->
-        <div fxLayout="row" class="health-area">
+        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()">
           <h4 class="health-text" aria-label="Character health">Health: {{character.currentHealth}}/{{character.maxHealth}}</h4>
           <mat-progress-bar [value]="getHealthPercentage()" aria-label="Character health bar" class="health-bar" fxFlex></mat-progress-bar>
         </div>

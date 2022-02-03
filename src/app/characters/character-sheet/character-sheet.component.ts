@@ -1,7 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
+import { DamageCalculatorModalComponent } from '../damage-calculator-modal/damage-calculator-modal.component';
 import { Character } from '../models/character';
 
 @Component({
@@ -16,7 +18,8 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
   constructor(
     private readonly route: ActivatedRoute,
     private readonly characterData: CharacterDataService,
-    private readonly sanitizer: DomSanitizer
+    private readonly sanitizer: DomSanitizer,
+    private readonly dialog: MatDialog
   ) { }
 
   async ngOnInit(): Promise<void> {
@@ -37,6 +40,15 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
 
   public getHealthPercentage(): number {
     return Math.ceil((this.character!.currentHealth / this.character!.maxHealth) * 100);
+  }
+
+  public openDamageCalculator(): void {
+    const dlg = this.dialog.open(DamageCalculatorModalComponent, {
+      width: '300px'
+    });
+    dlg.afterClosed().subscribe(val => {
+      console.log(val);
+    });
   }
 
 }
