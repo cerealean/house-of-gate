@@ -1,16 +1,16 @@
-<mat-card style="min-height: 80vh;">
+<mat-card style="min-height: 80vh; max-width: 375px; margin: 0 auto;">
   <ng-container *ngIf="!loading; else loadingDisplay;">
     <ng-container *ngIf="!!character; else noCharacter;">
       <div fxLayout="column">
 
         <!-- Image -->
         <div fxLayout="row">
-          <ng-container *ngIf="character.getImageSource(); else noImage;">
-            <div class="centered" fxFlex>
+          <div class="centered" fxFlex>
+            <ng-container *ngIf="character.getImageSource(); else noImage;">
               <img [src]="safeImage(character.getImageSource()!)" class="character-image" alt="Character image"
                 aria-label="Image for the character" />
-            </div>
-          </ng-container>
+            </ng-container>
+          </div>
           <ng-template #noImage>
             <em>No Character Image</em>
           </ng-template>
@@ -35,9 +35,12 @@
         </div>
 
         <!-- Health -->
-        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()">
-          <h4 class="health-text" aria-label="Character health">Health: {{character.currentHealth}}/{{character.maxHealth}}</h4>
-          <mat-progress-bar [value]="getHealthPercentage()" aria-label="Character health bar" class="health-bar" fxFlex></mat-progress-bar>
+        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()" aria-label="Area displaying health text and percentages" [attr.aria-valuemin]="-character.maxHealth" [attr.aria-valuemax]="character.maxHealth" [attr.aria-valuenow]="character.currentHealth">
+          <h4 class="health-text" aria-label="Character health">Health:
+            {{character.currentHealth}}/{{character.maxHealth}}{{character.tempHealth ? ' (+' + character.tempHealth +
+            ' temp)' : ''}}</h4>
+          <mat-progress-bar [value]="getHealthPercentage()" aria-label="Character health bar" class="health-bar" fxFlex>
+          </mat-progress-bar>
         </div>
 
         <!-- Basic Stats -->
@@ -46,6 +49,11 @@
             <mat-icon>security</mat-icon>
             <h5 class="no-margin">Armor Class</h5>
             <h2>{{character.armorClass}}</h2>
+          </div>
+          <div fxFlex title="Proficiency Bonus">
+            <mat-icon>thumb_up</mat-icon>
+            <h5 class="no-margin">Prof. Bonus</h5>
+            <h2>{{character.proficiencyBonus}}</h2>
           </div>
           <div fxFlex title="Initiative">
             <mat-icon>start</mat-icon>
@@ -69,39 +77,79 @@
           <table fxFlex>
             <thead>
               <th></th>
-              <th><h3>Score</h3></th>
-              <th><h3>Modifier</h3></th>
+              <th>
+                <h3>Score</h3>
+              </th>
+              <th>
+                <h3>Modifier</h3>
+              </th>
             </thead>
             <tbody class="stats-body">
               <tr>
-                <td style="text-align: left;"><h3>Strength</h3></td>
-                <td><h4>{{character.abilityScores.strength}}</h4></td>
-                <td><h4>{{character.abilityModifiers.strength}}</h4></td>
+                <td style="text-align: left;">
+                  <h3>Strength</h3>
+                </td>
+                <td>
+                  <h4>{{character.abilityScores.strength}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.abilityModifiers.strength}}</h4>
+                </td>
               </tr>
               <tr>
-                <td style="text-align: left;"><h3>Dexterity</h3></td>
-                <td><h4>{{character.abilityScores.dexterity}}</h4></td>
-                <td><h4>{{character.abilityModifiers.dexterity}}</h4></td>
+                <td style="text-align: left;">
+                  <h3>Dexterity</h3>
+                </td>
+                <td>
+                  <h4>{{character.abilityScores.dexterity}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.abilityModifiers.dexterity}}</h4>
+                </td>
               </tr>
               <tr>
-                <td style="text-align: left;"><h3>Constitution</h3></td>
-                <td><h4>{{character.abilityScores.constitution}}</h4></td>
-                <td><h4>{{character.abilityModifiers.constitution}}</h4></td>
+                <td style="text-align: left;">
+                  <h3>Constitution</h3>
+                </td>
+                <td>
+                  <h4>{{character.abilityScores.constitution}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.abilityModifiers.constitution}}</h4>
+                </td>
               </tr>
               <tr>
-                <td style="text-align: left;"><h3>Intelligence</h3></td>
-                <td><h4>{{character.abilityScores.intelligence}}</h4></td>
-                <td><h4>{{character.abilityModifiers.intelligence}}</h4></td>
+                <td style="text-align: left;">
+                  <h3>Intelligence</h3>
+                </td>
+                <td>
+                  <h4>{{character.abilityScores.intelligence}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.abilityModifiers.intelligence}}</h4>
+                </td>
               </tr>
               <tr>
-                <td style="text-align: left;"><h3>Wisdom</h3></td>
-                <td><h4>{{character.abilityScores.wisdom}}</h4></td>
-                <td><h4>{{character.abilityModifiers.wisdom}}</h4></td>
+                <td style="text-align: left;">
+                  <h3>Wisdom</h3>
+                </td>
+                <td>
+                  <h4>{{character.abilityScores.wisdom}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.abilityModifiers.wisdom}}</h4>
+                </td>
               </tr>
               <tr>
-                <td style="text-align: left;"><h3>Charisma</h3></td>
-                <td><h4>{{character.abilityScores.charisma}}</h4></td>
-                <td><h4>{{character.abilityModifiers.charisma}}</h4></td>
+                <td style="text-align: left;">
+                  <h3>Charisma</h3>
+                </td>
+                <td>
+                  <h4>{{character.abilityScores.charisma}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.abilityModifiers.charisma}}</h4>
+                </td>
               </tr>
             </tbody>
           </table>

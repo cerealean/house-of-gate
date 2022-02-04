@@ -10,6 +10,7 @@ export interface ICharacter {
   level: number;
   maxHealth: number;
   currentHealth: number;
+  tempHealth: number;
   armorClass: number;
   initiative: number;
   speed: number;
@@ -34,6 +35,7 @@ export class Character implements ICharacter {
   level = 1;
   maxHealth = 10;
   currentHealth = 10;
+  tempHealth = 0;
   armorClass = 10;
   speed = 30;
   abilityScores: CharacterAbilities = {

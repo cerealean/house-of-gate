@@ -1,9 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
-import { DamageCalculatorModalComponent } from '../damage-calculator-modal/damage-calculator-modal.component';
+import { DamageCalculatorModalComponent, DamageCalculatorResult } from '../damage-calculator-modal/damage-calculator-modal.component';
 import { Character } from '../models/character';
 
 @Component({
@@ -12,6 +12,9 @@ import { Character } from '../models/character';
   styleUrls: ['./character-sheet.component.scss']
 })
 export class CharacterSheetComponent implements OnInit, OnDestroy {
+  // @HostBinding('max-width')
+  // private readonly maxWidth = '375px';
+
   public character?: Character;
   public loading = true;
 
@@ -31,7 +34,7 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-      this.character?.unsetImageSource();
+    this.character?.unsetImageSource();
   }
 
   public safeImage(image: string) {
@@ -46,9 +49,69 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
     const dlg = this.dialog.open(DamageCalculatorModalComponent, {
       width: '300px'
     });
-    dlg.afterClosed().subscribe(val => {
-      console.log(val);
+    dlg.afterClosed().subscribe(async val => {
+      if(!val) {
+        return;
+      }
+      const result = val as DamageCalculatorResult;
+      switch (result.type) {
+        case 'damage':
+          this.damageCharacter(result.amount);
+          break;
+        case 'heal':
+          this.healCharacter(result.amount);
+          break;
+        case 'temp':
+          this.giveTempHealth(result.amount);
+          break;
+      }
+      await this.saveCharacter();
     });
+  }
+
+  private async saveCharacter(): Promise<void> {
+    if(!this.character) {
+      return;
+    }
+    await this.characterData.editCharacter(this.character);
+  }
+
+  private damageCharacter(amount: number) {
+    if(!this.character) {
+      return;
+    }
+    if(this.character.tempHealth > 0) {
+      if(this.character.tempHealth >= amount) {
+        this.character.tempHealth -= amount;
+      } else {
+        const remainingAmountAfterTempHealth = amount - this.character.tempHealth;
+        this.character.tempHealth = 0;
+        this.character.currentHealth -= remainingAmountAfterTempHealth;
+      }
+    } else {
+      this.character!.currentHealth -= amount;
+    }
+  }
+
+  private healCharacter(amount: number) {
+    if(!this.character) {
+      return;
+    }
+    const currentHealthAfterHealing = this.character.currentHealth + amount;
+    if(currentHealthAfterHealing > this.character.maxHealth) {
+      this.character.currentHealth = this.character.maxHealth;
+    } else if(currentHealthAfterHealing < 1) {
+      this.character.currentHealth = 1;
+    } else {
+      this.character.currentHealth = currentHealthAfterHealing;
+    }
+  }
+
+  private giveTempHealth(amount: number) {
+    if(!this.character) {
+      return;
+    }
+    this.character.tempHealth = amount;
   }
 
 }

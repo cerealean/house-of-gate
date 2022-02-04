@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Heal / Damage</h1>
+<h1 mat-dialog-title>Modify Health</h1>
 <div mat-dialog-content>
   <div fxLayout="column">
     <div fxLayout="row">
@@ -26,8 +26,9 @@
       <button mat-stroked-button (click)="numberClicked(8)" fxFlex>8</button>
       <button mat-stroked-button (click)="numberClicked(9)" fxFlex>9</button>
     </div>
-    <div fxLayout="row">
-      <button mat-stroked-button color="warn" (click)="clear()" fxFlex>Clear</button>
+    <div fxLayout="row" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+      <button mat-stroked-button (click)="numberClicked(0)" fxFlex>0</button>
+      <button mat-stroked-button color="warn" (click)="clear()" fxFlex="2 2 auto">Clear</button>
     </div>
     <div fxLayout="row">
       <br />
