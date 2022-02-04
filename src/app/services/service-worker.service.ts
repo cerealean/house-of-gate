@@ -33,6 +33,28 @@ export class ServiceWorkerService {
   }
 
   private setupUpdateActions() {
+    this.updates.versionUpdates.subscribe(evt => {
+      if(evt.type === 'VERSION_DETECTED') {
+      } else if (evt.type === 'VERSION_READY') {
+        const snackbar = this.snackBar.open('An update is available! Reload the app?', 'Update!');
+        snackbar.onAction().subscribe(() => {
+          snackbar.instance.data.action = 'Updating...';
+          this.updates.activateUpdate().then(() => {
+            this.storage.clearData(StorageKeys.EncounterFilters);
+            this.storage.clearData(StorageKeys.MonsterFilters);
+            this.storage.clearData(StorageKeys.SpellFilters);
+            this.storage.clearData(StorageKeys.EncounterGeneratorMonsterFilters);
+            this.storage.clearData(StorageKeys.PreviouslyGeneratedEncounters);
+            Promise.all([
+              this.monsterData.clearMonsters(),
+              this.spellData.clearSpells()
+            ]).finally(() => {
+              document.location.reload();
+            });
+          });
+        });
+      }
+    });
     const available$ = this.updates.available.subscribe(() => {
       const snackbar = this.snackBar.open('An update is available! Reload the app?', 'Update!');
       const action$ = snackbar.onAction().subscribe(() => {

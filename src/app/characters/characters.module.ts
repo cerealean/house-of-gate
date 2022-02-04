@@ -18,13 +18,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSelectModule } from '@angular/material/select';
 import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { DamageCalculatorModalComponent } from './damage-calculator-modal/damage-calculator-modal.component';
 
 
 @NgModule({
   declarations: [
     CharactersComponent,
     NewCharacterComponent,
-    CharacterSheetComponent
+    CharacterSheetComponent,
+    DamageCalculatorModalComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +43,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatButtonModule,
     FlexLayoutModule,
     MatSelectModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDialogModule
   ]
 })
 export class CharactersModule { }
