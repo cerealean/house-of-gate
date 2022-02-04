@@ -35,7 +35,9 @@
         </div>
 
         <!-- Health -->
-        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()" aria-label="Area displaying health text and percentages" [attr.aria-valuemin]="-character.maxHealth" [attr.aria-valuemax]="character.maxHealth" [attr.aria-valuenow]="character.currentHealth">
+        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()"
+          aria-label="Area displaying health text and percentages" [attr.aria-valuemin]="-character.maxHealth"
+          [attr.aria-valuemax]="character.maxHealth" [attr.aria-valuenow]="character.currentHealth">
           <h4 class="health-text" aria-label="Character health">Health:
             {{character.currentHealth}}/{{character.maxHealth}}{{character.tempHealth ? ' (+' + character.tempHealth +
             ' temp)' : ''}}</h4>
@@ -76,13 +78,15 @@
         <div fxLayout="row" class="centered">
           <table fxFlex>
             <thead>
-              <th></th>
-              <th>
-                <h3>Score</h3>
-              </th>
-              <th>
-                <h3>Modifier</h3>
-              </th>
+              <tr>
+                <th></th>
+                <th>
+                  <h3>Score</h3>
+                </th>
+                <th>
+                  <h3>Modifier</h3>
+                </th>
+              </tr>
             </thead>
             <tbody class="stats-body">
               <tr>
@@ -150,6 +154,30 @@
                 <td>
                   <h4>{{character.abilityModifiers.charisma}}</h4>
                 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div fxFlex="row" class="centered">
+          <mat-divider></mat-divider><br />
+          <h2>Skills</h2>
+        </div>
+
+        <div fxLayout="row" class="centered">
+          <table fxFlex>
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Modifier</th>
+                <th>Proficient</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Acrobatics</td>
+                <td>{{character.skills.acrobatics.modifier}}</td>
+                <td>{{character.skills.acrobatics.proficient}}</td>
               </tr>
             </tbody>
           </table>

@@ -20,6 +20,7 @@ export interface ICharacter {
 
   abilityScores: CharacterAbilities;
   abilityModifiers: CharacterAbilities;
+  skills: CharacterSkillsList;
   proficiencyBonus: number;
 }
 
@@ -46,6 +47,7 @@ export class Character implements ICharacter {
     wisdom: 8,
     charisma: 8
   };
+  skills: CharacterSkillsList = this.generateNewSkillsList();
 
   private imageUrl: string | undefined;
 
@@ -90,6 +92,87 @@ export class Character implements ICharacter {
   private getModifierFromScore(score: number): number {
     return Math.floor((score - 10) / 2);
   }
+
+  private generateNewSkillsList(): CharacterSkillsList {
+    return {
+      athletics: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.athletics, this.abilityScores.strength)
+      },
+      acrobatics: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.acrobatics, this.abilityScores.dexterity)
+      },
+      sleightOfHand: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.sleightOfHand, this.abilityScores.dexterity)
+      },
+      stealth: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.stealth, this.abilityScores.dexterity)
+      },
+      arcana: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.arcana, this.abilityScores.intelligence)
+      },
+      history: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.history, this.abilityScores.intelligence)
+      },
+      investigation: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.investigation, this.abilityScores.intelligence)
+      },
+      nature: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.nature, this.abilityScores.intelligence)
+      },
+      religion: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.religion, this.abilityScores.intelligence)
+      },
+      animalHandling: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.animalHandling, this.abilityScores.wisdom)
+      },
+      insight: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.insight, this.abilityScores.wisdom)
+      },
+      medicine: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.medicine, this.abilityScores.wisdom)
+      },
+      perception: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.perception, this.abilityScores.wisdom)
+      },
+      survival: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.survival, this.abilityScores.wisdom)
+      },
+      deception: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.deception, this.abilityScores.charisma)
+      },
+      intimidation: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.intimidation, this.abilityScores.charisma)
+      },
+      performance: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.performance, this.abilityScores.charisma)
+      },
+      persuasion: {
+        proficient: false,
+        modifier: () => this.getSkillModifier(this.skills.persuasion, this.abilityScores.charisma)
+      },
+    };
+  }
+
+  private getSkillModifier(skill: CharacterSkill, abilityModifier: number) {
+    return skill.proficient ? abilityModifier + this.proficiencyBonus : abilityModifier;
+  }
 }
 
 export interface CharacterAbilities {
@@ -99,4 +182,30 @@ export interface CharacterAbilities {
   intelligence: number;
   wisdom: number;
   charisma: number;
+}
+
+export interface CharacterSkillsList {
+  athletics: CharacterSkill;
+  acrobatics: CharacterSkill;
+  sleightOfHand: CharacterSkill;
+  stealth: CharacterSkill;
+  arcana: CharacterSkill;
+  history: CharacterSkill;
+  investigation: CharacterSkill;
+  nature: CharacterSkill;
+  religion: CharacterSkill;
+  animalHandling: CharacterSkill;
+  insight: CharacterSkill;
+  medicine: CharacterSkill;
+  perception: CharacterSkill;
+  survival: CharacterSkill;
+  deception: CharacterSkill;
+  intimidation: CharacterSkill;
+  performance: CharacterSkill;
+  persuasion: CharacterSkill;
+}
+
+export interface CharacterSkill {
+  modifier: () => number;
+  proficient: boolean;
 }
