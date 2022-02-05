@@ -61,6 +61,7 @@ export class CharactersComponent implements OnInit, OnDestroy {
         } else {
           await this.characterData.addCharacter(newCharacter);
           this.characters.push(newCharacter);
+          this.updateFilter();
         }
       }
     });
