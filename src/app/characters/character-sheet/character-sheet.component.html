@@ -35,7 +35,12 @@
         </div>
 
         <!-- Health -->
-        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()" aria-label="Area displaying health text and percentages" [attr.aria-valuemin]="-character.maxHealth" [attr.aria-valuemax]="character.maxHealth" [attr.aria-valuenow]="character.currentHealth">
+        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()"
+        style="cursor: pointer;"
+        aria-label="Current health and temporary health"
+        aria-description="Click on this area to open up a calculator which will allow you to add/reduce health and adjust temporary health"
+        [attr.aria-valuemin]="-character.maxHealth"
+        [attr.aria-valuemax]="character.maxHealth" [attr.aria-valuenow]="character.currentHealth">
           <h4 class="health-text" aria-label="Character health">Health:
             {{character.currentHealth}}/{{character.maxHealth}}{{character.tempHealth ? ' (+' + character.tempHealth +
             ' temp)' : ''}}</h4>

@@ -3,7 +3,7 @@
   <div fxLayout="column">
     <div fxLayout="row">
       <mat-form-field fxFlex>
-        <input matInput type="number" disabled [value]="valueAsNumber" style="text-align: right;" />
+        <input matInput type="number" readonly [value]="valueAsNumber" aria-label="Amount to Modify" style="text-align: right; cursor: default;" />
       </mat-form-field>
     </div>
     <div fxLayout="row">
@@ -36,9 +36,9 @@
       <br />
     </div>
     <div fxLayout="row" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
-      <button mat-flat-button color="accent" (click)="heal()" fxFlex>Heal</button>
-      <button mat-flat-button color="primary" (click)="temp()" fxFlex>Temp</button>
-      <button mat-flat-button color="warn" (click)="damage()" fxFlex>Dmg</button>
+      <button mat-flat-button color="accent" aria-description="Heal the selected character by the amount specified" (click)="heal()" fxFlex>Heal</button>
+      <button mat-flat-button color="primary"  aria-description="Give the selected character temporary health of the amount specified" (click)="temp()" fxFlex>Temp</button>
+      <button mat-flat-button color="warn" aria-description="Damage the selected character by the amount specified" (click)="damage()" fxFlex>Dmg</button>
     </div>
   </div>
 </div>
