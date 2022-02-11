@@ -5,7 +5,7 @@
 
         <!-- Image -->
         <div fxLayout="row">
-          <div class="centered" fxFlex (click)="newCharacterImage.click()" aria-role="button" aria-label="Character Image Area" aria-description="An uploaded image for your character, which is optional. Click this area to upload a new image." title="Click to upload/change your character image">
+          <div class="centered clickable" fxFlex (click)="newCharacterImage.click()" aria-role="button" aria-label="Character Image Area" aria-description="An uploaded image for your character, which is optional. Click this area to upload a new image." title="Click to upload/change your character image">
             <ng-container *ngIf="character.image; else noImage;">
               <img [src]="getImageUrl(character.image)" class="character-image" alt="Character image"
                 aria-label="Image for the character" />
