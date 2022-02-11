@@ -12,6 +12,9 @@ import { Character } from '../models/character';
   styleUrls: ['./character-sheet.component.scss']
 })
 export class CharacterSheetComponent implements OnInit, OnDestroy {
+  // @HostBinding('max-width')
+  // private readonly maxWidth = '375px';
+
   public character?: Character;
   public loading = true;
 
