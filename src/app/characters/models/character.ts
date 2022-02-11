@@ -30,7 +30,7 @@ export class Character implements ICharacter {
   race?: string | undefined;
   class?: string | undefined;
   created = new Date();
-  image?: Blob | undefined;
+  image?: File | undefined;
   campaignIds: number[] = [];
   campaigns: Campaign[] = [];
   level = 1;
@@ -48,8 +48,6 @@ export class Character implements ICharacter {
     charisma: 8
   };
   skills: CharacterSkillsList = this.generateNewSkillsList();
-
-  private imageUrl: string | undefined;
 
   get abilityModifiers(): CharacterAbilities {
     return {
@@ -74,26 +72,12 @@ export class Character implements ICharacter {
     return Math.floor((2 + (this.level - 1)) / 4);
   }
 
-  public getImageSource(): string | undefined {
-    if (this.image) {
-      this.imageUrl = URL.createObjectURL(this.image);
-    }
-
-    return this.imageUrl;
-  }
-
-  public unsetImageSource(): void {
-    if (this.imageUrl) {
-      URL.revokeObjectURL(this.imageUrl);
-      this.imageUrl = undefined;
-    }
-  }
-
   private getModifierFromScore(score: number): number {
     return Math.floor((score - 10) / 2);
   }
 
   private generateNewSkillsList(): CharacterSkillsList {
+    return {} as CharacterSkillsList;
     return {
       athletics: {
         proficient: false,

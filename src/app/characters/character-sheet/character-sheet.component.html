@@ -6,8 +6,8 @@
         <!-- Image -->
         <div fxLayout="row">
           <div class="centered" fxFlex>
-            <ng-container *ngIf="character.getImageSource(); else noImage;">
-              <img [src]="safeImage(character.getImageSource()!)" class="character-image" alt="Character image"
+            <ng-container *ngIf="character.image; else noImage;">
+              <img [src]="getImageUrl(character.image)" class="character-image" alt="Character image"
                 aria-label="Image for the character" />
             </ng-container>
           </div>
@@ -164,7 +164,7 @@
           <h2>Skills</h2>
         </div>
 
-        <div fxLayout="row" class="centered">
+        <!-- <div fxLayout="row" class="centered">
           <table fxFlex>
             <thead>
               <tr>
@@ -181,7 +181,7 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> -->
       </div>
     </ng-container>
     <ng-template #noCharacter>

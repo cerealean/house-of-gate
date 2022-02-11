@@ -1,6 +1,6 @@
-import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
 import { DamageCalculatorModalComponent, DamageCalculatorResult } from '../damage-calculator-modal/damage-calculator-modal.component';
@@ -18,6 +18,8 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
   public character?: Character;
   public loading = true;
 
+  private imageUrls = new Map<File, { url: string, safeUrl: SafeUrl }>();
+
   constructor(
     private readonly route: ActivatedRoute,
     private readonly characterData: CharacterDataService,
@@ -34,11 +36,26 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.character?.unsetImageSource();
+    this.imageUrls.forEach(fileInfo => {
+      if (fileInfo?.url) {
+        console.log('safe url', fileInfo);
+        URL.revokeObjectURL(fileInfo.url as any);
+      }
+    });
   }
 
-  public safeImage(image: string) {
-    return this.sanitizer.bypassSecurityTrustUrl(image);
+  public getImageUrl(image: File | undefined): SafeUrl {
+    if (!image) {
+      return '';
+    } else if (this.imageUrls.has(image)) {
+      return this.imageUrls.get(image)?.safeUrl || '';
+    } else {
+      const url = URL.createObjectURL(image);
+      const safeUrl = this.sanitizer.bypassSecurityTrustUrl(url);
+      this.imageUrls.set(image, { url, safeUrl });
+
+      return safeUrl;
+    }
   }
 
   public getHealthPercentage(): number {
