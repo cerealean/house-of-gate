@@ -37,7 +37,7 @@ export class CharactersComponent implements OnInit, OnDestroy {
     if (existingCharacters.length > 0) {
       this.characters = existingCharacters.slice();
       this.filteredCharacters = this.characters.slice(); // TODO: Fix filtering
-      // this.updateFilter();
+      this.updateFilter();
     }
   }
 
@@ -64,6 +64,7 @@ export class CharactersComponent implements OnInit, OnDestroy {
         } else {
           await this.characterData.addCharacter(newCharacter);
           this.characters.push(newCharacter);
+          this.updateFilter();
         }
       }
     });
