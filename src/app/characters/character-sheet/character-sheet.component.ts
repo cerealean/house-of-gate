@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
+import { Abilities } from 'src/app/data/static/abilities';
+import { CharacterSkills, Skills } from 'src/app/data/static/skills';
 import { DamageCalculatorModalComponent, DamageCalculatorResult } from '../damage-calculator-modal/damage-calculator-modal.component';
 import { Character } from '../models/character';
 
@@ -18,6 +20,9 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
   public character?: Character;
   public loading = true;
 
+  public proposedNewSpeed = 30;
+  public proposedNewArmorClass = 10;
+
   private imageUrls = new Map<File, { url: string, safeUrl: SafeUrl }>();
 
   constructor(
@@ -31,6 +36,8 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
     const characterId = this.route.snapshot.paramMap.get('character-id');
     if (characterId) {
       this.character = await this.characterData.getCharacterById(+characterId);
+      this.proposedNewSpeed = this.character!.speed;
+      this.proposedNewArmorClass = this.character!.armorClass;
     }
     this.loading = false;
   }
@@ -86,6 +93,31 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
     });
   }
 
+  public async toggleSkillProficiency(ability: Skills) {
+    this.character!.proficiencies.skills[ability] = !this.character!.proficiencies.skills[ability];
+    await this.saveCharacter();
+  }
+
+  public async changeInspiration(amount: number): Promise<void> {
+    if(!this.character!.inspiration) {
+      this.character!.inspiration = 0;
+    }
+    this.character!.inspiration += amount;
+    await this.saveCharacter();
+  }
+
+  public async changeCharacterImage($event: Event): Promise<void> {
+    const element = $event.target as HTMLInputElement;
+    const file = element.files?.item(0);
+    if (file) {
+      const imageUrl = this.imageUrls.get(file)?.url;
+      this.character!.image = file;
+      if(imageUrl) {
+        URL.revokeObjectURL(imageUrl);
+      }
+      await this.saveCharacter();
+    }
+  }
   private async saveCharacter(): Promise<void> {
     if(!this.character) {
       return;

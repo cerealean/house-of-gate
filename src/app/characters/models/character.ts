@@ -1,4 +1,6 @@
 import { Campaign } from "src/app/campaigns/models/campaign";
+import { Abilities, CharacterAbilities } from "src/app/data/static/abilities";
+import { abilitiesToSkillsMapping, CharacterSkills, Skills } from "src/app/data/static/skills";
 
 export interface ICharacter {
   id?: number;
@@ -14,15 +16,24 @@ export interface ICharacter {
   armorClass: number;
   initiative: number;
   speed: number;
+  proficiencies: CharacterProficiencies;
+  inspiration: number;
 
   campaignIds: number[];
   campaigns: Campaign[];
 
-  abilityScores: CharacterAbilities;
-  abilityModifiers: CharacterAbilities;
-  skills: CharacterSkillsList;
+  abilityScores: CharacterAbilities<number>;
+  abilityModifiers: CharacterAbilities<number>;
   proficiencyBonus: number;
+  passivePerception: number;
+
+  getSkills(): CharacterSkills<number>;
 }
+
+type CharacterProficiencies = {
+  savingThrows: Record<Abilities, boolean>,
+  skills: Record<Skills, boolean>
+};
 
 export class Character implements ICharacter {
   id?: number | undefined;
@@ -39,7 +50,8 @@ export class Character implements ICharacter {
   tempHealth = 0;
   armorClass = 10;
   speed = 30;
-  abilityScores: CharacterAbilities = {
+  inspiration = 0;
+  abilityScores: CharacterAbilities<number> = {
     strength: 8,
     dexterity: 8,
     constitution: 8,
@@ -47,9 +59,39 @@ export class Character implements ICharacter {
     wisdom: 8,
     charisma: 8
   };
-  skills: CharacterSkillsList = this.generateNewSkillsList();
+  proficiencies: CharacterProficiencies = {
+    savingThrows: {
+      strength: false,
+      charisma: false,
+      constitution: false,
+      dexterity: false,
+      intelligence: false,
+      wisdom: false
+    },
+    skills: {
+      acrobatics: false,
+      animalHandling: false,
+      arcana: false,
+      athletics: false,
+      deception: false,
+      history: false,
+      insight: false,
+      intimidation: false,
+      investigation: false,
+      medicine: false,
+      nature: false,
+      perception: false,
+      performance: false,
+      persuasion: false,
+      religion: false,
+      sleightOfHand: false,
+      stealth: false,
+      survival: false
+    }
+  };
+  // skills: CharacterSkillsList = this.generateNewSkillsList();
 
-  get abilityModifiers(): CharacterAbilities {
+  get abilityModifiers(): CharacterAbilities<number> {
     return {
       strength: this.getModifierFromScore(this.abilityScores.strength),
       dexterity: this.getModifierFromScore(this.abilityScores.dexterity),
@@ -72,124 +114,139 @@ export class Character implements ICharacter {
     return Math.floor((2 + (this.level - 1)) / 4);
   }
 
+  get passivePerception(): number {
+    const isProficient = this.proficiencies.skills.perception;
+    let score = 10 + this.abilityModifiers.wisdom;
+
+    if(isProficient) {
+      score += this.proficiencyBonus;
+    }
+
+    return score;
+  }
+
+  public getSkills(): CharacterSkills<number> {
+    return {
+      athletics: this.getSkillScore('athletics'),
+      acrobatics: this.getSkillScore('acrobatics'),
+      sleightOfHand: this.getSkillScore('sleightOfHand'),
+      stealth: this.getSkillScore('stealth'),
+      arcana: this.getSkillScore('arcana'),
+      history: this.getSkillScore('history'),
+      investigation: this.getSkillScore('investigation'),
+      nature: this.getSkillScore('nature'),
+      religion: this.getSkillScore('religion'),
+      animalHandling: this.getSkillScore('animalHandling'),
+      insight: this.getSkillScore('insight'),
+      medicine: this.getSkillScore('medicine'),
+      perception: this.getSkillScore('perception'),
+      survival: this.getSkillScore('survival'),
+      deception: this.getSkillScore('deception'),
+      intimidation: this.getSkillScore('intimidation'),
+      performance: this.getSkillScore('performance'),
+      persuasion: this.getSkillScore('persuasion')
+    };
+  }
+
+  private getSkillScore(skill: Skills): number {
+    const isProficient = this.proficiencies.skills[skill];
+    const abilityScore = abilitiesToSkillsMapping.get(skill)!;
+    let score = this.abilityScores[abilityScore];
+    if(isProficient) {
+      score += this.proficiencyBonus;
+    }
+
+    return score;
+  }
+
   private getModifierFromScore(score: number): number {
     return Math.floor((score - 10) / 2);
   }
 
-  private generateNewSkillsList(): CharacterSkillsList {
-    return {} as CharacterSkillsList;
-    return {
-      athletics: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.athletics, this.abilityScores.strength)
-      },
-      acrobatics: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.acrobatics, this.abilityScores.dexterity)
-      },
-      sleightOfHand: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.sleightOfHand, this.abilityScores.dexterity)
-      },
-      stealth: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.stealth, this.abilityScores.dexterity)
-      },
-      arcana: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.arcana, this.abilityScores.intelligence)
-      },
-      history: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.history, this.abilityScores.intelligence)
-      },
-      investigation: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.investigation, this.abilityScores.intelligence)
-      },
-      nature: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.nature, this.abilityScores.intelligence)
-      },
-      religion: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.religion, this.abilityScores.intelligence)
-      },
-      animalHandling: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.animalHandling, this.abilityScores.wisdom)
-      },
-      insight: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.insight, this.abilityScores.wisdom)
-      },
-      medicine: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.medicine, this.abilityScores.wisdom)
-      },
-      perception: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.perception, this.abilityScores.wisdom)
-      },
-      survival: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.survival, this.abilityScores.wisdom)
-      },
-      deception: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.deception, this.abilityScores.charisma)
-      },
-      intimidation: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.intimidation, this.abilityScores.charisma)
-      },
-      performance: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.performance, this.abilityScores.charisma)
-      },
-      persuasion: {
-        proficient: false,
-        modifier: () => this.getSkillModifier(this.skills.persuasion, this.abilityScores.charisma)
-      },
-    };
-  }
+  // private generateNewSkillsList(): CharacterSkillsList {
+  //   return {} as CharacterSkillsList;
+  //   return {
+  //     athletics: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.athletics, this.abilityScores.strength)
+  //     },
+  //     acrobatics: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.acrobatics, this.abilityScores.dexterity)
+  //     },
+  //     sleightOfHand: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.sleightOfHand, this.abilityScores.dexterity)
+  //     },
+  //     stealth: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.stealth, this.abilityScores.dexterity)
+  //     },
+  //     arcana: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.arcana, this.abilityScores.intelligence)
+  //     },
+  //     history: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.history, this.abilityScores.intelligence)
+  //     },
+  //     investigation: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.investigation, this.abilityScores.intelligence)
+  //     },
+  //     nature: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.nature, this.abilityScores.intelligence)
+  //     },
+  //     religion: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.religion, this.abilityScores.intelligence)
+  //     },
+  //     animalHandling: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.animalHandling, this.abilityScores.wisdom)
+  //     },
+  //     insight: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.insight, this.abilityScores.wisdom)
+  //     },
+  //     medicine: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.medicine, this.abilityScores.wisdom)
+  //     },
+  //     perception: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.perception, this.abilityScores.wisdom)
+  //     },
+  //     survival: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.survival, this.abilityScores.wisdom)
+  //     },
+  //     deception: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.deception, this.abilityScores.charisma)
+  //     },
+  //     intimidation: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.intimidation, this.abilityScores.charisma)
+  //     },
+  //     performance: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.performance, this.abilityScores.charisma)
+  //     },
+  //     persuasion: {
+  //       proficient: false,
+  //       modifier: () => this.getSkillModifier(this.skills.persuasion, this.abilityScores.charisma)
+  //     },
+  //   };
+  // }
 
-  private getSkillModifier(skill: CharacterSkill, abilityModifier: number) {
-    return skill.proficient ? abilityModifier + this.proficiencyBonus : abilityModifier;
-  }
+  // private getSkillModifier(skill: CharacterSkill, abilityModifier: number) {
+  //   return skill.proficient ? abilityModifier + this.proficiencyBonus : abilityModifier;
+  // }
 }
 
-export interface CharacterAbilities {
-  strength: number;
-  dexterity: number;
-  constitution: number;
-  intelligence: number;
-  wisdom: number;
-  charisma: number;
-}
-
-export interface CharacterSkillsList {
-  athletics: CharacterSkill;
-  acrobatics: CharacterSkill;
-  sleightOfHand: CharacterSkill;
-  stealth: CharacterSkill;
-  arcana: CharacterSkill;
-  history: CharacterSkill;
-  investigation: CharacterSkill;
-  nature: CharacterSkill;
-  religion: CharacterSkill;
-  animalHandling: CharacterSkill;
-  insight: CharacterSkill;
-  medicine: CharacterSkill;
-  perception: CharacterSkill;
-  survival: CharacterSkill;
-  deception: CharacterSkill;
-  intimidation: CharacterSkill;
-  performance: CharacterSkill;
-  persuasion: CharacterSkill;
-}
-
-export interface CharacterSkill {
-  modifier: () => number;
-  proficient: boolean;
-}
+// export interface CharacterSkill {
+//   modifier: () => number;
+//   proficient: boolean;
+// }
