@@ -1,26 +1,56 @@
-<mat-card style="min-height: 80vh; max-width: 375px; margin: 0 auto;">
+<mat-card style="margin: 0 auto; max-height: 82vh; overflow-y: scroll;">
   <ng-container *ngIf="!loading; else loadingDisplay;">
     <ng-container *ngIf="!!character; else noCharacter;">
       <div fxLayout="column">
-
+        <br /><br />
         <!-- Image -->
         <div fxLayout="row">
-          <div class="centered" fxFlex>
-            <ng-container *ngIf="character.getImageSource(); else noImage;">
-              <img [src]="safeImage(character.getImageSource()!)" class="character-image" alt="Character image"
+          <div class="centered clickable" fxFlex (click)="newCharacterImage.click()" aria-role="button"
+            aria-label="Character Image Area"
+            aria-description="An uploaded image for your character, which is optional. Click this area to upload a new image."
+            title="Click to upload/change your character image">
+            <ng-container *ngIf="character.image; else noImage;">
+              <img [src]="getImageUrl(character.image)" class="character-image" alt="Character image"
                 aria-label="Image for the character" />
             </ng-container>
           </div>
           <ng-template #noImage>
             <em>No Character Image</em>
           </ng-template>
+          <input #newCharacterImage type="file" hidden accept="image/*" id="character-image"
+            (change)="changeCharacterImage($event)" />
         </div>
 
         <!-- Name -->
         <div fxLayout="row">
           <div class="centered" fxFlex>
-            <h1 aria-label="Character name"> {{character.name}} </h1>
+            <h1 aria-label="Character name" aria-description="Click to change character name" aria-role="button"
+              [mat-menu-trigger-for]="nameMenu" class="clickable">
+              {{character.name}}
+            </h1>
           </div>
+          <mat-menu #nameMenu="matMenu">
+            <div fxLayout="column" class="editable-content-menu">
+              <div fxLayout="row">
+                <mat-form-field appearance="outline" fxFlex>
+                  <mat-label>Name</mat-label>
+                  <input matInput aria-description="Change character name to the value in this input" type="text"
+                    maxlength="100" (click)="$event.stopPropagation()" [(ngModel)]="proposedNewName"
+                    class="centered editable-content-menu-input" />
+                </mat-form-field>
+              </div>
+              <div fxLayout="row" fxLayoutGap="2px">
+                <button mat-icon-button color="accent" aria-label="Change Name"
+                  (click)="character.name = proposedNewName; saveCharacter();" fxFlex>
+                  <mat-icon>checkmark</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" aria-label="Cancel Name Change"
+                  (click)="proposedNewName = character.name" fxFlex>
+                  <mat-icon>close</mat-icon>
+                </button>
+              </div>
+            </div>
+          </mat-menu>
         </div>
 
         <div fxFlex="row" class="centered">
@@ -30,19 +60,20 @@
         <!-- Basic Info -->
         <div fxLayout="row">
           <div class="centered" fxFlex>
-            <h3 aria-label="Character description">Level {{character.level}} {{character.race}} {{character.class}}</h3>
+            <h3 aria-label="Character description">Level {{character.level}} {{character.race}} {{character.class}}
+            </h3>
           </div>
         </div>
 
         <!-- Health -->
-        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()"
-        style="cursor: pointer;"
-        aria-label="Current health and temporary health"
-        aria-description="Click on this area to open up a calculator which will allow you to add/reduce health and adjust temporary health"
-        [attr.aria-valuemin]="-character.maxHealth"
-        [attr.aria-valuemax]="character.maxHealth" [attr.aria-valuenow]="character.currentHealth">
+        <div fxLayout="row" class="health-area" (click)="openDamageCalculator()" style="cursor: pointer;"
+          aria-label="Current health and temporary health"
+          aria-description="Click on this area to open up a calculator which will allow you to add/reduce health and adjust temporary health"
+          [attr.aria-valuemin]="-character.maxHealth" [attr.aria-valuemax]="character.maxHealth"
+          [attr.aria-valuenow]="character.currentHealth">
           <h4 class="health-text" aria-label="Character health">Health:
-            {{character.currentHealth}}/{{character.maxHealth}}{{character.tempHealth ? ' (+' + character.tempHealth +
+            {{character.currentHealth}}/{{character.maxHealth}}{{character.tempHealth ? ' (+' + character.tempHealth
+            +
             ' temp)' : ''}}</h4>
           <mat-progress-bar [value]="getHealthPercentage()" aria-label="Character health bar" class="health-bar" fxFlex>
           </mat-progress-bar>
@@ -53,12 +84,31 @@
           <div fxFlex title="Armor Class">
             <mat-icon>security</mat-icon>
             <h5 class="no-margin">Armor Class</h5>
-            <h2>{{character.armorClass}}</h2>
-          </div>
-          <div fxFlex title="Proficiency Bonus">
-            <mat-icon>thumb_up</mat-icon>
-            <h5 class="no-margin">Prof. Bonus</h5>
-            <h2>{{character.proficiencyBonus}}</h2>
+            <h2 [mat-menu-trigger-for]="armorClassMenu" class="clickable" aria-role="button">
+              {{character.armorClass}}
+            </h2>
+            <mat-menu #armorClassMenu="matMenu">
+              <div fxLayout="column" class="editable-content-menu">
+                <div fxLayout="row">
+                  <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Armor Class</mat-label>
+                    <input matInput inputmode="numeric" aria-description="Change armor class to the value in this input"
+                      type="number" pattern="[0-9]" (click)="$event.stopPropagation()"
+                      [(ngModel)]="proposedNewArmorClass" class="centered editable-content-menu-input" />
+                  </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutGap="2px">
+                  <button mat-icon-button color="accent" aria-label="Change Armor Class"
+                    (click)="character.armorClass = proposedNewArmorClass; saveCharacter();" fxFlex>
+                    <mat-icon>checkmark</mat-icon>
+                  </button>
+                  <button mat-icon-button color="warn" aria-label="Cancel Armor Class Change"
+                    (click)="proposedNewArmorClass = character.armorClass" fxFlex>
+                    <mat-icon>close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
           </div>
           <div fxFlex title="Initiative">
             <mat-icon>start</mat-icon>
@@ -68,89 +118,292 @@
           <div fxFlex title="Speed">
             <mat-icon>directions_run</mat-icon>
             <h5 class="no-margin">Speed</h5>
-            <h2>{{character.speed}}ft</h2>
+            <h2 [mat-menu-trigger-for]="speedMenu" aria-role="button" class="clickable">{{character.speed}}ft</h2>
+            <mat-menu #speedMenu="matMenu">
+              <div fxLayout="column" class="editable-content-menu">
+                <div fxLayout="row">
+                  <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Speed</mat-label>
+                    <input matInput inputmode="numeric" aria-description="Change speed to the value in this input"
+                      type="number" pattern="[0-9]" (click)="$event.stopPropagation()" [(ngModel)]="proposedNewSpeed"
+                      class="centered editable-content-menu-input" />
+                  </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutGap="2px">
+                  <button mat-icon-button color="accent" aria-label="Change Speed"
+                    (click)="character.speed = proposedNewSpeed; saveCharacter();" fxFlex>
+                    <mat-icon>checkmark</mat-icon>
+                  </button>
+                  <button mat-icon-button color="warn" aria-label="Cancel Speed Change"
+                    (click)="proposedNewSpeed = character.speed" fxFlex>
+                    <mat-icon>close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </div>
+        </div>
+        <div fxLayout="row" class="centered">
+          <div fxFlex title="Proficiency Bonus">
+            <mat-icon>thumb_up</mat-icon>
+            <h5 class="no-margin">Prof. Bonus</h5>
+            <h2>{{character.proficiencyBonus}}</h2>
+          </div>
+          <div fxFlex title="Passive Perception">
+            <mat-icon>visibility</mat-icon>
+            <h5 class="no-margin">Passive Perception</h5>
+            <h2>{{character.passivePerception}}</h2>
+          </div>
+          <div fxFlex title="Inspiration">
+            <mat-icon>sentiment_very_satisfied</mat-icon>
+            <h5 class="no-margin">Inspiration</h5>
+            <h2 [mat-menu-trigger-for]="inspirationMenu" aria-role="button" class="clickable">
+              {{character.inspiration ||
+              0}}</h2>
+            <mat-menu #inspirationMenu="matMenu">
+              <div fxLayout="column" class="editable-content-menu">
+                <div fxLayout="row" fxLayoutGap="2px" fxFlex>
+                  <button mat-icon-button color="accent" aria-label="Increase inspiration by 1"
+                    (click)="changeInspiration(1); saveCharacter();" fxFlex>
+                    <mat-icon>add</mat-icon>
+                  </button>
+                  <button mat-icon-button color="warn" aria-label="Decrease inspiration by 1"
+                    (click)="changeInspiration(-1); saveCharacter();" fxFlex>
+                    <mat-icon>remove</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
           </div>
         </div>
 
+        <!--Ability Scores And Modifiers-->
         <div fxFlex="row" class="centered">
           <mat-divider></mat-divider><br />
           <h2>Ability Scores/Modifiers</h2>
         </div>
 
-        <!--Ability Scores And Modifiers-->
         <div fxLayout="row" class="centered">
           <table fxFlex>
             <thead>
-              <th></th>
-              <th>
-                <h3>Score</h3>
-              </th>
-              <th>
-                <h3>Modifier</h3>
-              </th>
+              <tr>
+                <th></th>
+                <th>
+                  <h3>Score</h3>
+                </th>
+                <th>
+                  <h3>Modifier</h3>
+                </th>
+              </tr>
             </thead>
             <tbody class="stats-body">
               <tr>
-                <td style="text-align: left;">
+                <td>
                   <h3>Strength</h3>
                 </td>
                 <td>
-                  <h4>{{character.abilityScores.strength}}</h4>
+                  <h4 aria-role="button" [mat-menu-trigger-for]="asStrengthMenu" class="clickable">
+                    {{character.abilityScores.strength}}</h4>
+                  <mat-menu #asStrengthMenu="matMenu">
+                    <div fxLayout="column" class="editable-content-menu">
+                      <div fxLayout="row">
+                        <mat-form-field appearance="outline" fxFlex>
+                          <mat-label>Strength</mat-label>
+                          <input matInput inputmode="numeric" [min]="1" [max]="30"
+                            aria-description="Change strength to the value in this input" type="number" pattern="[0-9]"
+                            (click)="$event.stopPropagation()" [(ngModel)]="proposedNewStrength"
+                            class="centered editable-content-menu-input" />
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="2px">
+                        <button mat-icon-button color="accent" aria-label="Change Strength"
+                          (click)="character.abilityScores.strength = proposedNewStrength; saveCharacter();" fxFlex>
+                          <mat-icon>checkmark</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" aria-label="Cancel Strength Change"
+                          (click)="proposedNewStrength = character.abilityScores.strength" fxFlex>
+                          <mat-icon>close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </mat-menu>
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.strength}}</h4>
                 </td>
               </tr>
               <tr>
-                <td style="text-align: left;">
+                <td>
                   <h3>Dexterity</h3>
                 </td>
                 <td>
-                  <h4>{{character.abilityScores.dexterity}}</h4>
+                  <h4 [mat-menu-trigger-for]="asDexterityMenu" class="clickable" aria-role="button">
+                    {{character.abilityScores.dexterity}}</h4>
+                  <mat-menu #asDexterityMenu="matMenu">
+                    <div fxLayout="column" class="editable-content-menu">
+                      <div fxLayout="row">
+                        <mat-form-field appearance="outline" fxFlex>
+                          <mat-label>Dexterity</mat-label>
+                          <input matInput inputmode="numeric" [min]="1" [max]="30"
+                            aria-description="Change dexterity to the value in this input" type="number" pattern="[0-9]"
+                            (click)="$event.stopPropagation()" [(ngModel)]="proposedNewDexterity"
+                            class="centered editable-content-menu-input" />
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="2px">
+                        <button mat-icon-button color="accent" aria-label="Change Dexterity"
+                          (click)="character.abilityScores.dexterity = proposedNewDexterity; saveCharacter();" fxFlex>
+                          <mat-icon>checkmark</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" aria-label="Cancel Dexterity Change"
+                          (click)="proposedNewDexterity = character.abilityScores.dexterity" fxFlex>
+                          <mat-icon>close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </mat-menu>
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.dexterity}}</h4>
                 </td>
               </tr>
               <tr>
-                <td style="text-align: left;">
+                <td>
                   <h3>Constitution</h3>
                 </td>
                 <td>
-                  <h4>{{character.abilityScores.constitution}}</h4>
+                  <h4 [mat-menu-trigger-for]="asConstitutionMenu" class="clickable" aria-role="button">
+                    {{character.abilityScores.constitution}}</h4>
+                  <mat-menu #asConstitutionMenu="matMenu">
+                    <div fxLayout="column" class="editable-content-menu">
+                      <div fxLayout="row">
+                        <mat-form-field appearance="outline" fxFlex>
+                          <mat-label>Constitution</mat-label>
+                          <input matInput inputmode="numeric" [min]="1" [max]="30"
+                            aria-description="Change constitution to the value in this input" type="number"
+                            pattern="[0-9]" (click)="$event.stopPropagation()" [(ngModel)]="proposedNewConstitution"
+                            class="centered editable-content-menu-input" />
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="2px">
+                        <button mat-icon-button color="accent" aria-label="Change Constitution"
+                          (click)="character.abilityScores.constitution = proposedNewConstitution; saveCharacter();"
+                          fxFlex>
+                          <mat-icon>checkmark</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" aria-label="Cancel Constitution Change"
+                          (click)="proposedNewConstitution = character.abilityScores.constitution" fxFlex>
+                          <mat-icon>close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </mat-menu>
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.constitution}}</h4>
                 </td>
               </tr>
               <tr>
-                <td style="text-align: left;">
+                <td>
                   <h3>Intelligence</h3>
                 </td>
                 <td>
-                  <h4>{{character.abilityScores.intelligence}}</h4>
+                  <h4 [mat-menu-trigger-for]="asIntelligenceMenu" class="clickable" aria-role="button">
+                    {{character.abilityScores.intelligence}}</h4>
+                  <mat-menu #asIntelligenceMenu="matMenu">
+                    <div fxLayout="column" class="editable-content-menu">
+                      <div fxLayout="row">
+                        <mat-form-field appearance="outline" fxFlex>
+                          <mat-label>Intelligence</mat-label>
+                          <input matInput inputmode="numeric" [min]="1" [max]="30"
+                            aria-description="Change intelligence to the value in this input" type="number"
+                            pattern="[0-9]" (click)="$event.stopPropagation()" [(ngModel)]="proposedNewIntelligence"
+                            class="centered editable-content-menu-input" />
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="2px">
+                        <button mat-icon-button color="accent" aria-label="Change Intelligence"
+                          (click)="character.abilityScores.intelligence = proposedNewIntelligence; saveCharacter();"
+                          fxFlex>
+                          <mat-icon>checkmark</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" aria-label="Cancel Intelligence Change"
+                          (click)="proposedNewIntelligence = character.abilityScores.intelligence" fxFlex>
+                          <mat-icon>close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </mat-menu>
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.intelligence}}</h4>
                 </td>
               </tr>
               <tr>
-                <td style="text-align: left;">
+                <td>
                   <h3>Wisdom</h3>
                 </td>
                 <td>
-                  <h4>{{character.abilityScores.wisdom}}</h4>
+                  <h4 [mat-menu-trigger-for]="asWisdomMenu" class="clickable" aria-role="button">
+                    {{character.abilityScores.wisdom}}</h4>
+                  <mat-menu #asWisdomMenu="matMenu">
+                    <div fxLayout="column" class="editable-content-menu">
+                      <div fxLayout="row">
+                        <mat-form-field appearance="outline" fxFlex>
+                          <mat-label>Wisdom</mat-label>
+                          <input matInput inputmode="numeric" [min]="1" [max]="30"
+                            aria-description="Change wisdom to the value in this input" type="number" pattern="[0-9]"
+                            (click)="$event.stopPropagation()" [(ngModel)]="proposedNewWisdom"
+                            class="centered editable-content-menu-input" />
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="2px">
+                        <button mat-icon-button color="accent" aria-label="Change Wisdom"
+                          (click)="character.abilityScores.wisdom = proposedNewWisdom; saveCharacter();" fxFlex>
+                          <mat-icon>checkmark</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" aria-label="Cancel Wisdom Change"
+                          (click)="proposedNewWisdom = character.abilityScores.wisdom" fxFlex>
+                          <mat-icon>close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </mat-menu>
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.wisdom}}</h4>
                 </td>
               </tr>
               <tr>
-                <td style="text-align: left;">
+                <td>
                   <h3>Charisma</h3>
                 </td>
                 <td>
-                  <h4>{{character.abilityScores.charisma}}</h4>
+                  <h4 [mat-menu-trigger-for]="asCharismaMenu" class="clickable" aria-role="button">
+                    {{character.abilityScores.charisma}}</h4>
+                  <mat-menu #asCharismaMenu="matMenu">
+                    <div fxLayout="column" class="editable-content-menu">
+                      <div fxLayout="row">
+                        <mat-form-field appearance="outline" fxFlex>
+                          <mat-label>Charisma</mat-label>
+                          <input matInput inputmode="numeric" [min]="1" [max]="30"
+                            aria-description="Change charisma to the value in this input" type="number" pattern="[0-9]"
+                            (click)="$event.stopPropagation()" [(ngModel)]="proposedNewCharisma"
+                            class="centered editable-content-menu-input" />
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="2px">
+                        <button mat-icon-button color="accent" aria-label="Change Charisma"
+                          (click)="character.abilityScores.charisma = proposedNewCharisma; saveCharacter();" fxFlex>
+                          <mat-icon>checkmark</mat-icon>
+                        </button>
+                        <button mat-icon-button color="warn" aria-label="Cancel Charisma Change"
+                          (click)="proposedNewCharisma = character.abilityScores.charisma" fxFlex>
+                          <mat-icon>close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </mat-menu>
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.charisma}}</h4>
@@ -159,7 +412,248 @@
             </tbody>
           </table>
         </div>
+
+        <div fxFlex="row">
+          <br />
+          <mat-divider></mat-divider><br />
+        </div>
+
+        <!-- Skills -->
+        <div fxFlex="row" class="centered">
+          <h2>Skills</h2>
+        </div>
+
+        <div fxLayout="row" class="centered">
+          <table fxFlex>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Modifier</th>
+                <th>Proficient</th>
+              </tr>
+            </thead>
+            <tbody class="stats-body">
+              <tr>
+                <td>Acrobatics</td>
+                <td>{{ character.getSkills().acrobatics }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.acrobatics ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('acrobatics')" class="clickable">
+                    {{character.proficiencies.skills.acrobatics ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Animal Handling</td>
+                <td>{{ character.getSkills().animalHandling }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.animalHandling ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('animalHandling')" class="clickable">
+                    {{character.proficiencies.skills.animalHandling ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Arcana</td>
+                <td>{{ character.getSkills().arcana }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.arcana ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('arcana')" class="clickable">
+                    {{character.proficiencies.skills.arcana ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Athletics</td>
+                <td>{{ character.getSkills().athletics }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.athletics ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('athletics')" class="clickable">
+                    {{character.proficiencies.skills.athletics ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Deception</td>
+                <td>{{ character.getSkills().deception }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.deception ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('deception')" class="clickable">
+                    {{character.proficiencies.skills.deception ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>History</td>
+                <td>{{ character.getSkills().history }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.history ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('history')" class="clickable">
+                    {{character.proficiencies.skills.history ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Insight</td>
+                <td>{{ character.getSkills().insight }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.insight ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('insight')" class="clickable">
+                    {{character.proficiencies.skills.insight ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Intimidation</td>
+                <td>{{ character.getSkills().intimidation }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.intimidation ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('intimidation')" class="clickable">
+                    {{character.proficiencies.skills.intimidation ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Investigation</td>
+                <td>{{ character.getSkills().investigation }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.investigation ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('investigation')" class="clickable">
+                    {{character.proficiencies.skills.investigation ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Medicine</td>
+                <td>{{ character.getSkills().medicine }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.medicine ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('medicine')" class="clickable">
+                    {{character.proficiencies.skills.medicine ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Nature</td>
+                <td>{{ character.getSkills().nature }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.nature ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('nature')" class="clickable">
+                    {{character.proficiencies.skills.nature ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Perception</td>
+                <td>{{ character.getSkills().perception }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.perception ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('perception')" class="clickable">
+                    {{character.proficiencies.skills.perception ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Performance</td>
+                <td>{{ character.getSkills().performance }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.performance ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('performance')" class="clickable">
+                    {{character.proficiencies.skills.performance ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Persuasion</td>
+                <td>{{ character.getSkills().persuasion }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.persuasion ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('persuasion')" class="clickable">
+                    {{character.proficiencies.skills.persuasion ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Religion</td>
+                <td>{{ character.getSkills().religion }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.religion ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('religion')" class="clickable">
+                    {{character.proficiencies.skills.religion ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Sleight of Hand</td>
+                <td>{{ character.getSkills().sleightOfHand }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.sleightOfHand ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('sleightOfHand')" class="clickable">
+                    {{character.proficiencies.skills.sleightOfHand ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Stealth</td>
+                <td>{{ character.getSkills().stealth }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.stealth ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('stealth')" class="clickable">
+                    {{character.proficiencies.skills.stealth ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+              <tr>
+                <td>Survival</td>
+                <td>{{ character.getSkills().survival }}</td>
+                <td aria-label="Is your character proficient in this skill?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.proficiencies.skills.survival ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSkillProficiency('survival')" class="clickable">
+                    {{character.proficiencies.skills.survival ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+
     </ng-container>
     <ng-template #noCharacter>
       <em>Could not load character</em>

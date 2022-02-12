@@ -1,4 +1,6 @@
 import { Campaign } from "src/app/campaigns/models/campaign";
+import { Abilities, CharacterAbilities } from "src/app/data/static/abilities";
+import { abilitiesToSkillsMapping, CharacterSkills, Skills } from "src/app/data/static/skills";
 
 export interface ICharacter {
   id?: number;
@@ -14,14 +16,24 @@ export interface ICharacter {
   armorClass: number;
   initiative: number;
   speed: number;
+  proficiencies: CharacterProficiencies;
+  inspiration: number;
 
   campaignIds: number[];
   campaigns: Campaign[];
 
-  abilityScores: CharacterAbilities;
-  abilityModifiers: CharacterAbilities;
+  abilityScores: CharacterAbilities<number>;
+  abilityModifiers: CharacterAbilities<number>;
   proficiencyBonus: number;
+  passivePerception: number;
+
+  getSkills(): CharacterSkills<number>;
 }
+
+type CharacterProficiencies = {
+  savingThrows: Record<Abilities, boolean>,
+  skills: Record<Skills, boolean>
+};
 
 export class Character implements ICharacter {
   id?: number | undefined;
@@ -29,7 +41,7 @@ export class Character implements ICharacter {
   race?: string | undefined;
   class?: string | undefined;
   created = new Date();
-  image?: Blob | undefined;
+  image?: File | undefined;
   campaignIds: number[] = [];
   campaigns: Campaign[] = [];
   level = 1;
@@ -38,7 +50,8 @@ export class Character implements ICharacter {
   tempHealth = 0;
   armorClass = 10;
   speed = 30;
-  abilityScores: CharacterAbilities = {
+  inspiration = 0;
+  abilityScores: CharacterAbilities<number> = {
     strength: 8,
     dexterity: 8,
     constitution: 8,
@@ -46,10 +59,38 @@ export class Character implements ICharacter {
     wisdom: 8,
     charisma: 8
   };
+  proficiencies: CharacterProficiencies = {
+    savingThrows: {
+      strength: false,
+      charisma: false,
+      constitution: false,
+      dexterity: false,
+      intelligence: false,
+      wisdom: false
+    },
+    skills: {
+      acrobatics: false,
+      animalHandling: false,
+      arcana: false,
+      athletics: false,
+      deception: false,
+      history: false,
+      insight: false,
+      intimidation: false,
+      investigation: false,
+      medicine: false,
+      nature: false,
+      perception: false,
+      performance: false,
+      persuasion: false,
+      religion: false,
+      sleightOfHand: false,
+      stealth: false,
+      survival: false
+    }
+  };
 
-  private imageUrl: string | undefined;
-
-  get abilityModifiers(): CharacterAbilities {
+  get abilityModifiers(): CharacterAbilities<number> {
     return {
       strength: this.getModifierFromScore(this.abilityScores.strength),
       dexterity: this.getModifierFromScore(this.abilityScores.dexterity),
@@ -72,31 +113,52 @@ export class Character implements ICharacter {
     return Math.floor((2 + (this.level - 1)) / 4);
   }
 
-  public getImageSource(): string | undefined {
-    if (this.image) {
-      this.imageUrl = URL.createObjectURL(this.image);
+  get passivePerception(): number {
+    const isProficient = this.proficiencies.skills.perception;
+    let score = 10 + this.abilityModifiers.wisdom;
+
+    if(isProficient) {
+      score += this.proficiencyBonus;
     }
 
-    return this.imageUrl;
+    return score;
   }
 
-  public unsetImageSource(): void {
-    if (this.imageUrl) {
-      URL.revokeObjectURL(this.imageUrl);
-      this.imageUrl = undefined;
+  public getSkills(): CharacterSkills<number> {
+    return {
+      athletics: this.getSkillScore('athletics'),
+      acrobatics: this.getSkillScore('acrobatics'),
+      sleightOfHand: this.getSkillScore('sleightOfHand'),
+      stealth: this.getSkillScore('stealth'),
+      arcana: this.getSkillScore('arcana'),
+      history: this.getSkillScore('history'),
+      investigation: this.getSkillScore('investigation'),
+      nature: this.getSkillScore('nature'),
+      religion: this.getSkillScore('religion'),
+      animalHandling: this.getSkillScore('animalHandling'),
+      insight: this.getSkillScore('insight'),
+      medicine: this.getSkillScore('medicine'),
+      perception: this.getSkillScore('perception'),
+      survival: this.getSkillScore('survival'),
+      deception: this.getSkillScore('deception'),
+      intimidation: this.getSkillScore('intimidation'),
+      performance: this.getSkillScore('performance'),
+      persuasion: this.getSkillScore('persuasion')
+    };
+  }
+
+  private getSkillScore(skill: Skills): number {
+    const isProficient = this.proficiencies.skills[skill];
+    const abilityScore = abilitiesToSkillsMapping.get(skill)!;
+    let score = this.abilityModifiers[abilityScore];
+    if(isProficient) {
+      score += this.proficiencyBonus;
     }
+
+    return score;
   }
 
   private getModifierFromScore(score: number): number {
     return Math.floor((score - 10) / 2);
   }
-}
-
-export interface CharacterAbilities {
-  strength: number;
-  dexterity: number;
-  constitution: number;
-  intelligence: number;
-  wisdom: number;
-  charisma: number;
 }

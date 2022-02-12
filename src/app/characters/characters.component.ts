@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { Campaign } from '../campaigns/models/campaign';
 import { CampaignDataService } from '../data/services/campaigns/campaign-data.service';
 import { CharacterDataService } from '../data/services/characters/character-data.service';
@@ -20,6 +20,8 @@ export class CharactersComponent implements OnInit, OnDestroy {
   public campaigns: Campaign[] = [];
   public selectedCampaigns: Campaign[] = [];
 
+  private imageUrls = new Map<File, { url: string, safeUrl: SafeUrl }>();
+
   constructor(
     private readonly sanitizer: DomSanitizer,
     private readonly dialog: MatDialog,
@@ -35,16 +37,17 @@ export class CharactersComponent implements OnInit, OnDestroy {
     if (existingCharacters.length > 0) {
       this.characters = existingCharacters.slice();
       this.filteredCharacters = this.characters.slice(); // TODO: Fix filtering
-      // this.updateFilter();
+      this.updateFilter();
     }
   }
 
   ngOnDestroy(): void {
-      this.characters.forEach(c => c?.unsetImageSource());
-  }
-
-  public sanitize(url: string) {
-    return this.sanitizer.bypassSecurityTrustUrl(url);
+    this.imageUrls.forEach(fileInfo => {
+      if (fileInfo?.url) {
+        console.log('safe url', fileInfo);
+        URL.revokeObjectURL(fileInfo.url as any);
+      }
+    });
   }
 
   public openNewCharacterDialog(character?: Character): void {
@@ -70,6 +73,20 @@ export class CharactersComponent implements OnInit, OnDestroy {
   public updateFilter(): void {
     const selectedCampaignIds = this.selectedCampaigns.map(sc => sc.id);
     this.filteredCharacters = this.characters.slice(); // this.characters.filter(character => character.campaignIds.some(ci => selectedCampaignIds.includes(ci)));
+  }
+
+  public getImageUrl(image: File | undefined): SafeUrl {
+    if (!image) {
+      return '';
+    } else if (this.imageUrls.has(image)) {
+      return this.imageUrls.get(image)?.safeUrl || '';
+    } else {
+      const url = URL.createObjectURL(image);
+      const safeUrl = this.sanitizer.bypassSecurityTrustUrl(url);
+      this.imageUrls.set(image, { url, safeUrl });
+
+      return safeUrl;
+    }
   }
 
 }

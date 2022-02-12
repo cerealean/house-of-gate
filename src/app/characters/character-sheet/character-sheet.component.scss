@@ -36,7 +36,26 @@ mat-progress-bar.health-bar {
 }
 
 .stats-body {
-  h2,h3,h4 {
+  h2,
+  h3,
+  h4 {
     margin: 0;
+  }
+  td:first-child {
+    text-align: left;
+  }
+}
+
+.editable-content-menu {
+  margin-left: 1em;
+  margin-right: 1em;
+  .editable-content-menu-input {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
   }
 }

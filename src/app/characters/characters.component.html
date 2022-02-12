@@ -17,9 +17,9 @@
       <mat-list>
         <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCharacter = character"
           *ngFor="let character of filteredCharacters" class="character-list-item">
-          <img matListAvatar *ngIf="character.getImageSource()" [src]="sanitize(character.getImageSource()!)"
+          <img matListAvatar *ngIf="character.image" [src]="getImageUrl(character.image)"
             alt="Character Image" />
-          <mat-icon matListAvatar *ngIf="!character.getImageSource()" mat-list-icon>hide_image</mat-icon>
+          <mat-icon matListAvatar *ngIf="!character.image" mat-list-icon>hide_image</mat-icon>
           <h3 matLine>{{character.name}}</h3>
           <p matLine>
             <span>Created: {{character.created | date:'shortDate'}}</span>
