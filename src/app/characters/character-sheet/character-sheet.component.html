@@ -194,6 +194,12 @@
                 <th>
                   <h3>Modifier</h3>
                 </th>
+                <th>
+                  <h4>Saving Throw</h4>
+                </th>
+                <th>
+                  <h3>Proficient</h3>
+                </th>
               </tr>
             </thead>
             <tbody class="stats-body">
@@ -231,6 +237,17 @@
                 <td>
                   <h4>{{character.abilityModifiers.strength}}</h4>
                 </td>
+                <td>
+                  <h4>{{character.savingThrows.strength}}</h4>
+                </td>
+                <td aria-label="Is your character proficient in this saving throw?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.savingThrows.strength ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSavingThrowProficiency('strength')" class="clickable">
+                    {{character.proficiencies.savingThrows.strength ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -265,6 +282,17 @@
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.dexterity}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.savingThrows.dexterity}}</h4>
+                </td>
+                <td aria-label="Is your character proficient in this saving throw?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.savingThrows.dexterity ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSavingThrowProficiency('dexterity')" class="clickable">
+                    {{character.proficiencies.savingThrows.dexterity ? 'check' : 'close'}}
+                  </mat-icon>
                 </td>
               </tr>
               <tr>
@@ -302,6 +330,17 @@
                 <td>
                   <h4>{{character.abilityModifiers.constitution}}</h4>
                 </td>
+                <td>
+                  <h4>{{character.savingThrows.constitution}}</h4>
+                </td>
+                <td aria-label="Is your character proficient in this saving throw?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.savingThrows.constitution ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSavingThrowProficiency('constitution')" class="clickable">
+                    {{character.proficiencies.savingThrows.constitution ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -338,6 +377,17 @@
                 <td>
                   <h4>{{character.abilityModifiers.intelligence}}</h4>
                 </td>
+                <td>
+                  <h4>{{character.savingThrows.intelligence}}</h4>
+                </td>
+                <td aria-label="Is your character proficient in this saving throw?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.savingThrows.intelligence ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSavingThrowProficiency('intelligence')" class="clickable">
+                    {{character.proficiencies.savingThrows.intelligence ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -373,6 +423,17 @@
                 <td>
                   <h4>{{character.abilityModifiers.wisdom}}</h4>
                 </td>
+                <td>
+                  <h4>{{character.savingThrows.wisdom}}</h4>
+                </td>
+                <td aria-label="Is your character proficient in this saving throw?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.savingThrows.wisdom ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSavingThrowProficiency('wisdom')" class="clickable">
+                    {{character.proficiencies.savingThrows.wisdom ? 'check' : 'close'}}
+                  </mat-icon>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -407,6 +468,17 @@
                 </td>
                 <td>
                   <h4>{{character.abilityModifiers.charisma}}</h4>
+                </td>
+                <td>
+                  <h4>{{character.savingThrows.charisma}}</h4>
+                </td>
+                <td aria-label="Is your character proficient in this saving throw?">
+                  <mat-icon title="Click to toggle..."
+                    [attr.aria-label]="character.savingThrows.charisma ? 'Yes' : 'No'"
+                    aria-description="Click to toggle between proficient or not proficient."
+                    (click)="toggleSavingThrowProficiency('charisma')" class="clickable">
+                    {{character.proficiencies.savingThrows.charisma ? 'check' : 'close'}}
+                  </mat-icon>
                 </td>
               </tr>
             </tbody>

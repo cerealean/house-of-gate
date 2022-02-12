@@ -24,6 +24,7 @@ export interface ICharacter {
 
   abilityScores: CharacterAbilities<number>;
   abilityModifiers: CharacterAbilities<number>;
+  savingThrows: CharacterAbilities<number>;
   proficiencyBonus: number;
   passivePerception: number;
 
@@ -101,6 +102,17 @@ export class Character implements ICharacter {
     };
   }
 
+  get savingThrows(): CharacterAbilities<number> {
+    return {
+      charisma: this.getSavingThrow('charisma'),
+      constitution: this.getSavingThrow('constitution'),
+      dexterity: this.getSavingThrow('dexterity'),
+      intelligence: this.getSavingThrow('intelligence'),
+      strength: this.getSavingThrow('strength'),
+      wisdom: this.getSavingThrow('wisdom')
+    };
+  }
+
   get initiative(): number {
     return this.abilityModifiers.dexterity;
   }
@@ -151,6 +163,17 @@ export class Character implements ICharacter {
     const isProficient = this.proficiencies.skills[skill];
     const abilityScore = abilitiesToSkillsMapping.get(skill)!;
     let score = this.abilityModifiers[abilityScore];
+    if(isProficient) {
+      score += this.proficiencyBonus;
+    }
+
+    return score;
+  }
+
+  private getSavingThrow(ability: Abilities): number {
+    const isProficient = this.proficiencies.savingThrows[ability];
+    let score = this.abilityModifiers[ability];
+
     if(isProficient) {
       score += this.proficiencyBonus;
     }

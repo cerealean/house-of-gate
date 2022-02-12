@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';
+import { Abilities } from 'src/app/data/static/abilities';
 import { Skills } from 'src/app/data/static/skills';
 import { DamageCalculatorModalComponent, DamageCalculatorResult } from '../damage-calculator-modal/damage-calculator-modal.component';
 import { Character } from '../models/character';
@@ -118,6 +119,11 @@ export class CharacterSheetComponent implements OnInit, OnDestroy {
 
   public async toggleSkillProficiency(ability: Skills) {
     this.character!.proficiencies.skills[ability] = !this.character!.proficiencies.skills[ability];
+    await this.saveCharacter();
+  }
+
+  public async toggleSavingThrowProficiency(ability: Abilities) {
+    this.character!.proficiencies.savingThrows[ability] = !this.character!.proficiencies.savingThrows[ability];
     await this.saveCharacter();
   }
 
