@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { UntypedFormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-can-i-hit',
@@ -8,8 +8,8 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class CanIHitComponent implements OnInit {
 
-  public readonly elevationDifferenceCtrl = new FormControl(5, [Validators.min(0), Validators.required, Validators.pattern(/^[0-9]*$/)]);
-  public readonly horizontalDifferenceCtrl = new FormControl(10, [Validators.min(0), Validators.required, Validators.pattern(/^[0-9]*$/)]);
+  public readonly elevationDifferenceCtrl = new UntypedFormControl(5, [Validators.min(0), Validators.required, Validators.pattern(/^[0-9]*$/)]);
+  public readonly horizontalDifferenceCtrl = new UntypedFormControl(10, [Validators.min(0), Validators.required, Validators.pattern(/^[0-9]*$/)]);
 
   public distance = Math.hypot(this.elevationDifferenceCtrl.value, this.horizontalDifferenceCtrl.value);
 
