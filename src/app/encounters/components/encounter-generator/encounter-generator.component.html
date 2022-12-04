@@ -35,7 +35,6 @@
           </span>
         </div>
         <div fxFlex="65%">
-          <!-- TODO: The 'tickInterval' property no longer exists -->
           <mat-slider style="width: 100%;" thumbLabel [(ngModel)]="encounterRequest.difficultyAmount"
             (valueChange)="updateFilters()" step="0.01" min="0.5" max="2"
             aria-label="Difficulty Slider"><input matSliderThumb /></mat-slider>
