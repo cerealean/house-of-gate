@@ -6,7 +6,7 @@ import { MonsterFilters } from 'src/app/monsters/models/monster-filters';
 import { EncounterGenerator2Service } from 'src/app/monsters/services/encounter-generator-2.service';
 import { StorageService, StorageKeys } from 'src/app/services/storage.service';
 import { GeneratedEncounter } from '../../models/encounter';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { SaveEncounterDialogComponent } from '../save-encounter-dialog/save-encounter-dialog.component';
 
 @Component({

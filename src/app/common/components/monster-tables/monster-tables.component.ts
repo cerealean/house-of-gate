@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+import { MatLegacyPaginator as MatPaginator } from '@angular/material/legacy-paginator';
 import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatLegacyTableDataSource as MatTableDataSource } from '@angular/material/legacy-table';
 import { ColumnInfo } from 'src/app/common/models/column-info';
 import { Monster } from 'src/app/monsters/models/monster';
 import { StorageKeys, StorageService } from 'src/app/services/storage.service';
