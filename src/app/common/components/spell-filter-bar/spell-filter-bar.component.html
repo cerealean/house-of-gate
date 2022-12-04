@@ -1,24 +1,24 @@
-<mat-card>
+<mat-card appearance="outlined">
   <div fxLayout="column">
     <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-      <mat-form-field appearance="standard" fxFlex="40%">
+      <mat-form-field fxFlex="40%">
         <mat-label>Filter By Name</mat-label>
         <input matInput type="text" (input)="filter()" spellcheck="false" autocomplete="off" autocapitalize="off" [(ngModel)]="filters.name">
       </mat-form-field>
       <div fxFlex fxLayout="row wrap" fxLayout.lt-md="column">
-        <mat-form-field appearance="standard" fxFlex>
+        <mat-form-field fxFlex>
           <mat-label>Schools</mat-label>
           <mat-select (selectionChange)="filter()" class="capitalize" [(ngModel)]="filters.school" multiple>
             <mat-option *ngFor="let school of schools" [value]="school" class="capitalize">{{ school }}</mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field appearance="standard" fxFlex>
+        <mat-form-field fxFlex>
           <mat-label>Classes</mat-label>
           <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.class" multiple>
             <mat-option *ngFor="let characterClass of classes" [value]="characterClass" class="capitalize">{{characterClass}}</mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field appearance="standard" fxFlex>
+        <mat-form-field fxFlex>
           <mat-label>Sources</mat-label>
           <mat-select (selectionChange)="filter($event)" class="capitalize" [(ngModel)]="filters.source" multiple>
             <mat-option *ngFor="let source of sources" [value]="source" class="capitalize">{{source}}</mat-option>
@@ -27,13 +27,13 @@
       </div>
     </div>
     <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-      <mat-form-field appearance="standard" fxFlex="19%">
+      <mat-form-field fxFlex="19%">
         <mat-label>Min Level</mat-label>
         <mat-select (selectionChange)="filter()" [(ngModel)]="filters.minLevel">
           <mat-option *ngFor="let val of fill(0, 9)" [value]="val">{{val}}</mat-option>
         </mat-select>
       </mat-form-field>
-      <mat-form-field appearance="standard" fxFlex="19%">
+      <mat-form-field fxFlex="19%">
         <mat-label>Max Level</mat-label>
         <mat-select (selectionChange)="filter()" [(ngModel)]="filters.maxLevel">
           <mat-option *ngFor="let val of fill(0, 9)" [value]="val">{{val}}</mat-option>

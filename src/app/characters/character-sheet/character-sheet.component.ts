@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterDataService } from 'src/app/data/services/characters/character-data.service';

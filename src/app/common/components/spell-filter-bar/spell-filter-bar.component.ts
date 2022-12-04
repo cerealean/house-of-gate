@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
-import { MatLegacySelectChange as MatSelectChange } from '@angular/material/legacy-select';
+import { MatSelectChange } from '@angular/material/select';
 import { classes } from 'src/app/data/static/classes';
 import { schoolsOfMagic } from 'src/app/data/static/schools-of-magic';
 import { sources } from 'src/app/data/static/sources';

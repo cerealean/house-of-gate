@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
-import { MatLegacySelectChange as MatSelectChange } from '@angular/material/legacy-select';
+import { MatSelectChange } from '@angular/material/select';
 import { environments } from 'src/app/data/static/environments';
 import { monsterTypes } from 'src/app/data/static/monster-types';
 import { sources } from 'src/app/data/static/sources';

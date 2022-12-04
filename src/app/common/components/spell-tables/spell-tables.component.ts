@@ -1,8 +1,8 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
-import { MatLegacyPaginator as MatPaginator } from '@angular/material/legacy-paginator';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { MatLegacyTableDataSource as MatTableDataSource } from '@angular/material/legacy-table';
+import { MatTableDataSource } from '@angular/material/table';
 import { ColumnInfo } from 'src/app/common/models/column-info';
 import { Spell } from 'src/app/spells/models/spell';
 

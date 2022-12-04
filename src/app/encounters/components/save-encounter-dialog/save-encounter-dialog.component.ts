@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from 'src/app/campaigns/models/campaign';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
 import { EncounterDataService } from 'src/app/data/services/encounters/encounter-data.service';

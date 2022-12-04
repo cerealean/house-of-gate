@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FeedbackRoutingModule } from './feedback-routing.module';
 import { FeedbackComponent } from './feedback.component';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
