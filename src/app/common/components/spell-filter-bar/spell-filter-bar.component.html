@@ -5,7 +5,7 @@
         <mat-label>Filter By Name</mat-label>
         <input matInput type="text" (input)="filter()" spellcheck="false" autocomplete="off" autocapitalize="off" [(ngModel)]="filters.name">
       </mat-form-field>
-      <div fxFlex fxLayout="row wrap" fxLayout.lt-md="column">
+      <div fxFlex fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
         <mat-form-field fxFlex>
           <mat-label>Schools</mat-label>
           <mat-select (selectionChange)="filter()" class="capitalize" [(ngModel)]="filters.school" multiple>
@@ -48,7 +48,7 @@
           (click)="changeCheckboxState($event, 'concentration')" fxFlex>
           Concentration?
         </mat-checkbox>
-        <button mat-button color="warn" (click)="setInitialFilters(); filter();" fxFlex>Reset Filters</button>
+        <button mat-button class="reset-button" color="warn" (click)="setInitialFilters(); filter();" fxFlex>Reset Filters</button>
       </div>
     </div>
   </div>
