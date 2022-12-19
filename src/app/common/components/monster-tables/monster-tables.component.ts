@@ -37,7 +37,7 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
   }
 
   ngOnChanges(simpleChanges: SimpleChanges): void {
-    if (simpleChanges.monsters && this.dataSource) {
+    if (simpleChanges?.monsters && this.dataSource) {
       this.dataSource.data = simpleChanges.monsters.currentValue;
     }
   }

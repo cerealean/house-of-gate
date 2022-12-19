@@ -29,15 +29,15 @@
           <span>
             Difficulty:&nbsp;
             <span>
-              {{formatSlider(encounterRequest.difficultyAmount)}}
+              {{ formatSlider(encounterRequest.difficultyAmount) }}
             </span>
             ({{ encounterRequest.difficultyAmount }})
           </span>
         </div>
         <div fxFlex="65%">
-          <mat-slider style="width: 100%;" discrete [(ngModel)]="encounterRequest.difficultyAmount"
-            (valueChange)="updateFilters()" step="0.01" min="0.5" max="2"
-            aria-label="Difficulty Slider"><input matSliderThumb /></mat-slider>
+          <mat-slider style="width: 100%;" discrete step="0.01" min="0.5" max="2" aria-label="Difficulty Slider"><input
+              matSliderThumb (valueChange)="updateFilters()" [(ngModel)]="encounterRequest.difficultyAmount" />
+          </mat-slider>
         </div>
         <div fxFlex="15%" style="text-align: center;">
           <button color="primary" matTooltip="Generate Random Encounter!" title="Generate Random Encounter!"
@@ -60,7 +60,8 @@
       New
     </button>
     &nbsp;
-    <button mat-raised-button color="accent" [disabled]="!(generatedEncounter.monsters.length > 0)" (click)="saveEncounter()">
+    <button mat-raised-button color="accent" [disabled]="!(generatedEncounter.monsters.length > 0)"
+      (click)="saveEncounter()">
       <mat-icon>save</mat-icon>
       Save
     </button>

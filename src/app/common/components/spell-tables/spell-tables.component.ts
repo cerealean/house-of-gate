@@ -37,7 +37,7 @@ export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   ngOnChanges(simpleChanges: SimpleChanges): void {
-    if (simpleChanges.spells && this.dataSource) {
+    if (simpleChanges?.spells && this.dataSource) {
       this.dataSource.data = simpleChanges.spells.currentValue;
     }
   }
