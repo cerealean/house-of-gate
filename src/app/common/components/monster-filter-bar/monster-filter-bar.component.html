@@ -49,11 +49,11 @@
         </mat-select>
       </mat-form-field>
       <div fxLayout="row wrap" fxFlex>
-        <mat-checkbox [(ngModel)]="filters.legendary" [indeterminate]="filters.legendary === undefined"
+        <mat-checkbox [ngModel]="filters.legendary" [indeterminate]="filters.legendary === undefined"
           (click)="changeCheckboxState($event, 'legendary')" fxFlex>
           Legendary?
         </mat-checkbox>
-        <mat-checkbox [(ngModel)]="filters.unique" [indeterminate]="filters.unique === undefined"
+        <mat-checkbox [ngModel]="filters.unique" [indeterminate]="filters.unique === undefined"
           (click)="changeCheckboxState($event, 'unique')" fxFlex>
           Unique?
         </mat-checkbox>

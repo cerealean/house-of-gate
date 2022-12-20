@@ -15,7 +15,7 @@ export class MonsterFilterBarComponent implements OnInit, OnDestroy, AfterViewIn
   public readonly environments = environments;
   public readonly sources = sources;
 
-  @Input() public filters!: MonsterFilters;
+  @Input() filters!: MonsterFilters;
   @Output() public readonly filterChanges = new EventEmitter<MonsterFilters>();
 
   ngOnInit(): void {
@@ -30,24 +30,19 @@ export class MonsterFilterBarComponent implements OnInit, OnDestroy, AfterViewIn
   }
 
   ngAfterViewInit(): void {
-    setTimeout(() => {
       this.filterChanges.emit(this.filters);
-    });
   }
 
   filter(event?: MatSelectChange) {
-    setTimeout(() => {
-      this.filterChanges.emit(this.filters);
-    }, 60);
+      const newFilters = Object.assign({}, this.filters);
+      this.filterChanges.emit(newFilters);
   }
 
   fill(start: number, end: number): number[] {
     return Array(end - start + 1).fill(0).map((_, index) => start + index);
   }
 
-  changeCheckboxState($event: MouseEvent, filterKey: string) {
-    $event.preventDefault();
-    $event.stopPropagation();
+  changeCheckboxState(_$event: MouseEvent, filterKey: string) {
     const currentValue = (this.filters as any)[filterKey];
     if(currentValue === true) {
       (this.filters as any)[filterKey] = false;
@@ -70,5 +65,6 @@ export class MonsterFilterBarComponent implements OnInit, OnDestroy, AfterViewIn
       unique: undefined,
       sources: this.sources.slice()
     };
+    this.filter();
   }
 }

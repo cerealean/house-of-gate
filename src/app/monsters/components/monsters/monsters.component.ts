@@ -31,18 +31,20 @@ export class MonstersComponent implements OnInit, AfterViewInit {
     if(currentMonsterFilters) {
       setTimeout(() => {
         this.filter(currentMonsterFilters);
-      }, 500);
+      });
     }
   }
 
   filter(filters: MonsterFilters) {
-    this.filters = filters;
-    const filteredMonsters = this.monsterFilter.filterMonsters(
-      this.allMonsters,
-      this.filters
-    );
-    this.displayedMonsters = filteredMonsters;
-    this.storage.setData(StorageKeys.MonsterFilters, filters);
+    setTimeout(() => {
+      this.filters = filters;
+      const filteredMonsters = this.monsterFilter.filterMonsters(
+        this.allMonsters,
+        this.filters
+      );
+      this.displayedMonsters = filteredMonsters;
+      this.storage.setData(StorageKeys.MonsterFilters, filters);
+    });
   }
 
   tableLoading(isLoading: boolean): void {
