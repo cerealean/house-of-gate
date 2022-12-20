@@ -26,7 +26,7 @@
           <ng-container *ngIf="!!selectedEncounter; else hasNoEncountersMessage;">
             <div fxLayout="row">
               <p>
-                <mat-icon>info</mat-icon> Generated on {{ selectedEncounter.date | date:'short' }}
+                <mat-icon>info</mat-icon> Generated on <time [dateTime]="selectedEncounter.date">{{ selectedEncounter.date | date:'short' }}</time>
               </p>
             </div>
             <div fxLayout="row">

@@ -1,0 +1,50 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Basic Info
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+      <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Name</mat-label>
+          <input matInput aria-label="Name for your new character" required type="text" minlength="1" maxlength="100"
+            [(ngModel)]="character.name" />
+          <mat-error>Please enter a character name</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Race</mat-label>
+          <mat-select [(ngModel)]="character.race">
+            <mat-option *ngFor="let race of racesList" [value]="race" style="text-transform: capitalize;">
+              {{ race }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+        <label for="character-image">Character Image (Optional):&nbsp;</label>
+        <input id="character-image" aria-label="Optionally upload an image representing your character"
+          title="Have an image to represent your character?" type="file" accept="image/*"
+          (change)="onFileChange($event)">
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Class(es)
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+      <!-- <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+        <mat-form-field appearance="fill" fxFlex>
+          <mat-label>Class(es)</mat-label>
+          <input matInput aria-label="Class(es) for your new character" type="text" maxlength="200"
+            [(ngModel)]="character.class" />
+        </mat-form-field>
+      </div> -->
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

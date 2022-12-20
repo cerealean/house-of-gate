@@ -1,12 +1,14 @@
 import { Campaign } from "src/app/campaigns/models/campaign";
 import { Abilities, CharacterAbilities } from "src/app/data/static/abilities";
 import { abilitiesToSkillsMapping, CharacterSkills, Skills } from "src/app/data/static/skills";
+import { CharacterClass } from "./class";
 
 export interface ICharacter {
   id?: number;
+  dataFormatVersion?: number;
   name: string;
   race?: string;
-  class?: string;
+  classes?: CharacterClass[];
   created: Date;
   image?: Blob;
   level: number;
@@ -38,9 +40,10 @@ type CharacterProficiencies = {
 
 export class Character implements ICharacter {
   id?: number | undefined;
+  dataFormatVersion? = 2;
   name!: string;
   race?: string | undefined;
-  class?: string | undefined;
+  classes?: CharacterClass[];
   created = new Date();
   image?: File | undefined;
   campaignIds: number[] = [];
