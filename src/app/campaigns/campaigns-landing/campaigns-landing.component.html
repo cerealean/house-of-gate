@@ -6,14 +6,14 @@
     <mat-list>
       <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCampaign = campaign" *ngFor="let campaign of campaigns"
         class="campaign-list-item">
-        <img matListAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)"
+        <img matListItemAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)"
           alt="Campaign Image" />
-        <mat-icon matListAvatar *ngIf="!campaign.getImageSource()" mat-list-icon>hide_image</mat-icon>
-        <h3 matLine>{{campaign.name}}</h3>
-        <p matLine>
-          <span>Created: {{campaign.date|date:'shortDate'}}</span>
+        <mat-icon matListItemAvatar *ngIf="!campaign.getImageSource()" mat-list-icon>hide_image</mat-icon>
+        <h3 matListItemTitle>{{campaign.name}}</h3>
+        <p matListItemLine>
+          <span>Created: <time [dateTime]="campaign.date">{{campaign.date|date:'shortDate'}}</time></span>
         </p>
-        <p matLine>
+        <p matListItemLine>
           <span>Encounters: {{campaign.encounters.length}}</span>
           ,&nbsp;
           <span>Characters: {{campaign.characters.length}}</span>

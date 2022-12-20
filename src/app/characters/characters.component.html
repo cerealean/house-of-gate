@@ -17,14 +17,14 @@
       <mat-list>
         <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCharacter = character"
           *ngFor="let character of filteredCharacters" class="character-list-item">
-          <img matListAvatar *ngIf="character.image" [src]="getImageUrl(character.image)"
+          <img matListItemAvatar *ngIf="character.image" [src]="getImageUrl(character.image)"
             alt="Character Image" />
-          <mat-icon matListAvatar *ngIf="!character.image" mat-list-icon>hide_image</mat-icon>
-          <h3 matLine>{{character.name}}</h3>
-          <p matLine>
+          <mat-icon matListItemAvatar *ngIf="!character.image" mat-list-icon>hide_image</mat-icon>
+          <h3 matListItemTitle>{{character.name}}</h3>
+          <p matListItemLine>
             <span>Created: {{character.created | date:'shortDate'}}</span>
           </p>
-          <p matLine>
+          <p matListItemLine>
             <span>Campaign(s): {{character.campaignIds.length}}</span>
           </p>
         </mat-list-item>
