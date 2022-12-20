@@ -22,7 +22,8 @@
     </div>
     <div fxLayout="row">
       <p fxFlex>
-        The distance is approximately <strong>{{ distance | number:'1.0-0' }}ft</strong>!
+        The distance is approximately <strong>{{ distance | number:'1.0-0' }}ft</strong>!<br />
+        <small><em>&radic;({{ elevationDifferenceCtrl.value }}<sup>2</sup> + {{ horizontalDifferenceCtrl.value }}<sup>2</sup>) = {{ distance | number:'1.0-0' }} when rounded to the nearest integer</em></small>
       </p>
     </div>
   </div>
