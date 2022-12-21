@@ -1,5 +1,5 @@
 import { IStoredMetadata } from "src/app/data/models/i-stored-metadata";
-import { Classes } from "src/app/data/static/classes";
+import { ClassNames } from "src/app/data/static/classes";
 import { SchoolsOfMagic } from "src/app/data/static/schools-of-magic";
 
 export interface ISpell extends IStoredMetadata {
@@ -28,7 +28,7 @@ export class Spell implements ISpell {
   range!: string;
   components!: string;
   duration!: string;
-  classes!: Classes[];
+  classes!: ClassNames[];
   sources!: string[];
   text!: string;
   concentration!: boolean;
@@ -37,7 +37,7 @@ export class Spell implements ISpell {
     return sources.some(givenSource => this.sources.some(s => s?.toLowerCase().includes(givenSource?.toLowerCase())));
   }
 
-  public hasClassIntersection(classes: Classes[]) {
+  public hasClassIntersection(classes: ClassNames[]) {
     return classes.some(givenClass => this.classes.some(s => s?.toLowerCase().includes(givenClass?.toLowerCase())));
   }
 

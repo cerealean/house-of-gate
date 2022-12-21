@@ -1,4 +1,4 @@
-export const classes = [
+export const classNames = [
   'barbarian',
   'bard',
   'cleric',
@@ -15,4 +15,10 @@ export const classes = [
   'blood hunter'
 ] as const;
 
-export type Classes = typeof classes[number];
+export type ClassNames = typeof classNames[number];
+
+export class CharacterClass {
+  name?: ClassNames;
+  level = 1;
+
+}

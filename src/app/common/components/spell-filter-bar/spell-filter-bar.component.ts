@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
-import { classes } from 'src/app/data/static/classes';
+import { classNames } from 'src/app/data/static/classes';
 import { schoolsOfMagic } from 'src/app/data/static/schools-of-magic';
 import { sources } from 'src/app/data/static/sources';
 import { SpellFilters } from 'src/app/spells/models/spell-filters';
@@ -12,7 +12,7 @@ import { SpellFilters } from 'src/app/spells/models/spell-filters';
 })
 export class SpellFilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly sources = sources;
-  public readonly classes = classes;
+  public readonly classes = classNames;
   public readonly schools = schoolsOfMagic;
 
   @Input() public filters!: SpellFilters;
@@ -67,7 +67,7 @@ export class SpellFilterBarComponent implements OnInit, OnDestroy, AfterViewInit
       ritual: undefined,
       concentration: undefined,
       source: this.sources.slice(),
-      class: classes.slice(),
+      class: classNames.slice(),
       school: schoolsOfMagic.slice()
     };
   }

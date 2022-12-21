@@ -1,3 +1,6 @@
+import { AbilityModifiers } from "./abilities";
+import { TraitsList } from "./traits";
+
 export const races = [
   'aarakocra',
   'aasimar',
@@ -63,3 +66,22 @@ export const races = [
 ] as const;
 
 export type Races = typeof races[number];
+
+export interface Race {
+  name: Races;
+  defaultSkillModifiers: AbilityModifiers;
+  defaultTraits: TraitsList[];
+}
+
+export const defaultRaces: ReadonlyMap<Races, Race> = new Map<Races, Race>([
+  ['aarakocra', {
+    name: 'aarakocra',
+    defaultSkillModifiers: new Map([
+      ['dexterity', 2],
+      ['wisdom', 1]
+    ]),
+    defaultTraits: [
+
+    ]
+  }]
+]);

@@ -1,6 +1,7 @@
-import { Classes } from "src/app/data/static/classes";
+import { ClassNames } from "src/app/data/static/classes";
 
 export class CharacterClass {
-  name?: Classes;
+  name?: ClassNames;
   level = 1;
+
 }
