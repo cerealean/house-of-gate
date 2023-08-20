@@ -1,5 +1,14 @@
-import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
+
 import { environments } from 'src/app/data/static/environments';
 import { monsterTypes } from 'src/app/data/static/monster-types';
 import { sources } from 'src/app/data/static/sources';
@@ -60,7 +69,7 @@ export class MonsterFilterBarComponent implements OnInit, OnDestroy, AfterViewIn
       minCr: 0,
       maxCr: 30,
       type: this.monsterTypes.slice(),
-      environment: this.environments.concat('None'),
+      environment: ['None'].concat(this.environments),
       legendary: undefined,
       unique: undefined,
       sources: this.sources.slice()

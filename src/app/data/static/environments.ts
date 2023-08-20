@@ -13,4 +13,6 @@ export const environments = [
   "swamp",
   "underground",
   "urban",
-];
+] as const;
+
+export type Environments = typeof environments[number];
