@@ -8,8 +8,8 @@ describe('SaveEncounterDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SaveEncounterDialogComponent ]
-    })
+    imports: [SaveEncounterDialogComponent]
+})
     .compileComponents();
   });
 

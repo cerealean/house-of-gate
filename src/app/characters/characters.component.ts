@@ -6,11 +6,21 @@ import { CampaignDataService } from '../data/services/campaigns/campaign-data.se
 import { CharacterDataService } from '../data/services/characters/character-data.service';
 import { Character } from './models/character';
 import { NewCharacterComponent } from './new-character/new-character.component';
+import { RouterLink } from '@angular/router';
+import { MatIcon } from '@angular/material/icon';
+import { MatMenuTrigger, MatMenu, MatMenuItem } from '@angular/material/menu';
+import { MatList, MatListItem, MatListItemAvatar, MatListItemTitle, MatListItemLine } from '@angular/material/list';
+import { NgIf, NgFor, DatePipe } from '@angular/common';
+import { MatDivider } from '@angular/material/divider';
+import { MatButton } from '@angular/material/button';
+import { MatCard } from '@angular/material/card';
 
 @Component({
-  selector: 'app-characters',
-  templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.scss']
+    selector: 'app-characters',
+    templateUrl: './characters.component.html',
+    styleUrls: ['./characters.component.scss'],
+    standalone: true,
+    imports: [MatCard, MatButton, MatDivider, NgIf, MatList, NgFor, MatListItem, MatMenuTrigger, MatListItemAvatar, MatIcon, MatListItemTitle, MatListItemLine, MatMenu, MatMenuItem, RouterLink, DatePipe]
 })
 export class CharactersComponent implements OnInit, OnDestroy {
   public characters: Character[] = [];

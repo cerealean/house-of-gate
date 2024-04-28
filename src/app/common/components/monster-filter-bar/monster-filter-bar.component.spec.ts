@@ -8,8 +8,8 @@ describe('MonsterFilterBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MonsterFilterBarComponent ]
-    })
+    imports: [MonsterFilterBarComponent]
+})
     .compileComponents();
   });
 

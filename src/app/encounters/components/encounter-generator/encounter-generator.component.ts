@@ -8,11 +8,25 @@ import { StorageService, StorageKeys } from 'src/app/services/storage.service';
 import { GeneratedEncounter } from '../../models/encounter';
 import { MatDialog } from '@angular/material/dialog';
 import { SaveEncounterDialogComponent } from '../save-encounter-dialog/save-encounter-dialog.component';
+import { MonsterTablesComponent } from '../../../common/components/monster-tables/monster-tables.component';
+import { MatIcon } from '@angular/material/icon';
+import { MatButton } from '@angular/material/button';
+import { MatSlider, MatSliderThumb } from '@angular/material/slider';
+import { NumberOnlyDirective } from '../../../common/directives/number-only.directive';
+import { FormsModule } from '@angular/forms';
+import { MatInput } from '@angular/material/input';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { MatCard } from '@angular/material/card';
+import { MonsterFilterBarComponent } from '../../../common/components/monster-filter-bar/monster-filter-bar.component';
+import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-encounter-generator',
-  templateUrl: './encounter-generator.component.html',
-  styleUrls: ['./encounter-generator.component.scss']
+    selector: 'app-encounter-generator',
+    templateUrl: './encounter-generator.component.html',
+    styleUrls: ['./encounter-generator.component.scss'],
+    standalone: true,
+    imports: [NgIf, MonsterFilterBarComponent, MatCard, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, NumberOnlyDirective, MatSlider, MatSliderThumb, MatButton, MatIcon, MonsterTablesComponent]
 })
 export class EncounterGeneratorComponent implements OnDestroy, OnInit {
 

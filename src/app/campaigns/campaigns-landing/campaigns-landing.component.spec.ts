@@ -8,8 +8,8 @@ describe('CampaignsLandingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CampaignsLandingComponent ]
-    })
+    imports: [CampaignsLandingComponent]
+})
     .compileComponents();
   });
 

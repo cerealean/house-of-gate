@@ -7,11 +7,24 @@ import { Abilities } from 'src/app/data/static/abilities';
 import { Skills } from 'src/app/data/static/skills';
 import { DamageCalculatorModalComponent, DamageCalculatorResult } from '../damage-calculator-modal/damage-calculator-modal.component';
 import { Character } from '../models/character';
+import { MatProgressBar } from '@angular/material/progress-bar';
+import { MatDivider } from '@angular/material/divider';
+import { MatIcon } from '@angular/material/icon';
+import { MatIconButton } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import { MatInput } from '@angular/material/input';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatMenuTrigger, MatMenu } from '@angular/material/menu';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { NgIf } from '@angular/common';
+import { MatCard } from '@angular/material/card';
 
 @Component({
-  selector: 'app-character-sheet',
-  templateUrl: './character-sheet.component.html',
-  styleUrls: ['./character-sheet.component.scss']
+    selector: 'app-character-sheet',
+    templateUrl: './character-sheet.component.html',
+    styleUrls: ['./character-sheet.component.scss'],
+    standalone: true,
+    imports: [MatCard, NgIf, FlexModule, MatMenuTrigger, MatMenu, MatFormField, MatLabel, MatInput, FormsModule, MatIconButton, MatIcon, MatDivider, MatProgressBar]
 })
 export class CharacterSheetComponent implements OnInit, OnDestroy {
   public character?: Character;

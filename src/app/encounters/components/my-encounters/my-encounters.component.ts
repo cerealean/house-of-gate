@@ -1,16 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Campaign } from 'src/app/campaigns/models/campaign';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
 import { EncounterDataService } from 'src/app/data/services/encounters/encounter-data.service';
 import { Encounter } from '../../models/encounter';
 import { DeleteEncounterDialogComponent } from './delete-encounter-dialog/delete-encounter-dialog.component';
+import { MonsterTablesComponent } from '../../../common/components/monster-tables/monster-tables.component';
+import { MatButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
+import { MatOption } from '@angular/material/core';
+import { NgFor, NgIf, DatePipe } from '@angular/common';
+import { MatSelect } from '@angular/material/select';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { MatCard } from '@angular/material/card';
 
 @Component({
-  selector: 'app-my-encounters',
-  templateUrl: './my-encounters.component.html',
-  styleUrls: ['./my-encounters.component.scss']
+    selector: 'app-my-encounters',
+    templateUrl: './my-encounters.component.html',
+    styleUrls: ['./my-encounters.component.scss'],
+    standalone: true,
+    imports: [MatCard, FlexModule, MatFormField, MatLabel, MatSelect, NgFor, MatOption, NgIf, MatIcon, MatButton, MonsterTablesComponent, RouterLink, DatePipe]
 })
 export class MyEncountersComponent implements OnInit {
   public campaigns: Campaign[] = [];

@@ -4,11 +4,21 @@ import { StorageKeys, StorageService } from 'src/app/services/storage.service';
 import { Spell } from '../../models/spell';
 import { SpellFilters } from '../../models/spell-filters';
 import { SpellFilterService } from '../../services/spell-filter/spell-filter.service';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { MatIcon } from '@angular/material/icon';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { MatCard } from '@angular/material/card';
+import { SpellTablesComponent } from '../../../common/components/spell-tables/spell-tables.component';
+import { NgIf } from '@angular/common';
+import { MatDivider } from '@angular/material/divider';
+import { SpellFilterBarComponent } from '../../../common/components/spell-filter-bar/spell-filter-bar.component';
 
 @Component({
-  selector: 'app-spells',
-  templateUrl: './spells.component.html',
-  styleUrls: ['./spells.component.scss']
+    selector: 'app-spells',
+    templateUrl: './spells.component.html',
+    styleUrls: ['./spells.component.scss'],
+    standalone: true,
+    imports: [SpellFilterBarComponent, MatDivider, NgIf, SpellTablesComponent, MatCard, FlexModule, MatIcon, MatProgressSpinner]
 })
 export class SpellsComponent implements OnInit, AfterViewInit {
   private allSpells: Spell[] = [];

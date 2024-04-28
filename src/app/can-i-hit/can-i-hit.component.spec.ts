@@ -8,8 +8,8 @@ describe('CanIHitComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CanIHitComponent ]
-    })
+    imports: [CanIHitComponent]
+})
     .compileComponents();
   });
 

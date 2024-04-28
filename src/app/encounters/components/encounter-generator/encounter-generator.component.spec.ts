@@ -8,8 +8,8 @@ describe('EncounterGeneratorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EncounterGeneratorComponent ]
-    })
+    imports: [EncounterGeneratorComponent]
+})
     .compileComponents();
   });
 

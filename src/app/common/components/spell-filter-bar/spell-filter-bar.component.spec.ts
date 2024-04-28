@@ -8,8 +8,8 @@ describe('SpellFilterBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpellFilterBarComponent ]
-    })
+    imports: [SpellFilterBarComponent]
+})
     .compileComponents();
   });
 

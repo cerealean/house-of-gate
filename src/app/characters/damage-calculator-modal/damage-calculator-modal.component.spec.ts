@@ -8,8 +8,8 @@ describe('DamageCalculatorModalComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DamageCalculatorModalComponent ]
-    })
+    imports: [DamageCalculatorModalComponent]
+})
     .compileComponents();
   });
 

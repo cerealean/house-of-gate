@@ -8,8 +8,8 @@ describe('ChangelogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChangelogComponent ]
-    })
+    imports: [ChangelogComponent]
+})
     .compileComponents();
   });
 
