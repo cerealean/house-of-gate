@@ -1,4 +1,6 @@
-export const items = [
+import { Item } from "../models/i-item";
+
+export const items: Item[] = [
   {
     "id": "7bcc5985-e5ba-4d7c-90d0-b0249e5bedb0",
     "name": "Copper (cp)",
