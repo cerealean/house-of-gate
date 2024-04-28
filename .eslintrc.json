@@ -6,6 +6,16 @@
   "overrides": [
     {
       "files": [
+        "*.js",
+        "*.cjs",
+        "*.mjs"
+      ],
+      "parserOptions": {
+        "ecmaVersion": "latest"
+      }
+    },
+    {
+      "files": [
         "*.ts"
       ],
       "parserOptions": {
