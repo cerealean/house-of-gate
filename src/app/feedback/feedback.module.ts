@@ -7,13 +7,11 @@ import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
-  declarations: [
-    FeedbackComponent
-  ],
-  imports: [
-    CommonModule,
-    FeedbackRoutingModule,
-    MatCardModule
-  ]
+    imports: [
+        CommonModule,
+        FeedbackRoutingModule,
+        MatCardModule,
+        FeedbackComponent
+    ]
 })
 export class FeedbackModule { }

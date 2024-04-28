@@ -26,35 +26,33 @@ import { TermsComponent } from './components/terms/terms.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    PrivacyPolicyComponent,
-    TermsComponent,
-    FooterComponent,
-    HomeComponent,
-    ChangelogComponent
-  ],
-  imports: [
-    BrowserAnimationsModule,
-    MatIconModule,
-    FlexLayoutModule,
-    MatDialogModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatCardModule,
-    MatSnackBarModule,
-    MatSidenavModule,
-    MatListModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-      // Register the ServiceWorker as soon as the app is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    }),
-    AppRoutingModule
-  ],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserAnimationsModule,
+        MatIconModule,
+        FlexLayoutModule,
+        MatDialogModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatCardModule,
+        MatSnackBarModule,
+        MatSidenavModule,
+        MatListModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+            enabled: environment.production,
+            // Register the ServiceWorker as soon as the app is stable
+            // or after 30 seconds (whichever comes first).
+            registrationStrategy: 'registerWhenStable:30000'
+        }),
+        AppRoutingModule,
+        ToolbarComponent,
+        PrivacyPolicyComponent,
+        TermsComponent,
+        FooterComponent,
+        HomeComponent,
+        ChangelogComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

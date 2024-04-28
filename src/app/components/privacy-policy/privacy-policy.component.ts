@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { MatCard } from '@angular/material/card';
 
 @Component({
-  selector: 'app-privacy-policy',
-  templateUrl: './privacy-policy.component.html'
+    selector: 'app-privacy-policy',
+    templateUrl: './privacy-policy.component.html',
+    standalone: true,
+    imports: [MatCard]
 })
 export class PrivacyPolicyComponent {
 

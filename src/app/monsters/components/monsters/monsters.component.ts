@@ -4,11 +4,21 @@ import { Monster } from '../../models/monster';
 import { MonsterFilters } from '../../models/monster-filters';
 import { MonsterDataService } from '../../../data/services/monsters/monster-data.service';
 import { MonsterFilterService } from '../../services/monster-filter.service';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { MatIcon } from '@angular/material/icon';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { MatCard } from '@angular/material/card';
+import { MonsterTablesComponent } from '../../../common/components/monster-tables/monster-tables.component';
+import { NgIf } from '@angular/common';
+import { MatDivider } from '@angular/material/divider';
+import { MonsterFilterBarComponent } from '../../../common/components/monster-filter-bar/monster-filter-bar.component';
 
 @Component({
-  selector: 'app-monsters',
-  templateUrl: './monsters.component.html',
-  styleUrls: ['./monsters.component.scss']
+    selector: 'app-monsters',
+    templateUrl: './monsters.component.html',
+    styleUrls: ['./monsters.component.scss'],
+    standalone: true,
+    imports: [MonsterFilterBarComponent, MatDivider, NgIf, MonsterTablesComponent, MatCard, FlexModule, MatIcon, MatProgressSpinner]
 })
 export class MonstersComponent implements OnInit, AfterViewInit {
   private allMonsters: Monster[] = [];

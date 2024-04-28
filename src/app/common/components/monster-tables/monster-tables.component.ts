@@ -1,15 +1,21 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatSort, MatSortHeader } from '@angular/material/sort';
+import { MatTableDataSource, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow } from '@angular/material/table';
 import { ColumnInfo } from 'src/app/common/models/column-info';
 import { Monster } from 'src/app/monsters/models/monster';
 import { StorageKeys, StorageService } from 'src/app/services/storage.service';
+import { NgFor, NgIf } from '@angular/common';
+import { MatIcon } from '@angular/material/icon';
+import { MatMenuTrigger, MatMenu, MatMenuItem } from '@angular/material/menu';
+import { MatIconButton } from '@angular/material/button';
 
 @Component({
-  selector: 'app-monster-tables',
-  templateUrl: './monster-tables.component.html',
-  styleUrls: ['./monster-tables.component.scss']
+    selector: 'app-monster-tables',
+    templateUrl: './monster-tables.component.html',
+    styleUrls: ['./monster-tables.component.scss'],
+    standalone: true,
+    imports: [MatIconButton, MatMenuTrigger, MatIcon, MatTable, MatSort, NgFor, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatSortHeader, MatCellDef, MatCell, NgIf, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatPaginator, MatMenu, MatMenuItem]
 })
 export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() public monsters: Monster[] = [];

@@ -11,17 +11,15 @@ import { CanIHitRoutingModule } from './can-i-hit-routing.module';
 import { CanIHitComponent } from './can-i-hit.component';
 
 @NgModule({
-  declarations: [
-    CanIHitComponent
-  ],
-  imports: [
-    CommonModule,
-    CanIHitRoutingModule,
-    MatCardModule,
-    MatInputModule,
-    MatFormFieldModule,
-    ReactiveFormsModule,
-    FlexLayoutModule
-  ]
+    imports: [
+        CommonModule,
+        CanIHitRoutingModule,
+        MatCardModule,
+        MatInputModule,
+        MatFormFieldModule,
+        ReactiveFormsModule,
+        FlexLayoutModule,
+        CanIHitComponent
+    ]
 })
 export class CanIHitModule { }

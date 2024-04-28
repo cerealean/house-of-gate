@@ -29,28 +29,26 @@ import {
 import { EncountersRoutingModule } from './encounters-routing.module';
 
 @NgModule({
-  declarations: [
-    EncounterGeneratorComponent,
-    SaveEncounterDialogComponent,
-    MyEncountersComponent,
-    DeleteEncounterDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    EncountersRoutingModule,
-    GateCommonModule,
-    FormsModule,
-    MatListModule,
-    MatIconModule,
-    MatSliderModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
-    MatCardModule,
-    FlexLayoutModule,
-    MatSelectModule,
-    MatDialogModule
-  ]
+    imports: [
+        CommonModule,
+        EncountersRoutingModule,
+        GateCommonModule,
+        FormsModule,
+        MatListModule,
+        MatIconModule,
+        MatSliderModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatIconModule,
+        MatCardModule,
+        FlexLayoutModule,
+        MatSelectModule,
+        MatDialogModule,
+        EncounterGeneratorComponent,
+        SaveEncounterDialogComponent,
+        MyEncountersComponent,
+        DeleteEncounterDialogComponent
+    ]
 })
 export class EncountersModule { }

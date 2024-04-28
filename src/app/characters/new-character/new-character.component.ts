@@ -1,13 +1,24 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose } from '@angular/material/dialog';
 import { Campaign } from 'src/app/campaigns/models/campaign';
 import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
 import { Character } from '../models/character';
+import { MatButton } from '@angular/material/button';
+import { MatDivider } from '@angular/material/divider';
+import { MatOption } from '@angular/material/core';
+import { MatSelect } from '@angular/material/select';
+import { NgIf, NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatInput } from '@angular/material/input';
+import { MatFormField, MatLabel, MatError } from '@angular/material/form-field';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
 
 @Component({
-  selector: 'app-new-character',
-  templateUrl: './new-character.component.html',
-  styleUrls: ['./new-character.component.scss']
+    selector: 'app-new-character',
+    templateUrl: './new-character.component.html',
+    styleUrls: ['./new-character.component.scss'],
+    standalone: true,
+    imports: [MatDialogTitle, MatDialogContent, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, MatError, NgIf, MatSelect, NgFor, MatOption, MatDivider, MatDialogActions, MatButton, MatDialogClose]
 })
 export class NewCharacterComponent implements OnInit {
   public readonly isEditingCurrentCharacter: boolean;

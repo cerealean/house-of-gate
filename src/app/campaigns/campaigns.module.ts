@@ -17,25 +17,23 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DeleteCampaignDialogComponent } from './delete-campaign-dialog/delete-campaign-dialog.component';
 
 @NgModule({
-  declarations: [
-    CampaignsLandingComponent,
-    NewCampaignComponent,
-    DeleteCampaignDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    CampaignsRoutingModule,
-    FormsModule,
-    MatListModule,
-    MatCardModule,
-    MatDialogModule,
-    MatButtonModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    DataModule,
-    MatDividerModule,
-    MatMenuModule
-  ]
+    imports: [
+        CommonModule,
+        CampaignsRoutingModule,
+        FormsModule,
+        MatListModule,
+        MatCardModule,
+        MatDialogModule,
+        MatButtonModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatInputModule,
+        DataModule,
+        MatDividerModule,
+        MatMenuModule,
+        CampaignsLandingComponent,
+        NewCampaignComponent,
+        DeleteCampaignDialogComponent
+    ]
 })
 export class CampaignsModule { }

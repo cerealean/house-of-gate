@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef, MatDialogTitle, MatDialogContent } from '@angular/material/dialog';
+import { MatButton } from '@angular/material/button';
+import { MatDivider } from '@angular/material/divider';
+import { MatInput } from '@angular/material/input';
+import { MatFormField } from '@angular/material/form-field';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
 
 @Component({
-  selector: 'app-damage-calculator-modal',
-  templateUrl: './damage-calculator-modal.component.html',
-  styleUrls: ['./damage-calculator-modal.component.scss']
+    selector: 'app-damage-calculator-modal',
+    templateUrl: './damage-calculator-modal.component.html',
+    styleUrls: ['./damage-calculator-modal.component.scss'],
+    standalone: true,
+    imports: [MatDialogTitle, MatDialogContent, FlexModule, MatFormField, MatInput, MatDivider, MatButton]
 })
 export class DamageCalculatorModalComponent {
 

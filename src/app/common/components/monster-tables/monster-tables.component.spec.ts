@@ -8,8 +8,8 @@ describe('MonsterTablesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MonsterTablesComponent ]
-    })
+    imports: [MonsterTablesComponent]
+})
     .compileComponents();
   });
 

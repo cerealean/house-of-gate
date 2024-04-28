@@ -1,14 +1,25 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
-import { MatSelectChange } from '@angular/material/select';
+import { MatSelectChange, MatSelect } from '@angular/material/select';
 import { classes } from 'src/app/data/static/classes';
 import { schoolsOfMagic } from 'src/app/data/static/schools-of-magic';
 import { sources } from 'src/app/data/static/sources';
 import { SpellFilters } from 'src/app/spells/models/spell-filters';
+import { MatButton } from '@angular/material/button';
+import { MatCheckbox } from '@angular/material/checkbox';
+import { MatOption } from '@angular/material/core';
+import { NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatInput } from '@angular/material/input';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { MatCard } from '@angular/material/card';
 
 @Component({
-  selector: 'app-spell-filter-bar',
-  templateUrl: './spell-filter-bar.component.html',
-  styleUrls: ['./spell-filter-bar.component.scss']
+    selector: 'app-spell-filter-bar',
+    templateUrl: './spell-filter-bar.component.html',
+    styleUrls: ['./spell-filter-bar.component.scss'],
+    standalone: true,
+    imports: [MatCard, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, MatSelect, NgFor, MatOption, MatCheckbox, MatButton]
 })
 export class SpellFilterBarComponent implements OnInit, OnDestroy, AfterViewInit {
   public readonly sources = sources;

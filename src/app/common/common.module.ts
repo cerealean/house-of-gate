@@ -30,35 +30,33 @@ import {
 import { NumberOnlyDirective } from './directives/number-only.directive';
 
 @NgModule({
-  declarations: [
-    MonsterFilterBarComponent,
-    MonsterTablesComponent,
-    SpellTablesComponent,
-    SpellFilterBarComponent,
-    NumberOnlyDirective
-  ],
-  imports: [
-    CommonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatCheckboxModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatInputModule,
-    MatButtonModule,
-    FormsModule,
-    MatIconModule,
-    MatMenuModule,
-    FlexLayoutModule,
-    MatSortModule
-  ],
-  exports: [
-    MonsterFilterBarComponent,
-    MonsterTablesComponent,
-    SpellTablesComponent,
-    NumberOnlyDirective,
-    SpellFilterBarComponent
-  ]
+    imports: [
+        CommonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatCheckboxModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatInputModule,
+        MatButtonModule,
+        FormsModule,
+        MatIconModule,
+        MatMenuModule,
+        FlexLayoutModule,
+        MatSortModule,
+        MonsterFilterBarComponent,
+        MonsterTablesComponent,
+        SpellTablesComponent,
+        SpellFilterBarComponent,
+        NumberOnlyDirective
+    ],
+    exports: [
+        MonsterFilterBarComponent,
+        MonsterTablesComponent,
+        SpellTablesComponent,
+        NumberOnlyDirective,
+        SpellFilterBarComponent
+    ]
 })
 export class GateCommonModule { }

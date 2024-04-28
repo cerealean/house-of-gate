@@ -8,8 +8,8 @@ describe('SpellTablesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpellTablesComponent ]
-    })
+    imports: [SpellTablesComponent]
+})
     .compileComponents();
   });
 

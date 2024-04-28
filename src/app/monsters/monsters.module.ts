@@ -14,20 +14,18 @@ import { MonstersComponent } from './components/monsters/monsters.component';
 import { MonstersRoutingModule } from './monsters-routing.module';
 
 @NgModule({
-  declarations: [
-    MonstersComponent
-  ],
-  imports: [
-    CommonModule,
-    GateCommonModule,
-    MatCardModule,
-    MatTabsModule,
-    MatIconModule,
-    MatDividerModule,
-    MatProgressSpinnerModule,
-    FlexLayoutModule,
-    MonstersRoutingModule,
-    DataModule
-  ]
+    imports: [
+        CommonModule,
+        GateCommonModule,
+        MatCardModule,
+        MatTabsModule,
+        MatIconModule,
+        MatDividerModule,
+        MatProgressSpinnerModule,
+        FlexLayoutModule,
+        MonstersRoutingModule,
+        DataModule,
+        MonstersComponent
+    ]
 })
 export class MonstersModule { }

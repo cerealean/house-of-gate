@@ -12,18 +12,16 @@ import { SpellsComponent } from './components/spells/spells.component';
 import { SpellsRoutingModule } from './spells-routing.module';
 
 @NgModule({
-  declarations: [
-    SpellsComponent
-  ],
-  imports: [
-    CommonModule,
-    SpellsRoutingModule,
-    GateCommonModule,
-    MatCardModule,
-    MatProgressSpinnerModule,
-    MatDividerModule,
-    MatIconModule,
-    FlexLayoutModule
-  ]
+    imports: [
+        CommonModule,
+        SpellsRoutingModule,
+        GateCommonModule,
+        MatCardModule,
+        MatProgressSpinnerModule,
+        MatDividerModule,
+        MatIconModule,
+        FlexLayoutModule,
+        SpellsComponent
+    ]
 })
 export class SpellsModule { }

@@ -26,29 +26,27 @@ import {
 import { NewCharacterComponent } from './new-character/new-character.component';
 
 @NgModule({
-  declarations: [
-    CharactersComponent,
-    NewCharacterComponent,
-    CharacterSheetComponent,
-    DamageCalculatorModalComponent
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    CharactersRoutingModule,
-    MatCardModule,
-    MatIconModule,
-    MatListModule,
-    MatDividerModule,
-    MatMenuModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatDialogModule,
-    MatButtonModule,
-    FlexLayoutModule,
-    MatSelectModule,
-    MatProgressBarModule,
-    MatDialogModule
-  ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        CharactersRoutingModule,
+        MatCardModule,
+        MatIconModule,
+        MatListModule,
+        MatDividerModule,
+        MatMenuModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatDialogModule,
+        MatButtonModule,
+        FlexLayoutModule,
+        MatSelectModule,
+        MatProgressBarModule,
+        MatDialogModule,
+        CharactersComponent,
+        NewCharacterComponent,
+        CharacterSheetComponent,
+        DamageCalculatorModalComponent
+    ]
 })
 export class CharactersModule { }
