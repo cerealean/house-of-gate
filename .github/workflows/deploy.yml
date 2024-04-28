@@ -25,13 +25,13 @@ jobs:
       - name: deploy project to server
         uses: appleboy/scp-action@master
         env:
-          HOST: ${{ secrets.deploy_server }}
-          USERNAME: ${{ secrets.deploy_user }}
-          PASSWORD: ${{ secrets.deploy_password }}
-          PORT: ${{ secrets.deploy_port }}
+          HOST: ${{ secrets.DEPLOY_SERVER }}
+          USERNAME: ${{ secrets.DEPLOY_USER }}
+          PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
         with:
           source: "./dist/house-of-gate/"
-          target: ${{ secrets.deploy_target }}
+          target: ${{ secrets.DEPLOY_TARGET }}
           strip_components: 3 # this is important I'm pretty sure
           rm: true #clean target folder before copying
           timeout: 60s
