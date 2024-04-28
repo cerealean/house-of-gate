@@ -49,8 +49,9 @@ export class StorageService {
   }
 }
 
-export enum StorageKeys {
+export const enum StorageKeys {
   ColumnInfo = 'HoG-ColumnInfo',
+  ColumnInfoItems = 'HoG-ColumnInfoItems',
   PreviouslyGeneratedEncounters = 'HoG-PreviouslyGeneratedEncounters',
   EncounterFilters = 'HoG-EncounterFilters',
   HasAcknowledgedTermsDate = 'HoG-TermsAcknowledgement',
