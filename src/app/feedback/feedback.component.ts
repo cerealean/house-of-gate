@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatCard } from '@angular/material/card';
 
 @Component({
@@ -8,11 +8,8 @@ import { MatCard } from '@angular/material/card';
     standalone: true,
     imports: [MatCard]
 })
-export class FeedbackComponent implements OnInit {
+export class FeedbackComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
