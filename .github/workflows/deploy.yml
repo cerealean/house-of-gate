@@ -24,7 +24,7 @@ jobs:
         run: npm run build:p
 
       - name: deploy project to server
-        uses: appleboy/scp-action@0.1.7
+        uses: appleboy/scp-action@v0.1.7
         with:
           source: "./dist/house-of-gate/"
           target: ${{ secrets.DEPLOY_TARGET }}
