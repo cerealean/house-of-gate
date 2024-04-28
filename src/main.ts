@@ -1,11 +1,9 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
 
 import { environment } from './environments/environment';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { AppRoutingModule } from './app/app-routing.module';
+import { routes } from './app/app.routes';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -18,20 +16,22 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideRouter } from '@angular/router';
 
 if (environment.production) {
   enableProdMode();
 }
 
 bootstrapApplication(AppComponent, {
-    providers: [
-        importProvidersFrom(MatIconModule, FlexLayoutModule, MatDialogModule, MatToolbarModule, MatButtonModule, MatCheckboxModule, MatCardModule, MatSnackBarModule, MatSidenavModule, MatListModule, ServiceWorkerModule.register('ngsw-worker.js', {
-            enabled: environment.production,
-            // Register the ServiceWorker as soon as the app is stable
-            // or after 30 seconds (whichever comes first).
-            registrationStrategy: 'registerWhenStable:30000'
-        }), AppRoutingModule),
-        provideAnimations()
-    ]
+  providers: [
+    importProvidersFrom(MatIconModule, FlexLayoutModule, MatDialogModule, MatToolbarModule, MatButtonModule, MatCheckboxModule, MatCardModule, MatSnackBarModule, MatSidenavModule, MatListModule, ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })),
+    provideAnimations(),
+    provideRouter(routes)
+  ]
 })
   .catch(err => console.error(err));

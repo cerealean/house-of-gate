@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { ChangelogComponent } from './components/changelog/changelog.component';
 import { HomeComponent } from './components/home/home.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './components/terms/terms.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: 'monsters',
     loadChildren: () => import('./monsters/monsters.module').then(m => m.MonstersModule)
@@ -54,9 +53,3 @@ const routes: Routes = [
     redirectTo: 'home'
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
