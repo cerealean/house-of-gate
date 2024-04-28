@@ -15,7 +15,7 @@ jobs:
       - name: Node Setup
         uses: actions/setup-node@v4.0.2
         with:
-          node_version: '20.x'
+          node-version: '20.x'
 
       - name: npm ci
         run: npm ci
