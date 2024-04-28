@@ -7,23 +7,23 @@ import { TermsComponent } from './components/terms/terms.component';
 export const routes: Routes = [
   {
     path: 'monsters',
-    loadChildren: () => import('./monsters/monsters.module').then(m => m.MonstersModule)
+    loadComponent: () => import('./monsters/components/monsters/monsters.component').then(m => m.MonstersComponent)
   },
   {
     path: 'encounters',
-    loadChildren: () => import('./encounters/encounters.module').then(e => e.EncountersModule)
+    loadChildren: () => import('./encounters/encounters.routes').then(e => e.routes)
   },
   {
     path: 'campaigns',
-    loadChildren: () => import('./campaigns/campaigns.module').then(e => e.CampaignsModule)
+    loadComponent: () => import('./campaigns/campaigns-landing/campaigns-landing.component').then(e => e.CampaignsLandingComponent)
   },
   {
     path: 'spells',
-    loadChildren: () => import('./spells/spells.module').then(e => e.SpellsModule)
+    loadComponent: () => import('./spells/components/spells/spells.component').then(e => e.SpellsComponent)
   },
   {
     path: 'feedback',
-    loadChildren: () => import('./feedback/feedback.module').then(m => m.FeedbackModule)
+    loadComponent: () => import('./feedback/feedback.component').then(m => m.FeedbackComponent)
   },
   {
     path: 'privacy',
@@ -46,8 +46,8 @@ export const routes: Routes = [
     pathMatch: 'full',
     redirectTo: 'home'
   },
-  { path: 'can-i-hit', loadChildren: () => import('./can-i-hit/can-i-hit.module').then(m => m.CanIHitModule) },
-  { path: 'characters', loadChildren: () => import('./characters/characters.module').then(m => m.CharactersModule) },
+  { path: 'can-i-hit', loadComponent: () => import('./can-i-hit/can-i-hit.component').then(m => m.CanIHitComponent) },
+  { path: 'characters', loadChildren: () => import('./characters/characters.routes').then(m => m.routes) },
   {
     path: '**',
     redirectTo: 'home'
