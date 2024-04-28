@@ -7,21 +7,20 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 
-import { GateCommonModule } from '../common/common.module';
+
 import { SpellsComponent } from './components/spells/spells.component';
 import { SpellsRoutingModule } from './spells-routing.module';
 
 @NgModule({
     imports: [
-        CommonModule,
-        SpellsRoutingModule,
-        GateCommonModule,
-        MatCardModule,
-        MatProgressSpinnerModule,
-        MatDividerModule,
-        MatIconModule,
-        FlexLayoutModule,
-        SpellsComponent
-    ]
+    CommonModule,
+    SpellsRoutingModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatDividerModule,
+    MatIconModule,
+    FlexLayoutModule,
+    SpellsComponent
+]
 })
 export class SpellsModule { }

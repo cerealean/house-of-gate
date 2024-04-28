@@ -13,7 +13,7 @@ import { MatSliderModule } from '@angular/material/slider';
 
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 
-import { GateCommonModule } from '../common/common.module';
+
 import {
   EncounterGeneratorComponent,
 } from './components/encounter-generator/encounter-generator.component';
@@ -30,25 +30,24 @@ import { EncountersRoutingModule } from './encounters-routing.module';
 
 @NgModule({
     imports: [
-        CommonModule,
-        EncountersRoutingModule,
-        GateCommonModule,
-        FormsModule,
-        MatListModule,
-        MatIconModule,
-        MatSliderModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatButtonModule,
-        MatIconModule,
-        MatCardModule,
-        FlexLayoutModule,
-        MatSelectModule,
-        MatDialogModule,
-        EncounterGeneratorComponent,
-        SaveEncounterDialogComponent,
-        MyEncountersComponent,
-        DeleteEncounterDialogComponent
-    ]
+    CommonModule,
+    EncountersRoutingModule,
+    FormsModule,
+    MatListModule,
+    MatIconModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    FlexLayoutModule,
+    MatSelectModule,
+    MatDialogModule,
+    EncounterGeneratorComponent,
+    SaveEncounterDialogComponent,
+    MyEncountersComponent,
+    DeleteEncounterDialogComponent
+]
 })
 export class EncountersModule { }
