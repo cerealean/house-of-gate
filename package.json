@@ -8,9 +8,7 @@
     "build:p": "ng build -c production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
-    "ngcc": "ngcc",
-    "postinstall": "ngcc"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {

@@ -27,11 +27,11 @@ export const routes: Routes = [
   },
   {
     path: 'privacy',
-    component: PrivacyPolicyComponent
+    loadComponent: () => import('./components/privacy-policy/privacy-policy.component').then(c => c.PrivacyPolicyComponent)
   },
   {
     path: 'terms',
-    component: TermsComponent
+    loadComponent: () => import('./components/terms/terms.component').then(c => c.TermsComponent)
   },
   {
     path: 'home',
@@ -39,7 +39,7 @@ export const routes: Routes = [
   },
   {
     path: 'changelog',
-    component: ChangelogComponent
+    loadComponent: () => import('./components/changelog/changelog.component').then(c => c.ChangelogComponent)
   },
   {
     path: '',
