@@ -19,13 +19,13 @@ const magicSchools = new Map([
 const newMap = spells.map(s => {
   const name = s.name[0];
   const text = s.text
-    ?.filter(t => !t ?.toLowerCase().includes('source'))
+    ?.filter(t => !t?.toLowerCase().includes('source'))
     .reduce((a, b) => a + (b || '') + ' ', '')
     .trim();
-  const source = s.text ?.filter(t => t !== null && t ?.includes('Source:'))[0]
+  const source = s.text?.filter(t => t !== null && t?.includes('Source:'))[0]
     .split(':')[1]
     ?.trim();
-  const sources = source ?.split(',').map(s => s.trim());
+  const sources = source?.split(',').map(s => s.trim());
   const school = magicSchools.get(s.school);
 
   if (s.name.length !== 1) {
@@ -44,7 +44,7 @@ const newMap = spells.map(s => {
     range: s.range,
     components: s.components,
     duration: s.duration,
-    classes: s.classes ?.split(',').map(c => c.trim()) || [],
+    classes: s.classes?.split(',').map(c => c.trim()) || [],
     sources: sources,
     text: text
   };

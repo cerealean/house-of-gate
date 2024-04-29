@@ -1,0 +1,35 @@
+<div style="width: 100vw; max-width: 100vw;">
+    <mat-form-field>
+        <mat-label>Choose Magic Item Table</mat-label>
+        <mat-select [(value)]="selectedMIT" (selectionChange)="selectionChange()">
+            <mat-option [value]="magicItemTables.A">Magic Item Table A</mat-option>
+            <mat-option [value]="magicItemTables.B">Magic Item Table B</mat-option>
+            <mat-option [value]="magicItemTables.C">Magic Item Table C</mat-option>
+            <mat-option [value]="magicItemTables.D">Magic Item Table D</mat-option>
+            <mat-option [value]="magicItemTables.E">Magic Item Table E</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div style="overflow-x: scroll; width: 100%; max-width: 100%;">
+        <table mat-table [dataSource]="dataSource" style="width: 100vw; max-width: 100%;">
+            <ng-container matColumnDef="numRoll">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Number Rolled
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{element.numRolled}}
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="item">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                    Item Name
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    {{element.item.name}}
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="['numRoll','item']"></tr>
+            <tr mat-row *matRowDef="let row; columns: ['numRoll','item'];"></tr>
+        </table>
+    </div>
+</div>

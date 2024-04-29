@@ -33,6 +33,18 @@
           <mat-icon>pets</mat-icon>
         </button>
       </mat-list-item>
+      <mat-list-item routerLink="/items" (click)="sidenav.close()">
+        <a matListItemTitle>Item Search</a>
+        <button mat-icon-button matListItemMeta>
+          <mat-icon>shoppingmode</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item routerLink="/magic-item-tables" (click)="sidenav.close()">
+        <a matListItemTitle>Magic Item Tables</a>
+        <button mat-icon-button matListItemMeta>
+          <mat-icon>view_list</mat-icon>
+        </button>
+      </mat-list-item>
       <mat-list-item aria-label="Spells page" routerLink="/spells" (click)="sidenav.close()">
         <a matListItemTitle>Spell Search</a>
         <button mat-icon-button matListItemMeta>

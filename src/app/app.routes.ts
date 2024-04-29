@@ -34,6 +34,14 @@ export const routes: Routes = [
     loadComponent: () => import('./components/terms/terms.component').then(c => c.TermsComponent)
   },
   {
+    path: 'items',
+    loadComponent: () => import('./items/items.component').then(i => i.ItemsComponent)
+  },
+  {
+    path: 'magic-item-tables',
+    loadComponent: () => import('./magic-item-tables/magic-item-tables.component').then(c => c.MagicItemTablesComponent)
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
