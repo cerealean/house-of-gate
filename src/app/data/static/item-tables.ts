@@ -2,8 +2,19 @@ import { numberRange } from "src/app/utilities/number-range";
 import { Item } from "../models/i-item";
 import { ItemNames, itemsMapped } from "./items-mapped";
 
+export interface ItemWithDiceRoll {
+    numRolled: number;
+    item: Item;
+}
 
-export class ItemTable<K extends number, V extends Item> extends Map<K, V> implements ReadonlyMap<K, V> { }
+export class ItemTable<K extends number, V extends Item> extends Map<K, V> implements ReadonlyMap<K, V> { 
+    toObjectArray(): ItemWithDiceRoll[] {
+        return Array.from(this.entries()).map(tuple => ({
+            numRolled: tuple[0],
+            item: tuple[1]
+        }));
+    }
+}
 
 const getItem = (itemName: ItemNames): Item => itemsMapped.get(itemName)!;
 const fillRangeWithItem = (start: number, stop: number, item: ItemNames): [number, Item][] => 
