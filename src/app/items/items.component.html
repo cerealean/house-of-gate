@@ -1,4 +1,11 @@
-<div style="width: 100vw; max-width: 100vw;" *ngIf="items$ | async">
+<div class="loading-shade" *ngIf="!!(items$ | async) === false">
+    <mat-spinner></mat-spinner>
+</div>
+<mat-form-field>
+    <mat-label>Filter Items</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Filter items here..." #input>
+</mat-form-field>
+<div style="width: 100vw; max-width: 100vw;">
     <div style="position: relative; width: 100vw;">
         <button color="primary" style="position: absolute; top: 5px; right: 5px; z-index: 5000;" mat-icon-button
             [matMenuTriggerFor]="menu" title="Add/Remove Columns" aria-label="Change Displayed Columns">
@@ -6,7 +13,8 @@
         </button>
     </div>
     <div style="overflow-x: scroll; width: 100%; max-width: 100%;">
-        <table mat-table matSort [dataSource]="dataSource" style="width: 100vw; max-width: 100%;">
+        <table mat-table matSort matSortActive="name" matSortDirection="asc" matSortDisableClear
+            [dataSource]="dataSource" style="width: 100vw; max-width: 100%;">
             <ng-container *ngFor="let column of columns" [matColumnDef]="column.name">
                 <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header>
                     {{column.name}}
@@ -30,10 +38,14 @@
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" [colSpan]="displayedColumns.length">No data matching the filter "{{input.value}}"
+                </td>
+            </tr>
         </table>
     </div>
-    <mat-paginator [pageSizeOptions]="[5, 10, 20, 50, 100]" showFirstLastButtons
-        aria-label="Monster Pagination Options">
+    <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 50, 100]" [showFirstLastButtons]="true">
     </mat-paginator>
     <mat-menu #menu="matMenu">
         <button *ngFor="let column of columns" (click)="toggleColumn(column); stopPropagation($event);" mat-menu-item>

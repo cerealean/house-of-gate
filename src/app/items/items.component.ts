@@ -1,22 +1,46 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Item } from '../data/models/i-item';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatIcon } from '@angular/material/icon';
+import { MatCell, MatCellDef, MatColumnDef, MatHeaderCell, MatHeaderCellDef, MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef, MatTable, MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
-import { MatMenuModule } from '@angular/material/menu';
+import { MatMenu, MatMenuItem, MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { ColumnInfo } from '../common/models/column-info';
-import { MatSort } from '@angular/material/sort';
+import { MatSort, MatSortHeader } from '@angular/material/sort';
 import { StorageKeys, StorageService } from '../services/storage.service';
+import { MatIconButton } from '@angular/material/button';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatInput } from '@angular/material/input';
 
 @Component({
   selector: 'app-items',
   standalone: true,
   imports: [
-    MatIconModule,
-    MatTableModule,
+    MatTable,
+    MatIcon,
+    MatIconButton,
     MatPaginatorModule,
     MatMenuModule,
+    MatMenuTrigger,
+    MatSort,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatSortHeader,
+    MatCellDef,
+    MatCell,
+    MatHeaderRowDef,
+    MatHeaderRow,
+    MatRowDef,
+    MatRow,
+    MatPaginator,
+    MatMenu,
+    MatMenuItem,
+    MatProgressSpinner,
+    MatFormField,
+    MatLabel,
+    MatInput,
     NgIf,
     NgFor,
     AsyncPipe
@@ -26,8 +50,8 @@ import { StorageKeys, StorageService } from '../services/storage.service';
 })
 export class ItemsComponent implements OnInit, AfterViewInit {
   public readonly items$ = import('../data/static/items')
-    .then(i => this.dataSource.data = i.items);
-  public readonly dataSource = new MatTableDataSource<Item>();
+    .then(i => i.items);
+  public readonly dataSource = new MatTableDataSource<Item>([]);
   public readonly columns: ColumnInfo[] = [
     { name: 'name', isShown: true, position: 1 },
     { name: 'text', isShown: true, position: 2 },
@@ -47,9 +71,9 @@ export class ItemsComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.paginator.pageSize = 10;
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
+    this.items$.then(i => this.dataSource.data = i);
   }
 
   toggleColumn(column: ColumnInfo): void {
@@ -64,6 +88,15 @@ export class ItemsComponent implements OnInit, AfterViewInit {
 
   stopPropagation($event: Event) {
     $event.stopPropagation();
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
   }
 
   private refreshDisplayedColumns(): void {
