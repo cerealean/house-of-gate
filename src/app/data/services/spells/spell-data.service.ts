@@ -12,9 +12,11 @@ export class SpellDataService {
 
   constructor(private readonly db: DatabaseService) {}
 
-  public async getAllSpells(): Promise<ReadonlyArray<Readonly<Spell>>> {
+  public async getAllSpells(): Promise<Spell[]> {
     if (!this.allSpells) {
-      this.allSpells = await this.db.getDatabaseContext().spells.toArray();
+      this.allSpells = (
+        await this.db.getDatabaseContext().spells.toArray()
+      ).slice();
     }
 
     return this.allSpells;

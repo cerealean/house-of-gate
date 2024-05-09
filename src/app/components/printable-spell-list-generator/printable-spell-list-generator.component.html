@@ -1,1 +1,69 @@
-<p>printable-spell-list-generator works!</p>
+<section fxLayout="column" style="width: 100%">
+  <!-- <section id="filters"></section> -->
+  <div
+    id="cards"
+    fxLayout="row wrap"
+    fxLayout.lt-md="column"
+    fxLayoutGap="2%"
+    fxLayoutGap.lt-md="3px"
+    style="align-items: center; align-content: center"
+  >
+    @for(spell of allSpells$ | async; track spell.id) {
+    <div class="card" fxFlex="45%">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ spell.name }}</mat-card-title>
+          @if(spell.level > 0) {
+          <mat-card-subtitle
+            >{{ spell.level | ordinal }} Level
+            {{ spell.school | titlecase }} Spell</mat-card-subtitle
+          >
+          } @else {
+          <mat-card-subtitle
+            >{{ spell.school | titlecase }} Cantrip</mat-card-subtitle
+          >
+          }
+        </mat-card-header>
+        <mat-card-content>
+          <ul class="no-bullets">
+            <li>
+              <span class="bold">Casting Time:</span>&nbsp;{{ spell.time }}
+            </li>
+            <li><span class="bold">Range:</span>&nbsp;{{ spell.range }}</li>
+            <li>
+              <span class="bold">Duration:</span>&nbsp;{{ spell.duration }}
+            </li>
+            <li>
+              <span class="bold">Components:</span>&nbsp;{{ spell.components }}
+            </li>
+            <li>
+              <span class="bold">Ritual?</span>&nbsp;{{
+                spell.ritual ? "Yes" : "No"
+              }}
+            </li>
+            <li>
+              <span class="bold">Concentration?</span>&nbsp;{{
+                spell.concentration ? "Yes" : "No"
+              }}
+            </li>
+            <li style="margin-top: 1rem">
+              {{ spell.text }}
+            </li>
+            <li style="margin-top: 1rem">
+              <span class="bold">Sources:</span>
+              <ul>
+                @for(source of spell.sources; track $index) {
+                <li>{{ source }}</li>
+                }
+              </ul>
+            </li>
+          </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Add To Spell List</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    }
+  </div>
+</section>
