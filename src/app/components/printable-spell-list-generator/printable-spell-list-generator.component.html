@@ -2,10 +2,21 @@
   <section id="filters">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Spell List Generator</mat-card-title>
+        <mat-card-title>Spells</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <form></form>
+        <form>
+          <mat-form-field>
+            <mat-label>Filter By Spell Name</mat-label>
+            <input
+              matInput
+              name="spell-name"
+              type="text"
+              maxlength="50"
+              [(ngModel)]="filterName"
+            />
+          </mat-form-field>
+        </form>
       </mat-card-content>
     </mat-card>
   </section>
@@ -29,9 +40,11 @@
     spell.id) {
     <div
       class="card fixed-height"
+      (click)="selectedSpells.push(spell)"
       [class.fixed-height]="
         selectedDisplayMode === displayModes.TilesWithDescription
       "
+      [class.selected]="selectedSpells.indexOf(spell) !== -1"
     >
       <app-spell-card
         [spell]="spell"

@@ -9,6 +9,26 @@ section#container {
   &.fixed-height {
     height: 35vh;
   }
+  &.selected {
+    position: relative;
+    &::after {
+      border-radius: 1rem;
+      content: "\2713";
+      font-size: 48pt;
+      color: green;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
 }
 
 #filters > mat-card {

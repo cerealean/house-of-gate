@@ -1,5 +1,7 @@
 import { AsyncPipe, TitleCasePipe } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { toObservable } from '@angular/core/rxjs-interop';
+import { FormsModule } from '@angular/forms';
 import {
   MatCard,
   MatCardContent,
@@ -12,6 +14,7 @@ import { MatPaginator } from '@angular/material/paginator';
 
 import { sort } from 'fast-sort';
 import { BehaviorSubject } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 import { SpellDataService } from 'src/app/data/services/spells/spell-data.service';
 import { classesAndSubclassesForSpells } from 'src/app/data/static/classes';
 import { OrdinalPipe } from 'src/app/pipes/ordinal/ordinal.pipe';
@@ -45,24 +48,42 @@ enum DisplayModes {
     MatLabel,
     MatInput,
     MatPaginator,
+    FormsModule,
   ],
 })
 export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
+  private allSpells?: Spell[];
+
   public readonly displayModes = DisplayModes;
   public readonly spellClasses = classesAndSubclassesForSpells;
   public readonly filteredSpells$ = new BehaviorSubject<Spell[]>([]);
 
   public selectedDisplayMode = DisplayModes.TilesWithoutDescription;
   public selectedSpells: Spell[] = [];
+  public filterName = signal('');
 
-  constructor(private readonly spellDataService: SpellDataService) {}
+  constructor(private readonly spellDataService: SpellDataService) {
+    toObservable(this.filterName)
+      .pipe(debounceTime(1000))
+      .subscribe(async (name) => {
+        const allSpells = this.allSpells;
+        if (!allSpells || allSpells.length === 0) {
+          return;
+        }
+
+        const filtered = allSpells.filter(
+          (spell) => spell.name.toLowerCase().indexOf(name.toLowerCase()) !== -1
+        );
+        this.filteredSpells$.next(filtered);
+      });
+  }
 
   ngOnInit() {
-    this.spellDataService
-      .getAllSpells()
-      .then((spells) =>
-        this.filteredSpells$.next(this.filterSpellsByLevelThenName(spells))
-      );
+    this.spellDataService.getAllSpells().then((spells) => {
+      const sortedSpells = this.filterSpellsByLevelThenName(spells);
+      this.allSpells = sortedSpells;
+      this.filteredSpells$.next(sortedSpells);
+    });
   }
 
   ngOnDestroy(): void {
