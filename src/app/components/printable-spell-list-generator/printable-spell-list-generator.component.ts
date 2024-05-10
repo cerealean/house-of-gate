@@ -1,14 +1,5 @@
 import { AsyncPipe, TitleCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import {
-  MatCard,
-  MatCardActions,
-  MatCardContent,
-  MatCardHeader,
-  MatCardSubtitle,
-  MatCardTitle,
-} from '@angular/material/card';
-import { MatGridList, MatGridTile } from '@angular/material/grid-list';
 
 import { SpellDataService } from 'src/app/data/services/spells/spell-data.service';
 import { classesAndSubclassesForSpells } from 'src/app/data/static/classes';
@@ -25,14 +16,6 @@ import { SpellCardComponent } from './spell-card/spell-card.component';
   templateUrl: './printable-spell-list-generator.component.html',
   styleUrl: './printable-spell-list-generator.component.scss',
   imports: [
-    MatCard,
-    MatCardHeader,
-    MatCardActions,
-    MatCardContent,
-    MatCardTitle,
-    MatCardSubtitle,
-    MatGridList,
-    MatGridTile,
     AsyncPipe,
     OrdinalPipe,
     TitleCasePipe,
