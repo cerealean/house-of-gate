@@ -40,7 +40,8 @@
     spell.id) {
     <div
       class="card fixed-height"
-      (click)="selectedSpells.push(spell)"
+      (click)="toggleSpell(spell)"
+      (keypress)="toggleSpell(spell)"
       [class.fixed-height]="
         selectedDisplayMode === displayModes.TilesWithDescription
       "

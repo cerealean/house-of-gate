@@ -90,6 +90,14 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     this.filteredSpells$.complete();
   }
 
+  toggleSpell(spell: Spell): void {
+    if (this.selectedSpells.indexOf(spell) !== -1) {
+      this.selectedSpells.splice(this.selectedSpells.indexOf(spell), 1);
+    } else {
+      this.selectedSpells.push(spell);
+    }
+  }
+
   private filterSpellsByLevelThenName(spells: Spell[]) {
     return sort(spells).asc([(s) => s.level, (s) => s.name]);
   }
