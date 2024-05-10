@@ -3,13 +3,11 @@
   <div
     id="cards"
     fxLayout="row wrap"
-    fxLayout.lt-md="column"
-    fxLayoutGap="2%"
-    fxLayoutGap.lt-md="3px"
-    style="align-items: center; align-content: center"
+    fxLayoutGap="1rem"
+    fxLayoutAlign="center stretch"
   >
     @for(spell of allSpells$ | async; track spell.id) {
-    <div class="card" fxFlex="45%">
+    <div class="card fixed-height">
       <app-spell-card [spell]="spell" />
     </div>
     }

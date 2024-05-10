@@ -12,5 +12,10 @@ ul.no-bullets {
 // }
 
 .card {
-  width: 40vw;
+  width: 45vw;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  &.fixed-height {
+    height: 35vh;
+  }
 }
