@@ -10,15 +10,15 @@
       <li><span class="bold">Casting Time:</span>&nbsp;{{ spell().time }}</li>
       <li><span class="bold">Range:</span>&nbsp;{{ spell().range }}</li>
       <li><span class="bold">Duration:</span>&nbsp;{{ spell().duration }}</li>
-      <li>
-        <span class="bold">Ritual?</span>&nbsp;{{
-          spell().ritual | yesno | titlecase
-        }}
-      </li>
     </ul>
     <ul class="no-bullets" fxFlexAlign="end" fxFlex="50%">
       <li>
         <span class="bold">Components:</span>&nbsp;{{ spell().components }}
+      </li>
+      <li>
+        <span class="bold">Ritual?</span>&nbsp;{{
+          spell().ritual | yesno | titlecase
+        }}
       </li>
       <li>
         <span class="bold">Concentration?</span>&nbsp;{{
@@ -27,6 +27,7 @@
       </li>
     </ul>
   </div>
+  @if (showDescription()) {
   <div id="spell-text" class="mat-small" fxFlex>
     {{ spell().text }}
     <br /><br />
@@ -37,4 +38,5 @@
       }
     </ul>
   </div>
+  }
 </div>

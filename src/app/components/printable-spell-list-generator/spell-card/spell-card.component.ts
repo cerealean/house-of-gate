@@ -17,4 +17,5 @@ import { YesNoPipe } from '../../../pipes/yes-no/yes-no.pipe';
 })
 export class SpellCardComponent {
   public readonly spell = input.required<Spell>();
+  public readonly showDescription = input(true);
 }

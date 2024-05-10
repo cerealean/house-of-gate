@@ -1,15 +1,48 @@
-<section fxLayout="column" style="width: 100%">
-  <!-- <section id="filters"></section> -->
-  <div
+<section id="container" fxLayout="column">
+  <section id="filters">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Spell List Generator</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form></form>
+      </mat-card-content>
+    </mat-card>
+  </section>
+  @if(filteredSpells$ | async; as filteredSpells) {
+  <mat-paginator
+    [length]="filteredSpells.length"
+    [pageSize]="20"
+    [pageSizeOptions]="[5, 10, 20, 50, 100]"
+    [showFirstLastButtons]="true"
+    #paginator
+  >
+  </mat-paginator>
+  <section
     id="cards"
     fxLayout="row wrap"
     fxLayoutGap="1rem"
     fxLayoutAlign="center stretch"
   >
-    @for(spell of allSpells$ | async; track spell.id) {
-    <div class="card fixed-height">
-      <app-spell-card [spell]="spell" />
+    @for(spell of filteredSpells.slice(paginator.pageIndex * paginator.pageSize,
+    (paginator.pageIndex * paginator.pageSize) + paginator.pageSize); track
+    spell.id) {
+    <div
+      class="card fixed-height"
+      [class.fixed-height]="
+        selectedDisplayMode === displayModes.TilesWithDescription
+      "
+    >
+      <app-spell-card
+        [spell]="spell"
+        [showDescription]="
+          selectedDisplayMode === displayModes.TilesWithDescription
+        "
+      />
     </div>
     }
-  </div>
+  </section>
+  } @else { }
 </section>
+
+<ng-template #cards> </ng-template>
