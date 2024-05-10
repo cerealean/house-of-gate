@@ -17,9 +17,13 @@ import { Spell } from 'src/app/spells/models/spell';
 
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 
+import { SpellCardComponent } from './spell-card/spell-card.component';
+
 @Component({
   selector: 'app-printable-spell-list-generator',
   standalone: true,
+  templateUrl: './printable-spell-list-generator.component.html',
+  styleUrl: './printable-spell-list-generator.component.scss',
   imports: [
     MatCard,
     MatCardHeader,
@@ -33,9 +37,8 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
     OrdinalPipe,
     TitleCasePipe,
     FlexLayoutModule,
+    SpellCardComponent,
   ],
-  templateUrl: './printable-spell-list-generator.component.html',
-  styleUrl: './printable-spell-list-generator.component.scss',
 })
 export class PrintableSpellListGeneratorComponent implements OnInit {
   private _allSpells$?: Promise<readonly Readonly<Spell>[]>;
