@@ -1,1 +1,35 @@
-<p>spell-card works!</p>
+<div id="spell-card">
+  <p class="headline-5">{{ spell().name }}</p>
+  <p class="subtitle-1">
+    @if(spell().level > 0) {
+    {{ spell().level | ordinal }} Level {{ spell().school | titlecase }} Spell }
+    @else { {{ spell().school | titlecase }} Cantrip }
+  </p>
+  <ul class="no-bullets">
+    <li><span class="bold">Casting Time:</span>&nbsp;{{ spell().time }}</li>
+    <li><span class="bold">Range:</span>&nbsp;{{ spell().range }}</li>
+    <li><span class="bold">Duration:</span>&nbsp;{{ spell().duration }}</li>
+    <li><span class="bold">Components:</span>&nbsp;{{ spell().components }}</li>
+    <li>
+      <span class="bold">Ritual?</span>&nbsp;{{
+        spell().ritual | yesno | titlecase
+      }}
+    </li>
+    <li>
+      <span class="bold">Concentration?</span>&nbsp;{{
+        spell().concentration | yesno | titlecase
+      }}
+    </li>
+    <li id="spell-text">
+      {{ spell().text }}
+    </li>
+    <li id="spell-sources">
+      <span class="bold">Sources:</span>
+      <ul>
+        @for(source of spell().sources; track $index) {
+        <li>{{ source }}</li>
+        }
+      </ul>
+    </li>
+  </ul>
+</div>

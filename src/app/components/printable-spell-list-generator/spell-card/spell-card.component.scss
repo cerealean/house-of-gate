@@ -1,0 +1,25 @@
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+div#spell-card {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+#spell-text,
+#spell-sources {
+  margin-top: 1rem;
+}
+
+#spell-text {
+  max-height: 35%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+}
