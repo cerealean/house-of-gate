@@ -36,7 +36,8 @@ section#container {
 }
 
 @media print {
-  ::ng-deep app-toolbar {
+  ::ng-deep app-toolbar,
+  app-footer {
     display: none;
   }
   #filters,
