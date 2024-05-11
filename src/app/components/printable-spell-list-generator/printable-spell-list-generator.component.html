@@ -6,6 +6,8 @@
       </mat-card-header>
       <mat-card-content>
         <form>
+          @if(!previewMode()) {
+          <h4 class="mat-subheading-2">Filters</h4>
           <div fxLayout="row" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
             <div fxLayout="column" fxFlexAlign="start" fxFlex>
               <mat-form-field>
@@ -33,18 +35,24 @@
               <mat-checkbox name="only-selected" [(ngModel)]="onlySelected">Only Selected</mat-checkbox>
             </div>
           </div>
+          <mat-divider></mat-divider>
+          <br />
+          }
+          <h4 class="mat-subheading-2">Print Options</h4>
+          <mat-checkbox name="preview-mode" [(ngModel)]="previewMode">Preview Mode</mat-checkbox>
         </form>
       </mat-card-content>
+      <mat-paginator id="paginator" [length]="filteredSpells().length" [pageSize]="20"
+        [pageSizeOptions]="[5, 10, 20, 50, 100]" [showFirstLastButtons]="true" #paginator />
     </mat-card>
   </section>
-  <mat-paginator [length]="filteredSpells().length" [pageSize]="20" [pageSizeOptions]="[5, 10, 20, 50, 100]"
-    [showFirstLastButtons]="true" #paginator />
   <section id="cards" fxLayout="row wrap" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
     @for(spell of filteredSpells().slice(paginator.pageIndex * paginator.pageSize,
     (paginator.pageIndex * paginator.pageSize) + paginator.pageSize); track
     spell.id) {
-    <div class="card fixed-height" (click)="toggleSpell(spell)" (keypress)="toggleSpell(spell)" tabindex="0"
-      [class.fixed-height]="showDescription()" [class.selected]="selectedSpells.indexOf(spell) !== -1">
+    <div class="card" (click)="toggleSpell(spell)" (keypress)="toggleSpell(spell)" tabindex="0"
+      [class.fixed-height]="showDescription()" [class.selected]="!previewMode() && selectedSpells.indexOf(spell) !== -1"
+      [class.preview-mode]="previewMode()">
       <app-spell-card [spell]="spell" [showDescription]="showDescription()" />
     </div>
     }

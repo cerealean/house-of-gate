@@ -34,3 +34,24 @@ section#container {
 #filters > mat-card {
   width: 100%;
 }
+
+@media print {
+  ::ng-deep app-toolbar {
+    display: none;
+  }
+  #filters,
+  #paginator {
+    display: none;
+  }
+  .card {
+    page-break-inside: avoid;
+    &.fixed-height {
+      height: 100%;
+    }
+    &.selected {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

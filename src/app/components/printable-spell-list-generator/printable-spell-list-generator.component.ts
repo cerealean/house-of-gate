@@ -20,6 +20,7 @@ import { Spell } from 'src/app/spells/models/spell';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 
 import { MatCheckbox } from '@angular/material/checkbox';
+import { MatDivider } from '@angular/material/divider';
 import { MatOption, MatSelect } from '@angular/material/select';
 import { SpellCardComponent } from './spell-card/spell-card.component';
 
@@ -45,6 +46,7 @@ import { SpellCardComponent } from './spell-card/spell-card.component';
     MatSelect,
     MatOption,
     MatCheckbox,
+    MatDivider,
     FormsModule,
   ],
 })
@@ -54,10 +56,11 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
   public readonly spellClasses = classesAndSubclassesForSpells;
 
   public selectedSpells: Spell[] = [];
-  public filterName = signal('');
-  public filterLevel = signal<number[]>([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
-  public showDescription = signal(false);
-  public onlySelected = signal(false);
+  public readonly filterName = signal('');
+  public readonly filterLevel = signal<number[]>([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  public readonly showDescription = signal(false);
+  public readonly onlySelected = signal(false);
+  public readonly previewMode = signal(false);
 
   public filteredSpells = computed(() => {
     const allSpells = this.allSpells();
@@ -65,7 +68,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
       return [];
     }
 
-    if (this.onlySelected()) {
+    if (this.onlySelected() || this.previewMode()) {
       return this.selectedSpells;
     }
 
