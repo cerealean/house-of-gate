@@ -12,36 +12,43 @@
                 <mat-label>Filter By Spell Name</mat-label>
                 <input matInput name="spell-name" type="text" maxlength="50" [(ngModel)]="filterName" />
               </mat-form-field>
+              <mat-checkbox name="show-description" [(ngModel)]="showDescription">Show Description</mat-checkbox>
             </div>
             <div fxLayout="column" fxFlex fxFlexAlign="end">
-              <p>
-                <label id="layout-selection-label">Layout Selection Rawr</label>
-                <mat-radio-group style="display: flex; flex-direction: column;" [(ngModel)]="selectedDisplayMode"
-                  aria-labelledby="layout-selection-label">
-                  <mat-radio-button [value]="displayModes.TilesWithDescription">Include Spell Text</mat-radio-button>
-                  <mat-radio-button [value]="displayModes.TilesWithoutDescription">No Spell Text</mat-radio-button>
-                </mat-radio-group>
-              </p>
+              <mat-form-field>
+                <mat-label>Filter By Spell Level</mat-label>
+                <mat-select name="spell-level" [(ngModel)]="filterLevel" multiple>
+                  <mat-option [value]="0">Cantrip</mat-option>
+                  <mat-option [value]="1">1st Level</mat-option>
+                  <mat-option [value]="2">2nd Level</mat-option>
+                  <mat-option [value]="3">3rd Level</mat-option>
+                  <mat-option [value]="4">4th Level</mat-option>
+                  <mat-option [value]="5">5th Level</mat-option>
+                  <mat-option [value]="6">6th Level</mat-option>
+                  <mat-option [value]="7">7th Level</mat-option>
+                  <mat-option [value]="8">8th Level</mat-option>
+                  <mat-option [value]="9">9th Level</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-checkbox name="only-selected" [(ngModel)]="onlySelected">Only Selected</mat-checkbox>
             </div>
           </div>
         </form>
       </mat-card-content>
     </mat-card>
   </section>
-  @if(filteredSpells$ | async; as filteredSpells) {
-  <mat-paginator [length]="filteredSpells.length" [pageSize]="20" [pageSizeOptions]="[5, 10, 20, 50, 100]"
+  <mat-paginator [length]="filteredSpells().length" [pageSize]="20" [pageSizeOptions]="[5, 10, 20, 50, 100]"
     [showFirstLastButtons]="true" #paginator />
   <section id="cards" fxLayout="row wrap" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
-    @for(spell of filteredSpells.slice(paginator.pageIndex * paginator.pageSize,
+    @for(spell of filteredSpells().slice(paginator.pageIndex * paginator.pageSize,
     (paginator.pageIndex * paginator.pageSize) + paginator.pageSize); track
     spell.id) {
     <div class="card fixed-height" (click)="toggleSpell(spell)" (keypress)="toggleSpell(spell)" tabindex="0"
-      [class.fixed-height]="isTilesWithDescription()" [class.selected]="selectedSpells.indexOf(spell) !== -1">
-      <app-spell-card [spell]="spell" [showDescription]="isTilesWithDescription()" />
+      [class.fixed-height]="showDescription()" [class.selected]="selectedSpells.indexOf(spell) !== -1">
+      <app-spell-card [spell]="spell" [showDescription]="showDescription()" />
     </div>
     }
   </section>
-  } @else { }
 </section>
 
 <ng-template #cards> </ng-template>
