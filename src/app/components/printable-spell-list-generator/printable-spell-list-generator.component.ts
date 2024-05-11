@@ -1,5 +1,5 @@
 import { AsyncPipe, TitleCasePipe } from '@angular/common';
-import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit, computed, signal } from '@angular/core';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import {
@@ -23,6 +23,7 @@ import { Spell } from 'src/app/spells/models/spell';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 
 import { SpellCardComponent } from './spell-card/spell-card.component';
+import {MatRadioGroup, MatRadioButton, MatRadioModule} from '@angular/material/radio';
 
 enum DisplayModes {
   TilesWithDescription,
@@ -48,6 +49,7 @@ enum DisplayModes {
     MatLabel,
     MatInput,
     MatPaginator,
+    MatRadioModule,
     FormsModule,
   ],
 })
@@ -58,9 +60,12 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   public readonly spellClasses = classesAndSubclassesForSpells;
   public readonly filteredSpells$ = new BehaviorSubject<Spell[]>([]);
 
-  public selectedDisplayMode = DisplayModes.TilesWithoutDescription;
+  public selectedDisplayMode = signal(this.displayModes.TilesWithoutDescription);
   public selectedSpells: Spell[] = [];
   public filterName = signal('');
+
+  public isTilesWithDescription = computed(() => this.selectedDisplayMode() === DisplayModes.TilesWithDescription);
+  public isTilesWithoutDescription = computed(() => this.selectedDisplayMode() === DisplayModes.TilesWithoutDescription);
 
   constructor(private readonly spellDataService: SpellDataService) {
     toObservable(this.filterName)

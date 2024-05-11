@@ -6,53 +6,38 @@
       </mat-card-header>
       <mat-card-content>
         <form>
-          <mat-form-field>
-            <mat-label>Filter By Spell Name</mat-label>
-            <input
-              matInput
-              name="spell-name"
-              type="text"
-              maxlength="50"
-              [(ngModel)]="filterName"
-            />
-          </mat-form-field>
+          <div fxLayout="row" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
+            <div fxLayout="column" fxFlexAlign="start" fxFlex>
+              <mat-form-field>
+                <mat-label>Filter By Spell Name</mat-label>
+                <input matInput name="spell-name" type="text" maxlength="50" [(ngModel)]="filterName" />
+              </mat-form-field>
+            </div>
+            <div fxLayout="column" fxFlex fxFlexAlign="end">
+              <p>
+                <label id="layout-selection-label">Layout Selection Rawr</label>
+                <mat-radio-group style="display: flex; flex-direction: column;" [(ngModel)]="selectedDisplayMode"
+                  aria-labelledby="layout-selection-label">
+                  <mat-radio-button [value]="displayModes.TilesWithDescription">Include Spell Text</mat-radio-button>
+                  <mat-radio-button [value]="displayModes.TilesWithoutDescription">No Spell Text</mat-radio-button>
+                </mat-radio-group>
+              </p>
+            </div>
+          </div>
         </form>
       </mat-card-content>
     </mat-card>
   </section>
   @if(filteredSpells$ | async; as filteredSpells) {
-  <mat-paginator
-    [length]="filteredSpells.length"
-    [pageSize]="20"
-    [pageSizeOptions]="[5, 10, 20, 50, 100]"
-    [showFirstLastButtons]="true"
-    #paginator
-  >
-  </mat-paginator>
-  <section
-    id="cards"
-    fxLayout="row wrap"
-    fxLayoutGap="1rem"
-    fxLayoutAlign="center stretch"
-  >
+  <mat-paginator [length]="filteredSpells.length" [pageSize]="20" [pageSizeOptions]="[5, 10, 20, 50, 100]"
+    [showFirstLastButtons]="true" #paginator />
+  <section id="cards" fxLayout="row wrap" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
     @for(spell of filteredSpells.slice(paginator.pageIndex * paginator.pageSize,
     (paginator.pageIndex * paginator.pageSize) + paginator.pageSize); track
     spell.id) {
-    <div
-      class="card fixed-height"
-      (click)="toggleSpell(spell)"
-      (keypress)="toggleSpell(spell)"
-      [class.fixed-height]="
-        selectedDisplayMode === displayModes.TilesWithDescription
-      "
-      [class.selected]="selectedSpells.indexOf(spell) !== -1"
-    >
-      <app-spell-card
-        [spell]="spell"
-        [showDescription]="
-          selectedDisplayMode === displayModes.TilesWithDescription
-        "
-      />
+    <div class="card fixed-height" (click)="toggleSpell(spell)" (keypress)="toggleSpell(spell)" tabindex="0"
+      [class.fixed-height]="isTilesWithDescription()" [class.selected]="selectedSpells.indexOf(spell) !== -1">
+      <app-spell-card [spell]="spell" [showDescription]="isTilesWithDescription()" />
     </div>
     }
   </section>
