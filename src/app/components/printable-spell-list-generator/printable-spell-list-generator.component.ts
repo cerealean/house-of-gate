@@ -1,34 +1,43 @@
-import { AsyncPipe, TitleCasePipe } from '@angular/common';
-import { Component, OnInit, computed, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { AsyncPipe, TitleCasePipe } from "@angular/common";
+import {
+  Component,
+  HostListener,
+  OnInit,
+  computed,
+  signal,
+} from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import {
   MatCard,
   MatCardContent,
   MatCardHeader,
   MatCardTitle,
-} from '@angular/material/card';
-import { MatFormField, MatLabel } from '@angular/material/form-field';
-import { MatInput } from '@angular/material/input';
-import { MatPaginator } from '@angular/material/paginator';
+} from "@angular/material/card";
+import { MatFormField, MatLabel } from "@angular/material/form-field";
+import { MatInput } from "@angular/material/input";
+import { MatPaginator } from "@angular/material/paginator";
 
-import { sort } from 'fast-sort';
-import { SpellDataService } from 'src/app/data/services/spells/spell-data.service';
-import { classesAndSubclassesForSpells } from 'src/app/data/static/classes';
-import { OrdinalPipe } from 'src/app/pipes/ordinal/ordinal.pipe';
-import { Spell } from 'src/app/spells/models/spell';
+import { sort } from "fast-sort";
+import { SpellDataService } from "src/app/data/services/spells/spell-data.service";
+import { classesAndSubclassesForSpells } from "src/app/data/static/classes";
+import { OrdinalPipe } from "src/app/pipes/ordinal/ordinal.pipe";
+import { Spell } from "src/app/spells/models/spell";
 
-import { FlexLayoutModule } from '@ngbracket/ngx-layout';
+import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
-import { MatCheckbox } from '@angular/material/checkbox';
-import { MatDivider } from '@angular/material/divider';
-import { MatOption, MatSelect } from '@angular/material/select';
-import { SpellCardComponent } from './spell-card/spell-card.component';
+import { MatButton } from "@angular/material/button";
+import { MatCheckbox } from "@angular/material/checkbox";
+import { MatDivider } from "@angular/material/divider";
+import { MatOption, MatSelect } from "@angular/material/select";
+import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatTooltip } from "@angular/material/tooltip";
+import { SpellCardComponent } from "./spell-card/spell-card.component";
 
 @Component({
-  selector: 'app-printable-spell-list-generator',
+  selector: "app-printable-spell-list-generator",
   standalone: true,
-  templateUrl: './printable-spell-list-generator.component.html',
-  styleUrl: './printable-spell-list-generator.component.scss',
+  templateUrl: "./printable-spell-list-generator.component.html",
+  styleUrl: "./printable-spell-list-generator.component.scss",
   imports: [
     AsyncPipe,
     OrdinalPipe,
@@ -47,6 +56,9 @@ import { SpellCardComponent } from './spell-card/spell-card.component';
     MatOption,
     MatCheckbox,
     MatDivider,
+    MatTooltip,
+    MatButton,
+    MatSnackBarModule,
     FormsModule,
   ],
 })
@@ -55,12 +67,22 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
 
   public readonly spellClasses = classesAndSubclassesForSpells;
 
-  public selectedSpells: Spell[] = [];
-  public readonly filterName = signal('');
-  public readonly filterLevel = signal<number[]>([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  public readonly selectedSpells = signal<Spell[]>([]);
+  public readonly filterName = signal("");
+  public readonly filterLevel = signal<number[]>([
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+  ]);
   public readonly showDescription = signal(false);
   public readonly onlySelected = signal(false);
   public readonly previewMode = signal(false);
+  public readonly hasSelectedSpells = computed(
+    () => this.selectedSpells().length > 0
+  );
+  public readonly previewModeTooltip = computed(() =>
+    this.hasSelectedSpells()
+      ? "Preview printable page"
+      : "Select spells to preview printable page"
+  );
 
   public filteredSpells = computed(() => {
     const allSpells = this.allSpells();
@@ -69,7 +91,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
     }
 
     if (this.onlySelected() || this.previewMode()) {
-      return this.selectedSpells;
+      return this.selectedSpells();
     }
 
     let filtered = allSpells;
@@ -77,36 +99,68 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
     const name = this.filterName();
     if (name) {
       filtered = filtered.filter(
-        (spell) => spell.name.toLowerCase().indexOf(name.toLowerCase()) !== -1
+        spell => spell.name.toLowerCase().indexOf(name.toLowerCase()) !== -1
       );
     }
 
     const levels = this.filterLevel();
     if (levels !== undefined) {
-      filtered = filtered.filter((spell) => levels.includes(spell.level));
+      filtered = filtered.filter(spell => levels.includes(spell.level));
     }
 
     return filtered;
   });
 
-  constructor(private readonly spellDataService: SpellDataService) { }
+  @HostListener("window:keydown.escape", ["$event"])
+  closePreview(event: KeyboardEvent) {
+    if (this.previewMode()) {
+      this.previewMode.set(false);
+      event.preventDefault();
+      event.stopPropagation();
+      this.matSnackBar.dismiss();
+    }
+  }
+
+  constructor(
+    private readonly spellDataService: SpellDataService,
+    private readonly matSnackBar: MatSnackBar
+  ) {}
 
   ngOnInit() {
-    this.spellDataService.getAllSpells().then((spells) => {
+    this.spellDataService.getAllSpells().then(spells => {
       const sortedSpells = this.filterSpellsByLevelThenName(spells);
       this.allSpells.set(sortedSpells);
     });
   }
 
   toggleSpell(spell: Spell): void {
-    if (this.selectedSpells.indexOf(spell) !== -1) {
-      this.selectedSpells.splice(this.selectedSpells.indexOf(spell), 1);
+    if (this.previewMode()) {
+      return;
+    }
+    const selectedSpells = this.selectedSpells();
+    const spellIndex = selectedSpells.indexOf(spell);
+    if (spellIndex !== -1) {
+      this.selectedSpells.update(spells => {
+        spells.splice(spellIndex, 1);
+        return spells;
+      });
     } else {
-      this.selectedSpells.push(spell);
+      this.selectedSpells.update(spells => spells.concat(spell));
     }
   }
 
+  clearSelectedSpells(): void {
+    this.selectedSpells.set([]);
+  }
+
+  printPreview(): void {
+    this.previewMode.set(true);
+    this.matSnackBar.open("Press 'ESC' to close preview", "OK", {
+      panelClass: "no-print",
+    });
+  }
+
   private filterSpellsByLevelThenName(spells: Spell[]) {
-    return sort(spells).asc([(s) => s.level, (s) => s.name]);
+    return sort(spells).asc([s => s.level, s => s.name]);
   }
 }
