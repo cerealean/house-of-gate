@@ -5,7 +5,7 @@
     {{ spell().level | ordinal }} Level {{ spell().school | titlecase }} Spell }
     @else { {{ spell().school | titlecase }} Cantrip }
   </p>
-  <div fxLayout="row" fxLayoutGap="1rem">
+  <div fxLayout="row" fxLayoutGap="0.5rem">
     <ul class="no-bullets" fxFlexAlign="start" fxFlex="50%">
       <li><span class="bold">Casting Time:</span>&nbsp;{{ spell().time }}</li>
       <li><span class="bold">Range:</span>&nbsp;{{ spell().range }}</li>

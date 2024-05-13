@@ -16,6 +16,9 @@ div#spell-card {
     box-shadow: -3px 3px 5px black;
     border: 2px solid black;
   }
+  &p {
+    margin: 0;
+  }
 }
 
 #spell-text {
