@@ -3,12 +3,10 @@ section#container {
 }
 
 .card {
-  width: 47vw;
+  width: 100%;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  &.fixed-height {
-    height: 35vh;
-  }
+  height: 100%;
   &.selected {
     position: relative;
     &::after {
@@ -37,20 +35,41 @@ section#container {
 
 @media print {
   ::ng-deep {
+    // *:not(app-printable-spell-list-generator) {
+    //   display: none !important;
+    // }
     app-toolbar,
     app-footer {
-      display: none;
+      display: none !important;
+    }
+    .mat-drawer-container,
+    .mat-drawer-content {
+      overflow: visible !important;
+    }
+    * {
+      background-color: transparent !important;
+      color: black !important;
+      ::after {
+        background-color: transparent;
+      }
     }
   }
+
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  #cards {
+    display: block !important;
+  }
+
   #filters,
   #paginator {
-    display: none;
+    display: none !important;
   }
   .card {
-    page-break-inside: avoid;
-    &.fixed-height {
-      height: 100%;
-    }
+    margin-bottom: 1rem;
     &.selected {
       &::after {
         display: none;

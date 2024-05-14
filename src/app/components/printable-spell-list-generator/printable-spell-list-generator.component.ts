@@ -17,11 +17,14 @@ import {
 } from "@angular/material/card";
 import { MatFormField, MatLabel } from "@angular/material/form-field";
 import { MatInput } from "@angular/material/input";
-import { MatPaginator } from "@angular/material/paginator";
+import { MatPaginator, PageEvent } from "@angular/material/paginator";
 
 import { sort } from "fast-sort";
 import { SpellDataService } from "src/app/data/services/spells/spell-data.service";
-import { classesAndSubclassesForSpells } from "src/app/data/static/classes";
+import {
+  SpellsClasses,
+  classesAndSubclassesForSpells,
+} from "src/app/data/static/classes";
 import { OrdinalPipe } from "src/app/pipes/ordinal/ordinal.pipe";
 import { Spell } from "src/app/spells/models/spell";
 
@@ -87,6 +90,12 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   public readonly showDescription = signal(false);
   public readonly onlySelected = signal(false);
   public readonly previewMode = signal(false);
+  public readonly paginatorPageSize = signal(10);
+  public readonly paginatorPageSizeOptions = signal([5, 10, 25, 50, 100]);
+  public readonly paginatorPageIndex = signal(0);
+  public readonly paginatorLength = computed(
+    () => this.filteredSpells().length
+  );
   public readonly hasSelectedSpells = computed(
     () => this.selectedSpells().length > 0
   );
@@ -123,7 +132,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     return filtered;
   });
 
-  private configuration = effect(() => {
+  private readonly configurationEffect = effect(() => {
     if (!this.isLoaded()) {
       return;
     }
@@ -148,6 +157,13 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
       event.preventDefault();
       event.stopPropagation();
       this.matSnackBar.dismiss();
+    }
+  }
+
+  @HostListener("window:beforeprint")
+  beforePrint() {
+    if (!this.previewMode()) {
+      this.printPreview();
     }
   }
 
@@ -188,7 +204,11 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.configuration?.destroy();
+    this.configurationEffect.destroy();
+  }
+
+  getPaginatedSpells(start: number, end: number): Spell[] {
+    return this.filteredSpells().slice(start, end);
   }
 
   toggleSpell(spell: Spell): void {
@@ -209,13 +229,28 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
 
   clearSelectedSpells(): void {
     this.selectedSpells.set([]);
+    this.paginatorPageIndex.set(0);
   }
 
   printPreview(): void {
+    this.paginatorPageIndex.set(0);
+    this.paginatorPageSize.set(this.paginatorLength());
     this.previewMode.set(true);
-    this.matSnackBar.open("Press 'ESC' to close preview", "OK", {
+    this.matSnackBar.open("Press 'ESC' to close preview", undefined, {
       panelClass: "no-print",
     });
+  }
+
+  quickAddSpellsForClass(spellClass: SpellsClasses): void {
+    const spells = this.allSpells().filter(
+      spell => spell.classes.indexOf(spellClass) !== -1
+    );
+    this.selectedSpells.update(selectedSpells => selectedSpells.concat(spells));
+  }
+
+  updatePaginator(event: PageEvent): void {
+    this.paginatorPageSize.set(event.pageSize);
+    this.paginatorPageIndex.set(event.pageIndex);
   }
 
   private filterSpellsByLevelThenName(spells: Spell[]) {

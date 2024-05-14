@@ -49,21 +49,17 @@
                   <mat-option [value]="9">9th Level</mat-option>
                 </mat-select>
               </mat-form-field>
-              <mat-checkbox name="only-selected" [(ngModel)]="onlySelected"
+              <mat-checkbox
+                name="only-selected"
+                (change)="paginatorPageIndex.set(0)"
+                [(ngModel)]="onlySelected"
                 >Only Selected</mat-checkbox
               >
-              <button
-                mat-raised-button
-                color="accent"
-                (click)="clearSelectedSpells()"
-              >
-                Clear Selected Spells
-              </button>
             </div>
           </div>
           <mat-divider></mat-divider>
           <br />
-          <h4 class="mat-subheading-2">Print Options</h4>
+          <h4 class="mat-subheading-2">Quick Options</h4>
           <button
             mat-raised-button
             color="primary"
@@ -75,13 +71,39 @@
           >
             Preview
           </button>
+          &nbsp;
+          <button
+            mat-raised-button
+            color="accent"
+            (click)="clearSelectedSpells()"
+            (keypress)="clearSelectedSpells()"
+            [disabled]="!hasSelectedSpells()"
+          >
+            Clear Selected Spells
+          </button>
+          &nbsp;
+          <mat-form-field>
+            <mat-label>Quick Select Spells by Class</mat-label>
+            <mat-select name="quick-add-class-spells">
+              @for (class of spellClasses; track $index) {
+              <mat-option
+                (click)="quickAddSpellsForClass(class)"
+                (keypress)="quickAddSpellsForClass(class)"
+                [value]="class"
+                >{{ class }}</mat-option
+              >
+              }
+            </mat-select>
+          </mat-form-field>
         </form>
       </mat-card-content>
       <mat-paginator
         id="paginator"
-        [length]="filteredSpells().length"
-        [pageSize]="20"
-        [pageSizeOptions]="[5, 10, 20, 50, 100]"
+        [length]="paginatorLength()"
+        [pageSize]="paginatorPageSize()"
+        [pageSizeOptions]="paginatorPageSizeOptions()"
+        [pageIndex]="paginatorPageIndex()"
+        (page)="updatePaginator($event)"
         [showFirstLastButtons]="true"
         #paginator
       />

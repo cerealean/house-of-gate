@@ -1,10 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class StorageService {
-
   public clearAllData(): void {
     localStorage.clear();
   }
@@ -20,7 +19,6 @@ export class StorageService {
   public clearData(key: StorageKeys): void {
     this.clearStorage(key);
   }
-
 
   private getFromLocalStorageAndParse<T>(key: string): T | null {
     try {
@@ -40,7 +38,9 @@ export class StorageService {
 
   private stringifyAndStore(key: string, value: Object): void {
     if (!value) {
-      throw new Error('Object to store must be a valid object and cannot be null or empty');
+      throw new Error(
+        "Object to store must be a valid object and cannot be null or empty"
+      );
     }
     const stringifiedObject = JSON.stringify(value);
     if (stringifiedObject) {
@@ -50,12 +50,13 @@ export class StorageService {
 }
 
 export const enum StorageKeys {
-  ColumnInfo = 'HoG-ColumnInfo',
-  ColumnInfoItems = 'HoG-ColumnInfoItems',
-  PreviouslyGeneratedEncounters = 'HoG-PreviouslyGeneratedEncounters',
-  EncounterFilters = 'HoG-EncounterFilters',
-  HasAcknowledgedTermsDate = 'HoG-TermsAcknowledgement',
-  MonsterFilters = 'HoG-MonsterFilters',
-  SpellFilters = 'HoG-SpellFilters',
-  EncounterGeneratorMonsterFilters = 'HoG-EGMonsterFilters'
+  ColumnInfo = "HoG-ColumnInfo",
+  ColumnInfoItems = "HoG-ColumnInfoItems",
+  PreviouslyGeneratedEncounters = "HoG-PreviouslyGeneratedEncounters",
+  EncounterFilters = "HoG-EncounterFilters",
+  HasAcknowledgedTermsDate = "HoG-TermsAcknowledgement",
+  MonsterFilters = "HoG-MonsterFilters",
+  SpellFilters = "HoG-SpellFilters",
+  EncounterGeneratorMonsterFilters = "HoG-EGMonsterFilters",
+  SpellListGeneratorConfiguration = "HoG-SpellListGeneratorConfiguration",
 }
