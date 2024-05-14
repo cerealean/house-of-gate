@@ -2,8 +2,10 @@ import { AsyncPipe, TitleCasePipe } from "@angular/common";
 import {
   Component,
   HostListener,
+  OnDestroy,
   OnInit,
   computed,
+  effect,
   signal,
 } from "@angular/core";
 import { FormsModule } from "@angular/forms";
@@ -31,7 +33,16 @@ import { MatDivider } from "@angular/material/divider";
 import { MatOption, MatSelect } from "@angular/material/select";
 import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltip } from "@angular/material/tooltip";
+import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
+
+type Config = {
+  filterName: string;
+  filterLevel: number[];
+  showDescription: boolean;
+  onlySelected: boolean;
+  selectedSpells: Spell[];
+};
 
 @Component({
   selector: "app-printable-spell-list-generator",
@@ -62,11 +73,12 @@ import { SpellCardComponent } from "./spell-card/spell-card.component";
     FormsModule,
   ],
 })
-export class PrintableSpellListGeneratorComponent implements OnInit {
+export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   private allSpells = signal<Spell[]>([]);
 
   public readonly spellClasses = classesAndSubclassesForSpells;
 
+  public readonly isLoaded = signal(false);
   public readonly selectedSpells = signal<Spell[]>([]);
   public readonly filterName = signal("");
   public readonly filterLevel = signal<number[]>([
@@ -111,6 +123,24 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
     return filtered;
   });
 
+  private configuration = effect(() => {
+    if (!this.isLoaded()) {
+      return;
+    }
+    const config = {
+      filterName: this.filterName(),
+      filterLevel: this.filterLevel(),
+      showDescription: this.showDescription(),
+      onlySelected: this.onlySelected(),
+      selectedSpells: this.selectedSpells(),
+    } satisfies Config;
+
+    this.storageService.setData(
+      StorageKeys.SpellListGeneratorConfiguration,
+      config
+    );
+  });
+
   @HostListener("window:keydown.escape", ["$event"])
   closePreview(event: KeyboardEvent) {
     if (this.previewMode()) {
@@ -123,14 +153,42 @@ export class PrintableSpellListGeneratorComponent implements OnInit {
 
   constructor(
     private readonly spellDataService: SpellDataService,
-    private readonly matSnackBar: MatSnackBar
+    private readonly matSnackBar: MatSnackBar,
+    private readonly storageService: StorageService
   ) {}
 
   ngOnInit() {
-    this.spellDataService.getAllSpells().then(spells => {
-      const sortedSpells = this.filterSpellsByLevelThenName(spells);
-      this.allSpells.set(sortedSpells);
-    });
+    this.spellDataService
+      .getAllSpells()
+      .then(spells => {
+        const sortedSpells = this.filterSpellsByLevelThenName(spells);
+        this.allSpells.set(sortedSpells);
+      })
+      .then(() => {
+        const config = this.storageService.getData<Config>(
+          StorageKeys.SpellListGeneratorConfiguration
+        );
+        if (config) {
+          this.filterName.set(config.filterName);
+          this.filterLevel.set(config.filterLevel);
+          this.showDescription.set(config.showDescription);
+          this.onlySelected.set(config.onlySelected);
+
+          const selectedSpells = this.allSpells().filter(spell => {
+            return config.selectedSpells.some(
+              selectedSpell => selectedSpell.id === spell.id
+            );
+          });
+          this.selectedSpells.set(selectedSpells);
+        }
+      })
+      .finally(() => {
+        this.isLoaded.set(true);
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.configuration?.destroy();
   }
 
   toggleSpell(spell: Spell): void {
