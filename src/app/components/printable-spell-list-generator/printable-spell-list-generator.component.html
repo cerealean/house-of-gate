@@ -109,7 +109,7 @@
         </form>
       </mat-card-content>
       <mat-paginator
-        id="paginator"
+        id="paginator-top"
         [length]="paginatorLength()"
         [pageSize]="paginatorPageSize()"
         [pageSizeOptions]="paginatorPageSizeOptions()"
@@ -140,5 +140,15 @@
     </div>
     }
   </section>
+  <mat-paginator
+    id="paginator-bottom"
+    [length]="paginatorLength()"
+    [pageSize]="paginatorPageSize()"
+    [pageSizeOptions]="paginatorPageSizeOptions()"
+    [pageIndex]="paginatorPageIndex()"
+    (page)="updatePaginator($event)"
+    [showFirstLastButtons]="true"
+    #paginator
+  />
   }
 </section>
