@@ -34,6 +34,13 @@ section#container {
   width: 100%;
 }
 
+@media not print {
+  .hidden-during-print {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media print {
   ::ng-deep {
     // *:not(app-printable-spell-list-generator) {

@@ -106,6 +106,14 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
       ? "Preview printable page"
       : "Select spells to preview printable page"
   );
+  public readonly displayedSpells = computed(() => {
+    const start = this.paginatorPageIndex() * this.paginatorPageSize();
+    let end = start + this.paginatorPageSize();
+    if (end > this.filteredSpells().length) {
+      end = this.filteredSpells().length;
+    }
+    return this.filteredSpells().slice(start, end);
+  });
 
   public filteredSpells = computed(() => {
     const allSpells = this.allSpells();
@@ -189,7 +197,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     this.spellDataService
       .getAllSpells()
       .then(spells => {
-        const sortedSpells = this.filterSpellsByLevelThenName(spells);
+        const sortedSpells = this.sortSpellsByLevelThenName(spells);
         this.allSpells.set(sortedSpells);
       })
       .then(() => {
@@ -220,10 +228,6 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     this.configurationEffect.destroy();
   }
 
-  getPaginatedSpells(start: number, end: number): Spell[] {
-    return this.filteredSpells().slice(start, end);
-  }
-
   toggleSpell(spell: Spell): void {
     if (this.previewMode()) {
       return;
@@ -233,10 +237,12 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     if (spellIndex !== -1) {
       this.selectedSpells.update(spells => {
         spells.splice(spellIndex, 1);
-        return spells;
+        return this.sortSpellsByLevelThenName(spells);
       });
     } else {
-      this.selectedSpells.update(spells => spells.concat(spell));
+      this.selectedSpells.update(spells =>
+        this.sortSpellsByLevelThenName(spells.concat(spell))
+      );
     }
   }
 
@@ -258,7 +264,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     const spells = this.allSpells()
       .filter(spell => spell.classes.indexOf(spellClass) !== -1)
       .filter(spell => this.selectedSpells().indexOf(spell) === -1);
-    const sortedSpells = this.filterSpellsByLevelThenName(spells);
+    const sortedSpells = this.sortSpellsByLevelThenName(spells);
     this.selectedSpells.update(selectedSpells =>
       selectedSpells.concat(sortedSpells)
     );
@@ -269,7 +275,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     this.paginatorPageIndex.set(event.pageIndex);
   }
 
-  private filterSpellsByLevelThenName(spells: Spell[]) {
+  private sortSpellsByLevelThenName(spells: Spell[]) {
     return sort(spells).asc([s => s.level, s => s.name]);
   }
 }
