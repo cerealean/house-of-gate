@@ -1,18 +1,4 @@
 <section id="container" fxLayout="column">
-  @if(isHandheldPortrait$ | async) {
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>Small Screen Warning</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        This page is not optimized for small screens. Please use landscape mode
-        on your device (usually this means turning your device sideways) or swap
-        to a larger screen for the best experience.
-      </p>
-    </mat-card-content>
-  </mat-card>
-  } @else {
   <section id="filters">
     <mat-card>
       <mat-card-header>
@@ -21,8 +7,13 @@
       <mat-card-content>
         <form>
           <h4 class="mat-subheading-2">Filters</h4>
-          <div fxLayout="row" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
-            <div fxLayout="column" fxFlexAlign="start" fxFlex>
+          <div
+            fxLayout="column"
+            fxLayout.gt-sm="row"
+            fxLayoutGap="1rem"
+            fxLayoutAlign="center stretch"
+          >
+            <div fxLayout="column" fxFlexAlign.gt-sm="start" fxFlex>
               <mat-form-field>
                 <mat-label>Filter By Spell Name</mat-label>
                 <input
@@ -34,7 +25,7 @@
                 />
               </mat-form-field>
             </div>
-            <div fxLayout="column" fxFlex fxFlexAlign="end">
+            <div fxLayout="column" fxFlex fxFlexAlign.gt-sm="end">
               <mat-form-field>
                 <mat-label>Filter By Spell Level</mat-label>
                 <mat-select
@@ -59,14 +50,16 @@
                 (change)="paginatorPageIndex.set(0)"
                 [disabled]="!hasSelectedSpells()"
                 [(ngModel)]="onlySelected"
-                >Only Show Selected Spells</mat-checkbox
+                >Only Show Selected Spells ({{
+                  selectedSpells().length
+                }})</mat-checkbox
               >
             </div>
           </div>
           <mat-divider></mat-divider>
           <br />
           <h4 class="mat-subheading-2">Quick Options</h4>
-          <div fxLayout="row" fxLayoutGap="1rem">
+          <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="1rem">
             <div fxLayout="column" fxLayoutAlign="center" fxFlex>
               <button
                 mat-raised-button
@@ -150,5 +143,4 @@
     [showFirstLastButtons]="true"
     #paginator
   />
-  }
 </section>

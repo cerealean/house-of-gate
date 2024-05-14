@@ -31,14 +31,12 @@ import { Spell } from "src/app/spells/models/spell";
 
 import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
-import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 import { MatButton } from "@angular/material/button";
 import { MatCheckbox } from "@angular/material/checkbox";
 import { MatDivider } from "@angular/material/divider";
 import { MatOption, MatSelect } from "@angular/material/select";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltip } from "@angular/material/tooltip";
-import { map } from "rxjs/operators";
 import { WINDOW } from "src/app/injection-tokens/window.token";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
@@ -85,10 +83,6 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   private allSpells = signal<Spell[]>([]);
 
   public readonly spellClasses = classesAndSubclassesForSpells;
-
-  public readonly isHandheldPortrait$ = this.breakpointObserver
-    .observe(Breakpoints.HandsetPortrait)
-    .pipe(map(result => result.matches));
 
   public readonly isLoaded = signal(false);
   public readonly selectedSpells = signal<Spell[]>([]);
@@ -188,7 +182,6 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   constructor(
     private readonly spellDataService: SpellDataService,
     private readonly storageService: StorageService,
-    private readonly breakpointObserver: BreakpointObserver,
     @Inject(WINDOW) private readonly window: Window
   ) {}
 
@@ -262,9 +255,9 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   }
 
   quickAddSpellsForClass(spellClass: SpellsClasses): void {
-    const spells = this.allSpells().filter(
-      spell => spell.classes.indexOf(spellClass) !== -1
-    );
+    const spells = this.allSpells()
+      .filter(spell => spell.classes.indexOf(spellClass) !== -1)
+      .filter(spell => this.selectedSpells().indexOf(spell) === -1);
     const sortedSpells = this.filterSpellsByLevelThenName(spells);
     this.selectedSpells.update(selectedSpells =>
       selectedSpells.concat(sortedSpells)
