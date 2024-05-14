@@ -30,13 +30,14 @@ import { Spell } from "src/app/spells/models/spell";
 
 import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
+import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 import { MatButton } from "@angular/material/button";
 import { MatCheckbox } from "@angular/material/checkbox";
 import { MatDivider } from "@angular/material/divider";
 import { MatOption, MatSelect } from "@angular/material/select";
 import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltip } from "@angular/material/tooltip";
-import { take } from "rxjs/operators";
+import { map, take } from "rxjs/operators";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
 
@@ -82,6 +83,10 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   private allSpells = signal<Spell[]>([]);
 
   public readonly spellClasses = classesAndSubclassesForSpells;
+
+  public readonly isHandheldPortrait$ = this.breakpointObserver
+    .observe(Breakpoints.HandsetPortrait)
+    .pipe(map(result => result.matches));
 
   public readonly isLoaded = signal(false);
   public readonly selectedSpells = signal<Spell[]>([]);
@@ -174,7 +179,8 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   constructor(
     private readonly spellDataService: SpellDataService,
     private readonly matSnackBar: MatSnackBar,
-    private readonly storageService: StorageService
+    private readonly storageService: StorageService,
+    private readonly breakpointObserver: BreakpointObserver
   ) {}
 
   ngOnInit() {

@@ -1,4 +1,18 @@
 <section id="container" fxLayout="column">
+  @if(isHandheldPortrait$ | async) {
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Small Screen Warning</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        This page is not optimized for small screens. Please use landscape mode
+        on your device (usually this means turning your device sideways) or swap
+        to a larger screen for the best experience.
+      </p>
+    </mat-card-content>
+  </mat-card>
+  } @else {
   <section
     id="filters"
     [ariaHidden]="previewMode()"
@@ -133,4 +147,5 @@
     </div>
     }
   </section>
+  }
 </section>
