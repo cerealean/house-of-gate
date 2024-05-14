@@ -1,6 +1,11 @@
 <div id="spell-card" fxLayout="column">
-  <div fxLayout="row" fxLayoutGap="1rem">
-    <div fxLayout="column" fxFlex.lt-md="60%" fxFlex.gt-sm="20%">
+  <div fxLayout="row" fxLayoutGap="1rem" id="spell-card-contents">
+    <div
+      fxLayout="column"
+      fxFlex.lt-md="60%"
+      fxFlex.gt-sm="20%"
+      id="spell-card-column-1"
+    >
       <p class="mat-headline-6">{{ spell().name }}</p>
       <p class="mat-body-1">
         @if(spell().level > 0) {
@@ -16,6 +21,7 @@
       fxFlex.lt-md="40%"
       fxFlex.gt-sm="20%"
       fxLayoutGap="1rem"
+      id="spell-card-column-2"
       class="mat-small"
     >
       <ul class="no-bullets" fxFlex>
@@ -39,7 +45,12 @@
         </li>
       </ul>
     </div>
-    <div fxLayout="column" fxHide.lt-md fxFlex.gt-sm="60%">
+    <div
+      fxLayout="column"
+      fxHide.lt-md
+      fxFlex.gt-sm="60%"
+      id="spell-card-column-3"
+    >
       <div id="spell-text" class="mat-small" fxFlex>
         <span>{{ spell().text }}</span>
         <br /><br />

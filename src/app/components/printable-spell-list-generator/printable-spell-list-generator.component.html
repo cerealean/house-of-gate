@@ -101,16 +101,18 @@
           </div>
         </form>
       </mat-card-content>
+      @if(!previewMode() ) {
       <mat-paginator
         id="paginator-top"
+        [class.hidden-during-print]="previewMode()"
         [length]="paginatorLength()"
         [pageSize]="paginatorPageSize()"
         [pageSizeOptions]="paginatorPageSizeOptions()"
         [pageIndex]="paginatorPageIndex()"
         (page)="updatePaginator($event)"
         [showFirstLastButtons]="true"
-        #paginator
       />
+      }
     </mat-card>
   </section>
   <section
@@ -132,15 +134,15 @@
     </div>
     }
   </section>
+  @if(!previewMode() ) {
   <mat-paginator
     id="paginator-bottom"
-    [class.hidden-during-print]="previewMode()"
     [length]="paginatorLength()"
     [pageSize]="paginatorPageSize()"
     [pageSizeOptions]="paginatorPageSizeOptions()"
     [pageIndex]="paginatorPageIndex()"
     (page)="updatePaginator($event)"
     [showFirstLastButtons]="true"
-    #paginator
   />
+  }
 </section>

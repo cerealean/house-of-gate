@@ -24,6 +24,27 @@ ul {
   }
   p {
     margin: 0 !important;
+    line-height: normal !important;
+  }
+  span {
+    line-height: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    &.mat-headline-4 {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding: 0 !important;
+      line-height: normal !important;
+    }
+  }
+  #spell-card-column-1 {
+    width: 17vw;
+  }
+  #spell-card-column-2 {
+    width: 20vw;
+  }
+  #spell-card-column-3 {
+    width: 58vw;
   }
 }
 
@@ -40,6 +61,11 @@ div#spell-card {
   }
   &p {
     margin: 0;
+  }
+  span.mat-headline-4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: sub;
   }
 }
 

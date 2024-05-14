@@ -18,16 +18,16 @@ import {
 } from "@angular/material/card";
 import { MatFormField, MatLabel } from "@angular/material/form-field";
 import { MatInput } from "@angular/material/input";
-import { MatPaginator, PageEvent } from "@angular/material/paginator";
+import { MatPaginator, type PageEvent } from "@angular/material/paginator";
 
 import { sort } from "fast-sort";
 import { SpellDataService } from "src/app/data/services/spells/spell-data.service";
 import {
-  SpellsClasses,
   classesAndSubclassesForSpells,
+  type SpellsClasses,
 } from "src/app/data/static/classes";
 import { OrdinalPipe } from "src/app/pipes/ordinal/ordinal.pipe";
-import { Spell } from "src/app/spells/models/spell";
+import { type Spell } from "src/app/spells/models/spell";
 
 import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
