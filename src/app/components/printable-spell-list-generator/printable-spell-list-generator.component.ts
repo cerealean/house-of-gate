@@ -232,6 +232,7 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
 
   clearSelectedSpells(): void {
     this.selectedSpells.set([]);
+    this.onlySelected.set(false);
     this.paginatorPageIndex.set(0);
   }
 

@@ -47,6 +47,7 @@
               <mat-checkbox
                 name="only-selected"
                 (change)="paginatorPageIndex.set(0)"
+                [disabled]="!hasSelectedSpells()"
                 [(ngModel)]="onlySelected"
                 >Only Show Selected Spells</mat-checkbox
               >
