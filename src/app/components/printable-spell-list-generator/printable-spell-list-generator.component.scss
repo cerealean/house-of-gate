@@ -7,6 +7,7 @@ section#container {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   height: 100%;
+  cursor: pointer;
   &.selected {
     position: relative;
     &::after {

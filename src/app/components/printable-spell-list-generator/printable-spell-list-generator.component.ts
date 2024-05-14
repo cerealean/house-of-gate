@@ -36,6 +36,7 @@ import { MatDivider } from "@angular/material/divider";
 import { MatOption, MatSelect } from "@angular/material/select";
 import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltip } from "@angular/material/tooltip";
+import { take } from "rxjs/operators";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
 
@@ -153,11 +154,12 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   });
 
   @HostListener("window:keydown.escape", ["$event"])
-  closePreview(event: KeyboardEvent) {
+  closePreview(event?: KeyboardEvent) {
     if (this.previewMode()) {
+      this.paginatorPageSize.set(10);
       this.previewMode.set(false);
-      event.preventDefault();
-      event.stopPropagation();
+      event?.preventDefault();
+      event?.stopPropagation();
       this.matSnackBar.dismiss();
     }
   }
@@ -240,9 +242,13 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     this.paginatorPageIndex.set(0);
     this.paginatorPageSize.set(this.paginatorLength());
     this.previewMode.set(true);
-    this.matSnackBar.open("Press 'ESC' to close preview", undefined, {
-      panelClass: "no-print",
-    });
+    this.matSnackBar
+      .open("Press 'ESC' or click 'Close' to close preview", "Close", {
+        panelClass: "no-print",
+      })
+      .onAction()
+      .pipe(take(1))
+      .subscribe(() => this.closePreview());
   }
 
   quickAddSpellsForClass(spellClass: SpellsClasses): void {
