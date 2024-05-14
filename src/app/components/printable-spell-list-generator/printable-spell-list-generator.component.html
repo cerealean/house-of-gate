@@ -13,11 +13,7 @@
     </mat-card-content>
   </mat-card>
   } @else {
-  <section
-    id="filters"
-    [ariaHidden]="previewMode()"
-    [class.hidden]="previewMode()"
-  >
+  <section id="filters">
     <mat-card>
       <mat-card-header>
         <mat-card-title>Spells</mat-card-title>
@@ -77,11 +73,11 @@
                 color="primary"
                 [disabled]="!hasSelectedSpells()"
                 [matTooltip]="previewModeTooltip()"
-                name="preview-mode"
-                (click)="printPreview()"
-                (keypress)="printPreview()"
+                name="print-selected-spells"
+                (click)="printPage()"
+                (keypress)="printPage()"
               >
-                Preview
+                Print Selected Spells
               </button>
               &nbsp;
               <button
@@ -138,10 +134,7 @@
       (click)="toggleSpell(spell)"
       (keypress)="toggleSpell(spell)"
       tabindex="0"
-      [class.selected]="
-        !previewMode() && selectedSpells().indexOf(spell) !== -1
-      "
-      [class.preview-mode]="previewMode()"
+      [class.selected]="selectedSpells().indexOf(spell) !== -1"
     >
       <app-spell-card [spell]="spell" />
     </div>

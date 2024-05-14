@@ -2,6 +2,7 @@ import { AsyncPipe, TitleCasePipe } from "@angular/common";
 import {
   Component,
   HostListener,
+  Inject,
   OnDestroy,
   OnInit,
   computed,
@@ -35,9 +36,10 @@ import { MatButton } from "@angular/material/button";
 import { MatCheckbox } from "@angular/material/checkbox";
 import { MatDivider } from "@angular/material/divider";
 import { MatOption, MatSelect } from "@angular/material/select";
-import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltip } from "@angular/material/tooltip";
-import { map, take } from "rxjs/operators";
+import { map } from "rxjs/operators";
+import { WINDOW } from "src/app/injection-tokens/window.token";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
 
@@ -158,29 +160,36 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     );
   });
 
-  @HostListener("window:keydown.escape", ["$event"])
-  closePreview(event?: KeyboardEvent) {
-    if (this.previewMode()) {
-      this.paginatorPageSize.set(10);
-      this.previewMode.set(false);
-      event?.preventDefault();
-      event?.stopPropagation();
-      this.matSnackBar.dismiss();
-    }
+  private readonly beforePrintPageIndex = signal(0);
+  private readonly beforePrintPageSize = signal(10);
+  private readonly isPrinting = signal(false);
+
+  @HostListener("window:afterprint")
+  afterPrint() {
+    this.paginatorPageSize.set(this.beforePrintPageSize());
+    this.paginatorPageIndex.set(this.beforePrintPageIndex());
+    this.previewMode.set(false);
+    this.isPrinting.set(false);
   }
 
   @HostListener("window:beforeprint")
   beforePrint() {
-    if (!this.previewMode()) {
-      this.printPreview();
+    if (this.isPrinting()) {
+      return;
     }
+    this.isPrinting.set(true);
+    this.beforePrintPageIndex.set(this.paginatorPageIndex());
+    this.beforePrintPageSize.set(this.paginatorPageSize());
+    this.paginatorPageIndex.set(0);
+    this.paginatorPageSize.set(this.paginatorLength());
+    this.previewMode.set(true);
   }
 
   constructor(
     private readonly spellDataService: SpellDataService,
-    private readonly matSnackBar: MatSnackBar,
     private readonly storageService: StorageService,
-    private readonly breakpointObserver: BreakpointObserver
+    private readonly breakpointObserver: BreakpointObserver,
+    @Inject(WINDOW) private readonly window: Window
   ) {}
 
   ngOnInit() {
@@ -244,17 +253,12 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     this.paginatorPageIndex.set(0);
   }
 
-  printPreview(): void {
-    this.paginatorPageIndex.set(0);
-    this.paginatorPageSize.set(this.paginatorLength());
-    this.previewMode.set(true);
-    this.matSnackBar
-      .open("Press 'ESC' or click 'Close' to close preview", "Close", {
-        panelClass: "no-print",
-      })
-      .onAction()
-      .pipe(take(1))
-      .subscribe(() => this.closePreview());
+  printPage(): void {
+    this.beforePrint();
+    setTimeout(() => {
+      this.window.print();
+      this.afterPrint();
+    }, 100);
   }
 
   quickAddSpellsForClass(spellClass: SpellsClasses): void {
