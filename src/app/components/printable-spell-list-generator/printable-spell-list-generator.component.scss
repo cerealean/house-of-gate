@@ -1,0 +1,79 @@
+section#container {
+  margin: 20px;
+}
+
+.card {
+  width: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  height: 100%;
+  &.selected {
+    position: relative;
+    &::after {
+      border-radius: 1rem;
+      content: "\2713";
+      font-size: 48pt;
+      color: green;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      z-index: 10;
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+#filters > mat-card {
+  width: 100%;
+}
+
+@media print {
+  ::ng-deep {
+    // *:not(app-printable-spell-list-generator) {
+    //   display: none !important;
+    // }
+    app-toolbar,
+    app-footer {
+      display: none !important;
+    }
+    .mat-drawer-container,
+    .mat-drawer-content {
+      overflow: visible !important;
+    }
+    * {
+      background-color: transparent !important;
+      color: black !important;
+      ::after {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  #cards {
+    display: block !important;
+  }
+
+  #filters,
+  #paginator {
+    display: none !important;
+  }
+  .card {
+    margin-bottom: 1rem;
+    &.selected {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

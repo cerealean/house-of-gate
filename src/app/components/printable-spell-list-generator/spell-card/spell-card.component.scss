@@ -1,0 +1,53 @@
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  height: 100%;
+}
+
+div {
+  break-inside: avoid !important;
+}
+
+p {
+  break-inside: avoid !important;
+}
+
+ul {
+  break-inside: avoid !important;
+}
+
+@media print {
+  * {
+    line-height: normal !important;
+    line-break: normal !important;
+  }
+  p {
+    margin: 0 !important;
+  }
+}
+
+div#spell-card {
+  border: 2px solid rgb(16, 16, 16);
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  box-shadow: -3px 3px 5px rgb(16, 16, 16);
+  &:hover {
+    box-shadow: -3px 3px 5px black;
+    border: 2px solid black;
+  }
+  &p {
+    margin: 0;
+  }
+}
+
+#spell-text {
+  height: 100%;
+  width: 100%;
+  ul {
+    margin: 0;
+    padding-left: 1.75rem;
+  }
+}

@@ -12,7 +12,44 @@ export const classes = [
   'warlock',
   'wizard',
   'artificer',
-  'blood hunter'
+  'blood hunter',
 ] as const;
 
-export type Classes = typeof classes[number];
+export const classesAndSubclassesForSpells = [
+  'Artificer',
+  'Bard',
+  'Cleric',
+  'Cleric (Grave)',
+  'Druid',
+  'Fighter (Eldritch Knight)',
+  'Paladin',
+  'Ranger',
+  'Ranger (Fey Wanderer)',
+  'Ranger (Gloom Stalker)',
+  'Ranger (Horizon Walker)',
+  'Ranger (Monster Slayer)',
+  'Ranger (Primeval Guardian)',
+  'Ranger (Swarmkeeper)',
+  'Rogue (Arcane Trickster)',
+  'Sorcerer',
+  'Sorcerer (Aberrant)',
+  'Sorcerer (Clockwork)',
+  'Sorcerer (Stone Sorcery)',
+  'Warlock',
+  'Warlock (Archfey)',
+  'Warlock (Celestial)',
+  'Warlock (Fathomless)',
+  'Warlock (Fiend)',
+  'Warlock (Genie)',
+  'Warlock (Great Old One)',
+  'Warlock (Hexblade)',
+  'Warlock (Raven Queen)',
+  'Warlock (Seeker)',
+  'Warlock (Undying)',
+  'Wizard',
+  'Wizard (Chronurgy)',
+  'Wizard (Graviturgy)',
+] as const;
+
+export type Classes = (typeof classes)[number];
+export type SpellsClasses = (typeof classesAndSubclassesForSpells)[number];

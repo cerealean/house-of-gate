@@ -1,0 +1,136 @@
+<section id="container" fxLayout="column">
+  <section
+    id="filters"
+    [ariaHidden]="previewMode()"
+    [class.hidden]="previewMode()"
+  >
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Spells</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <h4 class="mat-subheading-2">Filters</h4>
+          <div fxLayout="row" fxLayoutGap="1rem" fxLayoutAlign="center stretch">
+            <div fxLayout="column" fxFlexAlign="start" fxFlex>
+              <mat-form-field>
+                <mat-label>Filter By Spell Name</mat-label>
+                <input
+                  matInput
+                  name="spell-name"
+                  type="text"
+                  maxlength="50"
+                  [(ngModel)]="filterName"
+                />
+              </mat-form-field>
+            </div>
+            <div fxLayout="column" fxFlex fxFlexAlign="end">
+              <mat-form-field>
+                <mat-label>Filter By Spell Level</mat-label>
+                <mat-select
+                  name="spell-level"
+                  [(ngModel)]="filterLevel"
+                  multiple
+                >
+                  <mat-option [value]="0">Cantrip</mat-option>
+                  <mat-option [value]="1">1st Level</mat-option>
+                  <mat-option [value]="2">2nd Level</mat-option>
+                  <mat-option [value]="3">3rd Level</mat-option>
+                  <mat-option [value]="4">4th Level</mat-option>
+                  <mat-option [value]="5">5th Level</mat-option>
+                  <mat-option [value]="6">6th Level</mat-option>
+                  <mat-option [value]="7">7th Level</mat-option>
+                  <mat-option [value]="8">8th Level</mat-option>
+                  <mat-option [value]="9">9th Level</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-checkbox
+                name="only-selected"
+                (change)="paginatorPageIndex.set(0)"
+                [disabled]="!hasSelectedSpells()"
+                [(ngModel)]="onlySelected"
+                >Only Show Selected Spells</mat-checkbox
+              >
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <br />
+          <h4 class="mat-subheading-2">Quick Options</h4>
+          <div fxLayout="row" fxLayoutGap="1rem">
+            <div fxLayout="column" fxLayoutAlign="center" fxFlex>
+              <button
+                mat-raised-button
+                color="primary"
+                [disabled]="!hasSelectedSpells()"
+                [matTooltip]="previewModeTooltip()"
+                name="preview-mode"
+                (click)="printPreview()"
+                (keypress)="printPreview()"
+              >
+                Preview
+              </button>
+              &nbsp;
+              <button
+                mat-raised-button
+                color="accent"
+                (click)="clearSelectedSpells()"
+                (keypress)="clearSelectedSpells()"
+                [disabled]="!hasSelectedSpells()"
+              >
+                Clear Selected Spells
+              </button>
+            </div>
+            <div fxLayout="column" fxFlex>
+              <mat-form-field color="accent" appearance="outline">
+                <mat-label>Quick Add Spells by Class</mat-label>
+                <mat-select name="quick-add-class-spells">
+                  @for (class of spellClasses; track $index) {
+                  <mat-option
+                    (click)="quickAddSpellsForClass(class)"
+                    (keypress)="quickAddSpellsForClass(class)"
+                    [value]="class"
+                    >{{ class }}</mat-option
+                  >
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+      <mat-paginator
+        id="paginator"
+        [length]="paginatorLength()"
+        [pageSize]="paginatorPageSize()"
+        [pageSizeOptions]="paginatorPageSizeOptions()"
+        [pageIndex]="paginatorPageIndex()"
+        (page)="updatePaginator($event)"
+        [showFirstLastButtons]="true"
+        #paginator
+      />
+    </mat-card>
+  </section>
+  <section
+    id="cards"
+    fxLayout="row wrap"
+    fxLayoutGap="0.5rem"
+    fxLayoutAlign="center stretch"
+  >
+    @for(spell of filteredSpells().slice(paginator.pageIndex *
+    paginator.pageSize, (paginator.pageIndex * paginator.pageSize) +
+    paginator.pageSize); track spell.id) {
+    <div
+      class="card"
+      (click)="toggleSpell(spell)"
+      (keypress)="toggleSpell(spell)"
+      tabindex="0"
+      [class.selected]="
+        !previewMode() && selectedSpells().indexOf(spell) !== -1
+      "
+      [class.preview-mode]="previewMode()"
+    >
+      <app-spell-card [spell]="spell" />
+    </div>
+    }
+  </section>
+</section>
