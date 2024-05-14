@@ -39,13 +39,14 @@ import { MatTooltip } from "@angular/material/tooltip";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
 
-type Config = {
+interface Config {
   filterName: string;
   filterLevel: number[];
-  showDescription: boolean;
   onlySelected: boolean;
   selectedSpells: Spell[];
-};
+  paginatorPageIndex: number;
+  paginatorPageSize: number;
+}
 
 @Component({
   selector: "app-printable-spell-list-generator",
@@ -87,7 +88,6 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
   public readonly filterLevel = signal<number[]>([
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
   ]);
-  public readonly showDescription = signal(false);
   public readonly onlySelected = signal(false);
   public readonly previewMode = signal(false);
   public readonly paginatorPageSize = signal(10);
@@ -136,13 +136,15 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     if (!this.isLoaded()) {
       return;
     }
-    const config = {
+
+    const config: Config = {
       filterName: this.filterName(),
       filterLevel: this.filterLevel(),
-      showDescription: this.showDescription(),
       onlySelected: this.onlySelected(),
       selectedSpells: this.selectedSpells(),
-    } satisfies Config;
+      paginatorPageIndex: this.paginatorPageIndex(),
+      paginatorPageSize: this.paginatorPageSize(),
+    };
 
     this.storageService.setData(
       StorageKeys.SpellListGeneratorConfiguration,
@@ -187,8 +189,9 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
         if (config) {
           this.filterName.set(config.filterName);
           this.filterLevel.set(config.filterLevel);
-          this.showDescription.set(config.showDescription);
           this.onlySelected.set(config.onlySelected);
+          this.paginatorPageIndex.set(config.paginatorPageIndex);
+          this.paginatorPageSize.set(config.paginatorPageSize);
 
           const selectedSpells = this.allSpells().filter(spell => {
             return config.selectedSpells.some(
@@ -245,7 +248,10 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
     const spells = this.allSpells().filter(
       spell => spell.classes.indexOf(spellClass) !== -1
     );
-    this.selectedSpells.update(selectedSpells => selectedSpells.concat(spells));
+    const sortedSpells = this.filterSpellsByLevelThenName(spells);
+    this.selectedSpells.update(selectedSpells =>
+      selectedSpells.concat(sortedSpells)
+    );
   }
 
   updatePaginator(event: PageEvent): void {

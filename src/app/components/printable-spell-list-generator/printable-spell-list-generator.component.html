@@ -23,11 +23,6 @@
                   [(ngModel)]="filterName"
                 />
               </mat-form-field>
-              <mat-checkbox
-                name="show-description"
-                [(ngModel)]="showDescription"
-                >Show Description</mat-checkbox
-              >
             </div>
             <div fxLayout="column" fxFlex fxFlexAlign="end">
               <mat-form-field>
@@ -53,48 +48,53 @@
                 name="only-selected"
                 (change)="paginatorPageIndex.set(0)"
                 [(ngModel)]="onlySelected"
-                >Only Selected</mat-checkbox
+                >Only Show Selected Spells</mat-checkbox
               >
             </div>
           </div>
           <mat-divider></mat-divider>
           <br />
           <h4 class="mat-subheading-2">Quick Options</h4>
-          <button
-            mat-raised-button
-            color="primary"
-            [disabled]="!hasSelectedSpells()"
-            [matTooltip]="previewModeTooltip()"
-            name="preview-mode"
-            (click)="printPreview()"
-            (keypress)="printPreview()"
-          >
-            Preview
-          </button>
-          &nbsp;
-          <button
-            mat-raised-button
-            color="accent"
-            (click)="clearSelectedSpells()"
-            (keypress)="clearSelectedSpells()"
-            [disabled]="!hasSelectedSpells()"
-          >
-            Clear Selected Spells
-          </button>
-          &nbsp;
-          <mat-form-field>
-            <mat-label>Quick Select Spells by Class</mat-label>
-            <mat-select name="quick-add-class-spells">
-              @for (class of spellClasses; track $index) {
-              <mat-option
-                (click)="quickAddSpellsForClass(class)"
-                (keypress)="quickAddSpellsForClass(class)"
-                [value]="class"
-                >{{ class }}</mat-option
+          <div fxLayout="row" fxLayoutGap="1rem">
+            <div fxLayout="column" fxLayoutAlign="center" fxFlex>
+              <button
+                mat-raised-button
+                color="primary"
+                [disabled]="!hasSelectedSpells()"
+                [matTooltip]="previewModeTooltip()"
+                name="preview-mode"
+                (click)="printPreview()"
+                (keypress)="printPreview()"
               >
-              }
-            </mat-select>
-          </mat-form-field>
+                Preview
+              </button>
+              &nbsp;
+              <button
+                mat-raised-button
+                color="accent"
+                (click)="clearSelectedSpells()"
+                (keypress)="clearSelectedSpells()"
+                [disabled]="!hasSelectedSpells()"
+              >
+                Clear Selected Spells
+              </button>
+            </div>
+            <div fxLayout="column" fxFlex>
+              <mat-form-field color="accent" appearance="outline">
+                <mat-label>Quick Add Spells by Class</mat-label>
+                <mat-select name="quick-add-class-spells">
+                  @for (class of spellClasses; track $index) {
+                  <mat-option
+                    (click)="quickAddSpellsForClass(class)"
+                    (keypress)="quickAddSpellsForClass(class)"
+                    [value]="class"
+                    >{{ class }}</mat-option
+                  >
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
         </form>
       </mat-card-content>
       <mat-paginator
@@ -123,13 +123,12 @@
       (click)="toggleSpell(spell)"
       (keypress)="toggleSpell(spell)"
       tabindex="0"
-      [class.fixed-height]="showDescription()"
       [class.selected]="
         !previewMode() && selectedSpells().indexOf(spell) !== -1
       "
       [class.preview-mode]="previewMode()"
     >
-      <app-spell-card [spell]="spell" [showDescription]="showDescription()" />
+      <app-spell-card [spell]="spell" />
     </div>
     }
   </section>
