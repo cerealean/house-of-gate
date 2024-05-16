@@ -80,6 +80,7 @@ section#container {
   .card {
     cursor: default;
     margin-bottom: 1rem;
+    width: 100%;
     &.selected {
       &::after {
         display: none;
