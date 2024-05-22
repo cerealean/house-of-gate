@@ -1,24 +1,29 @@
 import { AsyncPipe, TitleCasePipe } from "@angular/common";
 import {
   Component,
-  HostListener,
-  Inject,
-  OnDestroy,
-  OnInit,
   computed,
   effect,
+  HostListener,
+  Inject,
+  OnInit,
   signal,
 } from "@angular/core";
 import { FormsModule } from "@angular/forms";
+import { MatButton } from "@angular/material/button";
 import {
   MatCard,
   MatCardContent,
   MatCardHeader,
   MatCardTitle,
 } from "@angular/material/card";
+import { MatCheckbox } from "@angular/material/checkbox";
+import { MatDivider } from "@angular/material/divider";
 import { MatFormField, MatLabel } from "@angular/material/form-field";
 import { MatInput } from "@angular/material/input";
 import { MatPaginator, type PageEvent } from "@angular/material/paginator";
+import { MatOption, MatSelect } from "@angular/material/select";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatTooltip } from "@angular/material/tooltip";
 
 import { sort } from "fast-sort";
 import { SpellDataService } from "src/app/data/services/spells/spell-data.service";
@@ -26,19 +31,13 @@ import {
   classesAndSubclassesForSpells,
   type SpellsClasses,
 } from "src/app/data/static/classes";
+import { WINDOW } from "src/app/injection-tokens/window.token";
 import { OrdinalPipe } from "src/app/pipes/ordinal/ordinal.pipe";
+import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { type Spell } from "src/app/spells/models/spell";
 
 import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
-import { MatButton } from "@angular/material/button";
-import { MatCheckbox } from "@angular/material/checkbox";
-import { MatDivider } from "@angular/material/divider";
-import { MatOption, MatSelect } from "@angular/material/select";
-import { MatSnackBarModule } from "@angular/material/snack-bar";
-import { MatTooltip } from "@angular/material/tooltip";
-import { WINDOW } from "src/app/injection-tokens/window.token";
-import { StorageKeys, StorageService } from "src/app/services/storage.service";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
 
 interface Config {
@@ -79,7 +78,7 @@ interface Config {
     FormsModule,
   ],
 })
-export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
+export class PrintableSpellListGeneratorComponent implements OnInit {
   private allSpells = signal<Spell[]>([]);
 
   public readonly spellClasses = classesAndSubclassesForSpells;
@@ -222,10 +221,6 @@ export class PrintableSpellListGeneratorComponent implements OnInit, OnDestroy {
       .finally(() => {
         this.isLoaded.set(true);
       });
-  }
-
-  ngOnDestroy(): void {
-    this.configurationEffect.destroy();
   }
 
   toggleSpell(spell: Spell): void {
