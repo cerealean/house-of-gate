@@ -1,6 +1,10 @@
-import { Campaign } from "src/app/campaigns/models/campaign";
+import { Campaign } from "src/app/components/campaigns/models/campaign";
 import { Abilities, CharacterAbilities } from "src/app/data/static/abilities";
-import { abilitiesToSkillsMapping, CharacterSkills, Skills } from "src/app/data/static/skills";
+import {
+  CharacterSkills,
+  Skills,
+  abilitiesToSkillsMapping,
+} from "src/app/data/static/skills";
 
 export interface ICharacter {
   id?: number;
@@ -32,8 +36,8 @@ export interface ICharacter {
 }
 
 type CharacterProficiencies = {
-  savingThrows: Record<Abilities, boolean>,
-  skills: Record<Skills, boolean>
+  savingThrows: Record<Abilities, boolean>;
+  skills: Record<Skills, boolean>;
 };
 
 export class Character implements ICharacter {
@@ -58,7 +62,7 @@ export class Character implements ICharacter {
     constitution: 8,
     intelligence: 8,
     wisdom: 8,
-    charisma: 8
+    charisma: 8,
   };
   proficiencies: CharacterProficiencies = {
     savingThrows: {
@@ -67,7 +71,7 @@ export class Character implements ICharacter {
       constitution: false,
       dexterity: false,
       intelligence: false,
-      wisdom: false
+      wisdom: false,
     },
     skills: {
       acrobatics: false,
@@ -87,8 +91,8 @@ export class Character implements ICharacter {
       religion: false,
       sleightOfHand: false,
       stealth: false,
-      survival: false
-    }
+      survival: false,
+    },
   };
 
   get abilityModifiers(): CharacterAbilities<number> {
@@ -104,12 +108,12 @@ export class Character implements ICharacter {
 
   get savingThrows(): CharacterAbilities<number> {
     return {
-      charisma: this.getSavingThrow('charisma'),
-      constitution: this.getSavingThrow('constitution'),
-      dexterity: this.getSavingThrow('dexterity'),
-      intelligence: this.getSavingThrow('intelligence'),
-      strength: this.getSavingThrow('strength'),
-      wisdom: this.getSavingThrow('wisdom')
+      charisma: this.getSavingThrow("charisma"),
+      constitution: this.getSavingThrow("constitution"),
+      dexterity: this.getSavingThrow("dexterity"),
+      intelligence: this.getSavingThrow("intelligence"),
+      strength: this.getSavingThrow("strength"),
+      wisdom: this.getSavingThrow("wisdom"),
     };
   }
 
@@ -129,7 +133,7 @@ export class Character implements ICharacter {
     const isProficient = this.proficiencies.skills.perception;
     let score = 10 + this.abilityModifiers.wisdom;
 
-    if(isProficient) {
+    if (isProficient) {
       score += this.proficiencyBonus;
     }
 
@@ -138,24 +142,24 @@ export class Character implements ICharacter {
 
   public getSkills(): CharacterSkills<number> {
     return {
-      athletics: this.getSkillScore('athletics'),
-      acrobatics: this.getSkillScore('acrobatics'),
-      sleightOfHand: this.getSkillScore('sleightOfHand'),
-      stealth: this.getSkillScore('stealth'),
-      arcana: this.getSkillScore('arcana'),
-      history: this.getSkillScore('history'),
-      investigation: this.getSkillScore('investigation'),
-      nature: this.getSkillScore('nature'),
-      religion: this.getSkillScore('religion'),
-      animalHandling: this.getSkillScore('animalHandling'),
-      insight: this.getSkillScore('insight'),
-      medicine: this.getSkillScore('medicine'),
-      perception: this.getSkillScore('perception'),
-      survival: this.getSkillScore('survival'),
-      deception: this.getSkillScore('deception'),
-      intimidation: this.getSkillScore('intimidation'),
-      performance: this.getSkillScore('performance'),
-      persuasion: this.getSkillScore('persuasion')
+      athletics: this.getSkillScore("athletics"),
+      acrobatics: this.getSkillScore("acrobatics"),
+      sleightOfHand: this.getSkillScore("sleightOfHand"),
+      stealth: this.getSkillScore("stealth"),
+      arcana: this.getSkillScore("arcana"),
+      history: this.getSkillScore("history"),
+      investigation: this.getSkillScore("investigation"),
+      nature: this.getSkillScore("nature"),
+      religion: this.getSkillScore("religion"),
+      animalHandling: this.getSkillScore("animalHandling"),
+      insight: this.getSkillScore("insight"),
+      medicine: this.getSkillScore("medicine"),
+      perception: this.getSkillScore("perception"),
+      survival: this.getSkillScore("survival"),
+      deception: this.getSkillScore("deception"),
+      intimidation: this.getSkillScore("intimidation"),
+      performance: this.getSkillScore("performance"),
+      persuasion: this.getSkillScore("persuasion"),
     };
   }
 
@@ -163,7 +167,7 @@ export class Character implements ICharacter {
     const isProficient = this.proficiencies.skills[skill];
     const abilityScore = abilitiesToSkillsMapping.get(skill)!;
     let score = this.abilityModifiers[abilityScore];
-    if(isProficient) {
+    if (isProficient) {
       score += this.proficiencyBonus;
     }
 
@@ -174,7 +178,7 @@ export class Character implements ICharacter {
     const isProficient = this.proficiencies.savingThrows[ability];
     let score = this.abilityModifiers[ability];
 
-    if(isProficient) {
+    if (isProficient) {
       score += this.proficiencyBonus;
     }
 

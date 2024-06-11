@@ -1,24 +1,48 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA, MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose } from '@angular/material/dialog';
-import { Campaign } from 'src/app/campaigns/models/campaign';
-import { CampaignDataService } from 'src/app/data/services/campaigns/campaign-data.service';
-import { Character } from '../models/character';
-import { MatButton } from '@angular/material/button';
-import { MatDivider } from '@angular/material/divider';
-import { MatOption } from '@angular/material/core';
-import { MatSelect } from '@angular/material/select';
-import { NgIf, NgFor } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { MatInput } from '@angular/material/input';
-import { MatFormField, MatLabel, MatError } from '@angular/material/form-field';
-import { FlexModule } from '@ngbracket/ngx-layout/flex';
+import { NgFor, NgIf } from "@angular/common";
+import { Component, Inject, OnInit } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { MatButton } from "@angular/material/button";
+import { MatOption } from "@angular/material/core";
+import {
+  MAT_DIALOG_DATA,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogRef,
+  MatDialogTitle,
+} from "@angular/material/dialog";
+import { MatDivider } from "@angular/material/divider";
+import { MatError, MatFormField, MatLabel } from "@angular/material/form-field";
+import { MatInput } from "@angular/material/input";
+import { MatSelect } from "@angular/material/select";
+import { FlexModule } from "@ngbracket/ngx-layout/flex";
+import { Campaign } from "src/app/components/campaigns/models/campaign";
+import { CampaignDataService } from "src/app/data/services/campaigns/campaign-data.service";
+import { Character } from "../models/character";
 
 @Component({
-    selector: 'app-new-character',
-    templateUrl: './new-character.component.html',
-    styleUrls: ['./new-character.component.scss'],
-    standalone: true,
-    imports: [MatDialogTitle, MatDialogContent, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, MatError, NgIf, MatSelect, NgFor, MatOption, MatDivider, MatDialogActions, MatButton, MatDialogClose]
+  selector: "app-new-character",
+  templateUrl: "./new-character.component.html",
+  styleUrls: ["./new-character.component.scss"],
+  standalone: true,
+  imports: [
+    MatDialogTitle,
+    MatDialogContent,
+    FlexModule,
+    MatFormField,
+    MatLabel,
+    MatInput,
+    FormsModule,
+    MatError,
+    NgIf,
+    MatSelect,
+    NgFor,
+    MatOption,
+    MatDivider,
+    MatDialogActions,
+    MatButton,
+    MatDialogClose,
+  ],
 })
 export class NewCharacterComponent implements OnInit {
   public readonly isEditingCurrentCharacter: boolean;
@@ -27,16 +51,18 @@ export class NewCharacterComponent implements OnInit {
   public campaigns: Campaign[] = [];
 
   get isValid(): boolean {
-    return !!this.character.name
-      && this.character.name.length > 0
-      && this.character.name.length <= 100
-      && this.isValueBetween1And30(this.character.level)
-      && this.isValueBetween1And30(this.character.abilityScores.strength)
-      && this.isValueBetween1And30(this.character.abilityScores.dexterity)
-      && this.isValueBetween1And30(this.character.abilityScores.constitution)
-      && this.isValueBetween1And30(this.character.abilityScores.intelligence)
-      && this.isValueBetween1And30(this.character.abilityScores.wisdom)
-      && this.isValueBetween1And30(this.character.abilityScores.charisma);
+    return (
+      !!this.character.name &&
+      this.character.name.length > 0 &&
+      this.character.name.length <= 100 &&
+      this.isValueBetween1And30(this.character.level) &&
+      this.isValueBetween1And30(this.character.abilityScores.strength) &&
+      this.isValueBetween1And30(this.character.abilityScores.dexterity) &&
+      this.isValueBetween1And30(this.character.abilityScores.constitution) &&
+      this.isValueBetween1And30(this.character.abilityScores.intelligence) &&
+      this.isValueBetween1And30(this.character.abilityScores.wisdom) &&
+      this.isValueBetween1And30(this.character.abilityScores.charisma)
+    );
   }
 
   constructor(
@@ -63,8 +89,6 @@ export class NewCharacterComponent implements OnInit {
   }
 
   private isValueBetween1And30(value: number | undefined): boolean {
-    return !!value
-      && value >= 1
-      && value <= 30;
+    return !!value && value >= 1 && value <= 30;
   }
 }

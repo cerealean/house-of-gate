@@ -27,9 +27,9 @@ export const routes: Routes = [
   {
     path: "campaigns",
     loadComponent: () =>
-      import("./campaigns/campaigns-landing/campaigns-landing.component").then(
-        e => e.CampaignsLandingComponent
-      ),
+      import(
+        "./components/campaigns/campaigns-landing/campaigns-landing.component"
+      ).then(e => e.CampaignsLandingComponent),
   },
   {
     path: "spells",

@@ -2,13 +2,13 @@ import { Injectable } from "@angular/core";
 
 import Dexie from "dexie";
 import { Character } from "src/app/characters/models/character";
+import { Campaign } from "src/app/components/campaigns/models/campaign";
 import {
   GeneratedEncounter,
   type Encounter,
 } from "src/app/components/encounters/models/encounter";
 import { Monster } from "src/app/components/monsters/models/monster";
 import { Spell } from "src/app/components/spells/models/spell";
-import { Campaign } from "../../campaigns/models/campaign";
 
 @Injectable({
   providedIn: "root",
