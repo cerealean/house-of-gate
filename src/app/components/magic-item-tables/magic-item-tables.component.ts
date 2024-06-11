@@ -1,11 +1,35 @@
-import { NgFor, NgIf } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { MatCell, MatCellDef, MatColumnDef, MatHeaderCell, MatHeaderCellDef, MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef, MatTable, MatTableDataSource } from '@angular/material/table';
-import { ItemWithDiceRoll, MIT_A, MIT_B, MIT_C, MIT_D, MIT_E } from '../data/static/item-tables';
-import { MatFormField, MatLabel, MatOption, MatSelect } from '@angular/material/select';
+import { NgFor, NgIf } from "@angular/common";
+import { Component, OnInit } from "@angular/core";
+import {
+  MatFormField,
+  MatLabel,
+  MatOption,
+  MatSelect,
+} from "@angular/material/select";
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+  MatTableDataSource,
+} from "@angular/material/table";
+import {
+  ItemWithDiceRoll,
+  MIT_A,
+  MIT_B,
+  MIT_C,
+  MIT_D,
+  MIT_E,
+} from "../../data/static/item-tables";
 
 @Component({
-  selector: 'app-magic-item-tables',
+  selector: "app-magic-item-tables",
   standalone: true,
   imports: [
     NgIf,
@@ -23,10 +47,10 @@ import { MatFormField, MatLabel, MatOption, MatSelect } from '@angular/material/
     MatSelect,
     MatOption,
     MatFormField,
-    MatLabel
+    MatLabel,
   ],
-  templateUrl: './magic-item-tables.component.html',
-  styleUrl: './magic-item-tables.component.scss'
+  templateUrl: "./magic-item-tables.component.html",
+  styleUrl: "./magic-item-tables.component.scss",
 })
 export class MagicItemTablesComponent implements OnInit {
   public readonly dataSource = new MatTableDataSource<ItemWithDiceRoll>([]);
@@ -35,7 +59,7 @@ export class MagicItemTablesComponent implements OnInit {
     B: MIT_B,
     C: MIT_C,
     D: MIT_D,
-    E: MIT_E
+    E: MIT_E,
   };
   public selectedMIT = this.magicItemTables.A;
 

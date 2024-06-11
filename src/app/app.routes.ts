@@ -65,7 +65,7 @@ export const routes: Routes = [
   {
     path: "magic-item-tables",
     loadComponent: () =>
-      import("./magic-item-tables/magic-item-tables.component").then(
+      import("./components/magic-item-tables/magic-item-tables.component").then(
         c => c.MagicItemTablesComponent
       ),
   },
