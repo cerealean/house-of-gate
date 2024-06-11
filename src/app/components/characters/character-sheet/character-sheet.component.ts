@@ -16,7 +16,7 @@ import { MatInput } from '@angular/material/input';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatMenuTrigger, MatMenu } from '@angular/material/menu';
 import { FlexModule } from '@ngbracket/ngx-layout/flex';
-import { NgIf } from '@angular/common';
+
 import { MatCard } from '@angular/material/card';
 
 @Component({
@@ -24,7 +24,7 @@ import { MatCard } from '@angular/material/card';
     templateUrl: './character-sheet.component.html',
     styleUrls: ['./character-sheet.component.scss'],
     standalone: true,
-    imports: [MatCard, NgIf, FlexModule, MatMenuTrigger, MatMenu, MatFormField, MatLabel, MatInput, FormsModule, MatIconButton, MatIcon, MatDivider, MatProgressBar]
+    imports: [MatCard, FlexModule, MatMenuTrigger, MatMenu, MatFormField, MatLabel, MatInput, FormsModule, MatIconButton, MatIcon, MatDivider, MatProgressBar]
 })
 export class CharacterSheetComponent implements OnInit, OnDestroy {
   public character?: Character;

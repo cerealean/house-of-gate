@@ -5,7 +5,7 @@ import {
   transition,
   trigger,
 } from "@angular/animations";
-import { NgFor, NgIf } from "@angular/common";
+
 import {
   AfterViewInit,
   Component,
@@ -59,22 +59,20 @@ import { Spell } from "src/app/components/spells/models/spell";
     MatIcon,
     MatTable,
     MatSort,
-    NgFor,
     MatColumnDef,
     MatHeaderCellDef,
     MatHeaderCell,
     MatSortHeader,
     MatCellDef,
     MatCell,
-    NgIf,
     MatHeaderRowDef,
     MatHeaderRow,
     MatRowDef,
     MatRow,
     MatPaginator,
     MatMenu,
-    MatMenuItem,
-  ],
+    MatMenuItem
+],
 })
 export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() public spells: Spell[] = [];

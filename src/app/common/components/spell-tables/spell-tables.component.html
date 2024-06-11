@@ -9,38 +9,38 @@
     <table mat-table matSort [dataSource]="dataSource" multiTemplateDataRows style="width: 100vw; max-width: 100%;"
       (contentChanged)="finishLoading()">
 
-      <ng-container *ngFor="let column of columns" [matColumnDef]="column.name">
-        <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header> {{column.name}}
-        </th>
-        <td mat-cell *matCellDef="let element">
-          <ng-container *ngIf="isArray(element[column.name]) then arrayColumnDisplay else normalColumnDisplay">
-          </ng-container>
-          <ng-template #normalColumnDisplay>
-            <ng-container *ngIf="!isBoolean(element[column.name]) else boolDisplay">
-              {{element[column.name]}}
-            </ng-container>
-            <ng-template #boolDisplay>
-              <mat-icon aria-hidden="false" [attr.aria-label]="element[column.name] ? 'True/Yes' : 'False/No'">
-                {{element[column.name] ? 'done' : 'not_interested'}}
-              </mat-icon>
-            </ng-template>
-          </ng-template>
-          <ng-template #arrayColumnDisplay>
-            <ul>
-              <li *ngFor="let tuple of element[column.name]">
-                {{ tuple }}
-              </li>
-            </ul>
-          </ng-template>
-        </td>
-      </ng-container>
+      @for (column of columns; track column) {
+        <ng-container [matColumnDef]="column.name">
+          <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header> {{column.name}}
+          </th>
+          <td mat-cell *matCellDef="let element">
+            @if (isArray(element[column.name])) {
+              <ul>
+                @for (tuple of element[column.name]; track tuple) {
+                  <li>
+                    {{ tuple }}
+                  </li>
+                }
+              </ul>
+            } @else {
+              @if (!isBoolean(element[column.name])) {
+                {{element[column.name]}}
+              } @else {
+                <mat-icon aria-hidden="false" [attr.aria-label]="element[column.name] ? 'True/Yes' : 'False/No'">
+                  {{element[column.name] ? 'done' : 'not_interested'}}
+                </mat-icon>
+              }
+            }
+          </td>
+        </ng-container>
+      }
 
       <ng-container matColumnDef="expandedDetail">
         <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
           <div class="example-element-detail" [@detailExpand]="element === expandedElement ? 'expanded' : 'collapsed'">
             <div class="example-element-description">
               <pre class="spell-text">
-              {{ element.text }}
+                {{ element.text }}
               </pre>
             </div>
           </div>
@@ -50,16 +50,18 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let element; columns: displayedColumns;" class="example-element-row"
         [class.example-expanded-row]="expandedElement === element"
-        (click)="expandedElement = expandedElement === element ? null : element"></tr>
+      (click)="expandedElement = expandedElement === element ? null : element"></tr>
       <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
     </table>
   </div>
   <mat-paginator [pageSizeOptions]="[5, 10, 20, 50, 100]" showFirstLastButtons aria-label="Spell Pagination Options">
   </mat-paginator>
   <mat-menu #menu="matMenu">
-    <button *ngFor="let column of columns" (click)="toggleColumn(column); stopPropagation($event);" mat-menu-item>
-      <mat-icon>{{column.isShown ? 'done' : 'close'}}</mat-icon>
-      <span>{{column.name}}</span>
-    </button>
+    @for (column of columns; track column) {
+      <button (click)="toggleColumn(column); stopPropagation($event);" mat-menu-item>
+        <mat-icon>{{column.isShown ? 'done' : 'close'}}</mat-icon>
+        <span>{{column.name}}</span>
+      </button>
+    }
   </mat-menu>
 </div>

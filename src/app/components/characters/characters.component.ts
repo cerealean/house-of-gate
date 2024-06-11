@@ -1,4 +1,4 @@
-import { DatePipe, NgFor, NgIf } from "@angular/common";
+import { DatePipe } from "@angular/common";
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { MatButton } from "@angular/material/button";
 import { MatCard } from "@angular/material/card";
@@ -30,9 +30,7 @@ import { NewCharacterComponent } from "./new-character/new-character.component";
     MatCard,
     MatButton,
     MatDivider,
-    NgIf,
     MatList,
-    NgFor,
     MatListItem,
     MatMenuTrigger,
     MatListItemAvatar,
@@ -42,8 +40,8 @@ import { NewCharacterComponent } from "./new-character/new-character.component";
     MatMenu,
     MatMenuItem,
     RouterLink,
-    DatePipe,
-  ],
+    DatePipe
+],
 })
 export class CharactersComponent implements OnInit, OnDestroy {
   public characters: Character[] = [];

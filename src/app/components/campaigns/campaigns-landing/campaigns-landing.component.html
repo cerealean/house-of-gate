@@ -2,39 +2,44 @@
   <button mat-raised-button color="accent" (click)="openNewCampaignDialog()" aria-label="Add New Campaign">
     Add New Campaign
   </button>
-  <ng-container *ngIf="campaigns.length > 0; else noCampaigns">
+  @if (campaigns.length > 0) {
     <mat-list>
-      <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCampaign = campaign" *ngFor="let campaign of campaigns"
-        class="campaign-list-item">
-        <img matListItemAvatar *ngIf="campaign.getImageSource()" [src]="sanitize(campaign.getImageSource()!)"
-          alt="Campaign Image" />
-        <mat-icon matListItemAvatar *ngIf="!campaign.getImageSource()" mat-list-icon>hide_image</mat-icon>
-        <h3 matListItemTitle>{{campaign.name}}</h3>
-        <p matListItemLine>
-          <span>Created: <time [dateTime]="campaign.date">{{campaign.date|date:'shortDate'}}</time></span>
-        </p>
-        <p matListItemLine>
-          <span>Encounters: {{campaign.encounters.length}}</span>
-          ,&nbsp;
-          <span>Characters: {{campaign.characters.length}}</span>
-        </p>
-      </mat-list-item>
+      @for (campaign of campaigns; track campaign) {
+        <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCampaign = campaign"
+          class="campaign-list-item">
+          @if (campaign.getImageSource()) {
+            <img matListItemAvatar [src]="sanitize(campaign.getImageSource()!)"
+              alt="Campaign Image" />
+          }
+          @if (!campaign.getImageSource()) {
+            <mat-icon matListItemAvatar mat-list-icon>hide_image</mat-icon>
+          }
+          <h3 matListItemTitle>{{campaign.name}}</h3>
+          <p matListItemLine>
+            <span>Created: <time [dateTime]="campaign.date">{{campaign.date|date:'shortDate'}}</time></span>
+          </p>
+          <p matListItemLine>
+            <span>Encounters: {{campaign.encounters.length}}</span>
+            ,&nbsp;
+            <span>Characters: {{campaign.characters.length}}</span>
+          </p>
+        </mat-list-item>
+      }
     </mat-list>
-  </ng-container>
+  } @else {
+    <br /><br />
+    <mat-divider></mat-divider>
+    <br />
+    <p>
+      No campaigns. Create one to get started!
+    </p>
+  }
 </mat-card>
 
-<ng-template #noCampaigns>
-  <br /><br />
-  <mat-divider></mat-divider>
-  <br />
-  <p>
-    No campaigns. Create one to get started!
-  </p>
-</ng-template>
 
 <mat-menu #menu="matMenu">
   <button mat-menu-item (click)="openNewCampaignDialog(selectedCampaign)">Edit</button>
   <button mat-menu-item routerLink="/encounters/my-encounters" [state]="{ campaignId: selectedCampaign?.id }">View
-    Encounters</button>
+  Encounters</button>
   <button mat-menu-item color="warn" (click)="openDeleteCampaignDialog(selectedCampaign!)">Delete</button>
 </mat-menu>

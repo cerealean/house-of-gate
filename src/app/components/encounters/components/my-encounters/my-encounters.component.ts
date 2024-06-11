@@ -1,4 +1,4 @@
-import { DatePipe, NgFor, NgIf } from "@angular/common";
+import { DatePipe } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { MatButton } from "@angular/material/button";
 import { MatCard } from "@angular/material/card";
@@ -27,15 +27,13 @@ import { DeleteEncounterDialogComponent } from "./delete-encounter-dialog/delete
     MatFormField,
     MatLabel,
     MatSelect,
-    NgFor,
     MatOption,
-    NgIf,
     MatIcon,
     MatButton,
     MonsterTablesComponent,
     RouterLink,
-    DatePipe,
-  ],
+    DatePipe
+],
 })
 export class MyEncountersComponent implements OnInit {
   public campaigns: Campaign[] = [];

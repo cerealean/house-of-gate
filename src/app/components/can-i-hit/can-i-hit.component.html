@@ -10,14 +10,18 @@
         <input matInput type="number" [formControl]="elevationDifferenceCtrl" inputmode="numeric" pattern="^[0-9]*$"
           step="5" min="0" />
         <span matSuffix>ft</span>
-        <mat-error *ngIf="elevationDifferenceCtrl.invalid">Must be a number greater than 1</mat-error>
+        @if (elevationDifferenceCtrl.invalid) {
+          <mat-error>Must be a number greater than 1</mat-error>
+        }
       </mat-form-field>
       <mat-form-field appearance="fill" color="primary" fxFlex>
         <mat-label>How far away (horizontally) is your target?</mat-label>
         <input matInput type="number" inputmode="numeric" pattern="^[0-9]*$" [formControl]="horizontalDifferenceCtrl"
           step="5" min="0" />
         <span matSuffix>ft</span>
-        <mat-error *ngIf="horizontalDifferenceCtrl.invalid">Must be a number greater than 1</mat-error>
+        @if (horizontalDifferenceCtrl.invalid) {
+          <mat-error>Must be a number greater than 1</mat-error>
+        }
       </mat-form-field>
     </div>
     <div fxLayout="row">

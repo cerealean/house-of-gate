@@ -1,4 +1,4 @@
-import { NgIf } from "@angular/common";
+
 import { AfterViewInit, Component, OnInit } from "@angular/core";
 import { MatCard } from "@angular/material/card";
 import { MatDivider } from "@angular/material/divider";
@@ -21,13 +21,12 @@ import { MonsterFilterService } from "../../services/monster-filter.service";
   imports: [
     MonsterFilterBarComponent,
     MatDivider,
-    NgIf,
     MonsterTablesComponent,
     MatCard,
     FlexModule,
     MatIcon,
-    MatProgressSpinner,
-  ],
+    MatProgressSpinner
+],
 })
 export class MonstersComponent implements OnInit, AfterViewInit {
   private allMonsters: Monster[] = [];

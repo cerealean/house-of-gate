@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 import { MatDivider } from '@angular/material/divider';
 import { MatIcon } from '@angular/material/icon';
 import { MatList, MatListItem, MatListItemAvatar, MatListItemTitle, MatListItemLine } from '@angular/material/list';
-import { NgIf, NgFor, DatePipe } from '@angular/common';
+import { DatePipe } from '@angular/common';
 import { MatButton } from '@angular/material/button';
 import { MatCard } from '@angular/material/card';
 
@@ -20,7 +20,7 @@ import { MatCard } from '@angular/material/card';
     templateUrl: './campaigns-landing.component.html',
     styleUrls: ['./campaigns-landing.component.scss'],
     standalone: true,
-    imports: [MatCard, MatButton, NgIf, MatList, NgFor, MatListItem, MatMenuTrigger, MatListItemAvatar, MatIcon, MatListItemTitle, MatListItemLine, MatDivider, MatMenu, MatMenuItem, RouterLink, DatePipe]
+    imports: [MatCard, MatButton, MatList, MatListItem, MatMenuTrigger, MatListItemAvatar, MatIcon, MatListItemTitle, MatListItemLine, MatDivider, MatMenu, MatMenuItem, RouterLink, DatePipe]
 })
 export class CampaignsLandingComponent implements OnInit, OnDestroy {
   public campaigns: Campaign[] = [];

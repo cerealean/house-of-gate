@@ -3,16 +3,18 @@
   <p>
     Are you sure you want to delete {{providedCampaign.name}}?
   </p>
-  <ng-container *ngIf="providedCampaign.encounters.length > 0">
+  @if (providedCampaign.encounters.length > 0) {
     <p>
       This will also delete the following encounters:
     </p>
     <ul>
-      <li *ngFor="let encounter of providedCampaign.encounters">
-        {{ encounter.name }}
-      </li>
+      @for (encounter of providedCampaign.encounters; track encounter) {
+        <li>
+          {{ encounter.name }}
+        </li>
+      }
     </ul>
-  </ng-container>
+  }
   <br />
   <mat-divider></mat-divider>
 </div>

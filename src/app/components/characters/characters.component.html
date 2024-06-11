@@ -6,20 +6,25 @@
   <br />
   <mat-divider></mat-divider>
   <br />
-  <ng-container *ngIf="characters.length > 0; else noCharacters">
+  @if (characters.length > 0) {
     <!-- <mat-form-field>
-      <mat-label>Filter By Campaign</mat-label>
-      <mat-select [(ngModel)]="selectedCampaigns" (selectionChange)="updateFilter()" multiple>
-        <mat-option *ngFor="let campaign of campaigns" [value]="campaign">{{ campaign.name }}</mat-option>
-      </mat-select>
-    </mat-form-field> -->
-    <ng-container *ngIf="filteredCharacters.length > 0; else noFilteredCharacters;">
-      <mat-list>
+    <mat-label>Filter By Campaign</mat-label>
+    <mat-select [(ngModel)]="selectedCampaigns" (selectionChange)="updateFilter()" multiple>
+      <mat-option *ngFor="let campaign of campaigns" [value]="campaign">{{ campaign.name }}</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+  @if (filteredCharacters.length > 0) {
+    <mat-list>
+      @for (character of filteredCharacters; track character) {
         <mat-list-item [matMenuTriggerFor]="menu" (click)="selectedCharacter = character"
-          *ngFor="let character of filteredCharacters" class="character-list-item">
-          <img matListItemAvatar *ngIf="character.image" [src]="getImageUrl(character.image)"
-            alt="Character Image" />
-          <mat-icon matListItemAvatar *ngIf="!character.image" mat-list-icon>hide_image</mat-icon>
+          class="character-list-item">
+          @if (character.image) {
+            <img matListItemAvatar [src]="getImageUrl(character.image)"
+              alt="Character Image" />
+          }
+          @if (!character.image) {
+            <mat-icon matListItemAvatar mat-list-icon>hide_image</mat-icon>
+          }
           <h3 matListItemTitle>{{character.name}}</h3>
           <p matListItemLine>
             <span>Created: {{character.created | date:'shortDate'}}</span>
@@ -28,25 +33,24 @@
             <span>Campaign(s): {{character.campaignIds.length}}</span>
           </p>
         </mat-list-item>
-      </mat-list>
-    </ng-container>
-  </ng-container>
-</mat-card>
-
-<ng-template #noCharacters>
+      }
+    </mat-list>
+  } @else {
+    <br /><br />
+    <br />
+    <p>
+      There are no characters matching your filter.
+    </p>
+  }
+} @else {
   <br /><br />
   <br />
   <p>
     You don't have any characters. Create one to get started!
   </p>
-</ng-template>
-<ng-template #noFilteredCharacters>
-  <br /><br />
-  <br />
-  <p>
-    There are no characters matching your filter.
-  </p>
-</ng-template>
+}
+</mat-card>
+
 
 <mat-menu #menu="matMenu">
   <button mat-menu-item (click)="openNewCharacterDialog(selectedCharacter)">Edit</button>

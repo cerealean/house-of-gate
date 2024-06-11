@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from "@angular/common";
+
 import { Component, Inject, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButton } from "@angular/material/button";
@@ -34,15 +34,13 @@ import { Character } from "../models/character";
     MatInput,
     FormsModule,
     MatError,
-    NgIf,
     MatSelect,
-    NgFor,
     MatOption,
     MatDivider,
     MatDialogActions,
     MatButton,
-    MatDialogClose,
-  ],
+    MatDialogClose
+],
 })
 export class NewCharacterComponent implements OnInit {
   public readonly isEditingCurrentCharacter: boolean;

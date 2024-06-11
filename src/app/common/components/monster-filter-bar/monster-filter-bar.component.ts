@@ -1,4 +1,4 @@
-import { NgFor } from "@angular/common";
+
 import {
   AfterViewInit,
   Component,
@@ -35,11 +35,10 @@ import { sources } from "src/app/data/static/sources";
     MatInput,
     FormsModule,
     MatSelect,
-    NgFor,
     MatOption,
     MatCheckbox,
-    MatButton,
-  ],
+    MatButton
+],
 })
 export class MonsterFilterBarComponent
   implements OnInit, OnDestroy, AfterViewInit

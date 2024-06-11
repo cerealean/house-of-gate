@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from "@angular/common";
+
 import {
   AfterViewInit,
   Component,
@@ -43,22 +43,20 @@ import { StorageKeys, StorageService } from "src/app/services/storage.service";
     MatIcon,
     MatTable,
     MatSort,
-    NgFor,
     MatColumnDef,
     MatHeaderCellDef,
     MatHeaderCell,
     MatSortHeader,
     MatCellDef,
     MatCell,
-    NgIf,
     MatHeaderRowDef,
     MatHeaderRow,
     MatRowDef,
     MatRow,
     MatPaginator,
     MatMenu,
-    MatMenuItem,
-  ],
+    MatMenuItem
+],
 })
 export class MonsterTablesComponent
   implements OnInit, AfterViewInit, OnChanges

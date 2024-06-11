@@ -1,4 +1,4 @@
-import { NgIf } from "@angular/common";
+
 import { Component, Input, OnDestroy, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButton } from "@angular/material/button";
@@ -27,7 +27,6 @@ import { SaveEncounterDialogComponent } from "../save-encounter-dialog/save-enco
   styleUrls: ["./encounter-generator.component.scss"],
   standalone: true,
   imports: [
-    NgIf,
     MonsterFilterBarComponent,
     MatCard,
     FlexModule,
@@ -40,8 +39,8 @@ import { SaveEncounterDialogComponent } from "../save-encounter-dialog/save-enco
     MatSliderThumb,
     MatButton,
     MatIcon,
-    MonsterTablesComponent,
-  ],
+    MonsterTablesComponent
+],
 })
 export class EncounterGeneratorComponent implements OnDestroy, OnInit {
   public readonly EncounterDifficulties = EncounterDifficulties;

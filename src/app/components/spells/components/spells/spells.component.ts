@@ -1,4 +1,4 @@
-import { NgIf } from "@angular/common";
+
 import { AfterViewInit, Component, OnInit } from "@angular/core";
 import { MatCard } from "@angular/material/card";
 import { MatDivider } from "@angular/material/divider";
@@ -21,13 +21,12 @@ import { SpellFilterService } from "../../services/spell-filter/spell-filter.ser
   imports: [
     SpellFilterBarComponent,
     MatDivider,
-    NgIf,
     SpellTablesComponent,
     MatCard,
     FlexModule,
     MatIcon,
-    MatProgressSpinner,
-  ],
+    MatProgressSpinner
+],
 })
 export class SpellsComponent implements OnInit, AfterViewInit {
   private allSpells: Spell[] = [];

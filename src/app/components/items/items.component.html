@@ -1,56 +1,60 @@
-<div class="loading-shade" *ngIf="!!(items$ | async) === false">
+@if (!!(items$ | async) === false) {
+  <div class="loading-shade">
     <mat-spinner></mat-spinner>
-</div>
+  </div>
+}
 <mat-form-field>
-    <mat-label>Filter Items</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Filter items here..." #input>
+  <mat-label>Filter Items</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Filter items here..." #input>
 </mat-form-field>
 <div style="width: 100vw; max-width: 100vw;">
-    <div style="position: relative; width: 100vw;">
-        <button color="primary" style="position: absolute; top: 5px; right: 5px; z-index: 5000;" mat-icon-button
-            [matMenuTriggerFor]="menu" title="Add/Remove Columns" aria-label="Change Displayed Columns">
-            <mat-icon>view_week</mat-icon>
-        </button>
-    </div>
-    <div style="overflow-x: scroll; width: 100%; max-width: 100%;">
-        <table mat-table matSort matSortActive="name" matSortDirection="asc" matSortDisableClear
-            [dataSource]="dataSource" style="width: 100vw; max-width: 100%;">
-            <ng-container *ngFor="let column of columns" [matColumnDef]="column.name">
-                <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header>
-                    {{column.name}}
-                </th>
-                <td mat-cell *matCellDef="let element">
-                    <ng-container
-                        *ngIf="isArray(element[column.name]) then arrayColumnDisplay else normalColumnDisplay">
-                    </ng-container>
-                    <ng-template #normalColumnDisplay>
-                        {{element[column.name]}}
-                    </ng-template>
-                    <ng-template #arrayColumnDisplay>
-                        <ul>
-                            <li *ngFor="let tuple of element[column.name]">
-                                {{ tuple }}
-                            </li>
-                        </ul>
-                    </ng-template>
-                </td>
-            </ng-container>
+  <div style="position: relative; width: 100vw;">
+    <button color="primary" style="position: absolute; top: 5px; right: 5px; z-index: 5000;" mat-icon-button
+      [matMenuTriggerFor]="menu" title="Add/Remove Columns" aria-label="Change Displayed Columns">
+      <mat-icon>view_week</mat-icon>
+    </button>
+  </div>
+  <div style="overflow-x: scroll; width: 100%; max-width: 100%;">
+    <table mat-table matSort matSortActive="name" matSortDirection="asc" matSortDisableClear
+      [dataSource]="dataSource" style="width: 100vw; max-width: 100%;">
+      @for (column of columns; track column) {
+        <ng-container [matColumnDef]="column.name">
+          <th style="text-transform: capitalize;" mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{column.name}}
+          </th>
+          <td mat-cell *matCellDef="let element">
+            @if (isArray(element[column.name])) {
+              <ul>
+                @for (tuple of element[column.name]; track tuple) {
+                  <li>
+                    {{ tuple }}
+                  </li>
+                }
+              </ul>
+            } @else {
+              {{element[column.name]}}
+            }
+          </td>
+        </ng-container>
+      }
 
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
-            <tr class="mat-row" *matNoDataRow>
-                <td class="mat-cell" [colSpan]="displayedColumns.length">No data matching the filter "{{input.value}}"
-                </td>
-            </tr>
-        </table>
-    </div>
-    <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 50, 100]" [showFirstLastButtons]="true">
-    </mat-paginator>
-    <mat-menu #menu="matMenu">
-        <button *ngFor="let column of columns" (click)="toggleColumn(column); stopPropagation($event);" mat-menu-item>
-            <mat-icon>{{column.isShown ? 'done' : 'close'}}</mat-icon>
-            <span>{{column.name}}</span>
-        </button>
-    </mat-menu>
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" [colSpan]="displayedColumns.length">No data matching the filter "{{input.value}}"
+        </td>
+      </tr>
+    </table>
+  </div>
+  <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 50, 100]" [showFirstLastButtons]="true">
+  </mat-paginator>
+  <mat-menu #menu="matMenu">
+    @for (column of columns; track column) {
+      <button (click)="toggleColumn(column); stopPropagation($event);" mat-menu-item>
+        <mat-icon>{{column.isShown ? 'done' : 'close'}}</mat-icon>
+        <span>{{column.name}}</span>
+      </button>
+    }
+  </mat-menu>
 </div>

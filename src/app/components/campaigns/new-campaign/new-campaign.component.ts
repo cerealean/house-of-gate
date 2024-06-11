@@ -3,7 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA, MatDialogTitle, MatDialogContent, MatDia
 import { Campaign } from '../models/campaign';
 import { MatButton } from '@angular/material/button';
 import { MatDivider } from '@angular/material/divider';
-import { NgIf } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
@@ -13,7 +13,7 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
     templateUrl: './new-campaign.component.html',
     styleUrls: ['./new-campaign.component.scss'],
     standalone: true,
-    imports: [MatDialogTitle, MatDialogContent, MatFormField, MatLabel, MatInput, FormsModule, NgIf, MatDivider, MatDialogActions, MatButton, MatDialogClose]
+    imports: [MatDialogTitle, MatDialogContent, MatFormField, MatLabel, MatInput, FormsModule, MatDivider, MatDialogActions, MatButton, MatDialogClose]
 })
 export class NewCampaignComponent {
   public readonly isEditingCurrentCampaign: boolean;

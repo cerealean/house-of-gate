@@ -3,14 +3,14 @@ import { MatDialogRef, MAT_DIALOG_DATA, MatDialogTitle, MatDialogContent, MatDia
 import { Campaign } from '../models/campaign';
 import { MatButton } from '@angular/material/button';
 import { MatDivider } from '@angular/material/divider';
-import { NgIf, NgFor } from '@angular/common';
+
 
 @Component({
     selector: 'app-delete-campaign-dialog',
     templateUrl: './delete-campaign-dialog.component.html',
     styleUrls: ['./delete-campaign-dialog.component.scss'],
     standalone: true,
-    imports: [MatDialogTitle, MatDialogContent, NgIf, NgFor, MatDivider, MatDialogActions, MatButton, MatDialogClose]
+    imports: [MatDialogTitle, MatDialogContent, MatDivider, MatDialogActions, MatButton, MatDialogClose]
 })
 export class DeleteCampaignDialogComponent {
 

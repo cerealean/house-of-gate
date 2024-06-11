@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from "@angular/common";
+
 import { Component, Inject, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButton } from "@angular/material/button";
@@ -28,19 +28,17 @@ import { Encounter, GeneratedEncounter } from "../../models/encounter";
   imports: [
     MatDialogTitle,
     MatDialogContent,
-    NgIf,
     MatFormField,
     MatLabel,
     MatSelect,
-    NgFor,
     MatOption,
     MatInput,
     FormsModule,
     RouterLink,
     MatDivider,
     MatDialogActions,
-    MatButton,
-  ],
+    MatButton
+],
 })
 export class SaveEncounterDialogComponent implements OnInit {
   public campaigns: Campaign[] = [];

@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from "@angular/common";
+
 import { Component, OnInit } from "@angular/core";
 import {
   MatFormField,
@@ -32,8 +32,6 @@ import {
   selector: "app-magic-item-tables",
   standalone: true,
   imports: [
-    NgIf,
-    NgFor,
     MatTable,
     MatCell,
     MatCellDef,
@@ -47,8 +45,8 @@ import {
     MatSelect,
     MatOption,
     MatFormField,
-    MatLabel,
-  ],
+    MatLabel
+],
   templateUrl: "./magic-item-tables.component.html",
   styleUrl: "./magic-item-tables.component.scss",
 })

@@ -1,4 +1,4 @@
-import { AsyncPipe, NgFor, NgIf } from "@angular/common";
+import { AsyncPipe } from "@angular/common";
 import { AfterViewInit, Component, OnInit, ViewChild } from "@angular/core";
 import { MatIconButton } from "@angular/material/button";
 import { MatFormField, MatLabel } from "@angular/material/form-field";
@@ -58,10 +58,8 @@ import { StorageKeys, StorageService } from "src/app/services/storage.service";
     MatFormField,
     MatLabel,
     MatInput,
-    NgIf,
-    NgFor,
-    AsyncPipe,
-  ],
+    AsyncPipe
+],
   templateUrl: "./items.component.html",
   styleUrl: "./items.component.scss",
 })

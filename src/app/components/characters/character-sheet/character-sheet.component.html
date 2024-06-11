@@ -1,6 +1,6 @@
 <mat-card appearance="outlined" style="margin: 0 auto; max-height: 82vh; overflow-y: scroll;">
-  <ng-container *ngIf="!loading; else loadingDisplay;">
-    <ng-container *ngIf="!!character; else noCharacter;">
+  @if (!loading) {
+    @if (!!character) {
       <div fxLayout="column">
         <br /><br />
         <!-- Image -->
@@ -9,18 +9,16 @@
             aria-label="Character Image Area"
             aria-description="An uploaded image for your character, which is optional. Click this area to upload a new image."
             title="Click to upload/change your character image">
-            <ng-container *ngIf="character.image; else noImage;">
+            @if (character.image) {
               <img [src]="getImageUrl(character.image)" class="character-image" alt="Character image"
                 aria-label="Image for the character" />
-            </ng-container>
+            } @else {
+              <em>No Character Image</em>
+            }
           </div>
-          <ng-template #noImage>
-            <em>No Character Image</em>
-          </ng-template>
           <input #newCharacterImage type="file" hidden accept="image/*" id="character-image"
             (change)="changeCharacterImage($event)" />
         </div>
-
         <!-- Name -->
         <div fxLayout="row">
           <div class="centered" fxFlex>
@@ -52,11 +50,9 @@
             </div>
           </mat-menu>
         </div>
-
         <div fxFlex="row" class="centered">
           <mat-divider></mat-divider><br />
         </div>
-
         <!-- Basic Info -->
         <div fxLayout="row">
           <div class="centered" fxFlex>
@@ -64,7 +60,6 @@
             </h3>
           </div>
         </div>
-
         <!-- Health -->
         <div fxLayout="row" class="health-area" (click)="openDamageCalculator()" style="cursor: pointer;"
           aria-label="Current health and temporary health"
@@ -74,11 +69,10 @@
           <h4 class="health-text" aria-label="Character health">Health:
             {{character.currentHealth}}/{{character.maxHealth}}{{character.tempHealth ? ' (+' + character.tempHealth
             +
-            ' temp)' : ''}}</h4>
+          ' temp)' : ''}}</h4>
           <mat-progress-bar [value]="getHealthPercentage()" aria-label="Character health bar" class="health-bar" fxFlex>
           </mat-progress-bar>
         </div>
-
         <!-- Basic Stats -->
         <div fxLayout="row" class="centered">
           <div fxFlex title="Armor Class">
@@ -159,7 +153,7 @@
             <h5 class="no-margin">Inspiration</h5>
             <h2 [mat-menu-trigger-for]="inspirationMenu" aria-role="button" class="clickable">
               {{character.inspiration ||
-              0}}</h2>
+            0}}</h2>
             <mat-menu #inspirationMenu="matMenu">
               <div fxLayout="column" class="editable-content-menu">
                 <div fxLayout="row" fxLayoutGap="2px" fxFlex>
@@ -176,13 +170,11 @@
             </mat-menu>
           </div>
         </div>
-
         <!--Ability Scores And Modifiers-->
         <div fxFlex="row" class="centered">
           <mat-divider></mat-divider><br />
           <h2>Ability Scores/Modifiers</h2>
         </div>
-
         <div fxLayout="row" class="centered">
           <table fxFlex>
             <thead>
@@ -209,7 +201,7 @@
                 </td>
                 <td>
                   <h4 aria-role="button" [mat-menu-trigger-for]="asStrengthMenu" class="clickable">
-                    {{character.abilityScores.strength}}</h4>
+                  {{character.abilityScores.strength}}</h4>
                   <mat-menu #asStrengthMenu="matMenu">
                     <div fxLayout="column" class="editable-content-menu">
                       <div fxLayout="row">
@@ -255,7 +247,7 @@
                 </td>
                 <td>
                   <h4 [mat-menu-trigger-for]="asDexterityMenu" class="clickable" aria-role="button">
-                    {{character.abilityScores.dexterity}}</h4>
+                  {{character.abilityScores.dexterity}}</h4>
                   <mat-menu #asDexterityMenu="matMenu">
                     <div fxLayout="column" class="editable-content-menu">
                       <div fxLayout="row">
@@ -301,7 +293,7 @@
                 </td>
                 <td>
                   <h4 [mat-menu-trigger-for]="asConstitutionMenu" class="clickable" aria-role="button">
-                    {{character.abilityScores.constitution}}</h4>
+                  {{character.abilityScores.constitution}}</h4>
                   <mat-menu #asConstitutionMenu="matMenu">
                     <div fxLayout="column" class="editable-content-menu">
                       <div fxLayout="row">
@@ -348,7 +340,7 @@
                 </td>
                 <td>
                   <h4 [mat-menu-trigger-for]="asIntelligenceMenu" class="clickable" aria-role="button">
-                    {{character.abilityScores.intelligence}}</h4>
+                  {{character.abilityScores.intelligence}}</h4>
                   <mat-menu #asIntelligenceMenu="matMenu">
                     <div fxLayout="column" class="editable-content-menu">
                       <div fxLayout="row">
@@ -395,7 +387,7 @@
                 </td>
                 <td>
                   <h4 [mat-menu-trigger-for]="asWisdomMenu" class="clickable" aria-role="button">
-                    {{character.abilityScores.wisdom}}</h4>
+                  {{character.abilityScores.wisdom}}</h4>
                   <mat-menu #asWisdomMenu="matMenu">
                     <div fxLayout="column" class="editable-content-menu">
                       <div fxLayout="row">
@@ -441,7 +433,7 @@
                 </td>
                 <td>
                   <h4 [mat-menu-trigger-for]="asCharismaMenu" class="clickable" aria-role="button">
-                    {{character.abilityScores.charisma}}</h4>
+                  {{character.abilityScores.charisma}}</h4>
                   <mat-menu #asCharismaMenu="matMenu">
                     <div fxLayout="column" class="editable-content-menu">
                       <div fxLayout="row">
@@ -484,17 +476,14 @@
             </tbody>
           </table>
         </div>
-
         <div fxFlex="row">
           <br />
           <mat-divider></mat-divider><br />
         </div>
-
         <!-- Skills -->
         <div fxFlex="row" class="centered">
           <h2>Skills</h2>
         </div>
-
         <div fxLayout="row" class="centered">
           <table fxFlex>
             <thead>
@@ -725,15 +714,12 @@
           </table>
         </div>
       </div>
-
-    </ng-container>
-    <ng-template #noCharacter>
+    } @else {
       <em>Could not load character</em>
-    </ng-template>
-  </ng-container>
-  <ng-template #loadingDisplay>
+    }
+  } @else {
     <div class="full-width centered">
       <em>Loading character...</em>
     </div>
-  </ng-template>
+  }
 </mat-card>
