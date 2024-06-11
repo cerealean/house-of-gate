@@ -60,7 +60,7 @@ export const routes: Routes = [
   {
     path: "items",
     loadComponent: () =>
-      import("./items/items.component").then(i => i.ItemsComponent),
+      import("./components/items/items.component").then(i => i.ItemsComponent),
   },
   {
     path: "magic-item-tables",
