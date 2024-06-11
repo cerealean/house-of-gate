@@ -41,7 +41,9 @@ export const routes: Routes = [
   {
     path: "feedback",
     loadComponent: () =>
-      import("./feedback/feedback.component").then(m => m.FeedbackComponent),
+      import("./components/feedback/feedback.component").then(
+        m => m.FeedbackComponent
+      ),
   },
   {
     path: "privacy",
