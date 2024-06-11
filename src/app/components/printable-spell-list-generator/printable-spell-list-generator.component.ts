@@ -1,11 +1,11 @@
 import { AsyncPipe, TitleCasePipe } from "@angular/common";
 import {
   Component,
-  computed,
-  effect,
   HostListener,
   Inject,
   OnInit,
+  computed,
+  effect,
   signal,
 } from "@angular/core";
 import { FormsModule } from "@angular/forms";
@@ -34,10 +34,10 @@ import {
 import { WINDOW } from "src/app/injection-tokens/window.token";
 import { OrdinalPipe } from "src/app/pipes/ordinal/ordinal.pipe";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
-import { type Spell } from "src/app/spells/models/spell";
 
 import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
+import type { Spell } from "../spells/models/spell";
 import { SpellCardComponent } from "./spell-card/spell-card.component";
 
 interface Config {

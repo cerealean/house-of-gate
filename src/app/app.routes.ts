@@ -34,7 +34,7 @@ export const routes: Routes = [
   {
     path: "spells",
     loadComponent: () =>
-      import("./spells/components/spells/spells.component").then(
+      import("./components/spells/components/spells/spells.component").then(
         e => e.SpellsComponent
       ),
   },

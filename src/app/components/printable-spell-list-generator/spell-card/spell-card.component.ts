@@ -1,12 +1,11 @@
 import { TitleCasePipe } from "@angular/common";
 import { Component, input } from "@angular/core";
 
-import { Spell } from "src/app/spells/models/spell";
-
 import { FlexLayoutModule } from "@ngbracket/ngx-layout";
 
 import { OrdinalPipe } from "../../../pipes/ordinal/ordinal.pipe";
 import { YesNoPipe } from "../../../pipes/yes-no/yes-no.pipe";
+import { Spell } from "../../spells/models/spell";
 
 @Component({
   selector: "app-spell-card",

@@ -1,11 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
-import { Spell } from 'src/app/spells/models/spell';
-
-import { DatabaseService } from '../database.service';
+import type { Spell } from "src/app/components/spells/models/spell";
+import { DatabaseService } from "../database.service";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class SpellDataService {
   private allSpells?: Spell[];

@@ -7,7 +7,7 @@ import {
   type Encounter,
 } from "src/app/components/encounters/models/encounter";
 import { Monster } from "src/app/components/monsters/models/monster";
-import { Spell } from "src/app/spells/models/spell";
+import { Spell } from "src/app/components/spells/models/spell";
 import { Campaign } from "../../campaigns/models/campaign";
 
 @Injectable({

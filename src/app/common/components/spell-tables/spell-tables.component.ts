@@ -1,49 +1,80 @@
-import { trigger, state, style, transition, animate } from '@angular/animations';
-import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort, MatSortHeader } from '@angular/material/sort';
-import { MatTableDataSource, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow } from '@angular/material/table';
-import { ColumnInfo } from 'src/app/common/models/column-info';
-import { Spell } from 'src/app/spells/models/spell';
-import { NgFor, NgIf } from '@angular/common';
-import { MatIcon } from '@angular/material/icon';
-import { MatMenuTrigger, MatMenu, MatMenuItem } from '@angular/material/menu';
-import { MatIconButton } from '@angular/material/button';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from "@angular/animations";
+import { NgFor, NgIf } from "@angular/common";
+import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from "@angular/core";
+import { MatIconButton } from "@angular/material/button";
+import { MatIcon } from "@angular/material/icon";
+import { MatMenu, MatMenuItem, MatMenuTrigger } from "@angular/material/menu";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort, MatSortHeader } from "@angular/material/sort";
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+  MatTableDataSource,
+} from "@angular/material/table";
+import { ColumnInfo } from "src/app/common/models/column-info";
+import { Spell } from "src/app/components/spells/models/spell";
 
 @Component({
-    selector: 'app-spell-tables',
-    templateUrl: './spell-tables.component.html',
-    styleUrls: ['./spell-tables.component.scss'],
-    animations: [
-        trigger('detailExpand', [
-            state('collapsed', style({ height: '0px', minHeight: '0' })),
-            state('expanded', style({ height: '*' })),
-            transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
-        ]),
-    ],
-    standalone: true,
-    imports: [
-        MatIconButton,
-        MatMenuTrigger,
-        MatIcon,
-        MatTable,
-        MatSort,
-        NgFor,
-        MatColumnDef,
-        MatHeaderCellDef,
-        MatHeaderCell,
-        MatSortHeader,
-        MatCellDef,
-        MatCell,
-        NgIf,
-        MatHeaderRowDef,
-        MatHeaderRow,
-        MatRowDef,
-        MatRow,
-        MatPaginator,
-        MatMenu,
-        MatMenuItem,
-    ],
+  selector: "app-spell-tables",
+  templateUrl: "./spell-tables.component.html",
+  styleUrls: ["./spell-tables.component.scss"],
+  animations: [
+    trigger("detailExpand", [
+      state("collapsed", style({ height: "0px", minHeight: "0" })),
+      state("expanded", style({ height: "*" })),
+      transition(
+        "expanded <=> collapsed",
+        animate("225ms cubic-bezier(0.4, 0.0, 0.2, 1)")
+      ),
+    ]),
+  ],
+  standalone: true,
+  imports: [
+    MatIconButton,
+    MatMenuTrigger,
+    MatIcon,
+    MatTable,
+    MatSort,
+    NgFor,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatSortHeader,
+    MatCellDef,
+    MatCell,
+    NgIf,
+    MatHeaderRowDef,
+    MatHeaderRow,
+    MatRowDef,
+    MatRow,
+    MatPaginator,
+    MatMenu,
+    MatMenuItem,
+  ],
 })
 export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() public spells: Spell[] = [];
@@ -107,59 +138,59 @@ export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   private generateInitialColumns(): ColumnInfo[] {
     return [
       {
-        name: 'name',
+        name: "name",
         isShown: true,
-        position: 1
+        position: 1,
       },
       {
-        name: 'level',
+        name: "level",
         isShown: true,
-        position: 2
+        position: 2,
       },
       {
-        name: 'time',
+        name: "time",
         isShown: false,
-        position: 3
+        position: 3,
       },
       {
-        name: 'duration',
+        name: "duration",
         isShown: true,
-        position: 4
+        position: 4,
       },
       {
-        name: 'range',
+        name: "range",
         isShown: true,
-        position: 5
+        position: 5,
       },
       {
-        name: 'components',
+        name: "components",
         isShown: false,
-        position: 6
+        position: 6,
       },
       {
-        name: 'school',
+        name: "school",
         isShown: true,
-        position: 7
+        position: 7,
       },
       {
-        name: 'classes',
+        name: "classes",
         isShown: false,
-        position: 8
+        position: 8,
       },
       {
-        name: 'ritual',
+        name: "ritual",
         isShown: false,
-        position: 9
+        position: 9,
       },
       {
-        name: 'concentration',
+        name: "concentration",
         isShown: false,
-        position: 10
+        position: 10,
       },
       {
-        name: 'sources',
+        name: "sources",
         isShown: false,
-        position: 11
+        position: 11,
       },
     ];
   }
