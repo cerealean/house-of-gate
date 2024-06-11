@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { Character } from 'src/app/characters/models/character';
-import { IHouseOfGateDao, DatabaseService } from '../database.service';
+import { Injectable } from "@angular/core";
+import type { Character } from "src/app/components/characters/models/character";
+import { DatabaseService, type IHouseOfGateDao } from "../database.service";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class CharacterDataService {
   private readonly db: IHouseOfGateDao;
@@ -22,7 +22,9 @@ export class CharacterDataService {
 
   public async getAllCharacters(): Promise<Character[]> {
     const characters = await this.db.characters.toArray();
-    const charactersHydrated = await Promise.all(characters.map(async c => await this.hydrateCharacter(c)));
+    const charactersHydrated = await Promise.all(
+      characters.map(async c => await this.hydrateCharacter(c))
+    );
 
     return charactersHydrated;
   }
@@ -31,7 +33,7 @@ export class CharacterDataService {
     const character = await this.db.characters.get(id);
     console.log(character);
 
-    if(!character) {
+    if (!character) {
       return undefined;
     }
 
@@ -40,8 +42,10 @@ export class CharacterDataService {
 
   private async hydrateCharacter(character: Character): Promise<Character> {
     character.campaigns = await this.db.campaigns
-        .filter(campaign => !!campaign.id && character.campaignIds.includes(campaign.id))
-        .toArray();
+      .filter(
+        campaign => !!campaign.id && character.campaignIds.includes(campaign.id)
+      )
+      .toArray();
 
     return character;
   }

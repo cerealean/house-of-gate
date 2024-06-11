@@ -15,9 +15,9 @@ import {
 import { MatMenu, MatMenuItem, MatMenuTrigger } from "@angular/material/menu";
 import { DomSanitizer, SafeUrl } from "@angular/platform-browser";
 import { RouterLink } from "@angular/router";
-import { Campaign } from "../components/campaigns/models/campaign";
-import { CampaignDataService } from "../data/services/campaigns/campaign-data.service";
-import { CharacterDataService } from "../data/services/characters/character-data.service";
+import { CampaignDataService } from "src/app/data/services/campaigns/campaign-data.service";
+import { CharacterDataService } from "src/app/data/services/characters/character-data.service";
+import { Campaign } from "../campaigns/models/campaign";
 import { Character } from "./models/character";
 import { NewCharacterComponent } from "./new-character/new-character.component";
 

@@ -93,7 +93,7 @@ export const routes: Routes = [
   {
     path: "characters",
     loadChildren: () =>
-      import("./characters/characters.routes").then(m => m.routes),
+      import("./components/characters/characters.routes").then(m => m.routes),
   },
   {
     path: "**",

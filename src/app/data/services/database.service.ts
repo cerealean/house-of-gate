@@ -1,8 +1,8 @@
 import { Injectable } from "@angular/core";
 
 import Dexie from "dexie";
-import { Character } from "src/app/characters/models/character";
 import { Campaign } from "src/app/components/campaigns/models/campaign";
+import { Character } from "src/app/components/characters/models/character";
 import {
   GeneratedEncounter,
   type Encounter,

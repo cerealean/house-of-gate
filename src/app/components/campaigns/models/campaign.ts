@@ -1,5 +1,5 @@
-import { Character } from "src/app/characters/models/character";
 import type { Encounter } from "src/app/components/encounters/models/encounter";
+import type { Character } from "../../characters/models/character";
 
 export class Campaign {
   id?: number;
