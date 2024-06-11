@@ -1,4 +1,3 @@
-
 import { AfterViewInit, Component, OnInit } from "@angular/core";
 import { MatCard } from "@angular/material/card";
 import { MatDivider } from "@angular/material/divider";
@@ -25,12 +24,12 @@ import { MonsterFilterService } from "../../services/monster-filter.service";
     MatCard,
     FlexModule,
     MatIcon,
-    MatProgressSpinner
-],
+    MatProgressSpinner,
+  ],
 })
 export class MonstersComponent implements OnInit, AfterViewInit {
   private allMonsters: Monster[] = [];
-  public displayedMonsters: Monster[] = [];
+  public displayedMonsters?: Monster[] = [];
   public filters!: MonsterFilters;
   public isLoading = true;
 

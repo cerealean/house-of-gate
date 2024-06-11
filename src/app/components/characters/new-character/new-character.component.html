@@ -5,131 +5,286 @@
     <div fxLayout="row">
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Name</mat-label>
-        <input matInput aria-label="Name for your new character" required type="text" minlength="1" maxlength="100"
-          [(ngModel)]="character.name" />
+        <input
+          matInput
+          aria-label="Name for your new character"
+          required
+          type="text"
+          minlength="1"
+          maxlength="100"
+          [(ngModel)]="character.name"
+        />
         <mat-error>Please enter a character name</mat-error>
       </mat-form-field>
     </div>
-    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="1px">
+    <div
+      fxLayout="row wrap"
+      fxLayout.lt-md="column"
+      fxLayoutGap="2px"
+      fxLayoutGap.lt-md="1px"
+    >
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Race</mat-label>
-        <input matInput aria-label="Race for your new character" type="text" maxlength="100"
-          [(ngModel)]="character.race" />
+        <input
+          matInput
+          aria-label="Race for your new character"
+          type="text"
+          maxlength="100"
+          [(ngModel)]="character.race"
+        />
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Class(es)</mat-label>
-        <input matInput aria-label="Class(es) for your new character" type="text" maxlength="200"
-          [(ngModel)]="character.class" />
+        <input
+          matInput
+          aria-label="Class(es) for your new character"
+          type="text"
+          maxlength="200"
+          [(ngModel)]="character.class"
+        />
       </mat-form-field>
     </div>
     <div fxLayout="row wrap">
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Level</mat-label>
-        <input matInput aria-label="Character level" required autocapitalize="false" autocomplete="off" type="number"
-          min="1" max="30" inputmode="numeric" [(ngModel)]="character.level" pattern="[0-9]{1,5}" />
+        <input
+          matInput
+          aria-label="Character level"
+          required
+          autocapitalize="false"
+          autocomplete="off"
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          [(ngModel)]="character.level"
+          pattern="[0-9]{1,5}"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Max Health</mat-label>
-        <input matInput aria-label="Character maximum health" required autocapitalize="false" autocomplete="off" type="number"
-          min="1" inputmode="numeric" [(ngModel)]="character.maxHealth" pattern="[0-9]{1,5}" />
+        <input
+          matInput
+          aria-label="Character maximum health"
+          required
+          autocapitalize="false"
+          autocomplete="off"
+          type="number"
+          min="1"
+          inputmode="numeric"
+          [(ngModel)]="character.maxHealth"
+          pattern="[0-9]{1,5}"
+        />
         <mat-error>Please enter an integer greater than 1</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Current Health</mat-label>
-        <input matInput aria-label="Character current health" required autocapitalize="false" autocomplete="off" type="number"
-          min="1" inputmode="numeric" [(ngModel)]="character.currentHealth" pattern="[0-9]{1,5}" />
+        <input
+          matInput
+          aria-label="Character current health"
+          required
+          autocapitalize="false"
+          autocomplete="off"
+          type="number"
+          min="1"
+          inputmode="numeric"
+          [(ngModel)]="character.currentHealth"
+          pattern="[0-9]{1,5}"
+        />
         <mat-error>Please enter an integer greater than 1</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Armor Class</mat-label>
-        <input matInput aria-label="Character Armor Class" required autocapitalize="false" autocomplete="off" type="number"
-          min="1" max="30" inputmode="numeric" [(ngModel)]="character.armorClass" pattern="[0-9]{1,5}" />
+        <input
+          matInput
+          aria-label="Character Armor Class"
+          required
+          autocapitalize="false"
+          autocomplete="off"
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          [(ngModel)]="character.armorClass"
+          pattern="[0-9]{1,5}"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Speed</mat-label>
-        <input matInput aria-label="Character Speed" required autocapitalize="false" autocomplete="off" type="number"
-          min="0" inputmode="numeric" [(ngModel)]="character.speed" pattern="[0-9]{1,5}" />
+        <input
+          matInput
+          aria-label="Character Speed"
+          required
+          autocapitalize="false"
+          autocomplete="off"
+          type="number"
+          min="0"
+          inputmode="numeric"
+          [(ngModel)]="character.speed"
+          pattern="[0-9]{1,5}"
+        />
         <mat-error>Please enter an integer greater than 1</mat-error>
       </mat-form-field>
     </div>
     <h3>Ability Scores</h3>
-    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2px" fxLayoutGap.lt-md="3px">
+    <div
+      fxLayout="row wrap"
+      fxLayout.lt-md="column"
+      fxLayoutGap="2px"
+      fxLayoutGap.lt-md="3px"
+    >
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Strength</mat-label>
-        <input matInput aria-label="Character strength ability score" autocapitalize="false" autocomplete="off"
-          placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric" pattern="[0-9]{1,5}"
-          [(ngModel)]="character.abilityScores.strength" />
+        <input
+          matInput
+          aria-label="Character strength ability score"
+          autocapitalize="false"
+          autocomplete="off"
+          placeholder="1-30"
+          required
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          pattern="[0-9]{1,5}"
+          [(ngModel)]="character.abilityScores.strength"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Dexterity</mat-label>
-        <input matInput aria-label="Character dexterity ability score" autocapitalize="false" autocomplete="off"
-          placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric" pattern="[0-9]{1,5}"
-          [(ngModel)]="character.abilityScores.dexterity" />
+        <input
+          matInput
+          aria-label="Character dexterity ability score"
+          autocapitalize="false"
+          autocomplete="off"
+          placeholder="1-30"
+          required
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          pattern="[0-9]{1,5}"
+          [(ngModel)]="character.abilityScores.dexterity"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Constitution</mat-label>
-        <input matInput aria-label="Character constitution ability score" autocapitalize="false" autocomplete="off"
-          placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric" pattern="[0-9]{1,5}"
-          [(ngModel)]="character.abilityScores.constitution" />
+        <input
+          matInput
+          aria-label="Character constitution ability score"
+          autocapitalize="false"
+          autocomplete="off"
+          placeholder="1-30"
+          required
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          pattern="[0-9]{1,5}"
+          [(ngModel)]="character.abilityScores.constitution"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Intelligence</mat-label>
-        <input matInput aria-label="Character intelligence ability score" autocapitalize="false" autocomplete="off"
-          placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric" pattern="[0-9]{1,5}"
-          [(ngModel)]="character.abilityScores.intelligence" />
+        <input
+          matInput
+          aria-label="Character intelligence ability score"
+          autocapitalize="false"
+          autocomplete="off"
+          placeholder="1-30"
+          required
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          pattern="[0-9]{1,5}"
+          [(ngModel)]="character.abilityScores.intelligence"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Wisdom</mat-label>
-        <input matInput aria-label="Character wisdom ability score" autocapitalize="false" autocomplete="off"
-          placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric" pattern="[0-9]{1,5}"
-          [(ngModel)]="character.abilityScores.wisdom" />
+        <input
+          matInput
+          aria-label="Character wisdom ability score"
+          autocapitalize="false"
+          autocomplete="off"
+          placeholder="1-30"
+          required
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          pattern="[0-9]{1,5}"
+          [(ngModel)]="character.abilityScores.wisdom"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" fxFlex>
         <mat-label>Charisma</mat-label>
-        <input matInput aria-label="Character charisma ability score" autocapitalize="false" autocomplete="off"
-          placeholder="1-30" required type="number" min="1" max="30" inputmode="numeric" pattern="[0-9]{1,5}"
-          [(ngModel)]="character.abilityScores.charisma" />
+        <input
+          matInput
+          aria-label="Character charisma ability score"
+          autocapitalize="false"
+          autocomplete="off"
+          placeholder="1-30"
+          required
+          type="number"
+          min="1"
+          max="30"
+          inputmode="numeric"
+          pattern="[0-9]{1,5}"
+          [(ngModel)]="character.abilityScores.charisma"
+        />
         <mat-error>Please enter a value between 1 and 30</mat-error>
       </mat-form-field>
     </div>
   </div>
   <div>
     @if (!isEditingCurrentCharacter) {
-      <label for="character-image">Character Image (Optional)</label>
-    }
-    @if (isEditingCurrentCharacter) {
-      <label for="character-image">Update Image (Optional)</label>
+    <label for="character-image">Character Image (Optional)</label>
+    } @if (isEditingCurrentCharacter) {
+    <label for="character-image">Update Image (Optional)</label>
     }
     <br /><br />
-    <input id="character-image" aria-label="Optionally upload an image representing your character"
-      title="Have an image to represent your character?" type="file" accept="image/*" (change)="onFileChange($event)">
-    </div>
-    <h3>Campaign(s)</h3>
-    @if (!!campaigns?.length) {
-      <mat-form-field appearance="fill">
-        <mat-label>Campaign(s) {{ character.name || 'character' }} is in</mat-label>
-        <mat-select [(ngModel)]="character.campaignIds" multiple>
-          @for (campaign of campaigns; track campaign) {
-            <mat-option [value]="campaign.id">{{ campaign.name }}</mat-option>
-          }
-        </mat-select>
-      </mat-form-field>
-    } @else {
-      <em>You haven't created any campaigns.</em>
-    }
-    <br />
-    <mat-divider></mat-divider>
+    <input
+      id="character-image"
+      aria-label="Optionally upload an image representing your character"
+      title="Have an image to represent your character?"
+      type="file"
+      accept="image/*"
+      (change)="onFileChange($event)"
+    />
   </div>
-  <div mat-dialog-actions>
-    <button mat-button (click)="dialogRef.close()">Cancel</button>
-    <button mat-raised-button [disabled]="!isValid" color="accent" [mat-dialog-close]="character">
-      {{!isEditingCurrentCharacter ? 'Create' : 'Edit'}}
-    </button>
-  </div>
+  <h3>Campaign(s)</h3>
+  @if (!!campaigns.length) {
+  <mat-form-field appearance="fill">
+    <mat-label>Campaign(s) {{ character.name || "character" }} is in</mat-label>
+    <mat-select [(ngModel)]="character.campaignIds" multiple>
+      @for (campaign of campaigns; track campaign) {
+      <mat-option [value]="campaign.id">{{ campaign.name }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  } @else {
+  <em>You haven't created any campaigns.</em>
+  }
+  <br />
+  <mat-divider></mat-divider>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button
+    mat-raised-button
+    [disabled]="!isValid"
+    color="accent"
+    [mat-dialog-close]="character"
+  >
+    {{ !isEditingCurrentCharacter ? "Create" : "Edit" }}
+  </button>
+</div>

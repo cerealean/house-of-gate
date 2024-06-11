@@ -1,28 +1,37 @@
 <div [class.hidden]="isLoading">
-  <app-spell-filter-bar (filterChanges)="filter($event)" [filters]="filters"></app-spell-filter-bar>
+  <app-spell-filter-bar
+    (filterChanges)="filter($event)"
+    [filters]="filters"
+  ></app-spell-filter-bar>
   <br />
   <mat-divider></mat-divider>
   <br />
   @if (displayedSpells?.length) {
-    <app-spell-tables [spells]="displayedSpells" (isLoading)="tableLoading($event)"></app-spell-tables>
-  }
-  @if (!displayedSpells?.length) {
-    <mat-card appearance="outlined" fxLayout="column" class="centered">
-      <div>
-        <h3>No Results :(</h3>
-        <mat-icon>sentiment_very_dissatisfied</mat-icon>
-      </div>
-    </mat-card>
+  <app-spell-tables
+    [spells]="displayedSpells!"
+    (isLoading)="tableLoading($event)"
+  ></app-spell-tables>
+  } @if (!displayedSpells?.length) {
+  <mat-card appearance="outlined" fxLayout="column" class="centered">
+    <div>
+      <h3>No Results :(</h3>
+      <mat-icon>sentiment_very_dissatisfied</mat-icon>
+    </div>
+  </mat-card>
   }
 </div>
 @if (isLoading) {
-  <mat-card appearance="outlined" fxLayout="column" class="app-loading mat-typography">
-    <div>
-      <h1>House of Gate</h1>
-      <h4>Loading...</h4>
-    </div>
-    <div>
-      <mat-spinner></mat-spinner>
-    </div>
-  </mat-card>
+<mat-card
+  appearance="outlined"
+  fxLayout="column"
+  class="app-loading mat-typography"
+>
+  <div>
+    <h1>House of Gate</h1>
+    <h4>Loading...</h4>
+  </div>
+  <div>
+    <mat-spinner></mat-spinner>
+  </div>
+</mat-card>
 }
