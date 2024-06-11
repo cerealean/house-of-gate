@@ -1,9 +1,9 @@
 import { Character } from "src/app/characters/models/character";
-import { Encounter } from "src/app/encounters/models/encounter";
+import type { Encounter } from "src/app/components/encounters/models/encounter";
 
 export class Campaign {
   id?: number;
-  name = '';
+  name = "";
   date = new Date();
   image: Blob | undefined;
   encounters: Encounter[] = [];

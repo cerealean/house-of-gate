@@ -22,7 +22,7 @@ export const routes: Routes = [
   {
     path: "encounters",
     loadChildren: () =>
-      import("./encounters/encounters.routes").then(e => e.routes),
+      import("./components/encounters/encounters.routes").then(e => e.routes),
   },
   {
     path: "campaigns",

@@ -1,15 +1,12 @@
-import { Injectable } from '@angular/core';
-import { Encounter } from 'src/app/encounters/models/encounter';
-import { DatabaseService } from '../database.service';
+import { Injectable } from "@angular/core";
+import { type Encounter } from "src/app/components/encounters/models/encounter";
+import { DatabaseService } from "../database.service";
 
 @Injectable({
-  providedIn: 'any'
+  providedIn: "any",
 })
 export class EncounterDataService {
-
-  constructor(
-    private readonly db: DatabaseService
-  ) { }
+  constructor(private readonly db: DatabaseService) {}
 
   public async saveEncounter(encounter: Encounter): Promise<void> {
     await this.db.getDatabaseContext().encounters.add(encounter);
@@ -22,6 +19,4 @@ export class EncounterDataService {
   public async deleteEncounters(encounterIds: number[]): Promise<void> {
     await this.db.getDatabaseContext().encounters.bulkDelete(encounterIds);
   }
-
-
 }
