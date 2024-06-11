@@ -1,5 +1,5 @@
 import { crToExpMap } from "src/app/data/static/cr-to-exp";
-import type { Monster } from "src/app/monsters/models/monster";
+import type { Monster } from "../../monsters/models/monster";
 import { EncounterRequest } from "./encounter-request";
 
 export class GeneratedEncounter {

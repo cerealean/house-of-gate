@@ -1,23 +1,68 @@
-import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort, MatSortHeader } from '@angular/material/sort';
-import { MatTableDataSource, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow } from '@angular/material/table';
-import { ColumnInfo } from 'src/app/common/models/column-info';
-import { Monster } from 'src/app/monsters/models/monster';
-import { StorageKeys, StorageService } from 'src/app/services/storage.service';
-import { NgFor, NgIf } from '@angular/common';
-import { MatIcon } from '@angular/material/icon';
-import { MatMenuTrigger, MatMenu, MatMenuItem } from '@angular/material/menu';
-import { MatIconButton } from '@angular/material/button';
+import { NgFor, NgIf } from "@angular/common";
+import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from "@angular/core";
+import { MatIconButton } from "@angular/material/button";
+import { MatIcon } from "@angular/material/icon";
+import { MatMenu, MatMenuItem, MatMenuTrigger } from "@angular/material/menu";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort, MatSortHeader } from "@angular/material/sort";
+import {
+  MatCell,
+  MatCellDef,
+  MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow,
+  MatRowDef,
+  MatTable,
+  MatTableDataSource,
+} from "@angular/material/table";
+import { ColumnInfo } from "src/app/common/models/column-info";
+import type { Monster } from "src/app/components/monsters/models/monster";
+import { StorageKeys, StorageService } from "src/app/services/storage.service";
 
 @Component({
-    selector: 'app-monster-tables',
-    templateUrl: './monster-tables.component.html',
-    styleUrls: ['./monster-tables.component.scss'],
-    standalone: true,
-    imports: [MatIconButton, MatMenuTrigger, MatIcon, MatTable, MatSort, NgFor, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatSortHeader, MatCellDef, MatCell, NgIf, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatPaginator, MatMenu, MatMenuItem]
+  selector: "app-monster-tables",
+  templateUrl: "./monster-tables.component.html",
+  styleUrls: ["./monster-tables.component.scss"],
+  standalone: true,
+  imports: [
+    MatIconButton,
+    MatMenuTrigger,
+    MatIcon,
+    MatTable,
+    MatSort,
+    NgFor,
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatSortHeader,
+    MatCellDef,
+    MatCell,
+    NgIf,
+    MatHeaderRowDef,
+    MatHeaderRow,
+    MatRowDef,
+    MatRow,
+    MatPaginator,
+    MatMenu,
+    MatMenuItem,
+  ],
 })
-export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges {
+export class MonsterTablesComponent
+  implements OnInit, AfterViewInit, OnChanges
+{
   @Input() public monsters: Monster[] = [];
   public displayedColumns: string[] = [];
   public columns: ColumnInfo[] = this.generateInitialColumns();
@@ -28,13 +73,13 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(
-    private storage: StorageService
-  ) { }
+  constructor(private storage: StorageService) {}
 
   ngOnInit(): void {
-    const storedColumns = this.storage.getData<ColumnInfo[]>(StorageKeys.ColumnInfo);
-    if(storedColumns) {
+    const storedColumns = this.storage.getData<ColumnInfo[]>(
+      StorageKeys.ColumnInfo
+    );
+    if (storedColumns) {
       this.columns = storedColumns;
     }
     this.refreshDisplayedColumns();
@@ -83,59 +128,59 @@ export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges 
   private generateInitialColumns(): ColumnInfo[] {
     return [
       {
-        name: 'name',
+        name: "name",
         isShown: true,
-        position: 1
+        position: 1,
       },
       {
-        name: 'cr',
+        name: "cr",
         isShown: true,
-        position: 2
+        position: 2,
       },
       {
-        name: 'hp',
+        name: "hp",
         isShown: false,
-        position: 3
+        position: 3,
       },
       {
-        name: 'ac',
+        name: "ac",
         isShown: false,
-        position: 4
+        position: 4,
       },
       {
-        name: 'size',
+        name: "size",
         isShown: false,
-        position: 5
+        position: 5,
       },
       {
-        name: 'type',
+        name: "type",
         isShown: true,
-        position: 6
+        position: 6,
       },
       {
-        name: 'environment',
+        name: "environment",
         isShown: false,
-        position: 7
+        position: 7,
       },
       {
-        name: 'alignment',
+        name: "alignment",
         isShown: false,
-        position: 8
+        position: 8,
       },
       {
-        name: 'legendary',
+        name: "legendary",
         isShown: false,
-        position: 9
+        position: 9,
       },
       {
-        name: 'unique',
+        name: "unique",
         isShown: false,
-        position: 10
+        position: 10,
       },
       {
-        name: 'sources',
+        name: "sources",
         isShown: true,
-        position: 11
+        position: 11,
       },
     ];
   }

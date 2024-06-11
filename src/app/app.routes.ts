@@ -15,9 +15,9 @@ export const routes: Routes = [
   {
     path: "monsters",
     loadComponent: () =>
-      import("./monsters/components/monsters/monsters.component").then(
-        m => m.MonstersComponent
-      ),
+      import(
+        "./components/monsters/components/monsters/monsters.component"
+      ).then(m => m.MonstersComponent),
   },
   {
     path: "encounters",

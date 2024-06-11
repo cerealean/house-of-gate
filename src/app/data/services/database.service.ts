@@ -6,9 +6,9 @@ import {
   GeneratedEncounter,
   type Encounter,
 } from "src/app/components/encounters/models/encounter";
+import { Monster } from "src/app/components/monsters/models/monster";
 import { Spell } from "src/app/spells/models/spell";
 import { Campaign } from "../../campaigns/models/campaign";
-import { Monster } from "../../monsters/models/monster";
 
 @Injectable({
   providedIn: "root",

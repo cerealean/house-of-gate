@@ -13,11 +13,11 @@ import { Subscription } from "rxjs";
 import { MonsterFilterBarComponent } from "src/app/common/components/monster-filter-bar/monster-filter-bar.component";
 import { MonsterTablesComponent } from "src/app/common/components/monster-tables/monster-tables.component";
 import { NumberOnlyDirective } from "src/app/common/directives/number-only.directive";
-import { EncounterDifficulties } from "src/app/monsters/enums/encounter-difficulties";
-import { MonsterFilters } from "src/app/monsters/models/monster-filters";
-import { EncounterGenerator2Service } from "src/app/monsters/services/encounter-generator-2.service";
+import { EncounterDifficulties } from "src/app/components/monsters/enums/encounter-difficulties";
+import type { MonsterFilters } from "src/app/components/monsters/models/monster-filters";
+import { EncounterGenerator2Service } from "src/app/components/monsters/services/encounter-generator-2.service";
 import { StorageKeys, StorageService } from "src/app/services/storage.service";
-import { GeneratedEncounter } from "../../models/encounter";
+import type { GeneratedEncounter } from "../../models/encounter";
 import type { EncounterRequest } from "../../models/encounter-request";
 import { SaveEncounterDialogComponent } from "../save-encounter-dialog/save-encounter-dialog.component";
 
