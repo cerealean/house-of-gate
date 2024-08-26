@@ -20,8 +20,9 @@ export interface ICharacter {
 
   abilityScores: CharacterAbilities;
   abilityModifiers: CharacterAbilities;
-  skills: CharacterSkillsList;
   proficiencyBonus: number;
+
+  skills(): CharacterSkillsList;
 }
 
 export class Character implements ICharacter {
@@ -47,7 +48,24 @@ export class Character implements ICharacter {
     wisdom: 8,
     charisma: 8
   };
-  skills: CharacterSkillsList = this.generateNewSkillsList();
+  skillProficiencies: Record<CharacterSkills, boolean> = {
+    acrobatics: false,
+    animalHandling: false,
+    arcana: false,
+    athletics: false,
+    deception: false,
+    history: false,
+    insight: false,
+    intimidation: false,
+    medicine: false,
+    perception: false,
+    performance: false,
+    persuasion: false,
+    religion: false,
+    sleightOfHand: false,
+    stealth: false,
+    survival: false
+  };
 
   private imageUrl: string | undefined;
 
@@ -72,6 +90,12 @@ export class Character implements ICharacter {
     }
 
     return Math.floor((2 + (this.level - 1)) / 4);
+  }
+
+  public skills(): CharacterSkillsList {
+    return {
+      acrobatics:
+    }
   }
 
   public getImageSource(): string | undefined {
@@ -170,8 +194,9 @@ export class Character implements ICharacter {
     };
   }
 
-  private getSkillModifier(skill: CharacterSkill, abilityModifier: number) {
-    return skill.proficient ? abilityModifier + this.proficiencyBonus : abilityModifier;
+  private getSkillModifier(skillName: CharacterSkills): SkillDetails {
+    const isProficient = this.skillProficiencies[skillName];
+    // return skill.proficient ? abilityModifier + this.proficiencyBonus : abilityModifier;
   }
 }
 
@@ -184,28 +209,30 @@ export interface CharacterAbilities {
   charisma: number;
 }
 
-export interface CharacterSkillsList {
-  athletics: CharacterSkill;
-  acrobatics: CharacterSkill;
-  sleightOfHand: CharacterSkill;
-  stealth: CharacterSkill;
-  arcana: CharacterSkill;
-  history: CharacterSkill;
-  investigation: CharacterSkill;
-  nature: CharacterSkill;
-  religion: CharacterSkill;
-  animalHandling: CharacterSkill;
-  insight: CharacterSkill;
-  medicine: CharacterSkill;
-  perception: CharacterSkill;
-  survival: CharacterSkill;
-  deception: CharacterSkill;
-  intimidation: CharacterSkill;
-  performance: CharacterSkill;
-  persuasion: CharacterSkill;
-}
-
-export interface CharacterSkill {
-  modifier: () => number;
+type SkillDetails = {
   proficient: boolean;
-}
+  modifier: () => number;
+};
+
+export interface CharacterSkillsList extends Record<CharacterSkills, SkillDetails> { }
+
+const characterSkills = [
+  'acrobatics',
+  'animalHandling',
+  'arcana',
+  'athletics',
+  'deception',
+  'history',
+  'insight',
+  'intimidation',
+  'medicine',
+  'perception',
+  'performance',
+  'persuasion',
+  'religion',
+  'sleightOfHand',
+  'stealth',
+  'survival',
+] as const;
+
+type CharacterSkills = typeof characterSkills[number];
