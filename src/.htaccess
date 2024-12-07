@@ -41,7 +41,7 @@
   # Servers should use text/javascript for JavaScript resources.
   # https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguages
 
-  AddType text/javascript                             js mjs
+  AddType text/javascript                             js mjs cjs
 
 
   # Manifest files
