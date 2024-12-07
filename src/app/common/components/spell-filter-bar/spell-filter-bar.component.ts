@@ -18,7 +18,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-spell-filter-bar',
     templateUrl: './spell-filter-bar.component.html',
     styleUrls: ['./spell-filter-bar.component.scss'],
-    standalone: true,
     imports: [MatCard, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, MatSelect, NgFor, MatOption, MatCheckbox, MatButton]
 })
 export class SpellFilterBarComponent implements OnInit, OnDestroy, AfterViewInit {

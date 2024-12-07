@@ -5,7 +5,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-feedback',
     templateUrl: './feedback.component.html',
     styleUrls: ['./feedback.component.scss'],
-    standalone: true,
     imports: [MatCard]
 })
 export class FeedbackComponent {

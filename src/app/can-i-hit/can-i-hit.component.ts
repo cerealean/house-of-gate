@@ -11,7 +11,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-can-i-hit',
     templateUrl: './can-i-hit.component.html',
     styleUrls: ['./can-i-hit.component.scss'],
-    standalone: true,
     imports: [MatCard, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, ReactiveFormsModule, MatSuffix, NgIf, MatError, DecimalPipe]
 })
 export class CanIHitComponent implements OnInit, OnDestroy {

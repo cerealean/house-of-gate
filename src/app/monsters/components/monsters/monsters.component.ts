@@ -17,7 +17,6 @@ import { MonsterFilterBarComponent } from '../../../common/components/monster-fi
     selector: 'app-monsters',
     templateUrl: './monsters.component.html',
     styleUrls: ['./monsters.component.scss'],
-    standalone: true,
     imports: [MonsterFilterBarComponent, MatDivider, NgIf, MonsterTablesComponent, MatCard, FlexModule, MatIcon, MatProgressSpinner]
 })
 export class MonstersComponent implements OnInit, AfterViewInit {

@@ -18,7 +18,6 @@ import { NgIf, NgFor } from '@angular/common';
     selector: 'app-save-encounter-dialog',
     templateUrl: './save-encounter-dialog.component.html',
     styleUrls: ['./save-encounter-dialog.component.scss'],
-    standalone: true,
     imports: [MatDialogTitle, MatDialogContent, NgIf, MatFormField, MatLabel, MatSelect, NgFor, MatOption, MatInput, FormsModule, RouterLink, MatDivider, MatDialogActions, MatButton]
 })
 export class SaveEncounterDialogComponent implements OnInit {

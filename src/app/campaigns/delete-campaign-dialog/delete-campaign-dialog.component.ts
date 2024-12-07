@@ -9,7 +9,6 @@ import { NgIf, NgFor } from '@angular/common';
     selector: 'app-delete-campaign-dialog',
     templateUrl: './delete-campaign-dialog.component.html',
     styleUrls: ['./delete-campaign-dialog.component.scss'],
-    standalone: true,
     imports: [MatDialogTitle, MatDialogContent, NgIf, NgFor, MatDivider, MatDialogActions, MatButton, MatDialogClose]
 })
 export class DeleteCampaignDialogComponent {

@@ -21,7 +21,6 @@ import { MatIconButton } from '@angular/material/button';
             transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
         ]),
     ],
-    standalone: true,
     imports: [
         MatIconButton,
         MatMenuTrigger,
@@ -43,7 +42,7 @@ import { MatIconButton } from '@angular/material/button';
         MatPaginator,
         MatMenu,
         MatMenuItem,
-    ],
+    ]
 })
 export class SpellTablesComponent implements OnInit, AfterViewInit, OnChanges {
   @Input() public spells: Spell[] = [];

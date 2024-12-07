@@ -17,7 +17,6 @@ import { SpellFilterBarComponent } from '../../../common/components/spell-filter
     selector: 'app-spells',
     templateUrl: './spells.component.html',
     styleUrls: ['./spells.component.scss'],
-    standalone: true,
     imports: [SpellFilterBarComponent, MatDivider, NgIf, SpellTablesComponent, MatCard, FlexModule, MatIcon, MatProgressSpinner]
 })
 export class SpellsComponent implements OnInit, AfterViewInit {

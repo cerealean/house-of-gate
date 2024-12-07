@@ -10,7 +10,6 @@ import { FlexModule } from '@ngbracket/ngx-layout/flex';
     selector: 'app-damage-calculator-modal',
     templateUrl: './damage-calculator-modal.component.html',
     styleUrls: ['./damage-calculator-modal.component.scss'],
-    standalone: true,
     imports: [MatDialogTitle, MatDialogContent, FlexModule, MatFormField, MatInput, MatDivider, MatButton]
 })
 export class DamageCalculatorModalComponent {

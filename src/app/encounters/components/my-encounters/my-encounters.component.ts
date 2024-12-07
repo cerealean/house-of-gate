@@ -20,7 +20,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-my-encounters',
     templateUrl: './my-encounters.component.html',
     styleUrls: ['./my-encounters.component.scss'],
-    standalone: true,
     imports: [MatCard, FlexModule, MatFormField, MatLabel, MatSelect, NgFor, MatOption, NgIf, MatIcon, MatButton, MonsterTablesComponent, RouterLink, DatePipe]
 })
 export class MyEncountersComponent implements OnInit {

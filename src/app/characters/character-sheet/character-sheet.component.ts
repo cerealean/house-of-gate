@@ -23,7 +23,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-character-sheet',
     templateUrl: './character-sheet.component.html',
     styleUrls: ['./character-sheet.component.scss'],
-    standalone: true,
     imports: [MatCard, NgIf, FlexModule, MatMenuTrigger, MatMenu, MatFormField, MatLabel, MatInput, FormsModule, MatIconButton, MatIcon, MatDivider, MatProgressBar]
 })
 export class CharacterSheetComponent implements OnInit, OnDestroy {

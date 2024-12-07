@@ -12,7 +12,6 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
     selector: 'app-new-campaign',
     templateUrl: './new-campaign.component.html',
     styleUrls: ['./new-campaign.component.scss'],
-    standalone: true,
     imports: [MatDialogTitle, MatDialogContent, MatFormField, MatLabel, MatInput, FormsModule, NgIf, MatDivider, MatDialogActions, MatButton, MatDialogClose]
 })
 export class NewCampaignComponent {

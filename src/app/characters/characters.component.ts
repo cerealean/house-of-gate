@@ -19,7 +19,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-characters',
     templateUrl: './characters.component.html',
     styleUrls: ['./characters.component.scss'],
-    standalone: true,
     imports: [MatCard, MatButton, MatDivider, NgIf, MatList, NgFor, MatListItem, MatMenuTrigger, MatListItemAvatar, MatIcon, MatListItemTitle, MatListItemLine, MatMenu, MatMenuItem, RouterLink, DatePipe]
 })
 export class CharactersComponent implements OnInit, OnDestroy {

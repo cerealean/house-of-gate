@@ -13,7 +13,6 @@ import { MatSidenavContainer, MatSidenav, MatSidenavContent } from '@angular/mat
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: true,
     imports: [
         MatSidenavContainer,
         FlexModule,
@@ -30,7 +29,7 @@ import { MatSidenavContainer, MatSidenav, MatSidenavContent } from '@angular/mat
         ToolbarComponent,
         RouterOutlet,
         FooterComponent,
-    ],
+    ]
 })
 export class AppComponent {
   constructor(

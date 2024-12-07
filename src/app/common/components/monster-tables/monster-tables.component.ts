@@ -14,7 +14,6 @@ import { MatIconButton } from '@angular/material/button';
     selector: 'app-monster-tables',
     templateUrl: './monster-tables.component.html',
     styleUrls: ['./monster-tables.component.scss'],
-    standalone: true,
     imports: [MatIconButton, MatMenuTrigger, MatIcon, MatTable, MatSort, NgFor, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatSortHeader, MatCellDef, MatCell, NgIf, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatPaginator, MatMenu, MatMenuItem]
 })
 export class MonsterTablesComponent implements OnInit, AfterViewInit, OnChanges {

@@ -18,7 +18,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-monster-filter-bar',
     templateUrl: './monster-filter-bar.component.html',
     styleUrls: ['./monster-filter-bar.component.scss'],
-    standalone: true,
     imports: [MatCard, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, MatSelect, NgFor, MatOption, MatCheckbox, MatButton]
 })
 export class MonsterFilterBarComponent implements OnInit, OnDestroy, AfterViewInit {

@@ -19,7 +19,6 @@ import { MatCard } from '@angular/material/card';
     selector: 'app-campaigns-landing',
     templateUrl: './campaigns-landing.component.html',
     styleUrls: ['./campaigns-landing.component.scss'],
-    standalone: true,
     imports: [MatCard, MatButton, NgIf, MatList, NgFor, MatListItem, MatMenuTrigger, MatListItemAvatar, MatIcon, MatListItemTitle, MatListItemLine, MatDivider, MatMenu, MatMenuItem, RouterLink, DatePipe]
 })
 export class CampaignsLandingComponent implements OnInit, OnDestroy {

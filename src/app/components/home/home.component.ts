@@ -7,7 +7,6 @@ import { MatCard } from '@angular/material/card';
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [MatCard, RouterLink]
 })
 export class HomeComponent {

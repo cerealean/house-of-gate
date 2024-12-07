@@ -25,7 +25,6 @@ import { NgIf } from '@angular/common';
     selector: 'app-encounter-generator',
     templateUrl: './encounter-generator.component.html',
     styleUrls: ['./encounter-generator.component.scss'],
-    standalone: true,
     imports: [NgIf, MonsterFilterBarComponent, MatCard, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, NumberOnlyDirective, MatSlider, MatSliderThumb, MatButton, MatIcon, MonsterTablesComponent]
 })
 export class EncounterGeneratorComponent implements OnDestroy, OnInit {

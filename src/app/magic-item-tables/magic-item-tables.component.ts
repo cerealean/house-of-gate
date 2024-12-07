@@ -5,28 +5,27 @@ import { ItemWithDiceRoll, MIT_A, MIT_B, MIT_C, MIT_D, MIT_E } from '../data/sta
 import { MatFormField, MatLabel, MatOption, MatSelect } from '@angular/material/select';
 
 @Component({
-  selector: 'app-magic-item-tables',
-  standalone: true,
-  imports: [
-    NgIf,
-    NgFor,
-    MatTable,
-    MatCell,
-    MatCellDef,
-    MatColumnDef,
-    MatHeaderCell,
-    MatHeaderCellDef,
-    MatHeaderRow,
-    MatHeaderRowDef,
-    MatRow,
-    MatRowDef,
-    MatSelect,
-    MatOption,
-    MatFormField,
-    MatLabel
-  ],
-  templateUrl: './magic-item-tables.component.html',
-  styleUrl: './magic-item-tables.component.scss'
+    selector: 'app-magic-item-tables',
+    imports: [
+        NgIf,
+        NgFor,
+        MatTable,
+        MatCell,
+        MatCellDef,
+        MatColumnDef,
+        MatHeaderCell,
+        MatHeaderCellDef,
+        MatHeaderRow,
+        MatHeaderRowDef,
+        MatRow,
+        MatRowDef,
+        MatSelect,
+        MatOption,
+        MatFormField,
+        MatLabel
+    ],
+    templateUrl: './magic-item-tables.component.html',
+    styleUrl: './magic-item-tables.component.scss'
 })
 export class MagicItemTablesComponent implements OnInit {
   public readonly dataSource = new MatTableDataSource<ItemWithDiceRoll>([]);

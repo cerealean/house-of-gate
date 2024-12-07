@@ -7,7 +7,6 @@ import { MatButton } from '@angular/material/button';
     selector: 'app-delete-encounter-dialog',
     templateUrl: './delete-encounter-dialog.component.html',
     styleUrls: ['./delete-encounter-dialog.component.scss'],
-    standalone: true,
     imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatButton]
 })
 export class DeleteEncounterDialogComponent {

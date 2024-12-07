@@ -6,7 +6,6 @@ import { MatCard } from '@angular/material/card';
     templateUrl: './changelog.component.html',
     styleUrls: ['./changelog.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [MatCard]
 })
 export class ChangelogComponent {

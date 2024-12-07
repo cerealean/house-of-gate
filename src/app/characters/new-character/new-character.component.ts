@@ -17,7 +17,6 @@ import { FlexModule } from '@ngbracket/ngx-layout/flex';
     selector: 'app-new-character',
     templateUrl: './new-character.component.html',
     styleUrls: ['./new-character.component.scss'],
-    standalone: true,
     imports: [MatDialogTitle, MatDialogContent, FlexModule, MatFormField, MatLabel, MatInput, FormsModule, MatError, NgIf, MatSelect, NgFor, MatOption, MatDivider, MatDialogActions, MatButton, MatDialogClose]
 })
 export class NewCharacterComponent implements OnInit {
