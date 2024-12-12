@@ -1,4 +1,4 @@
-interface Ingredient {
+export interface Ingredient {
   Name: string;
   Combat: number;
   Utility: number;

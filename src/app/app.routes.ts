@@ -68,6 +68,10 @@ export const routes: Routes = [
       ).then((c) => c.PrintableSpellListGeneratorComponent),
   },
   {
+    path: 'potion-making',
+    loadComponent: () => import('./potion-making/potion-making.component').then(c => c.PotionMakingComponent)
+  },
+  {
     path: 'home',
     component: HomeComponent,
   },

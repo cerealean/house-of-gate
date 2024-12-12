@@ -1,0 +1,37 @@
+<mat-autocomplete #auto="matAutocomplete" [displayWith]="ingredientDisplay">
+    @for (option of ingredients(); track option.Name) {
+    <mat-option [value]="option" style="border-bottom: 1px solid;">
+        <span>{{option.Name}}</span><br />
+        <small>{{option.Rarity}} Ingredient</small><br />
+        <small>
+            <em>C:</em> {{ option.Combat}} |
+            <em>U:</em> {{ option.Utility }} |
+            <em>W:</em> {{ option.Whimsy }}
+        </small>
+    </mat-option>
+    }
+</mat-autocomplete>
+<mat-card appearance="outlined" style="min-height: 80vh;">
+    <div fxLayout="column">
+        <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px" fxFlex>
+            <mat-form-field fxFlex="30%">
+                <mat-label>Ingredient #1</mat-label>
+                <input matInput type="text" spellcheck="false" [matAutocomplete]="auto"
+                    [(ngModel)]="selectedIngredient1">
+            </mat-form-field>
+            <mat-form-field fxFlex="30%">
+                <mat-label>Ingredient #2</mat-label>
+                <input matInput type="text" spellcheck="false" [matAutocomplete]="auto"
+                    [(ngModel)]="selectedIngredient2">
+            </mat-form-field>
+            <mat-form-field fxFlex="30%">
+                <mat-label>Ingredient #3</mat-label>
+                <input matInput type="text" spellcheck="false" [matAutocomplete]="auto"
+                    [(ngModel)]="selectedIngredient3">
+            </mat-form-field>
+            <br />
+            <br />
+            
+        </div>
+    </div>
+</mat-card>
