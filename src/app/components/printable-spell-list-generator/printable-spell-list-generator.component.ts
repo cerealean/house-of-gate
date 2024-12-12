@@ -1,4 +1,3 @@
-import { AsyncPipe, TitleCasePipe } from "@angular/common";
 import {
   Component,
   computed,
@@ -54,9 +53,6 @@ interface Config {
     templateUrl: "./printable-spell-list-generator.component.html",
     styleUrl: "./printable-spell-list-generator.component.scss",
     imports: [
-        AsyncPipe,
-        OrdinalPipe,
-        TitleCasePipe,
         FlexLayoutModule,
         SpellCardComponent,
         MatCard,

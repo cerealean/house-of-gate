@@ -1,4 +1,3 @@
-import { NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatCell, MatCellDef, MatColumnDef, MatHeaderCell, MatHeaderCellDef, MatHeaderRow, MatHeaderRowDef, MatRow, MatRowDef, MatTable, MatTableDataSource } from '@angular/material/table';
 import { ItemWithDiceRoll, MIT_A, MIT_B, MIT_C, MIT_D, MIT_E } from '../data/static/item-tables';
@@ -7,8 +6,6 @@ import { MatFormField, MatLabel, MatOption, MatSelect } from '@angular/material/
 @Component({
     selector: 'app-magic-item-tables',
     imports: [
-        NgIf,
-        NgFor,
         MatTable,
         MatCell,
         MatCellDef,

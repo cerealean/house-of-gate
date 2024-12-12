@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
