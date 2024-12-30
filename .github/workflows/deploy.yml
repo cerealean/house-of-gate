@@ -26,7 +26,7 @@ jobs:
       - name: deploy project to server
         uses: appleboy/scp-action@v0.1.7
         with:
-          source: "./dist/house-of-gate/browser/"
+          source: "./dist/house-of-gate/"
           target: ${{ secrets.DEPLOY_TARGET }}
           strip_components: 3 # this is important I'm pretty sure
           rm: true #clean target folder before copying
