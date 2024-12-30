@@ -1,115 +1,179 @@
 <mat-card appearance="outlined" style="min-height: 80vh">
-    <div fxLayout="column">
-        <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-            <mat-form-field fxFlex>
-                <mat-label>Ingredient #1</mat-label>
-                <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng1"
-                    [(ngModel)]="selectedIngredient1">
-                <mat-autocomplete #autoIng1="matAutocomplete" [displayWith]="ingredientDisplay">
-                    @for (option of ingredients(); track option.Name) {
-                    <mat-option [value]="option" style="border-bottom: 1px solid;">
-                        <strong>{{option.Name}}</strong><br />
-                        <small>
-                            <em>
-                                {{option.Rarity}} Ingredient
-                            </em>
-                        </small><br />
-                        <small>
-                            <strong>C:</strong> {{ option.Combat}} |
-                            <strong>U:</strong> {{ option.Utility }} |
-                            <strong>W:</strong> {{ option.Whimsy }}
-                        </small>
-                    </mat-option>
-                    }
-                </mat-autocomplete>
-            </mat-form-field>
-            <mat-form-field fxFlex>
-                <mat-label>Ingredient #2</mat-label>
-                <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng2"
-                    [(ngModel)]="selectedIngredient2">
-                <mat-autocomplete #autoIng2="matAutocomplete" [displayWith]="ingredientDisplay">
-                    @for (option of ingredients(); track option.Name) {
-                    <mat-option [value]="option" style="border-bottom: 1px solid;">
-                        <strong>{{option.Name}}</strong><br />
-                        <small>
-                            <em>
-                                {{option.Rarity}} Ingredient
-                            </em>
-                        </small><br />
-                        <small>
-                            <strong>C:</strong> {{ option.Combat}} |
-                            <strong>U:</strong> {{ option.Utility }} |
-                            <strong>W:</strong> {{ option.Whimsy }}
-                        </small>
-                    </mat-option>
-                    }
-                </mat-autocomplete>
-            </mat-form-field>
-            <mat-form-field fxFlex>
-                <mat-label>Ingredient #3</mat-label>
-                <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng3"
-                    [(ngModel)]="selectedIngredient3">
-                <mat-autocomplete #autoIng3="matAutocomplete" [displayWith]="ingredientDisplay">
-                    @for (option of ingredients(); track option.Name) {
-                    <mat-option [value]="option" style="border-bottom: 1px solid;">
-                        <strong>{{option.Name}}</strong><br />
-                        <small>
-                            <em>
-                                {{option.Rarity}} Ingredient
-                            </em>
-                        </small><br />
-                        <small>
-                            <strong>C:</strong> {{ option.Combat}} |
-                            <strong>U:</strong> {{ option.Utility }} |
-                            <strong>W:</strong> {{ option.Whimsy }}
-                        </small>
-                    </mat-option>
-                    }
-                </mat-autocomplete>
-            </mat-form-field>
-        </div>
-        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-            <div fxLayout="column" fxFlex="15%">
-                <div fxLayout="row wrap" fxFlex>
-                    <mat-list role="list" fxFlex>
-                        <mat-list-item role="listitem" [class.highest-value-type]="highestValueTypes()?.maxValue === combatTotal()">
-                            <strong>Combat:</strong>&nbsp;
-                            <span>{{ combatTotal() }}</span>
-                        </mat-list-item>
-                        <mat-list-item role="listitem" [class.highest-value-type]="highestValueTypes()?.maxValue === utilityTotal()">
-                            <strong>Utility:</strong>&nbsp;
-                            <span>{{ utilityTotal() }}</span>
-                        </mat-list-item>
-                        <mat-list-item role="listitem" [class.highest-value-type]="highestValueTypes()?.maxValue === whimsyTotal()">
-                            <strong>Whimsy:</strong>&nbsp;
-                            <span>{{ whimsyTotal() }}</span>
-                        </mat-list-item>
-                    </mat-list>
-                </div>
-            </div>
-            <div fxLayout="column" fxFlex>
-                @for(potion of resultingPotions(); track potion.Name) {
-                <div fxLayout="row" fxLayoutGap="2%">
-                    <mat-card appearance="outlined">
-                        <mat-card-header>
-                            <mat-icon mat-card-avatar style="transform: scale(2)">science</mat-icon>
-                            <mat-card-title>{{potion.Name}}</mat-card-title>
-                            <mat-card-subtitle>{{ potion.Rarity }}&nbsp;{{ potion.Type
-                                }}&nbsp;Potion</mat-card-subtitle>
-                        </mat-card-header>
-                        <mat-card-content>
-                            <p>
-                                {{ potion.Description }}
-                            </p>
-                            <em>{{ potion.Source }}</em>
-                        </mat-card-content>
-                        <mat-card-footer>
 
-                        </mat-card-footer>
-                    </mat-card>
-                </div>
-            }
+    <mat-tab-group fxLayout="column">
+        <mat-tab label="Potion Brewing">
+            <br />
+            <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+                <mat-form-field fxFlex>
+                    <mat-label>Ingredient #1</mat-label>
+                    <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng1"
+                        [(ngModel)]="selectedIngredient1">
+                    <mat-autocomplete #autoIng1="matAutocomplete" [displayWith]="ingredientDisplay">
+                        @for (option of filteredIngredientsList1(); track option.Name) {
+                        <mat-option [value]="option" style="border-bottom: 1px solid;">
+                            <strong>{{option.Name}}</strong><br />
+                            <small>
+                                <em>
+                                    {{option.Rarity}} Ingredient
+                                </em>
+                            </small><br />
+                            <small>
+                                <strong>C:</strong> {{ option.Combat}} |
+                                <strong>U:</strong> {{ option.Utility }} |
+                                <strong>W:</strong> {{ option.Whimsy }}
+                            </small>
+                        </mat-option>
+                        }
+                    </mat-autocomplete>
+                </mat-form-field>
+                <mat-form-field fxFlex>
+                    <mat-label>Ingredient #2</mat-label>
+                    <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng2"
+                        [(ngModel)]="selectedIngredient2">
+                    <mat-autocomplete #autoIng2="matAutocomplete" [displayWith]="ingredientDisplay">
+                        @for (option of filteredIngredientsList2(); track option.Name) {
+                        <mat-option [value]="option" style="border-bottom: 1px solid;">
+                            <strong>{{option.Name}}</strong><br />
+                            <small>
+                                <em>
+                                    {{option.Rarity}} Ingredient
+                                </em>
+                            </small><br />
+                            <small>
+                                <strong>C:</strong> {{ option.Combat}} |
+                                <strong>U:</strong> {{ option.Utility }} |
+                                <strong>W:</strong> {{ option.Whimsy }}
+                            </small>
+                        </mat-option>
+                        }
+                    </mat-autocomplete>
+                </mat-form-field>
+                <mat-form-field fxFlex>
+                    <mat-label>Ingredient #3</mat-label>
+                    <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng3"
+                        [(ngModel)]="selectedIngredient3">
+                    <mat-autocomplete #autoIng3="matAutocomplete" [displayWith]="ingredientDisplay">
+                        @for (option of filteredIngredientsList3(); track option.Name) {
+                        <mat-option [value]="option" style="border-bottom: 1px solid;">
+                            <strong>{{option.Name}}</strong><br />
+                            <small>
+                                <em>
+                                    {{option.Rarity}} Ingredient
+                                </em>
+                            </small><br />
+                            <small>
+                                <strong>C:</strong> {{ option.Combat}} |
+                                <strong>U:</strong> {{ option.Utility }} |
+                                <strong>W:</strong> {{ option.Whimsy }}
+                            </small>
+                        </mat-option>
+                        }
+                    </mat-autocomplete>
+                </mat-form-field>
             </div>
-        </div>
-    </div>
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+                <div fxLayout="column" fxFlex="15%">
+                    <div fxLayout="row wrap" fxFlex>
+                        <mat-list role="list" fxFlex>
+                            <mat-list-item role="listitem"
+                                [class.highest-value-type]="highestValueTypes()?.maxValue === combatTotal()">
+                                <strong>Combat:</strong>&nbsp;
+                                <span>{{ combatTotal() }}</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem"
+                                [class.highest-value-type]="highestValueTypes()?.maxValue === utilityTotal()">
+                                <strong>Utility:</strong>&nbsp;
+                                <span>{{ utilityTotal() }}</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem"
+                                [class.highest-value-type]="highestValueTypes()?.maxValue === whimsyTotal()">
+                                <strong>Whimsy:</strong>&nbsp;
+                                <span>{{ whimsyTotal() }}</span>
+                            </mat-list-item>
+                        </mat-list>
+                    </div>
+                </div>
+                <div fxLayout="column" fxFlex>
+                    @for(potion of resultingPotions(); track potion.Name) {
+                    <div fxLayout="row" fxLayoutGap="2%">
+                        <mat-card appearance="outlined">
+                            <mat-card-header>
+                                <mat-icon mat-card-avatar style="transform: scale(2)">science</mat-icon>
+                                <mat-card-title>{{potion.Name}}</mat-card-title>
+                                <mat-card-subtitle>{{ potion.Rarity }}&nbsp;{{ potion.Type
+                                    }}&nbsp;Potion</mat-card-subtitle>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>
+                                    {{ potion.Description }}
+                                </p>
+                                <em>{{ potion.Source }}</em>
+                            </mat-card-content>
+                            <mat-card-footer>
+
+                            </mat-card-footer>
+                        </mat-card>
+                    </div>
+                    }
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Ingredients">
+            <br />
+            <div fxLayout="column" fxFlex>
+                <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+                    <mat-form-field fxFlex>
+                        <mat-label>Filter Ingredients</mat-label>
+                        <input matInput type="text" spellcheck="false" [(ngModel)]="ingredientFilter" />
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap.lt-md="3px" fxLayoutGap="2%">
+                    @for(ingredient of filteredIngredients(); track ingredient.Name) {
+                    <potion-making-display-card fxFlex="30%" icon="energy_savings_leaf" [title]="ingredient.Name"
+                        subtitle="{{ ingredient.Rarity }}&nbsp;Ingredient">
+                        <table style="width: 100%; text-align: center;">
+                            <thead>
+                                <th>Combat</th>
+                                <th>Utility</th>
+                                <th>Whimsy</th>
+                            </thead>
+                            <tbody>
+                                <td>{{ ingredient.Combat }}</td>
+                                <td>{{ ingredient.Utility }}</td>
+                                <td>{{ ingredient.Whimsy }}</td>
+                            </tbody>
+                        </table>
+                        <br />
+                        <p>
+                            {{ ingredient.Description }}
+                        </p>
+                        <em>{{ ingredient.Source }}</em>
+                    </potion-making-display-card>
+                    }
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Potions">
+            <br />
+            <div fxLayout="column" fxFlex>
+                <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+                    <mat-form-field fxFlex>
+                        <mat-label>Filter Potions</mat-label>
+                        <input matInput type="text" spellcheck="false" [(ngModel)]="potionFilter" />
+                    </mat-form-field>
+                </div>
+                <div fxLayout="column" fxLayoutGap="4px">
+                    @for(potion of filteredPotions(); track potion.Name) {
+                    <potion-making-display-card fxFlex="100%" icon="science" [title]="potion.Name"
+                        subtitle="{{ potion.Rarity }}&nbsp;{{ potion.Type }}&nbsp;Potion">
+                        <p>
+                            {{ potion.Description }}
+                        </p>
+                        <em>{{ potion.Source }}</em>
+                    </potion-making-display-card>
+                    }
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
 </mat-card>
