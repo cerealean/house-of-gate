@@ -4,8 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { Ingredient, ingredients } from '../data/static/obojima/ingredients';
-import { potions } from '../data/static/obojima/potions';
+import { type Ingredient } from '../data/static/obojima/ingredients';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { MatListModule } from '@angular/material/list';
@@ -14,6 +13,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { IngredientAutocompleteInputComponent } from "./ingredient-autocomplete-input/ingredient-autocomplete-input.component";
 import { IngredientsListComponent } from "./ingredients-list/ingredients-list.component";
 import { PotionsListComponent } from "./potions-list/potions-list.component";
+import { PotionsMakingUtilitiesService } from './potions-making-utilities.service';
 
 @Component({
   selector: 'app-potion-making',
@@ -32,73 +32,26 @@ import { PotionsListComponent } from "./potions-list/potions-list.component";
     IngredientAutocompleteInputComponent,
     IngredientsListComponent,
     PotionsListComponent
-],
+  ],
   templateUrl: './potion-making.component.html',
   styleUrl: './potion-making.component.scss'
 })
 export class PotionMakingComponent {
-  readonly ingredients = signal(ingredients).asReadonly();
-  readonly potions = signal(potions).asReadonly();
+  readonly selectedIngredient1 = signal<Ingredient | undefined>(this.potionUtilitiesService.getRandomIngredient());
+  readonly selectedIngredient2 = signal<Ingredient | undefined>(this.potionUtilitiesService.getRandomIngredient());
+  readonly selectedIngredient3 = signal<Ingredient | undefined>(this.potionUtilitiesService.getRandomIngredient());
 
-  readonly selectedIngredient1 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
-  readonly selectedIngredient2 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
-  readonly selectedIngredient3 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
-  readonly allSelectedIngredients = computed(() => ([
-    this.selectedIngredient1(),
-    this.selectedIngredient2(),
-    this.selectedIngredient3()
-  ]));
+  readonly resultingPotions = computed(() => this.potionUtilitiesService.brewPotionsFromIngredients(this.selectedIngredient1()!, this.selectedIngredient2()!, this.selectedIngredient3()!));
 
-  readonly utilityTotal = computed(() => this.allSelectedIngredients()
-    .map(ingredient => ingredient?.Utility ?? 0)
-    .reduce((sum, num) => sum + num, 0));
-  readonly combatTotal = computed(() => this.allSelectedIngredients()
-    .map(ingredient => ingredient?.Combat ?? 0)
-    .reduce((sum, num) => sum + num, 0));
-  readonly whimsyTotal = computed(() => this.allSelectedIngredients()
-    .map(ingredient => ingredient?.Whimsy ?? 0)
-    .reduce((sum, num) => sum + num, 0));
-  readonly highestValueTypes = computed(() => {
-    if (!this.selectedIngredient1() || !this.selectedIngredient2() || !this.selectedIngredient3()) {
-      return;
-    }
+  readonly isCombatHighestScore = computed(() => this.resultingPotions()?.typesWithMaxValue?.indexOf('combat') !== -1);
+  readonly isUtilityHighestScore = computed(() => this.resultingPotions()?.typesWithMaxValue?.indexOf('utility') !== -1);
+  readonly isWhimsyHighestScore = computed(() => this.resultingPotions()?.typesWithMaxValue?.indexOf('whimsical') !== -1);
 
-    return this.getKeysWithHighestValue();
-  })
+  readonly combatScore = computed(() => this.resultingPotions()?.scores.combat ?? 0);
+  readonly utilityScore = computed(() => this.resultingPotions()?.scores.utility ?? 0);
+  readonly whimsyScore = computed(() => this.resultingPotions()?.scores.whimsical ?? 0);
 
-  readonly resultingPotions = computed(() => {
-    if (!this.selectedIngredient1() || !this.selectedIngredient2() || !this.selectedIngredient3()) {
-      return;
-    }
-    const highestValueResult = this.highestValueTypes();
-    const highestKeys = highestValueResult!.keysWithMaxValue;
-    const potions = highestKeys.flatMap(key => this.potions()[key].filter(potion => potion.Number === highestValueResult!.maxValue))
+  constructor(private readonly potionUtilitiesService: PotionsMakingUtilitiesService) { }
 
-    return potions;
-  });
 
-  private getKeysWithHighestValue() {
-    const keyValuePairs = {
-      whimsical: this.whimsyTotal(),
-      combat: this.combatTotal(),
-      utility: this.utilityTotal()
-    } as Record<string, number>;
-
-    // Find the highest value in the object
-    const maxValue = Math.max(...Object.values(keyValuePairs));
-
-    // Get all keys that have the highest value
-    const keysWithMaxValue = Object
-      .keys(keyValuePairs)
-      .filter(key => keyValuePairs[key] === maxValue) as ('combat' | 'utility' | 'whimsical')[];
-
-    return {
-      keysWithMaxValue,
-      maxValue
-    };
-  }
-
-  private getRandomItemFromArray<T>(arr: T[]): T {
-    return arr[Math.floor(Math.random() * arr.length)];
-  }
 }

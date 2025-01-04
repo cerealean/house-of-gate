@@ -13,97 +13,31 @@
                 <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #3"
                     [initialSelectedIngredient]="selectedIngredient3()"
                     (optionSelected)="selectedIngredient3.set($event)"></potion-making-ingredient-autocomplete-input>
-                <!-- <mat-form-field fxFlex>
-                    <mat-label>Ingredient #1</mat-label>
-                    <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng1"
-                        [(ngModel)]="selectedIngredient1">
-                    <mat-autocomplete #autoIng1="matAutocomplete" [displayWith]="ingredientDisplay">
-                        @for (option of filteredIngredientsList1(); track option.Name) {
-                        <mat-option [value]="option" style="border-bottom: 1px solid;">
-                            <strong>{{option.Name}}</strong><br />
-                            <small>
-                                <em>
-                                    {{option.Rarity}} Ingredient
-                                </em>
-                            </small><br />
-                            <small>
-                                <strong>C:</strong> {{ option.Combat}} |
-                                <strong>U:</strong> {{ option.Utility }} |
-                                <strong>W:</strong> {{ option.Whimsy }}
-                            </small>
-                        </mat-option>
-                        }
-                    </mat-autocomplete>
-                </mat-form-field>
-                <mat-form-field fxFlex>
-                    <mat-label>Ingredient #2</mat-label>
-                    <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng2"
-                        [(ngModel)]="selectedIngredient2">
-                    <mat-autocomplete #autoIng2="matAutocomplete" [displayWith]="ingredientDisplay">
-                        @for (option of filteredIngredientsList2(); track option.Name) {
-                        <mat-option [value]="option" style="border-bottom: 1px solid;">
-                            <strong>{{option.Name}}</strong><br />
-                            <small>
-                                <em>
-                                    {{option.Rarity}} Ingredient
-                                </em>
-                            </small><br />
-                            <small>
-                                <strong>C:</strong> {{ option.Combat}} |
-                                <strong>U:</strong> {{ option.Utility }} |
-                                <strong>W:</strong> {{ option.Whimsy }}
-                            </small>
-                        </mat-option>
-                        }
-                    </mat-autocomplete>
-                </mat-form-field>
-                <mat-form-field fxFlex>
-                    <mat-label>Ingredient #3</mat-label>
-                    <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng3"
-                        [(ngModel)]="selectedIngredient3">
-                    <mat-autocomplete #autoIng3="matAutocomplete" [displayWith]="ingredientDisplay">
-                        @for (option of filteredIngredientsList3(); track option.Name) {
-                        <mat-option [value]="option" style="border-bottom: 1px solid;">
-                            <strong>{{option.Name}}</strong><br />
-                            <small>
-                                <em>
-                                    {{option.Rarity}} Ingredient
-                                </em>
-                            </small><br />
-                            <small>
-                                <strong>C:</strong> {{ option.Combat}} |
-                                <strong>U:</strong> {{ option.Utility }} |
-                                <strong>W:</strong> {{ option.Whimsy }}
-                            </small>
-                        </mat-option>
-                        }
-                    </mat-autocomplete>
-                </mat-form-field> -->
             </div>
             <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
                 <div fxLayout="column" fxFlex="15%">
                     <div fxLayout="row wrap" fxFlex>
                         <mat-list role="list" fxFlex>
                             <mat-list-item role="listitem"
-                                [class.highest-value-type]="highestValueTypes()?.maxValue === combatTotal()">
+                                [class.highest-value-type]="isCombatHighestScore()">
                                 <strong>Combat:</strong>&nbsp;
-                                <span>{{ combatTotal() }}</span>
+                                <span>{{ combatScore() }}</span>
                             </mat-list-item>
                             <mat-list-item role="listitem"
-                                [class.highest-value-type]="highestValueTypes()?.maxValue === utilityTotal()">
+                                [class.highest-value-type]="isUtilityHighestScore()">
                                 <strong>Utility:</strong>&nbsp;
-                                <span>{{ utilityTotal() }}</span>
+                                <span>{{ utilityScore() }}</span>
                             </mat-list-item>
                             <mat-list-item role="listitem"
-                                [class.highest-value-type]="highestValueTypes()?.maxValue === whimsyTotal()">
+                                [class.highest-value-type]="isWhimsyHighestScore()">
                                 <strong>Whimsy:</strong>&nbsp;
-                                <span>{{ whimsyTotal() }}</span>
+                                <span>{{ whimsyScore() }}</span>
                             </mat-list-item>
                         </mat-list>
                     </div>
                 </div>
                 <div fxLayout="column" fxFlex>
-                    @for(potion of resultingPotions(); track potion.Name) {
+                    @for(potion of resultingPotions()?.potions ?? []; track potion.Name) {
                     <div fxLayout="row" fxLayoutGap="2%">
                         <mat-card appearance="outlined">
                             <mat-card-header>

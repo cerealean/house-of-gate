@@ -17,7 +17,7 @@ export class IngredientAutocompleteInputComponent implements OnInit {
 
   readonly label = input.required<string>();
   readonly initialSelectedIngredient = input<Ingredient>();
-  readonly optionSelected = output<Ingredient>();
+  readonly optionSelected = output<Ingredient | undefined>();
   readonly matchingIngredients = output<Ingredient[]>();
 
   readonly inputValue = signal<string | Ingredient>('');
@@ -48,6 +48,13 @@ export class IngredientAutocompleteInputComponent implements OnInit {
     const selectedIngredient = event.option.value as Ingredient;
     this.inputValue.set(selectedIngredient);
     this.optionSelected.emit(selectedIngredient);
+  }
+
+  emitIfOptionCleared(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    if(!this.isIngredient(value)) {
+      this.optionSelected.emit(undefined);
+    }
   }
 
   private isIngredient(val?: Ingredient | string | null): val is Ingredient {

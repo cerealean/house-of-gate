@@ -1,7 +1,7 @@
 <mat-form-field fxFlex>
     <mat-label>{{ label() }}</mat-label>
     <input #input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng"
-         [(ngModel)]="inputValue" />
+         [(ngModel)]="inputValue" (input)="emitIfOptionCleared($event)" />
     <mat-autocomplete (optionSelected)="ingredientSelected($event)" #autoIng="matAutocomplete" [displayWith]="ingredientDisplay">
         @for (option of filteredIngredients(); track option.Name) {
         <mat-option [value]="option" style="border-bottom: 1px solid;">
