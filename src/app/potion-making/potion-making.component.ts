@@ -12,6 +12,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DisplayCardComponent } from './display-card/display-card.component';
+import { IngredientAutocompleteInputComponent } from "./ingredient-autocomplete-input/ingredient-autocomplete-input.component";
 
 @Component({
   selector: 'app-potion-making',
@@ -27,8 +28,9 @@ import { DisplayCardComponent } from './display-card/display-card.component';
     MatIconModule,
     MatCardModule,
     MatTabsModule,
-    DisplayCardComponent
-  ],
+    DisplayCardComponent,
+    IngredientAutocompleteInputComponent
+],
   templateUrl: './potion-making.component.html',
   styleUrl: './potion-making.component.scss'
 })
@@ -44,11 +46,8 @@ export class PotionMakingComponent {
   readonly filteredPotions = computed(() => this.flatPotions().filter(potion => potion.Name.toLowerCase().includes(this.potionFilter().toLowerCase()) || potion.Description.toLowerCase().includes(this.potionFilter().toLowerCase())));
 
   readonly selectedIngredient1 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
-  readonly filteredIngredientsList1 = computed(() => this.ingredients().filter(ingredient => ingredient.Name.toLowerCase().includes(this.selectedIngredient1()?.Name?.toLowerCase() ?? '') || ingredient.Description.toLowerCase().includes(this.selectedIngredient1()?.Name?.toLowerCase() ?? '')));
   readonly selectedIngredient2 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
-  readonly filteredIngredientsList2 = computed(() => this.ingredients().filter(ingredient => ingredient.Name.toLowerCase().includes(this.selectedIngredient2()?.Name?.toLowerCase() ?? '') || ingredient.Description.toLowerCase().includes(this.selectedIngredient2()?.Name?.toLowerCase() ?? '')));
   readonly selectedIngredient3 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
-  readonly filteredIngredientsList3 = computed(() => this.ingredients().filter(ingredient => ingredient.Name.toLowerCase().includes(this.selectedIngredient3()?.Name?.toLowerCase() ?? '') || ingredient.Description.toLowerCase().includes(this.selectedIngredient3()?.Name?.toLowerCase() ?? '')));
   readonly allSelectedIngredients = computed(() => ([
     this.selectedIngredient1(),
     this.selectedIngredient2(),
@@ -82,10 +81,6 @@ export class PotionMakingComponent {
 
     return potions;
   });
-
-  ingredientDisplay(ingredient?: Ingredient) {
-    return ingredient?.Name ?? '';
-  }
 
   private getKeysWithHighestValue() {
     const keyValuePairs = {

@@ -4,7 +4,16 @@
         <mat-tab label="Potion Brewing">
             <br />
             <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-                <mat-form-field fxFlex>
+                <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #1"
+                    [initialSelectedIngredient]="selectedIngredient1()"
+                    (optionSelected)="selectedIngredient1.set($event)"></potion-making-ingredient-autocomplete-input>
+                <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #2"
+                    [initialSelectedIngredient]="selectedIngredient2()"
+                    (optionSelected)="selectedIngredient2.set($event)"></potion-making-ingredient-autocomplete-input>
+                <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #3"
+                    [initialSelectedIngredient]="selectedIngredient3()"
+                    (optionSelected)="selectedIngredient3.set($event)"></potion-making-ingredient-autocomplete-input>
+                <!-- <mat-form-field fxFlex>
                     <mat-label>Ingredient #1</mat-label>
                     <input matInput type="text" spellcheck="false" [matAutocomplete]="autoIng1"
                         [(ngModel)]="selectedIngredient1">
@@ -69,7 +78,7 @@
                         </mat-option>
                         }
                     </mat-autocomplete>
-                </mat-form-field>
+                </mat-form-field> -->
             </div>
             <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
                 <div fxLayout="column" fxFlex="15%">
