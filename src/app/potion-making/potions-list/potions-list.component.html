@@ -1,0 +1,19 @@
+<div fxLayout="column" fxFlex>
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+        <mat-form-field fxFlex>
+            <mat-label>Filter Potions</mat-label>
+            <input matInput type="text" spellcheck="false" [(ngModel)]="potionFilter" />
+        </mat-form-field>
+    </div>
+    <div fxLayout="column" fxLayoutGap="4px">
+        @for(potion of filteredPotions(); track potion.Name) {
+        <potion-making-display-card fxFlex="100%" icon="science" [title]="potion.Name"
+            subtitle="{{ potion.Rarity }}&nbsp;{{ potion.Type }}&nbsp;Potion">
+            <p>
+                {{ potion.Description }}
+            </p>
+            <em>{{ potion.Source }}</em>
+        </potion-making-display-card>
+        }
+    </div>
+</div>

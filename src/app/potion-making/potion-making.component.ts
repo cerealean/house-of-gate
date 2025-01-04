@@ -11,8 +11,9 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
-import { DisplayCardComponent } from './display-card/display-card.component';
 import { IngredientAutocompleteInputComponent } from "./ingredient-autocomplete-input/ingredient-autocomplete-input.component";
+import { IngredientsListComponent } from "./ingredients-list/ingredients-list.component";
+import { PotionsListComponent } from "./potions-list/potions-list.component";
 
 @Component({
   selector: 'app-potion-making',
@@ -28,8 +29,9 @@ import { IngredientAutocompleteInputComponent } from "./ingredient-autocomplete-
     MatIconModule,
     MatCardModule,
     MatTabsModule,
-    DisplayCardComponent,
-    IngredientAutocompleteInputComponent
+    IngredientAutocompleteInputComponent,
+    IngredientsListComponent,
+    PotionsListComponent
 ],
   templateUrl: './potion-making.component.html',
   styleUrl: './potion-making.component.scss'
@@ -37,13 +39,6 @@ import { IngredientAutocompleteInputComponent } from "./ingredient-autocomplete-
 export class PotionMakingComponent {
   readonly ingredients = signal(ingredients).asReadonly();
   readonly potions = signal(potions).asReadonly();
-  readonly flatPotions = computed(() => this.potions().combat.concat(this.potions().utility).concat(this.potions().whimsical).concat(this.potions().custom));
-
-  readonly ingredientFilter = signal('');
-  readonly filteredIngredients = computed(() => this.ingredients().filter(ingredient => ingredient.Name.toLowerCase().includes(this.ingredientFilter().toLowerCase()) || ingredient.Description.toLowerCase().includes(this.ingredientFilter().toLowerCase())));
-
-  readonly potionFilter = signal('');
-  readonly filteredPotions = computed(() => this.flatPotions().filter(potion => potion.Name.toLowerCase().includes(this.potionFilter().toLowerCase()) || potion.Description.toLowerCase().includes(this.potionFilter().toLowerCase())));
 
   readonly selectedIngredient1 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));
   readonly selectedIngredient2 = signal<Ingredient | undefined>(this.getRandomItemFromArray(this.ingredients()));

@@ -18,18 +18,20 @@ export class IngredientAutocompleteInputComponent implements OnInit {
   readonly label = input.required<string>();
   readonly initialSelectedIngredient = input<Ingredient>();
   readonly optionSelected = output<Ingredient>();
+  readonly matchingIngredients = output<Ingredient[]>();
 
   readonly inputValue = signal<string | Ingredient>('');
 
   readonly filteredIngredients = computed<Ingredient[]>(() => {
+    let retVal = this.ingredients();
     if (typeof this.inputValue() === 'string') {
-      console.log(this.inputValue());
-      return this.ingredients().filter(ingredient => this.doStringsMatchCaseInsensitive((this.inputValue() as string), ingredient.Name));
+      retVal = this.ingredients().filter(ingredient => this.doStringsMatchCaseInsensitive((this.inputValue() as string), ingredient.Name));
     } else if (this.isIngredient(this.inputValue())) {
-      return [this.ingredients().find(ingredient => ingredient.Name === (this.inputValue() as Ingredient).Name)] as Ingredient[];
+      retVal = [this.ingredients().find(ingredient => ingredient.Name === (this.inputValue() as Ingredient).Name)] as Ingredient[];
     }
 
-    return this.ingredients();
+    this.matchingIngredients.emit(retVal);
+    return retVal;
   });
 
   ngOnInit(): void {
