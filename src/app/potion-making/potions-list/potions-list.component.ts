@@ -5,10 +5,11 @@ import { potions } from 'src/app/data/static/obojima/potions';
 import { DisplayCardComponent } from '../display-card/display-card.component';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'potion-making-potions-list',
-  imports: [MatFormFieldModule, MatInputModule, FlexLayoutModule, DisplayCardComponent, FormsModule],
+  imports: [MatFormFieldModule, MatInputModule, FlexLayoutModule, DisplayCardComponent, FormsModule, MatIconModule],
   templateUrl: './potions-list.component.html',
   styleUrl: './potions-list.component.scss'
 })

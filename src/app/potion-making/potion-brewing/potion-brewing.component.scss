@@ -1,0 +1,27 @@
+.centered {
+    text-align: center;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+.highlighted {
+    font-weight: bolder;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+mat-icon {
+    align-content: center;
+    text-align: center;
+}

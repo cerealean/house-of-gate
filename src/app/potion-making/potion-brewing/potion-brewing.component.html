@@ -1,1 +1,86 @@
-<p>potion-brewing works!</p>
+<div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+    <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #1"
+        [initialSelectedIngredient]="selectedIngredient1()"
+        (optionSelected)="selectedIngredient1.set($event)"></potion-making-ingredient-autocomplete-input>
+    <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #2"
+        [initialSelectedIngredient]="selectedIngredient2()"
+        (optionSelected)="selectedIngredient2.set($event)"></potion-making-ingredient-autocomplete-input>
+    <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #3"
+        [initialSelectedIngredient]="selectedIngredient3()"
+        (optionSelected)="selectedIngredient3.set($event)"></potion-making-ingredient-autocomplete-input>
+</div>
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
+    <div fxLayout="column" fxFlex="35%">
+        <table fxFlex style="border: 1px solid rgba(255, 255, 255, 0.12); padding: 3px;">
+            <colgroup>
+                <col>
+                <col [class.highlighted]="isCombatHighestScore()">
+                <col [class.highlighted]="isUtilityHighestScore()">
+                <col [class.highlighted]="isWhimsyHighestScore()">
+            </colgroup>
+            <thead class="centered">
+                <tr>
+                    <th>Name</th>
+                    <th [class.highlighted]="isCombatHighestScore()">Combat</th>
+                    <th [class.highlighted]="isUtilityHighestScore()">Utility</th>
+                    <th [class.highlighted]="isWhimsyHighestScore()">Whimsy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td [class.italicized]="selectedIngredient1() === undefined">{{ selectedIngredient1()?.Name ?? '(Please Select)' }}</td>
+                    <td [class.highlighted]="isCombatHighestScore()" class="centered">{{ selectedIngredient1()?.Combat ?? 0 }}</td>
+                    <td [class.highlighted]="isUtilityHighestScore()" class="centered">{{ selectedIngredient1()?.Utility ?? 0 }}</td>
+                    <td [class.highlighted]="isWhimsyHighestScore()" class="centered">{{ selectedIngredient1()?.Whimsy ?? 0 }}</td>
+                </tr>
+                <tr>
+                    <td [class.italicized]="selectedIngredient2() === undefined">{{ selectedIngredient2()?.Name ?? '(Please Select)' }}</td>
+                    <td [class.highlighted]="isCombatHighestScore()" class="centered">{{ selectedIngredient2()?.Combat ?? 0 }}</td>
+                    <td [class.highlighted]="isUtilityHighestScore()" class="centered">{{ selectedIngredient2()?.Utility ?? 0 }}</td>
+                    <td [class.highlighted]="isWhimsyHighestScore()" class="centered">{{ selectedIngredient2()?.Whimsy ?? 0 }}</td>
+                </tr>
+                <tr>
+                    <td [class.italicized]="selectedIngredient3() === undefined">{{ selectedIngredient3()?.Name ?? '(Please Select)' }}</td>
+                    <td [class.highlighted]="isCombatHighestScore()" class="centered">{{ selectedIngredient3()?.Combat ?? 0 }}</td>
+                    <td [class.highlighted]="isUtilityHighestScore()" class="centered">{{ selectedIngredient3()?.Utility ?? 0 }}</td>
+                    <td [class.highlighted]="isWhimsyHighestScore()" class="centered">{{ selectedIngredient3()?.Whimsy ?? 0 }}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="3"><hr /></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Total</td>
+                    <td [class.highlighted]="isCombatHighestScore()" class="centered">{{ combatScore() }}</td>
+                    <td [class.highlighted]="isUtilityHighestScore()" class="centered">{{ utilityScore() }}</td>
+                    <td [class.highlighted]="isWhimsyHighestScore()" class="centered">{{ whimsyScore() }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div fxLayout="column" fxFlex>
+        @for(potion of resultingPotions().potions; track potion.Name) {
+        <div fxLayout="row" fxLayoutGap="2%">
+            <mat-card appearance="outlined">
+                <mat-card-header>
+                    <mat-icon mat-card-avatar style="transform: scale(2)">science</mat-icon>
+                    <mat-card-title>{{potion.Name}}</mat-card-title>
+                    <mat-card-subtitle>{{ potion.Rarity }}&nbsp;{{ potion.Type
+                        }}&nbsp;Potion</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        {{ potion.Description }}
+                    </p>
+                    <em>{{ potion.Source }}</em>
+                </mat-card-content>
+                <mat-card-footer>
+
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        }
+    </div>
+</div>

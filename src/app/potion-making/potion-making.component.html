@@ -1,65 +1,8 @@
 <mat-card appearance="outlined" style="min-height: 80vh">
-
     <mat-tab-group fxLayout="column">
         <mat-tab label="Potion Brewing">
             <br />
-            <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-                <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #1"
-                    [initialSelectedIngredient]="selectedIngredient1()"
-                    (optionSelected)="selectedIngredient1.set($event)"></potion-making-ingredient-autocomplete-input>
-                <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #2"
-                    [initialSelectedIngredient]="selectedIngredient2()"
-                    (optionSelected)="selectedIngredient2.set($event)"></potion-making-ingredient-autocomplete-input>
-                <potion-making-ingredient-autocomplete-input fxFlex label="Ingredient #3"
-                    [initialSelectedIngredient]="selectedIngredient3()"
-                    (optionSelected)="selectedIngredient3.set($event)"></potion-making-ingredient-autocomplete-input>
-            </div>
-            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="2%" fxLayoutGap.lt-md="3px">
-                <div fxLayout="column" fxFlex="15%">
-                    <div fxLayout="row wrap" fxFlex>
-                        <mat-list role="list" fxFlex>
-                            <mat-list-item role="listitem"
-                                [class.highest-value-type]="isCombatHighestScore()">
-                                <strong>Combat:</strong>&nbsp;
-                                <span>{{ combatScore() }}</span>
-                            </mat-list-item>
-                            <mat-list-item role="listitem"
-                                [class.highest-value-type]="isUtilityHighestScore()">
-                                <strong>Utility:</strong>&nbsp;
-                                <span>{{ utilityScore() }}</span>
-                            </mat-list-item>
-                            <mat-list-item role="listitem"
-                                [class.highest-value-type]="isWhimsyHighestScore()">
-                                <strong>Whimsy:</strong>&nbsp;
-                                <span>{{ whimsyScore() }}</span>
-                            </mat-list-item>
-                        </mat-list>
-                    </div>
-                </div>
-                <div fxLayout="column" fxFlex>
-                    @for(potion of resultingPotions()?.potions ?? []; track potion.Name) {
-                    <div fxLayout="row" fxLayoutGap="2%">
-                        <mat-card appearance="outlined">
-                            <mat-card-header>
-                                <mat-icon mat-card-avatar style="transform: scale(2)">science</mat-icon>
-                                <mat-card-title>{{potion.Name}}</mat-card-title>
-                                <mat-card-subtitle>{{ potion.Rarity }}&nbsp;{{ potion.Type
-                                    }}&nbsp;Potion</mat-card-subtitle>
-                            </mat-card-header>
-                            <mat-card-content>
-                                <p>
-                                    {{ potion.Description }}
-                                </p>
-                                <em>{{ potion.Source }}</em>
-                            </mat-card-content>
-                            <mat-card-footer>
-
-                            </mat-card-footer>
-                        </mat-card>
-                    </div>
-                    }
-                </div>
-            </div>
+            <potion-making-potion-brewing></potion-making-potion-brewing>
         </mat-tab>
         <mat-tab label="Ingredients">
             <br />
